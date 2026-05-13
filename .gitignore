@@ -3,7 +3,8 @@
 node_modules/
 
 # Build output directory
-.vuepress/dist/
+.vuepress/.cache/
+.vuepress/.temp/
 
 # Local env files
 .env.local
