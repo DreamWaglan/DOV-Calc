@@ -5,42 +5,41 @@ title: 首页
 
 <section class="home-hero">
   <div>
-    <h1>DOV 计算器工具集</h1>
-    <p>面向《拂晓：胜利之刻》的计算器工具博客，用来沉淀公式、表格、构筑思路和常用换算。当前站点已经预留好工具页、文章页和可复用计算器组件，后续可以逐步接入具体功能。</p>
+    <h1>拂晓工具箱</h1>
+    <p>《拂晓：胜利之刻》玩家的实用工具站，拥有战斗伤害计算、常用装备速查和后续攻略资料整理。</p>
     <div class="home-hero__actions">
-      <a class="home-hero__button home-hero__button--primary" href="/DOV-Calc/tools/">查看计算器</a>
-      <a class="home-hero__button" href="/DOV-Calc/posts/">阅读攻略笔记</a>
+      <a class="home-hero__button home-hero__button--primary" href="/DOV-Calc/tools/dov-basic.html">计算伤害</a>
+      <a class="home-hero__button" href="/DOV-Calc/tools/equipment-lookup.html">查询装备</a>
     </div>
   </div>
 
   <aside class="home-hero__panel">
-    <strong>模板结构</strong>
+    <strong>当前功能</strong>
     <ul>
-      <li>计算器入口与分类索引</li>
-      <li>可复用的计算器页面壳</li>
-      <li>攻略、更新日志和公式说明文章</li>
-      <li>适配 GitHub Pages 的 VuePress 配置</li>
+      <li>根据等级、属性、倍率、暴击和命中计算期望伤害</li>
+      <li>按分类、关键词和获取方式快速查找常用装备</li>
+      <li>适配桌面与手机浏览，适合游戏中快速查询</li>
     </ul>
   </aside>
 </section>
 
-## 最近工具
+## 工具入口
 
 <div class="tool-grid">
   <a class="tool-card" href="/DOV-Calc/tools/dov-basic.html">
-    <h3>基础计算器模板</h3>
-    <p>预留输入区、结果区和公式说明，等待接入第一批实际计算逻辑。</p>
+    <h3>伤害计算器</h3>
+    <p>输入参数实时计算基础伤害、暴击期望和最终期望伤害。</p>
+  </a>
+  <a class="tool-card" href="/DOV-Calc/tools/equipment-lookup.html">
+    <h3>装备速查</h3>
+    <p>支持舰灵装备查询，能够分类筛选、获取方式筛选和关键词搜索</p>
   </a>
   <a class="tool-card" href="/DOV-Calc/tools/">
-    <h3>工具索引</h3>
-    <p>后续可以按养成、战斗、资源、装备等方向扩展。</p>
+    <h3>全部工具</h3>
+    <p>查看当前已上线工具，以及后续养成收益、资源换算、活动估算等功能入口。</p>
   </a>
 </div>
 
-<!-- 
-## 内容规划
+## 数据说明
 
-- `docs/tools/`：存放计算器工具页，每个工具可以独立维护说明、公式和交互组件。
-- `docs/posts/`：存放攻略笔记、版本更新记录、公式验证过程。
-- `docs/.vuepress/components/`：存放可复用 Vue 组件，例如计算器面板、输入控件和结果卡片。
- -->
+当前工具主要来自已有 Excel 表格和攻略组资料整理。若游戏版本更新导致公式或装备获取方式变化，可以在对应页面更新数据源后重新生成页面。
