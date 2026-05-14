@@ -8,8 +8,8 @@ title: 计算器工具
 
 <div class="tool-grid">
   <a class="tool-card" href="/DOV-Calc/tools/dov-basic.html">
-    <h3>基础计算器模板</h3>
-    <p>用于承载第一批计算逻辑的页面模板，已经预留输入、结果和备注区域。</p>
+    <h3>伤害计算器</h3>
+    <p>根据基础伤害、暴击期望和命中期望公式，快速计算最终期望伤害。</p>
   </a>
   <article class="tool-card">
     <h3>养成收益计算</h3>
@@ -21,9 +21,11 @@ title: 计算器工具
   </article>
 </div>
 
+<!-- 
 ## 新增工具页约定
 
 1. 在 `docs/tools/` 下新增一个 Markdown 文件。
 2. 使用 `CalculatorShell` 组件包住输入区和结果区。
 3. 在 `docs/.vuepress/config.js` 的 `sidebar['/tools/']` 中加入新页面。
 4. 在本页增加一张工具卡片作为入口。
+ -->

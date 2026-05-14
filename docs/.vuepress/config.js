@@ -22,7 +22,10 @@ export default defineUserConfig({
           text: '计算器工具',
           children: [
             '/tools/',
-            '/tools/dov-basic.md',
+            {
+              text: '伤害计算器',
+              link: '/tools/dov-basic.md',
+            },
           ],
         },
       ],
