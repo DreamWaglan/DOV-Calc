@@ -1,6 +1,14 @@
 <template>
   <section class="damage-calculator" aria-labelledby="damage-calculator-title">
     <header class="damage-calculator__header">
+      <div>
+        <h2 id="damage-calculator-title">伤害计算器</h2>
+        <p>根据基础伤害、暴击期望、命中期望三段公式计算。</p>
+      </div>
+      <div class="damage-calculator__source">
+        <span>公式来源</span>
+        <strong>小强之王</strong>
+      </div>
     </header>
 
     <div class="damage-calculator__layout">
@@ -55,7 +63,7 @@
         </div>
 
         <section class="damage-calculator__formula">
-          <h3>公式计算</h3>
+          <h3>公式算法</h3>
           <ol>
             <li>攻击力 = 航空值 + 轰炸 + 鱼雷 + 炮击</li>
             <li>基础伤害 = 攻击力 × 技能倍率 × 防御衰减 × 暴击伤害修正 × 弹种修正 × 增伤修正 × 减伤修正 × 等级修正</li>

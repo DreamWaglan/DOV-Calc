@@ -11,6 +11,10 @@ title: 计算器工具
     <h3>伤害计算器</h3>
     <p>根据基础伤害、暴击期望和命中期望公式，快速计算最终期望伤害。</p>
   </a>
+  <a class="tool-card" href="/DOV-Calc/tools/equipment-lookup.html">
+    <h3>装备速查</h3>
+    <p>按装备分类、获取方式和关键词快速查找常用装备、简称、备注与来源。</p>
+  </a>
   <article class="tool-card">
     <h3>养成收益计算</h3>
     <p>待补充：等级、突破、技能、装备等收益对比。</p>

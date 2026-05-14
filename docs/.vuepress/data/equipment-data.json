@@ -1,0 +1,1676 @@
+{
+  "metadata": {
+    "title": "拂晓：胜利之刻 装备速查表",
+    "version": "20260511",
+    "sourceFile": "拂晓：胜利之刻-装备速查表20260511.xlsx，由 叶秋痕 提供",
+    "itemCount": 93,
+    "categories": [
+      "驱逐炮",
+      "轻巡炮",
+      "重巡炮（金炮差距极小）",
+      "战列炮（金炮优先mk6型406炮）",
+      "鱼雷（差距极小）",
+      "防空炮",
+      "战斗机",
+      "轰炸机",
+      "鱼雷机",
+      "侦察机",
+      "设备-雷达、索敌设备",
+      "设备-弹药、炮弹设备（大部分后期培养）",
+      "设备-防御设备"
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "category": "驱逐炮",
+      "name": "30.5cm无后座力炮",
+      "alias": "305",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "PVP及PVE完美毕业装，获取极难",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-001.png"
+    },
+    {
+      "id": 2,
+      "category": "驱逐炮",
+      "name": "单装三年式155mm高角炮",
+      "alias": "E1、三年式",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），轻型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），轻型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-002.png"
+    },
+    {
+      "id": 3,
+      "category": "驱逐炮",
+      "name": "双联装QF.MK.V型114mm炮",
+      "alias": "防空驱逐炮、方驱逐炮",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），轻型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥，SSR型装备库密钥Ⅱ",
+      "remark": "大船，PVP特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），轻型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-003.png"
+    },
+    {
+      "id": 4,
+      "category": "驱逐炮",
+      "name": "双联装79式100mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "大船凑装填循环特殊装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-004.png"
+    },
+    {
+      "id": 5,
+      "category": "驱逐炮",
+      "name": "双联装Mle1934型138.6mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "驱逐第二高炮击，过渡装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-005.png"
+    },
+    {
+      "id": 6,
+      "category": "驱逐炮",
+      "name": "双联装TbtsKC/36T型150mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），轻型炮高级箱（随机），轻型炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "紫炮最高炮击，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），轻型炮高级箱（随机），轻型炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-006.png"
+    },
+    {
+      "id": 7,
+      "category": "轻巡炮",
+      "name": "三联装QF.MK.V型152mm炮",
+      "alias": "彩轻巡",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-007.png"
+    },
+    {
+      "id": 8,
+      "category": "轻巡炮",
+      "name": "三联装B-1-P.Pattern1932型180mm炮",
+      "alias": "轻巡炮",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），轻型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥，SSR型装备库密钥Ⅱ",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），轻型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-008.png"
+    },
+    {
+      "id": 9,
+      "category": "轻巡炮",
+      "name": "三联装Mle1930型152mm炮",
+      "alias": "",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ]活动兑换",
+      "remark": "大船拉菲完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ]活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-009.png"
+    },
+    {
+      "id": 10,
+      "category": "轻巡炮",
+      "name": "三联装三年式155mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），轻型炮高级箱（随机），轻型炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "紫炮最高炮击，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），轻型炮高级箱（随机），轻型炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-010.png"
+    },
+    {
+      "id": 11,
+      "category": "轻巡炮",
+      "name": "三联装SK C/25型150mm炮",
+      "alias": "三联SKC",
+      "obtain": "常驻获取渠道：进阶装备箱（随机），基础装备箱（随机），轻型炮中级箱（随机）",
+      "remark": "雷巡，遭遇战特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "进阶装备箱（随机），基础装备箱（随机），轻型炮中级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-011.png"
+    },
+    {
+      "id": 12,
+      "category": "轻巡炮",
+      "name": "双联装QF.Mk.I型133mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：基础装备箱（随机），轻型炮中级箱（随机）",
+      "remark": "雷巡，遭遇战特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "基础装备箱（随机），轻型炮中级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-012.jpeg"
+    },
+    {
+      "id": 13,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "双联装305mm炮（试作型）",
+      "alias": "",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "长期未复刻的彩重巡炮，最高炮击，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-013.png"
+    },
+    {
+      "id": 14,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "双联装M1929型203mm炮",
+      "alias": "黑炮",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "金炮最高炮击，完美毕业装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-014.png"
+    },
+    {
+      "id": 15,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "三联装Mk15型203mm炮",
+      "alias": "白炮",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），重型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），重型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-015.png"
+    },
+    {
+      "id": 16,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "三联装SKL/56型203mm炮",
+      "alias": "绿炮",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），重型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），重型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-016.png"
+    },
+    {
+      "id": 17,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "双联装三年式3号203mm炮",
+      "alias": "对空重巡炮",
+      "obtain": "常驻获取渠道：贸易商店-功勋兑换（随机刷新）\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "不如白绿炮但白送可练的特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "贸易商店-功勋兑换（随机刷新）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-017.png"
+    },
+    {
+      "id": 18,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "三联装Mk14型203mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "紫炮最高炮击，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-018.png"
+    },
+    {
+      "id": 19,
+      "category": "重巡炮（金炮差距极小）",
+      "name": "双联装三年式2号203mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "需对空时，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-019.png"
+    },
+    {
+      "id": 20,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装M1939型381mm炮",
+      "alias": "彩炮",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-020.png"
+    },
+    {
+      "id": 21,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装Mk7型406mm炮",
+      "alias": "彩炮",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-021.png"
+    },
+    {
+      "id": 22,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "双联装SK C/34型406mm炮",
+      "alias": "彩炮",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-022.png"
+    },
+    {
+      "id": 23,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装九四式460mm炮",
+      "alias": "彩炮",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-023.png"
+    },
+    {
+      "id": 24,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装Mk6型406mm炮",
+      "alias": "MK6",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），重型炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），重型炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-024.png"
+    },
+    {
+      "id": 25,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装M1934型381mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "通用毕业装（因自选Ⅲ过于珍贵不推荐）",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-025.png"
+    },
+    {
+      "id": 26,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装Mk.IV型406mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "PVE因通用金溢出纯亏数据，PVP垃圾",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-026.png"
+    },
+    {
+      "id": 27,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "双联装Mk.I型381mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅱ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "通用毕业装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-027.png"
+    },
+    {
+      "id": 28,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "三联装Mk.II型381mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：贸易商店-功勋兑换（随机刷新）\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "贸易商店-功勋兑换（随机刷新）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-028.png"
+    },
+    {
+      "id": 29,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "四联装Mle1935型380mm炮",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "和前一个区别不大，过渡装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-029.png"
+    },
+    {
+      "id": 30,
+      "category": "战列炮（金炮优先mk6型406炮）",
+      "name": "四联装Mk.VII型356mm炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "紫炮最高炮击，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），重型炮高级箱（随机），重型炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-030.png"
+    },
+    {
+      "id": 31,
+      "category": "鱼雷（差距极小）",
+      "name": "六联装三式六型610mm鱼雷发射器",
+      "alias": "彩雷",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "最高雷击，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-031.png"
+    },
+    {
+      "id": 32,
+      "category": "鱼雷（差距极小）",
+      "name": "五联装零式610mm鱼雷发射器",
+      "alias": "彩雷",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "第二高雷击，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-032.png"
+    },
+    {
+      "id": 33,
+      "category": "鱼雷（差距极小）",
+      "name": "四联装九二式二型610mm鱼雷发射器",
+      "alias": "610",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），鱼雷高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥，SSR型装备库密钥Ⅱ",
+      "remark": "金雷最高雷击，获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），鱼雷高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-033.png"
+    },
+    {
+      "id": 34,
+      "category": "鱼雷（差距极小）",
+      "name": "四联装533mm鱼雷发射器",
+      "alias": "磁雷、533",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），鱼雷高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥，SSR型装备库密钥Ⅱ",
+      "remark": "命中最高，获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），鱼雷高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-034.png"
+    },
+    {
+      "id": 35,
+      "category": "鱼雷（差距极小）",
+      "name": "四联装九二式三型610mm鱼雷发射器",
+      "alias": "",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "通用毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-035.png"
+    },
+    {
+      "id": 36,
+      "category": "鱼雷（差距极小）",
+      "name": "五联装610mm鱼雷发射器",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），鱼雷高级箱（随机），鱼雷中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "紫雷最高雷击，过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），鱼雷高级箱（随机），鱼雷中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-036.png"
+    },
+    {
+      "id": 37,
+      "category": "防空炮",
+      "name": "六联装博福斯40mm防空炮",
+      "alias": "彩防空",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-037.png"
+    },
+    {
+      "id": 38,
+      "category": "防空炮",
+      "name": "单装M1939型90mm防空炮",
+      "alias": "",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "防空炮唯二带炮击的完美毕业装，驱逐不可用，水母可用",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-038.png"
+    },
+    {
+      "id": 39,
+      "category": "防空炮",
+      "name": "四联装博福斯40mm防空炮",
+      "alias": "金防空",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），防空炮高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），防空炮高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-039.png"
+    },
+    {
+      "id": 40,
+      "category": "防空炮",
+      "name": "双联装76A式37mm防空炮",
+      "alias": "",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "最高命中，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-040.png"
+    },
+    {
+      "id": 41,
+      "category": "防空炮",
+      "name": "二十八联装120mm喷进炮",
+      "alias": "紫喷进",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），防空炮高级箱（随机），防空炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装、PVP中小船机动特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），防空炮高级箱（随机），防空炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-041.png"
+    },
+    {
+      "id": 42,
+      "category": "防空炮",
+      "name": "双联装博福斯40mm防空炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），防空炮高级箱（随机），防空炮中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "大船过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），防空炮高级箱（随机），防空炮中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-042.png"
+    },
+    {
+      "id": 43,
+      "category": "防空炮",
+      "name": "双联装厄利孔20mm防空炮",
+      "alias": "",
+      "obtain": "常驻获取渠道：基础装备箱（随机），防空炮初级箱（随机）",
+      "remark": "特殊装，最高装填，卡装填特用",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "基础装备箱（随机），防空炮初级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-043.png"
+    },
+    {
+      "id": 44,
+      "category": "防空炮",
+      "name": "双联装SK C/30型37mm防空炮",
+      "alias": "白炮",
+      "obtain": "常驻获取渠道：防空炮初级箱（随机）",
+      "remark": "防空炮唯二带炮击的过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "防空炮初级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-044.png"
+    },
+    {
+      "id": 45,
+      "category": "战斗机",
+      "name": "F4F野猫（Thach队）",
+      "alias": "彩飞机",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-045.png"
+    },
+    {
+      "id": 46,
+      "category": "战斗机",
+      "name": "SO.8000",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "完美毕业装，唯一带轰炸的金战斗机",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-046.png"
+    },
+    {
+      "id": 47,
+      "category": "战斗机",
+      "name": "震电",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "航队内战特殊装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-047.png"
+    },
+    {
+      "id": 48,
+      "category": "战斗机",
+      "name": "海毒牙",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-048.png"
+    },
+    {
+      "id": 49,
+      "category": "战斗机",
+      "name": "F2A -1水牛（Thach队）",
+      "alias": "",
+      "obtain": "常驻获取渠道：贸易商店-功勋兑换（随机刷新）\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "海毒牙换皮",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "贸易商店-功勋兑换（随机刷新）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-049.png"
+    },
+    {
+      "id": 50,
+      "category": "战斗机",
+      "name": "烈风",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），舰载机高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用毕业装，和海毒牙差距不大",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），舰载机高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-050.png"
+    },
+    {
+      "id": 51,
+      "category": "战斗机",
+      "name": "F6F（Thach队）",
+      "alias": "命中飞机",
+      "obtain": "常驻获取渠道：特殊礼包购买\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-051.png"
+    },
+    {
+      "id": 52,
+      "category": "战斗机",
+      "name": "试制单发战斗机",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅱ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "类似海毒牙烈风（获取难不考虑）",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-052.png"
+    },
+    {
+      "id": 53,
+      "category": "战斗机",
+      "name": "ME-155",
+      "alias": "命中飞机",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "通用毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-053.png"
+    },
+    {
+      "id": 54,
+      "category": "战斗机",
+      "name": "F4U-1海盗",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装，轰炸最高紫色战斗机，优于+8前金飞机",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-054.png"
+    },
+    {
+      "id": 55,
+      "category": "战斗机",
+      "name": "海喷火F.Mk.IIC",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装，唯一紫机动战斗机",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-055.png"
+    },
+    {
+      "id": 56,
+      "category": "轰炸机",
+      "name": "B-25B米切尔（Doolittle队）",
+      "alias": "爆伤飞机、杜立特",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装，最高轰炸附带暴伤词条",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-056.png"
+    },
+    {
+      "id": 57,
+      "category": "轰炸机",
+      "name": "SBD无畏（McClusky队）",
+      "alias": "索敌SBD、MC",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "索敌向完美毕业装，极其珍贵的补、叠索敌手段",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-057.png"
+    },
+    {
+      "id": 58,
+      "category": "轰炸机",
+      "name": "SBD-3无畏（Best）",
+      "alias": "幸运SBD、Best、百斯特",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "暴击向完美毕业装",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-058.png"
+    },
+    {
+      "id": 59,
+      "category": "轰炸机",
+      "name": "萤火虫F.Mk.I",
+      "alias": "萤火虫",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "获取最轻松的通用特殊毕业装，PVP防御向防暴飞机",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-059.png"
+    },
+    {
+      "id": 60,
+      "category": "轰炸机",
+      "name": "景云改V3",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "金色最高轰炸，但是SBD索敌太高贵了，比萤火虫好",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-060.png"
+    },
+    {
+      "id": 61,
+      "category": "轰炸机",
+      "name": "飞龙S.4",
+      "alias": "",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "萤火虫同位（获取难不考虑）",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-061.png"
+    },
+    {
+      "id": 62,
+      "category": "轰炸机",
+      "name": "九七式舰攻一二型",
+      "alias": "80番",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装，高于+8前的萤火虫",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-062.png"
+    },
+    {
+      "id": 63,
+      "category": "轰炸机",
+      "name": "BTD-1毁灭者",
+      "alias": "毁灭者",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装、遭遇战特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-063.png"
+    },
+    {
+      "id": 64,
+      "category": "鱼雷机",
+      "name": "Tu-91",
+      "alias": "",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装，最高鱼雷，轻母不能装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-064.png"
+    },
+    {
+      "id": 65,
+      "category": "鱼雷机",
+      "name": "天河",
+      "alias": "",
+      "obtain": "常驻获取渠道：特殊礼包购买\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "索敌向完美毕业装，轻母不能装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-065.png"
+    },
+    {
+      "id": 66,
+      "category": "鱼雷机",
+      "name": "剑鱼TB.Mk.II（810NAS）",
+      "alias": "金剑鱼",
+      "obtain": "常驻获取渠道：特殊礼包购买\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "暴击向完美毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-066.png"
+    },
+    {
+      "id": 67,
+      "category": "鱼雷机",
+      "name": "流星一二型",
+      "alias": "流星",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "垃圾",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），舰载机高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-067.png"
+    },
+    {
+      "id": 68,
+      "category": "鱼雷机",
+      "name": "TBD鱼雷机（VT-8）",
+      "alias": "命中鱼雷机",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "特殊毕业装，命中对轰炸航母有用，白送可练",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-068.png"
+    },
+    {
+      "id": 69,
+      "category": "鱼雷机",
+      "name": "剑鱼TB.Mk.III",
+      "alias": "紫剑鱼",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装，远大于流星",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-069.png"
+    },
+    {
+      "id": 70,
+      "category": "侦察机",
+      "name": "瑞云一二型",
+      "alias": "金水侦",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），舰载机高级箱（随机）\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "通用毕业装，唯一金侦察",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），舰载机高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-070.png"
+    },
+    {
+      "id": 71,
+      "category": "侦察机",
+      "name": "紫云",
+      "alias": "",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），舰载机高级箱（随机），舰载机中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-071.png"
+    },
+    {
+      "id": 72,
+      "category": "设备-雷达、索敌设备",
+      "name": "百日庆典之烛",
+      "alias": "蛋糕",
+      "obtain": "24年11月重开服百日庆典纪念品\n特殊获取渠道：邮件发放",
+      "remark": "绝版，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "邮件发放"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-072.png"
+    },
+    {
+      "id": 73,
+      "category": "设备-雷达、索敌设备",
+      "name": "2周年纪念之烛",
+      "alias": "蛋糕",
+      "obtain": "二周年活动纪念品\n特殊获取渠道：邮件发放",
+      "remark": "绝版，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "邮件发放"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-073.png"
+    },
+    {
+      "id": 74,
+      "category": "设备-雷达、索敌设备",
+      "name": "3周年纪念之烛",
+      "alias": "蛋糕",
+      "obtain": "三周年活动纪念品\n特殊获取渠道：邮件发放",
+      "remark": "绝版，完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "邮件发放"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-074.png"
+    },
+    {
+      "id": 75,
+      "category": "设备-雷达、索敌设备",
+      "name": "胜利之刻勋章",
+      "alias": "勋章",
+      "obtain": "25年9月抗‎战暨反法‎西斯战争胜利80周年纪念品\n特殊获取渠道：邮件发放",
+      "remark": "完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "邮件发放"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-075.png"
+    },
+    {
+      "id": 76,
+      "category": "设备-雷达、索敌设备",
+      "name": "SG-1对海搜索雷达",
+      "alias": "金马桶",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），设备高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "拂晓的底层逻辑，完美毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），设备高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-076.png"
+    },
+    {
+      "id": 77,
+      "category": "设备-雷达、索敌设备",
+      "name": "272型对海搜索雷达",
+      "alias": "紫马桶",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），设备高级箱（随机），设备中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "比后面三个金色更具性价比的新人过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），设备高级箱（随机），设备中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-077.png"
+    },
+    {
+      "id": 78,
+      "category": "设备-雷达、索敌设备",
+      "name": "DRBC 10A火控雷达",
+      "alias": "彩火控",
+      "obtain": "特殊获取渠道：付费海域通航证获取",
+      "remark": "完美毕业装，最高命中。",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "付费海域通航证获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-078.png"
+    },
+    {
+      "id": 79,
+      "category": "设备-雷达、索敌设备",
+      "name": "274型火控雷达",
+      "alias": "方火控",
+      "obtain": "常驻获取渠道：贸易商店-功勋兑换（随机刷新）\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "遭遇战通用毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "贸易商店-功勋兑换（随机刷新）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-079.png"
+    },
+    {
+      "id": 80,
+      "category": "设备-雷达、索敌设备",
+      "name": "Mk8型火控雷达",
+      "alias": "长火控",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），设备高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "容易获取，遭遇战过渡用，+7过渡到前者",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），设备高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-080.png"
+    },
+    {
+      "id": 81,
+      "category": "设备-雷达、索敌设备",
+      "name": "SC-2对空搜索雷达",
+      "alias": "苍蝇拍",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），设备高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "PVP特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），设备高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-081.png"
+    },
+    {
+      "id": 82,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "高脚柜炸弹",
+      "alias": "高脚杯",
+      "obtain": "密钥获取渠道：SSR型装备库密钥Ⅲ\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换",
+      "remark": "遭遇战完美毕业装，轰航专用",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅲ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-082.png"
+    },
+    {
+      "id": 83,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "九一式穿甲弹",
+      "alias": "白萝卜",
+      "obtain": "特殊获取渠道：遭遇战累计伤害达到750000奖励",
+      "remark": "遭遇战特殊毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "遭遇战累计伤害达到750000奖励"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-083.png"
+    },
+    {
+      "id": 84,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "超重弹",
+      "alias": "蓝萝卜",
+      "obtain": "特殊获取渠道：遭遇战累计伤害达到750000奖励",
+      "remark": "遭遇战完美毕业装",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "遭遇战累计伤害达到750000奖励"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-084.png"
+    },
+    {
+      "id": 85,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "VT引信弹",
+      "alias": "",
+      "obtain": "特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "鸡肋，前卫输出可用但持平三式弹，对空补一点防御",
+      "channels": [
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-085.png"
+    },
+    {
+      "id": 86,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "三式弹",
+      "alias": "三十蛋、30蛋、300、340",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），设备高级箱（随机）\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "0级就是顶级过渡装，不要升级，驱逐缺伤害最多+6",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），设备高级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-086.png"
+    },
+    {
+      "id": 87,
+      "category": "设备-弹药、炮弹设备（大部分后期培养）",
+      "name": "新春庆典爆竹",
+      "alias": "爆竹",
+      "obtain": "特殊获取渠道：新年限时登录活动获取",
+      "remark": "同前，三式弹换皮",
+      "channels": [
+        {
+          "type": "特殊",
+          "text": "新年限时登录活动获取"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-087.png"
+    },
+    {
+      "id": 88,
+      "category": "设备-防御设备",
+      "name": "先进型动力系统",
+      "alias": "滑板、皮艇、拖鞋、马达",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），设备高级箱（随机），特殊礼包购买\n密钥获取渠道：SSR型装备库密钥",
+      "remark": "主PVP用特殊毕业装，练级、打活动有用",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），设备高级箱（随机），特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-088.png"
+    },
+    {
+      "id": 89,
+      "category": "设备-防御设备",
+      "name": "普列塞水下防护系统",
+      "alias": "金钢板",
+      "obtain": "常驻获取渠道：特殊礼包购买\n特殊获取渠道：[ 补给姬大作战 ] 活动兑换\n密钥获取渠道：SSR型装备库密钥Ⅱ",
+      "remark": "PVP科研装备，特殊毕业装，大部分情况下用不上",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "特殊礼包购买"
+        },
+        {
+          "type": "密钥",
+          "text": "SSR型装备库密钥Ⅱ"
+        },
+        {
+          "type": "特殊",
+          "text": "[ 补给姬大作战 ] 活动兑换"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-089.png"
+    },
+    {
+      "id": 90,
+      "category": "设备-防御设备",
+      "name": "改良型动力系统",
+      "alias": "紫滑板",
+      "obtain": "常驻获取渠道：高阶装备箱（随机），进阶装备箱（随机），设备高级箱（随机），设备中级箱（随机）\n密钥获取渠道：SR型装备库密钥",
+      "remark": "没金滑板的时候还有需求的话，凑合过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "高阶装备箱（随机），进阶装备箱（随机），设备高级箱（随机），设备中级箱（随机）"
+        },
+        {
+          "type": "密钥",
+          "text": "SR型装备库密钥"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-090.png"
+    },
+    {
+      "id": 91,
+      "category": "设备-防御设备",
+      "name": "均质装甲（大型）",
+      "alias": "大钢板",
+      "obtain": "常驻获取渠道：进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）",
+      "remark": "过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-091.png"
+    },
+    {
+      "id": 92,
+      "category": "设备-防御设备",
+      "name": "均质装甲（中型）",
+      "alias": "中钢板",
+      "obtain": "常驻获取渠道：进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）",
+      "remark": "过渡装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-092.png"
+    },
+    {
+      "id": 93,
+      "category": "设备-防御设备",
+      "name": "均质装甲（小型）",
+      "alias": "小钢板",
+      "obtain": "常驻获取渠道：进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）",
+      "remark": "PVP小船特殊毕业装",
+      "channels": [
+        {
+          "type": "常驻",
+          "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
+        }
+      ],
+      "image": "/DOV-Calc/equipment-images/equipment-093.png"
+    }
+  ]
+}

@@ -26,6 +26,10 @@ export default defineUserConfig({
               text: '伤害计算器',
               link: '/tools/dov-basic.md',
             },
+            {
+              text: '装备速查',
+              link: '/tools/equipment-lookup.md',
+            },
           ],
         },
       ],
