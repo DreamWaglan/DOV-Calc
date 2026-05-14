@@ -35,14 +35,14 @@ jobs:
           node-version: 24.15.0
           cache: pnpm
 
-      - name: ignore-scripts false
-        run: pnpm config set ignore-scripts false
+      # - name: ignore-scripts false
+      #   run: pnpm config set ignore-scripts false
 
       - name: Install dependencies
         run: pnpm install
         
-      - name: ignore-scripts true
-        run: pnpm config set ignore-scripts true
+      # - name: ignore-scripts true
+      #   run: pnpm config set ignore-scripts true
 
       # 运行构建脚本
       - name: Build VuePress site
