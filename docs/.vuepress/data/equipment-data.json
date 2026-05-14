@@ -38,7 +38,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-001.png"
+      "image": "/DOV-Calc/equipment-images/equipment-001.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 2,
@@ -57,7 +60,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-002.png"
+      "image": "/DOV-Calc/equipment-images/equipment-002.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 3,
@@ -76,7 +82,10 @@
           "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-003.png"
+      "image": "/DOV-Calc/equipment-images/equipment-003.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 4,
@@ -95,7 +104,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-004.png"
+      "image": "/DOV-Calc/equipment-images/equipment-004.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 5,
@@ -114,7 +126,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-005.png"
+      "image": "/DOV-Calc/equipment-images/equipment-005.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 6,
@@ -133,7 +148,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-006.png"
+      "image": "/DOV-Calc/equipment-images/equipment-006.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 7,
@@ -148,7 +166,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-007.png"
+      "image": "/DOV-Calc/equipment-images/equipment-007.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 8,
@@ -167,7 +188,10 @@
           "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-008.png"
+      "image": "/DOV-Calc/equipment-images/equipment-008.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 9,
@@ -182,7 +206,10 @@
           "text": "[ 补给姬大作战 ]活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-009.png"
+      "image": "/DOV-Calc/equipment-images/equipment-009.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 10,
@@ -201,7 +228,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-010.png"
+      "image": "/DOV-Calc/equipment-images/equipment-010.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 11,
@@ -216,7 +246,10 @@
           "text": "进阶装备箱（随机），基础装备箱（随机），轻型炮中级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-011.png"
+      "image": "/DOV-Calc/equipment-images/equipment-011.png",
+      "color": "#00B0F0",
+      "glass": "rgba(0, 176, 240, 0.16)",
+      "border": "rgba(0, 176, 240, 0.38)"
     },
     {
       "id": 12,
@@ -231,7 +264,10 @@
           "text": "基础装备箱（随机），轻型炮中级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-012.jpeg"
+      "image": "/DOV-Calc/equipment-images/equipment-012.jpeg",
+      "color": "#92D050",
+      "glass": "rgba(146, 208, 80, 0.16)",
+      "border": "rgba(146, 208, 80, 0.38)"
     },
     {
       "id": 13,
@@ -246,7 +282,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-013.png"
+      "image": "/DOV-Calc/equipment-images/equipment-013.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 14,
@@ -265,7 +304,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-014.png"
+      "image": "/DOV-Calc/equipment-images/equipment-014.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 15,
@@ -284,7 +326,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-015.png"
+      "image": "/DOV-Calc/equipment-images/equipment-015.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 16,
@@ -303,7 +348,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-016.png"
+      "image": "/DOV-Calc/equipment-images/equipment-016.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 17,
@@ -322,7 +370,10 @@
           "text": "SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-017.png"
+      "image": "/DOV-Calc/equipment-images/equipment-017.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 18,
@@ -341,7 +392,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-018.png"
+      "image": "/DOV-Calc/equipment-images/equipment-018.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 19,
@@ -360,7 +414,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-019.png"
+      "image": "/DOV-Calc/equipment-images/equipment-019.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 20,
@@ -375,7 +432,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-020.png"
+      "image": "/DOV-Calc/equipment-images/equipment-020.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 21,
@@ -390,7 +450,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-021.png"
+      "image": "/DOV-Calc/equipment-images/equipment-021.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 22,
@@ -405,7 +468,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-022.png"
+      "image": "/DOV-Calc/equipment-images/equipment-022.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 23,
@@ -420,7 +486,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-023.png"
+      "image": "/DOV-Calc/equipment-images/equipment-023.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 24,
@@ -439,7 +508,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-024.png"
+      "image": "/DOV-Calc/equipment-images/equipment-024.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 25,
@@ -458,7 +530,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-025.png"
+      "image": "/DOV-Calc/equipment-images/equipment-025.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 26,
@@ -473,7 +548,10 @@
           "text": "SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-026.png"
+      "image": "/DOV-Calc/equipment-images/equipment-026.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 27,
@@ -492,7 +570,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-027.png"
+      "image": "/DOV-Calc/equipment-images/equipment-027.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 28,
@@ -511,7 +592,10 @@
           "text": "SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-028.png"
+      "image": "/DOV-Calc/equipment-images/equipment-028.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 29,
@@ -530,7 +614,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-029.png"
+      "image": "/DOV-Calc/equipment-images/equipment-029.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 30,
@@ -549,7 +636,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-030.png"
+      "image": "/DOV-Calc/equipment-images/equipment-030.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 31,
@@ -564,7 +654,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-031.png"
+      "image": "/DOV-Calc/equipment-images/equipment-031.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 32,
@@ -579,7 +672,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-032.png"
+      "image": "/DOV-Calc/equipment-images/equipment-032.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 33,
@@ -598,7 +694,10 @@
           "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-033.png"
+      "image": "/DOV-Calc/equipment-images/equipment-033.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 34,
@@ -617,7 +716,10 @@
           "text": "SSR型装备库密钥，SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-034.png"
+      "image": "/DOV-Calc/equipment-images/equipment-034.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 35,
@@ -632,7 +734,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-035.png"
+      "image": "/DOV-Calc/equipment-images/equipment-035.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 36,
@@ -651,7 +756,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-036.png"
+      "image": "/DOV-Calc/equipment-images/equipment-036.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 37,
@@ -666,7 +774,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-037.png"
+      "image": "/DOV-Calc/equipment-images/equipment-037.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 38,
@@ -681,7 +792,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-038.png"
+      "image": "/DOV-Calc/equipment-images/equipment-038.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 39,
@@ -700,7 +814,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-039.png"
+      "image": "/DOV-Calc/equipment-images/equipment-039.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 40,
@@ -715,7 +832,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-040.png"
+      "image": "/DOV-Calc/equipment-images/equipment-040.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 41,
@@ -734,7 +854,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-041.png"
+      "image": "/DOV-Calc/equipment-images/equipment-041.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 42,
@@ -753,7 +876,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-042.png"
+      "image": "/DOV-Calc/equipment-images/equipment-042.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 43,
@@ -768,7 +894,10 @@
           "text": "基础装备箱（随机），防空炮初级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-043.png"
+      "image": "/DOV-Calc/equipment-images/equipment-043.png",
+      "color": "#92D050",
+      "glass": "rgba(146, 208, 80, 0.16)",
+      "border": "rgba(146, 208, 80, 0.38)"
     },
     {
       "id": 44,
@@ -783,7 +912,10 @@
           "text": "防空炮初级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-044.png"
+      "image": "/DOV-Calc/equipment-images/equipment-044.png",
+      "color": "#D9E2F3",
+      "glass": "rgba(217, 226, 243, 0.16)",
+      "border": "rgba(217, 226, 243, 0.38)"
     },
     {
       "id": 45,
@@ -798,7 +930,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-045.png"
+      "image": "/DOV-Calc/equipment-images/equipment-045.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 46,
@@ -817,7 +952,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-046.png"
+      "image": "/DOV-Calc/equipment-images/equipment-046.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 47,
@@ -836,7 +974,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-047.png"
+      "image": "/DOV-Calc/equipment-images/equipment-047.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 48,
@@ -855,7 +996,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-048.png"
+      "image": "/DOV-Calc/equipment-images/equipment-048.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 49,
@@ -874,7 +1018,10 @@
           "text": "SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-049.png"
+      "image": "/DOV-Calc/equipment-images/equipment-049.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 50,
@@ -893,7 +1040,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-050.png"
+      "image": "/DOV-Calc/equipment-images/equipment-050.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 51,
@@ -916,7 +1066,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-051.png"
+      "image": "/DOV-Calc/equipment-images/equipment-051.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 52,
@@ -935,7 +1088,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-052.png"
+      "image": "/DOV-Calc/equipment-images/equipment-052.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 53,
@@ -950,7 +1106,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-053.png"
+      "image": "/DOV-Calc/equipment-images/equipment-053.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 54,
@@ -969,7 +1128,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-054.png"
+      "image": "/DOV-Calc/equipment-images/equipment-054.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 55,
@@ -988,7 +1150,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-055.png"
+      "image": "/DOV-Calc/equipment-images/equipment-055.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 56,
@@ -1003,7 +1168,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-056.png"
+      "image": "/DOV-Calc/equipment-images/equipment-056.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 57,
@@ -1022,7 +1190,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-057.png"
+      "image": "/DOV-Calc/equipment-images/equipment-057.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 58,
@@ -1041,7 +1212,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-058.png"
+      "image": "/DOV-Calc/equipment-images/equipment-058.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 59,
@@ -1060,7 +1234,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-059.png"
+      "image": "/DOV-Calc/equipment-images/equipment-059.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 60,
@@ -1079,7 +1256,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-060.png"
+      "image": "/DOV-Calc/equipment-images/equipment-060.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 61,
@@ -1098,7 +1278,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-061.png"
+      "image": "/DOV-Calc/equipment-images/equipment-061.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 62,
@@ -1117,7 +1300,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-062.png"
+      "image": "/DOV-Calc/equipment-images/equipment-062.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 63,
@@ -1136,7 +1322,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-063.png"
+      "image": "/DOV-Calc/equipment-images/equipment-063.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 64,
@@ -1151,7 +1340,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-064.png"
+      "image": "/DOV-Calc/equipment-images/equipment-064.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 65,
@@ -1174,7 +1366,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-065.png"
+      "image": "/DOV-Calc/equipment-images/equipment-065.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 66,
@@ -1197,7 +1392,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-066.png"
+      "image": "/DOV-Calc/equipment-images/equipment-066.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 67,
@@ -1216,7 +1414,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-067.png"
+      "image": "/DOV-Calc/equipment-images/equipment-067.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 68,
@@ -1231,7 +1432,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-068.png"
+      "image": "/DOV-Calc/equipment-images/equipment-068.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 69,
@@ -1250,7 +1454,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-069.png"
+      "image": "/DOV-Calc/equipment-images/equipment-069.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 70,
@@ -1273,7 +1480,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-070.png"
+      "image": "/DOV-Calc/equipment-images/equipment-070.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 71,
@@ -1292,7 +1502,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-071.png"
+      "image": "/DOV-Calc/equipment-images/equipment-071.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 72,
@@ -1307,7 +1520,10 @@
           "text": "邮件发放"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-072.png"
+      "image": "/DOV-Calc/equipment-images/equipment-072.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 73,
@@ -1322,7 +1538,10 @@
           "text": "邮件发放"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-073.png"
+      "image": "/DOV-Calc/equipment-images/equipment-073.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 74,
@@ -1337,7 +1556,10 @@
           "text": "邮件发放"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-074.png"
+      "image": "/DOV-Calc/equipment-images/equipment-074.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 75,
@@ -1352,7 +1574,10 @@
           "text": "邮件发放"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-075.png"
+      "image": "/DOV-Calc/equipment-images/equipment-075.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 76,
@@ -1371,7 +1596,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-076.png"
+      "image": "/DOV-Calc/equipment-images/equipment-076.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 77,
@@ -1390,7 +1618,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-077.png"
+      "image": "/DOV-Calc/equipment-images/equipment-077.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 78,
@@ -1405,7 +1636,10 @@
           "text": "付费海域通航证获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-078.png"
+      "image": "/DOV-Calc/equipment-images/equipment-078.png",
+      "color": "#FF0000",
+      "glass": "rgba(255, 0, 0, 0.16)",
+      "border": "rgba(255, 0, 0, 0.38)"
     },
     {
       "id": 79,
@@ -1424,7 +1658,10 @@
           "text": "SSR型装备库密钥Ⅱ"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-079.png"
+      "image": "/DOV-Calc/equipment-images/equipment-079.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 80,
@@ -1443,7 +1680,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-080.png"
+      "image": "/DOV-Calc/equipment-images/equipment-080.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 81,
@@ -1462,7 +1702,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-081.png"
+      "image": "/DOV-Calc/equipment-images/equipment-081.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 82,
@@ -1481,7 +1724,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-082.png"
+      "image": "/DOV-Calc/equipment-images/equipment-082.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 83,
@@ -1496,7 +1742,10 @@
           "text": "遭遇战累计伤害达到750000奖励"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-083.png"
+      "image": "/DOV-Calc/equipment-images/equipment-083.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 84,
@@ -1511,7 +1760,10 @@
           "text": "遭遇战累计伤害达到750000奖励"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-084.png"
+      "image": "/DOV-Calc/equipment-images/equipment-084.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 85,
@@ -1530,7 +1782,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-085.png"
+      "image": "/DOV-Calc/equipment-images/equipment-085.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 86,
@@ -1549,7 +1804,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-086.png"
+      "image": "/DOV-Calc/equipment-images/equipment-086.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 87,
@@ -1564,7 +1822,10 @@
           "text": "新年限时登录活动获取"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-087.png"
+      "image": "/DOV-Calc/equipment-images/equipment-087.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 88,
@@ -1583,7 +1844,10 @@
           "text": "SSR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-088.png"
+      "image": "/DOV-Calc/equipment-images/equipment-088.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 89,
@@ -1606,7 +1870,10 @@
           "text": "[ 补给姬大作战 ] 活动兑换"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-089.png"
+      "image": "/DOV-Calc/equipment-images/equipment-089.png",
+      "color": "#C9A227",
+      "glass": "rgba(201, 162, 39, 0.10)",
+      "border": "rgba(201, 162, 39, 0.28)"
     },
     {
       "id": 90,
@@ -1625,7 +1892,10 @@
           "text": "SR型装备库密钥"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-090.png"
+      "image": "/DOV-Calc/equipment-images/equipment-090.png",
+      "color": "#7030A0",
+      "glass": "rgba(112, 48, 160, 0.16)",
+      "border": "rgba(112, 48, 160, 0.38)"
     },
     {
       "id": 91,
@@ -1640,7 +1910,10 @@
           "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-091.png"
+      "image": "/DOV-Calc/equipment-images/equipment-091.png",
+      "color": "#00B0F0",
+      "glass": "rgba(0, 176, 240, 0.16)",
+      "border": "rgba(0, 176, 240, 0.38)"
     },
     {
       "id": 92,
@@ -1655,7 +1928,10 @@
           "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-092.png"
+      "image": "/DOV-Calc/equipment-images/equipment-092.png",
+      "color": "#00B0F0",
+      "glass": "rgba(0, 176, 240, 0.16)",
+      "border": "rgba(0, 176, 240, 0.38)"
     },
     {
       "id": 93,
@@ -1670,7 +1946,10 @@
           "text": "进阶装备箱（随机），基础装备箱（随机），设备中级箱（随机）"
         }
       ],
-      "image": "/DOV-Calc/equipment-images/equipment-093.png"
+      "image": "/DOV-Calc/equipment-images/equipment-093.png",
+      "color": "#00B0F0",
+      "glass": "rgba(0, 176, 240, 0.16)",
+      "border": "rgba(0, 176, 240, 0.38)"
     }
   ]
 }

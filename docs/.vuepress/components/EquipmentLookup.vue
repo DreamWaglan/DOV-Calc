@@ -56,7 +56,16 @@
     </div>
 
     <div v-if="filteredItems.length" class="equipment-lookup__grid">
-      <article v-for="item in filteredItems" :key="item.id" class="equipment-card">
+      <article
+        v-for="item in filteredItems"
+        :key="item.id"
+        class="equipment-card"
+        :style="{
+          '--equipment-color': item.color,
+          '--equipment-glass': item.glass,
+          '--equipment-border': item.border,
+        }"
+      >
         <figure class="equipment-card__image">
           <img :src="item.image" :alt="item.name" loading="lazy" />
         </figure>
@@ -266,10 +275,22 @@ function toggleCategory(category) {
   display: grid;
   grid-template-columns: 92px minmax(0, 1fr);
   min-height: 164px;
-  border: 1px solid var(--calc-border);
+  border: 1px solid var(--equipment-border);
   border-radius: 8px;
-  background: var(--calc-surface);
+  background:
+    linear-gradient(135deg, var(--equipment-glass), transparent 62%),
+    color-mix(in srgb, var(--calc-surface) 82%, var(--equipment-color) 18%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.38);
   overflow: hidden;
+  position: relative;
+}
+
+.equipment-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 45%);
 }
 
 .equipment-card__image {
@@ -277,9 +298,14 @@ function toggleCategory(category) {
   place-items: center;
   min-height: 100%;
   margin: 0;
-  border-right: 1px solid var(--calc-border);
-  background: var(--calc-surface-soft);
+  border-right: 1px solid var(--equipment-border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), transparent),
+    var(--equipment-glass);
+  backdrop-filter: blur(10px);
   padding: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 .equipment-card__image img {
@@ -294,6 +320,8 @@ function toggleCategory(category) {
   gap: 9px;
   min-width: 0;
   padding: 14px;
+  position: relative;
+  z-index: 1;
 }
 
 .equipment-card__title-row {
@@ -302,7 +330,7 @@ function toggleCategory(category) {
 }
 
 .equipment-card__title-row span {
-  color: var(--c-brand);
+  color: color-mix(in srgb, var(--equipment-color) 62%, var(--c-brand));
   font-size: 12px;
   font-weight: 800;
 }
@@ -331,9 +359,10 @@ function toggleCategory(category) {
   align-items: center;
   min-height: 20px;
   margin-right: 6px;
+  border: 1px solid var(--equipment-border);
   border-radius: 999px;
-  background: var(--calc-surface-soft);
-  color: var(--c-brand);
+  background: var(--equipment-glass);
+  color: color-mix(in srgb, var(--equipment-color) 68%, var(--c-brand));
   font-size: 12px;
   font-weight: 800;
   padding: 0 7px;
