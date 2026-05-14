@@ -34,17 +34,17 @@ jobs:
       - name: 删除依赖
         run: rm -rf node_modules
 
-      - name: 添加批准
-        run: pnpm config set ignore-scripts false
+      # - name: 添加批准
+      #   run: pnpm config set ignore-scripts false
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --ignore-scripts && pnpm approve-builds --all && pnpm install
 
       - name: 安装sass-embedded
         run: pnpm add -D sass-embedded
 
-      - name: 删除批准
-        run: pnpm config set ignore-scripts true
+      # - name: 删除批准
+      #   run: pnpm config set ignore-scripts true
 
       # 运行构建脚本
       - name: 构建 VuePress 站点
