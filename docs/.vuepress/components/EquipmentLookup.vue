@@ -64,6 +64,8 @@
           '--equipment-color': item.color,
           '--equipment-glass': item.glass,
           '--equipment-border': item.border,
+          '--equipment-surface': item.surface,
+          '--equipment-text': item.textColor,
         }"
       >
         <figure class="equipment-card__image">
@@ -279,7 +281,8 @@ function toggleCategory(category) {
   border-radius: 8px;
   background:
     linear-gradient(135deg, var(--equipment-glass), transparent 62%),
-    color-mix(in srgb, var(--calc-surface) 82%, var(--equipment-color) 18%);
+    linear-gradient(0deg, var(--equipment-surface), var(--equipment-surface)),
+    var(--calc-surface);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.38);
   overflow: hidden;
   position: relative;
@@ -330,7 +333,7 @@ function toggleCategory(category) {
 }
 
 .equipment-card__title-row span {
-  color: color-mix(in srgb, var(--equipment-color) 62%, var(--c-brand));
+  color: var(--equipment-text);
   font-size: 12px;
   font-weight: 800;
 }
@@ -362,7 +365,7 @@ function toggleCategory(category) {
   border: 1px solid var(--equipment-border);
   border-radius: 999px;
   background: var(--equipment-glass);
-  color: color-mix(in srgb, var(--equipment-color) 68%, var(--c-brand));
+  color: var(--equipment-text);
   font-size: 12px;
   font-weight: 800;
   padding: 0 7px;

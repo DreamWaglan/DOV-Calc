@@ -41,7 +41,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-001.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 2,
@@ -63,7 +65,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-002.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 3,
@@ -85,7 +89,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-003.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 4,
@@ -107,7 +113,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-004.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 5,
@@ -129,7 +137,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-005.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 6,
@@ -151,7 +161,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-006.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 7,
@@ -169,7 +181,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-007.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 8,
@@ -191,7 +205,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-008.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 9,
@@ -209,7 +225,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-009.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 10,
@@ -231,7 +249,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-010.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 11,
@@ -249,7 +269,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-011.png",
       "color": "#00B0F0",
       "glass": "rgba(0, 176, 240, 0.16)",
-      "border": "rgba(0, 176, 240, 0.38)"
+      "border": "rgba(0, 176, 240, 0.38)",
+      "surface": "rgba(0, 176, 240, 0.075)",
+      "textColor": "rgb(70, 96, 132)"
     },
     {
       "id": 12,
@@ -267,7 +289,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-012.jpeg",
       "color": "#92D050",
       "glass": "rgba(146, 208, 80, 0.16)",
-      "border": "rgba(146, 208, 80, 0.38)"
+      "border": "rgba(146, 208, 80, 0.38)",
+      "surface": "rgba(146, 208, 80, 0.075)",
+      "textColor": "rgb(80, 114, 70)"
     },
     {
       "id": 13,
@@ -285,7 +309,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-013.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 14,
@@ -307,7 +333,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-014.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 15,
@@ -329,7 +357,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-015.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 16,
@@ -351,7 +381,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-016.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 17,
@@ -373,7 +405,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-017.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 18,
@@ -395,7 +429,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-018.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 19,
@@ -417,7 +453,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-019.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 20,
@@ -435,7 +473,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-020.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 21,
@@ -453,7 +493,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-021.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 22,
@@ -471,7 +513,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-022.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 23,
@@ -489,7 +533,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-023.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 24,
@@ -511,7 +557,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-024.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 25,
@@ -533,7 +581,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-025.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 26,
@@ -551,7 +601,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-026.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 27,
@@ -573,7 +625,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-027.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 28,
@@ -595,7 +649,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-028.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 29,
@@ -617,7 +673,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-029.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 30,
@@ -639,7 +697,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-030.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 31,
@@ -657,7 +717,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-031.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 32,
@@ -675,7 +737,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-032.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 33,
@@ -697,7 +761,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-033.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 34,
@@ -719,7 +785,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-034.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 35,
@@ -737,7 +805,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-035.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 36,
@@ -759,7 +829,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-036.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 37,
@@ -777,7 +849,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-037.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 38,
@@ -795,7 +869,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-038.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 39,
@@ -817,7 +893,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-039.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 40,
@@ -835,7 +913,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-040.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 41,
@@ -857,7 +937,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-041.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 42,
@@ -879,7 +961,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-042.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 43,
@@ -897,7 +981,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-043.png",
       "color": "#92D050",
       "glass": "rgba(146, 208, 80, 0.16)",
-      "border": "rgba(146, 208, 80, 0.38)"
+      "border": "rgba(146, 208, 80, 0.38)",
+      "surface": "rgba(146, 208, 80, 0.075)",
+      "textColor": "rgb(80, 114, 70)"
     },
     {
       "id": 44,
@@ -915,7 +1001,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-044.png",
       "color": "#D9E2F3",
       "glass": "rgba(217, 226, 243, 0.16)",
-      "border": "rgba(217, 226, 243, 0.38)"
+      "border": "rgba(217, 226, 243, 0.38)",
+      "surface": "rgba(217, 226, 243, 0.075)",
+      "textColor": "rgb(119, 124, 133)"
     },
     {
       "id": 45,
@@ -933,7 +1021,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-045.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 46,
@@ -955,7 +1045,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-046.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 47,
@@ -977,7 +1069,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-047.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 48,
@@ -999,7 +1093,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-048.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 49,
@@ -1021,7 +1117,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-049.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 50,
@@ -1043,7 +1141,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-050.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 51,
@@ -1069,7 +1169,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-051.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 52,
@@ -1091,7 +1193,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-052.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 53,
@@ -1109,7 +1213,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-053.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 54,
@@ -1131,7 +1237,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-054.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 55,
@@ -1153,7 +1261,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-055.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 56,
@@ -1171,7 +1281,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-056.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 57,
@@ -1193,7 +1305,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-057.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 58,
@@ -1215,7 +1329,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-058.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 59,
@@ -1237,7 +1353,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-059.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 60,
@@ -1259,7 +1377,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-060.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 61,
@@ -1281,7 +1401,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-061.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 62,
@@ -1303,7 +1425,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-062.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 63,
@@ -1325,7 +1449,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-063.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 64,
@@ -1343,7 +1469,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-064.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 65,
@@ -1369,7 +1497,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-065.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 66,
@@ -1395,7 +1525,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-066.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 67,
@@ -1417,7 +1549,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-067.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 68,
@@ -1435,7 +1569,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-068.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 69,
@@ -1457,7 +1593,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-069.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 70,
@@ -1483,7 +1621,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-070.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 71,
@@ -1505,7 +1645,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-071.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 72,
@@ -1523,7 +1665,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-072.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 73,
@@ -1541,7 +1685,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-073.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 74,
@@ -1559,7 +1705,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-074.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 75,
@@ -1577,7 +1725,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-075.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 76,
@@ -1599,7 +1749,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-076.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 77,
@@ -1621,7 +1773,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-077.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 78,
@@ -1639,7 +1793,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-078.png",
       "color": "#FF0000",
       "glass": "rgba(255, 0, 0, 0.16)",
-      "border": "rgba(255, 0, 0, 0.38)"
+      "border": "rgba(255, 0, 0, 0.38)",
+      "surface": "rgba(255, 0, 0, 0.075)",
+      "textColor": "rgb(140, 70, 70)"
     },
     {
       "id": 79,
@@ -1661,7 +1817,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-079.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 80,
@@ -1683,7 +1841,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-080.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 81,
@@ -1705,7 +1865,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-081.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 82,
@@ -1727,7 +1889,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-082.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 83,
@@ -1745,7 +1909,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-083.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 84,
@@ -1763,7 +1929,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-084.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 85,
@@ -1785,7 +1953,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-085.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 86,
@@ -1807,7 +1977,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-086.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 87,
@@ -1825,7 +1997,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-087.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 88,
@@ -1847,7 +2021,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-088.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 89,
@@ -1873,7 +2049,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-089.png",
       "color": "#C9A227",
       "glass": "rgba(201, 162, 39, 0.10)",
-      "border": "rgba(201, 162, 39, 0.28)"
+      "border": "rgba(201, 162, 39, 0.28)",
+      "surface": "rgba(201, 162, 39, 0.045)",
+      "textColor": "rgb(110, 89, 70)"
     },
     {
       "id": 90,
@@ -1895,7 +2073,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-090.png",
       "color": "#7030A0",
       "glass": "rgba(112, 48, 160, 0.16)",
-      "border": "rgba(112, 48, 160, 0.38)"
+      "border": "rgba(112, 48, 160, 0.38)",
+      "surface": "rgba(112, 48, 160, 0.075)",
+      "textColor": "rgb(70, 70, 88)"
     },
     {
       "id": 91,
@@ -1913,7 +2093,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-091.png",
       "color": "#00B0F0",
       "glass": "rgba(0, 176, 240, 0.16)",
-      "border": "rgba(0, 176, 240, 0.38)"
+      "border": "rgba(0, 176, 240, 0.38)",
+      "surface": "rgba(0, 176, 240, 0.075)",
+      "textColor": "rgb(70, 96, 132)"
     },
     {
       "id": 92,
@@ -1931,7 +2113,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-092.png",
       "color": "#00B0F0",
       "glass": "rgba(0, 176, 240, 0.16)",
-      "border": "rgba(0, 176, 240, 0.38)"
+      "border": "rgba(0, 176, 240, 0.38)",
+      "surface": "rgba(0, 176, 240, 0.075)",
+      "textColor": "rgb(70, 96, 132)"
     },
     {
       "id": 93,
@@ -1949,7 +2133,9 @@
       "image": "/DOV-Calc/equipment-images/equipment-093.png",
       "color": "#00B0F0",
       "glass": "rgba(0, 176, 240, 0.16)",
-      "border": "rgba(0, 176, 240, 0.38)"
+      "border": "rgba(0, 176, 240, 0.38)",
+      "surface": "rgba(0, 176, 240, 0.075)",
+      "textColor": "rgb(70, 96, 132)"
     }
   ]
 }
