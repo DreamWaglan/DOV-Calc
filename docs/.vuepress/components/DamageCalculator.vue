@@ -65,7 +65,8 @@
         <section class="damage-calculator__formula">
           <h3>公式算法</h3>
           <ol>
-            <li>攻击力 = 航空值 + 轰炸 + 鱼雷 + 炮击</li>
+            <li>基础攻击力 = 航空值 + 轰炸 + 鱼雷 + 炮击</li>
+            <li>攻击力 = 基础攻击力 × (1 + 技能攻击力加成)</li>
             <li>基础伤害 = 攻击力 × 技能倍率 × 防御衰减 × 暴击伤害修正 × 弹种修正 × 增伤修正 × 减伤修正 × 等级修正</li>
             <li>暴击期望 = 暴击率 × 基础伤害 + 未暴击率 × 基础伤害 / 暴击伤害修正</li>
             <li>最终期望伤害 = 命中率 × 暴击期望</li>
@@ -77,7 +78,9 @@
 </template>
 
 <script setup>
-import { computed, reactive } from 'vue'
+import { computed, onMounted, reactive, watch } from 'vue'
+
+const STORAGE_KEY = 'dov-calc:damage-calculator:v1'
 
 const defaults = {
   aviation: 1274,
@@ -93,6 +96,8 @@ const defaults = {
   critDamage: 1.4,
   ammoModifier: 1.4,
   damageReduction: 1.1,
+  skillAttackBonus: 0,
+  skillDamageBonus: 0,
   favorBonus: 0.2,
   talentBonus: 0,
   flagshipBonus: 0,
@@ -111,6 +116,14 @@ const defaults = {
 
 const values = reactive({ ...defaults })
 
+onMounted(() => {
+  Object.assign(values, getStoredValues())
+})
+
+watch(values, () => {
+  persistValues()
+}, { deep: true })
+
 const statFields = [
   { key: 'aviation', label: '航空值' },
   { key: 'bombing', label: '轰炸' },
@@ -121,13 +134,15 @@ const statFields = [
   { key: 'allyLevel', label: '我方等级' },
   { key: 'enemyLevel', label: '敌方等级' },
   { key: 'skillMultiplier', label: '技能倍率' },
-  { key: 'defense', label: '防御力' },
+  { key: 'defense', label: '敌方防御力' },
 ]
 
 const modifierFields = [
   { key: 'critDamage', label: '暴击伤害修正' },
   { key: 'ammoModifier', label: '弹种修正' },
   { key: 'damageReduction', label: '减伤修正' },
+  { key: 'skillAttackBonus', label: '技能攻击力加成' },
+  { key: 'skillDamageBonus', label: '技能增伤' },
   { key: 'favorBonus', label: '好感增伤' },
   { key: 'talentBonus', label: '天赋增伤' },
   { key: 'flagshipBonus', label: '旗舰增伤' },
@@ -147,14 +162,17 @@ const rateFields = [
   { key: 'enemyDodgeRate', label: '敌方闪避率' },
 ]
 
-const attackPower = computed(() => (
+const baseAttackPower = computed(() => (
   read('aviation') + read('bombing') + read('torpedo') + read('shelling')
 ))
+
+const attackPower = computed(() => baseAttackPower.value * (1 + read('skillAttackBonus')))
 
 const damageBonus = computed(() => (
   1
   + read('favorBonus')
   + read('talentBonus')
+  + read('skillDamageBonus')
   + read('flagshipBonus')
   + read('reconBonus')
   + read('nagatoBonus')
@@ -205,6 +223,7 @@ const finalHitRate = computed(() => (
 const finalDamage = computed(() => finalHitRate.value * critExpectedDamage.value)
 
 const resultItems = computed(() => [
+  { label: '基础攻击力', value: formatNumber(baseAttackPower.value) },
   { label: '攻击力', value: formatNumber(attackPower.value) },
   { label: '增伤修正', value: formatMultiplier(damageBonus.value) },
   { label: '防御衰减', value: formatPercent(defenseModifier.value) },
@@ -224,6 +243,44 @@ function read(key) {
 
 function resetValues() {
   Object.assign(values, defaults)
+}
+
+function getStoredValues() {
+  if (typeof window === 'undefined') {
+    return {}
+  }
+
+  try {
+    const saved = window.localStorage.getItem(STORAGE_KEY)
+    if (!saved) {
+      return {}
+    }
+
+    const parsed = JSON.parse(saved)
+    return Object.fromEntries(
+      Object.keys(defaults)
+        .filter((key) => Number.isFinite(Number(parsed[key])))
+        .map((key) => [key, Number(parsed[key])])
+    )
+  } catch {
+    return {}
+  }
+}
+
+function persistValues() {
+  if (typeof window === 'undefined') {
+    return
+  }
+
+  try {
+    const snapshot = Object.fromEntries(
+      Object.keys(defaults).map((key) => [key, read(key)])
+    )
+
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot))
+  } catch {
+    // Ignore storage failures so calculation remains usable.
+  }
 }
 
 function formatNumber(value) {

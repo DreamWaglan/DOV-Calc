@@ -8,6 +8,6 @@ import EquipmentLookup from '../.vuepress/components/EquipmentLookup.vue'
 
 # 装备速查
 
-数据来自 `拂晓：胜利之刻-装备速查表`，由`叶秋痕`制作提供。
+数据来自 `拂晓：胜利之刻-装备速查表`，由`叶秋今天下班没`制作提供。
 
 <EquipmentLookup />
