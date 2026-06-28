@@ -1,17 +1,27 @@
 :root {
   --c-brand: #1f6feb;
   --c-brand-light: #388bfd;
-  --calc-surface: #ffffff;
-  --calc-surface-soft: #f6f8fa;
-  --calc-border: #d8dee4;
-  --calc-text-muted: #57606a;
+  color-scheme: light;
+  --calc-accent: var(--c-brand);
+  --calc-surface: var(--vp-c-bg, #ffffff);
+  --calc-surface-soft: var(--vp-c-bg-alt, #f6f8fa);
+  --calc-border: var(--vp-c-divider, #d8dee4);
+  --calc-text: var(--vp-c-text, #24292f);
+  --calc-text-muted: var(--vp-c-text-mute, #57606a);
 }
 
-html.dark {
-  --calc-surface: #161b22;
-  --calc-surface-soft: #0d1117;
-  --calc-border: #30363d;
-  --calc-text-muted: #8b949e;
+html.dark,
+html[data-theme='dark'],
+body.dark,
+body[data-theme='dark'],
+.dark,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --calc-surface: var(--vp-c-bg, #161b22);
+  --calc-surface-soft: var(--vp-c-bg-alt, #0d1117);
+  --calc-border: var(--vp-c-divider, #30363d);
+  --calc-text: var(--vp-c-text, #e6edf3);
+  --calc-text-muted: var(--vp-c-text-mute, #8b949e);
 }
 
 .home-hero {
@@ -72,6 +82,7 @@ html.dark {
   border: 1px solid var(--calc-border);
   border-radius: 8px;
   background: var(--calc-surface);
+  color: var(--calc-text);
 }
 
 .home-hero__panel {

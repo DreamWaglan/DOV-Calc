@@ -150,6 +150,7 @@ function toggleCategory(category) {
   border: 1px solid var(--calc-border);
   border-radius: 8px;
   background: var(--calc-surface);
+  color: var(--calc-text);
   overflow: hidden;
 }
 
@@ -225,9 +226,25 @@ function toggleCategory(category) {
   border: 1px solid var(--calc-border);
   border-radius: 6px;
   background: var(--calc-surface);
-  color: inherit;
+  color: var(--calc-text);
   font: inherit;
   padding: 0 10px;
+  color-scheme: light;
+}
+
+.equipment-lookup select option {
+  background: var(--calc-surface);
+  color: var(--calc-text);
+}
+
+.equipment-lookup select option:checked {
+  background: color-mix(in srgb, var(--c-brand) 34%, var(--calc-surface));
+  color: var(--calc-text);
+}
+
+.equipment-lookup input::placeholder {
+  color: var(--calc-text-muted);
+  opacity: 0.72;
 }
 
 .equipment-lookup input:focus,
@@ -236,12 +253,21 @@ function toggleCategory(category) {
   outline: 2px solid color-mix(in srgb, var(--c-brand) 22%, transparent);
 }
 
+:global(html.dark .equipment-lookup select),
+:global(html[data-theme='dark'] .equipment-lookup select),
+:global(body.dark .equipment-lookup select),
+:global(body[data-theme='dark'] .equipment-lookup select),
+:global(.dark .equipment-lookup select),
+:global([data-theme='dark'] .equipment-lookup select) {
+  color-scheme: dark;
+}
+
 .equipment-lookup button {
   min-height: 38px;
   border: 1px solid var(--calc-border);
   border-radius: 6px;
   background: var(--calc-surface);
-  color: inherit;
+  color: var(--calc-text);
   cursor: pointer;
   font-weight: 700;
   padding: 0 12px;
@@ -283,6 +309,7 @@ function toggleCategory(category) {
     linear-gradient(135deg, var(--equipment-glass), transparent 62%),
     linear-gradient(0deg, var(--equipment-surface), var(--equipment-surface)),
     var(--calc-surface);
+  color: var(--calc-text);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.38);
   overflow: hidden;
   position: relative;
@@ -333,12 +360,13 @@ function toggleCategory(category) {
 }
 
 .equipment-card__title-row span {
-  color: var(--equipment-text);
+  color: color-mix(in srgb, var(--equipment-color) 65%, var(--calc-text));
   font-size: 12px;
   font-weight: 800;
 }
 
 .equipment-card__title-row strong {
+  color: var(--calc-text);
   font-size: 16px;
   line-height: 1.35;
 }
@@ -365,10 +393,74 @@ function toggleCategory(category) {
   border: 1px solid var(--equipment-border);
   border-radius: 999px;
   background: var(--equipment-glass);
-  color: var(--equipment-text);
+  color: color-mix(in srgb, var(--equipment-color) 65%, var(--calc-text));
   font-size: 12px;
   font-weight: 800;
   padding: 0 7px;
+}
+
+:global(html.dark .equipment-card),
+:global(html[data-theme='dark'] .equipment-card),
+:global(body.dark .equipment-card),
+:global(body[data-theme='dark'] .equipment-card),
+:global(.dark .equipment-card),
+:global([data-theme='dark'] .equipment-card) {
+  --equipment-glass: color-mix(in srgb, var(--equipment-color) 20%, transparent);
+  --equipment-border: color-mix(in srgb, var(--equipment-color) 40%, var(--calc-border));
+  --equipment-surface: color-mix(in srgb, var(--equipment-color) 10%, var(--calc-surface));
+  --equipment-text: color-mix(in srgb, var(--equipment-color) 55%, #f0f6fc);
+  border-color: color-mix(in srgb, var(--equipment-color) 40%, var(--calc-border));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--equipment-color) 18%, transparent), transparent 62%),
+    linear-gradient(0deg, color-mix(in srgb, var(--equipment-color) 10%, var(--calc-surface)), color-mix(in srgb, var(--equipment-color) 10%, var(--calc-surface))),
+    var(--calc-surface);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+:global(html.dark .equipment-card::before),
+:global(html[data-theme='dark'] .equipment-card::before),
+:global(body.dark .equipment-card::before),
+:global(body[data-theme='dark'] .equipment-card::before),
+:global(.dark .equipment-card::before),
+:global([data-theme='dark'] .equipment-card::before) {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 48%);
+}
+
+:global(html.dark .equipment-card__image),
+:global(html[data-theme='dark'] .equipment-card__image),
+:global(body.dark .equipment-card__image),
+:global(body[data-theme='dark'] .equipment-card__image),
+:global(.dark .equipment-card__image),
+:global([data-theme='dark'] .equipment-card__image) {
+  border-right-color: color-mix(in srgb, var(--equipment-color) 40%, var(--calc-border));
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent),
+    color-mix(in srgb, var(--equipment-color) 16%, var(--calc-surface-soft));
+}
+
+:global(html.dark .equipment-card__title-row span),
+:global(html.dark .equipment-card__channels span),
+:global(html[data-theme='dark'] .equipment-card__title-row span),
+:global(html[data-theme='dark'] .equipment-card__channels span),
+:global(body.dark .equipment-card__title-row span),
+:global(body.dark .equipment-card__channels span),
+:global(body[data-theme='dark'] .equipment-card__title-row span),
+:global(body[data-theme='dark'] .equipment-card__channels span),
+:global(.dark .equipment-card__title-row span),
+:global(.dark .equipment-card__channels span),
+:global([data-theme='dark'] .equipment-card__title-row span),
+:global([data-theme='dark'] .equipment-card__channels span) {
+  color: color-mix(in srgb, var(--equipment-color) 45%, #f0f6fc);
+}
+
+:global(html.dark .equipment-card__channels span),
+:global(html[data-theme='dark'] .equipment-card__channels span),
+:global(body.dark .equipment-card__channels span),
+:global(body[data-theme='dark'] .equipment-card__channels span),
+:global(.dark .equipment-card__channels span),
+:global([data-theme='dark'] .equipment-card__channels span) {
+  border-color: color-mix(in srgb, var(--equipment-color) 40%, var(--calc-border));
+  background: color-mix(in srgb, var(--equipment-color) 20%, transparent);
 }
 
 .equipment-lookup__empty {
