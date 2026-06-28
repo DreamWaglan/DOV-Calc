@@ -1,13 +1,9 @@
 <template>
   <section class="damage-calculator" aria-labelledby="damage-calculator-title">
     <header class="damage-calculator__header">
-      <div>
-        <h2 id="damage-calculator-title">伤害计算器</h2>
-        <p>对齐 2026.6.25 伤害构成说明，专注单次期望伤害计算。</p>
-      </div>
       <div class="damage-calculator__source">
-        <span>公式来源</span>
-        <strong>小强之王（与当前页面参数对齐）</strong>
+        <span>计算公式来源：</span>
+        <strong>小强之王</strong>
       </div>
     </header>
 
@@ -93,8 +89,14 @@
           </div>
         </section>
 
-        <button class="damage-calculator__reset" type="button" @click="resetValues">
-          恢复示例值
+        <button
+          class="damage-calculator__reset"
+          :class="{ 'is-selected': resetFeedback }"
+          :aria-pressed="resetFeedback"
+          type="button"
+          @click="resetValues"
+        >
+          {{ resetFeedback ? '已恢复示例值' : '恢复示例值' }}
         </button>
       </form>
 
@@ -123,8 +125,7 @@
             <li>单次期望 = 命中率 × (暴击率 × 暴击伤害 + (1-暴击率) × 未暴击伤害 + 技能实数伤害)</li>
           </ol>
           <ul>
-            <li>索敌与制空分别判定；索敌相等时按同航生效。</li>
-            <li>索敌伤害修正仅作用于炮击、雷击；制空伤害修正仅作用于航空、轰炸机、鱼雷机；两者命中修正同时生效。</li>
+            <li>索敌伤害修正作用于炮击、雷击；制空伤害修正作用于航空、轰炸机、鱼雷机；两者命中修正同时生效。</li>
             <li>技能倍率按百分比输入，例如 700 表示 7 倍。</li>
           </ul>
         </section>
@@ -134,7 +135,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted, reactive, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue'
 
 const STORAGE_KEY = 'dov-calc:damage-calculator:v5'
 
@@ -209,6 +210,8 @@ const validFormationValues = new Set(formationOptions.map((item) => item.value))
 const stringStorageKeys = new Set(['damageType', 'formation'])
 
 const values = reactive({ ...defaults })
+const resetFeedback = ref(false)
+let resetFeedbackTimer
 
 const attackByType = {
   shelling: (read) => read('shelling'),
@@ -283,6 +286,10 @@ const typeIsCombat = (type) => formationByType[type]?.group === 'combat'
 const defaultsSnapshot = { ...defaults }
 onMounted(() => {
   Object.assign(values, getStoredValues())
+})
+
+onBeforeUnmount(() => {
+  window.clearTimeout(resetFeedbackTimer)
 })
 
 watch(
@@ -540,6 +547,11 @@ function read(key) {
 
 function resetValues() {
   Object.assign(values, defaultsSnapshot)
+  resetFeedback.value = true
+  window.clearTimeout(resetFeedbackTimer)
+  resetFeedbackTimer = window.setTimeout(() => {
+    resetFeedback.value = false
+  }, 1200)
 }
 
 function getStoredValues() {
@@ -813,7 +825,37 @@ function formatMultiplier(value) {
   border-radius: 999px;
   background: transparent;
   color: var(--calc-text);
+  cursor: pointer;
+  font-weight: 700;
   padding: 8px 14px;
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+}
+
+.damage-calculator__reset:hover,
+.damage-calculator__reset:focus-visible {
+  border-color: var(--calc-accent);
+  color: var(--calc-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--c-brand) 16%, transparent);
+}
+
+.damage-calculator__reset:focus-visible {
+  outline: none;
+}
+
+.damage-calculator__reset:active {
+  transform: translateY(1px);
+}
+
+.damage-calculator__reset.is-selected {
+  border-color: var(--calc-accent);
+  background: var(--calc-accent);
+  color: #ffffff;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-brand) 18%, transparent);
 }
 
 .damage-calculator__results {
