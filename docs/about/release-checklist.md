@@ -92,6 +92,8 @@ node scripts/release/validate-release-manifest.mjs --require-tagged
 
 严格校验必须确认标签存在并指向当前 HEAD。候选清单中的 `deploymentState: not-verified` 只表示尚未验证线上状态，不能作为部署成功证据。
 
+`tagged` 是源码、构建产物和标签一致性的状态，不是线上发布状态。只有 GitHub Pages 部署完成并保存本节所列上线检查结果后，维护人员才能把版本登记为“线上已验证”。
+
 ## 四、GitHub Pages 上线后检查
 
 发布工作流完成后，应直接访问线上站点执行下列检查：

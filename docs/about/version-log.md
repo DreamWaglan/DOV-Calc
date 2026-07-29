@@ -30,6 +30,12 @@ related: [about-sources, about-contributing, site-build-record]
 
 # 版本日志
 
+## 2026-07-29：阶段 6 架构演进决策
+
+- 新增 ADR-001，依据 33 个页面、60 条中文查询、93 条公开装备数据、单一编辑者和单一游戏版本记录平台选择。
+- 当前继续使用 VitePress、本地搜索和 Git 评审。
+- 为 Pagefind、Algolia、MediaWiki 与 Headless CMS 规定量化触发条件；未达到条件时不得提前扩张架构。
+
 ## 2026-07-29：阶段 5 发布与回滚准备
 
 - 新增发布清单、维护手册和回滚流程。
@@ -39,9 +45,9 @@ related: [about-sources, about-contributing, site-build-record]
 
 当前状态：
 
-- 候选标签为 `wiki-v1.0.0`。
-- 当前工作树仍处于整合状态，因此只能生成 `WORKTREE / candidate` 记录。
-- GitHub Pages 部署、正式标签和线上检查尚未执行，不能标记为正式发布。
+- 本地正式标签 `wiki-v1.0.0` 已创建并指向提交 `fe3370e`。
+- 标签后的发布清单记录为 `COMMIT / tagged`，215 个构建文件已通过回滚哈希复核。
+- GitHub Pages 线上部署与上线后检查尚未执行；`tagged` 只表示源码与构建标签已验证，不表示线上状态已验证。
 
 ## 2026-07-29：阶段 4 进阶内容与工具
 

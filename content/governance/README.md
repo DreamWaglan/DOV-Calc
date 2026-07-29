@@ -48,4 +48,3 @@ pnpm validate:stage0
 4. 装备基线记录数、主键、图片和版本均已取证。
 5. 伤害计算器至少具有五个可复算黄金用例，并记录现有 localStorage 契约。
 6. `pnpm validate:stage0` 通过。
-

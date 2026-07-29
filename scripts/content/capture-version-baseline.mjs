@@ -67,4 +67,3 @@ const baseline = {
 await mkdir(path.dirname(outputPath), { recursive: true })
 await writeFile(outputPath, `${JSON.stringify(baseline, null, 2)}\n`, 'utf8')
 console.log(`Version baseline written: ${outputPath}.`)
-
