@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-e2d43eca15b2",
+  "source": {
+    "fileName": "9 拉古兹专题.docx",
+    "sha256": "97a088849ec65b217b6ae45b9aee623bf045f0ffea9ab7b2bebbc3a7dd063b62",
+    "bytes": 24429217,
+    "uncompressedBytes": 24756231
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 184,
+    "headings": 0,
+    "tables": 0,
+    "drawings": 37,
+    "media": 37,
+    "footnotes": 0,
+    "footnotesPresent": false,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/advanced/laguz/review.md",
+      "sha256": "dabac23e10b41e3155add3ba77a141d0db6b2b4f516512429a957f6c202109b4",
+      "bytes": 22752
+    },
+    "quarantine": {
+      "path": "content/imports/docx/advanced/laguz/quarantine.json",
+      "sha256": "e04b6d44d81315b7743269db98718a3c904a24aaa6170a6d5f2069b7c09c22d0",
+      "bytes": 577
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 37,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 37,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    }
+  ]
+}

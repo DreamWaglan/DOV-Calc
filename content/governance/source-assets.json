@@ -1,0 +1,1358 @@
+{
+  "schemaVersion": 1,
+  "entrySchema": "../schemas/source-asset.schema.json",
+  "generatedAt": "2026-07-29T07:43:35.924Z",
+  "sourceRoot": {
+    "alias": "fuxiao-handbook-integrated",
+    "path": "F:\\Visual Studio Project\\Project_Test\\拂晓手册"
+  },
+  "expectedAssetCount": 29,
+  "assetCount": 29,
+  "totalSizeBytes": 237270452,
+  "totalsByKind": {
+    "docx": 13,
+    "xlsx": 1,
+    "image": 15
+  },
+  "governanceDefaults": {
+    "permission": "pending",
+    "publicRelease": false,
+    "rule": "默认不公开；只有 owned 或 authorized 资产完成证据登记后才可进入公开构建。"
+  },
+  "assets": [
+    {
+      "id": "src-90f788a9def4",
+      "title": "0 拂晓手册企划书.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 23017,
+      "modifiedAt": "2026-07-21T17:57:51.016Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "0 拂晓手册企划书.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "c19d7b642ec3b070924ea8046a099742f83ebd9631b8c2f5282b9577a4f39388"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.916Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-9ac6e41a613e",
+      "title": "1 前言.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 72754,
+      "modifiedAt": "2026-07-22T07:16:00.444Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "1 前言/1 前言.docx",
+        "updatedAt": "2026-07-22"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "73e75e4b885aa94aac736ce3fbf29681ba34e8669b6c2ee89a07e49cf50166c5"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.918Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-ea0b63d069bf",
+      "title": "2 游戏简介.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 66203,
+      "modifiedAt": "2026-07-21T03:01:14.312Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "2 游戏简介/2 游戏简介.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "bdd6379d3a635181cfb2630b4766a1ee47abf165ed87b5c78f894cfa5037bb56"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.919Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-842246bdb075",
+      "title": "3 萌新入坑攻略.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 2446625,
+      "modifiedAt": "2026-07-21T03:15:49.927Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "3 萌新入坑攻略/3 萌新入坑攻略.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "2bddd2d49db26b7342236feac4df679336a7dd786cb8192468be62f2f3a3ea08"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.931Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-20f9c608ccbe",
+      "title": "1-性能优化小开关教程260107.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 546620,
+      "modifiedAt": "2026-07-18T13:08:49.929Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/1-性能优化小开关教程260107.png",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "535de403c141b97771f29bba8c8ec60422f246396f5e196a67d31517dbc25c00"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.934Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-ec1754535996",
+      "title": "2-拂晓新手入门思维导图 v2.4 260720.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 5972619,
+      "modifiedAt": "2026-07-20T12:36:24.394Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/2-拂晓新手入门思维导图 v2.4 260720.png",
+        "updatedAt": "2026-07-20"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "f1bdd7e39067db6db0f510c5694a36d8896ab7cc2dc904be397bf9c9808b6993"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.959Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-a82171ad36dd",
+      "title": "3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 4190247,
+      "modifiedAt": "2026-07-21T13:53:01.295Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "294f579ae5b489c772e145e1efdf48b15adc64ab428ab6977cf1a4fe362627f1"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:34.978Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-3f75f2339e43",
+      "title": "4-萌新入门配装推荐260718.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 8607901,
+      "modifiedAt": "2026-07-18T12:49:00.486Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/4-萌新入门配装推荐260718.png",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "ed1d5a6d4a0b6d45a34434ce86ff767c7cf04e3ce683f6c473e7b0499733ddae"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.016Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-8862e9c4e1c0",
+      "title": "5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 7418130,
+      "modifiedAt": "2026-07-12T04:13:08.248Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
+        "updatedAt": "2026-07-12"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "884bc9486a8a63ccabfd34e20ba61c5ee831fbbc31cb26190a98f41b031afd42"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.046Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-a7efaec86736",
+      "title": "6-阵容分析推荐260129.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 2779945,
+      "modifiedAt": "2026-07-18T13:02:34.154Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/6-阵容分析推荐260129.png",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "fe260315400a1839cc669d46c81beb065bcda84d6eec8800c4262dc38e23c043"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.057Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-4c3487e1f8f7",
+      "title": "7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 4369780,
+      "modifiedAt": "2026-05-12T13:09:07.392Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png",
+        "updatedAt": "2026-05-12"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "7dd6f9a1428a9948869e1a315375dd4048973b65f66a30404ed5adfc620fbc77"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.073Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-fc56c0350c73",
+      "title": "8-PVP天赋表260721.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 3879209,
+      "modifiedAt": "2026-07-21T13:53:15.228Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/8-PVP天赋表260721.png",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "10737fce25469ecf55b4ada1905d3839a25eaf5c23a59c7676b9122b657dc9cc"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.089Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-e3a32a586e5b",
+      "title": "拂晓舰灵改造优先级2.0.3.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 5201274,
+      "modifiedAt": "2026-07-29T05:16:46.460Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/拂晓舰灵改造优先级2.0.3.png",
+        "updatedAt": "2026-07-29"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "c192b79ad535f1f921bf1cac4152e94fedd9f87a2bc4e96e00e42d50a0b84aec"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.110Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-08ba2d32a9ff",
+      "title": "拂晓剧情榜260720.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 5052575,
+      "modifiedAt": "2026-07-19T10:50:06.700Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/拂晓剧情榜260720.png",
+        "updatedAt": "2026-07-19"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "62b82364129ca54a281afd72901f7bbd9278a5204a01f73342725af34c8464a0"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.130Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-2d59aac1ac45",
+      "title": "舰灵面板数值计算公式251226.jpg",
+      "extension": ".jpg",
+      "assetType": "image",
+      "sizeBytes": 3658187,
+      "modifiedAt": "2026-07-18T13:14:12.145Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/舰灵面板数值计算公式251226.jpg",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "7357da369ec13670dcecfe36fa6d0ca7f6c4c7db6b5c52e5e17ba84c64962ae6"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.145Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-65d25a94c550",
+      "title": "主副炮循环装填数值表251201.png",
+      "extension": ".png",
+      "assetType": "image",
+      "sizeBytes": 8488392,
+      "modifiedAt": "2026-07-18T13:05:17.445Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/主副炮循环装填数值表251201.png",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "f1814a96a6a2a89da8dcc4ef65453a502d2a445fdfd713690ed4e108a466cdd7"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.177Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-0dc5d6791056",
+      "title": "咨询问答表P1.jpg",
+      "extension": ".jpg",
+      "assetType": "image",
+      "sizeBytes": 336427,
+      "modifiedAt": "2026-07-18T13:10:01.053Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P1.jpg",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "18fe18ef54ce799215c4fbb44922665d79320169cd184b19e4e2bfac496e4282"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.179Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-1157c5077c1f",
+      "title": "咨询问答表P2.jpg",
+      "extension": ".jpg",
+      "assetType": "image",
+      "sizeBytes": 239781,
+      "modifiedAt": "2026-07-18T13:10:09.781Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P2.jpg",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "f120c4bc3edb1fb699e0aa8ff19dc334916e23338ecceeb1a810d6653d73b967"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.180Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-b8f7a77d5f36",
+      "title": "咨询问答表P3.jpg",
+      "extension": ".jpg",
+      "assetType": "image",
+      "sizeBytes": 182938,
+      "modifiedAt": "2026-07-18T13:10:17.774Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P3.jpg",
+        "updatedAt": "2026-07-18"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "03ce2087edf07aed545c12e783ca46ca89c45d9399183a27fa1aa06f49712a02"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.181Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-6eba63c4aa7b",
+      "title": "6.1 练级百科.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 26078361,
+      "modifiedAt": "2026-07-21T03:43:06.458Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "6 主题攻略-基础玩法篇/6.1 练级百科.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "dd1d956df3b8c74d5bf94fe337d89b5a44504c9b95abc139c43cceb8156d7ba6"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.289Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-d47e51aa8321",
+      "title": "6.2 给萌新的活动推图攻略食用指南.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 5579793,
+      "modifiedAt": "2026-07-21T11:51:25.970Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "6 主题攻略-基础玩法篇/6.2 给萌新的活动推图攻略食用指南.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "045b74a8fe13d8bdd8bc12fa09748d0660e23e8bda99c1a4b5ab0949f763ed53"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.314Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-94e76e4522b1",
+      "title": "6.3 给萌新的PVE配队思路.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 614134,
+      "modifiedAt": "2026-07-21T03:43:54.403Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "6 主题攻略-基础玩法篇/6.3 给萌新的PVE配队思路.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "7320dd4b3912b7788a04efefe8bbee4397cf78e875b913ab2f5c87f8bdb2dc49"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.317Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-7d080e8d651b",
+      "title": "7.1 争锋竞技场简易百科.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 15169625,
+      "modifiedAt": "2026-07-21T16:23:58.425Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "7 主题攻略-进阶玩法篇/7.1 争锋竞技场简易百科.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "408c9234c25adf368c917952d8aa97a6755fe94f8464e7c003bd9bb8b683d41d"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.384Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-d35e870ffcd7",
+      "title": "7.2 遭遇战攻略.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 12168980,
+      "modifiedAt": "2026-07-21T03:43:56.546Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "7 主题攻略-进阶玩法篇/7.2 遭遇战攻略.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "f81c24042a1b006dcf7a39e137ceaacf7f6a1b98db538b006a8b4e529851fc45"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.445Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-51475ba227c9",
+      "title": "7.3 无尽海域配队思路.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 8176717,
+      "modifiedAt": "2026-07-17T12:54:04.908Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "7 主题攻略-进阶玩法篇/7.3 无尽海域配队思路.docx",
+        "updatedAt": "2026-07-17"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "18651c31684239957a3e147706ddf100e0db81fc8cfb82728c8f796f6acea323"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.481Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-c8852cf69a7b",
+      "title": "8.1 拂晓伤害计算构成.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 79964898,
+      "modifiedAt": "2026-07-21T11:54:44.331Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "8 主题攻略-伤害计算篇/8.1 拂晓伤害计算构成.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "e08ebb072134accc8f3315fc4f17ea0e16026ce1efca781c816840a8472e73e6"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.805Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-0c5b7db892f6",
+      "title": "8.2 拂晓舰灵普攻倍率cd.xlsx",
+      "extension": ".xlsx",
+      "assetType": "xlsx",
+      "sizeBytes": 34230,
+      "modifiedAt": "2026-07-21T05:29:55.162Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "8 主题攻略-伤害计算篇/8.2 拂晓舰灵普攻倍率cd.xlsx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.806Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-e2d43eca15b2",
+      "title": "9 拉古兹专题.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 24429217,
+      "modifiedAt": "2026-07-21T03:24:01.221Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "9 主题攻略-拉古兹专题/9 拉古兹专题.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "97a088849ec65b217b6ae45b9aee623bf045f0ffea9ab7b2bebbc3a7dd063b62"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.918Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    },
+    {
+      "id": "src-6d7a8eecd6bb",
+      "title": "拂晓手册WORD文档格式套用模板.docx",
+      "extension": ".docx",
+      "assetType": "docx",
+      "sizeBytes": 1521873,
+      "modifiedAt": "2026-07-21T02:57:53.072Z",
+      "sourceTier": "unclassified",
+      "origin": {
+        "sourceType": "local-file",
+        "sourceRootAlias": "fuxiao-handbook-integrated",
+        "path": "拂晓手册WORD文档格式套用模板.docx",
+        "updatedAt": "2026-07-21"
+      },
+      "permission": "pending",
+      "status": "needs-review",
+      "owners": [
+        {
+          "name": "待指派",
+          "role": "内容保管责任角色"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "待指派",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "待指派",
+          "role": "事实审核人"
+        }
+      ],
+      "hashes": {
+        "sha256": "e7dee0c0489e3501e823f573097218fcc73e8445101a4276680601bd1872abde"
+      },
+      "publicRelease": {
+        "body": false,
+        "asset": false,
+        "searchIndex": false,
+        "sitemap": false,
+        "mode": "blocked",
+        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+      },
+      "importedAt": "2026-07-29T07:43:35.924Z",
+      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+    }
+  ]
+}

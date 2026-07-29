@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "fixtureVersion": "2026.07-stage5-v1",
+  "generatedAt": "2026-07-29T00:00:00+08:00",
+  "reviewer": "DOV-Calc 内容与质量组（匿名汇总）",
+  "commitSha": "WORKTREE",
+  "locale": "zh-CN",
+  "freezePolicy": "冻结后只新增失败样本或修正明显标注错误，不删除失败查询来提高分数。",
+  "sourceMixTarget": {
+    "manual-content": 0.4,
+    "public-community": 0.3,
+    "editorial-task": 0.3
+  },
+  "thresholds": {
+    "topFiveRatePercent": 90,
+    "exactTopOneRatePercent": 100
+  },
+  "queries": [
+    {
+      "id": "SQ-001",
+      "query": "拂晓手册",
+      "targetPageIds": ["site-home"],
+      "queryClass": "alias",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/index.md#拂晓手册与工具箱"
+    },
+    {
+      "id": "SQ-002",
+      "query": "这是什么游戏",
+      "targetPageIds": ["start-game-introduction"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/game-introduction.md#这是什么游戏"
+    },
+    {
+      "id": "SQ-003",
+      "query": "即时海战",
+      "targetPageIds": ["start-game-introduction"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/game-introduction.md"
+    },
+    {
+      "id": "SQ-004",
+      "query": "新手路线",
+      "targetPageIds": ["start-index"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/index.md#新手路线"
+    },
+    {
+      "id": "SQ-005",
+      "query": "阅读前说明",
+      "targetPageIds": ["start-preface"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/preface.md#阅读前说明"
+    },
+    {
+      "id": "SQ-006",
+      "query": "入坑第一周行动指南",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/first-week.md#入坑第一周行动指南"
+    },
+    {
+      "id": "SQ-007",
+      "query": "第一周主力队",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/first-week.md#目标二组出一支能推进的主力队"
+    },
+    {
+      "id": "SQ-008",
+      "query": "练级与资源投入",
+      "targetPageIds": ["progression-leveling"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/progression/leveling.md#练级与资源投入"
+    },
+    {
+      "id": "SQ-009",
+      "query": "满编与低耗",
+      "targetPageIds": ["progression-leveling"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/progression/leveling.md#满编与低耗怎么选"
+    },
+    {
+      "id": "SQ-010",
+      "query": "活动推图方法",
+      "targetPageIds": ["combat-event-maps"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/event-maps.md#活动推图方法"
+    },
+    {
+      "id": "SQ-011",
+      "query": "地图条件",
+      "targetPageIds": ["combat-event-maps"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/event-maps.md#第二步读地图条件"
+    },
+    {
+      "id": "SQ-012",
+      "query": "PVE 配队方法",
+      "targetPageIds": ["combat-pve-team-building"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pve-team-building.md#PVE-配队方法"
+    },
+    {
+      "id": "SQ-013",
+      "query": "队伍职责",
+      "targetPageIds": ["combat-pve-team-building"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pve-team-building.md#给每个位置分配职责"
+    },
+    {
+      "id": "SQ-014",
+      "query": "战斗攻略",
+      "targetPageIds": ["combat-index"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/index.md#战斗攻略"
+    },
+    {
+      "id": "SQ-015",
+      "query": "争锋竞技入门",
+      "targetPageIds": ["combat-pvp-arena"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pvp-arena.md#争锋竞技入门"
+    },
+    {
+      "id": "SQ-016",
+      "query": "遭遇战作战方法",
+      "targetPageIds": ["combat-encounter"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/encounter.md#遭遇战作战方法"
+    },
+    {
+      "id": "SQ-017",
+      "query": "无尽海域配队方法",
+      "targetPageIds": ["combat-endless-sea"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/endless-sea.md#无尽海域配队方法"
+    },
+    {
+      "id": "SQ-018",
+      "query": "伤害模型与计算边界",
+      "targetPageIds": ["mechanics-damage-model"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/mechanics/damage-model.md#伤害模型与计算边界"
+    },
+    {
+      "id": "SQ-019",
+      "query": "伤害计算器",
+      "targetPageIds": ["tool-damage-calculator"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/tools/dov-basic.md#伤害计算器"
+    },
+    {
+      "id": "SQ-020",
+      "query": "装备速查",
+      "targetPageIds": ["tool-equipment-lookup"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/tools/equipment-lookup.md#装备速查"
+    },
+    {
+      "id": "SQ-021",
+      "query": "普攻倍率与 CD 数据状态",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attack-cd.md#普攻倍率与-CD-数据状态"
+    },
+    {
+      "id": "SQ-022",
+      "query": "新手配装速查",
+      "targetPageIds": ["topic-beginner-equipment"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/topics/beginner-equipment.md#新手配装速查"
+    },
+    {
+      "id": "SQ-023",
+      "query": "PVE 选人速查",
+      "targetPageIds": ["topic-pve-selection"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/topics/pve-selection.md#PVE-选人速查"
+    },
+    {
+      "id": "SQ-024",
+      "query": "拉古兹专题",
+      "targetPageIds": ["topic-laguz"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/topics/laguz.md#拉古兹专题"
+    },
+    {
+      "id": "SQ-025",
+      "query": "拂晓胜利之刻",
+      "targetPageIds": ["start-game-introduction"],
+      "queryClass": "formal-name",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/all-info"
+    },
+    {
+      "id": "SQ-026",
+      "query": "拂曉：勝利之刻",
+      "targetPageIds": ["start-game-introduction"],
+      "queryClass": "traditional-name",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://play.google.com/store/apps/details?id=com.csoft.warship2"
+    },
+    {
+      "id": "SQ-027",
+      "query": "新人开荒",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "alias",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-028",
+      "query": "新手开荒攻略",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-029",
+      "query": "活动攻略",
+      "targetPageIds": ["combat-event-maps"],
+      "queryClass": "abbreviation",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-030",
+      "query": "PVE阵容",
+      "targetPageIds": ["combat-pve-team-building"],
+      "queryClass": "abbreviation",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-031",
+      "query": "争锋竞技场",
+      "targetPageIds": ["combat-pvp-arena"],
+      "queryClass": "entity-alias",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/761520672294830578"
+    },
+    {
+      "id": "SQ-032",
+      "query": "争锋竟技场",
+      "targetPageIds": ["combat-pvp-arena"],
+      "queryClass": "common-typo",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/761520672294830578"
+    },
+    {
+      "id": "SQ-033",
+      "query": "竞技场赛季",
+      "targetPageIds": ["combat-pvp-arena"],
+      "queryClass": "version-term",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/789204941532039374"
+    },
+    {
+      "id": "SQ-034",
+      "query": "遭遇战总伤害",
+      "targetPageIds": ["combat-encounter"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/785198236783609748"
+    },
+    {
+      "id": "SQ-035",
+      "query": "遭遇站攻略",
+      "targetPageIds": ["combat-encounter"],
+      "queryClass": "common-typo",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/785198236783609748"
+    },
+    {
+      "id": "SQ-036",
+      "query": "无尽海域",
+      "targetPageIds": ["combat-endless-sea"],
+      "queryClass": "unique-entity",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/698399.html"
+    },
+    {
+      "id": "SQ-037",
+      "query": "无限海域",
+      "targetPageIds": ["combat-endless-sea"],
+      "queryClass": "common-typo",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/moment/827221385901247851"
+    },
+    {
+      "id": "SQ-038",
+      "query": "拉古斯",
+      "targetPageIds": ["topic-laguz"],
+      "queryClass": "common-typo",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/686809.html"
+    },
+    {
+      "id": "SQ-039",
+      "query": "Laguz",
+      "targetPageIds": ["topic-laguz"],
+      "queryClass": "latin-alias",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/686809.html"
+    },
+    {
+      "id": "SQ-040",
+      "query": "舰灵普攻CD",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "abbreviation",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/152032.html"
+    },
+    {
+      "id": "SQ-041",
+      "query": "普攻倍率",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/610002.html"
+    },
+    {
+      "id": "SQ-042",
+      "query": "装备查询",
+      "targetPageIds": ["tool-equipment-lookup"],
+      "queryClass": "alias",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-043",
+      "query": "刚入坑先做什么",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#new-player-start"
+    },
+    {
+      "id": "SQ-044",
+      "query": "第一天怎么玩",
+      "targetPageIds": ["start-first-week"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#first-day"
+    },
+    {
+      "id": "SQ-045",
+      "query": "每日登录清单",
+      "targetPageIds": ["topic-new-player-checklist"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#daily-checklist"
+    },
+    {
+      "id": "SQ-046",
+      "query": "卡关怎么配队",
+      "targetPageIds": ["combat-pve-team-building"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#blocked-team"
+    },
+    {
+      "id": "SQ-047",
+      "query": "推图卡住怎么办",
+      "targetPageIds": ["combat-event-maps"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#event-map-blocked"
+    },
+    {
+      "id": "SQ-048",
+      "query": "练船去哪里",
+      "targetPageIds": ["progression-leveling"],
+      "queryClass": "alias",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#leveling-location"
+    },
+    {
+      "id": "SQ-049",
+      "query": "满编还是低耗",
+      "targetPageIds": ["progression-leveling"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#full-or-low-cost"
+    },
+    {
+      "id": "SQ-050",
+      "query": "先养谁",
+      "targetPageIds": ["topic-pve-selection"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#who-to-build"
+    },
+    {
+      "id": "SQ-051",
+      "query": "新手怎么选船",
+      "targetPageIds": ["topic-pve-selection"],
+      "queryClass": "alias",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#choose-character"
+    },
+    {
+      "id": "SQ-052",
+      "query": "装备怎么配",
+      "targetPageIds": ["topic-beginner-equipment"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#equipment-build"
+    },
+    {
+      "id": "SQ-053",
+      "query": "毕业装与过渡装",
+      "targetPageIds": ["topic-beginner-equipment"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#endgame-vs-transition"
+    },
+    {
+      "id": "SQ-054",
+      "query": "怎么算伤害",
+      "targetPageIds": ["tool-damage-calculator"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#calculate-damage"
+    },
+    {
+      "id": "SQ-055",
+      "query": "伤害公式靠谱吗",
+      "targetPageIds": ["mechanics-damage-model"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#formula-boundary"
+    },
+    {
+      "id": "SQ-056",
+      "query": "暴击减伤怎么算",
+      "targetPageIds": ["mechanics-damage-model"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#critical-reduction"
+    },
+    {
+      "id": "SQ-057",
+      "query": "多队不能重复角色",
+      "targetPageIds": ["combat-encounter"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#multi-team-lock"
+    },
+    {
+      "id": "SQ-058",
+      "query": "无尽模拟战",
+      "targetPageIds": ["combat-endless-sea"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#endless-simulation"
+    },
+    {
+      "id": "SQ-059",
+      "query": "BOX不够怎么打无尽",
+      "targetPageIds": ["combat-endless-sea"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#endless-box"
+    },
+    {
+      "id": "SQ-060",
+      "query": "旧装备数据还能用吗",
+      "targetPageIds": ["tool-equipment-lookup"],
+      "queryClass": "version-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#stale-equipment-data"
+    }
+  ],
+  "noResultQueries": [
+    {
+      "id": "SQ-N001",
+      "query": "账号找回流程",
+      "sourceRef": "editorial-task-catalog:v1#unsupported-account"
+    },
+    {
+      "id": "SQ-N002",
+      "query": "安卓闪退修复",
+      "sourceRef": "editorial-task-catalog:v1#unsupported-client"
+    },
+    {
+      "id": "SQ-N003",
+      "query": "充值退款进度",
+      "sourceRef": "editorial-task-catalog:v1#unsupported-payment"
+    },
+    {
+      "id": "SQ-N004",
+      "query": "剧情语音下载",
+      "sourceRef": "editorial-task-catalog:v1#unsupported-media"
+    }
+  ]
+}

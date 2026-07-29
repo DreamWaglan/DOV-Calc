@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-9ac6e41a613e",
+  "source": {
+    "fileName": "1 前言.docx",
+    "sha256": "73e75e4b885aa94aac736ce3fbf29681ba34e8669b6c2ee89a07e49cf50166c5",
+    "bytes": 72754,
+    "uncompressedBytes": 299408
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 36,
+    "headings": 0,
+    "tables": 0,
+    "drawings": 0,
+    "media": 0,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/core/preface/review.md",
+      "sha256": "cf70abc190af8d3ec2fe5dae4423ad94563d2b9faf48c6c2317521810e11ac2b",
+      "bytes": 7454
+    },
+    "quarantine": {
+      "path": "content/imports/docx/core/preface/quarantine.json",
+      "sha256": "f6f0e74f66c6f40d9a3646549cb1fbbcd7e5897fb2b844ecb96aac5e3e2c2042",
+      "bytes": 353
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

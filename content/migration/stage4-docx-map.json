@@ -1,0 +1,972 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T00:00:00.000Z",
+  "source": "content/imports/docx",
+  "assets": [
+    {
+      "assetId": "src-7d080e8d651b",
+      "sourceFileName": "7.1 争锋竞技场简易百科.docx",
+      "importDir": "arena",
+      "hash": "408c9234c25adf368c917952d8aa97a6755fe94f8464e7c003bd9bb8b683d41d",
+      "counts": {
+        "paragraphs": 451,
+        "headings": 79,
+        "tables": 82,
+        "drawings": 490,
+        "media": 119,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "一、综合篇"
+        },
+        {
+          "level": 2,
+          "title": "（一）入门"
+        },
+        {
+          "level": 2,
+          "title": "（二）参数/公式相关"
+        },
+        {
+          "level": 3,
+          "title": "索敌/制空判定"
+        },
+        {
+          "level": 4,
+          "title": "①索敌判定"
+        },
+        {
+          "level": 4,
+          "title": "②制空判定"
+        },
+        {
+          "level": 4,
+          "title": "小结："
+        },
+        {
+          "level": 2,
+          "title": "增伤和减伤"
+        },
+        {
+          "level": 2,
+          "title": "局内外加成"
+        },
+        {
+          "level": 2,
+          "title": "弹种克制"
+        },
+        {
+          "level": 2,
+          "title": "幸运值"
+        },
+        {
+          "level": 2,
+          "title": "命中与机动"
+        },
+        {
+          "level": 2,
+          "title": "伤害计算公式"
+        },
+        {
+          "level": 3,
+          "title": "①对空伤害"
+        },
+        {
+          "level": 3,
+          "title": "②注意乘区"
+        },
+        {
+          "level": 3,
+          "title": "③攻击力的计算"
+        },
+        {
+          "level": 4,
+          "title": "（）炮击/雷击攻击力："
+        },
+        {
+          "level": 4,
+          "title": "（）航空攻击力："
+        },
+        {
+          "level": 3,
+          "title": "④伤害计算公式（简化）"
+        },
+        {
+          "level": 2,
+          "title": "装填"
+        },
+        {
+          "level": 2,
+          "title": "（三）站位"
+        },
+        {
+          "level": 2,
+          "title": "（四）舰灵天赋"
+        },
+        {
+          "level": 2,
+          "title": "（五）舰灵装备"
+        },
+        {
+          "level": 2,
+          "title": "（六）信物"
+        },
+        {
+          "level": 2,
+          "title": "（七）阵型"
+        },
+        {
+          "level": 2,
+          "title": "（八）赛季天气"
+        },
+        {
+          "level": 2,
+          "title": "（九）通用法则"
+        },
+        {
+          "level": 1,
+          "title": "二、争锋竞技场简介"
+        },
+        {
+          "level": 2,
+          "title": "（一）争锋机制介绍"
+        },
+        {
+          "level": 2,
+          "title": "（二）争锋编队构成与配装简介"
+        },
+        {
+          "level": 3,
+          "title": "小船场"
+        },
+        {
+          "level": 4,
+          "title": "①驱逐"
+        },
+        {
+          "level": 4,
+          "title": "②补给（女灶神）"
+        },
+        {
+          "level": 4,
+          "title": "③水母（镇海）"
+        },
+        {
+          "level": 3,
+          "title": "中船场"
+        },
+        {
+          "level": 4,
+          "title": "①轻母"
+        },
+        {
+          "level": 4,
+          "title": "②轻巡"
+        },
+        {
+          "level": 4,
+          "title": "③重巡"
+        },
+        {
+          "level": 4,
+          "title": "④重炮（刚需高命中）"
+        },
+        {
+          "level": 4,
+          "title": "⑤雷巡"
+        },
+        {
+          "level": 3,
+          "title": "大船场"
+        },
+        {
+          "level": 4,
+          "title": "①战列，战巡（CD长单发炮弹，需要高命中）"
+        },
+        {
+          "level": 4,
+          "title": "②装母，航母"
+        },
+        {
+          "level": 4,
+          "title": "③航战"
+        },
+        {
+          "level": 1,
+          "title": "三、参考阵容推荐"
+        },
+        {
+          "level": 2,
+          "title": "（一）金场"
+        },
+        {
+          "level": 3,
+          "title": "金小船"
+        },
+        {
+          "level": 4,
+          "title": "①优选同航阵容（全马桶）"
+        },
+        {
+          "level": 3,
+          "title": "金中船"
+        },
+        {
+          "level": 4,
+          "title": "①凤栖队"
+        },
+        {
+          "level": 4,
+          "title": "②高索敌T优队"
+        },
+        {
+          "level": 4,
+          "title": "③单轻母"
+        },
+        {
+          "level": 4,
+          "title": "④三轻利根队（欧根旗）"
+        },
+        {
+          "level": 4,
+          "title": "⑤零轻母炮击队"
+        },
+        {
+          "level": 4,
+          "title": "⑦大淀滑板雷击队（纯娱乐）"
+        },
+        {
+          "level": 3,
+          "title": "金大船"
+        },
+        {
+          "level": 4,
+          "title": "①VV旗"
+        },
+        {
+          "level": 4,
+          "title": "②墩旗"
+        },
+        {
+          "level": 4,
+          "title": "③前卫旗"
+        },
+        {
+          "level": 4,
+          "title": "④英队"
+        }
+      ],
+      "suggestedPageId": "combat-pvp-arena",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 490,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 119,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "permission": "pending",
+      "publishable": false
+    },
+    {
+      "assetId": "src-d35e870ffcd7",
+      "sourceFileName": "7.2 遭遇战攻略.docx",
+      "importDir": "advanced/encounter",
+      "hash": "f81c24042a1b006dcf7a39e137ceaacf7f6a1b98db538b006a8b4e529851fc45",
+      "counts": {
+        "paragraphs": 340,
+        "headings": 41,
+        "tables": 17,
+        "drawings": 69,
+        "media": 58,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "遭遇战是什么"
+        },
+        {
+          "level": 1,
+          "title": "遭遇战赛前备战"
+        },
+        {
+          "level": 2,
+          "title": "BOSS甲种与吨位（或者说排水量）"
+        },
+        {
+          "level": 2,
+          "title": "舰灵选择"
+        },
+        {
+          "level": 3,
+          "title": "（一）顶分配队"
+        },
+        {
+          "level": 3,
+          "title": "（二）其他可选舰灵"
+        },
+        {
+          "level": 2,
+          "title": "装备选择"
+        },
+        {
+          "level": 3,
+          "title": "（一）命中雷达"
+        },
+        {
+          "level": 3,
+          "title": "（二）轰炸航母"
+        },
+        {
+          "level": 4,
+          "title": "战斗机："
+        },
+        {
+          "level": 4,
+          "title": "轰炸机："
+        },
+        {
+          "level": 4,
+          "title": "鱼雷机："
+        },
+        {
+          "level": 4,
+          "title": "设备位："
+        },
+        {
+          "level": 3,
+          "title": "（三）穿甲战列"
+        },
+        {
+          "level": 4,
+          "title": "主炮："
+        },
+        {
+          "level": 4,
+          "title": "副炮："
+        },
+        {
+          "level": 4,
+          "title": "防空炮："
+        },
+        {
+          "level": 4,
+          "title": "设备："
+        },
+        {
+          "level": 3,
+          "title": "（四）鱼雷航母"
+        },
+        {
+          "level": 4,
+          "title": "战斗机："
+        },
+        {
+          "level": 4,
+          "title": "轰炸机："
+        },
+        {
+          "level": 4,
+          "title": "鱼雷机："
+        },
+        {
+          "level": 4,
+          "title": "设备："
+        },
+        {
+          "level": 3,
+          "title": "（五）雷巡"
+        },
+        {
+          "level": 4,
+          "title": "主炮："
+        },
+        {
+          "level": 4,
+          "title": "鱼雷："
+        },
+        {
+          "level": 4,
+          "title": "防空炮："
+        },
+        {
+          "level": 4,
+          "title": "设备："
+        },
+        {
+          "level": 3,
+          "title": "（六）高爆战列"
+        },
+        {
+          "level": 4,
+          "title": "主炮："
+        },
+        {
+          "level": 4,
+          "title": "副炮："
+        },
+        {
+          "level": 4,
+          "title": "防空炮："
+        },
+        {
+          "level": 4,
+          "title": "设备："
+        },
+        {
+          "level": 2,
+          "title": "天赋选择"
+        },
+        {
+          "level": 2,
+          "title": "技能学习"
+        },
+        {
+          "level": 2,
+          "title": "核心舰灵操作"
+        },
+        {
+          "level": 2,
+          "title": "冲分排轴"
+        },
+        {
+          "level": 1,
+          "title": "遭遇战冲分实操"
+        },
+        {
+          "level": 1,
+          "title": "结语"
+        },
+        {
+          "level": 1,
+          "title": "附录：现有实际轴"
+        },
+        {
+          "level": 1,
+          "title": "参考文献："
+        }
+      ],
+      "suggestedPageId": "combat-encounter",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 69,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 58,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "permission": "pending",
+      "publishable": false
+    },
+    {
+      "assetId": "src-51475ba227c9",
+      "sourceFileName": "7.3 无尽海域配队思路.docx",
+      "importDir": "advanced/endless-sea",
+      "hash": "18651c31684239957a3e147706ddf100e0db81fc8cfb82728c8f796f6acea323",
+      "counts": {
+        "paragraphs": 155,
+        "headings": 28,
+        "tables": 1,
+        "drawings": 13,
+        "media": 13,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "一、入场须知"
+        },
+        {
+          "level": 2,
+          "title": "（一）玩法介绍"
+        },
+        {
+          "level": 2,
+          "title": "（二）玩法奖励"
+        },
+        {
+          "level": 2,
+          "title": "（三）重要技巧"
+        },
+        {
+          "level": 1,
+          "title": "二、知识储备——拂晓PVE机制大学习"
+        },
+        {
+          "level": 2,
+          "title": "（一）构建舰灵技能的模组化认知"
+        },
+        {
+          "level": 2,
+          "title": "（二）转变运用模组的思路：从“占模”到并重"
+        },
+        {
+          "level": 2,
+          "title": "（三）甲弹克制"
+        },
+        {
+          "level": 2,
+          "title": "（四）射程、锁定与技能自动释放"
+        },
+        {
+          "level": 2,
+          "title": "（五）重要敌舰模组"
+        },
+        {
+          "level": 2,
+          "title": "（六）如何提升伤害"
+        },
+        {
+          "level": 2,
+          "title": "（七）如何规避伤害"
+        },
+        {
+          "level": 1,
+          "title": "三、配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（一）无尽海域一般敌舰配置"
+        },
+        {
+          "level": 2,
+          "title": "（二）无尽海域奖励与难度评价"
+        },
+        {
+          "level": 2,
+          "title": "（三）萌新配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（四）老登配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（五）典型配队与模组介绍"
+        },
+        {
+          "level": 3,
+          "title": "、、的侧重生存典型配队"
+        },
+        {
+          "level": 3,
+          "title": "、、的侧重输出典型配队"
+        },
+        {
+          "level": 3,
+          "title": "的典型配队之雷巡队"
+        },
+        {
+          "level": 3,
+          "title": "的典型配队之穿甲大炮队"
+        },
+        {
+          "level": 3,
+          "title": "5.60+清杂的典型配队之中国前排"
+        },
+        {
+          "level": 3,
+          "title": "6.60+清杂的典型配队之逸仙带队"
+        },
+        {
+          "level": 3,
+          "title": "7.60+清杂的典型配队之光辉带队"
+        },
+        {
+          "level": 3,
+          "title": "、的典型配队之雷巡队"
+        },
+        {
+          "level": 3,
+          "title": "、的典型配队之大小Z1队"
+        },
+        {
+          "level": 2,
+          "title": "（六）高难配队思路总结"
+        }
+      ],
+      "suggestedPageId": "combat-endless-sea",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 13,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 13,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "permission": "pending",
+      "publishable": false
+    },
+    {
+      "assetId": "src-c8852cf69a7b",
+      "sourceFileName": "8.1 拂晓伤害计算构成.docx",
+      "importDir": "advanced/damage-calculation",
+      "hash": "e08ebb072134accc8f3315fc4f17ea0e16026ce1efca781c816840a8472e73e6",
+      "counts": {
+        "paragraphs": 624,
+        "headings": 86,
+        "tables": 49,
+        "drawings": 222,
+        "media": 223,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 24,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "伤害公式"
+        },
+        {
+          "level": 1,
+          "title": "技能实数伤害（hp damage）："
+        },
+        {
+          "level": 1,
+          "title": "攻击力："
+        },
+        {
+          "level": 2,
+          "title": "1.1 攻击力是什么"
+        },
+        {
+          "level": 2,
+          "title": "1.2 影响因素"
+        },
+        {
+          "level": 3,
+          "title": "1.2.1 舰种"
+        },
+        {
+          "level": 3,
+          "title": "1.2.2 等级与星级"
+        },
+        {
+          "level": 3,
+          "title": "1.2.3 强化等级"
+        },
+        {
+          "level": 3,
+          "title": "1.2. 天赋"
+        },
+        {
+          "level": 3,
+          "title": "1.2. 羁绊"
+        },
+        {
+          "level": 3,
+          "title": "1.2. 装备"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.1 驱逐主炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.2 轻巡副炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.3 重巡副炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.4 战列副炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.5 轻巡主炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.6 高对空轻巡炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.7 重巡主炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.8 战列主炮"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.9 鱼雷"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.10 战斗机"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.11 轰炸机"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.12 鱼雷机"
+        },
+        {
+          "level": 4,
+          "title": "1.2.6.13 侦察机"
+        },
+        {
+          "level": 3,
+          "title": "1.2.7 技能与旗舰"
+        },
+        {
+          "level": 1,
+          "title": "防御力："
+        },
+        {
+          "level": 2,
+          "title": "2.1 防御力是什么"
+        },
+        {
+          "level": 2,
+          "title": "2.2 影响因素"
+        },
+        {
+          "level": 3,
+          "title": "2.2.1 PVE数值"
+        },
+        {
+          "level": 3,
+          "title": "2.2.2 PVP数值"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.1 天赋"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.2 等级与星级"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.3 装备"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.4 技能与旗舰"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.5 强化等级"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.6 舰种"
+        },
+        {
+          "level": 4,
+          "title": "2.2.2.7 羁绊"
+        },
+        {
+          "level": 1,
+          "title": "倍率区："
+        },
+        {
+          "level": 2,
+          "title": "3.1 什么是倍率"
+        },
+        {
+          "level": 2,
+          "title": "3.2 影响因素"
+        },
+        {
+          "level": 1,
+          "title": "暴击伤害修正"
+        },
+        {
+          "level": 2,
+          "title": "什么是暴击伤害修正"
+        },
+        {
+          "level": 2,
+          "title": "4.2 影响因素"
+        },
+        {
+          "level": 1,
+          "title": "弹种修正"
+        },
+        {
+          "level": 2,
+          "title": "5.1 高爆弹点燃"
+        },
+        {
+          "level": 2,
+          "title": "5.2 穿甲弹击穿判定"
+        },
+        {
+          "level": 1,
+          "title": "增伤修正"
+        },
+        {
+          "level": 2,
+          "title": ".1 好感增伤"
+        },
+        {
+          "level": 2,
+          "title": ".2 天赋增伤"
+        },
+        {
+          "level": 2,
+          "title": ".3 羁绊增伤"
+        },
+        {
+          "level": 2,
+          "title": ".4 索敌/制空增伤"
+        },
+        {
+          "level": 2,
+          "title": ".5 阵型增伤"
+        },
+        {
+          "level": 3,
+          "title": ".5.1 单纵阵"
+        },
+        {
+          "level": 3,
+          "title": ".5.2 轮型阵"
+        },
+        {
+          "level": 3,
+          "title": ".5.3 梯形阵"
+        },
+        {
+          "level": 2,
+          "title": ".6 旗舰增伤"
+        },
+        {
+          "level": 2,
+          "title": ".7 装备增伤"
+        },
+        {
+          "level": 2,
+          "title": ".8 拉古兹增伤"
+        },
+        {
+          "level": 1,
+          "title": "减伤修正"
+        },
+        {
+          "level": 1,
+          "title": "等级压制"
+        }
+      ],
+      "suggestedPageId": "mechanics-damage-model",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 222,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 223,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        },
+        {
+          "kind": "formulas",
+          "count": 24,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Office math objects were detected and require manual conversion review."
+        }
+      ],
+      "permission": "pending",
+      "publishable": false
+    },
+    {
+      "assetId": "src-e2d43eca15b2",
+      "sourceFileName": "9 拉古兹专题.docx",
+      "importDir": "advanced/laguz",
+      "hash": "97a088849ec65b217b6ae45b9aee623bf045f0ffea9ab7b2bebbc3a7dd063b62",
+      "counts": {
+        "paragraphs": 184,
+        "headings": 0,
+        "tables": 0,
+        "drawings": 37,
+        "media": 37,
+        "footnotes": 0,
+        "footnotesPresent": false,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [],
+      "suggestedPageId": "topic-laguz",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 37,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 37,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        }
+      ],
+      "permission": "pending",
+      "publishable": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-ea0b63d069bf",
+  "source": {
+    "fileName": "2 游戏简介.docx",
+    "sha256": "bdd6379d3a635181cfb2630b4766a1ee47abf165ed87b5c78f894cfa5037bb56",
+    "bytes": 66203,
+    "uncompressedBytes": 277147
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 6,
+    "headings": 0,
+    "tables": 0,
+    "drawings": 0,
+    "media": 0,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/core/game-intro/review.md",
+      "sha256": "a799aab392af8f1c402a1d5e2d10bd9a9c004bc68069144fd065de7f28524e29",
+      "bytes": 1015
+    },
+    "quarantine": {
+      "path": "content/imports/docx/core/game-intro/quarantine.json",
+      "sha256": "2f5b752c4572cd8e7cf411e3ce834b7071c350bceeef2d5dedf35331f81ac3ee",
+      "bytes": 353
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

@@ -1,67 +1,102 @@
 name: docs
 
 on:
-  # 每当 push 到 main 分支时触发部署
   push:
     branches: [main]
-  # 手动触发部署
+  pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  docs:
+  build:
     runs-on: ubuntu-latest
+    env:
+      DOCS_BASE: /DOV-Calc/
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
-      - name: 设置 pnpm
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 11.1.1
-            
 
-      - name: 设置 Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          # 选择要使用的 node 版本
-          node-version: 24.15.0
-          # 缓存 pnpm 依赖
+          node-version: 22
           cache: pnpm
 
-      - name: 删除依赖
-        run: rm -rf node_modules
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      # - name: 添加批准
-      #   run: pnpm config set ignore-scripts false
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: 安装依赖
-        run: pnpm install --ignore-scripts && pnpm approve-builds --all && pnpm install
+      - name: Validate stage 0 content
+        run: pnpm validate:stage0
 
-      - name: 安装sass-embedded
-        run: pnpm add -D sass-embedded
+      - name: Validate VitePress migration
+        run: pnpm validate:stage1
 
-      # - name: 删除批准
-      #   run: pnpm config set ignore-scripts true
+      - name: Run repository tests
+        run: pnpm test
 
-      # 运行构建脚本
-      - name: 构建 VuePress 站点
+      - name: Build docs
         run: pnpm docs:build
 
+      - name: Verify root and project base builds
+        run: pnpm test:base
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
-      - name: 部署到 GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Verify built Chinese search
+        run: pnpm test:search-built
+
+      - name: Run desktop and mobile end-to-end smoke
+        run: pnpm test:e2e
+
+      - name: Run mobile Lighthouse budgets
+        run: pnpm test:perf
+
+      - name: Create and validate release candidate manifest
+        run: |
+          pnpm release:manifest
+          node scripts/release/validate-release-manifest.mjs
+          pnpm release:rollback
+          pnpm validate:stage5
+
+      - name: Upload content quality reports
+        uses: actions/upload-artifact@v4
         with:
-          # 部署到 gh-pages 分支
-          target_branch: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: docs/.vuepress/dist
-        env:
-          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: content-quality-reports
+          path: |
+            content/reports
+            content/release
 
-            
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

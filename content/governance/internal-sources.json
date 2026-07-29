@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "site-information-architecture",
+      "title": "DOV-Calc 站点信息架构",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": true,
+        "asset": false
+      },
+      "evidence": "仓库内原创站点结构与导航"
+    },
+    {
+      "id": "site-tool-catalog",
+      "title": "DOV-Calc 现有工具目录",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": true,
+        "asset": false
+      },
+      "evidence": "仓库内既有工具入口"
+    },
+    {
+      "id": "tool-damage-calculator-source",
+      "title": "伤害计算器既有实现与黄金基线",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": true,
+        "asset": false
+      },
+      "evidence": "仓库既有源码与 tests/fixtures/damage-calculator-golden.json"
+    },
+    {
+      "id": "tool-equipment-lookup-source",
+      "title": "仓库既有装备速查数据集",
+      "sourceType": "dataset",
+      "permission": "authorized",
+      "publicUse": {
+        "body": true,
+        "asset": true
+      },
+      "evidence": "由仓库所有者提供并限定为既有公开工具的迁移保留；数据漂移仍受 version-baselines.json 阻断最新版本声明"
+    },
+    {
+      "id": "site-maintenance-record",
+      "title": "DOV-Calc 站点维护记录",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": true,
+        "asset": false
+      },
+      "evidence": "仓库内构建配置、提交历史与维护说明"
+    },
+    {
+      "id": "stage3-editorial-synthesis",
+      "title": "阶段 3 新手路径编辑稿",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": true,
+        "asset": false
+      },
+      "evidence": "基于公开可核验来源重新组织的原创页面结构、检查清单与版本提示；未复制待授权源文件正文或图片"
+    },
+    {
+      "id": "site-owned-generated-asset",
+      "title": "站点自有生成资源",
+      "sourceType": "internal",
+      "permission": "owned",
+      "publicUse": {
+        "body": false,
+        "asset": true
+      },
+      "evidence": "由仓库内代码直接生成或维护的社交分享卡与站点爬虫策略，不包含第三方素材"
+    }
+  ]
+}

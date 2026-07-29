@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-0c5b7db892f6",
+  "source": {
+    "fileName": "8.2 拂晓舰灵普攻倍率cd.xlsx",
+    "sha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379"
+  },
+  "permission": "pending",
+  "publishable": false,
+  "applicableVersion": "2026-07",
+  "verifiedAt": "2026-07-29",
+  "worksheetCount": 7,
+  "worksheetSummaries": [
+    {
+      "worksheet": "驱逐",
+      "rowCount": 51,
+      "dataRows": 50,
+      "fieldCount": 8,
+      "headerRows": 1,
+      "noteRows": 0
+    },
+    {
+      "worksheet": "轻巡雷巡",
+      "rowCount": 42,
+      "dataRows": 38,
+      "fieldCount": 8,
+      "headerRows": 2,
+      "noteRows": 0
+    },
+    {
+      "worksheet": "重巡",
+      "rowCount": 27,
+      "dataRows": 26,
+      "fieldCount": 8,
+      "headerRows": 1,
+      "noteRows": 0
+    },
+    {
+      "worksheet": "战列战巡重炮",
+      "rowCount": 49,
+      "dataRows": 43,
+      "fieldCount": 10,
+      "headerRows": 2,
+      "noteRows": 0
+    },
+    {
+      "worksheet": "轻母",
+      "rowCount": 20,
+      "dataRows": 18,
+      "fieldCount": 7,
+      "headerRows": 1,
+      "noteRows": 1
+    },
+    {
+      "worksheet": "航母装母",
+      "rowCount": 51,
+      "dataRows": 44,
+      "fieldCount": 8,
+      "headerRows": 1,
+      "noteRows": 1
+    },
+    {
+      "worksheet": "航战水母",
+      "rowCount": 11,
+      "dataRows": 6,
+      "fieldCount": 5,
+      "headerRows": 2,
+      "noteRows": 0
+    }
+  ],
+  "totalRecords": 225,
+  "outputs": {
+    "records": {
+      "path": "content/imports/xlsx/basic-attack/records.json",
+      "sha256": "b78567fecffce8dca4c9b7c966874a863b35cbdbcad72355cae7c9158abdc491",
+      "bytes": 152937
+    },
+    "review": {
+      "path": "content/imports/xlsx/basic-attack/review.md",
+      "sha256": "06f70057f84ae7056070c70ae14ebffed74f51a17d91f214d39dd83defa05b88",
+      "bytes": 866
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "errors": []
+  }
+}

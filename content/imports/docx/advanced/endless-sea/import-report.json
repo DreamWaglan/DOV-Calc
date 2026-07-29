@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-51475ba227c9",
+  "source": {
+    "fileName": "7.3 无尽海域配队思路.docx",
+    "sha256": "18651c31684239957a3e147706ddf100e0db81fc8cfb82728c8f796f6acea323",
+    "bytes": 8176717,
+    "uncompressedBytes": 8784175
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 155,
+    "headings": 28,
+    "tables": 1,
+    "drawings": 13,
+    "media": 13,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/advanced/endless-sea/review.md",
+      "sha256": "bbce99a7d29938c4a54fe6a4233207dfe8ccd6bae25479df2ccc3e677dd1a186",
+      "bytes": 12573
+    },
+    "quarantine": {
+      "path": "content/imports/docx/advanced/endless-sea/quarantine.json",
+      "sha256": "25614fdd02b0d22baa4b41b37c46719e65109c418e2404b035bd90bfcbac6881",
+      "bytes": 798
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 13,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 13,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

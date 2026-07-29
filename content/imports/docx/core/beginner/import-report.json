@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-842246bdb075",
+  "source": {
+    "fileName": "3 萌新入坑攻略.docx",
+    "sha256": "2bddd2d49db26b7342236feac4df679336a7dd786cb8192468be62f2f3a3ea08",
+    "bytes": 2446625,
+    "uncompressedBytes": 3248178
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 363,
+    "headings": 64,
+    "tables": 0,
+    "drawings": 50,
+    "media": 49,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/core/beginner/review.md",
+      "sha256": "4d0c656486e4e00952ffbdb9e031afedbc8aa526bf5dfdfc729e920d882ffce6",
+      "bytes": 30065
+    },
+    "quarantine": {
+      "path": "content/imports/docx/core/beginner/quarantine.json",
+      "sha256": "f79af6a32124cf487b75d629f741f452a8b9fc7263bb813444167e59be2f28ce",
+      "bytes": 798
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 50,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 49,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

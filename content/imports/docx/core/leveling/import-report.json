@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-6eba63c4aa7b",
+  "source": {
+    "fileName": "6.1 练级百科.docx",
+    "sha256": "dd1d956df3b8c74d5bf94fe337d89b5a44504c9b95abc139c43cceb8156d7ba6",
+    "bytes": 26078361,
+    "uncompressedBytes": 27886108
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 544,
+    "headings": 72,
+    "tables": 10,
+    "drawings": 82,
+    "media": 72,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/core/leveling/review.md",
+      "sha256": "57e54d5e385a74cfb6a2ae61aba828ca29c03bc98cdf87326eefe8dc3fa55589",
+      "bytes": 64327
+    },
+    "quarantine": {
+      "path": "content/imports/docx/core/leveling/quarantine.json",
+      "sha256": "f2be4b363d805ead993f477aa78baaaec0ecc5b7376959f9afb9991a1e2e75f9",
+      "bytes": 798
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 82,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 72,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

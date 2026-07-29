@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "1.0.0",
+  "candidateTag": "wiki-v1.0.0",
+  "deploymentTarget": "github-pages",
+  "siteBase": "/DOV-Calc/",
+  "releaseGeneratedPaths": [
+    "content/reports/",
+    "content/release/release-manifest.json",
+    "content/release/rollback-rehearsal.json",
+    "docs/.vitepress/dist/"
+  ],
+  "excludedContentReportPaths": [
+    "content/reports/stage5-release-readiness.json"
+  ]
+}

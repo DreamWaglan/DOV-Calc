@@ -9,6 +9,16 @@ node_modules/
 docs/.vuepress/.cache/
 docs/.vuepress/.temp/
 docs/.vuepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# Generated quality and release evidence (uploaded by CI)
+content/reports/
+content/release/release-manifest.json
+content/release/rollback-rehearsal.json
+
+# Local Codex/OMX workflow state
+.omx/
 
 
 # Local env files

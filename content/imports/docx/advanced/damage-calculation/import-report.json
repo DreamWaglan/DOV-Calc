@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-c8852cf69a7b",
+  "source": {
+    "fileName": "8.1 拂晓伤害计算构成.docx",
+    "sha256": "e08ebb072134accc8f3315fc4f17ea0e16026ce1efca781c816840a8472e73e6",
+    "bytes": 79964898,
+    "uncompressedBytes": 81595744
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 624,
+    "headings": 86,
+    "tables": 49,
+    "drawings": 222,
+    "media": 223,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 24,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/advanced/damage-calculation/review.md",
+      "sha256": "4778b75af0c4b2db2d93795fa2d27911a08d27d5632e3e253b939a487d7072d9",
+      "bytes": 64019
+    },
+    "quarantine": {
+      "path": "content/imports/docx/advanced/damage-calculation/quarantine.json",
+      "sha256": "e2431bbad041d4f892edd0a9e90b3092579a8308c5f1ce3a4e4a331b77e742e5",
+      "bytes": 1003
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 222,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 223,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    },
+    {
+      "kind": "formulas",
+      "count": 24,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Office math objects were detected and require manual conversion review."
+    }
+  ]
+}

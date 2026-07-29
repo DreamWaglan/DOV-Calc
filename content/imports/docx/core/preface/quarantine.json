@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-9ac6e41a613e",
+  "publishable": false,
+  "permission": "pending",
+  "reviewItems": [
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

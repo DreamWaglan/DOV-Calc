@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "id": "equipment-images-legacy",
+      "root": "docs/public/equipment-images",
+      "glob": "*",
+      "expectedFileCount": 93,
+      "sourceId": "tool-equipment-lookup-source",
+      "permission": "authorized",
+      "publicUse": true,
+      "evidence": "既有公开装备速查工具的迁移保留；不代表 20260712 外部一图流已获公开授权"
+    },
+    {
+      "id": "wiki-social-card",
+      "root": "docs/public/og-default.svg",
+      "glob": null,
+      "expectedFileCount": 1,
+      "sourceId": "site-owned-generated-asset",
+      "permission": "owned",
+      "publicUse": true,
+      "evidence": "阶段 5 为本站原创生成的文字与几何图形社交分享卡，不含第三方素材"
+    },
+    {
+      "id": "wiki-robots-policy",
+      "root": "docs/public/robots.txt",
+      "glob": null,
+      "expectedFileCount": 1,
+      "sourceId": "site-owned-generated-asset",
+      "permission": "owned",
+      "publicUse": true,
+      "evidence": "阶段 5 站点爬虫策略，由本站维护者生成"
+    }
+  ]
+}

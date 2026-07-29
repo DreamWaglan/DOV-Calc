@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-29T07:45:56.555Z",
+  "sourcePath": "docs/.vuepress/data/equipment-data.json",
+  "sourceSha256": "2370fb61d36fac1f0672d51e4ea6ce9e1bdafd2c39e78815dc095da4e4aa3791",
+  "metadata": {
+    "title": "拂晓：胜利之刻 装备速查表",
+    "version": "20260511",
+    "sourceFile": "拂晓：胜利之刻-装备速查表，由 叶秋今天下班没 提供",
+    "itemCount": 93,
+    "categories": [
+      "驱逐炮",
+      "轻巡炮",
+      "重巡炮（金炮差距极小）",
+      "战列炮（金炮优先mk6型406炮）",
+      "鱼雷（差距极小）",
+      "防空炮",
+      "战斗机",
+      "轰炸机",
+      "鱼雷机",
+      "侦察机",
+      "设备-雷达、索敌设备",
+      "设备-弹药、炮弹设备（大部分后期培养）",
+      "设备-防御设备"
+    ]
+  },
+  "itemCount": 93,
+  "primaryKey": "id",
+  "primaryKeyEvidence": {
+    "duplicateIds": [],
+    "missingIds": [],
+    "contiguousFromOne": true
+  },
+  "secondaryNaturalKeyCandidate": [
+    "category",
+    "name"
+  ],
+  "canonicalItemsSha256": "b0d274db8d66a3e3b8444211382369d64c64b5ece8853a113ec65769cdace694",
+  "fieldNames": [
+    "alias",
+    "border",
+    "category",
+    "channels",
+    "color",
+    "glass",
+    "id",
+    "image",
+    "name",
+    "obtain",
+    "remark",
+    "surface",
+    "textColor"
+  ],
+  "fieldPresence": {
+    "alias": {
+      "present": 93,
+      "nullish": 0
+    },
+    "border": {
+      "present": 93,
+      "nullish": 0
+    },
+    "category": {
+      "present": 93,
+      "nullish": 0
+    },
+    "channels": {
+      "present": 93,
+      "nullish": 0
+    },
+    "color": {
+      "present": 93,
+      "nullish": 0
+    },
+    "glass": {
+      "present": 93,
+      "nullish": 0
+    },
+    "id": {
+      "present": 93,
+      "nullish": 0
+    },
+    "image": {
+      "present": 93,
+      "nullish": 0
+    },
+    "name": {
+      "present": 93,
+      "nullish": 0
+    },
+    "obtain": {
+      "present": 93,
+      "nullish": 0
+    },
+    "remark": {
+      "present": 93,
+      "nullish": 0
+    },
+    "surface": {
+      "present": 93,
+      "nullish": 0
+    },
+    "textColor": {
+      "present": 93,
+      "nullish": 0
+    }
+  },
+  "categoryCounts": {
+    "防空炮": 8,
+    "轰炸机": 8,
+    "轻巡炮": 6,
+    "驱逐炮": 6,
+    "设备-弹药、炮弹设备（大部分后期培养）": 6,
+    "设备-防御设备": 6,
+    "设备-雷达、索敌设备": 10,
+    "鱼雷（差距极小）": 6,
+    "鱼雷机": 6,
+    "战斗机": 11,
+    "战列炮（金炮优先mk6型406炮）": 11,
+    "侦察机": 2,
+    "重巡炮（金炮差距极小）": 7
+  },
+  "duplicateGroups": [],
+  "missingRequired": [],
+  "images": {
+    "totalReferences": 93,
+    "existing": 93,
+    "missing": [],
+    "hardcodedBaseReferences": 93
+  }
+}

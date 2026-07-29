@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-e2d43eca15b2",
+  "publishable": false,
+  "permission": "pending",
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 37,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 37,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    }
+  ]
+}

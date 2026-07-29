@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dov-calc.local/schemas/source-asset.schema.json",
+  "title": "Fuxiao Wiki Source Asset Ledger Entry",
+  "description": "Schema for source files, external source records, and derived public assets.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "assetType",
+    "origin",
+    "permission",
+    "status",
+    "owners",
+    "hashes",
+    "publicRelease"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 120,
+      "description": "Stable ledger ID used by pages and data records."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "assetType": {
+      "type": "string",
+      "enum": [
+        "docx",
+        "xlsx",
+        "image",
+        "long-image",
+        "video",
+        "forum-post",
+        "official-page",
+        "dataset",
+        "derived-image",
+        "attachment"
+      ]
+    },
+    "extension": {
+      "type": "string",
+      "pattern": "^\\.[a-z0-9]+$",
+      "maxLength": 16
+    },
+    "sizeBytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sourceTier": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "internal",
+        "unclassified"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceType"
+      ],
+      "properties": {
+        "sourceType": {
+          "type": "string",
+          "enum": [
+            "official",
+            "wiki",
+            "author-post",
+            "forum",
+            "video",
+            "local-file",
+            "internal"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!.*(?:^|/)\\.\\.)(?!/)(?![A-Za-z]:).+",
+          "description": "Path relative to the declared sourceRootAlias or repository root. Absolute paths and parent traversal are not allowed."
+        },
+        "sourceRootAlias": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable alias for an external or repository source root."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "author": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "publishedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "gameVersion": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}(?:-[a-z0-9]+)?$"
+        },
+        "bvId": {
+          "type": "string",
+          "pattern": "^BV[0-9A-Za-z]+$"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "path"
+          ]
+        },
+        {
+          "required": [
+            "url"
+          ]
+        }
+      ]
+    },
+    "permission": {
+      "type": "string",
+      "enum": [
+        "owned",
+        "authorized",
+        "quoted",
+        "pending",
+        "restricted"
+      ]
+    },
+    "licenseEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "evidenceRef": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "grantedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "registered",
+        "needs-review",
+        "approved",
+        "quarantined",
+        "archived"
+      ]
+    },
+    "owners": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    },
+    "reviewers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    },
+    "hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "derivedFrom": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "sha256"
+          ]
+        },
+        {
+          "required": [
+            "derivedFrom"
+          ]
+        }
+      ]
+    },
+    "publicRelease": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "body",
+        "asset",
+        "searchIndex",
+        "sitemap"
+      ],
+      "properties": {
+        "body": {
+          "type": "boolean"
+        },
+        "asset": {
+          "type": "boolean"
+        },
+        "searchIndex": {
+          "type": "boolean"
+        },
+        "sitemap": {
+          "type": "boolean"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "public",
+            "quote-only",
+            "external-link-only",
+            "blocked"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 240
+        }
+      }
+    },
+    "recordCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "importedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 400
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "permission": {
+            "const": "pending"
+          }
+        },
+        "required": [
+          "permission"
+        ]
+      },
+      "then": {
+        "properties": {
+          "publicRelease": {
+            "properties": {
+              "body": {
+                "const": false
+              },
+              "asset": {
+                "const": false
+              },
+              "searchIndex": {
+                "const": false
+              },
+              "mode": {
+                "enum": [
+                  "external-link-only",
+                  "blocked"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "permission": {
+            "const": "restricted"
+          }
+        },
+        "required": [
+          "permission"
+        ]
+      },
+      "then": {
+        "properties": {
+          "publicRelease": {
+            "properties": {
+              "body": {
+                "const": false
+              },
+              "asset": {
+                "const": false
+              },
+              "searchIndex": {
+                "const": false
+              },
+              "sitemap": {
+                "const": false
+              },
+              "mode": {
+                "const": "blocked"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "permission": {
+            "const": "quoted"
+          }
+        },
+        "required": [
+          "permission"
+        ]
+      },
+      "then": {
+        "properties": {
+          "publicRelease": {
+            "properties": {
+              "body": {
+                "const": true
+              },
+              "asset": {
+                "const": false
+              },
+              "mode": {
+                "const": "quote-only"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "role": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "contact": {
+          "type": "string",
+          "maxLength": 120
+        }
+      }
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

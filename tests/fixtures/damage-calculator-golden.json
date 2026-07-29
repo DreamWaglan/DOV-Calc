@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-29T07:45:57.642Z",
+  "sourcePath": "docs/.vuepress/components/DamageCalculator.vue",
+  "sourceSha256": "7756d90699c31b9040ac1bfc86c2293efd7ebc1f5469dd5eb61a9562125f9152",
+  "storageKey": "dov-calc:damage-calculator:v5",
+  "numericTolerance": 1e-9,
+  "defaults": {
+    "damageType": "airTorpedo",
+    "formation": "single",
+    "allyRecon": 100,
+    "enemyRecon": 100,
+    "allyAirControl": 100,
+    "enemyAirControl": 100,
+    "aviation": 1274,
+    "bombing": 0,
+    "antiAir": 523,
+    "torpedo": 888,
+    "torpedoBomber": 140,
+    "shelling": 0,
+    "specialAttackSource1": 0,
+    "specialAttackSource2": 0,
+    "enemyArmor": 737,
+    "enemyAirDefense": 523,
+    "allyLevel": 90,
+    "enemyLevel": 76,
+    "skillMultiplier": 2233,
+    "critDamage": 1.4,
+    "ammoModifier": 1.4,
+    "damageReduction": 1,
+    "attackFlatBonus": 0,
+    "hpDamage": 0,
+    "skillAttackBonus": 0,
+    "skillDamageBonus": 0,
+    "equipmentDamageBonus": 0,
+    "raguzDamageBonus": 0,
+    "favorBonus": 0.2,
+    "talentBonus": 0,
+    "flagshipBonus": 0,
+    "reconBonus": 0,
+    "tieUpBonus": 0,
+    "allyLuck": 15,
+    "enemyLuck": 15,
+    "extraCritRate": 0,
+    "extraCritDamage": 0,
+    "antiCritRate": 0,
+    "allyHit": 500,
+    "enemyEvasion": 125,
+    "bonusHitRate": 0,
+    "enemyDodgeRate": 0
+  },
+  "cases": [
+    {
+      "id": "default-air-torpedo-single",
+      "purpose": "锁定当前默认值、鱼雷机基础攻击、制空均势和默认命中/暴击期望。",
+      "overrides": {},
+      "expected": {
+        "baseAttackPower": 1414,
+        "attackPower": 1414,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 523,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.2,
+        "levelModifier": 1.28,
+        "defenseModifier": 0.675294904245666,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 64191.7021891689,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 48867.59668871247,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 43980.83701984122,
+        "display": {
+          "finalDamage": "43,980.84",
+          "baseDamage": "64,191.7",
+          "critExpectedDamage": "48,867.6"
+        }
+      }
+    },
+    {
+      "id": "shelling-zero-defense-boundary",
+      "purpose": "锁定 defense<=0 时防御衰减归零的现有行为。",
+      "overrides": {
+        "damageType": "shelling",
+        "formation": "wheel",
+        "shelling": 0,
+        "enemyArmor": 0,
+        "skillMultiplier": 100,
+        "allyLevel": 90,
+        "enemyLevel": 150
+      },
+      "expected": {
+        "baseAttackPower": 0,
+        "attackPower": 0,
+        "effectiveSkillMultiplier": 1,
+        "defenseValue": 0,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": -0.05,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0.08,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.23,
+        "levelModifier": 0.5,
+        "defenseModifier": 0,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 0,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 0,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 0,
+        "display": {
+          "finalDamage": "0",
+          "baseDamage": "0",
+          "critExpectedDamage": "0"
+        }
+      }
+    },
+    {
+      "id": "crit-rate-clamped-to-zero",
+      "purpose": "锁定最终暴击率的下界夹紧。",
+      "overrides": {
+        "extraCritRate": -5,
+        "antiCritRate": 5
+      },
+      "expected": {
+        "baseAttackPower": 1414,
+        "attackPower": 1414,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 523,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.2,
+        "levelModifier": 1.28,
+        "defenseModifier": 0.675294904245666,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 64191.7021891689,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0,
+        "critExpectedDamage": 45851.21584940636,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 41266.094264465726,
+        "display": {
+          "finalDamage": "41,266.09",
+          "baseDamage": "64,191.7",
+          "critExpectedDamage": "45,851.22"
+        }
+      }
+    },
+    {
+      "id": "air-control-superior-with-manual-bonus",
+      "purpose": "锁定航空伤害使用制空修正，并叠加手动增伤。",
+      "overrides": {
+        "damageType": "air",
+        "allyAirControl": 130,
+        "enemyAirControl": 100,
+        "reconBonus": 0.1
+      },
+      "expected": {
+        "baseAttackPower": 1274,
+        "attackPower": 1274,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 523,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0.15,
+          "hit": 0.2,
+          "label": "制空确保"
+        },
+        "formationAdjust": {
+          "damage": 0,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0.15,
+        "stateHitBonus": 0.30000000000000004,
+        "damageModifier": 1.45,
+        "levelModifier": 1.28,
+        "defenseModifier": 0.6520292747837658,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 67477.54747333066,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 51369.031557268085,
+        "baseHitRate": 0.8,
+        "finalHitRate": 1,
+        "finalDamage": 51369.031557268085,
+        "display": {
+          "finalDamage": "51,369.03",
+          "baseDamage": "67,477.55",
+          "critExpectedDamage": "51,369.03"
+        }
+      }
+    },
+    {
+      "id": "shelling-equal-recon-single",
+      "purpose": "锁定索敌相等时的同航修正以及单纵阵炮击增伤。",
+      "overrides": {
+        "damageType": "shelling",
+        "shelling": 1000,
+        "enemyArmor": 500,
+        "allyRecon": 100,
+        "enemyRecon": 100,
+        "allyAirControl": 100,
+        "enemyAirControl": 100,
+        "skillMultiplier": 700,
+        "critDamage": 1.5,
+        "ammoModifier": 1,
+        "favorBonus": 0,
+        "allyLevel": 80,
+        "enemyLevel": 80
+      },
+      "expected": {
+        "baseAttackPower": 1000,
+        "attackPower": 1000,
+        "effectiveSkillMultiplier": 7,
+        "defenseValue": 500,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0.12,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0.08,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.2,
+        "levelModifier": 1,
+        "defenseModifier": 0.6060606060606061,
+        "effectiveCritDamage": 1.5,
+        "baseDamage": 7636.363636363636,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 5509.549042761814,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 4958.594138485633,
+        "display": {
+          "finalDamage": "4,958.59",
+          "baseDamage": "7,636.36",
+          "critExpectedDamage": "5,509.55"
+        }
+      }
+    },
+    {
+      "id": "wedge-formation-crit-bonus",
+      "purpose": "锁定梯形阵的暴击率和暴击伤害加成。",
+      "overrides": {
+        "formation": "wedge"
+      },
+      "expected": {
+        "baseAttackPower": 1414,
+        "attackPower": 1414,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 523,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0,
+          "hit": 0,
+          "critRate": 0.15,
+          "critDamage": 0.05
+        },
+        "stateDamageBonus": 0,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.2,
+        "levelModifier": 1.28,
+        "defenseModifier": 0.675294904245666,
+        "effectiveCritDamage": 1.45,
+        "baseDamage": 66484.26298163921,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.3144656953707127,
+        "critExpectedDamage": 52339.60136346065,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 47105.64122711459,
+        "display": {
+          "finalDamage": "47,105.64",
+          "baseDamage": "66,484.26",
+          "critExpectedDamage": "52,339.6"
+        }
+      }
+    },
+    {
+      "id": "level-modifier-upper-clamp",
+      "purpose": "锁定等级修正最高为 1.5 倍。",
+      "overrides": {
+        "allyLevel": 150,
+        "enemyLevel": 1
+      },
+      "expected": {
+        "baseAttackPower": 1414,
+        "attackPower": 1414,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 523,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.2,
+        "levelModifier": 1.5,
+        "defenseModifier": 0.675294904245666,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 75224.65100293231,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 57266.714869584925,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 51540.043382626434,
+        "display": {
+          "finalDamage": "51,540.04",
+          "baseDamage": "75,224.65",
+          "critExpectedDamage": "57,266.71"
+        }
+      }
+    },
+    {
+      "id": "fixed-damage-with-zero-variable-damage",
+      "purpose": "锁定可变伤害为零时固定伤害仍乘最终命中率。",
+      "overrides": {
+        "damageType": "special",
+        "specialAttackSource1": 0,
+        "specialAttackSource2": 0,
+        "enemyArmor": 0,
+        "hpDamage": 500
+      },
+      "expected": {
+        "baseAttackPower": 0,
+        "attackPower": 0,
+        "effectiveSkillMultiplier": 22.33,
+        "defenseValue": 0,
+        "reconState": {
+          "damage": 0.08,
+          "hit": 0.1,
+          "label": "同航"
+        },
+        "airControlState": {
+          "damage": 0,
+          "hit": 0,
+          "label": "制空均势"
+        },
+        "formationAdjust": {
+          "damage": 0.12,
+          "hit": 0,
+          "critRate": 0,
+          "critDamage": 0
+        },
+        "stateDamageBonus": 0,
+        "stateHitBonus": 0.1,
+        "damageModifier": 1.3199999999999998,
+        "levelModifier": 1.28,
+        "defenseModifier": 0,
+        "effectiveCritDamage": 1.4,
+        "baseDamage": 0,
+        "baseCritRate": 0.1644656953707127,
+        "finalCritRate": 0.1644656953707127,
+        "critExpectedDamage": 0,
+        "baseHitRate": 0.8,
+        "finalHitRate": 0.9,
+        "finalDamage": 450,
+        "display": {
+          "finalDamage": "450",
+          "baseDamage": "0",
+          "critExpectedDamage": "0"
+        }
+      }
+    }
+  ],
+  "storageContract": {
+    "stringKeys": {
+      "damageType": [
+        "shelling",
+        "torpedo",
+        "air",
+        "bombing",
+        "airTorpedo",
+        "antiAir",
+        "special"
+      ],
+      "formation": [
+        "single",
+        "wheel",
+        "wedge"
+      ]
+    },
+    "numericFields": [
+      "allyRecon",
+      "enemyRecon",
+      "allyAirControl",
+      "enemyAirControl",
+      "aviation",
+      "bombing",
+      "antiAir",
+      "torpedo",
+      "torpedoBomber",
+      "shelling",
+      "specialAttackSource1",
+      "specialAttackSource2",
+      "enemyArmor",
+      "enemyAirDefense",
+      "allyLevel",
+      "enemyLevel",
+      "skillMultiplier",
+      "critDamage",
+      "ammoModifier",
+      "damageReduction",
+      "attackFlatBonus",
+      "hpDamage",
+      "skillAttackBonus",
+      "skillDamageBonus",
+      "equipmentDamageBonus",
+      "raguzDamageBonus",
+      "favorBonus",
+      "talentBonus",
+      "flagshipBonus",
+      "reconBonus",
+      "tieUpBonus",
+      "allyLuck",
+      "enemyLuck",
+      "extraCritRate",
+      "extraCritDamage",
+      "antiCritRate",
+      "allyHit",
+      "enemyEvasion",
+      "bonusHitRate",
+      "enemyDodgeRate"
+    ],
+    "invalidJsonFallback": "defaults",
+    "invalidStringValueBehavior": "ignore-and-keep-default",
+    "finiteNumericStringBehavior": "convert-to-number"
+  }
+}

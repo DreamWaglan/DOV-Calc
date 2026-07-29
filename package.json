@@ -4,13 +4,43 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "test": "node scripts/test.mjs",
+    "baseline:equipment": "node scripts/content/capture-equipment-baseline.mjs",
+    "baseline:damage": "node scripts/content/capture-damage-baseline.mjs",
+    "baseline:versions": "node scripts/content/capture-version-baseline.mjs",
+    "validate:stage0": "node scripts/content/validate-stage0.mjs",
+    "validate:stage1": "node scripts/content/validate-vitepress-migration.mjs",
+    "content:schema": "node scripts/content/validate-content-schema.mjs",
+    "content:provenance": "node scripts/content/validate-provenance.mjs",
+    "content:links": "node scripts/content/validate-links.mjs",
+    "content:drift": "node scripts/content/validate-drift.mjs",
+    "validate:stage2": "node scripts/content/validate-stage2.mjs",
+    "content:stage3-map": "node scripts/content/build-stage3-docx-map.mjs",
+    "validate:stage3": "node scripts/content/validate-stage3.mjs",
+    "content:stage4-map": "node scripts/content/build-stage4-docx-map.mjs",
+    "validate:stage4": "node scripts/content/validate-stage4.mjs",
+    "test:search": "node scripts/quality/search-quality.mjs",
+    "test:search-built": "node scripts/quality/search-quality-built.mjs",
+    "test:a11y": "node tests/quality/mobile-a11y-static.mjs",
+    "test:e2e": "node scripts/quality/e2e-smoke.mjs",
+    "test:seo": "node scripts/quality/seo-audit.mjs",
+    "test:perf": "node scripts/quality/run-lighthouse.mjs",
+    "test:base": "node scripts/quality/verify-base-builds.mjs",
+    "content:stale": "node scripts/quality/staleness-report.mjs",
+    "release:manifest": "node scripts/release/create-release-manifest.mjs",
+    "release:rollback": "node scripts/release/verify-rollback.mjs",
+    "validate:stage5": "node scripts/quality/validate-stage5.mjs",
+    "test:imports": "node scripts/test-imports.mjs",
+    "docs:dev": "pnpm content:schema && vitepress dev docs",
+    "docs:build": "pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
   "license": "",
+  "engines": {
+    "node": ">=22.17"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -20,10 +50,17 @@
   },
   "type": "module",
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.29",
-    "@vuepress/theme-default": "2.0.0-rc.128",
-    "sass-embedded": "^1.99.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "fast-xml-parser": "5.10.1",
+    "fflate": "0.8.3",
+    "lighthouse": "13.4.1",
+    "markdown-it": "14.3.0",
+    "puppeteer-core": "25.4.0",
+    "read-excel-file": "9.3.5",
+    "sharp": "0.35.3",
+    "vitepress": "1.6.4",
     "vue": "^3.5.34",
-    "vuepress": "2.0.0-rc.29"
+    "yaml": "2.9.0"
   }
 }

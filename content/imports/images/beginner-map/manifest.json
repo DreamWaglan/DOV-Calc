@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-ec1754535996",
+  "source": {
+    "fileName": "2-拂晓新手入门思维导图 v2.4 260720.png",
+    "sha256": "f1bdd7e39067db6db0f510c5694a36d8896ab7cc2dc904be397bf9c9808b6993",
+    "bytes": 5972619,
+    "width": 1081,
+    "height": 12800,
+    "format": "png"
+  },
+  "permission": "pending",
+  "publishable": false,
+  "originalCopied": false,
+  "derivativePolicy": {
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": [
+    {
+      "kind": "thumbnail",
+      "path": "content/imports/images/beginner-map/thumbnail.webp",
+      "width": 360,
+      "height": 4263,
+      "sha256": "a49beec24011cd953e4f1e989ee41ef5c011a9e28f4b2cabb769eed630db904a",
+      "bytes": 270362,
+      "maxPixels": 4500000
+    },
+    {
+      "kind": "segment",
+      "index": 1,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 1081,
+        "height": 4000
+      },
+      "path": "content/imports/images/beginner-map/segment-01.webp",
+      "width": 1081,
+      "height": 4000,
+      "sha256": "6f50ffc596cb87f2ccfc1a5c45bec2878729ef4c1f335a4060257c158881a78c",
+      "bytes": 450654,
+      "maxPixels": 4500000
+    },
+    {
+      "kind": "segment",
+      "index": 2,
+      "sourceCrop": {
+        "left": 0,
+        "top": 4000,
+        "width": 1081,
+        "height": 4000
+      },
+      "path": "content/imports/images/beginner-map/segment-02.webp",
+      "width": 1081,
+      "height": 4000,
+      "sha256": "1c781e685534b06031b442245b61fa1cc9cd45a3a155643b53e33d94d0777e35",
+      "bytes": 484374,
+      "maxPixels": 4500000
+    },
+    {
+      "kind": "segment",
+      "index": 3,
+      "sourceCrop": {
+        "left": 0,
+        "top": 8000,
+        "width": 1081,
+        "height": 4000
+      },
+      "path": "content/imports/images/beginner-map/segment-03.webp",
+      "width": 1081,
+      "height": 4000,
+      "sha256": "3d75f8f3830d7266bf79e1059e23c27b7f618d09e5d4bf251269c39a2a5e984a",
+      "bytes": 469632,
+      "maxPixels": 4500000
+    },
+    {
+      "kind": "segment",
+      "index": 4,
+      "sourceCrop": {
+        "left": 0,
+        "top": 12000,
+        "width": 1081,
+        "height": 800
+      },
+      "path": "content/imports/images/beginner-map/segment-04.webp",
+      "width": 1081,
+      "height": 800,
+      "sha256": "138f106ac016c7de3d4672141b0757c6b8caf139854e6bdce0919d35db84e5d3",
+      "bytes": 77270,
+      "maxPixels": 4500000
+    }
+  ]
+}

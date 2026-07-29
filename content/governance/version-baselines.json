@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-29T07:45:59.535Z",
+  "baselines": [
+    {
+      "id": "equipment-lookup-dataset",
+      "domain": "equipment",
+      "sourcePath": "docs/.vuepress/data/equipment-data.json",
+      "version": "20260511",
+      "recordCount": 93,
+      "sha256": "2370fb61d36fac1f0672d51e4ea6ce9e1bdafd2c39e78815dc095da4e4aa3791",
+      "status": "needs-review"
+    },
+    {
+      "id": "equipment-one-image-guide",
+      "domain": "equipment",
+      "sourceAssetId": "src-8862e9c4e1c0",
+      "sourcePath": "5 立香也能看懂的一图流攻略合集/5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
+      "version": "20260712",
+      "sha256": "884bc9486a8a63ccabfd34e20ba61c5ee831fbbc31cb26190a98f41b031afd42",
+      "status": "needs-review"
+    }
+  ],
+  "driftFindings": [
+    {
+      "id": "equipment-guide-newer-than-lookup-data",
+      "domain": "equipment",
+      "olderBaselineId": "equipment-lookup-dataset",
+      "olderVersion": "20260511",
+      "newerBaselineId": "equipment-one-image-guide",
+      "newerVersion": "20260712",
+      "severity": "release-blocking-until-reviewed",
+      "disposition": "在事实审核人确认差异并更新或明确归档前，不得把当前装备 JSON 标记为最新版本。",
+      "ownerRole": "装备数据维护者",
+      "reviewerRole": "事实审核人"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-d35e870ffcd7",
+  "source": {
+    "fileName": "7.2 遭遇战攻略.docx",
+    "sha256": "f81c24042a1b006dcf7a39e137ceaacf7f6a1b98db538b006a8b4e529851fc45",
+    "bytes": 12168980,
+    "uncompressedBytes": 12639249
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 340,
+    "headings": 41,
+    "tables": 17,
+    "drawings": 69,
+    "media": 58,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/advanced/encounter/review.md",
+      "sha256": "24ebc96d1a6a24bce9e0ca5da10e2c9b4df66b5e15686a9e2012b9fdf595c0fa",
+      "bytes": 24671
+    },
+    "quarantine": {
+      "path": "content/imports/docx/advanced/encounter/quarantine.json",
+      "sha256": "06cbc0c8aa46d0b21112a82a4f0433b16989540b6ba2eed9f20bc15c05d5913d",
+      "bytes": 798
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 69,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 58,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

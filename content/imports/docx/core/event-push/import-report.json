@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-d47e51aa8321",
+  "source": {
+    "fileName": "6.2 给萌新的活动推图攻略食用指南.docx",
+    "sha256": "045b74a8fe13d8bdd8bc12fa09748d0660e23e8bda99c1a4b5ab0949f763ed53",
+    "bytes": 5579793,
+    "uncompressedBytes": 5774812
+  },
+  "permission": "pending",
+  "publishable": false,
+  "counts": {
+    "paragraphs": 82,
+    "headings": 8,
+    "tables": 1,
+    "drawings": 10,
+    "media": 10,
+    "footnotes": 0,
+    "footnotesPresent": true,
+    "formulas": 0,
+    "embeddedObjects": 0
+  },
+  "outputs": {
+    "markdown": {
+      "path": "content/imports/docx/core/event-push/review.md",
+      "sha256": "7b1d8ea64be68f66bc535fcf2c81e0cdffa3695f4b205617281ea394be3051fe",
+      "bytes": 10717
+    },
+    "quarantine": {
+      "path": "content/imports/docx/core/event-push/quarantine.json",
+      "sha256": "8c34fe2de8c036fc182271fe1505f75dc76a6739962d275de3021f2f0a2d9039",
+      "bytes": 798
+    }
+  },
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 10,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 10,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

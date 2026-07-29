@@ -1,0 +1,823 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T00:00:00.000Z",
+  "source": "content/imports/docx/core",
+  "assets": [
+    {
+      "assetId": "src-9ac6e41a613e",
+      "sourceFileName": "1 前言.docx",
+      "importDir": "preface",
+      "hash": "73e75e4b885aa94aac736ce3fbf29681ba34e8669b6c2ee89a07e49cf50166c5",
+      "counts": {
+        "paragraphs": 36,
+        "headings": 0,
+        "tables": 0,
+        "drawings": 0,
+        "media": 0,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [],
+      "suggestedPageId": "start-preface",
+      "reviewItems": [
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    },
+    {
+      "assetId": "src-ea0b63d069bf",
+      "sourceFileName": "2 游戏简介.docx",
+      "importDir": "game-intro",
+      "hash": "bdd6379d3a635181cfb2630b4766a1ee47abf165ed87b5c78f894cfa5037bb56",
+      "counts": {
+        "paragraphs": 6,
+        "headings": 0,
+        "tables": 0,
+        "drawings": 0,
+        "media": 0,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [],
+      "suggestedPageId": "start-game-introduction",
+      "reviewItems": [
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    },
+    {
+      "assetId": "src-842246bdb075",
+      "sourceFileName": "3 萌新入坑攻略.docx",
+      "importDir": "beginner",
+      "hash": "2bddd2d49db26b7342236feac4df679336a7dd786cb8192468be62f2f3a3ea08",
+      "counts": {
+        "paragraphs": 363,
+        "headings": 64,
+        "tables": 0,
+        "drawings": 50,
+        "media": 49,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 2,
+          "title": "〇、更新公告"
+        },
+        {
+          "level": 2,
+          "title": "一、拂晓玩法介绍"
+        },
+        {
+          "level": 2,
+          "title": "二、主要资源简介"
+        },
+        {
+          "level": 1,
+          "title": "第一阶段  新号准备"
+        },
+        {
+          "level": 2,
+          "title": "一、选区"
+        },
+        {
+          "level": 2,
+          "title": "二、性能优化"
+        },
+        {
+          "level": 2,
+          "title": "三、开局抽卡策略"
+        },
+        {
+          "level": 3,
+          "title": "（一）若无活动调遣"
+        },
+        {
+          "level": 3,
+          "title": "（二）若有活动调遣且剩余时间超过天"
+        },
+        {
+          "level": 3,
+          "title": "（三）若有活动调遣且剩余时间不足天"
+        },
+        {
+          "level": 3,
+          "title": "（四）若处于自选UP抽卡时期"
+        },
+        {
+          "level": 1,
+          "title": "第二阶段  1-1至8-10"
+        },
+        {
+          "level": 2,
+          "title": "一、推图攻略"
+        },
+        {
+          "level": 3,
+          "title": "（一）1-1至4-10"
+        },
+        {
+          "level": 3,
+          "title": "（二）5-1至5-10"
+        },
+        {
+          "level": 3,
+          "title": "（三）6-1至8-10"
+        },
+        {
+          "level": 2,
+          "title": "二、练级攻略"
+        },
+        {
+          "level": 3,
+          "title": "（一）若有打捞活动"
+        },
+        {
+          "level": 3,
+          "title": "（二）若无打捞活动"
+        },
+        {
+          "level": 2,
+          "title": "三、练级中的常见问题"
+        },
+        {
+          "level": 3,
+          "title": "（一）缺少装备怎么办？"
+        },
+        {
+          "level": 3,
+          "title": "（二）索敌不够达到同航或T优怎么办？"
+        },
+        {
+          "level": 3,
+          "title": "（三）缺少晶币和零件怎么办？"
+        },
+        {
+          "level": 3,
+          "title": "（四）船舱满了怎么办？"
+        },
+        {
+          "level": 1,
+          "title": "第三阶段  9-1至12-10"
+        },
+        {
+          "level": 2,
+          "title": "一、推图攻略"
+        },
+        {
+          "level": 3,
+          "title": "（一）舰灵基础养成"
+        },
+        {
+          "level": 3,
+          "title": "（二）9-1至9-10"
+        },
+        {
+          "level": 3,
+          "title": "（三）10-1至12-10"
+        },
+        {
+          "level": 3,
+          "title": "（四）手操技巧"
+        },
+        {
+          "level": 3,
+          "title": "（五）困难主线推图思路"
+        },
+        {
+          "level": 2,
+          "title": "二、后续推图相关"
+        },
+        {
+          "level": 3,
+          "title": "（一）推图阵容"
+        },
+        {
+          "level": 3,
+          "title": "（二）练级攻略"
+        },
+        {
+          "level": 3,
+          "title": "（三）推图攻略"
+        },
+        {
+          "level": 1,
+          "title": "第四阶段  其他"
+        },
+        {
+          "level": 2,
+          "title": "一、其他玩法介绍"
+        },
+        {
+          "level": 3,
+          "title": "（一）咨询中心"
+        },
+        {
+          "level": 3,
+          "title": "（二）技能学院"
+        },
+        {
+          "level": 3,
+          "title": "（三）日常关卡"
+        },
+        {
+          "level": 3,
+          "title": "（四）竞技场"
+        },
+        {
+          "level": 3,
+          "title": "（五）炼油厂与温泉（竹）"
+        },
+        {
+          "level": 3,
+          "title": "（六）造币厂与温泉（樱）"
+        },
+        {
+          "level": 3,
+          "title": "（七）远征"
+        },
+        {
+          "level": 3,
+          "title": "（八）演习"
+        },
+        {
+          "level": 3,
+          "title": "（九）沙滩"
+        },
+        {
+          "level": 3,
+          "title": "（十）建造"
+        },
+        {
+          "level": 3,
+          "title": "（十一）档案"
+        },
+        {
+          "level": 2,
+          "title": "二、主要活动简介"
+        },
+        {
+          "level": 3,
+          "title": "（一）打捞活动"
+        },
+        {
+          "level": 3,
+          "title": "（二）补给姬大作战"
+        },
+        {
+          "level": 3,
+          "title": "（三）防卫战"
+        },
+        {
+          "level": 3,
+          "title": "（四）遭遇战"
+        },
+        {
+          "level": 3,
+          "title": "（五）无尽的海域"
+        },
+        {
+          "level": 3,
+          "title": "（六）多倍经验活动"
+        },
+        {
+          "level": 2,
+          "title": "三、每日上线流程"
+        },
+        {
+          "level": 2,
+          "title": "四、重要技巧后日谈"
+        },
+        {
+          "level": 3,
+          "title": "（一）节能天赋"
+        },
+        {
+          "level": 3,
+          "title": "（二）旗舰相关"
+        },
+        {
+          "level": 3,
+          "title": "（三）改造相关"
+        }
+      ],
+      "suggestedPageId": "start-first-week",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 50,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 49,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    },
+    {
+      "assetId": "src-6eba63c4aa7b",
+      "sourceFileName": "6.1 练级百科.docx",
+      "importDir": "leveling",
+      "hash": "dd1d956df3b8c74d5bf94fe337d89b5a44504c9b95abc139c43cceb8156d7ba6",
+      "counts": {
+        "paragraphs": 544,
+        "headings": 72,
+        "tables": 10,
+        "drawings": 82,
+        "media": 72,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "拂晓主要玩法"
+        },
+        {
+          "level": 1,
+          "title": "劳模舰灵推荐（萌新必看）"
+        },
+        {
+          "level": 1,
+          "title": "3.PVE舰灵推荐"
+        },
+        {
+          "level": 1,
+          "title": "遭遇战舰灵推荐"
+        },
+        {
+          "level": 1,
+          "title": "争锋竞技场舰灵推荐"
+        },
+        {
+          "level": 1,
+          "title": "7.XP练船推荐"
+        },
+        {
+          "level": 1,
+          "title": "卷狗练船法简评"
+        },
+        {
+          "level": 1,
+          "title": "练船的主要目标"
+        },
+        {
+          "level": 1,
+          "title": "核心策略：老板-打手循环"
+        },
+        {
+          "level": 1,
+          "title": "为什么是级？"
+        },
+        {
+          "level": 1,
+          "title": "论经验和好感度"
+        },
+        {
+          "level": 1,
+          "title": "开槽与刷级"
+        },
+        {
+          "level": 1,
+          "title": "再论强化素材、舰灵打捞和活动代币"
+        },
+        {
+          "level": 1,
+          "title": "论老板和打手的站位问题"
+        },
+        {
+          "level": 1,
+          "title": "驳经验转移练级法"
+        },
+        {
+          "level": 1,
+          "title": "青黄不接问题"
+        },
+        {
+          "level": 1,
+          "title": "典型练级案例分享"
+        },
+        {
+          "level": 1,
+          "title": "重要练级点简单介绍"
+        },
+        {
+          "level": 1,
+          "title": "以18-7为例的练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip 注意甲弹克制"
+        },
+        {
+          "level": 2,
+          "title": "Tip.2 提高索敌、尽量达到T优"
+        },
+        {
+          "level": 2,
+          "title": "Tip.3 T优、复纵、马达的三重机动"
+        },
+        {
+          "level": 2,
+          "title": "Tip.4 提前开槽"
+        },
+        {
+          "level": 2,
+          "title": "Tip.5 颗秒"
+        },
+        {
+          "level": 2,
+          "title": "Tip.6 技能形态"
+        },
+        {
+          "level": 2,
+          "title": "Tip.7 案例"
+        },
+        {
+          "level": 1,
+          "title": "3.19-5练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip.1 甲弹克制"
+        },
+        {
+          "level": 2,
+          "title": "Tip.2 索敌"
+        },
+        {
+          "level": 2,
+          "title": "Tip.3 生存"
+        },
+        {
+          "level": 2,
+          "title": "Tip.4 开槽"
+        },
+        {
+          "level": 2,
+          "title": "Tip.5 技能形态"
+        },
+        {
+          "level": 2,
+          "title": "Tip.6 后置练级法"
+        },
+        {
+          "level": 1,
+          "title": "4. 19-10练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip.1 甲弹克制"
+        },
+        {
+          "level": 2,
+          "title": "Tip.2 索敌"
+        },
+        {
+          "level": 2,
+          "title": "Tip.3 生存"
+        },
+        {
+          "level": 2,
+          "title": "Tip.4 开槽"
+        },
+        {
+          "level": 2,
+          "title": "Tip.5 技能形态"
+        },
+        {
+          "level": 2,
+          "title": "Tip.6 后置练级法"
+        },
+        {
+          "level": 1,
+          "title": "5. 20-5练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip.1 甲弹克制"
+        },
+        {
+          "level": 2,
+          "title": "Tip.2 索敌"
+        },
+        {
+          "level": 2,
+          "title": "Tip.3 生存"
+        },
+        {
+          "level": 2,
+          "title": "Tip.4 开槽"
+        },
+        {
+          "level": 2,
+          "title": "Tip.5 技能形态"
+        },
+        {
+          "level": 2,
+          "title": "Tip.6 后置练级法"
+        },
+        {
+          "level": 1,
+          "title": "活动与档案练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip.1 自奶与后排奶"
+        },
+        {
+          "level": 2,
+          "title": "Tip.2 回复点与油点"
+        },
+        {
+          "level": 2,
+          "title": "Tip.3 次元回避金字塔"
+        },
+        {
+          "level": 2,
+          "title": "Tip.4 活动试用"
+        },
+        {
+          "level": 2,
+          "title": "Tip.5 委托作战"
+        },
+        {
+          "level": 2,
+          "title": "Tip.6 后置练级法"
+        },
+        {
+          "level": 1,
+          "title": "通用练级技巧分享"
+        },
+        {
+          "level": 2,
+          "title": "Tip. 主副循环"
+        },
+        {
+          "level": 2,
+          "title": "Tip 航系"
+        },
+        {
+          "level": 2,
+          "title": "Tip 奶与拐"
+        },
+        {
+          "level": 2,
+          "title": "Tip. 誓约"
+        },
+        {
+          "level": 2,
+          "title": "Tip 技能等级"
+        }
+      ],
+      "suggestedPageId": "progression-leveling",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 82,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 72,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    },
+    {
+      "assetId": "src-d47e51aa8321",
+      "sourceFileName": "6.2 给萌新的活动推图攻略食用指南.docx",
+      "importDir": "event-push",
+      "hash": "045b74a8fe13d8bdd8bc12fa09748d0660e23e8bda99c1a4b5ab0949f763ed53",
+      "counts": {
+        "paragraphs": 82,
+        "headings": 8,
+        "tables": 1,
+        "drawings": 10,
+        "media": 10,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 2,
+          "title": "写在前面"
+        },
+        {
+          "level": 2,
+          "title": "正文"
+        },
+        {
+          "level": 3,
+          "title": "确认活动带路条件"
+        },
+        {
+          "level": 3,
+          "title": "确认通关所需练度"
+        },
+        {
+          "level": 3,
+          "title": "找到自己Box中合适的舰灵并构筑队伍"
+        },
+        {
+          "level": 3,
+          "title": "最后请一定要去关卡里面打几轮试试"
+        },
+        {
+          "level": 3,
+          "title": "额外的懒狗方法"
+        },
+        {
+          "level": 2,
+          "title": "附录：往期活动攻略链接"
+        }
+      ],
+      "suggestedPageId": "combat-event-maps",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 10,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 10,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    },
+    {
+      "assetId": "src-94e76e4522b1",
+      "sourceFileName": "6.3 给萌新的PVE配队思路.docx",
+      "importDir": "pve-team",
+      "hash": "7320dd4b3912b7788a04efefe8bbee4397cf78e875b913ab2f5c87f8bdb2dc49",
+      "counts": {
+        "paragraphs": 105,
+        "headings": 21,
+        "tables": 5,
+        "drawings": 4,
+        "media": 4,
+        "footnotes": 0,
+        "footnotesPresent": true,
+        "formulas": 0,
+        "embeddedObjects": 0
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "title": "一、观察敌方配置"
+        },
+        {
+          "level": 2,
+          "title": "（一）主线"
+        },
+        {
+          "level": 2,
+          "title": "（二）打捞活动或档案"
+        },
+        {
+          "level": 2,
+          "title": "（三）防卫战"
+        },
+        {
+          "level": 1,
+          "title": "二、我方常用舰灵"
+        },
+        {
+          "level": 2,
+          "title": "（一）前排自奶舰灵"
+        },
+        {
+          "level": 2,
+          "title": "（二）后排奶舰灵"
+        },
+        {
+          "level": 2,
+          "title": "（三）前排高AOE舰灵"
+        },
+        {
+          "level": 2,
+          "title": "（四）后排拐与部分强力输出"
+        },
+        {
+          "level": 1,
+          "title": "三、初步配队"
+        },
+        {
+          "level": 2,
+          "title": "（一）根据敌方甲种与数量筛选上阵舰灵"
+        },
+        {
+          "level": 2,
+          "title": "（二）简单主线配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（三）打捞活动配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（四）防卫战配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（五）遭遇战配队思路"
+        },
+        {
+          "level": 2,
+          "title": "（六）无尽海域配队思路"
+        },
+        {
+          "level": 1,
+          "title": "四、如何微调"
+        },
+        {
+          "level": 2,
+          "title": "（一）理论输出不足情况"
+        },
+        {
+          "level": 2,
+          "title": "（二）实际输出不足情况"
+        },
+        {
+          "level": 2,
+          "title": "（三）生存不足情况"
+        },
+        {
+          "level": 2,
+          "title": "（四）判断方法与常见案例"
+        }
+      ],
+      "suggestedPageId": "combat-pve-team-building",
+      "reviewItems": [
+        {
+          "kind": "drawings",
+          "count": 4,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+        },
+        {
+          "kind": "media",
+          "count": 4,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+        },
+        {
+          "kind": "footnotes",
+          "count": 0,
+          "disposition": "quarantined-for-manual-review",
+          "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+        }
+      ],
+      "publishable": false
+    }
+  ]
+}

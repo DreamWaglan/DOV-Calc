@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dreamwaglan.github.io/DOV-Calc/sitemap.xml
