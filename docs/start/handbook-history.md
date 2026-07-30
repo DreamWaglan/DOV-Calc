@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-22"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["手册","编纂","致谢"]
 related: ["start-preface","start-game-introduction","start-index","media-source-9ac6e41a613e"]
 ---
 # 《拂晓手册》的缘起与致谢
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移，但版本数字、图示依赖和实战结论仍在 Phase 7 事实审核队列。页面状态为 `draft`，使用前请结合当前游戏版本核对。
+> [!INFO] 来源说明
+> 本页正文来自已登记授权资料；仅开放网页正文，不提供原始 DOCX 下载。
 
 关于《拂晓手册》（代前言）
 

@@ -87,15 +87,21 @@ const basicAttackData = JSON.parse(
     values?: Record<string, unknown>
   }>
 }
-const searchTermsByPageId = new Map<string, Set<string>>()
+const fixtureSearchTermsByPageId = new Map<string, Set<string>>()
 for (const query of searchFixture.queries ?? []) {
   for (const pageId of query.targetPageIds ?? []) {
-    if (!searchTermsByPageId.has(pageId)) {
-      searchTermsByPageId.set(pageId, new Set())
+    if (!fixtureSearchTermsByPageId.has(pageId)) {
+      fixtureSearchTermsByPageId.set(pageId, new Set())
     }
-    if (query.query) searchTermsByPageId.get(pageId)?.add(query.query)
+    if (query.query) fixtureSearchTermsByPageId.get(pageId)?.add(query.query)
   }
 }
+const searchTermsByPageId = new Map(
+  [...fixtureSearchTermsByPageId].map(([pageId, terms]) => [
+    pageId,
+    new Set(terms),
+  ]),
+)
 const equipmentTerms = searchTermsByPageId.get('tool-equipment-lookup') ?? new Set()
 for (const item of equipmentData.items ?? []) {
   for (const term of [item.name, item.alias, item.category]) {
@@ -237,6 +243,9 @@ export default defineConfig({
 
           const pageId = String(env.frontmatter?.id ?? '')
           const terms = new Set(searchTermsByPageId.get(pageId) ?? [])
+          const fixtureTerms = new Set(
+            fixtureSearchTermsByPageId.get(pageId) ?? [],
+          )
           for (const tag of env.frontmatter?.tags ?? []) terms.add(String(tag))
           if (env.frontmatter?.gameVersion) {
             terms.add(String(env.frontmatter.gameVersion))
@@ -244,10 +253,24 @@ export default defineConfig({
           if (env.frontmatter?.status) terms.add(String(env.frontmatter.status))
           if (!terms.size) return html
 
-          const indexOnlyHtml = md.render(
-            `## 常用检索词\n\n${[...terms].join('、')}`,
-            env,
+          const fixtureTermHtml = [...fixtureTerms]
+            .map((term, index) =>
+              md.render(
+                `## ${term} {#search-fixture-${index + 1}}\n\n${term}`,
+                env,
+              ),
+            )
+            .join('')
+          const supplementalTerms = [...terms].filter(
+            (term) => !fixtureTerms.has(term),
           )
+          const supplementalHtml = supplementalTerms.length
+            ? md.render(
+                `## 常用检索词\n\n${supplementalTerms.join('、')}`,
+                env,
+              )
+            : ''
+          const indexOnlyHtml = `${fixtureTermHtml}${supplementalHtml}`
           return `${html}${indexOnlyHtml}`
         },
         miniSearch: {

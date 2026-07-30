@@ -8,13 +8,13 @@ audience: [new-player, beginner, regular, advanced]
 contentType: site
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 站点维护
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 章节编辑
 sources:
   - title: DOV-Calc 站点信息架构
@@ -77,4 +77,4 @@ related: [start-index, tools-index, posts-index]
 
 ## 版本与资料说明
 
-攻略页会显示适用版本、核验日期、状态和来源。标为“草稿”或“待复核”的结论，不应直接当作当前版本的固定答案。待授权的 Word、Excel 和长图只留在内部审阅区，不会随站点公开构建。
+攻略页会显示适用版本、核验日期、状态和来源。标为“草稿”或“待复核”的结论，不应直接当作当前版本的固定答案。已授权的 Word、Excel 和长图会经过页面审核与公开范围检查后再进入站点；原始下载文件仍留在受控资料区。

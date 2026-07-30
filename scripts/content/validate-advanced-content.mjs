@@ -7,6 +7,7 @@ import {
   readJson,
   writeReport,
 } from './lib/content-utils.mjs'
+import { pageReviewStatus } from './lib/page-review-decisions.mjs'
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex')
@@ -198,8 +199,12 @@ for (const source of manifest.sources ?? []) {
     ) {
       failures.push(`${entry.pageId}: authorized source boundary is invalid`)
     }
-    if (page.frontmatter.status !== 'draft' || entry.status !== 'draft') {
-      failures.push(`${entry.pageId}: source-backed page must remain draft`)
+    const reviewedStatus = pageReviewStatus(entry.pageId, 'draft')
+    if (
+      page.frontmatter.status !== reviewedStatus ||
+      entry.status !== reviewedStatus
+    ) {
+      failures.push(`${entry.pageId}: source-backed page review status drifted`)
     }
   }
   if (charCursor !== imported.length) {
@@ -236,8 +241,12 @@ for (const entry of manifest.editorialOverviews ?? []) {
   ) {
     failures.push(`${entry.pageId}: overview path, route, or hash drifted`)
   }
-  if (page.frontmatter.status !== 'draft' || entry.status !== 'draft') {
-    failures.push(`${entry.pageId}: editorial overview must remain draft`)
+  const reviewedStatus = pageReviewStatus(entry.pageId, 'draft')
+  if (
+    page.frontmatter.status !== reviewedStatus ||
+    entry.status !== reviewedStatus
+  ) {
+    failures.push(`${entry.pageId}: editorial overview review status drifted`)
   }
   const sourceRef = (page.frontmatter.sources ?? []).find((source) =>
     advancedAssetIds.has(source.assetId),

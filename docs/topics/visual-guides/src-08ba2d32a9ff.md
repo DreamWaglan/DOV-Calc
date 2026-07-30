@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-19"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理
@@ -39,7 +39,7 @@ related: ["topic-visual-guides-index","start-index"]
 <ResponsiveMedia
   media-id="wiki-image-62b82364129ca54a-fb95c25e70d60e64-preview"
   alt="拂晓剧情榜260720一图流，包含图中列出的步骤、结论与说明"
-  caption="拂晓剧情榜260720；版本日期 2026-07-19。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓剧情榜260720；版本日期 2026-07-19。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓剧情榜260720.png"
   version="2026-07-19"
   authorization="auth-user-declaration-20260730"

@@ -33,6 +33,13 @@ const pageChecks = []
 const screenshots = []
 const mediaRequests = []
 let segmentAnchorChecks = 0
+let legacyRedirectChecks = 0
+const redirectLedger = JSON.parse(
+  await readFile(
+    path.join(root, 'content', 'governance', 'redirects.json'),
+    'utf8',
+  ),
+)
 
 function normalizeBase(value = '/DOV-Calc/') {
   const trimmed = value.trim()
@@ -310,6 +317,33 @@ try {
   page.on('console', (message) => {
     if (message.type() === 'error') browserErrors.push(message.text())
   })
+
+  for (const redirect of redirectLedger.redirects.filter(
+    (entry) => entry.status === 'active',
+  )) {
+    await page.goto(routeUrl(redirect.legacyPath), {
+      waitUntil: 'domcontentloaded',
+      timeout: 45_000,
+    })
+    const expected = new URL(routeUrl(redirect.targetPath))
+    await page
+      .waitForFunction(
+        (expectedPathname, expectedHash) =>
+          location.pathname === expectedPathname &&
+          decodeURIComponent(location.hash) === expectedHash,
+        { timeout: 10_000 },
+        expected.pathname,
+        decodeURIComponent(expected.hash),
+      )
+      .then(() => {
+        legacyRedirectChecks += 1
+      })
+      .catch(() => {
+        failures.push(
+          `legacy redirect unresolved: ${redirect.legacyPath} -> ${redirect.targetPath}`,
+        )
+      })
+  }
 
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 })
   for (const route of [
@@ -749,6 +783,7 @@ const reportPath = await writeReport('e2e-smoke', {
     screenshots: screenshots.length,
     mediaRequests: mediaRequests.length,
     segmentAnchorChecks,
+    legacyRedirectChecks,
     browserErrors: substantiveBrowserErrors.length,
     failures: failures.length,
   },

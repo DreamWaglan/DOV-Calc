@@ -8,13 +8,13 @@ audience: [maintainer, editor]
 contentType: site
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 架构决策
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 架构复核
 sources:
   - title: DOV-Calc 站点维护记录
@@ -83,7 +83,9 @@ VitePress 负责把 Markdown、Frontmatter 和 Vue 组件构建为静态 HTML。
 
 当前站点已经具备内容 Schema、来源与许可门禁、自动导航、中文搜索样本、移动端验证、发布清单和回滚演练。架构决策应依据稳定的使用压力，而不是依据一次性迁移工作量。
 
-## 当前基线
+## 决策基线
+
+下表记录 2026-07-29 作出架构决策时的基线，用于说明当时为何继续采用静态 Wiki。它是历史决策证据，不代表当前发布状态。
 
 | 指标 | 2026-07-29 实测值 | 判断 |
 | --- | ---: | --- |
@@ -103,6 +105,10 @@ VitePress 负责把 Markdown、Frontmatter 和 Vue 组件构建为静态 HTML。
 | Lighthouse 代表页 | Performance 最低 0.99，Accessibility 1.00，SEO 1.00 | 静态架构满足发布门槛 |
 
 最近 90 天的提交集中在站点建设阶段，不能直接解释为长期编辑频率。后续复核应使用正式发布后的月度数据，分别统计内容提交次数、活跃编辑人数、搜索失败样本和并行版本数。
+
+### Phase 7 发布复核
+
+截至 2026-07-30，站点已扩展到 97 个公开 Markdown 页面，其中 96 个为 `current`、0 个为 `draft`、1 个为经批准保留的 `stale` 装备查询页；225 条授权装备记录已进入公开规范数据集。冻结中文查询增至 100 条，Top 5 命中率为 95%，精确查询 Top 1 命中率为 100%。页面数量、搜索质量和协作人数仍未触发平台升级条件，因此原决策继续有效。
 
 ## 决策
 
@@ -133,7 +139,7 @@ VitePress 负责把 Markdown、Frontmatter 和 Vue 组件构建为静态 HTML。
 
 1. 记录触发指标、统计周期和原始报告路径。
 2. 只选择与触发问题对应的一个候选方案进行概念验证。
-3. 复用现有 60 条中文搜索样本、许可过滤、URL 规则和工具回归测试。
+3. 复用现有冻结中文搜索样本、许可过滤、URL 规则和工具回归测试。
 4. 比较构建时间、首屏负载、搜索质量、迁移工作量、运行成本和回滚方式。
 5. 验证候选方案不会把 `pending` 或 `restricted` 内容发送到公开索引或外部服务。
 6. 形成新的 ADR。新 ADR 必须说明迁移范围、数据出口、身份权限、备份、监控和退出策略。

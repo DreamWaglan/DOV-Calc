@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { loadSourceLedger, stableJson } from './lib/migration-elements.mjs'
+import { pageReviewStatus } from './lib/page-review-decisions.mjs'
 
 const root = process.cwd()
 const generatedAt = '2026-07-30T00:00:00.000Z'
@@ -107,6 +108,10 @@ function resolvePartitions(source, pageDefinitions) {
 }
 
 function frontmatter(definition, asset) {
+  const status = pageReviewStatus(
+    definition.id,
+    definition.status ?? 'draft',
+  )
   return [
     '---',
     `id: ${definition.id}`,
@@ -119,7 +124,7 @@ function frontmatter(definition, asset) {
     'gameVersion: "2026-07"',
     `sourceUpdatedAt: ${JSON.stringify(asset.origin.updatedAt)}`,
     'verifiedAt: "2026-07-30"',
-    `status: ${definition.status ?? 'draft'}`,
+    `status: ${status}`,
     'authors:',
     '  - name: DOV-Calc 内容维护组',
     '    role: 授权资料迁移编辑',
@@ -148,11 +153,24 @@ function frontmatter(definition, asset) {
 }
 
 async function writeSourcePage(definition, asset, partition) {
+  const status = pageReviewStatus(
+    definition.id,
+    definition.status ?? 'draft',
+  )
+  const reviewNotice =
+    status === 'current'
+      ? [
+          '> [!INFO] 审核状态',
+          '> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。',
+        ]
+      : [
+          '> [!WARNING] 审核状态',
+          '> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在事实审核队列。',
+        ]
   const body = [
     `# ${definition.title}`,
     '',
-    '> [!WARNING] 审核状态',
-    '> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在 Phase 7 事实审核队列。页面保持 `draft`，不作为当前版本的最终结论。',
+    ...reviewNotice,
     '',
     normalizeSourceMarkdown(partition.source),
     '',
@@ -168,7 +186,7 @@ async function writeSourcePage(definition, asset, partition) {
     pageId: definition.id,
     file: definition.file,
     route: definition.route,
-    status: definition.status ?? 'draft',
+    status,
     sourceRange: partition.sourceRange,
     sourceElementRange: partition.sourceElementRange,
     sourceSliceSha256: sha256(partition.source),
@@ -178,6 +196,10 @@ async function writeSourcePage(definition, asset, partition) {
 }
 
 async function writeOverview(definition, asset) {
+  const status = pageReviewStatus(
+    definition.id,
+    definition.status ?? 'draft',
+  )
   const output = `${frontmatter(definition, asset)}${definition.editorialBody.trim()}\n`
   const absolutePath = path.join(root, definition.file)
   await mkdir(path.dirname(absolutePath), { recursive: true })
@@ -186,7 +208,7 @@ async function writeOverview(definition, asset) {
     pageId: definition.id,
     file: definition.file,
     route: definition.route,
-    status: definition.status ?? 'draft',
+    status,
     editorialOverview: true,
     outputSha256: sha256(output),
   }

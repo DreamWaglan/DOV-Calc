@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["练级","经验","站位","开槽"]
 related: ["progression-leveling-ship-selection","progression-leveling-locations","media-source-6eba63c4aa7b"]
 ---
 # 练级百科二：练船策略总纲
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移，但版本数字、图示依赖和实战结论仍在 Phase 7 事实审核队列。页面状态为 `draft`，使用前请结合当前游戏版本核对。
+> [!INFO] 来源说明
+> 本页正文来自已登记授权资料；仅开放网页正文，不提供原始 DOCX 下载。
 
 第二章 练船策略之总纲篇
 

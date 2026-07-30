@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["遭遇战","冲分","实操"]
 related: ["combat-encounter-preparation","combat-encounter-appendix","media-source-d35e870ffcd7"]
 ---
 # 遭遇战三：冲分实操
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在 Phase 7 事实审核队列。页面保持 `draft`，不作为当前版本的最终结论。
+> [!INFO] 审核状态
+> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。
 ## 遭遇战冲分实操
 
 实际操作中，请按照自己预先确定的理论轴，在正确的时间点释放技能和切换前后排。冲分时请注意让通常技与必杀技全部击中敌方。以下要点有助于冲分：

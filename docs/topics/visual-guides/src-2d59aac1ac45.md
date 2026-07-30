@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-18"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理
@@ -47,7 +47,7 @@ related: ["topic-visual-guides-index","mechanics-damage-model","mechanics-attack
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-segment-01"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -63,7 +63,7 @@ related: ["topic-visual-guides-index","mechanics-damage-model","mechanics-attack
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-segment-02"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -79,7 +79,7 @@ related: ["topic-visual-guides-index","mechanics-damage-model","mechanics-attack
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-segment-03"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明，第 3 段"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -95,7 +95,7 @@ related: ["topic-visual-guides-index","mechanics-damage-model","mechanics-attack
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-segment-04"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明，第 4 段"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -111,7 +111,7 @@ related: ["topic-visual-guides-index","mechanics-damage-model","mechanics-attack
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-segment-05"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明，第 5 段"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"

@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, watch } from 'vue'
-import { useData } from 'vitepress'
+import { computed, nextTick, onBeforeUnmount, onMounted, watch } from 'vue'
+import { useData, withBase } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import redirectsLedger from '../../../content/governance/redirects.json'
 import PageStatus from './components/PageStatus.vue'
 import RelatedPages from './components/RelatedPages.vue'
 import SourceList from './components/SourceList.vue'
+import { legacyAnchorTarget } from './legacyAnchorRedirectModel.js'
 
 interface IndexedPage {
   id: string
@@ -14,7 +16,7 @@ interface IndexedPage {
   status?: string
 }
 
-const { frontmatter, page, theme } = useData()
+const { frontmatter, page, site, theme } = useData()
 
 const permission = computed(() => {
   const values = (frontmatter.value.sources ?? [])
@@ -42,13 +44,36 @@ function enhanceArticleTables() {
   })
 }
 
-onMounted(enhanceArticleTables)
+function redirectLegacyAnchor() {
+  if (typeof window === 'undefined') return
+  const target = legacyAnchorTarget(
+    redirectsLedger.redirects,
+    window.location,
+    site.value.base,
+  )
+  if (target) window.location.replace(withBase(target))
+}
+
+function handleHashChange() {
+  redirectLegacyAnchor()
+}
+
+onMounted(() => {
+  enhanceArticleTables()
+  redirectLegacyAnchor()
+  window.addEventListener('hashchange', handleHashChange)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('hashchange', handleHashChange)
+})
 
 watch(
   () => page.value.relativePath,
   async () => {
     await nextTick()
     enhanceArticleTables()
+    redirectLegacyAnchor()
   },
   { flush: 'post' },
 )

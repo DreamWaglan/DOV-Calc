@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -41,6 +41,6 @@ related: ["start-new-account","start-mainline-roadmap","start-daily-and-events",
 
 ## 使用规则
 
-- 带有 `draft` 状态的数字、角色推荐和活动结论必须结合当前版本复核。
+- 数字、角色推荐和活动结论均按页面所示版本审核；游戏更新后必须重新进入版本复核。
 - 原稿依赖但尚未完成审核的图示不会被假装成文字结论。
 - 原始 DOCX 不开放下载；网页正文、搜索与站点地图范围服从授权总账。

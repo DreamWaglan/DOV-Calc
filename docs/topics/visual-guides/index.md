@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 授权图片库维护
@@ -240,7 +240,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-535de403c141b977-5badfddbc9d1a6d7-thumbnail"
   alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明"
-  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="1-性能优化小开关教程260107.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -256,7 +256,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-f1bdd7e39067db6d-12a3d7c799738fde-thumbnail"
   alt="2-拂晓新手入门思维导图 v2.4 260720一图流，包含图中列出的步骤、结论与说明"
-  caption="2-拂晓新手入门思维导图 v2.4 260720；版本日期 2026-07-20。仅展示授权响应式派生图，原图不提供下载。"
+  caption="2-拂晓新手入门思维导图 v2.4 260720；版本日期 2026-07-20。仅展示授权响应式派生图，原图不对外提供。"
   source-label="2-拂晓新手入门思维导图 v2.4 260720.png"
   version="2026-07-20"
   authorization="auth-user-declaration-20260730"
@@ -272,7 +272,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-294f579ae5b489c7-0e4c7c06da0e1c90-thumbnail"
   alt="3-拂晓新人向PVE舰灵推荐表 v2.4 260721一图流，包含图中列出的步骤、结论与说明"
-  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不提供下载。"
+  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不对外提供。"
   source-label="3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png"
   version="2026-07-21"
   authorization="auth-user-declaration-20260730"
@@ -288,7 +288,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-ed1d5a6d4a0b6d45-4168d3297903a62b-thumbnail"
   alt="4-萌新入门配装推荐260718一图流，包含图中列出的步骤、结论与说明"
-  caption="4-萌新入门配装推荐260718；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="4-萌新入门配装推荐260718；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="4-萌新入门配装推荐260718.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -304,7 +304,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-884bc9486a8a63cc-e6f94791be3c1e93-thumbnail"
   alt="5-拂晓：胜利之刻-装备速查表20260712高清原图一图流，包含图中列出的步骤、结论与说明"
-  caption="5-拂晓：胜利之刻-装备速查表20260712高清原图；版本日期 2026-07-12。仅展示授权响应式派生图，原图不提供下载。"
+  caption="5-拂晓：胜利之刻-装备速查表20260712高清原图；版本日期 2026-07-12。仅展示授权响应式派生图，原图不对外提供。"
   source-label="5-拂晓：胜利之刻-装备速查表20260712高清原图.png"
   version="2026-07-12"
   authorization="auth-user-declaration-20260730"
@@ -320,7 +320,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-fe260315400a1839-c2320248264a34da-thumbnail"
   alt="6-阵容分析推荐260129一图流，包含图中列出的步骤、结论与说明"
-  caption="6-阵容分析推荐260129；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="6-阵容分析推荐260129；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="6-阵容分析推荐260129.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -336,7 +336,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-7dd6f9a1428a9948-993028570f1bd89e-thumbnail"
   alt="7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512一图流，包含图中列出的步骤、结论与说明"
-  caption="7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512；版本日期 2026-05-12。仅展示授权响应式派生图，原图不提供下载。"
+  caption="7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512；版本日期 2026-05-12。仅展示授权响应式派生图，原图不对外提供。"
   source-label="7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png"
   version="2026-05-12"
   authorization="auth-user-declaration-20260730"
@@ -352,7 +352,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-10737fce25469ecf-f2ff9eedbcf04f30-thumbnail"
   alt="8-PVP天赋表260721一图流，包含图中列出的步骤、结论与说明"
-  caption="8-PVP天赋表260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不提供下载。"
+  caption="8-PVP天赋表260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不对外提供。"
   source-label="8-PVP天赋表260721.png"
   version="2026-07-21"
   authorization="auth-user-declaration-20260730"
@@ -368,7 +368,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-thumbnail"
   alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓舰灵改造优先级2.0.3.png"
   version="2026-07-29"
   authorization="auth-user-declaration-20260730"
@@ -384,7 +384,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-62b82364129ca54a-fb95c25e70d60e64-thumbnail"
   alt="拂晓剧情榜260720一图流，包含图中列出的步骤、结论与说明"
-  caption="拂晓剧情榜260720；版本日期 2026-07-19。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓剧情榜260720；版本日期 2026-07-19。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓剧情榜260720.png"
   version="2026-07-19"
   authorization="auth-user-declaration-20260730"
@@ -400,7 +400,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-7357da369ec13670-0778f1a139e00861-thumbnail"
   alt="舰灵面板数值计算公式251226一图流，包含图中列出的步骤、结论与说明"
-  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="舰灵面板数值计算公式251226；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="舰灵面板数值计算公式251226.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -416,7 +416,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-f1814a96a6a2a89d-0c67d9d753852174-thumbnail"
   alt="主副炮循环装填数值表251201一图流，包含图中列出的步骤、结论与说明"
-  caption="主副炮循环装填数值表251201；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="主副炮循环装填数值表251201；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="主副炮循环装填数值表251201.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -432,7 +432,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-18fe18ef54ce7992-1fdc8c51a0eb7f26-thumbnail"
   alt="咨询问答表P1一图流，包含图中列出的步骤、结论与说明"
-  caption="咨询问答表P1；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="咨询问答表P1；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="咨询问答表P1.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -448,7 +448,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-f120c4bc3edb1fb6-6d3d729f736c00b0-thumbnail"
   alt="咨询问答表P2一图流，包含图中列出的步骤、结论与说明"
-  caption="咨询问答表P2；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="咨询问答表P2；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="咨询问答表P2.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -464,7 +464,7 @@ related: ["about-sources","start-index","combat-index","mechanics-index"]
 <ResponsiveMedia
   media-id="wiki-image-03ce2087edf07aed-b8c178aa7397e581-thumbnail"
   alt="咨询问答表P3一图流，包含图中列出的步骤、结论与说明"
-  caption="咨询问答表P3；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="咨询问答表P3；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="咨询问答表P3.jpg"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"

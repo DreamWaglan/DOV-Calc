@@ -6,6 +6,12 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.
 const docsRoot = path.join(root, 'docs')
 const fixturePath = path.join(root, 'tests', 'fixtures', 'search-quality.zh-CN.json')
 const reportPath = path.join(root, 'content', 'reports', 'search-quality.json')
+const basicAttackDataPath = path.join(
+  docsRoot,
+  '.vitepress',
+  'data',
+  'basic-attack-data.json',
+)
 
 const aliasByPageId = {
   'site-home': ['拂晓手册', '拂晓wiki', '手册首页', '工具箱'],
@@ -118,6 +124,22 @@ const statusWeight = {
   archived: 0,
 }
 
+const basicAttackData = JSON.parse(await readFile(basicAttackDataPath, 'utf8'))
+const basicAttackPageIdByWorksheet = new Map(
+  basicAttackData.worksheets.map((worksheet) => [
+    worksheet.name,
+    `data-basic-attack-${worksheet.slug}`,
+  ]),
+)
+const dynamicAliasesByPageId = new Map()
+for (const record of basicAttackData.records) {
+  const pageId = basicAttackPageIdByWorksheet.get(record.values?.worksheet)
+  if (!pageId) continue
+  const aliases = dynamicAliasesByPageId.get(pageId) ?? new Set()
+  aliases.add(record.name)
+  dynamicAliasesByPageId.set(pageId, aliases)
+}
+
 function canonicalize(value) {
   let normalized = String(value ?? '').normalize('NFKC').toLowerCase()
   for (const [from, to] of canonicalReplacements) {
@@ -209,7 +231,10 @@ async function buildIndex() {
       const headings = [...body.matchAll(/^#{1,6}\s+(.+)$/gm)].map((item) =>
         item[1].replace(/\s+\{#[^}]+}\s*$/, ''),
       )
-      const aliases = aliasByPageId[id] ?? []
+      const aliases = [
+        ...(aliasByPageId[id] ?? []),
+        ...(dynamicAliasesByPageId.get(id) ?? []),
+      ]
       const entities = [title, ...tags, ...aliases]
 
       return {

@@ -8,13 +8,13 @@ audience: [new-player, beginner]
 contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
-status: draft
+verifiedAt: "2026-07-30"
+status: current
 authors:
   - name: DOV-Calc 内容组
     role: 速查编辑
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 事实审核组
     role: 新手内容审核
 sources:
   - title: 拂晓基础向介绍
@@ -30,11 +30,11 @@ sources:
   - title: 新手入门思维导图
     assetId: src-ec1754535996
     sourceType: image
-    permission: pending
+    permission: authorized
     publicUse:
       body: false
-      asset: false
-    notes: 原图仅用于内部主题盘点；清单为重新撰写的手机正文版，不复刻图中文字或版式。
+      asset: true
+    notes: 已获响应式派生图展示授权；清单为重新撰写的手机正文版，视觉资料页保留图表上下文。
 tags: [新手, 清单, 手机阅读, 一图流正文版]
 related: [start-index, start-first-week, progression-leveling]
 ---
@@ -42,6 +42,8 @@ related: [start-index, start-first-week, progression-leveling]
 # 新手速查清单
 
 不知道接下来做什么时，从当前场景对应的小节开始，不必全部重做。
+
+需要查看整体关系时，可打开[新手入门思维导图视觉资料](./visual-guides/src-ec1754535996)；本页清单用于日常手机检索。
 
 ## 每次登录
 

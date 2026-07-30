@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["伤害","公式","实数伤害"]
 related: ["mechanics-damage-model","mechanics-attack-power","media-source-c8852cf69a7b"]
 ---
 # 伤害构成一：总公式
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在 Phase 7 事实审核队列。页面保持 `draft`，不作为当前版本的最终结论。
+> [!INFO] 审核状态
+> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。
 拂晓伤害构成解析
 
 本文旨在系统解析拂晓的伤害构成机制，提供量化计算舰灵输出能力的标准化方法，辅助玩家评估阵容输出效能是否达到关卡阈值。

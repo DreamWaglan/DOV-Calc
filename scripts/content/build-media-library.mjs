@@ -9,6 +9,7 @@ import {
   loadSourceLedger,
   stableJson,
 } from './lib/migration-elements.mjs'
+import { pageReviewStatus } from './lib/page-review-decisions.mjs'
 
 const GENERATED_AT = '2026-07-30T00:00:00.000Z'
 const PUBLIC_ROOT = path.join(root, 'docs', 'public', 'wiki-media')
@@ -313,7 +314,7 @@ function pageFrontmatter({
     'gameVersion: "2026-07"',
     `sourceUpdatedAt: ${JSON.stringify(source.origin.updatedAt)}`,
     'verifiedAt: "2026-07-30"',
-    'status: draft',
+    `status: ${pageReviewStatus(id, 'draft')}`,
     'authors:',
     '  - name: DOV-Calc 媒体维护组',
     '    role: 响应式图片与来源整理',
@@ -476,7 +477,7 @@ async function writeIndexPage({
     'gameVersion: "2026-07"',
     'sourceUpdatedAt: "2026-07-21"',
     'verifiedAt: "2026-07-30"',
-    'status: draft',
+    `status: ${pageReviewStatus(VISUAL_INDEX_ID, 'draft')}`,
     'authors:',
     '  - name: DOV-Calc 媒体维护组',
     '    role: 授权图片库维护',

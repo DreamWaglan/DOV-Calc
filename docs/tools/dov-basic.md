@@ -8,13 +8,13 @@ audience: [regular, advanced]
 contentType: tool
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-05-14"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 工具实现
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 工具与数据审核组
     role: 机制审核
 sources:
   - title: 伤害计算器既有实现与黄金基线

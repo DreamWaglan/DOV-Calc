@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理
@@ -45,7 +45,7 @@ related: ["topic-visual-guides-index","progression-index","topic-pve-selection"]
 <ResponsiveMedia
   media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-01"
   alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓舰灵改造优先级2.0.3.png"
   version="2026-07-29"
   authorization="auth-user-declaration-20260730"
@@ -61,7 +61,7 @@ related: ["topic-visual-guides-index","progression-index","topic-pve-selection"]
 <ResponsiveMedia
   media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-02"
   alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓舰灵改造优先级2.0.3.png"
   version="2026-07-29"
   authorization="auth-user-declaration-20260730"
@@ -77,7 +77,7 @@ related: ["topic-visual-guides-index","progression-index","topic-pve-selection"]
 <ResponsiveMedia
   media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-03"
   alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 3 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不提供下载。"
+  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
   source-label="拂晓舰灵改造优先级2.0.3.png"
   version="2026-07-29"
   authorization="auth-user-declaration-20260730"

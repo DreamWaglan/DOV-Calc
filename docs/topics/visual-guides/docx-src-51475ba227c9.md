@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-17"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理

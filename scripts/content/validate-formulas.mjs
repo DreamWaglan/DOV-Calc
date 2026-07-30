@@ -8,6 +8,7 @@ import {
   root,
   writeReport,
 } from './lib/content-utils.mjs'
+import { pageReviewDecision } from './lib/page-review-decisions.mjs'
 
 const DAMAGE_SOURCE_ID = 'src-c8852cf69a7b'
 const fullMap = await readJson('content/migrations/full-content-map.json')
@@ -72,8 +73,17 @@ for (const formula of formulas) {
     )
   }
   for (const pageId of formula.targetPageIds) {
-    if (pageById.get(pageId)?.frontmatter.status !== 'draft') {
-      failures.push(`${formula.sourceElementId}: unreviewed formula page is not draft`)
+    const page = pageById.get(pageId)
+    const decision = pageReviewDecision(pageId)
+    if (
+      !page ||
+      !decision ||
+      page.frontmatter.status !== decision.finalStatus ||
+      !String(decision.tracks?.factual ?? '').startsWith('approved')
+    ) {
+      failures.push(
+        `${formula.sourceElementId}: final formula page review decision is incomplete`,
+      )
     }
   }
 }
@@ -117,11 +127,12 @@ const report = {
     failures: failures.length,
   },
   reviewBoundary: {
-    currentStatus: 'pending-fact-review',
+    importAnnotationStatus: 'pending-fact-review',
+    finalPageReviewStatus: 'approved-source-version',
     publicationGate:
-      'Formula source text is accessible and traceable, but pages remain draft until independent fact review.',
+      'The import annotation records the original extraction gate. Publication requires an approved factual track in the Phase 7 page-review ledger for every owning page.',
     calculatorEvidence:
-      'The existing calculator golden suite is an independent regression guard; it is not treated as proof that every imported formula has been fact-approved.',
+      'The calculator golden suite remains an independent regression guard; page-level approval is recorded separately from the immutable import annotation.',
   },
   formulas: formulas.map((formula) => ({
     sourceElementId: formula.sourceElementId,

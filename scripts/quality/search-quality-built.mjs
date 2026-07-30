@@ -188,6 +188,7 @@ try {
     timeout: 10_000,
   })
 
+  let searchIndexReady = false
   async function runQuery(query) {
     const input = await page.$('#localsearch-input')
     await input.focus()
@@ -202,6 +203,19 @@ try {
       query,
     )
     await new Promise((resolve) => setTimeout(resolve, 750))
+    if (!searchIndexReady) {
+      await page.waitForFunction(
+        () => {
+          const box = document.querySelector('.VPLocalSearchBox')
+          return (
+            Boolean(box?.querySelector('a[href]')) ||
+            box?.textContent?.includes('没有找到相关结果')
+          )
+        },
+        { timeout: 10_000 },
+      )
+      searchIndexReady = true
+    }
     return page.evaluate(() => ({
       text:
         document.querySelector('.VPLocalSearchBox')?.textContent?.trim() ?? '',

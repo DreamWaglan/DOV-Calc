@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { loadSourceLedger, stableJson } from './lib/migration-elements.mjs'
+import { applyPageReviewStatus } from './lib/page-review-decisions.mjs'
 
 const root = process.cwd()
 const generatedAt = '2026-07-30T00:00:00.000Z'
@@ -524,7 +525,7 @@ const overviewDefinitions = [
 
 ## 使用规则
 
-- 带有 \`draft\` 状态的数字、角色推荐和活动结论必须结合当前版本复核。
+- 数字、角色推荐和活动结论均按页面所示版本审核；游戏更新后必须重新进入版本复核。
 - 原稿依赖但尚未完成审核的图示不会被假装成文字结论。
 - 原始 DOCX 不开放下载；网页正文、搜索与站点地图范围服从授权总账。
 `,
@@ -582,14 +583,20 @@ PVE 配队先读敌人，再分配职责，最后用实战结果微调。完整�
 
 const sourcePageEntries = []
 for (const definition of sourcePageDefinitions) {
+  const reviewedDefinition = applyPageReviewStatus(definition)
   const source = sourceBodies[definition.sourceKey]
   const slice = partitions[definition.sourceKey][definition.partition]
-  sourcePageEntries.push(await writePage(definition, source.asset, slice))
+  sourcePageEntries.push(
+    await writePage(reviewedDefinition, source.asset, slice),
+  )
 }
 
 const overviewEntries = []
 for (const definition of overviewDefinitions) {
-  overviewEntries.push(await writePage(definition, definition.asset))
+  const reviewedDefinition = applyPageReviewStatus(definition)
+  overviewEntries.push(
+    await writePage(reviewedDefinition, reviewedDefinition.asset),
+  )
 }
 
 const sourceEntries = Object.entries(sourceBodies).map(([key, source]) => {

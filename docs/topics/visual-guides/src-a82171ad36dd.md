@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理
@@ -44,7 +44,7 @@ related: ["topic-visual-guides-index","topic-pve-selection","combat-pve-team-bui
 <ResponsiveMedia
   media-id="wiki-image-294f579ae5b489c7-0e4c7c06da0e1c90-segment-01"
   alt="3-拂晓新人向PVE舰灵推荐表 v2.4 260721一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不提供下载。"
+  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不对外提供。"
   source-label="3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png"
   version="2026-07-21"
   authorization="auth-user-declaration-20260730"
@@ -60,7 +60,7 @@ related: ["topic-visual-guides-index","topic-pve-selection","combat-pve-team-bui
 <ResponsiveMedia
   media-id="wiki-image-294f579ae5b489c7-0e4c7c06da0e1c90-segment-02"
   alt="3-拂晓新人向PVE舰灵推荐表 v2.4 260721一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不提供下载。"
+  caption="3-拂晓新人向PVE舰灵推荐表 v2.4 260721；版本日期 2026-07-21。仅展示授权响应式派生图，原图不对外提供。"
   source-label="3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png"
   version="2026-07-21"
   authorization="auth-user-declaration-20260730"

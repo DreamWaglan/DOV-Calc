@@ -12,7 +12,7 @@
           "pageId": "start-handbook-history",
           "file": "docs/start/handbook-history.md",
           "route": "/start/handbook-history",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 0,
             "end": 2449
@@ -25,7 +25,7 @@
           },
           "sourceSliceSha256": "3d46c4b9bcace582fa663c22e9a2e91bc764894c40f4d56730b3a2bf70f9a5ee",
           "sourceChars": 2449,
-          "outputSha256": "c6f06a80f738d1dc5557184f5d1ca913032524930059f544f62663c8a9d27270"
+          "outputSha256": "560d031e855d64efa7b698e0398ccab6609bbe2191037b14fe3023147a2646f5"
         }
       ]
     },
@@ -66,7 +66,7 @@
           "pageId": "start-new-account",
           "file": "docs/start/new-account.md",
           "route": "/start/new-account",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 0,
             "end": 1600
@@ -79,13 +79,13 @@
           },
           "sourceSliceSha256": "1d644c44b3336f34f2b7994fb27afa765638d3d855b81ec1df6e7cdd0b542995",
           "sourceChars": 1600,
-          "outputSha256": "16314105adb0530bbeed3f1cf0e469bd84b6cd57c329fa8e467dd7eb8543f5b7"
+          "outputSha256": "74709b700b3e8ed97204a12b996105310fce818d92cbd1b91ccdb5346197e6e3"
         },
         {
           "pageId": "start-mainline-roadmap",
           "file": "docs/start/mainline-roadmap.md",
           "route": "/start/mainline-roadmap",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 1600,
             "end": 5413
@@ -98,13 +98,13 @@
           },
           "sourceSliceSha256": "8823d8cd8338c6d19bf75eccd917226b491d23ebccfe09536ae16b78185f5dc7",
           "sourceChars": 3813,
-          "outputSha256": "dd223981e12dd60888bf756280900818866c016b860f9e42a380870c8c3aae50"
+          "outputSha256": "59023faf42f871cfa4c3d8185228e0fc91a4cc0ff6dc182cedae65f4414986a9"
         },
         {
           "pageId": "start-daily-and-events",
           "file": "docs/start/daily-and-events.md",
           "route": "/start/daily-and-events",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 5413,
             "end": 10756
@@ -117,7 +117,7 @@
           },
           "sourceSliceSha256": "e6fb73a271bc788cbd29bc8a711f25a782e12380c5af3b1f64f3bbceae52b2c9",
           "sourceChars": 5343,
-          "outputSha256": "dd1c88cfcf29c120a301670356f68917bf8034c71261986808ae1b91d0c14fe8"
+          "outputSha256": "0be82bda4f1348c501253851b138be09a121d3750be1e18e3ff82b4a534f0224"
         }
       ]
     },
@@ -131,7 +131,7 @@
           "pageId": "progression-leveling-ship-selection",
           "file": "docs/progression/leveling-ship-selection.md",
           "route": "/progression/leveling-ship-selection",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 0,
             "end": 3571
@@ -144,13 +144,13 @@
           },
           "sourceSliceSha256": "ec4133b03f3b282d25f2678863985a5aabaebec8fb9bb9e17db48bd48b6ecfff",
           "sourceChars": 3571,
-          "outputSha256": "83c91aef5f2d21349c3ba1a9642ff3b8bf23a5c0b8f3a901dd70117875e945a0"
+          "outputSha256": "c3080f46d433df1a6acf56937660e841b45e6005324a0422360b37ab0aaf732b"
         },
         {
           "pageId": "progression-leveling-strategy",
           "file": "docs/progression/leveling-strategy.md",
           "route": "/progression/leveling-strategy",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 3571,
             "end": 9944
@@ -163,13 +163,13 @@
           },
           "sourceSliceSha256": "90c11bc6cd80bd1267a424c008df968cbf68744abc7f3bb4939b3fb2b013c4d4",
           "sourceChars": 6373,
-          "outputSha256": "aa30356cd19a27af7eb2f1761457a6066fc1c37e0e433a8c38aebde5556ecc4a"
+          "outputSha256": "9c8328557471089407a01d6fe5ead3be84a72d73394fc63011c8087f6fa3b0bf"
         },
         {
           "pageId": "progression-leveling-locations",
           "file": "docs/progression/leveling-locations.md",
           "route": "/progression/leveling-locations",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 9944,
             "end": 19969
@@ -182,13 +182,13 @@
           },
           "sourceSliceSha256": "2cf7029570ab586a941241e999a028a7c965c6e36ef5943234b039a87f7a777b",
           "sourceChars": 10025,
-          "outputSha256": "f5969f9c77d18afb5565b9fa9942e14919dabf5191eeac92132ce28bef8c3b9d"
+          "outputSha256": "8c13cf76aabfaf2de0f7e43588b9cf5e331c7ffbc98ffa08608722118268ef7a"
         },
         {
           "pageId": "progression-leveling-efficiency",
           "file": "docs/progression/leveling-efficiency.md",
           "route": "/progression/leveling-efficiency",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 19969,
             "end": 24925
@@ -201,7 +201,7 @@
           },
           "sourceSliceSha256": "4f4204a9994b7caee8ad3eb77b202ae7e83a19ee739373304a220cbe1277328f",
           "sourceChars": 4956,
-          "outputSha256": "9a8f123f99f2f612aaeac19ccc7a04ce12b251b50eb7c41f0958f4be264758f5"
+          "outputSha256": "974275c38c485b477ceee7ba24a93af52f4898bad5b629f3d983cda7604f0557"
         }
       ]
     },
@@ -215,7 +215,7 @@
           "pageId": "combat-event-maps",
           "file": "docs/combat/event-maps.md",
           "route": "/combat/event-maps",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 0,
             "end": 4028
@@ -228,7 +228,7 @@
           },
           "sourceSliceSha256": "761976db0bfe848f7f383274aa7873718e7a0a679b14a2c8b99f05d5f77832ac",
           "sourceChars": 4028,
-          "outputSha256": "50d5db4c8feddc8c6ca5861a08486caf516053ab676224b1a7022686b9697ef4"
+          "outputSha256": "0fc1ffddf7a3b0b8bbc9128747d5f4b095af9945a59b5761b5f0eb5d649af1bb"
         }
       ]
     },
@@ -242,7 +242,7 @@
           "pageId": "combat-pve-enemy-analysis",
           "file": "docs/combat/pve-enemy-analysis.md",
           "route": "/combat/pve-enemy-analysis",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 0,
             "end": 1428
@@ -255,13 +255,13 @@
           },
           "sourceSliceSha256": "c5f12e5f40faf9fe5de9968a2607466922ca88fd08ad229beb0563a8d6a8cc3c",
           "sourceChars": 1428,
-          "outputSha256": "7e9a17da1161a24bb914e4bc68ada512cd9ff7b880163af50af6edbae447b4f6"
+          "outputSha256": "7a794c2e6be653148cfb3c9ec29a802970f348e39e8a8c352e01ca26430682de"
         },
         {
           "pageId": "combat-pve-ship-roles",
           "file": "docs/combat/pve-ship-roles.md",
           "route": "/combat/pve-ship-roles",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 1428,
             "end": 4310
@@ -274,13 +274,13 @@
           },
           "sourceSliceSha256": "cb84318f04bf718089efa4813f825267ce887a36495c7f317e568c0bbd304baf",
           "sourceChars": 2882,
-          "outputSha256": "a05d645896caa4488b70d380eb90bed801c9bf0c1ad003064179e719ac0a6a3a"
+          "outputSha256": "a3956e76e37a09217daca2334320531fa3d0c199cbcdba69d7f7042f54c1db15"
         },
         {
           "pageId": "combat-pve-team-practice",
           "file": "docs/combat/pve-team-practice.md",
           "route": "/combat/pve-team-practice",
-          "status": "draft",
+          "status": "current",
           "sourceRange": {
             "start": 4310,
             "end": 7543
@@ -293,7 +293,7 @@
           },
           "sourceSliceSha256": "f46715ee90c0251b0b3889ce5757b7654c1d29c91294abf5ab324ac3dc1d2bc4",
           "sourceChars": 3233,
-          "outputSha256": "e2afe52305a7d4a42fcc16a8b956ded4887fa4172c2bbf8d61502950136c1a3f"
+          "outputSha256": "8f7420350290d25edf41b499302d43f269c5cf56200b4f5642fa9b6789fd75c7"
         }
       ]
     }
@@ -303,25 +303,25 @@
       "pageId": "start-first-week",
       "file": "docs/start/first-week.md",
       "route": "/start/first-week",
-      "status": "draft",
+      "status": "current",
       "editorialOverview": true,
-      "outputSha256": "bfee4a3de953eb039f6cca5dcd0c524cc3f4bcf0d7e5ca247071533fe89a44d3"
+      "outputSha256": "d16f412ab05124be57f44f1f53618cd6fa9b7e604f19aabf3dd44e838d81bfb2"
     },
     {
       "pageId": "progression-leveling",
       "file": "docs/progression/leveling.md",
       "route": "/progression/leveling",
-      "status": "draft",
+      "status": "current",
       "editorialOverview": true,
-      "outputSha256": "8e0fddbf42d5418fc8a3ddb0475faf1dbf18ecb2bc16f3f430bfacb954a187b2"
+      "outputSha256": "c65303438d9edcf84ebbeef2d9c8088502182548d3c51458d4056d2cec15ab5e"
     },
     {
       "pageId": "combat-pve-team-building",
       "file": "docs/combat/pve-team-building.md",
       "route": "/combat/pve-team-building",
-      "status": "draft",
+      "status": "current",
       "editorialOverview": true,
-      "outputSha256": "836839db16af2531f609052ee31bcdba72435a8861b0564a1498b1f1f32832de"
+      "outputSha256": "9a55a270d1477415d12c3c5b648f43eca712b3dc278786be3d5308bf66638e33"
     }
   ],
   "summary": {

@@ -8,13 +8,13 @@ audience: [regular, advanced, editor]
 contentType: data
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 数据组
     role: 数据目录维护
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 工具与数据审核组
     role: 数据发布审核
 sources:
   - title: DOV-Calc 站点信息架构

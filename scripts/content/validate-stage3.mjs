@@ -115,25 +115,25 @@ for (const id of tacticalPages) {
   }
 }
 
-const textVersions = new Map([
+const authorizedLongImages = new Map([
   ['topic-new-player-checklist', 'src-ec1754535996'],
   ['topic-pve-selection', 'src-a82171ad36dd'],
   ['topic-beginner-equipment', 'src-3f75f2339e43'],
 ])
 
-for (const [id, sourceAssetId] of textVersions) {
+for (const [id, sourceAssetId] of authorizedLongImages) {
   const page = byId.get(id)
   const source = (page?.frontmatter.sources ?? []).find(
     (candidate) => candidate.assetId === sourceAssetId,
   )
   if (
     !source ||
-    source.permission !== 'pending' ||
+    source.permission !== 'authorized' ||
     source.publicUse?.body !== false ||
-    source.publicUse?.asset !== false
+    source.publicUse?.asset !== true
   ) {
     failures.push(
-      `${id}: pending long-image source must be registered with public use disabled`,
+      `${id}: authorized long-image source must allow the reviewed asset while keeping source text reuse disabled`,
     )
   }
 }
@@ -270,7 +270,7 @@ const report = {
     pages: pages.length,
     requiredPages: requiredPages.size,
     tacticalPages: tacticalPages.length,
-    textVersions: textVersions.size,
+    authorizedLongImages: authorizedLongImages.size,
     docxImports: docxMap.assets?.length ?? 0,
     failures: failures.length,
   },

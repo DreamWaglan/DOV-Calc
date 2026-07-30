@@ -9,7 +9,7 @@ contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-18"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 媒体维护组
     role: 响应式图片与来源整理
@@ -44,7 +44,7 @@ related: ["topic-visual-guides-index","start-new-account","start-first-week"]
 <ResponsiveMedia
   media-id="wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-01"
   alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="1-性能优化小开关教程260107.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"
@@ -60,7 +60,7 @@ related: ["topic-visual-guides-index","start-new-account","start-first-week"]
 <ResponsiveMedia
   media-id="wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-02"
   alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不提供下载。"
+  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
   source-label="1-性能优化小开关教程260107.png"
   version="2026-07-18"
   authorization="auth-user-declaration-20260730"

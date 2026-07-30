@@ -8,13 +8,13 @@ audience: [new-player, beginner]
 contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 内容组
     role: 路线编辑
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 新手章节事实审核
 sources:
   - title: 阶段 3 新手路径编辑稿

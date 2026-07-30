@@ -86,30 +86,58 @@ await collectReports(path.join(root, 'content', 'imports'))
 
 const reviewQueue = []
 for (const finding of versions.driftFindings ?? []) {
+  const explicitlyAffectedIds = [
+    ...(finding.stalePageIds ?? []),
+    ...(finding.currentReferencePageIds ?? []),
+  ]
   const affectedPages = pages
-    .filter((page) => {
-      if (finding.domain === 'equipment') {
-        return (page.frontmatter.tags ?? []).includes('装备')
-      }
-      return false
-    })
+    .filter((page) =>
+      explicitlyAffectedIds.length > 0
+        ? explicitlyAffectedIds.includes(page.frontmatter.id)
+        : finding.domain === 'equipment' &&
+          (page.frontmatter.tags ?? []).includes('装备'),
+    )
     .map((page) => ({
       id: page.frontmatter.id,
       status: page.frontmatter.status,
       file: page.filePath,
+      source: page.source,
     }))
-  const acknowledged = affectedPages.every((page) =>
-    ['stale', 'draft', 'archived'].includes(page.status),
+  const pagesById = new Map(affectedPages.map((page) => [page.id, page]))
+  const missingPageIds = explicitlyAffectedIds.filter(
+    (pageId) => !pagesById.has(pageId),
   )
+  const stalePagesAcknowledged = (finding.stalePageIds ?? []).every(
+    (pageId) => {
+      const page = pagesById.get(pageId)
+      return (
+        ['stale', 'draft', 'archived'].includes(page?.status) &&
+        page.source.includes(finding.olderVersion) &&
+        page.source.includes(finding.newerVersion)
+      )
+    },
+  )
+  const referencePagesAcknowledged = (
+    finding.currentReferencePageIds ?? []
+  ).every((pageId) => pagesById.get(pageId)?.status === 'current')
+  const acknowledged =
+    finding.status === 'acknowledged' &&
+    missingPageIds.length === 0 &&
+    (explicitlyAffectedIds.length > 0
+      ? stalePagesAcknowledged && referencePagesAcknowledged
+      : affectedPages.every((page) =>
+          ['stale', 'draft', 'archived'].includes(page.status),
+        ))
   reviewQueue.push({
     findingId: finding.id,
     severity: finding.severity,
-    affectedPages,
+    affectedPages: affectedPages.map(({ source, ...page }) => page),
+    missingPageIds,
     acknowledged,
   })
   if (!acknowledged) {
     failures.push(
-      `${finding.id}: affected public pages are not marked stale/draft/archived`,
+      `${finding.id}: approved version-layering boundary is incomplete`,
     )
   }
 }

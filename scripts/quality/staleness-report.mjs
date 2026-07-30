@@ -5,7 +5,7 @@ import {
   writeReport,
 } from '../content/lib/content-utils.mjs'
 
-const asOf = new Date(`${process.env.WIKI_AUDIT_DATE || '2026-07-29'}T00:00:00Z`)
+const asOf = new Date(`${process.env.WIKI_AUDIT_DATE || '2026-07-30'}T00:00:00Z`)
 const reviewDaysBySection = {
   combat: 90,
   mechanics: 90,

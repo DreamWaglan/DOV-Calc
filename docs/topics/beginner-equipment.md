@@ -8,13 +8,13 @@ audience: [new-player, beginner, regular]
 contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
-status: draft
+verifiedAt: "2026-07-30"
+status: current
 authors:
   - name: DOV-Calc 内容组
     role: 配装速查编辑
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 事实审核组
     role: 装备数据审核
 sources:
   - title: 拂晓基础向介绍
@@ -30,11 +30,11 @@ sources:
   - title: 萌新入门配装推荐
     assetId: src-3f75f2339e43
     sourceType: image
-    permission: pending
+    permission: authorized
     publicUse:
       body: false
-      asset: false
-    notes: 原图和装备图标未获公开许可；本页为独立撰写的选择流程，不迁移装备名单。
+      asset: true
+    notes: 已获响应式派生图展示授权；本页继续保留独立撰写的选择流程，视觉资料页用于查看原图信息。
 tags: [装备, 配装, 过渡装备, 一图流正文版]
 related: [topic-pve-selection, tool-equipment-lookup, combat-pve-team-building]
 ---
@@ -42,6 +42,8 @@ related: [topic-pve-selection, tool-equipment-lookup, combat-pve-team-building]
 # 新手配装速查
 
 配装先解决“这个位置要做什么”，再比较具体装备。把毕业推荐直接套给所有角色，常常会浪费强化材料。
+
+配套图已整理为[萌新入门配装推荐视觉资料](./visual-guides/src-3f75f2339e43)；正文流程用于手机阅读和检索，图片用于核对图表上下文。
 
 ## 配装顺序
 

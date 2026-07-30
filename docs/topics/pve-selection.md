@@ -8,13 +8,13 @@ audience: [beginner, regular]
 contentType: topic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
-status: draft
+verifiedAt: "2026-07-30"
+status: current
 authors:
   - name: DOV-Calc 内容组
     role: PVE 速查编辑
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 事实审核组
     role: 角色与版本审核
 sources:
   - title: 拂晓 TapTap 官方论坛
@@ -28,11 +28,11 @@ sources:
   - title: 拂晓新人向 PVE 舰灵推荐表
     assetId: src-a82171ad36dd
     sourceType: image
-    permission: pending
+    permission: authorized
     publicUse:
       body: false
-      asset: false
-    notes: 原图未公开；本页只保留重新设计的筛选方法，不迁移角色名单、头像和原表说明。
+      asset: true
+    notes: 已获响应式派生图展示授权；本页保留可维护的筛选方法，视觉资料页用于核对推荐表上下文。
 tags: [PVE, 选人, 舰灵, 一图流正文版]
 related: [combat-pve-team-building, topic-beginner-equipment, progression-leveling]
 ---
@@ -40,6 +40,8 @@ related: [combat-pve-team-building, topic-beginner-equipment, progression-leveli
 # PVE 选人速查
 
 先在自己的船坞里筛选，而不是先从榜单里找一个没有的角色。
+
+需要查看推荐表时，可打开[PVE 舰灵推荐表视觉资料](./visual-guides/src-a82171ad36dd)；角色结论仍以页面所示版本和自己的持有情况为准。
 
 ## 五步筛选
 

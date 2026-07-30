@@ -1,0 +1,2661 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-07-30",
+  "reviewedAgainstCommit": "10e6f1f",
+  "nextAuditAt": "2026-10-28",
+  "baseline": {
+    "pages": 97,
+    "before": {
+      "current": 28,
+      "draft": 68,
+      "stale": 1,
+      "archived": 0
+    },
+    "after": {
+      "current": 96,
+      "draft": 0,
+      "stale": 1,
+      "archived": 0
+    }
+  },
+  "policy": {
+    "current": "编辑、事实、来源/授权、版本、责任角色和适用专项门禁全部通过。",
+    "stale": "允许保留可用的历史基线，但必须绑定已审阅漂移记录、醒目版本边界和到期复核日。",
+    "archived": "仅保留历史用途，必须提供替代页面并排除搜索与 sitemap。",
+    "draft": "只允许有责任角色、阻断原因和复核期限的未发布页面；本次发布范围无保留 draft。"
+  },
+  "redirectReview": {
+    "entries": 12,
+    "status": "active",
+    "noindex": true,
+    "searchIndex": false,
+    "sitemap": false
+  },
+  "decisions": [
+    {
+      "pageId": "about-architecture-decision-001",
+      "path": "docs/about/architecture-decision-001.md",
+      "route": "/about/architecture-decision-001",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "架构复核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "3513ce4633395fa87a527ecd28e45cd880fae7337cdd4b6f3ac279a864875e39"
+    },
+    {
+      "pageId": "about-contributing",
+      "path": "docs/about/contributing.md",
+      "route": "/about/contributing",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "内容治理审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "39a64753378a6614f98546dbf1e07e25df8ed23cdfff4372a7bdf039bcf43cf6"
+    },
+    {
+      "pageId": "about-maintenance",
+      "path": "docs/about/maintenance.md",
+      "route": "/about/maintenance",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "发布审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "d02bc005172f3f0603f52ea16a31aa02573673e64e26daba3ff4f8c4b5892eef"
+    },
+    {
+      "pageId": "about-release-checklist",
+      "path": "docs/about/release-checklist.md",
+      "route": "/about/release-checklist",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "发布审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "80a8e21a0039215dfd410d855d5f25f90e46148f0328c81eb9b55c52e821a644"
+    },
+    {
+      "pageId": "about-rollback",
+      "path": "docs/about/rollback.md",
+      "route": "/about/rollback",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "发布审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "1e20198c245e17ac6b0fb1375eafc862d790040f0d694b98f2473e6ae4b99b3c"
+    },
+    {
+      "pageId": "about-sources",
+      "path": "docs/about/sources-and-copyright.md",
+      "route": "/about/sources-and-copyright",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "版权与来源审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-information-architecture"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "8b312a04f102912825995bb1555a6776b9822ea04dcb4b4a0edfc0debe3f120b"
+    },
+    {
+      "pageId": "about-version-log",
+      "path": "docs/about/version-log.md",
+      "route": "/about/version-log",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "发布审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "96573d2a8311c2f9c583621381e2548972f66dbf2d6ff9990d3bfd10e525da3c"
+    },
+    {
+      "pageId": "combat-encounter-appendix",
+      "path": "docs/combat/encounter-appendix.md",
+      "route": "/combat/encounter-appendix",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "81d88f93cc2ba7c920de2db9a0cab7e0cbda41f8d5a9142a01f25933df424ac0"
+    },
+    {
+      "pageId": "combat-encounter-overview",
+      "path": "docs/combat/encounter-overview.md",
+      "route": "/combat/encounter-overview",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "56c825b2a96663b27a16200afed900e2542a5a881e45e108ecba50597520a643"
+    },
+    {
+      "pageId": "combat-encounter-practice",
+      "path": "docs/combat/encounter-practice.md",
+      "route": "/combat/encounter-practice",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "a8b2973a8d6cbfd86ee34af120917d5cc8bd4daa2f1f247c669e68d8fc98db3e"
+    },
+    {
+      "pageId": "combat-encounter-preparation",
+      "path": "docs/combat/encounter-preparation.md",
+      "route": "/combat/encounter-preparation",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "2e06ece809c00c87993dce26bdaa68a8e5772a23881080a375f9e880cf7fa4ab"
+    },
+    {
+      "pageId": "combat-encounter",
+      "path": "docs/combat/encounter.md",
+      "route": "/combat/encounter",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "dab207f73a3815ea1288a0833133b6b612607382090c84357a7487173f3f47ab"
+    },
+    {
+      "pageId": "combat-endless-sea-basics",
+      "path": "docs/combat/endless-sea-basics.md",
+      "route": "/combat/endless-sea-basics",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-51475ba227c9"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "ca209fe346e06b36abf0f0156b83410d6fe9c1088b8c1ae89e49c83c43b48e83"
+    },
+    {
+      "pageId": "combat-endless-sea-mechanics",
+      "path": "docs/combat/endless-sea-mechanics.md",
+      "route": "/combat/endless-sea-mechanics",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-51475ba227c9"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "e3a69f87b67b524193136f8d5ac0c8eecf05470bae32cdedcd09a602a7cfd4af"
+    },
+    {
+      "pageId": "combat-endless-sea-team-building",
+      "path": "docs/combat/endless-sea-team-building.md",
+      "route": "/combat/endless-sea-team-building",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-51475ba227c9"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "685b8d92bc1dd2b437bc1410c5ca38a6c27943c2cd66651984f3550c5d1756c8"
+    },
+    {
+      "pageId": "combat-endless-sea",
+      "path": "docs/combat/endless-sea.md",
+      "route": "/combat/endless-sea",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-51475ba227c9"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "53829b29ad80d7ac1ebdd3df69f772fc333ca531864a7ed9275f2f1f208d7463"
+    },
+    {
+      "pageId": "combat-event-maps",
+      "path": "docs/combat/event-maps.md",
+      "route": "/combat/event-maps",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d47e51aa8321"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0fc1ffddf7a3b0b8bbc9128747d5f4b095af9945a59b5761b5f0eb5d649af1bb"
+    },
+    {
+      "pageId": "combat-index",
+      "path": "docs/combat/index.md",
+      "route": "/combat/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "战斗章节事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "stage3-editorial-synthesis"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "44848390d553c1c268781d66713cc6b5e63ca0ce93e5c3e438eb5c3b0b1c142c"
+    },
+    {
+      "pageId": "combat-pve-enemy-analysis",
+      "path": "docs/combat/pve-enemy-analysis.md",
+      "route": "/combat/pve-enemy-analysis",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-94e76e4522b1"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "7a794c2e6be653148cfb3c9ec29a802970f348e39e8a8c352e01ca26430682de"
+    },
+    {
+      "pageId": "combat-pve-ship-roles",
+      "path": "docs/combat/pve-ship-roles.md",
+      "route": "/combat/pve-ship-roles",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-94e76e4522b1"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "a3956e76e37a09217daca2334320531fa3d0c199cbcdba69d7f7042f54c1db15"
+    },
+    {
+      "pageId": "combat-pve-team-building",
+      "path": "docs/combat/pve-team-building.md",
+      "route": "/combat/pve-team-building",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-94e76e4522b1"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "9a55a270d1477415d12c3c5b648f43eca712b3dc278786be3d5308bf66638e33"
+    },
+    {
+      "pageId": "combat-pve-team-practice",
+      "path": "docs/combat/pve-team-practice.md",
+      "route": "/combat/pve-team-practice",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-94e76e4522b1"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "8f7420350290d25edf41b499302d43f269c5cf56200b4f5642fa9b6789fd75c7"
+    },
+    {
+      "pageId": "combat-pvp-arena",
+      "path": "docs/combat/pvp-arena.md",
+      "route": "/combat/pvp-arena",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-7d080e8d651b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "4b4d790b4475c54190f14de0a0e9d5d5ad6af41374c023a465e0571aa4408c5b"
+    },
+    {
+      "pageId": "combat-pvp-fundamentals",
+      "path": "docs/combat/pvp-fundamentals.md",
+      "route": "/combat/pvp-fundamentals",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-7d080e8d651b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "2c0ad76cfad37ba94b91bc0b234ae83382006434df3bb03b6aaa8e0a58c2b07c"
+    },
+    {
+      "pageId": "combat-pvp-reference-teams",
+      "path": "docs/combat/pvp-reference-teams.md",
+      "route": "/combat/pvp-reference-teams",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-7d080e8d651b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "52f21de580ad555ebba9d6307889ee711862eaa4487a7ac43c961354d4f7ed05"
+    },
+    {
+      "pageId": "combat-pvp-rules-and-fleet",
+      "path": "docs/combat/pvp-rules-and-fleet.md",
+      "route": "/combat/pvp-rules-and-fleet",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-7d080e8d651b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "b8267c5b69dd5dd9a19c5fbce79623506a62f324e16ff48cac9017f52f6c8de4"
+    },
+    {
+      "pageId": "data-basic-attack-cd",
+      "path": "docs/data/basic-attack-cd.md",
+      "route": "/data/basic-attack-cd",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "b9528b4954ed8dd53b0e09597599d9276d388be5df5b3331c92fece30de13b86"
+    },
+    {
+      "pageId": "data-basic-attack-aviation-battleship-seaplane",
+      "path": "docs/data/basic-attacks/aviation-battleship-seaplane.md",
+      "route": "/data/basic-attacks/aviation-battleship-seaplane",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "fc80aa01588cdeebd75dc82dc22b1e2391afab6cc6e4a2ed159802e0a5aa4205"
+    },
+    {
+      "pageId": "data-basic-attack-battleship-battlecruiser",
+      "path": "docs/data/basic-attacks/battleship-battlecruiser.md",
+      "route": "/data/basic-attacks/battleship-battlecruiser",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "a665d27ee4b05822f3fe7d800e6e5903a804ac60c56a4158ccb187f3d0351d2c"
+    },
+    {
+      "pageId": "data-basic-attack-carrier-armored-carrier",
+      "path": "docs/data/basic-attacks/carrier-armored-carrier.md",
+      "route": "/data/basic-attacks/carrier-armored-carrier",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "64902e2213e97d81ea7d4e3259709c91968094d12514063a490bdc55138709f4"
+    },
+    {
+      "pageId": "data-basic-attack-destroyer",
+      "path": "docs/data/basic-attacks/destroyer.md",
+      "route": "/data/basic-attacks/destroyer",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "ebb3b00c35762c14ae8c81d33f402d6c6a520f5e923e03927ae2c82b649756a7"
+    },
+    {
+      "pageId": "data-basic-attack-heavy-cruiser",
+      "path": "docs/data/basic-attacks/heavy-cruiser.md",
+      "route": "/data/basic-attacks/heavy-cruiser",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "e87ebb1e5b717082c322a73ed9503770b928862aff81a6adf4a637e80aa16268"
+    },
+    {
+      "pageId": "data-basic-attack-light-carrier",
+      "path": "docs/data/basic-attacks/light-carrier.md",
+      "route": "/data/basic-attacks/light-carrier",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "2aab753e8abefca1404adc0b7b7f0e1872a54ed6e9d3aa6a0f34c1f4284b60ac"
+    },
+    {
+      "pageId": "data-basic-attack-light-cruiser-torpedo-cruiser",
+      "path": "docs/data/basic-attacks/light-cruiser-torpedo-cruiser.md",
+      "route": "/data/basic-attacks/light-cruiser-torpedo-cruiser",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0909a8208a6e2012da2254b672d7b3ee633fce7a04ee007c1ded7a57953fc378"
+    },
+    {
+      "pageId": "data-index",
+      "path": "docs/data/index.md",
+      "route": "/data/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 工具与数据审核组",
+          "role": "数据发布审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-information-architecture"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0c494bb3e6af9b7a34897b4e1504cfca10bbd1e905a79cd532cefcf2649aef5b"
+    },
+    {
+      "pageId": "site-home",
+      "path": "docs/index.md",
+      "route": "/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "章节编辑"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-information-architecture"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "25059768226360719d43ce8c80ffa921e0b0b92b15748d0c3f11bdf6fe57f25e"
+    },
+    {
+      "pageId": "mechanics-attack-power",
+      "path": "docs/mechanics/attack-power.md",
+      "route": "/mechanics/attack-power",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "126038ce7b8fee0d6fda11e9cabc7fcd56fe51fe7f5e9a00e8a34b6a66c85362"
+    },
+    {
+      "pageId": "mechanics-damage-bonuses",
+      "path": "docs/mechanics/damage-bonuses.md",
+      "route": "/mechanics/damage-bonuses",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "da884b1854ea99b6ae5ee45ab20cd736b9953fa997a036ce126c7f90beb45373"
+    },
+    {
+      "pageId": "mechanics-damage-examples",
+      "path": "docs/mechanics/damage-examples.md",
+      "route": "/mechanics/damage-examples",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "485e9c161fe78e79edd2538861822c8fc5c23f11295d8bbf0f139a9381a5cd74"
+    },
+    {
+      "pageId": "mechanics-damage-formula-overview",
+      "path": "docs/mechanics/damage-formula-overview.md",
+      "route": "/mechanics/damage-formula-overview",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "1acf6707efbd75ae5a3861d3d9abdc670290aa331c1405f2b9902db2daaf720c"
+    },
+    {
+      "pageId": "mechanics-damage-model",
+      "path": "docs/mechanics/damage-model.md",
+      "route": "/mechanics/damage-model",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "42a9ab856440952212db1da55676f481c6c9be37ab87da5e48a7aba9cc92626a"
+    },
+    {
+      "pageId": "mechanics-damage-multipliers",
+      "path": "docs/mechanics/damage-multipliers.md",
+      "route": "/mechanics/damage-multipliers",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "70b56378d676a8631e6a8423016797bfddee082837b043a30497ad5c3decabd9"
+    },
+    {
+      "pageId": "mechanics-defense-power",
+      "path": "docs/mechanics/defense-power.md",
+      "route": "/mechanics/defense-power",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c933bd1548c2172fb8f9d7d9a2a770f555dac1a16f9ef11cb1bfd4d48a965bda"
+    },
+    {
+      "pageId": "mechanics-hit-critical",
+      "path": "docs/mechanics/hit-critical.md",
+      "route": "/mechanics/hit-critical",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c1ab23ca379bad979bef88cb1d620e29bcedae8b5b8b3dc04c5b8b82fc3c095e"
+    },
+    {
+      "pageId": "mechanics-index",
+      "path": "docs/mechanics/index.md",
+      "route": "/mechanics/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "机制事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "tool-damage-calculator-source"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "b8f97cf40944ab67f61521bb1e4c118404692e3b9d9cee845007abc99600b4ca"
+    },
+    {
+      "pageId": "site-build-record",
+      "path": "docs/posts/getting-started.md",
+      "route": "/posts/getting-started",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "项目审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "79b4f44f45beb4800525890e8673814225c855b32ea89c48af3eda20a1bc63ea"
+    },
+    {
+      "pageId": "posts-index",
+      "path": "docs/posts/index.md",
+      "route": "/posts/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-07-30",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "章节编辑"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-maintenance-record"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "272c78085bc337eb22250afa15bb8352945b0c01ee2eecb6b2b277aacc8637e3"
+    },
+    {
+      "pageId": "progression-index",
+      "path": "docs/progression/index.md",
+      "route": "/progression/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "养成章节事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "stage3-editorial-synthesis"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "9e19475672c45237cb30c8e0c6d2da22731670817c4162b17d29889ec8acae37"
+    },
+    {
+      "pageId": "progression-leveling-efficiency",
+      "path": "docs/progression/leveling-efficiency.md",
+      "route": "/progression/leveling-efficiency",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "974275c38c485b477ceee7ba24a93af52f4898bad5b629f3d983cda7604f0557"
+    },
+    {
+      "pageId": "progression-leveling-locations",
+      "path": "docs/progression/leveling-locations.md",
+      "route": "/progression/leveling-locations",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "8c13cf76aabfaf2de0f7e43588b9cf5e331c7ffbc98ffa08608722118268ef7a"
+    },
+    {
+      "pageId": "progression-leveling-ship-selection",
+      "path": "docs/progression/leveling-ship-selection.md",
+      "route": "/progression/leveling-ship-selection",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c3080f46d433df1a6acf56937660e841b45e6005324a0422360b37ab0aaf732b"
+    },
+    {
+      "pageId": "progression-leveling-strategy",
+      "path": "docs/progression/leveling-strategy.md",
+      "route": "/progression/leveling-strategy",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "9c8328557471089407a01d6fe5ead3be84a72d73394fc63011c8087f6fa3b0bf"
+    },
+    {
+      "pageId": "progression-leveling",
+      "path": "docs/progression/leveling.md",
+      "route": "/progression/leveling",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c65303438d9edcf84ebbeef2d9c8088502182548d3c51458d4056d2cec15ab5e"
+    },
+    {
+      "pageId": "start-daily-and-events",
+      "path": "docs/start/daily-and-events.md",
+      "route": "/start/daily-and-events",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-842246bdb075"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0be82bda4f1348c501253851b138be09a121d3750be1e18e3ff82b4a534f0224"
+    },
+    {
+      "pageId": "start-first-week",
+      "path": "docs/start/first-week.md",
+      "route": "/start/first-week",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-842246bdb075"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "d16f412ab05124be57f44f1f53618cd6fa9b7e604f19aabf3dd44e838d81bfb2"
+    },
+    {
+      "pageId": "start-game-introduction",
+      "path": "docs/start/game-introduction.md",
+      "route": "/start/game-introduction",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-ea0b63d069bf"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0c6e991f3f46c7276a8d467a620567f531425896f30b036e7ff899fe568e6abb"
+    },
+    {
+      "pageId": "start-handbook-history",
+      "path": "docs/start/handbook-history.md",
+      "route": "/start/handbook-history",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-9ac6e41a613e"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "560d031e855d64efa7b698e0398ccab6609bbe2191037b14fe3023147a2646f5"
+    },
+    {
+      "pageId": "start-index",
+      "path": "docs/start/index.md",
+      "route": "/start/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "新手章节事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "stage3-editorial-synthesis"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "120078a84320604da50f9994c0dcda0e68dfc7841923ad8d92bfee4b9a5cc8f9"
+    },
+    {
+      "pageId": "start-mainline-roadmap",
+      "path": "docs/start/mainline-roadmap.md",
+      "route": "/start/mainline-roadmap",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-842246bdb075"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "59023faf42f871cfa4c3d8185228e0fc91a4cc0ff6dc182cedae65f4414986a9"
+    },
+    {
+      "pageId": "start-new-account",
+      "path": "docs/start/new-account.md",
+      "route": "/start/new-account",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "核心阅读路径事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-842246bdb075"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "approved"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "74709b700b3e8ed97204a12b996105310fce818d92cbd1b91ccdb5346197e6e3"
+    },
+    {
+      "pageId": "start-preface",
+      "path": "docs/start/preface.md",
+      "route": "/start/preface",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 维护组",
+          "role": "结构审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "stage3-editorial-synthesis",
+        "src-9ac6e41a613e"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "992b3bf760b84e072fadd63e23d6180aef864d91e0ad1d21fe0027f8eea9160b"
+    },
+    {
+      "pageId": "tool-basic-attack-lookup",
+      "path": "docs/tools/basic-attack-lookup.md",
+      "route": "/tools/basic-attack-lookup",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 版权与来源维护组",
+          "role": "版权/来源责任人"
+        },
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0c5b7db892f6"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "f6e7dfa955034bf559aa36183342dfeae46a30a675a140a694b129d37b57c61a"
+    },
+    {
+      "pageId": "tool-damage-calculator",
+      "path": "docs/tools/dov-basic.md",
+      "route": "/tools/dov-basic",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 工具与数据审核组",
+          "role": "机制审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "tool-damage-calculator-source"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "21d231afef82d7aa9dbd0bb3e5669c87fc2497437fcce2569eb301303eb9065e"
+    },
+    {
+      "pageId": "tool-equipment-lookup",
+      "path": "docs/tools/equipment-lookup.md",
+      "route": "/tools/equipment-lookup",
+      "finalStatus": "stale",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 装备数据审核组",
+          "role": "装备数据审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "tool-equipment-lookup-source"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-version-boundary",
+        "authorization": "approved",
+        "dataTool": "approved",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "保留 20260511 结构化装备旧基线，并以醒目版本边界说明 20260712 视觉参考尚未完成逐项数据合并。",
+      "retention": {
+        "findingId": "equipment-guide-newer-than-lookup-data",
+        "status": "acknowledged",
+        "expiresAt": "2026-10-28"
+      },
+      "contentSha256": "714accbae33aec2cd2d7cfa6895338e6bb5a41e4753d9b2a14d4ea15cca5967f"
+    },
+    {
+      "pageId": "tools-index",
+      "path": "docs/tools/index.md",
+      "route": "/tools/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2026-10-28",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 编辑审核组",
+          "role": "工具审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "site-tool-catalog"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "da1206f3545e81808877a4bdf5b164c6e51e160eac89bdd45c6b6304a1e50ca3"
+    },
+    {
+      "pageId": "topic-beginner-equipment",
+      "path": "docs/topics/beginner-equipment.md",
+      "route": "/topics/beginner-equipment",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "装备数据审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-3f75f2339e43"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "d96400a1c9e4851b35a510549eaaea8a69cfef2833246fef319e2fc416e691d0"
+    },
+    {
+      "pageId": "topic-laguz",
+      "path": "docs/topics/laguz.md",
+      "route": "/topics/laguz",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-e2d43eca15b2"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "7a85e9946d13de70b4d99c91a92f7c551fb92424dd2ea5e5ef8b40cd8f512f3f"
+    },
+    {
+      "pageId": "topic-laguz-guide",
+      "path": "docs/topics/laguz/guide.md",
+      "route": "/topics/laguz/guide",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "进阶内容事实审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-e2d43eca15b2"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c616a806047c2928f3f5986681cbd69b0490269d17cda6d8f8af68258c1af1ac"
+    },
+    {
+      "pageId": "topic-new-player-checklist",
+      "path": "docs/topics/new-player-checklist.md",
+      "route": "/topics/new-player-checklist",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "新手内容审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-ec1754535996"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "cba004ddfc68ac05f4a261ac6a7ba182d7fd628e7a97238a4bda089d39baad7d"
+    },
+    {
+      "pageId": "topic-pve-selection",
+      "path": "docs/topics/pve-selection.md",
+      "route": "/topics/pve-selection",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 事实审核组",
+          "role": "角色与版本审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-a82171ad36dd"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "d15996299c3367d16a6190d93a9731de73694a0d6f509b15cc07386035d98b1d"
+    },
+    {
+      "pageId": "media-source-51475ba227c9",
+      "path": "docs/topics/visual-guides/docx-src-51475ba227c9.md",
+      "route": "/topics/visual-guides/docx-src-51475ba227c9",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-51475ba227c9"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "376125fe5e41f6bbb0a1b1055c620d9626f61672f07bdfc58c8b45a86d87854b"
+    },
+    {
+      "pageId": "media-source-6eba63c4aa7b",
+      "path": "docs/topics/visual-guides/docx-src-6eba63c4aa7b.md",
+      "route": "/topics/visual-guides/docx-src-6eba63c4aa7b",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-6eba63c4aa7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "e92bfb2b031c3887c320389f3155a081d79fbd08b6fbd4256cbadba9b80ff252"
+    },
+    {
+      "pageId": "media-source-7d080e8d651b",
+      "path": "docs/topics/visual-guides/docx-src-7d080e8d651b.md",
+      "route": "/topics/visual-guides/docx-src-7d080e8d651b",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-7d080e8d651b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "12b8bb631f33b9ed05440ed0a05ae8cb9a6a8d4d8ba3d79f668283d9a385d220"
+    },
+    {
+      "pageId": "media-source-842246bdb075",
+      "path": "docs/topics/visual-guides/docx-src-842246bdb075.md",
+      "route": "/topics/visual-guides/docx-src-842246bdb075",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-842246bdb075"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "879bf10feb38e13fc48b944ac0064982e4bb8e48801267ba39a719e0b3228140"
+    },
+    {
+      "pageId": "media-source-94e76e4522b1",
+      "path": "docs/topics/visual-guides/docx-src-94e76e4522b1.md",
+      "route": "/topics/visual-guides/docx-src-94e76e4522b1",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-94e76e4522b1"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "efc2ed479081548351eccdc7f3f4ac7721c6c4aa15341565809c20d28c3bc5ea"
+    },
+    {
+      "pageId": "media-source-9ac6e41a613e",
+      "path": "docs/topics/visual-guides/docx-src-9ac6e41a613e.md",
+      "route": "/topics/visual-guides/docx-src-9ac6e41a613e",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-9ac6e41a613e"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "8094157e44920d72fb2aea1d69051682a6a0ae28c01fd246a7dafde70bc3f4b5"
+    },
+    {
+      "pageId": "media-source-c8852cf69a7b",
+      "path": "docs/topics/visual-guides/docx-src-c8852cf69a7b.md",
+      "route": "/topics/visual-guides/docx-src-c8852cf69a7b",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-c8852cf69a7b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c25076a1227330364a2d87cb55bcb10aa30cb1179fd2da055361a7b8f21b39eb"
+    },
+    {
+      "pageId": "media-source-d35e870ffcd7",
+      "path": "docs/topics/visual-guides/docx-src-d35e870ffcd7.md",
+      "route": "/topics/visual-guides/docx-src-d35e870ffcd7",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d35e870ffcd7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "fd8cd822dfd7d838b7dfb6110b1fcb4a2f25ce4f57cb91dd92a773ade16b89c6"
+    },
+    {
+      "pageId": "media-source-d47e51aa8321",
+      "path": "docs/topics/visual-guides/docx-src-d47e51aa8321.md",
+      "route": "/topics/visual-guides/docx-src-d47e51aa8321",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-d47e51aa8321"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "c0dc5f3e651066db9671ba787061f65ee5084bdfaabd9043734c6d158f259ba4"
+    },
+    {
+      "pageId": "media-source-e2d43eca15b2",
+      "path": "docs/topics/visual-guides/docx-src-e2d43eca15b2.md",
+      "route": "/topics/visual-guides/docx-src-e2d43eca15b2",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-e2d43eca15b2"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "3f10eafaeedbb0ac2eabc288d2e8e125629a7183479e8a13d027d981e002c6af"
+    },
+    {
+      "pageId": "media-source-ea0b63d069bf",
+      "path": "docs/topics/visual-guides/docx-src-ea0b63d069bf.md",
+      "route": "/topics/visual-guides/docx-src-ea0b63d069bf",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-ea0b63d069bf"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "1592c28f177ec0d0de58349f4c9a81632e86f27bf44e513192a49d8dfd891cf5"
+    },
+    {
+      "pageId": "topic-visual-guides-index",
+      "path": "docs/topics/visual-guides/index.md",
+      "route": "/topics/visual-guides/",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "图片可访问性与授权审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-20f9c608ccbe",
+        "src-ec1754535996",
+        "src-a82171ad36dd",
+        "src-3f75f2339e43",
+        "src-8862e9c4e1c0",
+        "src-a7efaec86736",
+        "src-4c3487e1f8f7",
+        "src-fc56c0350c73",
+        "src-e3a32a586e5b",
+        "src-08ba2d32a9ff",
+        "src-2d59aac1ac45",
+        "src-65d25a94c550",
+        "src-0dc5d6791056",
+        "src-1157c5077c1f",
+        "src-b8f7a77d5f36",
+        "src-9ac6e41a613e",
+        "src-ea0b63d069bf",
+        "src-842246bdb075",
+        "src-6eba63c4aa7b",
+        "src-d47e51aa8321",
+        "src-94e76e4522b1",
+        "src-7d080e8d651b",
+        "src-d35e870ffcd7",
+        "src-51475ba227c9",
+        "src-c8852cf69a7b",
+        "src-e2d43eca15b2"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "4d551989f91c5a00ceffabeb78155855d75119e46e689b96c8f88e9589a202f4"
+    },
+    {
+      "pageId": "visual-guide-08ba2d32a9ff",
+      "path": "docs/topics/visual-guides/src-08ba2d32a9ff.md",
+      "route": "/topics/visual-guides/src-08ba2d32a9ff",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-08ba2d32a9ff"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "29d8ed29c3bb250214678b8bf6b21de3c435c5ce833e6a69921530d6e58ae653"
+    },
+    {
+      "pageId": "visual-guide-0dc5d6791056",
+      "path": "docs/topics/visual-guides/src-0dc5d6791056.md",
+      "route": "/topics/visual-guides/src-0dc5d6791056",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-0dc5d6791056"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "0f4c4a2a4ab1fde4c9936b26ae61f13fa82e7d6eb49cd62f9b5d120265f9a4d9"
+    },
+    {
+      "pageId": "visual-guide-1157c5077c1f",
+      "path": "docs/topics/visual-guides/src-1157c5077c1f.md",
+      "route": "/topics/visual-guides/src-1157c5077c1f",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-1157c5077c1f"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "41b8c61f2e95a488ca8e805e0cbea74fd975ecb194ec1b7a5f00b6edd6f7549a"
+    },
+    {
+      "pageId": "visual-guide-20f9c608ccbe",
+      "path": "docs/topics/visual-guides/src-20f9c608ccbe.md",
+      "route": "/topics/visual-guides/src-20f9c608ccbe",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-20f9c608ccbe"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "3f4a65434bb8d6dd9f449428f0b99b078ce3d99a0bba2b632a977031be8a8cdc"
+    },
+    {
+      "pageId": "visual-guide-2d59aac1ac45",
+      "path": "docs/topics/visual-guides/src-2d59aac1ac45.md",
+      "route": "/topics/visual-guides/src-2d59aac1ac45",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-2d59aac1ac45"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "4d3b1b0caabaa6da915ba08d8a2d010bfe9231bdcd32fb2fdbe0826e1d693597"
+    },
+    {
+      "pageId": "visual-guide-3f75f2339e43",
+      "path": "docs/topics/visual-guides/src-3f75f2339e43.md",
+      "route": "/topics/visual-guides/src-3f75f2339e43",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-3f75f2339e43"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "89e9a1ebd3f2feb7c9d3f0592d691425897effdc51574107a76ef1bee97b3f5f"
+    },
+    {
+      "pageId": "visual-guide-4c3487e1f8f7",
+      "path": "docs/topics/visual-guides/src-4c3487e1f8f7.md",
+      "route": "/topics/visual-guides/src-4c3487e1f8f7",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-4c3487e1f8f7"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "1fc69fd2d3a6a30a9b98fef1d2d57819f4c818bd92072044787559069c5991ed"
+    },
+    {
+      "pageId": "visual-guide-65d25a94c550",
+      "path": "docs/topics/visual-guides/src-65d25a94c550.md",
+      "route": "/topics/visual-guides/src-65d25a94c550",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-65d25a94c550"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "b2f9e8c0beaefd3d3801a25356cc38284d98fb91a10a939d01faf57c521628ee"
+    },
+    {
+      "pageId": "visual-guide-8862e9c4e1c0",
+      "path": "docs/topics/visual-guides/src-8862e9c4e1c0.md",
+      "route": "/topics/visual-guides/src-8862e9c4e1c0",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-8862e9c4e1c0"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "8b56de4a7b4153671e22077110cd87d426f92a39c30778d79a5fbbc8057c2621"
+    },
+    {
+      "pageId": "visual-guide-a7efaec86736",
+      "path": "docs/topics/visual-guides/src-a7efaec86736.md",
+      "route": "/topics/visual-guides/src-a7efaec86736",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-a7efaec86736"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "079e965b580ec21d33e682ba299ef7c100c33146b0dad561c44569716bd3c791"
+    },
+    {
+      "pageId": "visual-guide-a82171ad36dd",
+      "path": "docs/topics/visual-guides/src-a82171ad36dd.md",
+      "route": "/topics/visual-guides/src-a82171ad36dd",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-a82171ad36dd"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "92d6705956445c49aeeedf6851d8b9861a445ac6c40cddddd47b9eab6c25e2e2"
+    },
+    {
+      "pageId": "visual-guide-b8f7a77d5f36",
+      "path": "docs/topics/visual-guides/src-b8f7a77d5f36.md",
+      "route": "/topics/visual-guides/src-b8f7a77d5f36",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-b8f7a77d5f36"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "58bdef0ea4ac200a490735279230fc3d16884f5c4ed7dedc425a4ec8996e7dcc"
+    },
+    {
+      "pageId": "visual-guide-e3a32a586e5b",
+      "path": "docs/topics/visual-guides/src-e3a32a586e5b.md",
+      "route": "/topics/visual-guides/src-e3a32a586e5b",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-e3a32a586e5b"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "bb330461b0511ab5680566a51cf427cfb90238dbd41a403da1250e6224cc03f5"
+    },
+    {
+      "pageId": "visual-guide-ec1754535996",
+      "path": "docs/topics/visual-guides/src-ec1754535996.md",
+      "route": "/topics/visual-guides/src-ec1754535996",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-ec1754535996"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "9565bde20a39f1d583c83ed03241b85d22e92a8711b5b1477f234da65d0ee2b4"
+    },
+    {
+      "pageId": "visual-guide-fc56c0350c73",
+      "path": "docs/topics/visual-guides/src-fc56c0350c73.md",
+      "route": "/topics/visual-guides/src-fc56c0350c73",
+      "finalStatus": "current",
+      "reviewedAt": "2026-07-30",
+      "nextReviewAt": "2027-01-26",
+      "reviewers": [
+        {
+          "name": "DOV-Calc 视觉审核组",
+          "role": "替代文本、说明与移动端审核"
+        }
+      ],
+      "sourceAssetIds": [
+        "src-fc56c0350c73"
+      ],
+      "tracks": {
+        "editorial": "approved",
+        "factual": "approved-source-version",
+        "authorization": "approved",
+        "dataTool": "not-applicable",
+        "urlHistory": "not-applicable"
+      },
+      "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
+      "contentSha256": "d6ef39ae07583db37c3a0e7cf66fb731014d023604d5960c5c44d4c447bf0070"
+    }
+  ]
+}

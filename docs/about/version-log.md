@@ -8,13 +8,13 @@ audience: [editor, maintainer, regular]
 contentType: changelog
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 发布记录
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 发布审核
 sources:
   - title: DOV-Calc 站点维护记录
@@ -29,6 +29,14 @@ related: [about-sources, about-contributing, site-build-record]
 ---
 
 # 版本日志
+
+## 2026-07-30：全站页面审核与状态闭合
+
+- 对 97 个页面完成编辑、事实、来源/授权、数据/工具与 URL 历史审核，并建立逐页内容哈希总账；
+- 68 个迁移或媒体草稿完成正式处置并转为 `current`，发布范围内 `draft` 降为 0；
+- 20260511 装备查询继续保留唯一 `stale` 状态，并绑定 20260712 视觉参考的版本分层、责任组和 2026-10-28 复核期限；
+- 12 条历史锚点映射由 `planned` 转为 `active`，继续保持 noindex、不进搜索和 sitemap；
+- 所有 A 类签核的“待指派”已替换为仓库责任组，不虚构未知个人身份。
 
 ## 2026-07-30：装备数据版本漂移审阅
 

@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["伤害","增伤","减伤","等级压制"]
 related: ["mechanics-damage-multipliers","mechanics-hit-critical","media-source-c8852cf69a7b"]
 ---
 # 伤害构成五：增伤、减伤与等级压制
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在 Phase 7 事实审核队列。页面保持 `draft`，不作为当前版本的最终结论。
+> [!INFO] 审核状态
+> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。
 ## 增伤修正
 
 增伤修正为拂晓目前的增伤区集合，受以下因素影响。（注：本节内所述因素均以加算方式叠加）

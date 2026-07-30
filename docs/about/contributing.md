@@ -8,13 +8,13 @@ audience: [editor, maintainer]
 contentType: site
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 编辑流程维护
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 内容治理审核
 sources:
   - title: DOV-Calc 站点维护记录

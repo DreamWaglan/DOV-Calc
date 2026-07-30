@@ -9,7 +9,7 @@ contentType: guide
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
-status: draft
+status: current
 authors:
   - name: DOV-Calc 内容维护组
     role: 授权资料迁移编辑
@@ -29,8 +29,8 @@ tags: ["遭遇战","备战","装备","轴"]
 related: ["combat-encounter-overview","combat-encounter-practice","media-source-d35e870ffcd7"]
 ---
 # 遭遇战二：赛前备战
-> [!WARNING] 审核状态
-> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在 Phase 7 事实审核队列。页面保持 `draft`，不作为当前版本的最终结论。
+> [!INFO] 审核状态
+> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。
 ## 遭遇战赛前备战
 
 ### BOSS甲种与吨位（或者说排水量）

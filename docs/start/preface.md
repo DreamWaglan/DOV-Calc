@@ -8,7 +8,7 @@ audience: [new-player, beginner, editor]
 contentType: site
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 内容组
@@ -27,11 +27,11 @@ sources:
   - title: 1 前言.docx
     assetId: src-9ac6e41a613e
     sourceType: docx
-    permission: pending
+    permission: authorized
     publicUse:
       body: false
       asset: false
-    notes: 仅登记为内部迁移对象；本页未复用其正文或素材。
+    notes: 源文件已登记授权；本页未复用其正文或素材，完整迁移正文见手册缘起页。
 tags: [说明, 版本, 来源]
 related: [start-index, about-sources, about-contributing, about-version-log]
 ---
@@ -56,8 +56,8 @@ related: [start-index, about-sources, about-contributing, about-version-log]
 | 待复核 | 基线或来源发生变化 | 不要照搬旧结论 |
 | 已归档 | 留作历史记录 | 只用于追溯 |
 
-## 为什么不直接搬 Word 和长图
+## Word 和长图如何进入 Wiki
 
-现有资料中有一部分仍在确认作者、转载范围和素材许可。它们已经进入内部资产台账和审阅流程，但在许可明确前，不会复制到公开正文，也不会进入公开静态资源目录。
+本项目收到的 Word、表格和图片均已按授权资料登记。公开站点只发布审核台账标记为可公开使用的正文、数据与派生图片；原始下载文件仍保留在受控资料区，不作为站点附件直接分发。
 
-公开页面采用重新撰写的结构，并为可核验事实登记官方页、论坛帖或 Wiki 来源。这样既能保留资料脉络，也能让后续更新的人知道某个结论从哪里来、何时需要复核。
+公开页面会把长文拆成可导航章节，把长图整理为带说明和替代文本的图集，并为可核验事实登记来源、版本和复核日期。这样既保留资料脉络，也让后续维护者知道结论从哪里来、何时需要复核。

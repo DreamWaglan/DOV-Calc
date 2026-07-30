@@ -8,13 +8,13 @@ audience: [regular, advanced]
 contentType: mechanic
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 内容组
     role: 机制章节编辑
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 机制事实审核
 sources:
   - title: 伤害计算器既有实现与黄金基线

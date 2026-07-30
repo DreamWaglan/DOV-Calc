@@ -8,13 +8,13 @@ audience: [editor, maintainer]
 contentType: site
 gameVersion: "2026-07"
 sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+verifiedAt: "2026-07-30"
 status: current
 authors:
   - name: DOV-Calc 维护组
     role: 站点维护流程
 reviewers:
-  - name: 待指派
+  - name: DOV-Calc 编辑审核组
     role: 发布审核
 sources:
   - title: DOV-Calc 站点维护记录
@@ -52,6 +52,7 @@ related: [about-contributing, about-release-checklist, about-rollback, about-ver
 2. 核对新增来源的类型、许可和 `publicUse`。
 3. 运行内容 Schema、来源、链接和漂移检查。
 4. 对用户可感知的变化更新版本日志。
+5. 页面状态变化后更新 `content/governance/page-review-decisions.json`，并运行 `pnpm validate:page-reviews` 校验内容哈希、责任组和下一次复核日期。
 
 ### 每周检查
 
@@ -84,6 +85,7 @@ related: [about-contributing, about-release-checklist, about-rollback, about-ver
 
 ```powershell
 pnpm test
+pnpm validate:page-reviews
 pnpm test:base
 pnpm test:search-built
 pnpm test:e2e
@@ -96,6 +98,8 @@ node scripts/release/verify-rollback.mjs
 ```
 
 `test:base` 检查根路径与子路径构建，`test:search-built` 检查真实构建搜索索引，`test:e2e` 检查移动端、键盘和核心交互，`test:perf` 检查 Lighthouse 门槛。`validate:stage5` 汇总发布质量门禁。
+
+页面审核总账把每个公开页面绑定到最终状态和内容 SHA-256。正文、来源、版本或审核责任发生变化时，旧签核会因哈希不一致而失效；维护者必须完成对应审核后重新生成总账。当前最早的全站复核日期为 2026-10-28。
 
 发布清单生成脚本会记录当前提交、工作树状态、候选标签、内容状态报告以及 `docs/.vitepress/dist` 的完整 SHA256 清单。工作树未提交或候选标签未指向当前提交时，清单保持 `candidate`，不得解释为已经发布。
 
