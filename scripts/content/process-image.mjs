@@ -36,6 +36,13 @@ async function writeWebp(buffer, outputPath) {
   }
 }
 
+function constrainedWidth(sourceWidth, sourceHeight, preferredWidth) {
+  const pixelBound = Math.floor(
+    Math.sqrt((MAX_DERIVATIVE_PIXELS * sourceWidth) / sourceHeight),
+  )
+  return Math.max(1, Math.min(sourceWidth, preferredWidth, pixelBound))
+}
+
 export async function processImage({
   sourcePath,
   assetId,
@@ -86,9 +93,7 @@ export async function processImage({
     for (let index = 0; index < segmentCount; index += 1) {
       const top = index * SEGMENT_HEIGHT
       const height = Math.min(SEGMENT_HEIGHT, metadata.height - top)
-      if (metadata.width * height > MAX_DERIVATIVE_PIXELS) {
-        throw new Error(`Segment ${index + 1} exceeds derivative pixel limit`)
-      }
+      const width = constrainedWidth(metadata.width, height, metadata.width)
       const segmentPath = path.join(
         absoluteOutputDir,
         `segment-${String(index + 1).padStart(2, '0')}.webp`,
@@ -97,6 +102,7 @@ export async function processImage({
         limitInputPixels: MAX_SOURCE_PIXELS,
       })
         .extract({ left: 0, top, width: metadata.width, height })
+        .resize({ width, withoutEnlargement: true })
         .webp({ quality: 88 })
         .toBuffer()
       const segment = await writeWebp(segmentBuffer, segmentPath)

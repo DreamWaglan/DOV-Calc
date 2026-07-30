@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["练级","选船","PVE"]
-related: ["progression-leveling","progression-leveling-strategy","combat-pve-team-building"]
+related: ["progression-leveling","progression-leveling-strategy","combat-pve-team-building","media-source-6eba63c4aa7b"]
 ---
 # 练级百科一：选船篇
 > [!WARNING] 审核状态

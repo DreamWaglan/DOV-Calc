@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["省油","效率","油料"]
-related: ["progression-leveling-locations","combat-event-maps"]
+related: ["progression-leveling-locations","combat-event-maps","media-source-6eba63c4aa7b"]
 ---
 # 练级百科四：省油与效率篇
 > [!WARNING] 审核状态

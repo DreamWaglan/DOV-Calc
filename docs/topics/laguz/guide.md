@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["拉古兹","专题","攻略"]
-related: ["topic-laguz","mechanics-damage-bonuses"]
+related: ["topic-laguz","mechanics-damage-bonuses","media-source-e2d43eca15b2"]
 ---
 # 拉古兹专题：完整资料
 > [!WARNING] 审核状态

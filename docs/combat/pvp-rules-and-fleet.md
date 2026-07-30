@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["PVP","竞技场","编队","配装"]
-related: ["combat-pvp-fundamentals","combat-pvp-reference-teams"]
+related: ["combat-pvp-fundamentals","combat-pvp-reference-teams","media-source-7d080e8d651b"]
 ---
 # 争锋竞技场二：规则与编队
 > [!WARNING] 审核状态

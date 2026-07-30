@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["遭遇战","冲分","实操"]
-related: ["combat-encounter-preparation","combat-encounter-appendix"]
+related: ["combat-encounter-preparation","combat-encounter-appendix","media-source-d35e870ffcd7"]
 ---
 # 遭遇战三：冲分实操
 > [!WARNING] 审核状态

@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["无尽海域","配队","高难"]
-related: ["combat-endless-sea-mechanics","combat-endless-sea"]
+related: ["combat-endless-sea-mechanics","combat-endless-sea","media-source-51475ba227c9"]
 ---
 # 无尽海域三：配队思路
 > [!WARNING] 审核状态

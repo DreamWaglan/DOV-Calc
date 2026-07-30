@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["手册","编纂","致谢"]
-related: ["start-preface","start-game-introduction","start-index"]
+related: ["start-preface","start-game-introduction","start-index","media-source-9ac6e41a613e"]
 ---
 # 《拂晓手册》的缘起与致谢
 > [!WARNING] 审核状态

@@ -254,7 +254,7 @@ function scorePage(page, query) {
     reasons.push('exact-title')
   }
   if (fields.aliases.includes(normalizedQuery)) {
-    score += 950
+    score += 1_600
     reasons.push('exact-alias')
   }
   if (fields.tags.includes(normalizedQuery)) {

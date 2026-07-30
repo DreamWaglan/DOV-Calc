@@ -1,0 +1,3881 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "sourceId": "src-7d080e8d651b",
+  "derivedFrom": "408c9234c25adf368c917952d8aa97a6755fe94f8464e7c003bd9bb8b683d41d",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "downloadAllowed": false,
+  "originalCopied": false,
+  "files": [
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/thumbnail.webp",
+      "sha256": "9891048d99b670961117c6b100d0369b5a22ed20b2215573441c5fb44c7f1dbb",
+      "bytes": 18598,
+      "width": 360,
+      "height": 469,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0480.avif",
+      "sha256": "1c236eeaf8739226e9f6fe90885ba899c1fcd69cd457eb89f0a8ae984ee3c331",
+      "bytes": 17572,
+      "width": 480,
+      "height": 625,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0480.webp",
+      "sha256": "9d94f6fc583191fe467cf9536fcf058d57b0330257a1ac7d172ad56d2d6c5813",
+      "bytes": 25248,
+      "width": 480,
+      "height": 625,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0605.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0605.avif",
+      "sha256": "36351c667954fa32394e1d00d3336a9090a62204422af9b0f450860471cbcf5e",
+      "bytes": 21255,
+      "width": 605,
+      "height": 788,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0605.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/fb296f9f9e12c0d8/preview-0605.webp",
+      "sha256": "9a4eeccba4aca52de01bf9ddb6c465f3657a88882eda6d60f5dfd70031176ba5",
+      "bytes": 31512,
+      "width": 605,
+      "height": 788,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20b685a617a262ae/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20b685a617a262ae/thumbnail.webp",
+      "sha256": "4c406497921fb07e6b3652a9f8845e8c3ec4462147e84ad44b89e300f818c720",
+      "bytes": 11740,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20b685a617a262ae/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20b685a617a262ae/preview-0180.avif",
+      "sha256": "ab45c676a756bc9bf5ed6ff8f60df54a864b109363793ed8e67c3119f90e1f3e",
+      "bytes": 7204,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20b685a617a262ae/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20b685a617a262ae/preview-0180.webp",
+      "sha256": "4c406497921fb07e6b3652a9f8845e8c3ec4462147e84ad44b89e300f818c720",
+      "bytes": 11740,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/thumbnail.webp",
+      "sha256": "c2f0a494c238f532b2e74df2385adb2314d5d95bebf8e23d94d403b99986dab7",
+      "bytes": 14440,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/preview-0180.avif",
+      "sha256": "b529d2301e7b6fa707f2f45a375ce4cfd657bf3b991bd88142e62b0fb2f9f25b",
+      "bytes": 8901,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/dd42f86f9487d3f5/preview-0180.webp",
+      "sha256": "c2f0a494c238f532b2e74df2385adb2314d5d95bebf8e23d94d403b99986dab7",
+      "bytes": 14440,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf7800d6618606ed/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf7800d6618606ed/thumbnail.webp",
+      "sha256": "e9cb33273be70869fe4b469c3fc3fd04ab7e5a59b751256e5ea1378785701e00",
+      "bytes": 9952,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf7800d6618606ed/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf7800d6618606ed/preview-0180.avif",
+      "sha256": "c7c252a3bb63d7b7b137a4db48f5197c699599127a3803f3e6800042ce1e87c8",
+      "bytes": 6893,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf7800d6618606ed/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf7800d6618606ed/preview-0180.webp",
+      "sha256": "e9cb33273be70869fe4b469c3fc3fd04ab7e5a59b751256e5ea1378785701e00",
+      "bytes": 9952,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f227a895f3c3e923/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f227a895f3c3e923/thumbnail.webp",
+      "sha256": "ce11fc585ce4b2cc305c21afd126adbe62be78cac8f956655083ae448622b5f7",
+      "bytes": 12456,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f227a895f3c3e923/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f227a895f3c3e923/preview-0180.avif",
+      "sha256": "2da63231b846309110ad4f846adfb0ac59f1d7d983193dceabc73346ad57fdc3",
+      "bytes": 8243,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f227a895f3c3e923/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f227a895f3c3e923/preview-0180.webp",
+      "sha256": "ce11fc585ce4b2cc305c21afd126adbe62be78cac8f956655083ae448622b5f7",
+      "bytes": 12456,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4712d40856a50160/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4712d40856a50160/thumbnail.webp",
+      "sha256": "0af1dd9673881afd49fee094e7c760f40cecae0f1eaa437977a4b538eedde504",
+      "bytes": 11030,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4712d40856a50160/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4712d40856a50160/preview-0180.avif",
+      "sha256": "a6b0fafc7ddd38626f51b9ec8665dc61b58ded39591d7314c958f6aae98cecda",
+      "bytes": 7141,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4712d40856a50160/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4712d40856a50160/preview-0180.webp",
+      "sha256": "0af1dd9673881afd49fee094e7c760f40cecae0f1eaa437977a4b538eedde504",
+      "bytes": 11030,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/thumbnail.webp",
+      "sha256": "06281367913f9414d43070681d78d7fd1a1ae493511925e89c69acfe4091e35c",
+      "bytes": 13386,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/preview-0180.avif",
+      "sha256": "941992df33636a4398fe4b77d2f362673ebf2d9494ddbaef4d69304142d46366",
+      "bytes": 8554,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b9ef4035ee269c4b/preview-0180.webp",
+      "sha256": "06281367913f9414d43070681d78d7fd1a1ae493511925e89c69acfe4091e35c",
+      "bytes": 13386,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/thumbnail.webp",
+      "sha256": "d87b40847c4f05d2572ffe371371d654dc469bc63b60cddd0414fc62d54d47ca",
+      "bytes": 11166,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/preview-0180.avif",
+      "sha256": "9ab24c7f261ef4e077f0de4c50ea6b3062c520c8051f75ae824853b841331a52",
+      "bytes": 7047,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d9bfc7e63b4b4469/preview-0180.webp",
+      "sha256": "d87b40847c4f05d2572ffe371371d654dc469bc63b60cddd0414fc62d54d47ca",
+      "bytes": 11166,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1d4a625084a922b0/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1d4a625084a922b0/thumbnail.webp",
+      "sha256": "fd94b7425ee765955d340718243329bdabeb85dc16698ce80153e6d94b1265c7",
+      "bytes": 11040,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1d4a625084a922b0/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1d4a625084a922b0/preview-0180.avif",
+      "sha256": "452359d1ada19e9a791a698392578318fa559b5e6a281ed610a201c44cd8c3b6",
+      "bytes": 7416,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1d4a625084a922b0/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1d4a625084a922b0/preview-0180.webp",
+      "sha256": "fd94b7425ee765955d340718243329bdabeb85dc16698ce80153e6d94b1265c7",
+      "bytes": 11040,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/thumbnail.webp",
+      "sha256": "e1a81c4ac3e9677ce5d4fc206775ccc6425704f9a46c2c6490d4fea64485ba98",
+      "bytes": 14892,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/preview-0180.avif",
+      "sha256": "709ad82ca6e6a40bbd41ab544b25df4154752e1f4554e6bd4050ae5382416536",
+      "bytes": 9352,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a428c828be2a6ffb/preview-0180.webp",
+      "sha256": "e1a81c4ac3e9677ce5d4fc206775ccc6425704f9a46c2c6490d4fea64485ba98",
+      "bytes": 14892,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/thumbnail.webp",
+      "sha256": "48f3366011ec24f5d7fb39170eb254792ba6917fd2cde3e7c3ebb3a709c8cacd",
+      "bytes": 12328,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/preview-0180.avif",
+      "sha256": "8e55abe88909b7fd8e9137a3b86bcd0bda0dcf5116527770adba1775c2bcf195",
+      "bytes": 7878,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9a767c7dc3779cc2/preview-0180.webp",
+      "sha256": "48f3366011ec24f5d7fb39170eb254792ba6917fd2cde3e7c3ebb3a709c8cacd",
+      "bytes": 12328,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20f9dba214e8200e/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20f9dba214e8200e/thumbnail.webp",
+      "sha256": "b15f7984c1b291452b17868baf56dc951a60612115cf3bfe2ab3b5072441e55d",
+      "bytes": 10356,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20f9dba214e8200e/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20f9dba214e8200e/preview-0180.avif",
+      "sha256": "176e7c3814d169d1a258e8121b1e1fb32c6793791c0426436aec5cc9d4476f9c",
+      "bytes": 6817,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/20f9dba214e8200e/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/20f9dba214e8200e/preview-0180.webp",
+      "sha256": "b15f7984c1b291452b17868baf56dc951a60612115cf3bfe2ab3b5072441e55d",
+      "bytes": 10356,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/thumbnail.webp",
+      "sha256": "ae39c615d57ce4e4cbbbbd26cce853cf65539133f75ca16bbea9352425934281",
+      "bytes": 16668,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/preview-0180.avif",
+      "sha256": "98aa11816d2ae5669c9c3d42f95b548af45bca6e4c217920cac6242d2f41e1a1",
+      "bytes": 9944,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/545cc3416c5fc4cd/preview-0180.webp",
+      "sha256": "ae39c615d57ce4e4cbbbbd26cce853cf65539133f75ca16bbea9352425934281",
+      "bytes": 16668,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/940830db821f6336/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/940830db821f6336/thumbnail.webp",
+      "sha256": "b8f0f414f697983997c5062ab6000a9f505cc82cf538f9d10cda18972f779eaf",
+      "bytes": 11664,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/940830db821f6336/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/940830db821f6336/preview-0180.avif",
+      "sha256": "b76b4e0ef351fab6eaadf08b0571d66e6bfed612b1fb3f042ad6d439a81ed56f",
+      "bytes": 7504,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/940830db821f6336/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/940830db821f6336/preview-0180.webp",
+      "sha256": "b8f0f414f697983997c5062ab6000a9f505cc82cf538f9d10cda18972f779eaf",
+      "bytes": 11664,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25747e91982ed58f/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25747e91982ed58f/thumbnail.webp",
+      "sha256": "e3fcc9b3f08e179cacb373fbbeb760ad2db16eb2f72002d9f6c45f990c44de71",
+      "bytes": 11586,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25747e91982ed58f/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25747e91982ed58f/preview-0180.avif",
+      "sha256": "21df8f43ef8e68d126fd06d39a7aef04ddc1b0a90fe277b043ae2de412376b8f",
+      "bytes": 7884,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25747e91982ed58f/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25747e91982ed58f/preview-0180.webp",
+      "sha256": "e3fcc9b3f08e179cacb373fbbeb760ad2db16eb2f72002d9f6c45f990c44de71",
+      "bytes": 11586,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/thumbnail.webp",
+      "sha256": "7ce630cbc0313a09190c84f212827f19a39d739244ce94b62c11c42d4ea54bd7",
+      "bytes": 13708,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/preview-0180.avif",
+      "sha256": "5add272ec8462b72d1ce066bc80fd4819ed84e02ee988795ae29b3c7738f7f47",
+      "bytes": 8246,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/93d2f0ff4f3c0fc6/preview-0180.webp",
+      "sha256": "7ce630cbc0313a09190c84f212827f19a39d739244ce94b62c11c42d4ea54bd7",
+      "bytes": 13708,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/thumbnail.webp",
+      "sha256": "e23773233f28dcb6e858c81ee4d1ad156e67d89847f0ad4796ccf899d4450edc",
+      "bytes": 11242,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/preview-0180.avif",
+      "sha256": "25d1e270ad992de635f2e2381b14cc9b5242fa2f87fae4ded1d8ae81e48b377c",
+      "bytes": 7433,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f9d43c2f2dbf4bee/preview-0180.webp",
+      "sha256": "e23773233f28dcb6e858c81ee4d1ad156e67d89847f0ad4796ccf899d4450edc",
+      "bytes": 11242,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25a81d1645600c02/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25a81d1645600c02/thumbnail.webp",
+      "sha256": "1e6ef1be2eacdbba78a60534658552f31c54e977b4ceb3016366c6d24f570cb6",
+      "bytes": 10250,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25a81d1645600c02/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25a81d1645600c02/preview-0180.avif",
+      "sha256": "f39fd110850249c83ad7385ffb1456b83d7aea7364e2df5676127cba1301f434",
+      "bytes": 6461,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25a81d1645600c02/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25a81d1645600c02/preview-0180.webp",
+      "sha256": "1e6ef1be2eacdbba78a60534658552f31c54e977b4ceb3016366c6d24f570cb6",
+      "bytes": 10250,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/32960e94dc604dbb/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/32960e94dc604dbb/thumbnail.webp",
+      "sha256": "c71ce16dfef48ffa113d13ae4a65146ac9bb67b89670a9dd0b5e61f0bc76b881",
+      "bytes": 11316,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/32960e94dc604dbb/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/32960e94dc604dbb/preview-0180.avif",
+      "sha256": "6fbc312a2ab49a8f32e0ad6d28baabb971f10763d8ddc5f739756230de8f03fb",
+      "bytes": 7116,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/32960e94dc604dbb/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/32960e94dc604dbb/preview-0180.webp",
+      "sha256": "c71ce16dfef48ffa113d13ae4a65146ac9bb67b89670a9dd0b5e61f0bc76b881",
+      "bytes": 11316,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/thumbnail.webp",
+      "sha256": "17b7e6071b3f11caa5c0cb3f92b888b6ea47b8bda03dae6880fe9cbb0a6fc3c1",
+      "bytes": 12720,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/preview-0180.avif",
+      "sha256": "9a740fc387a35046f8321f9a14a4e9bf2079112f025f266b8d6d02238cb021e8",
+      "bytes": 8434,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9d1c3747fc9d003b/preview-0180.webp",
+      "sha256": "17b7e6071b3f11caa5c0cb3f92b888b6ea47b8bda03dae6880fe9cbb0a6fc3c1",
+      "bytes": 12720,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/007c801db95b46c0/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/007c801db95b46c0/thumbnail.webp",
+      "sha256": "5170309059090c4ffca71cddf8a380882531fcb8ac4aa219d8f60510fcdda1e7",
+      "bytes": 12974,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/007c801db95b46c0/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/007c801db95b46c0/preview-0180.avif",
+      "sha256": "9a2c6eeab656fea3925b4956aa4c63584e32a69e07b72eda2581498a9bbf5fe9",
+      "bytes": 8433,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/007c801db95b46c0/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/007c801db95b46c0/preview-0180.webp",
+      "sha256": "5170309059090c4ffca71cddf8a380882531fcb8ac4aa219d8f60510fcdda1e7",
+      "bytes": 12974,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/thumbnail.webp",
+      "sha256": "34f756739900eb890e725ff8445bf8b834bb0de9538bab4e7dbde4ba36c05023",
+      "bytes": 9024,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/preview-0180.avif",
+      "sha256": "eac9e5b2a2a64c13e37b348787aacdbf64ef4868245552bbe6ba03ab0df29b26",
+      "bytes": 6015,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1e355af63d5b5b2f/preview-0180.webp",
+      "sha256": "34f756739900eb890e725ff8445bf8b834bb0de9538bab4e7dbde4ba36c05023",
+      "bytes": 9024,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/thumbnail.webp",
+      "sha256": "dace04e8613d3842c33a3ec432b2ea9bdc730999875a1322266d78c32ecce111",
+      "bytes": 13250,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/preview-0180.avif",
+      "sha256": "d758607ba08b44e88a1601f3f77294b6a7e857e57c0cc9f4fad586fe35bdc3b0",
+      "bytes": 7147,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3899cf6de8afa2c7/preview-0180.webp",
+      "sha256": "dace04e8613d3842c33a3ec432b2ea9bdc730999875a1322266d78c32ecce111",
+      "bytes": 13250,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2117149282e43e5b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2117149282e43e5b/thumbnail.webp",
+      "sha256": "1c4ad334567303f1f9c25129e05d2ca695c8b5f97c53d6953f57a327a3265d09",
+      "bytes": 12036,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2117149282e43e5b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2117149282e43e5b/preview-0180.avif",
+      "sha256": "8f706d93ea1983631ce9345407ea6ae2ebc7307fa7c3f6b220d1511844931eb0",
+      "bytes": 7364,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2117149282e43e5b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2117149282e43e5b/preview-0180.webp",
+      "sha256": "1c4ad334567303f1f9c25129e05d2ca695c8b5f97c53d6953f57a327a3265d09",
+      "bytes": 12036,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/084cbb6296135699/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/084cbb6296135699/thumbnail.webp",
+      "sha256": "c39673062a2ea14391b47849b2f12895c4617fc1fd4e662955618f1f8cf665b5",
+      "bytes": 9784,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/084cbb6296135699/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/084cbb6296135699/preview-0180.avif",
+      "sha256": "d32f77fb442e66fb9f2cf84d10762d123e345eb066b9bade5d69a99918f3a08e",
+      "bytes": 6801,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/084cbb6296135699/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/084cbb6296135699/preview-0180.webp",
+      "sha256": "c39673062a2ea14391b47849b2f12895c4617fc1fd4e662955618f1f8cf665b5",
+      "bytes": 9784,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/thumbnail.webp",
+      "sha256": "b5c9445febb3dc456d8defc776b5cd46e53168864f532d493d63fd9c28f6d0a4",
+      "bytes": 15060,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/preview-0180.avif",
+      "sha256": "d82fe02346d32146b8b6a8c2cc442c0d7c5412d45c97501b89ea7dcce4916ffa",
+      "bytes": 9639,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/81d652ba98ee1fdf/preview-0180.webp",
+      "sha256": "b5c9445febb3dc456d8defc776b5cd46e53168864f532d493d63fd9c28f6d0a4",
+      "bytes": 15060,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/024314fe27209b4a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/024314fe27209b4a/thumbnail.webp",
+      "sha256": "32f57052616208cae7b7ed8049f03d19eee669ae13f3087c51b3c8dced5bccbc",
+      "bytes": 11544,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/024314fe27209b4a/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/024314fe27209b4a/preview-0180.avif",
+      "sha256": "0025db130aa90cddbf2931603523b170cb01e6e580c58bc1b0f51b8526ebe9e8",
+      "bytes": 7510,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/024314fe27209b4a/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/024314fe27209b4a/preview-0180.webp",
+      "sha256": "32f57052616208cae7b7ed8049f03d19eee669ae13f3087c51b3c8dced5bccbc",
+      "bytes": 11544,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6bf526179e417236/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6bf526179e417236/thumbnail.webp",
+      "sha256": "3725a4a1f0f37422add6f71b5b6f1b4a8065693b3ffe6ef2095b9cd473032972",
+      "bytes": 22582,
+      "width": 360,
+      "height": 178,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0480.avif",
+      "sha256": "4397f19c1159fce26acfa36c0d64e9792e0ae0903a374c0f51b38a5f04d45c7b",
+      "bytes": 18427,
+      "width": 480,
+      "height": 238,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0480.webp",
+      "sha256": "a2d512b60509a49ecc38a69bfff52d148d859c7ca66c3f11de7f30cd38e1d41c",
+      "bytes": 34098,
+      "width": 480,
+      "height": 238,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0937.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0937.avif",
+      "sha256": "2256f3216702f64473d9c004b5afc673c8bd0fc52cfa3c9309f0bf3c2a1716e2",
+      "bytes": 45914,
+      "width": 937,
+      "height": 464,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0937.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6bf526179e417236/preview-0937.webp",
+      "sha256": "2dd3ff619f1b5710d57a48aa961478c2585d3ae031794f46b1148871fa049554",
+      "bytes": 91598,
+      "width": 937,
+      "height": 464,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/thumbnail.webp",
+      "sha256": "e9d53dfccb7367eca27654659032b3e118790d3a58d18030ba245be8402a44ac",
+      "bytes": 21452,
+      "width": 360,
+      "height": 181,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0480.avif",
+      "sha256": "e7518365fdb23cc0e8da970ed32f7c5ee57564182a4600b1fe0408ffed31d51e",
+      "bytes": 17711,
+      "width": 480,
+      "height": 241,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0480.webp",
+      "sha256": "ce856bb226742503115c4b86a5a37251bde6584864526ff29425fdb6411b3551",
+      "bytes": 33268,
+      "width": 480,
+      "height": 241,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0954.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0954.avif",
+      "sha256": "b08c57db17442719f41c4b9690b4aecf621d15cf883cc33c5ca163c818db0797",
+      "bytes": 45417,
+      "width": 954,
+      "height": 479,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0954.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6e1302ae03f50c1b/preview-0954.webp",
+      "sha256": "707d260d4af9a532b90091e23ee0ea0a30c7a29acbd96ef8633160726e73b9a3",
+      "bytes": 84902,
+      "width": 954,
+      "height": 479,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/thumbnail.webp",
+      "sha256": "b59036b7346912c20d9b8d77b4c364797c2587043a28eac1c5a5eb894a4aed4c",
+      "bytes": 13260,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/preview-0180.avif",
+      "sha256": "e712479a83bc1f8f03f4550dc51dbf78aaf6a6c5b7309765effb826bd15b78d4",
+      "bytes": 8653,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9400d4d9f742ec56/preview-0180.webp",
+      "sha256": "b59036b7346912c20d9b8d77b4c364797c2587043a28eac1c5a5eb894a4aed4c",
+      "bytes": 13260,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/thumbnail.webp",
+      "sha256": "9403da5c69a4a7c46d6254afe4832c6805041435deab29f6f58a1163078dc3a2",
+      "bytes": 10402,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/preview-0180.avif",
+      "sha256": "4e6526fd46d9ebcba49d5d76a78f90fba60bad0a5b1c26932e3c7e1b84d1cca5",
+      "bytes": 6332,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5845d416c6f71c4c/preview-0180.webp",
+      "sha256": "9403da5c69a4a7c46d6254afe4832c6805041435deab29f6f58a1163078dc3a2",
+      "bytes": 10402,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/thumbnail.webp",
+      "sha256": "4ba59f707324bab5d0a33bd6d3f4afa084b42c15bb2d819e36798afb5922f898",
+      "bytes": 40430,
+      "width": 355,
+      "height": 843,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/preview-0355.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/preview-0355.avif",
+      "sha256": "9ea009591be41a370d282061600a72b07b161ee529517ab33a551ecb710cc848",
+      "bytes": 25453,
+      "width": 355,
+      "height": 843,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/preview-0355.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e5b76fc0d1bf3a0e/preview-0355.webp",
+      "sha256": "4ba59f707324bab5d0a33bd6d3f4afa084b42c15bb2d819e36798afb5922f898",
+      "bytes": 40430,
+      "width": 355,
+      "height": 843,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9b853516c3dff20a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9b853516c3dff20a/thumbnail.webp",
+      "sha256": "0b4b2a858e7d0bc4c1b04c6ae81825e09edc083caeec460b7aa0d52c2e9a2d8c",
+      "bytes": 11064,
+      "width": 178,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9b853516c3dff20a/preview-0178.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9b853516c3dff20a/preview-0178.avif",
+      "sha256": "57cb1fad29fd41f26a5a880d05ac8881f29aa926b725deb68e550dcca159b66f",
+      "bytes": 7185,
+      "width": 178,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9b853516c3dff20a/preview-0178.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9b853516c3dff20a/preview-0178.webp",
+      "sha256": "0b4b2a858e7d0bc4c1b04c6ae81825e09edc083caeec460b7aa0d52c2e9a2d8c",
+      "bytes": 11064,
+      "width": 178,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/61f6c64e20930deb/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/61f6c64e20930deb/thumbnail.webp",
+      "sha256": "8a9317b69172c8f21f9266cb443d5f10039cc451743317eafda34763480b117a",
+      "bytes": 8366,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/61f6c64e20930deb/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/61f6c64e20930deb/preview-0180.avif",
+      "sha256": "2793014aa145104891fb07634c5592315a85ff75b2a176672b57fa17a4976e20",
+      "bytes": 6017,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/61f6c64e20930deb/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/61f6c64e20930deb/preview-0180.webp",
+      "sha256": "8a9317b69172c8f21f9266cb443d5f10039cc451743317eafda34763480b117a",
+      "bytes": 8366,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/ea52b12273676547/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/ea52b12273676547/thumbnail.webp",
+      "sha256": "08375fc3f4cc785413ba930b6073205e0ee8ec66fcef2ba782b9be8ae02ef585",
+      "bytes": 11918,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/ea52b12273676547/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/ea52b12273676547/preview-0180.avif",
+      "sha256": "2dab4bc45a3f9fbdbbcd292ed3fa124620c8c1e78ae5f7088d009cd10e9befec",
+      "bytes": 7759,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/ea52b12273676547/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/ea52b12273676547/preview-0180.webp",
+      "sha256": "08375fc3f4cc785413ba930b6073205e0ee8ec66fcef2ba782b9be8ae02ef585",
+      "bytes": 11918,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/thumbnail.webp",
+      "sha256": "1692649a7664c32397f65d2d6474ef474cf0bd143d3c51cb45ac48469ac5d1c2",
+      "bytes": 10870,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/preview-0180.avif",
+      "sha256": "7d40c01a0258868b2a9aa50ecd921cd2143f886d7950ef348de4ce68d5c2ceec",
+      "bytes": 7497,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4464acd29df4a8d9/preview-0180.webp",
+      "sha256": "1692649a7664c32397f65d2d6474ef474cf0bd143d3c51cb45ac48469ac5d1c2",
+      "bytes": 10870,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/adf9805cfde0303e/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/adf9805cfde0303e/thumbnail.webp",
+      "sha256": "5d519f89fa6b7517a4dc364716eb1353fde3f9ccb6248b8d15101f0db5db5608",
+      "bytes": 12386,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/adf9805cfde0303e/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/adf9805cfde0303e/preview-0180.avif",
+      "sha256": "c73702213c17a57e8a4731c9c6fc0c5cb9245241083f207fc1e4ee452d799968",
+      "bytes": 8676,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/adf9805cfde0303e/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/adf9805cfde0303e/preview-0180.webp",
+      "sha256": "5d519f89fa6b7517a4dc364716eb1353fde3f9ccb6248b8d15101f0db5db5608",
+      "bytes": 12386,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/thumbnail.webp",
+      "sha256": "43ca401b41b04cf833fb184919b4c2edf652b2ce70f3a025fc18023352d07530",
+      "bytes": 12906,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/preview-0180.avif",
+      "sha256": "5fd741ec4b5645421f950fbd22226dc138ee1ddf0f0d8e87ac1124b7c2320105",
+      "bytes": 8232,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ccf5b0ebb3d34e3/preview-0180.webp",
+      "sha256": "43ca401b41b04cf833fb184919b4c2edf652b2ce70f3a025fc18023352d07530",
+      "bytes": 12906,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/thumbnail.webp",
+      "sha256": "f498708c0d83fc53ff98c46f19b9fd9ff58afb2ccbd077a642543c47d6a3e3c6",
+      "bytes": 12596,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/preview-0180.avif",
+      "sha256": "bc0cdf564a57b3c58459e5ef525896cbaeee24719e9c42ad0c177945e7079275",
+      "bytes": 7558,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2efc50d1de81fe7b/preview-0180.webp",
+      "sha256": "f498708c0d83fc53ff98c46f19b9fd9ff58afb2ccbd077a642543c47d6a3e3c6",
+      "bytes": 12596,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/thumbnail.webp",
+      "sha256": "fbe0af0806f8afd4c08b1741fb17e7dcdaef2c37224c061746994db874f0fa6f",
+      "bytes": 12144,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/preview-0180.avif",
+      "sha256": "5c8aa83a39ef818fc60722a080aae521dae658c400408930cf825841dba4537c",
+      "bytes": 7740,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/17ff10dd9bf4f3d2/preview-0180.webp",
+      "sha256": "fbe0af0806f8afd4c08b1741fb17e7dcdaef2c37224c061746994db874f0fa6f",
+      "bytes": 12144,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/thumbnail.webp",
+      "sha256": "1a2320612889f28e34195758be76d5316e015f08b7c7fb3fe66d7930ddf0cb71",
+      "bytes": 12310,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/preview-0180.avif",
+      "sha256": "c1a4883f3057360ee0cba59d3cc8a54e5d7ba8c969975576acbb5fce91bd73f4",
+      "bytes": 7550,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2dfdecaf951aeab5/preview-0180.webp",
+      "sha256": "1a2320612889f28e34195758be76d5316e015f08b7c7fb3fe66d7930ddf0cb71",
+      "bytes": 12310,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/df4c6f426839f56f/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/df4c6f426839f56f/thumbnail.webp",
+      "sha256": "0547f4f9c722483a445a554d1574f70200f1b022369389a0047ae92d107eabf1",
+      "bytes": 11608,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/df4c6f426839f56f/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/df4c6f426839f56f/preview-0180.avif",
+      "sha256": "e7fb449091e1ce0ebfb9fa3dfc81f0f81a1a41a32dc1fec5d869aaf0c5ba0bcb",
+      "bytes": 7617,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/df4c6f426839f56f/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/df4c6f426839f56f/preview-0180.webp",
+      "sha256": "0547f4f9c722483a445a554d1574f70200f1b022369389a0047ae92d107eabf1",
+      "bytes": 11608,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/thumbnail.webp",
+      "sha256": "25a88c94c8bd8863ef06773be55a0306f59eedc02697fd5a81d6c42cf6f35be8",
+      "bytes": 5132,
+      "width": 360,
+      "height": 197,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0480.avif",
+      "sha256": "931839b6d9a60d1873d0860fe8f98e8730b4b11c1bf973a463ef60a03c10b7cd",
+      "bytes": 5283,
+      "width": 480,
+      "height": 263,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0480.webp",
+      "sha256": "49a83e5c51997758b5b48f87f3dc066a4870345422fd6d2f5e8b22d242cdcc4c",
+      "bytes": 7812,
+      "width": 480,
+      "height": 263,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0960.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0960.avif",
+      "sha256": "9165f40ae5c1918de95d5d0912a057cc3766d45b755f05859e2688b9f397d5f6",
+      "bytes": 12555,
+      "width": 960,
+      "height": 525,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0960.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/de6b0aab2b0ad343/preview-0960.webp",
+      "sha256": "b8d13a849ba0d63106e27de54be3221f0488d18b401fab2cd14cb8d477384bf6",
+      "bytes": 20852,
+      "width": 960,
+      "height": 525,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/thumbnail.webp",
+      "sha256": "82a7e9a828d14f4c6532326bce0fccd56b6c7c51734813f711678c56d5419d19",
+      "bytes": 10472,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/preview-0180.avif",
+      "sha256": "2191a9dea11496b314b5439030155d9e6fc052eaf5271184eae1a150bd78f322",
+      "bytes": 6628,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/18aa128e5ccaafb9/preview-0180.webp",
+      "sha256": "82a7e9a828d14f4c6532326bce0fccd56b6c7c51734813f711678c56d5419d19",
+      "bytes": 10472,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/513a7be167554679/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/513a7be167554679/thumbnail.webp",
+      "sha256": "96ae47487e0d6ad96a62d0a855a867c89192d9c22ac732ff4dc1c1a87ce8c947",
+      "bytes": 11384,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/513a7be167554679/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/513a7be167554679/preview-0180.avif",
+      "sha256": "2eb9edfcf240d8e9a53567f465080fdc5c903df613d8cdc6c8e0e905b7b16ede",
+      "bytes": 7568,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/513a7be167554679/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/513a7be167554679/preview-0180.webp",
+      "sha256": "96ae47487e0d6ad96a62d0a855a867c89192d9c22ac732ff4dc1c1a87ce8c947",
+      "bytes": 11384,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/thumbnail.webp",
+      "sha256": "9d503fc0c6720dd0f7ba3062a69571d0edc3bee4aa46ce1a2c491fb9e742a955",
+      "bytes": 16624,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/preview-0180.avif",
+      "sha256": "ccd5c6004afca13e8b2e4e66929a165191b02874291f44f4bd6874b6f712974a",
+      "bytes": 8301,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c2e4b9ad1812819b/preview-0180.webp",
+      "sha256": "9d503fc0c6720dd0f7ba3062a69571d0edc3bee4aa46ce1a2c491fb9e742a955",
+      "bytes": 16624,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/thumbnail.webp",
+      "sha256": "8428442368c1f1112982425c0352e5a58f78ad89f6ac503553dd2721fa0beda9",
+      "bytes": 13058,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/preview-0180.avif",
+      "sha256": "9a006d4c497f1b2812045f3e7d9b037a0a8945871f7b7ebf915ca0c6aa248016",
+      "bytes": 8452,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/017e0c8b397da0b9/preview-0180.webp",
+      "sha256": "8428442368c1f1112982425c0352e5a58f78ad89f6ac503553dd2721fa0beda9",
+      "bytes": 13058,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1ed006175a178f22/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1ed006175a178f22/thumbnail.webp",
+      "sha256": "adbeadb9c95305b3e1c121b1578af68b630bc910017ee49b727d0d266d33e8cc",
+      "bytes": 10154,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1ed006175a178f22/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1ed006175a178f22/preview-0180.avif",
+      "sha256": "ec338f245738551bcc4b983b41a4f3791782f7d9b5a760b7177a5c6fdb198eca",
+      "bytes": 6812,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1ed006175a178f22/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1ed006175a178f22/preview-0180.webp",
+      "sha256": "adbeadb9c95305b3e1c121b1578af68b630bc910017ee49b727d0d266d33e8cc",
+      "bytes": 10154,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e42cb985035c02e5/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e42cb985035c02e5/thumbnail.webp",
+      "sha256": "b98377ed9476c053dcaebf29f6cb395e011052f8b69b4cd50501112ea4627338",
+      "bytes": 13594,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e42cb985035c02e5/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e42cb985035c02e5/preview-0180.avif",
+      "sha256": "6abfc540f77095d61bbc00ff5a6dc60e92ff37572aeb1bbd03c8968fc87b4ae7",
+      "bytes": 8901,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e42cb985035c02e5/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e42cb985035c02e5/preview-0180.webp",
+      "sha256": "b98377ed9476c053dcaebf29f6cb395e011052f8b69b4cd50501112ea4627338",
+      "bytes": 13594,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/thumbnail.webp",
+      "sha256": "3acd7ccc450b7764e30b3cfd4169c9b9a07a16d2411bef4bcc5b49d3e99cf528",
+      "bytes": 9868,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/preview-0180.avif",
+      "sha256": "6dd2345677e74ee639d37b3146ecc9c78c150f520665a3b1f019bd259c5d47c7",
+      "bytes": 6415,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/592b34f63e89a5ca/preview-0180.webp",
+      "sha256": "3acd7ccc450b7764e30b3cfd4169c9b9a07a16d2411bef4bcc5b49d3e99cf528",
+      "bytes": 9868,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/thumbnail.webp",
+      "sha256": "ac2406f96f456f1b9ddd11ad62df97125f2e57da78753123562703e229e2ee63",
+      "bytes": 12486,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/preview-0180.avif",
+      "sha256": "73fbf714dce78e981b2e88b56f78ad5d029d6e012ed20ea186168f02222f1cdb",
+      "bytes": 8040,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c3eef9f18fafe8ec/preview-0180.webp",
+      "sha256": "ac2406f96f456f1b9ddd11ad62df97125f2e57da78753123562703e229e2ee63",
+      "bytes": 12486,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/thumbnail.webp",
+      "sha256": "2c6185f41bc851d86df45ecb77539a8b58d3dec92448447f66e447eab30787a8",
+      "bytes": 12082,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/preview-0180.avif",
+      "sha256": "068ff1a05f8fb3dc09aa260d295c14e05050f498a0f7a3ebf30bc7d0bab3a800",
+      "bytes": 6467,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80b7f3b584813a3b/preview-0180.webp",
+      "sha256": "2c6185f41bc851d86df45ecb77539a8b58d3dec92448447f66e447eab30787a8",
+      "bytes": 12082,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5c2b674b507189fe/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5c2b674b507189fe/thumbnail.webp",
+      "sha256": "f9e1a4cf445be4b80bc7c434658b2e72c75fe5ad65ea70ae0c1fa6d25297f456",
+      "bytes": 14208,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5c2b674b507189fe/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5c2b674b507189fe/preview-0180.avif",
+      "sha256": "7684e0e2f49e25917ef84ff06ea4ee0e5ef81da5dda78f69927d18ee44bde3bf",
+      "bytes": 8787,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/5c2b674b507189fe/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/5c2b674b507189fe/preview-0180.webp",
+      "sha256": "f9e1a4cf445be4b80bc7c434658b2e72c75fe5ad65ea70ae0c1fa6d25297f456",
+      "bytes": 14208,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/thumbnail.webp",
+      "sha256": "59f9cedd445801d9c46ec1b46ebac2d0fbc11ae4a78ef0ac95242de75d66cc12",
+      "bytes": 20494,
+      "width": 360,
+      "height": 198,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0480.avif",
+      "sha256": "b6c7ca5c0313aac0f5366f7b5bfc503cd295a4e9fcca21ab16d9751a3bfa68c2",
+      "bytes": 16717,
+      "width": 480,
+      "height": 264,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0480.webp",
+      "sha256": "5121c53dccd78ac58b190e45813f484c843b7f80d06744931e492987e9952eff",
+      "bytes": 31328,
+      "width": 480,
+      "height": 264,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0841.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0841.avif",
+      "sha256": "01b042ff9a862af18da63d6b557a9d42415b841b79d906f47df55683a343949a",
+      "bytes": 35283,
+      "width": 841,
+      "height": 463,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0841.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8f35bbb8ed7fba1b/preview-0841.webp",
+      "sha256": "6465f983d09fa9348d3c38b99db1112c0f06db88fa1aa5ec9234301f70783e36",
+      "bytes": 66544,
+      "width": 841,
+      "height": 463,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/thumbnail.webp",
+      "sha256": "bc93e3824eba177eddd0c1ee0793e1d1efa680adf664f251d882713287a68162",
+      "bytes": 11362,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/preview-0180.avif",
+      "sha256": "379898f9b19ad503ef4adcab726f4b4659f371cdbcc5570240fbc4690c30d641",
+      "bytes": 7533,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4e4b6749579ae48a/preview-0180.webp",
+      "sha256": "bc93e3824eba177eddd0c1ee0793e1d1efa680adf664f251d882713287a68162",
+      "bytes": 11362,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/thumbnail.webp",
+      "sha256": "f9762669a2a54b8de74121d977e9eba14e3e452e8c6ff632346d23908d032616",
+      "bytes": 13200,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/preview-0180.avif",
+      "sha256": "6e43b2d265ea4515c80153296272ee3a923aea71edc838c27f1b030280fc31a7",
+      "bytes": 8286,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7ba94b5ed55acac3/preview-0180.webp",
+      "sha256": "f9762669a2a54b8de74121d977e9eba14e3e452e8c6ff632346d23908d032616",
+      "bytes": 13200,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/thumbnail.webp",
+      "sha256": "8987c7e01611098068707901375da520f668ca758578fbc88255662483ab7765",
+      "bytes": 24914,
+      "width": 360,
+      "height": 198,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0480.avif",
+      "sha256": "669b38593b3f8d8898c3401176534555144274005f6c992be4c1797d2fd724ea",
+      "bytes": 20024,
+      "width": 480,
+      "height": 264,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0480.webp",
+      "sha256": "00506784c087e60289f21a75b9f7447c6b8e1ef5925ed209208cc599c7c6dae9",
+      "bytes": 37448,
+      "width": 480,
+      "height": 264,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0848.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0848.avif",
+      "sha256": "db4b14b7681c6d206354b4c5d2f24bde6d651f5a910442af1e961d4403bd8241",
+      "bytes": 40366,
+      "width": 848,
+      "height": 466,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0848.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/0bb09cb649c46e08/preview-0848.webp",
+      "sha256": "05b6e6f72a935198b79821341617323393f055bb9cea054db4e0f5d1232734f2",
+      "bytes": 75462,
+      "width": 848,
+      "height": 466,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b826c6822193992a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b826c6822193992a/thumbnail.webp",
+      "sha256": "d12056793cdeecef7797a734d5d79253a5aa14221575f4eafa60f7fadd28b627",
+      "bytes": 23818,
+      "width": 360,
+      "height": 202,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0480.avif",
+      "sha256": "3e7d4d0178a39b1891c5dbf2d297f21bf02e09c8afec1e489776df3cbcfa1923",
+      "bytes": 19930,
+      "width": 480,
+      "height": 269,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0480.webp",
+      "sha256": "7b5c69139aa9b6e5a1d56c4c11a1c021969b18da4ba70e13a5eada9be9a3dc4a",
+      "bytes": 36268,
+      "width": 480,
+      "height": 269,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0823.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0823.avif",
+      "sha256": "baac0ae953ac81bd2354c64d53136e943a136c339139238ffb49d683e4a2c547",
+      "bytes": 42058,
+      "width": 823,
+      "height": 461,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0823.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b826c6822193992a/preview-0823.webp",
+      "sha256": "15c5713f99126cb1989437aaa05a7735a409b16b25526e2e541ce27d25b679c4",
+      "bytes": 77676,
+      "width": 823,
+      "height": 461,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/thumbnail.webp",
+      "sha256": "5d321bed62520f86b8e64c5506b99b27eda247ee154ffbf9dff985e16a5fdc49",
+      "bytes": 18512,
+      "width": 360,
+      "height": 185,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0480.avif",
+      "sha256": "8ec3d14236e980667f9f9ebf2eec207a046d72ddc330226e14f8341dee4dbddd",
+      "bytes": 14698,
+      "width": 480,
+      "height": 247,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0480.webp",
+      "sha256": "043264c4695096472da01876d4455dbefd13d9d47d4f2efd916093e129d9fdac",
+      "bytes": 28110,
+      "width": 480,
+      "height": 247,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0840.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0840.avif",
+      "sha256": "0cf6f88fc324e2b3992fea8853c15e5dbe80ac6673f160d466446680421ee963",
+      "bytes": 30780,
+      "width": 840,
+      "height": 432,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0840.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7bab138bf4d1c537/preview-0840.webp",
+      "sha256": "0a9db81fcced3a390184d06ba8223b9faa746f17c3aae92460f765fdddde8d99",
+      "bytes": 59650,
+      "width": 840,
+      "height": 432,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c563547ffdc3149/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c563547ffdc3149/thumbnail.webp",
+      "sha256": "48a4c6df4efeddab44cbc579a315e654b6d8d96fd48d483d7288a0d7eb438524",
+      "bytes": 12676,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c563547ffdc3149/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c563547ffdc3149/preview-0180.avif",
+      "sha256": "9907b5abe656e6528a1864ed9e47f735813d50a3f9c2e0e7378f34c6345848f1",
+      "bytes": 8442,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c563547ffdc3149/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c563547ffdc3149/preview-0180.webp",
+      "sha256": "48a4c6df4efeddab44cbc579a315e654b6d8d96fd48d483d7288a0d7eb438524",
+      "bytes": 12676,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80efeb47f68386e6/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80efeb47f68386e6/thumbnail.webp",
+      "sha256": "d01fac6014e4fcfa7716340f75283b5e97e5b010d36a0e65c5602a00e5b4669c",
+      "bytes": 12120,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80efeb47f68386e6/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80efeb47f68386e6/preview-0180.avif",
+      "sha256": "1d5c86e257ce66641d146d14267c0d977bbfd598aa90134bdee3c1c34157a450",
+      "bytes": 7679,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/80efeb47f68386e6/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/80efeb47f68386e6/preview-0180.webp",
+      "sha256": "d01fac6014e4fcfa7716340f75283b5e97e5b010d36a0e65c5602a00e5b4669c",
+      "bytes": 12120,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2d1dbc3459573693/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2d1dbc3459573693/thumbnail.webp",
+      "sha256": "b89aec198d9f39f814ccfc434f5110a024b167ffc4e77788fd1f34e59f7d2cd9",
+      "bytes": 12456,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2d1dbc3459573693/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2d1dbc3459573693/preview-0180.avif",
+      "sha256": "d9e7674100b3c4c9b84209d0d823e20647c7f667c0ee41b6f43c87366e27ad2b",
+      "bytes": 8352,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2d1dbc3459573693/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2d1dbc3459573693/preview-0180.webp",
+      "sha256": "b89aec198d9f39f814ccfc434f5110a024b167ffc4e77788fd1f34e59f7d2cd9",
+      "bytes": 12456,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/257986cc06906246/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/257986cc06906246/thumbnail.webp",
+      "sha256": "67be70f429264434a9d8ae3ad8984a67e0d62655cb80076824d205f8932f5619",
+      "bytes": 12004,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/257986cc06906246/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/257986cc06906246/preview-0180.avif",
+      "sha256": "f84a70f9dc432ae4d6bf907bd9e46adf04e8ae90c322cad454bab78225f376ac",
+      "bytes": 8029,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/257986cc06906246/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/257986cc06906246/preview-0180.webp",
+      "sha256": "67be70f429264434a9d8ae3ad8984a67e0d62655cb80076824d205f8932f5619",
+      "bytes": 12004,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/thumbnail.webp",
+      "sha256": "ea8e69f5ed6325701a1c18ead85b307422efa33866b5c531439c9b79034f13a2",
+      "bytes": 9038,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/preview-0180.avif",
+      "sha256": "5ea3d631db918c440f26e14933946897297c4d3d25b607a4c1125108b33f7317",
+      "bytes": 6237,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/64c51ca6dbf3ec58/preview-0180.webp",
+      "sha256": "ea8e69f5ed6325701a1c18ead85b307422efa33866b5c531439c9b79034f13a2",
+      "bytes": 9038,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/thumbnail.webp",
+      "sha256": "18e993b85ad8d86c97e86483d609b0b23cd29b50d0fc73899b50406cb5aae247",
+      "bytes": 23248,
+      "width": 360,
+      "height": 193,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0480.avif",
+      "sha256": "3e3a84eaf03ab0aa0059cdca1e5089ad2ada64357360b9299d8db1b979460335",
+      "bytes": 18261,
+      "width": 480,
+      "height": 257,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0480.webp",
+      "sha256": "d3094d0fdc86efc2a8de1f2f662c9b9cd2503ec2fe9fab94e4a8a0db6f743250",
+      "bytes": 35198,
+      "width": 480,
+      "height": 257,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0893.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0893.avif",
+      "sha256": "46a2d68ae4e32e4787c59964d4342d8a10a7e8538b6e6236cc06943591fbbc72",
+      "bytes": 45464,
+      "width": 893,
+      "height": 478,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0893.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83cbcaa52f36f78e/preview-0893.webp",
+      "sha256": "0c3af0be1769727dfee60402dcad25f0348d522a845a9b2a59f22f08dd88bc86",
+      "bytes": 81520,
+      "width": 893,
+      "height": 478,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/thumbnail.webp",
+      "sha256": "ee28f2bfbca99121d0e8eca360cc8900572cc09e651701c9fc768897bac6aa8e",
+      "bytes": 8510,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/preview-0180.avif",
+      "sha256": "a76bd148b25cb169d2fe9877e969c841201340fd6573daebdb08a7b0b9e65122",
+      "bytes": 5821,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4222d9cc9cbab87/preview-0180.webp",
+      "sha256": "ee28f2bfbca99121d0e8eca360cc8900572cc09e651701c9fc768897bac6aa8e",
+      "bytes": 8510,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/331489c566e1c6bf/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/331489c566e1c6bf/thumbnail.webp",
+      "sha256": "df27bd461c941a07ac48cb9908e25e3bc30f890a7dada22615d70c14df900ca7",
+      "bytes": 11448,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/331489c566e1c6bf/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/331489c566e1c6bf/preview-0180.avif",
+      "sha256": "3da38ca499f893614412d03979d6eead81dcfbfe6ba801f624baae6c06daf160",
+      "bytes": 7939,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/331489c566e1c6bf/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/331489c566e1c6bf/preview-0180.webp",
+      "sha256": "df27bd461c941a07ac48cb9908e25e3bc30f890a7dada22615d70c14df900ca7",
+      "bytes": 11448,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/thumbnail.webp",
+      "sha256": "5292c578089dfda3133932f3c53c7ec075cf79b8128808ea1d30286ddd36d89a",
+      "bytes": 11774,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/preview-0180.avif",
+      "sha256": "02b03567d7224a2733cddcf6aebb2cb9867f2127471a842003c4132897aa96db",
+      "bytes": 7476,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/83c8cabc4dbf62b1/preview-0180.webp",
+      "sha256": "5292c578089dfda3133932f3c53c7ec075cf79b8128808ea1d30286ddd36d89a",
+      "bytes": 11774,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/thumbnail.webp",
+      "sha256": "3bb253e48aa0438ac8bbbf21ef9a6e680aa51568c6f2487b1f9a8d0cb26f69ca",
+      "bytes": 10688,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/preview-0180.avif",
+      "sha256": "3ce23e415ca26dc3c9e2d1ddbe31f58e97060cb614e39758a36a562beb1ec6f4",
+      "bytes": 6764,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6ea87bba8bc9c3ff/preview-0180.webp",
+      "sha256": "3bb253e48aa0438ac8bbbf21ef9a6e680aa51568c6f2487b1f9a8d0cb26f69ca",
+      "bytes": 10688,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/thumbnail.webp",
+      "sha256": "e77249a9a030ca183e48865d24d49819c198763c7a6cfc7ae0c1cf3e73624e98",
+      "bytes": 12188,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/preview-0180.avif",
+      "sha256": "e4045eb65bd32507806481cebe50e8df504ffc50a4b6acff0f1804803f32e49f",
+      "bytes": 7486,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9fe16d8a2f557c1d/preview-0180.webp",
+      "sha256": "e77249a9a030ca183e48865d24d49819c198763c7a6cfc7ae0c1cf3e73624e98",
+      "bytes": 12188,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9e082386a6e11dec/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9e082386a6e11dec/thumbnail.webp",
+      "sha256": "c650dd09f5b16964b9b4420d31acf111601c0ea385dfbe9fbf89488e97e3c85e",
+      "bytes": 15350,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9e082386a6e11dec/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9e082386a6e11dec/preview-0180.avif",
+      "sha256": "ee778242bd3d6e87f43523397268a91e89527ae2e8618942cc71e0ac8c475740",
+      "bytes": 9303,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9e082386a6e11dec/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9e082386a6e11dec/preview-0180.webp",
+      "sha256": "c650dd09f5b16964b9b4420d31acf111601c0ea385dfbe9fbf89488e97e3c85e",
+      "bytes": 15350,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/69761624e743ec5a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/69761624e743ec5a/thumbnail.webp",
+      "sha256": "8c721d9710b52c69e303d785eade7fdc598a71cfc85c5b1eca719e708b0b5824",
+      "bytes": 12852,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/69761624e743ec5a/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/69761624e743ec5a/preview-0180.avif",
+      "sha256": "fc1eddb1c9aaace000325282653c01192f847b59c5367f866fe069a7a4734e48",
+      "bytes": 7381,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/69761624e743ec5a/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/69761624e743ec5a/preview-0180.webp",
+      "sha256": "8c721d9710b52c69e303d785eade7fdc598a71cfc85c5b1eca719e708b0b5824",
+      "bytes": 12852,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/thumbnail.webp",
+      "sha256": "982be5f9d9e97781a429d531ecc38f268923a6561399de241730e4497cc83fb3",
+      "bytes": 9808,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/preview-0180.avif",
+      "sha256": "820513d157379681bf53edf0822984d349c2f7c98c3ac265838177a61700e5a8",
+      "bytes": 6342,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/89d1f1de97be0afd/preview-0180.webp",
+      "sha256": "982be5f9d9e97781a429d531ecc38f268923a6561399de241730e4497cc83fb3",
+      "bytes": 9808,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/409224fa23b2c002/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/409224fa23b2c002/thumbnail.webp",
+      "sha256": "c5834cf6c8b1321277b2dad53d3aefa68d773ec33f499340a2d7412b76843a85",
+      "bytes": 9918,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/409224fa23b2c002/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/409224fa23b2c002/preview-0180.avif",
+      "sha256": "38470426d3c275514dcf94d3782abfb2f0ec7a9ffc44196910d30c1ce9a149eb",
+      "bytes": 6401,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/409224fa23b2c002/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/409224fa23b2c002/preview-0180.webp",
+      "sha256": "c5834cf6c8b1321277b2dad53d3aefa68d773ec33f499340a2d7412b76843a85",
+      "bytes": 9918,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/889ac3191cb342cd/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/889ac3191cb342cd/thumbnail.webp",
+      "sha256": "2d287c2af221ea174e00a11a02e10f71fcc580c109be34cb87ae4d4391fcf3a6",
+      "bytes": 15364,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/889ac3191cb342cd/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/889ac3191cb342cd/preview-0180.avif",
+      "sha256": "65e593b0e1b93976dd1bcde3fb23cec469cf0acb61b73a63dd8725012401f35f",
+      "bytes": 9907,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/889ac3191cb342cd/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/889ac3191cb342cd/preview-0180.webp",
+      "sha256": "2d287c2af221ea174e00a11a02e10f71fcc580c109be34cb87ae4d4391fcf3a6",
+      "bytes": 15364,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7f5abc3875244bae/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7f5abc3875244bae/thumbnail.webp",
+      "sha256": "b17404e31db626f44001f1cafc09da8b453cce7fa6d791aee1bd880aa6e3ba48",
+      "bytes": 10520,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7f5abc3875244bae/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7f5abc3875244bae/preview-0180.avif",
+      "sha256": "a05855e0fe5cb0853e225f40af54480ba59a0fbf413baaa7decb8963fe23fc2e",
+      "bytes": 6851,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7f5abc3875244bae/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7f5abc3875244bae/preview-0180.webp",
+      "sha256": "b17404e31db626f44001f1cafc09da8b453cce7fa6d791aee1bd880aa6e3ba48",
+      "bytes": 10520,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/55a25592b7f2689e/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/55a25592b7f2689e/thumbnail.webp",
+      "sha256": "27bdda0573001f8801094e839eab95715e5fcabcae57da0f2d305bf3a187418f",
+      "bytes": 11724,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/55a25592b7f2689e/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/55a25592b7f2689e/preview-0180.avif",
+      "sha256": "7aa8ad9ea9f03e072be5fcaaf928a5cc41cde9b200f5bdddfac29da31379dece",
+      "bytes": 7788,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/55a25592b7f2689e/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/55a25592b7f2689e/preview-0180.webp",
+      "sha256": "27bdda0573001f8801094e839eab95715e5fcabcae57da0f2d305bf3a187418f",
+      "bytes": 11724,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/583bef940a6afa17/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/583bef940a6afa17/thumbnail.webp",
+      "sha256": "ed62399098ca03ea05486b67f5372fd874ccc61469c52ca2d98d808a8998c5d3",
+      "bytes": 10322,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/583bef940a6afa17/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/583bef940a6afa17/preview-0180.avif",
+      "sha256": "7d6c003516efeb42be3979014f14da81ebb0888dee6eb090a6eb7894f2e055ef",
+      "bytes": 6781,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/583bef940a6afa17/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/583bef940a6afa17/preview-0180.webp",
+      "sha256": "ed62399098ca03ea05486b67f5372fd874ccc61469c52ca2d98d808a8998c5d3",
+      "bytes": 10322,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/thumbnail.webp",
+      "sha256": "bd14d785cab2692fd24a83011dd81d570fb69520982ff5f299173ef3211c9575",
+      "bytes": 10710,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/preview-0180.avif",
+      "sha256": "0f84eab7dd4e27e951bffa0b83f845f3f4b78e10b26a7ce2ccc52c5a7ff2b7b7",
+      "bytes": 7171,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b8c11a319dc6f4b2/preview-0180.webp",
+      "sha256": "bd14d785cab2692fd24a83011dd81d570fb69520982ff5f299173ef3211c9575",
+      "bytes": 10710,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1352b92d700a6553/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1352b92d700a6553/thumbnail.webp",
+      "sha256": "15c1eb11d55518f2be1a280673c19973b416f732731d30d82ba82a570dd398aa",
+      "bytes": 14634,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1352b92d700a6553/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1352b92d700a6553/preview-0180.avif",
+      "sha256": "c949876e8fd441eca2d885c5d180e964c386e54559968e10585ec8e8854929e4",
+      "bytes": 8834,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/1352b92d700a6553/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/1352b92d700a6553/preview-0180.webp",
+      "sha256": "15c1eb11d55518f2be1a280673c19973b416f732731d30d82ba82a570dd398aa",
+      "bytes": 14634,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4a5109646df017ae/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4a5109646df017ae/thumbnail.webp",
+      "sha256": "026380f71ef7d32c0f12d6b5495a406614f5ccf264d68699bcfc81cfb6833806",
+      "bytes": 10218,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4a5109646df017ae/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4a5109646df017ae/preview-0180.avif",
+      "sha256": "c90d9571e6113b2eb8ea2ffff35aa4147c42eb6020633b48c46e9a81f34b3fb6",
+      "bytes": 6693,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4a5109646df017ae/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4a5109646df017ae/preview-0180.webp",
+      "sha256": "026380f71ef7d32c0f12d6b5495a406614f5ccf264d68699bcfc81cfb6833806",
+      "bytes": 10218,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/thumbnail.webp",
+      "sha256": "2306bd2eef8ade0e9056447c5c25bc84088dfee11d0bd9613b3f1a23bea63bfa",
+      "bytes": 12448,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/preview-0180.avif",
+      "sha256": "09939e8e841ab520c1f6906c11af5e323bf18bbd9661d1c0a03527b3d8bb5ff6",
+      "bytes": 7908,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/6cd7b5be74f5ca50/preview-0180.webp",
+      "sha256": "2306bd2eef8ade0e9056447c5c25bc84088dfee11d0bd9613b3f1a23bea63bfa",
+      "bytes": 12448,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/thumbnail.webp",
+      "sha256": "24e1c4c463291810590ba2b7b311f419c819f6090913a7c7dfe6c881dd9d0f2c",
+      "bytes": 13204,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/preview-0180.avif",
+      "sha256": "47855b85660b05e8ea7477b18f1c1d53716250f6829a66e0bdee61de4e432e83",
+      "bytes": 8643,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43af3494b32bbcb5/preview-0180.webp",
+      "sha256": "24e1c4c463291810590ba2b7b311f419c819f6090913a7c7dfe6c881dd9d0f2c",
+      "bytes": 13204,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/thumbnail.webp",
+      "sha256": "c33996c4bd7c805cd19e1a3527f47ee2a87658a79b94e476469076de5a2de6dd",
+      "bytes": 12702,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/preview-0180.avif",
+      "sha256": "fe41f7c6a22458d3f0a3b2b52f4d948e43e8c6c3fe89931acbe7af452b6be85f",
+      "bytes": 8490,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/f4f7446cfebd45cc/preview-0180.webp",
+      "sha256": "c33996c4bd7c805cd19e1a3527f47ee2a87658a79b94e476469076de5a2de6dd",
+      "bytes": 12702,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/thumbnail.webp",
+      "sha256": "2b5935cfd76373b0b7f2d1d4deb4f6d6de787cf43cdd376e28a4c21d31a61888",
+      "bytes": 11616,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/preview-0180.avif",
+      "sha256": "e9dbeb27bb049ede64d69ae75d7e031cfaeb663f056010f9159a7f2ea733d9b5",
+      "bytes": 7677,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/25f1bfb8d7436905/preview-0180.webp",
+      "sha256": "2b5935cfd76373b0b7f2d1d4deb4f6d6de787cf43cdd376e28a4c21d31a61888",
+      "bytes": 11616,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7244bb6d04600f42/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7244bb6d04600f42/thumbnail.webp",
+      "sha256": "242df5d8edbfb8f5b1d5b9be515d5788d6f34d6f99e55017759ccf94b009b700",
+      "bytes": 14836,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7244bb6d04600f42/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7244bb6d04600f42/preview-0180.avif",
+      "sha256": "dff2a6c69fde54c384e8bac0f7979786cc8dfd9ce1cc37e321708010e98133d0",
+      "bytes": 9430,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7244bb6d04600f42/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7244bb6d04600f42/preview-0180.webp",
+      "sha256": "242df5d8edbfb8f5b1d5b9be515d5788d6f34d6f99e55017759ccf94b009b700",
+      "bytes": 14836,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/thumbnail.webp",
+      "sha256": "13784be00c8ece463ab9e30e7442ef84fd42a7110f13be7943b112eabb7d34f3",
+      "bytes": 15686,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/preview-0180.avif",
+      "sha256": "80e2f88e651dbf23d72ca056774b1a46e653e058476b4f4211ac85f7055680b7",
+      "bytes": 9671,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2afdf5ba5adc4587/preview-0180.webp",
+      "sha256": "13784be00c8ece463ab9e30e7442ef84fd42a7110f13be7943b112eabb7d34f3",
+      "bytes": 15686,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/thumbnail.webp",
+      "sha256": "1d92be54cdb392fa2b68ed029f20ee1f6bca2a02bc88b9e15b6f870937a73461",
+      "bytes": 12876,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/preview-0180.avif",
+      "sha256": "bafbf3c21d3adac5502075101bb9ee62e2e40cd7be990079fcceeebef1c8ec4e",
+      "bytes": 8326,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2e8fd6a0e078efd6/preview-0180.webp",
+      "sha256": "1d92be54cdb392fa2b68ed029f20ee1f6bca2a02bc88b9e15b6f870937a73461",
+      "bytes": 12876,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43fc383d2240ba96/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43fc383d2240ba96/thumbnail.webp",
+      "sha256": "3e99342cd67c91273027456c3d26825dbf3a679873a22ad7d01e9676e85dee2a",
+      "bytes": 12056,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43fc383d2240ba96/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43fc383d2240ba96/preview-0180.avif",
+      "sha256": "46131b44cc417e5bfff7a2fb76b8f20a97a93ffb37879802721c8395be92b666",
+      "bytes": 7777,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/43fc383d2240ba96/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/43fc383d2240ba96/preview-0180.webp",
+      "sha256": "3e99342cd67c91273027456c3d26825dbf3a679873a22ad7d01e9676e85dee2a",
+      "bytes": 12056,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a9628d58232bc75d/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a9628d58232bc75d/thumbnail.webp",
+      "sha256": "125fc0814ecf15affa55280d6bfdfae3533edb10ab30c87e6ba1828dabdaa952",
+      "bytes": 15540,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a9628d58232bc75d/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a9628d58232bc75d/preview-0180.avif",
+      "sha256": "2768c7bae141db9f57c072074a52f93ca9e82ffc78a96f74e689195c4f62895f",
+      "bytes": 8631,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a9628d58232bc75d/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a9628d58232bc75d/preview-0180.webp",
+      "sha256": "125fc0814ecf15affa55280d6bfdfae3533edb10ab30c87e6ba1828dabdaa952",
+      "bytes": 15540,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/thumbnail.webp",
+      "sha256": "e74ef15f16028dd3827de7b46f943a7ad768d74589982a99f0571bceb5bbb4fb",
+      "bytes": 16744,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/preview-0180.avif",
+      "sha256": "637a8ea1d335dc0b1adcee4ad21d13e290f918a13d366417d2b4a94f8926e11a",
+      "bytes": 9993,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/bf68dfe4ba60d484/preview-0180.webp",
+      "sha256": "e74ef15f16028dd3827de7b46f943a7ad768d74589982a99f0571bceb5bbb4fb",
+      "bytes": 16744,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/thumbnail.webp",
+      "sha256": "0c1ca44d9dc6c1c30e453488efb9481380e81b574a22e7585ca78456740f6b6d",
+      "bytes": 17406,
+      "width": 360,
+      "height": 221,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0480.avif",
+      "sha256": "92d62018d76811572765f613085fa043f9caf117bc1ae58034879d5e9c3cd142",
+      "bytes": 14149,
+      "width": 480,
+      "height": 295,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0480.webp",
+      "sha256": "c69700d0b67c17ecc800967316a6686b8dd53e4c65ed6c5b13957dce2fb881c2",
+      "bytes": 25722,
+      "width": 480,
+      "height": 295,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0754.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0754.avif",
+      "sha256": "7630fb19c868e618f15d1450ec59aade6bf2469744247e4eb1ed396d2385cbf8",
+      "bytes": 24443,
+      "width": 754,
+      "height": 463,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0754.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3051f03ea9cbe7d6/preview-0754.webp",
+      "sha256": "2db23b1336b02d4c5d0874d26121930a13688dd2d77bd3f51281ba4bf87046fd",
+      "bytes": 43766,
+      "width": 754,
+      "height": 463,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/thumbnail.webp",
+      "sha256": "6c56c157b7c7edc7fb9fcf744d3f455da2328cf36cdb0151e2c6b62dfd649125",
+      "bytes": 16752,
+      "width": 360,
+      "height": 221,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0480.avif",
+      "sha256": "97f5b0b2c25a1aa4862fbde001848b4cf792e406219dc34472540177b610f7d9",
+      "bytes": 12974,
+      "width": 480,
+      "height": 295,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0480.webp",
+      "sha256": "8b786e6656407dae68f6f9f6e52efef3ba00f47b84b18c80ceeabb552fb2bde6",
+      "bytes": 23998,
+      "width": 480,
+      "height": 295,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0754.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0754.avif",
+      "sha256": "acdc202ff741913bc7d4c9755883837655a0fb62044ff684a3db1ac536103d42",
+      "bytes": 22117,
+      "width": 754,
+      "height": 463,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0754.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/eee9355dfa4b597a/preview-0754.webp",
+      "sha256": "264f8af878d3cf5ede4337b07fb30c97ee0e437fcff1d768cb7daf164ebc2b7c",
+      "bytes": 40692,
+      "width": 754,
+      "height": 463,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/thumbnail.webp",
+      "sha256": "19778298b17a46a66c9d712a12fa4972a9d69b85c8e4cb24b4622f00a5441006",
+      "bytes": 22696,
+      "width": 360,
+      "height": 207,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0480.avif",
+      "sha256": "e49778a7db3155d765f7371809960330c82c838031c9deb33b87a2ada118dadc",
+      "bytes": 18025,
+      "width": 480,
+      "height": 276,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0480.webp",
+      "sha256": "78a5aed1fba52116f638fb5456bde3943728c60911f38dd597e4eb4c8e5ea680",
+      "bytes": 34166,
+      "width": 480,
+      "height": 276,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0892.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0892.avif",
+      "sha256": "7fdcbc4ef4f861eb378b20077c8817b60b572619f4673a22893899494b914250",
+      "bytes": 39547,
+      "width": 892,
+      "height": 512,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0892.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/a2e28b57d0a72aab/preview-0892.webp",
+      "sha256": "548fb9a2956a6728dba94f26b6ff6f7ea544d166ad65f3b3d6afaeda9a82c7c6",
+      "bytes": 72458,
+      "width": 892,
+      "height": 512,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/thumbnail.webp",
+      "sha256": "2d94aaa71792cefc6ada57fa6c314db06414bf752f10978fe6434ae688daba81",
+      "bytes": 21608,
+      "width": 360,
+      "height": 213,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0480.avif",
+      "sha256": "a08a9c2036ff868a9f2a10298964e9b7fcc898eb16990183e769bbaadd1ad5ce",
+      "bytes": 17158,
+      "width": 480,
+      "height": 283,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0480.webp",
+      "sha256": "ca22358d23c38ebf59043832eadf0ea55a3e46f4d28b14326971d4ad70c80e20",
+      "bytes": 32428,
+      "width": 480,
+      "height": 283,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0742.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0742.avif",
+      "sha256": "6f11d8b1ff5462bdcd1fced1778dd519f011b7db54fe9c4dae398475219e0176",
+      "bytes": 29506,
+      "width": 742,
+      "height": 438,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0742.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/b4ae4fee2c28f4c4/preview-0742.webp",
+      "sha256": "5cc2ca899bc25afa9f856c205b256c5a3639a9f2f8e01b0268aee6fc4e86862c",
+      "bytes": 56230,
+      "width": 742,
+      "height": 438,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/998304da31fdab4a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/998304da31fdab4a/thumbnail.webp",
+      "sha256": "16848e244bd8b823c0b5240f2b0665b7bf0ebd106ae23f650f67052eb0ef3a79",
+      "bytes": 23376,
+      "width": 360,
+      "height": 224,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0480.avif",
+      "sha256": "73fb74330ae9745f43ffb1d9f36080a2d291b59930fea4e74f83cf8a135acf52",
+      "bytes": 19655,
+      "width": 480,
+      "height": 299,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0480.webp",
+      "sha256": "8019b8f49885cc3a1646a0275a7a700c01a721abc2452523f15131c2ca9803ff",
+      "bytes": 35928,
+      "width": 480,
+      "height": 299,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0704.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0704.avif",
+      "sha256": "9dbd78a4e11d575213764769732ba972c5ce6ac757890ca998d48809d39a554d",
+      "bytes": 32928,
+      "width": 704,
+      "height": 438,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0704.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/998304da31fdab4a/preview-0704.webp",
+      "sha256": "2ccb3d181783a96783b8c6f70fd0ac95f16d425f86cd9cbfb6247489302877c0",
+      "bytes": 62102,
+      "width": 704,
+      "height": 438,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/950605677af1bb78/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/950605677af1bb78/thumbnail.webp",
+      "sha256": "8ffe34840d3df4b03629844b3a599ff0a8963642f734a4e8934e3fb2ad81cb2d",
+      "bytes": 22314,
+      "width": 360,
+      "height": 207,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0480.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0480.avif",
+      "sha256": "d6369258c62792a2f9700ef035060e74a245157ac56aad26de7958f011b44dc2",
+      "bytes": 18383,
+      "width": 480,
+      "height": 277,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0480.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0480.webp",
+      "sha256": "52f5436713377d7d6c286f52b33a0da231c68418d04af52f8e93da6213efbc34",
+      "bytes": 33862,
+      "width": 480,
+      "height": 277,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0760.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0760.avif",
+      "sha256": "4d93deac17dbb742bccc127a9c0e95083356eeea9866c7a4d1d24dd1b7f5794b",
+      "bytes": 34556,
+      "width": 760,
+      "height": 438,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0760.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/950605677af1bb78/preview-0760.webp",
+      "sha256": "be7ea37c12381693202de9555fc81a03d0a34875ca2322594a63c6df2b70451c",
+      "bytes": 64470,
+      "width": 760,
+      "height": 438,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/thumbnail.webp",
+      "sha256": "4f522ceae8f587f3867ee75fb604b32a07055e1d190ca332a51c27a42fefae0f",
+      "bytes": 13802,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/preview-0180.avif",
+      "sha256": "34ca3e2688ca9c7bec079271274d5fce9cbff545c976e4b142e32d26445fa3c3",
+      "bytes": 8844,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cb5b14b3a875a350/preview-0180.webp",
+      "sha256": "4f522ceae8f587f3867ee75fb604b32a07055e1d190ca332a51c27a42fefae0f",
+      "bytes": 13802,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/97edf4fa910e1296/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/97edf4fa910e1296/thumbnail.webp",
+      "sha256": "e919d1eefc6beec7b330dc14ac716e3ef03d75b050d1a3d7f7680eb16121c3eb",
+      "bytes": 13426,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/97edf4fa910e1296/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/97edf4fa910e1296/preview-0180.avif",
+      "sha256": "386ca8885f4ce036fc34669866ca2e976c38e625216b4bb167dd719486f44956",
+      "bytes": 8690,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/97edf4fa910e1296/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/97edf4fa910e1296/preview-0180.webp",
+      "sha256": "e919d1eefc6beec7b330dc14ac716e3ef03d75b050d1a3d7f7680eb16121c3eb",
+      "bytes": 13426,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/thumbnail.webp",
+      "sha256": "34477a9be1d992ca7fc431c7e824f452e2fc4923783fa7d33c226380d1f81679",
+      "bytes": 14280,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/preview-0180.avif",
+      "sha256": "b801f232214b7db9dd4008af906c77bde598c2ca333bd70224e47b5c6d056a3a",
+      "bytes": 9398,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2503b78a13eab9cc/preview-0180.webp",
+      "sha256": "34477a9be1d992ca7fc431c7e824f452e2fc4923783fa7d33c226380d1f81679",
+      "bytes": 14280,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d60463331e6d080f/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d60463331e6d080f/thumbnail.webp",
+      "sha256": "35e3be67d695dd201b2dfb5344629455ab82a434115fbd3214c57c8640f3f0ad",
+      "bytes": 11712,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d60463331e6d080f/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d60463331e6d080f/preview-0180.avif",
+      "sha256": "ce83181a63e8da6fd531e4257da3f3218b8c035e081a25e731ce38ebb60c9da0",
+      "bytes": 7599,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d60463331e6d080f/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d60463331e6d080f/preview-0180.webp",
+      "sha256": "35e3be67d695dd201b2dfb5344629455ab82a434115fbd3214c57c8640f3f0ad",
+      "bytes": 11712,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/thumbnail.webp",
+      "sha256": "807b3d4e2743a235c5f905a3584675f7091c83ff2495aa027758b6a1b0004051",
+      "bytes": 12436,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/preview-0180.avif",
+      "sha256": "806d5759b6e64247046dc72caa14eabd89f95019de6c5d2b0a418629ac943814",
+      "bytes": 8458,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/d7bbc01fadc2e2bf/preview-0180.webp",
+      "sha256": "807b3d4e2743a235c5f905a3584675f7091c83ff2495aa027758b6a1b0004051",
+      "bytes": 12436,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/thumbnail.webp",
+      "sha256": "30e20abe2c5cee2a53e6b12f32c16643fde0d3593287bc7ea25e0bec00dcd875",
+      "bytes": 16832,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/preview-0180.avif",
+      "sha256": "97e7712fc1421f389f24366eb5cf51bd2d17ab1533989793058ef7ddb6671ae4",
+      "bytes": 9811,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/2b1ab4b20a6beeac/preview-0180.webp",
+      "sha256": "30e20abe2c5cee2a53e6b12f32c16643fde0d3593287bc7ea25e0bec00dcd875",
+      "bytes": 16832,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/thumbnail.webp",
+      "sha256": "1c5a9e6ce6346cf303217fc32357354052e4aae4814ede1c60f2b4caf1bd81fd",
+      "bytes": 11766,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/preview-0180.avif",
+      "sha256": "c371b7ed9d6bad1fdc2c224c9f4185e7a09ee94db058b92640f3469e7241074e",
+      "bytes": 7596,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/3ec78fcaa204cffd/preview-0180.webp",
+      "sha256": "1c5a9e6ce6346cf303217fc32357354052e4aae4814ede1c60f2b4caf1bd81fd",
+      "bytes": 11766,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8496196cd7081239/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8496196cd7081239/thumbnail.webp",
+      "sha256": "a8e15d0592c5c49fbe83c1811f9835cd4d1412929b5f4bbf34c9d1efd67dcf8b",
+      "bytes": 13246,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8496196cd7081239/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8496196cd7081239/preview-0180.avif",
+      "sha256": "90b353e896947bdf7d28a8d26436b85a3bd295d33bab3ed407efbeabfd0b827f",
+      "bytes": 8283,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/8496196cd7081239/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/8496196cd7081239/preview-0180.webp",
+      "sha256": "a8e15d0592c5c49fbe83c1811f9835cd4d1412929b5f4bbf34c9d1efd67dcf8b",
+      "bytes": 13246,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cd88dd30279fb284/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cd88dd30279fb284/thumbnail.webp",
+      "sha256": "17a1e7aa76cad30fd4ed752cd6235b1da5ec087eaa3701245940646ad67bb8bd",
+      "bytes": 12022,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cd88dd30279fb284/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cd88dd30279fb284/preview-0180.avif",
+      "sha256": "7bb6d909664509e04ae95fd738c7206ed6069fcba4863946a8cf50e77e8a479c",
+      "bytes": 7581,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cd88dd30279fb284/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cd88dd30279fb284/preview-0180.webp",
+      "sha256": "17a1e7aa76cad30fd4ed752cd6235b1da5ec087eaa3701245940646ad67bb8bd",
+      "bytes": 12022,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/thumbnail.webp",
+      "sha256": "56c4ad04e5dd4d6277a02f00a904120856456c655175e425335fb2ecf9db2695",
+      "bytes": 11366,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/preview-0180.avif",
+      "sha256": "09694a48096cfd320e223a0cb0f2a917b3249bdb57ad95de5bbb2da86c7b29f5",
+      "bytes": 7382,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/7209567f0cfaf10a/preview-0180.webp",
+      "sha256": "56c4ad04e5dd4d6277a02f00a904120856456c655175e425335fb2ecf9db2695",
+      "bytes": 11366,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/thumbnail.webp",
+      "sha256": "f6b6eea1f8cb83d1e8a26758714c350e36335bac694bcd1d520a7723c68ef4bd",
+      "bytes": 13156,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/preview-0180.avif",
+      "sha256": "ab971a7cca31741f8038cc00cd920dc0892cbd8b23222a62c998e8afef149d2c",
+      "bytes": 8050,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/c16ca5adfb00c2e4/preview-0180.webp",
+      "sha256": "f6b6eea1f8cb83d1e8a26758714c350e36335bac694bcd1d520a7723c68ef4bd",
+      "bytes": 13156,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/thumbnail.webp",
+      "sha256": "c324016681f584063e79fbc2a6fbfa0bf9a1e2abda4a1aa445691f9a60c5df07",
+      "bytes": 11968,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/preview-0180.avif",
+      "sha256": "79468d08ae384f3ca5fc0b31e7e5583efdd36c937e74e37a77c5ee7452adf737",
+      "bytes": 7781,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9f70e3f278787bb3/preview-0180.webp",
+      "sha256": "c324016681f584063e79fbc2a6fbfa0bf9a1e2abda4a1aa445691f9a60c5df07",
+      "bytes": 11968,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cc12796c346b14df/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cc12796c346b14df/thumbnail.webp",
+      "sha256": "f66f5e243bb0c980585dc4e5fd026d9347e27d46c1f3a6a0c8ae56c4262a5a77",
+      "bytes": 11546,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cc12796c346b14df/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cc12796c346b14df/preview-0180.avif",
+      "sha256": "84a3e2afa1bbfc556359cf5a1c056486d2928730ab22c5f955e7ef326b3070c1",
+      "bytes": 7598,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/cc12796c346b14df/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/cc12796c346b14df/preview-0180.webp",
+      "sha256": "f66f5e243bb0c980585dc4e5fd026d9347e27d46c1f3a6a0c8ae56c4262a5a77",
+      "bytes": 11546,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/thumbnail.webp",
+      "sha256": "bbd2fa6b6cb38c8aa05555e842630928e248f22c250f9c979b18de03f6ac2cd3",
+      "bytes": 12796,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/preview-0180.avif",
+      "sha256": "18298d5e8edd813babb8888c369318a8e88731c6abbff1a2dce51a0fd43fd8fa",
+      "bytes": 8096,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/70aff7bccf0d3f94/preview-0180.webp",
+      "sha256": "bbd2fa6b6cb38c8aa05555e842630928e248f22c250f9c979b18de03f6ac2cd3",
+      "bytes": 12796,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/90e79da266a3a338/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/90e79da266a3a338/thumbnail.webp",
+      "sha256": "ec1ef2a5a028dddfd21552641ceaf097444541c4dbd08ceba00e6ecc4f3d50e5",
+      "bytes": 11454,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/90e79da266a3a338/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/90e79da266a3a338/preview-0180.avif",
+      "sha256": "127af464b27c64e1feff26d376a5f42623b1345242b874a0f6653b48879eaf45",
+      "bytes": 7313,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/90e79da266a3a338/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/90e79da266a3a338/preview-0180.webp",
+      "sha256": "ec1ef2a5a028dddfd21552641ceaf097444541c4dbd08ceba00e6ecc4f3d50e5",
+      "bytes": 11454,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e0207a9c642aae26/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e0207a9c642aae26/thumbnail.webp",
+      "sha256": "5c58ed397e0a7c4a7f40acc2fbf474e2ba2455c3bb0d13c2029deddb3ad57ea4",
+      "bytes": 9830,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e0207a9c642aae26/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e0207a9c642aae26/preview-0180.avif",
+      "sha256": "69ec5f0568c082f9d53faad992641a20d5eb2b9a0487e900a58669f51205a0ad",
+      "bytes": 6360,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e0207a9c642aae26/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e0207a9c642aae26/preview-0180.webp",
+      "sha256": "5c58ed397e0a7c4a7f40acc2fbf474e2ba2455c3bb0d13c2029deddb3ad57ea4",
+      "bytes": 9830,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/thumbnail.webp",
+      "sha256": "aa3a8417edc9a2ddd4f68a42a25f9cc35efd08f642ccb39b9d533cc0d7a45d67",
+      "bytes": 13118,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/preview-0180.avif",
+      "sha256": "e445b280888c0311d94af687c52c12d317b2ce341156edf853b35099b1a97457",
+      "bytes": 8391,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/4ad8b5f93a1c083d/preview-0180.webp",
+      "sha256": "aa3a8417edc9a2ddd4f68a42a25f9cc35efd08f642ccb39b9d533cc0d7a45d67",
+      "bytes": 13118,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/thumbnail.webp",
+      "sha256": "413f0500557833cd0baf3706766c2c409b45dfe9d4acca436c9a7fe8dc336e13",
+      "bytes": 11164,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/preview-0180.avif",
+      "sha256": "9f37ee8ff00f1d01dee1d66703651978bf8c86fe88c34240871c7a5f81fa166c",
+      "bytes": 7269,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/78d3fc6340eaacd7/preview-0180.webp",
+      "sha256": "413f0500557833cd0baf3706766c2c409b45dfe9d4acca436c9a7fe8dc336e13",
+      "bytes": 11164,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/308d7f5092c788ed/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/308d7f5092c788ed/thumbnail.webp",
+      "sha256": "935a82cb6179db5e7f94a4d676558ddb2d2c2405f9312ab118836eb318cb1fe1",
+      "bytes": 10112,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/308d7f5092c788ed/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/308d7f5092c788ed/preview-0180.avif",
+      "sha256": "09516817444ff161d31b06cfb8b460eb928507f8f41b63055a13ef49d6ec92e0",
+      "bytes": 6813,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/308d7f5092c788ed/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/308d7f5092c788ed/preview-0180.webp",
+      "sha256": "935a82cb6179db5e7f94a4d676558ddb2d2c2405f9312ab118836eb318cb1fe1",
+      "bytes": 10112,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/thumbnail.webp",
+      "sha256": "8753afc39c405c04434770901a66c5c52ac194a8cd60a7d74b8de18035083794",
+      "bytes": 10182,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/preview-0180.avif",
+      "sha256": "f10b85c0111c58e2f35632f72562dced1cec686a1d7d20a88f4daccf9393e856",
+      "bytes": 6507,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/02a5d64c2440e1e6/preview-0180.webp",
+      "sha256": "8753afc39c405c04434770901a66c5c52ac194a8cd60a7d74b8de18035083794",
+      "bytes": 10182,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/thumbnail.webp",
+      "sha256": "13f8524e589baa47fcbadc2498cd7a364d4e48205347687234352d18126b2860",
+      "bytes": 13586,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/preview-0180.avif",
+      "sha256": "a63e97e79f81de6db72843cd87f2d2559b824fc3cde7aa8eca3e60fcf3e249ea",
+      "bytes": 7965,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/9c884f6fcf50b639/preview-0180.webp",
+      "sha256": "13f8524e589baa47fcbadc2498cd7a364d4e48205347687234352d18126b2860",
+      "bytes": 13586,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e04d38c944adad96/thumbnail.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e04d38c944adad96/thumbnail.webp",
+      "sha256": "7f642b04c456f975acd4f473a828c32884315989fa89198268fcabb8eba7e60e",
+      "bytes": 11402,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e04d38c944adad96/preview-0180.avif",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e04d38c944adad96/preview-0180.avif",
+      "sha256": "4d14bdafd2fa9719e9a3086565bdad259a551631ee7d11e943ea8856689481ce",
+      "bytes": 7365,
+      "width": 180,
+      "height": 180,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-7d080e8d651b/e04d38c944adad96/preview-0180.webp",
+      "publicPath": "/wiki-media/src-7d080e8d651b/e04d38c944adad96/preview-0180.webp",
+      "sha256": "7f642b04c456f975acd4f473a828c32884315989fa89198268fcabb8eba7e60e",
+      "bytes": 11402,
+      "width": 180,
+      "height": 180,
+      "format": "webp",
+      "exifRemoved": true
+    }
+  ]
+}

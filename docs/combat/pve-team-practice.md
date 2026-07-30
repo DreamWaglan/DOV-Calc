@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["PVE","配队","微调","实战"]
-related: ["combat-pve-ship-roles","combat-event-maps","combat-encounter"]
+related: ["combat-pve-ship-roles","combat-event-maps","combat-encounter","media-source-94e76e4522b1"]
 ---
 # PVE 配队三：构筑与微调
 > [!WARNING] 审核状态

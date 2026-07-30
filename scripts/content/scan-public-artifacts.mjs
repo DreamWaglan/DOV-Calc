@@ -132,21 +132,11 @@ for (const collection of publicAssets.collections ?? []) {
   const source = sourceById.get(collection.sourceId)
   if (!source) continue
   const decision = derivePublicRelease(source)
-  if (collection.publicUse && !decision.publicRelease.asset) {
-    collectionViolations += 1
-    failures.push(
-      `${collection.id}: public collection exceeds asset scope for ${source.id}`,
-    )
-  }
-  if (
-    collection.publicUse &&
-    source.assetType === 'image' &&
-    decision.publicRelease.download !== true
-  ) {
-    if (collection.derivative !== true) {
+  if (collection.publicUse && collection.derivative === true) {
+    if (!decision.publicRelease.derivative) {
       collectionViolations += 1
       failures.push(
-        `${collection.id}: non-downloadable source image requires derivative=true`,
+        `${collection.id}: public derivative exceeds derivative scope for ${source.id}`,
       )
     } else {
       const manifestErrors = await validateDerivativeManifest({
@@ -159,15 +149,13 @@ for (const collection of publicAssets.collections ?? []) {
         failures.push(`${collection.id}: ${error}`)
       }
     }
-  }
-  if (
+  } else if (
     collection.publicUse &&
-    collection.derivative === true &&
-    !decision.publicRelease.derivative
+    !decision.publicRelease.asset
   ) {
     collectionViolations += 1
     failures.push(
-      `${collection.id}: public derivative exceeds derivative scope for ${source.id}`,
+      `${collection.id}: public collection exceeds asset scope for ${source.id}`,
     )
   }
 }

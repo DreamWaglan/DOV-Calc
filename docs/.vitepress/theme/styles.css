@@ -57,6 +57,43 @@
   height: auto;
 }
 
+.responsive-media {
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--calc-border);
+  border-radius: 10px;
+  background: var(--calc-surface-soft);
+}
+
+.responsive-media picture,
+.responsive-media img {
+  display: block;
+  width: 100%;
+}
+
+.responsive-media img {
+  height: auto;
+  background: var(--calc-surface);
+  object-fit: contain;
+}
+
+.responsive-media figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px;
+  color: var(--calc-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.responsive-media figcaption span {
+  color: var(--calc-text);
+}
+
+.responsive-media figcaption small {
+  overflow-wrap: anywhere;
+}
+
 .vp-doc :where(h1, h2, h3, h4, h5, h6) {
   scroll-margin-top: calc(var(--vp-nav-height) + 16px);
 }

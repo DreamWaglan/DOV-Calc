@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["暴击","命中","闪避"]
-related: ["mechanics-damage-bonuses","mechanics-damage-examples"]
+related: ["mechanics-damage-bonuses","mechanics-damage-examples","media-source-c8852cf69a7b"]
 ---
 # 伤害构成六：暴击、命中与闪避
 > [!WARNING] 审核状态

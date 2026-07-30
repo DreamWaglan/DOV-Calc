@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["伤害","公式","计算"]
-related: ["mechanics-damage-formula-overview","mechanics-attack-power","mechanics-defense-power","mechanics-damage-multipliers","mechanics-damage-bonuses","mechanics-hit-critical","mechanics-damage-examples","tool-damage-calculator"]
+related: ["mechanics-damage-formula-overview","mechanics-attack-power","mechanics-defense-power","mechanics-damage-multipliers","mechanics-damage-bonuses","mechanics-hit-critical","mechanics-damage-examples","tool-damage-calculator","media-source-c8852cf69a7b"]
 ---
 # 伤害模型与计算边界
 

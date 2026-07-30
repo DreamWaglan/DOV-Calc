@@ -11,13 +11,21 @@ const files = {
   layout: path.join(docsRoot, '.vitepress', 'theme', 'WikiLayout.vue'),
   damage: path.join(docsRoot, '.vitepress', 'components', 'DamageCalculator.vue'),
   equipment: path.join(docsRoot, '.vitepress', 'components', 'EquipmentLookup.vue'),
+  responsiveMedia: path.join(
+    docsRoot,
+    '.vitepress',
+    'theme',
+    'components',
+    'ResponsiveMedia.vue',
+  ),
 }
 
-const [theme, layout, damage, equipment, markdownPaths] = await Promise.all([
+const [theme, layout, damage, equipment, responsiveMedia, markdownPaths] = await Promise.all([
   readFile(files.theme, 'utf8'),
   readFile(files.layout, 'utf8'),
   readFile(files.damage, 'utf8'),
   readFile(files.equipment, 'utf8'),
+  readFile(files.responsiveMedia, 'utf8'),
   collectMarkdownFiles(docsRoot),
 ])
 
@@ -104,10 +112,24 @@ const checks = [
     'responsive-images',
     theme.includes('.vp-doc img') &&
       theme.includes('height: auto') &&
+      theme.includes('.responsive-media') &&
       equipment.includes('width="72"') &&
       equipment.includes('height="120"') &&
       equipment.includes('loading="lazy"') &&
       equipment.includes('decoding="async"'),
+  ),
+  check(
+    'responsive-media-contract',
+    responsiveMedia.includes('<picture>') &&
+      responsiveMedia.includes(':srcset="source.srcset"') &&
+      responsiveMedia.includes('sizes="(max-width: 768px)') &&
+      responsiveMedia.includes(':alt="alt"') &&
+      responsiveMedia.includes(':width="width"') &&
+      responsiveMedia.includes(':height="height"') &&
+      responsiveMedia.includes('loading="lazy"') &&
+      responsiveMedia.includes('decoding="async"') &&
+      responsiveMedia.includes('<figcaption>') &&
+      responsiveMedia.includes('v-if="downloadAllowed && downloadPath"'),
   ),
   check(
     'damage-calculator-name-and-live-result',

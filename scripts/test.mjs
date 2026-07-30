@@ -17,6 +17,8 @@ const checks = [
   'scripts/content/validate-advanced-content.mjs',
   'scripts/content/validate-document-structures.mjs',
   'scripts/content/validate-formulas.mjs',
+  'tests/content/media-policy.mjs',
+  'scripts/content/validate-media-library.mjs',
   'scripts/content/validate-redirects.mjs',
   'scripts/content/validate-stage4.mjs',
   'scripts/quality/search-quality.mjs',

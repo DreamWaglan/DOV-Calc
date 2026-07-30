@@ -56,6 +56,18 @@ const representativePages = [
     seoPolicy: 'intentional-noindex',
   },
   {
+    id: 'visual-media-index',
+    route: '/topics/visual-guides/',
+    kind: 'responsive-media-index',
+    seoPolicy: 'intentional-noindex',
+  },
+  {
+    id: 'segmented-long-image',
+    route: '/topics/visual-guides/src-ec1754535996',
+    kind: 'segmented-responsive-image',
+    seoPolicy: 'intentional-noindex',
+  },
+  {
     id: 'damage-calculator',
     route: '/tools/dov-basic',
     kind: 'interactive-tool',

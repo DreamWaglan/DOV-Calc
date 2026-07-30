@@ -85,24 +85,36 @@ for (const page of pages) {
 }
 
 const publicFiles = []
+async function collectRegularFiles(absolutePath, relativePath) {
+  const metadata = await lstat(absolutePath).catch(() => null)
+  if (!metadata) return []
+  if (metadata.isFile()) {
+    return [
+      {
+        name: path.basename(absolutePath),
+        relativePath,
+      },
+    ]
+  }
+  if (!metadata.isDirectory()) return []
+  const entries = await readdir(absolutePath, { withFileTypes: true })
+  const nested = await Promise.all(
+    entries.map((entry) =>
+      collectRegularFiles(
+        path.join(absolutePath, entry.name),
+        path.join(relativePath, entry.name),
+      ),
+    ),
+  )
+  return nested.flat()
+}
+
 for (const collection of publicAssets.collections ?? []) {
   const absoluteRoot = path.join(root, collection.root)
-  const rootStats = await lstat(absoluteRoot).catch(() => null)
-  const regularFiles = rootStats?.isFile()
-    ? [
-        {
-          name: path.basename(absoluteRoot),
-          relativePath: collection.root,
-        },
-      ]
-    : (
-        await readdir(absoluteRoot, { withFileTypes: true }).catch(() => [])
-      )
-        .filter((entry) => entry.isFile())
-        .map((entry) => ({
-          name: entry.name,
-          relativePath: path.join(collection.root, entry.name),
-        }))
+  const regularFiles = await collectRegularFiles(
+    absoluteRoot,
+    collection.root,
+  )
   if (regularFiles.length !== collection.expectedFileCount) {
     failures.push(
       `${collection.root}: expected ${collection.expectedFileCount} files, found ${regularFiles.length}`,
@@ -123,12 +135,14 @@ for (const collection of publicAssets.collections ?? []) {
     )
   }
   const externalSource = externalById.get(collection.sourceId)
+  const requiredScope =
+    collection.derivative === true ? 'derivative' : 'asset'
   if (
     externalSource &&
-    derivePublicRelease(externalSource).publicRelease.asset !== true
+    derivePublicRelease(externalSource).publicRelease[requiredScope] !== true
   ) {
     failures.push(
-      `${collection.root}: public collection exceeds source asset scope`,
+      `${collection.root}: public collection exceeds source ${requiredScope} scope`,
     )
   }
   publicFiles.push(

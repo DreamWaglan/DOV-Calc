@@ -30,6 +30,414 @@
       "permission": "owned",
       "publicUse": true,
       "evidence": "阶段 5 站点爬虫策略，由本站维护者生成"
+    },
+    {
+      "id": "wiki-media-src-20f9c608ccbe",
+      "root": "docs/public/wiki-media/src-20f9c608ccbe",
+      "glob": "**/*",
+      "expectedFileCount": 9,
+      "sourceId": "src-20f9c608ccbe",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-20f9c608ccbe.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-20f9c608ccbe"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-ec1754535996",
+      "root": "docs/public/wiki-media/src-ec1754535996",
+      "glob": "**/*",
+      "expectedFileCount": 17,
+      "sourceId": "src-ec1754535996",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-ec1754535996.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-ec1754535996"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-a82171ad36dd",
+      "root": "docs/public/wiki-media/src-a82171ad36dd",
+      "glob": "**/*",
+      "expectedFileCount": 9,
+      "sourceId": "src-a82171ad36dd",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-a82171ad36dd.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-a82171ad36dd"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-3f75f2339e43",
+      "root": "docs/public/wiki-media/src-3f75f2339e43",
+      "glob": "**/*",
+      "expectedFileCount": 13,
+      "sourceId": "src-3f75f2339e43",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-3f75f2339e43.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-3f75f2339e43"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-8862e9c4e1c0",
+      "root": "docs/public/wiki-media/src-8862e9c4e1c0",
+      "glob": "**/*",
+      "expectedFileCount": 21,
+      "sourceId": "src-8862e9c4e1c0",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-8862e9c4e1c0.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-8862e9c4e1c0"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-a7efaec86736",
+      "root": "docs/public/wiki-media/src-a7efaec86736",
+      "glob": "**/*",
+      "expectedFileCount": 13,
+      "sourceId": "src-a7efaec86736",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-a7efaec86736.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-a7efaec86736"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-4c3487e1f8f7",
+      "root": "docs/public/wiki-media/src-4c3487e1f8f7",
+      "glob": "**/*",
+      "expectedFileCount": 9,
+      "sourceId": "src-4c3487e1f8f7",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-4c3487e1f8f7.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-4c3487e1f8f7"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-fc56c0350c73",
+      "root": "docs/public/wiki-media/src-fc56c0350c73",
+      "glob": "**/*",
+      "expectedFileCount": 9,
+      "sourceId": "src-fc56c0350c73",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-fc56c0350c73.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-fc56c0350c73"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-e3a32a586e5b",
+      "root": "docs/public/wiki-media/src-e3a32a586e5b",
+      "glob": "**/*",
+      "expectedFileCount": 13,
+      "sourceId": "src-e3a32a586e5b",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-e3a32a586e5b.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-e3a32a586e5b"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-08ba2d32a9ff",
+      "root": "docs/public/wiki-media/src-08ba2d32a9ff",
+      "glob": "**/*",
+      "expectedFileCount": 5,
+      "sourceId": "src-08ba2d32a9ff",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-08ba2d32a9ff.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-08ba2d32a9ff"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-2d59aac1ac45",
+      "root": "docs/public/wiki-media/src-2d59aac1ac45",
+      "glob": "**/*",
+      "expectedFileCount": 21,
+      "sourceId": "src-2d59aac1ac45",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-2d59aac1ac45.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-2d59aac1ac45"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-65d25a94c550",
+      "root": "docs/public/wiki-media/src-65d25a94c550",
+      "glob": "**/*",
+      "expectedFileCount": 9,
+      "sourceId": "src-65d25a94c550",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-65d25a94c550.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-65d25a94c550"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-0dc5d6791056",
+      "root": "docs/public/wiki-media/src-0dc5d6791056",
+      "glob": "**/*",
+      "expectedFileCount": 5,
+      "sourceId": "src-0dc5d6791056",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-0dc5d6791056.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-0dc5d6791056"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-1157c5077c1f",
+      "root": "docs/public/wiki-media/src-1157c5077c1f",
+      "glob": "**/*",
+      "expectedFileCount": 5,
+      "sourceId": "src-1157c5077c1f",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-1157c5077c1f.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-1157c5077c1f"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-b8f7a77d5f36",
+      "root": "docs/public/wiki-media/src-b8f7a77d5f36",
+      "glob": "**/*",
+      "expectedFileCount": 5,
+      "sourceId": "src-b8f7a77d5f36",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-b8f7a77d5f36.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "visual-guide-b8f7a77d5f36"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-842246bdb075",
+      "root": "docs/public/wiki-media/src-842246bdb075",
+      "glob": "**/*",
+      "expectedFileCount": 235,
+      "sourceId": "src-842246bdb075",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-842246bdb075.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-842246bdb075"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-6eba63c4aa7b",
+      "root": "docs/public/wiki-media/src-6eba63c4aa7b",
+      "glob": "**/*",
+      "expectedFileCount": 288,
+      "sourceId": "src-6eba63c4aa7b",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-6eba63c4aa7b.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-6eba63c4aa7b"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-d47e51aa8321",
+      "root": "docs/public/wiki-media/src-d47e51aa8321",
+      "glob": "**/*",
+      "expectedFileCount": 46,
+      "sourceId": "src-d47e51aa8321",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-d47e51aa8321.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-d47e51aa8321"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-94e76e4522b1",
+      "root": "docs/public/wiki-media/src-94e76e4522b1",
+      "glob": "**/*",
+      "expectedFileCount": 18,
+      "sourceId": "src-94e76e4522b1",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-94e76e4522b1.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-94e76e4522b1"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-7d080e8d651b",
+      "root": "docs/public/wiki-media/src-7d080e8d651b",
+      "glob": "**/*",
+      "expectedFileCount": 387,
+      "sourceId": "src-7d080e8d651b",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-7d080e8d651b.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-7d080e8d651b"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-d35e870ffcd7",
+      "root": "docs/public/wiki-media/src-d35e870ffcd7",
+      "glob": "**/*",
+      "expectedFileCount": 200,
+      "sourceId": "src-d35e870ffcd7",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-d35e870ffcd7.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-d35e870ffcd7"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-51475ba227c9",
+      "root": "docs/public/wiki-media/src-51475ba227c9",
+      "glob": "**/*",
+      "expectedFileCount": 61,
+      "sourceId": "src-51475ba227c9",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-51475ba227c9.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-51475ba227c9"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-c8852cf69a7b",
+      "root": "docs/public/wiki-media/src-c8852cf69a7b",
+      "glob": "**/*",
+      "expectedFileCount": 845,
+      "sourceId": "src-c8852cf69a7b",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-c8852cf69a7b.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-c8852cf69a7b"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
+    },
+    {
+      "id": "wiki-media-src-e2d43eca15b2",
+      "root": "docs/public/wiki-media/src-e2d43eca15b2",
+      "glob": "**/*",
+      "expectedFileCount": 147,
+      "sourceId": "src-e2d43eca15b2",
+      "permission": "authorized",
+      "publicUse": true,
+      "derivative": true,
+      "manifest": "content/migrations/media-assets/src-e2d43eca15b2.json",
+      "download": false,
+      "pageIds": [
+        "topic-visual-guides-index",
+        "media-source-e2d43eca15b2"
+      ],
+      "authorizationEvidenceId": "auth-user-declaration-20260730"
     }
   ]
 }

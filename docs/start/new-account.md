@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["开荒","选区","抽卡","资源"]
-related: ["start-first-week","start-mainline-roadmap","topic-new-player-checklist"]
+related: ["start-first-week","start-mainline-roadmap","topic-new-player-checklist","media-source-842246bdb075"]
 ---
 # 新号准备：选区、设置与开局资源
 > [!WARNING] 审核状态

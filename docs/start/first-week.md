@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["第一周","开荒","主线","日常"]
-related: ["start-new-account","start-mainline-roadmap","start-daily-and-events","progression-leveling"]
+related: ["start-new-account","start-mainline-roadmap","start-daily-and-events","progression-leveling","media-source-842246bdb075"]
 ---
 # 入坑第一周行动指南
 

@@ -29,6 +29,11 @@ const anchorsByRoute = new Map(
     )) {
       anchors.add(match[1])
     }
+    for (const match of page.body.matchAll(
+      /<ResponsiveMedia\b[^>]*\bmedia-id=["']([^"'<>]+)["'][^>]*>/gi,
+    )) {
+      anchors.add(match[1])
+    }
     return [page.route, anchors]
   }),
 )

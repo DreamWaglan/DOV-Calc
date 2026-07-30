@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "sourceId": "src-3f75f2339e43",
+  "derivedFrom": "ed1d5a6d4a0b6d45a34434ce86ff767c7cf04e3ce683f6c473e7b0499733ddae",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "downloadAllowed": false,
+  "originalCopied": false,
+  "files": [
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/thumbnail.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/thumbnail.webp",
+      "sha256": "16044054a89300c39dee4e3f716f51b380a552e8f514f5043386358aacbc0d07",
+      "bytes": 68414,
+      "width": 360,
+      "height": 680,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-01-0480.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-01-0480.avif",
+      "sha256": "f4814628822000ae36a87fe35bda8d536d399185537004f6ab270efd9015ec56",
+      "bytes": 24214,
+      "width": 480,
+      "height": 384,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-01-0480.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-01-0480.webp",
+      "sha256": "97019aa006b1e78ef52cca837f8caa5fefad3ab34566916480d9a9e8c33af3f0",
+      "bytes": 39384,
+      "width": 480,
+      "height": 384,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-01-0960.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-01-0960.avif",
+      "sha256": "cbb326d2c310477b2631819cd5c01c3fcbe2a740fa27dbfb7233023aea98aaa4",
+      "bytes": 62481,
+      "width": 960,
+      "height": 768,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-01-0960.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-01-0960.webp",
+      "sha256": "7d95bd666b26c3158b0e7a74d2ba9c6e9d1f55518d75cc4491876794da470a28",
+      "bytes": 107954,
+      "width": 960,
+      "height": 768,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-02-0480.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-02-0480.avif",
+      "sha256": "748d06456bae4fb0dda565eeaf735993f12c7728054d7c0431ea49c94f129a09",
+      "bytes": 27906,
+      "width": 480,
+      "height": 384,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-02-0480.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-02-0480.webp",
+      "sha256": "0b4115decae019c0a52e5d5c4c3005d8270db21344f496552836aff2c6880951",
+      "bytes": 45724,
+      "width": 480,
+      "height": 384,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-02-0960.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-02-0960.avif",
+      "sha256": "7f4419df3e31303409d3c7242bdcfd162929db58750fced46bded0990f5a55f1",
+      "bytes": 68305,
+      "width": 960,
+      "height": 768,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-02-0960.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-02-0960.webp",
+      "sha256": "690f3209b5a51b7b41cab8339abd3220d84b5531e0c390a17b7e065cca92fffe",
+      "bytes": 119140,
+      "width": 960,
+      "height": 768,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-03-0480.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-03-0480.avif",
+      "sha256": "31831b8da3e6c3f384d9fbc1f65cf5cdf7ddd6cf324e218b184af9de61d186d1",
+      "bytes": 10579,
+      "width": 480,
+      "height": 138,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-03-0480.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-03-0480.webp",
+      "sha256": "449c6c1716d043b541686a37e80d3846fb66c235a7a0aab20e950e0cf4757e54",
+      "bytes": 17826,
+      "width": 480,
+      "height": 138,
+      "format": "webp",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-03-0960.avif",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-03-0960.avif",
+      "sha256": "362fdf4b036ef78eb44813de3b9831382f42cd8f08636fe88b8854f70efc72c9",
+      "bytes": 28153,
+      "width": 960,
+      "height": 276,
+      "format": "avif",
+      "exifRemoved": true
+    },
+    {
+      "path": "docs/public/wiki-media/src-3f75f2339e43/segment-03-0960.webp",
+      "publicPath": "/wiki-media/src-3f75f2339e43/segment-03-0960.webp",
+      "sha256": "bcf8ba167a98ff513aa5c4d1ada06c6d372cd6182cdc73ca6b01b5588fb31ddb",
+      "bytes": 47496,
+      "width": 960,
+      "height": 276,
+      "format": "webp",
+      "exifRemoved": true
+    }
+  ]
+}

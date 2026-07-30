@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["活动","推图","阵容替换","带路条件"]
-related: ["progression-leveling","combat-pve-team-building","start-daily-and-events"]
+related: ["progression-leveling","combat-pve-team-building","start-daily-and-events","media-source-d47e51aa8321"]
 ---
 # 活动推图与阵容替换
 > [!WARNING] 审核状态

@@ -31,6 +31,9 @@
     "validate:advanced": "node scripts/content/validate-advanced-content.mjs",
     "validate:structures": "node scripts/content/validate-document-structures.mjs",
     "validate:formulas": "node scripts/content/validate-formulas.mjs",
+    "content:media:build": "node scripts/content/build-media-library.mjs",
+    "validate:media": "node scripts/content/validate-media-library.mjs",
+    "test:media-built": "node scripts/quality/media-page-audit.mjs",
     "validate:redirects": "node scripts/content/validate-redirects.mjs",
     "test:search": "node scripts/quality/search-quality.mjs",
     "test:search-built": "node scripts/quality/search-quality-built.mjs",
@@ -46,7 +49,7 @@
     "test:imports": "node scripts/test-imports.mjs",
     "test:authorization": "node tests/content/authorization-policy.mjs",
     "docs:dev": "pnpm content:schema && vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
-    "docs:build": "pnpm validate:full-map && pnpm validate:core && pnpm validate:advanced && pnpm validate:structures && pnpm validate:formulas && pnpm validate:redirects && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo && pnpm content:public-artifacts",
+    "docs:build": "pnpm validate:full-map && pnpm validate:core && pnpm validate:advanced && pnpm validate:structures && pnpm validate:formulas && pnpm validate:media && pnpm validate:redirects && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:media-built && pnpm test:seo && pnpm content:public-artifacts",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],

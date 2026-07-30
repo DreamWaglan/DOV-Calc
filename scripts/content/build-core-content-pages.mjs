@@ -168,9 +168,11 @@ function pageFrontmatter({
     '    publicUse:',
     '      body: true',
     '      asset: false',
-    '    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。',
+    '    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。',
     `tags: ${JSON.stringify(tags)}`,
-    `related: ${JSON.stringify(related)}`,
+    `related: ${JSON.stringify([
+      ...new Set([...related, `media-source-${asset.id.slice(4)}`]),
+    ])}`,
     '---',
     '',
   ].join('\n')

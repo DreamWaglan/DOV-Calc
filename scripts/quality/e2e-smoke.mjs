@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process'
 import { createHash } from 'node:crypto'
-import { access, mkdir, readFile } from 'node:fs/promises'
+import { access, mkdir, mkdtemp, readFile, rm } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import puppeteer from 'puppeteer-core'
@@ -31,6 +31,8 @@ const failures = []
 const browserErrors = []
 const pageChecks = []
 const screenshots = []
+const mediaRequests = []
+let segmentAnchorChecks = 0
 
 function normalizeBase(value = '/DOV-Calc/') {
   const trimmed = value.trim()
@@ -153,6 +155,30 @@ async function inspectLayout(page, route, viewport, options = {}) {
         }
       })
 
+    const responsiveMedia = [
+      ...document.querySelectorAll('.responsive-media'),
+    ].map((figure) => {
+      const image = figure.querySelector('img')
+      const sources = [...figure.querySelectorAll('source')]
+      return {
+        alt: image?.getAttribute('alt') ?? '',
+        width: image?.getAttribute('width') ?? '',
+        height: image?.getAttribute('height') ?? '',
+        loading: image?.getAttribute('loading') ?? '',
+        decoding: image?.getAttribute('decoding') ?? '',
+        sourceCount: sources.length,
+        completeSources: sources.filter(
+          (source) =>
+            source.hasAttribute('srcset') &&
+            source.hasAttribute('sizes') &&
+            ['image/avif', 'image/webp'].includes(
+              source.getAttribute('type') ?? '',
+            ),
+        ).length,
+        caption: figure.querySelector('figcaption')?.textContent?.trim() ?? '',
+      }
+    })
+
     return {
       title: document.title,
       h1Count: document.querySelectorAll('h1').length,
@@ -168,6 +194,7 @@ async function inspectLayout(page, route, viewport, options = {}) {
       tables,
       toolTargets: toolTargets.length,
       undersizedTargets,
+      responsiveMedia,
     }
   })
 
@@ -201,6 +228,20 @@ async function inspectLayout(page, route, viewport, options = {}) {
       !['auto', 'scroll'].includes(table.overflowX)
     ) {
       failures.push(`${viewport}:${route}: wide table lacks local scrolling`)
+    }
+  }
+  for (const media of metrics.responsiveMedia) {
+    if (
+      !media.alt ||
+      !/^\d+$/.test(media.width) ||
+      !/^\d+$/.test(media.height) ||
+      media.loading !== 'lazy' ||
+      media.decoding !== 'async' ||
+      media.sourceCount === 0 ||
+      media.completeSources !== media.sourceCount ||
+      !media.caption
+    ) {
+      failures.push(`${viewport}:${route}: responsive media contract is incomplete`)
     }
   }
 
@@ -247,14 +288,24 @@ preview.stderr.on('data', (chunk) => {
 })
 
 let chromium
+let browserProfile
 try {
   await waitForPreview(routeUrl('/'))
+  const browserProfileRoot = path.join(root, '.omx', 'browser-profiles')
+  await mkdir(browserProfileRoot, { recursive: true })
+  browserProfile = await mkdtemp(path.join(browserProfileRoot, 'e2e-'))
   chromium = await puppeteer.launch({
     executablePath: browserPath,
     headless: true,
+    userDataDir: browserProfile,
     args: ['--no-sandbox', '--disable-gpu'],
   })
   const page = await chromium.newPage()
+  page.on('request', (request) => {
+    if (request.url().includes('/wiki-media/')) {
+      mediaRequests.push(request.url())
+    }
+  })
   page.on('pageerror', (error) => browserErrors.push(error.message))
   page.on('console', (message) => {
     if (message.type() === 'error') browserErrors.push(message.text())
@@ -270,6 +321,8 @@ try {
     '/data/basic-attack-cd',
     '/tools/dov-basic',
     '/tools/equipment-lookup',
+    '/topics/visual-guides/',
+    '/topics/visual-guides/src-ec1754535996',
   ]) {
     await inspectLayout(page, route, 'desktop', {
       requireMetadata: route !== '/',
@@ -284,6 +337,8 @@ try {
     '/topics/new-player-checklist',
     '/tools/dov-basic',
     '/tools/equipment-lookup',
+    '/topics/visual-guides/',
+    '/topics/visual-guides/src-ec1754535996',
   ]) {
     await inspectLayout(page, route, 'mobile-360', {
       requireMetadata: route !== '/',
@@ -294,6 +349,65 @@ try {
     }
     if (route === '/tools/equipment-lookup') {
       await capture(page, 'equipment-lookup-mobile-360')
+    }
+    if (route === '/topics/visual-guides/') {
+      await page.$eval('.responsive-media', (element) =>
+        element.scrollIntoView({ block: 'start' }),
+      )
+      await page.waitForFunction(
+        () => {
+          const image = document.querySelector('.responsive-media img')
+          return image?.complete && image.naturalWidth > 0
+        },
+        { timeout: 15_000 },
+      )
+      await capture(page, 'visual-media-index-mobile-360')
+    }
+    if (route === '/topics/visual-guides/src-ec1754535996') {
+      await page.$eval('.responsive-media', (element) =>
+        element.scrollIntoView({ block: 'start' }),
+      )
+      await page.waitForFunction(
+        () => {
+          const image = document.querySelector('.responsive-media img')
+          return image?.complete && image.naturalWidth > 0
+        },
+        { timeout: 15_000 },
+      )
+      await capture(page, 'segmented-long-image-mobile-360')
+    }
+  }
+
+  await page.goto(
+    routeUrl('/topics/visual-guides/src-ec1754535996'),
+    {
+      waitUntil: 'networkidle0',
+      timeout: 45_000,
+    },
+  )
+  const segmentLink = await page.$('.vp-doc a[href^="#wiki-image-"]')
+  if (!segmentLink) {
+    failures.push('segmented media: directory anchor link is missing')
+  } else {
+    const target = await segmentLink.evaluate((element) =>
+      element.getAttribute('href'),
+    )
+    await segmentLink.click()
+    await page
+      .waitForFunction(
+        (expected) => location.hash === expected,
+        { timeout: 10_000 },
+        target,
+      )
+      .catch(() => null)
+    const targetExists = await page.evaluate(
+      (id) => Boolean(document.getElementById(id)),
+      target?.slice(1),
+    )
+    if (!target || !targetExists) {
+      failures.push('segmented media: directory anchor target is unresolved')
+    } else {
+      segmentAnchorChecks += 1
     }
   }
 
@@ -314,7 +428,12 @@ try {
     const searchInput = await page.$('.VPLocalSearchBox input')
     await searchInput?.focus()
     await page.keyboard.type('伤害计算器')
-    await new Promise((resolve) => setTimeout(resolve, 750))
+    await page
+      .waitForFunction(
+        () => document.querySelectorAll('.VPLocalSearchBox a').length > 0,
+        { timeout: 15_000 },
+      )
+      .catch(() => null)
     const searchState = await page.evaluate(() => ({
       value: document.querySelector('#localsearch-input')?.value ?? '',
       text: document
@@ -460,11 +579,28 @@ try {
       `404 smoke: status=${notFoundResponse?.status()} heading=${notFoundHeading}`,
     )
   }
+
+  const invalidMediaRequests = mediaRequests.filter(
+    (url) =>
+      /\.(?:png|jpe?g)(?:$|\?)/i.test(url) ||
+      url.toLowerCase().includes('original'),
+  )
+  if (invalidMediaRequests.length) {
+    failures.push(
+      `media requests: original/non-derivative files loaded ${invalidMediaRequests.slice(0, 5).join(' | ')}`,
+    )
+  }
+  if (mediaRequests.length === 0) {
+    failures.push('media requests: no responsive media derivative was requested')
+  }
 } catch (error) {
   failures.push(error instanceof Error ? error.stack ?? error.message : String(error))
 } finally {
   await chromium?.close()
   preview.kill()
+  if (browserProfile) {
+    await rm(browserProfile, { recursive: true, force: true }).catch(() => null)
+  }
 }
 
 const substantiveBrowserErrors = browserErrors.filter(
@@ -491,11 +627,14 @@ const reportPath = await writeReport('e2e-smoke', {
       (check) => check.viewport === 'mobile-360',
     ).length,
     screenshots: screenshots.length,
+    mediaRequests: mediaRequests.length,
+    segmentAnchorChecks,
     browserErrors: substantiveBrowserErrors.length,
     failures: failures.length,
   },
   pageChecks,
   screenshots,
+  mediaRequests: [...new Set(mediaRequests)],
   browserErrors: substantiveBrowserErrors,
   failures,
   previewOutput: previewOutput.trim().split(/\r?\n/).slice(-10),

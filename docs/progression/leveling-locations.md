@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["练级点","索敌","甲弹克制","生存"]
-related: ["progression-leveling-strategy","progression-leveling-efficiency"]
+related: ["progression-leveling-strategy","progression-leveling-efficiency","media-source-6eba63c4aa7b"]
 ---
 # 练级百科三：练级点篇
 > [!WARNING] 审核状态

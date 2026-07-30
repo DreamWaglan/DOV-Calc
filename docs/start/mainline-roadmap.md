@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["主线","推图","练级","养成"]
-related: ["start-new-account","start-daily-and-events","progression-leveling"]
+related: ["start-new-account","start-daily-and-events","progression-leveling","media-source-842246bdb075"]
 ---
 # 主线 1-1 至 12-10 推进路线
 > [!WARNING] 审核状态

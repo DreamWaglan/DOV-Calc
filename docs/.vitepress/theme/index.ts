@@ -6,6 +6,7 @@ import CalculatorShell from '../components/CalculatorShell.vue'
 import PageStatus from './components/PageStatus.vue'
 import SourceList from './components/SourceList.vue'
 import RelatedPages from './components/RelatedPages.vue'
+import ResponsiveMedia from './components/ResponsiveMedia.vue'
 import WikiLayout from './WikiLayout.vue'
 import './styles.css'
 
@@ -19,5 +20,6 @@ export default {
     app.component('PageStatus', PageStatus)
     app.component('SourceList', SourceList)
     app.component('RelatedPages', RelatedPages)
+    app.component('ResponsiveMedia', ResponsiveMedia)
   },
 } satisfies Theme

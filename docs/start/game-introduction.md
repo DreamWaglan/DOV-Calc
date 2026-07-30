@@ -24,9 +24,9 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 下载和未审核媒体不公开。
+    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
 tags: ["游戏简介","舰灵","海战"]
-related: ["start-first-week","start-preface","start-index"]
+related: ["start-first-week","start-preface","start-index","media-source-ea0b63d069bf"]
 ---
 # 这是什么游戏
 > [!INFO] 来源说明

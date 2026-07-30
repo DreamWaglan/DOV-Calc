@@ -8,6 +8,7 @@ for (const test of [
   'tests/content/import-xlsx.mjs',
   'tests/content/full-content-map.mjs',
   'tests/content/advanced-content-ownership.mjs',
+  'tests/content/media-policy.mjs',
   'tests/content/import-determinism.mjs',
 ]) {
   const result = spawnSync(process.execPath, [path.normalize(test)], {
