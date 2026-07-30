@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "redirects": [
+    {
+      "legacyPath": "/start/first-week#第一阶段-新号准备",
+      "targetPageId": "start-new-account",
+      "targetPath": "/start/new-account",
+      "kind": "anchor",
+      "reason": "萌新入坑原稿由单页拆分为开局准备、主线推进和日常活动三个可审核页面。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/start/first-week#第二阶段-1-1至8-10",
+      "targetPageId": "start-mainline-roadmap",
+      "targetPath": "/start/mainline-roadmap#第二阶段-1-1至8-10",
+      "kind": "anchor",
+      "reason": "主线第一阶段内容迁入独立主线路线页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/start/first-week#第三阶段-9-1至12-10",
+      "targetPageId": "start-mainline-roadmap",
+      "targetPath": "/start/mainline-roadmap#第三阶段-9-1至12-10",
+      "kind": "anchor",
+      "reason": "主线第二阶段内容迁入同一独立主线路线页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/start/first-week#第四阶段-其他",
+      "targetPageId": "start-daily-and-events",
+      "targetPath": "/start/daily-and-events#第四阶段-其他",
+      "kind": "anchor",
+      "reason": "日常、活动和后续系统迁入独立页面。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/progression/leveling#第一章-选船篇",
+      "targetPageId": "progression-leveling-ship-selection",
+      "targetPath": "/progression/leveling-ship-selection",
+      "kind": "anchor",
+      "reason": "练级百科按原稿四章结构拆页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/progression/leveling#第二章-练船策略之总纲篇",
+      "targetPageId": "progression-leveling-strategy",
+      "targetPath": "/progression/leveling-strategy",
+      "kind": "anchor",
+      "reason": "练级百科总纲迁入独立章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/progression/leveling#第三章-练船策略之练级点篇",
+      "targetPageId": "progression-leveling-locations",
+      "targetPath": "/progression/leveling-locations",
+      "kind": "anchor",
+      "reason": "练级点内容迁入独立章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/progression/leveling#第四章练船策略之省油篇",
+      "targetPageId": "progression-leveling-efficiency",
+      "targetPath": "/progression/leveling-efficiency",
+      "kind": "anchor",
+      "reason": "省油与效率内容迁入独立章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/combat/pve-team-building#一-观察敌方配置",
+      "targetPageId": "combat-pve-enemy-analysis",
+      "targetPath": "/combat/pve-enemy-analysis",
+      "kind": "anchor",
+      "reason": "PVE 原稿按决策顺序拆为敌方分析、舰灵职责和构筑微调。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/combat/pve-team-building#二-我方常用舰灵",
+      "targetPageId": "combat-pve-ship-roles",
+      "targetPath": "/combat/pve-ship-roles",
+      "kind": "anchor",
+      "reason": "常用舰灵职责迁入独立章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/combat/pve-team-building#三-初步配队",
+      "targetPageId": "combat-pve-team-practice",
+      "targetPath": "/combat/pve-team-practice#三-初步配队",
+      "kind": "anchor",
+      "reason": "初步配队迁入构筑与微调章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    },
+    {
+      "legacyPath": "/combat/pve-team-building#四-如何微调",
+      "targetPageId": "combat-pve-team-practice",
+      "targetPath": "/combat/pve-team-practice#四-如何微调",
+      "kind": "anchor",
+      "reason": "微调流程迁入构筑与微调章节页。",
+      "changedAt": "2026-07-30",
+      "reviewer": {
+        "name": "DOV-Calc URL 治理组",
+        "role": "旧 URL 与锚点审核"
+      },
+      "status": "planned",
+      "noindex": true,
+      "searchIndex": false,
+      "sitemap": false
+    }
+  ]
+}

@@ -51,7 +51,11 @@ function migrationDecision(asset, element, targetPageId) {
         : 'Mapped to the target page for the owning editorial phase.'
   return {
     ...element,
-    targetPageIds: targetPageId ? [targetPageId] : [],
+    targetPageIds: Array.isArray(targetPageId)
+      ? targetPageId
+      : targetPageId
+        ? [targetPageId]
+        : [],
     targetAssetIds,
     disposition,
     authorizationEvidenceId: asset.authorization.evidenceId,
@@ -72,6 +76,50 @@ const xlsxImport = JSON.parse(
 const mediaImport = JSON.parse(
   await readFile(path.join(root, 'content', 'reports', 'media-import.json'), 'utf8'),
 )
+const coreMigration = JSON.parse(
+  await readFile(
+    path.join(root, 'content', 'migrations', 'core-content-pages.json'),
+    'utf8',
+  ),
+)
+const coreSourceById = new Map(
+  coreMigration.sources.map((source) => [source.sourceAssetId, source]),
+)
+
+function targetPagesForElement(sourceAssetId, element, fallbackPageId) {
+  const coreSource = coreSourceById.get(sourceAssetId)
+  if (!coreSource) return fallbackPageId ? [fallbackPageId] : []
+  const allPageIds = coreSource.pages.map((page) => page.pageId)
+  const bodyIndex = element.sourcePosition?.bodyIndex
+  if (Number.isInteger(bodyIndex)) {
+    const page = coreSource.pages.find(
+      (candidate) =>
+        bodyIndex >= candidate.sourceElementRange.bodyIndexStart &&
+        bodyIndex < candidate.sourceElementRange.bodyIndexEndExclusive,
+    )
+    if (!page) {
+      throw new Error(
+        `${element.sourceElementId}: no core page owns body index ${bodyIndex}`,
+      )
+    }
+    return [page.pageId]
+  }
+  const tableIndex = element.sourcePosition?.tableIndex
+  if (Number.isInteger(tableIndex)) {
+    const page = coreSource.pages.find(
+      (candidate) =>
+        tableIndex >= candidate.sourceElementRange.tableIndexStart &&
+        tableIndex < candidate.sourceElementRange.tableIndexEndExclusive,
+    )
+    if (!page) {
+      throw new Error(
+        `${element.sourceElementId}: no core page owns table index ${tableIndex}`,
+      )
+    }
+    return [page.pageId]
+  }
+  return allPageIds
+}
 
 const elements = []
 const drawingRelations = []
@@ -86,13 +134,20 @@ for (const importedAsset of docxImport.assets) {
   const targetPageId = DOCX_PAGE_TARGETS.get(asset.id) ?? null
   elements.push(
     ...report.elements.map((element) =>
-      migrationDecision(asset, element, targetPageId),
+      migrationDecision(
+        asset,
+        element,
+        targetPagesForElement(asset.id, element, targetPageId),
+      ),
     ),
   )
+  const sourceTargetPageIds =
+    coreSourceById.get(asset.id)?.pages.map((page) => page.pageId) ??
+    (targetPageId ? [targetPageId] : [])
   drawingRelations.push(
     ...report.drawingRelations.map((relation) => ({
       ...relation,
-      targetPageIds: targetPageId ? [targetPageId] : [],
+      targetPageIds: sourceTargetPageIds,
       authorizationEvidenceId: asset.authorization.evidenceId,
       ...reviewersFor(asset),
       status:
@@ -111,7 +166,7 @@ for (const importedAsset of docxImport.assets) {
     counts: report.counts,
     elementCount: report.elements.length,
     drawingRelationCount: report.drawingRelations.length,
-    targetPageIds: targetPageId ? [targetPageId] : [],
+    targetPageIds: sourceTargetPageIds,
   })
 }
 

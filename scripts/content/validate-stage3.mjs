@@ -22,6 +22,20 @@ const stage2 = spawnSync(
 )
 if (stage2.status !== 0) process.exit(stage2.status ?? 1)
 
+const coreMigrationValidation = spawnSync(
+  process.execPath,
+  [path.join('scripts', 'content', 'validate-core-content.mjs')],
+  {
+    cwd: root,
+    env: process.env,
+    stdio: 'inherit',
+    windowsHide: true,
+  },
+)
+if (coreMigrationValidation.status !== 0) {
+  process.exit(coreMigrationValidation.status ?? 1)
+}
+
 const failures = []
 const pages = await loadPages()
 const byId = new Map(pages.map((page) => [page.frontmatter.id, page]))
@@ -87,10 +101,12 @@ for (const id of tacticalPages) {
   const sources = page.frontmatter.sources ?? []
   const publicEvidence = sources.some(
     (source) =>
-      ['official', 'wiki', 'author-post', 'forum', 'video'].includes(
+      ((['official', 'wiki', 'author-post', 'forum', 'video'].includes(
         source.sourceType,
       ) &&
-      source.permission === 'quoted' &&
+        source.permission === 'quoted') ||
+        (source.sourceType === 'docx' &&
+          source.permission === 'authorized')) &&
       source.publicUse?.body === true &&
       source.publicUse?.asset === false,
   )
@@ -123,9 +139,18 @@ for (const [id, sourceAssetId] of textVersions) {
 }
 
 const docxMap = await readJson('content/migration/stage3-docx-map.json')
+const coreMigration = await readJson(
+  'content/migrations/core-content-pages.json',
+)
 const sourceRegistry = await readJson('content/governance/source-assets.json')
 const sourceById = new Map(
   (sourceRegistry.assets ?? []).map((source) => [source.id, source]),
+)
+const migratedByAssetId = new Map(
+  (coreMigration.sources ?? []).map((source) => [
+    source.sourceAssetId,
+    source,
+  ]),
 )
 if (docxMap.assets?.length !== 6) {
   failures.push(
@@ -181,14 +206,22 @@ for (const asset of docxMap.assets ?? []) {
   const sourceReference = (target?.frontmatter.sources ?? []).find(
     (source) => source.assetId === asset.assetId,
   )
-  if (
-    !sourceReference ||
-    sourceReference.permission !== 'pending' ||
-    sourceReference.publicUse?.body !== false ||
-    sourceReference.publicUse?.asset !== false
-  ) {
+  const migrated = migratedByAssetId.get(asset.assetId)
+  const fullyMigrated =
+    migrated &&
+    migrated.sourceChars > 0 &&
+    migrated.coveredChars === migrated.sourceChars &&
+    (migrated.pages?.length ?? 0) > 0
+  const targetReferenceMatchesRegistry =
+    sourceReference &&
+    sourceReference.permission === registered?.permission &&
+    sourceReference.publicUse?.body ===
+      Boolean(registered?.publicRelease?.body) &&
+    sourceReference.publicUse?.asset ===
+      Boolean(registered?.publicRelease?.asset)
+  if (!fullyMigrated && !targetReferenceMatchesRegistry) {
     failures.push(
-      `${asset.assetId}: mapped public page must keep pending source use disabled`,
+      `${asset.assetId}: source must be fully migrated or mapped with registry-aligned public use`,
     )
   }
 }

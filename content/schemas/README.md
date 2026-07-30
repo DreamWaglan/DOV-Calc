@@ -9,6 +9,7 @@ This directory contains JSON Schema 2020-12 contracts for the Fuxiao Wiki conten
 - `source-asset.schema.json`: Source asset ledger entries for DOCX, XLSX, images, external posts, datasets, and derived assets.
 - `authorization-evidence.schema.json`: Authorization evidence records that bind a declaration or document to explicit public-release scope.
 - `full-content-map.schema.json`: Element-level migration ledger for all authorized DOCX, XLSX, and image sources.
+- `redirects.schema.json`: URL history, alias, split-anchor, noindex, search, and sitemap policy.
 
 The full migration ledger is generated at `content/migrations/full-content-map.json` and validated by `pnpm validate:full-map`.
 

@@ -16,6 +16,9 @@ const schema = JSON.parse(
   await readFile('content/schemas/full-content-map.schema.json', 'utf8'),
 )
 const ledger = await loadSourceLedger()
+const coreMigration = JSON.parse(
+  await readFile('content/migrations/core-content-pages.json', 'utf8'),
+)
 const failures = []
 
 const ajv = new Ajv({ allErrors: true, strict: false })
@@ -209,6 +212,84 @@ if (tableWithoutDisposition !== 0) {
   failures.push(`table elements without mapped disposition: ${tableWithoutDisposition}`)
 }
 
+let staleCoreOverviewTargets = 0
+let invalidCoreSplitTargets = 0
+const coreOverviewIds = new Set(
+  coreMigration.editorialOverviews.map((page) => page.pageId),
+)
+for (const source of coreMigration.sources) {
+  const allowedTargets = new Set(source.pages.map((page) => page.pageId))
+  const sourceEntries = [
+    ...map.elements.filter(
+      (entry) => entry.sourceAssetId === source.sourceAssetId,
+    ),
+    ...map.drawingRelations.filter(
+      (entry) => entry.sourceAssetId === source.sourceAssetId,
+    ),
+  ]
+  for (const entry of sourceEntries) {
+    for (const targetPageId of entry.targetPageIds) {
+      if (coreOverviewIds.has(targetPageId)) {
+        staleCoreOverviewTargets += 1
+        failures.push(
+          `${entry.sourceElementId ?? entry.sourceRelationId}: stale core overview target ${targetPageId}`,
+        )
+      }
+      if (!allowedTargets.has(targetPageId)) {
+        invalidCoreSplitTargets += 1
+        failures.push(
+          `${entry.sourceElementId ?? entry.sourceRelationId}: target ${targetPageId} is outside the core split ledger`,
+        )
+      }
+    }
+    const bodyIndex = entry.sourcePosition?.bodyIndex
+    const tableIndex = entry.sourcePosition?.tableIndex
+    const owningPage =
+      Number.isInteger(bodyIndex)
+        ? source.pages.find(
+            (page) =>
+              bodyIndex >= page.sourceElementRange.bodyIndexStart &&
+              bodyIndex < page.sourceElementRange.bodyIndexEndExclusive,
+          )
+        : Number.isInteger(tableIndex)
+          ? source.pages.find(
+              (page) =>
+                tableIndex >= page.sourceElementRange.tableIndexStart &&
+                tableIndex < page.sourceElementRange.tableIndexEndExclusive,
+            )
+          : null
+    if (
+      owningPage &&
+      (entry.targetPageIds.length !== 1 ||
+        entry.targetPageIds[0] !== owningPage.pageId)
+    ) {
+      invalidCoreSplitTargets += 1
+      failures.push(
+        `${entry.sourceElementId ?? entry.sourceRelationId}: expected owning page ${owningPage.pageId}`,
+      )
+    }
+    if (!owningPage && entry.targetPageIds.length !== allowedTargets.size) {
+      invalidCoreSplitTargets += 1
+      failures.push(
+        `${entry.sourceElementId ?? entry.sourceRelationId}: unresolved placement must retain all ${allowedTargets.size} split-page candidates`,
+      )
+    }
+  }
+  const summary = map.sourceSummaries.docx.find(
+    (entry) => entry.sourceAssetId === source.sourceAssetId,
+  )
+  if (
+    !summary ||
+    summary.targetPageIds.length !== allowedTargets.size ||
+    summary.targetPageIds.some((target) => !allowedTargets.has(target))
+  ) {
+    invalidCoreSplitTargets += 1
+    failures.push(
+      `${source.sourceAssetId}: DOCX summary does not match core split pages`,
+    )
+  }
+}
+
 const worksheetElements = map.elements.filter(
   (element) => element.elementType === 'worksheet',
 )
@@ -259,6 +340,11 @@ const report = {
     tables: {
       total: tableElements.length,
       withoutMappedDisposition: tableWithoutDisposition,
+    },
+    coreSplitOwnership: {
+      sources: coreMigration.sources.length,
+      staleOverviewTargets: staleCoreOverviewTargets,
+      invalidTargets: invalidCoreSplitTargets,
     },
     xlsx: {
       worksheets: worksheetElements.length,

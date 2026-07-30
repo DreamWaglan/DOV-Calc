@@ -4,14 +4,34 @@ import MarkdownIt from 'markdown-it'
 import {
   loadPages,
   printResult,
+  routeFromMarkdown,
   root,
   writeReport,
 } from './lib/content-utils.mjs'
+import { headingSlugs } from './lib/redirect-policy.mjs'
 
 const markdown = new MarkdownIt({ html: true, linkify: false })
 const failures = []
 const pages = await loadPages()
 const routes = new Set(pages.map((page) => page.route))
+const pagesByRoute = new Map(pages.map((page) => [page.route, page]))
+const pagesByAbsolutePath = new Map(
+  pages.map((page) => [path.normalize(page.absolutePath), page]),
+)
+const anchorsByRoute = new Map(
+  pages.map((page) => {
+    const anchors = new Set(headingSlugs(page.body))
+    for (const match of page.body.matchAll(/\{#([^}\s]+)\}/g)) {
+      anchors.add(match[1])
+    }
+    for (const match of page.body.matchAll(
+      /<(?:a|h[1-6])\b[^>]*\bid=["']([^"'<>]+)["'][^>]*>/gi,
+    )) {
+      anchors.add(match[1])
+    }
+    return [page.route, anchors]
+  }),
+)
 const checkedLinks = []
 const checkedImages = []
 
@@ -51,6 +71,26 @@ function isExternal(value) {
   )
 }
 
+function decodedAnchor(value) {
+  if (!value) return null
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return value
+  }
+}
+
+function checkAnchor(page, targetPage, rawValue) {
+  const anchor = decodedAnchor(rawValue.split('#').slice(1).join('#'))
+  if (!anchor || !targetPage) return
+  const anchors = anchorsByRoute.get(targetPage.route) ?? new Set()
+  if (!anchors.has(anchor)) {
+    failures.push(
+      `${page.filePath}: missing target anchor ${targetPage.route}#${anchor}`,
+    )
+  }
+}
+
 async function checkReference(page, kind, rawValue, alt = '') {
   const value = rawValue.trim()
   if (!value || isExternal(value)) return
@@ -60,7 +100,11 @@ async function checkReference(page, kind, rawValue, alt = '') {
   if (value.endsWith('.html') || value.includes('.html#')) {
     failures.push(`${page.filePath}: internal link uses .html: ${value}`)
   }
-  if (value.startsWith('#')) return
+  if (value.startsWith('#')) {
+    checkAnchor(page, page, value)
+    checkedLinks.push({ file: page.filePath, value })
+    return
+  }
 
   const withoutHash = value.split('#')[0].split('?')[0]
   if (!withoutHash) return
@@ -86,8 +130,11 @@ async function checkReference(page, kind, rawValue, alt = '') {
   }
 
   let valid = false
+  let targetPage = null
   if (withoutHash.startsWith('/')) {
-    valid = routes.has(normalizeRoute(withoutHash))
+    const route = normalizeRoute(withoutHash)
+    valid = routes.has(route)
+    targetPage = pagesByRoute.get(route) ?? null
   } else {
     const resolved = path.resolve(path.dirname(page.absolutePath), withoutHash)
     const candidates = [
@@ -95,18 +142,24 @@ async function checkReference(page, kind, rawValue, alt = '') {
       `${resolved}.md`,
       path.join(resolved, 'index.md'),
     ]
-    valid = (
-      await Promise.all(
-        candidates.map((candidate) =>
-          access(candidate).then(
-            () => true,
-            () => false,
-          ),
-        ),
-      )
-    ).some(Boolean)
+    for (const candidate of candidates) {
+      if (
+        await access(candidate).then(
+          () => true,
+          () => false,
+        )
+      ) {
+        valid = true
+        targetPage =
+          pagesByAbsolutePath.get(path.normalize(candidate)) ??
+          pagesByRoute.get(routeFromMarkdown(candidate)) ??
+          null
+        break
+      }
+    }
   }
   if (!valid) failures.push(`${page.filePath}: broken internal link ${value}`)
+  if (valid && value.includes('#')) checkAnchor(page, targetPage, value)
   checkedLinks.push({ file: page.filePath, value })
 }
 
@@ -153,6 +206,10 @@ const report = {
     pages: pages.length,
     links: checkedLinks.length,
     images: checkedImages.length,
+    anchors: [...anchorsByRoute.values()].reduce(
+      (total, anchors) => total + anchors.size,
+      0,
+    ),
     failures: failures.length,
   },
   failures,

@@ -15,6 +15,23 @@ const targets = [
   'content/reports/docx-import.json',
   'content/reports/xlsx-import.json',
   'content/reports/media-import.json',
+  'content/migrations/core-content-pages.json',
+  'docs/start/handbook-history.md',
+  'docs/start/game-introduction.md',
+  'docs/start/new-account.md',
+  'docs/start/mainline-roadmap.md',
+  'docs/start/daily-and-events.md',
+  'docs/start/first-week.md',
+  'docs/progression/leveling.md',
+  'docs/progression/leveling-ship-selection.md',
+  'docs/progression/leveling-strategy.md',
+  'docs/progression/leveling-locations.md',
+  'docs/progression/leveling-efficiency.md',
+  'docs/combat/event-maps.md',
+  'docs/combat/pve-team-building.md',
+  'docs/combat/pve-enemy-analysis.md',
+  'docs/combat/pve-ship-roles.md',
+  'docs/combat/pve-team-practice.md',
 ]
 
 async function filesUnder(target) {
@@ -63,8 +80,13 @@ const before = await fingerprint()
 run('scripts/content/import-source-corpus.mjs')
 run('scripts/content/build-stage3-docx-map.mjs')
 run('scripts/content/build-stage4-docx-map.mjs')
+run('scripts/content/build-core-content-pages.mjs')
 run('scripts/content/build-full-content-map.mjs')
 const after = await fingerprint()
 
-assert.equal(after, before, 'full source import and migration map must be byte-stable')
-console.log('full corpus import determinism tests passed.')
+assert.equal(
+  after,
+  before,
+  'full source import and generated core pages must be byte-stable',
+)
+console.log('full corpus and core page determinism tests passed.')

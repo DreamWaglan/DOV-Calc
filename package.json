@@ -25,6 +25,9 @@
     "content:import-corpus": "node scripts/content/import-source-corpus.mjs",
     "content:full-map": "node scripts/content/build-full-content-map.mjs",
     "validate:full-map": "node scripts/content/validate-full-content-map.mjs",
+    "content:core-pages": "node scripts/content/build-core-content-pages.mjs",
+    "validate:core": "node scripts/content/validate-core-content.mjs",
+    "validate:redirects": "node scripts/content/validate-redirects.mjs",
     "test:search": "node scripts/quality/search-quality.mjs",
     "test:search-built": "node scripts/quality/search-quality-built.mjs",
     "test:a11y": "node tests/quality/mobile-a11y-static.mjs",
@@ -39,7 +42,7 @@
     "test:imports": "node scripts/test-imports.mjs",
     "test:authorization": "node tests/content/authorization-policy.mjs",
     "docs:dev": "pnpm content:schema && vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
-    "docs:build": "pnpm validate:full-map && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo && pnpm content:public-artifacts",
+    "docs:build": "pnpm validate:full-map && pnpm validate:core && pnpm validate:redirects && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo && pnpm content:public-artifacts",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],

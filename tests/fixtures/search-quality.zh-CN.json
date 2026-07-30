@@ -518,6 +518,51 @@
       "queryClass": "version-term",
       "sourceBucket": "editorial-task",
       "sourceRef": "editorial-task-catalog:v1#stale-equipment-data"
+    },
+    {
+      "id": "SQ-061",
+      "query": "新号准备：选区、设置与开局资源",
+      "targetPageIds": ["start-new-account"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/start/new-account.md#新号准备选区设置与开局资源"
+    },
+    {
+      "id": "SQ-062",
+      "query": "练级百科三：练级点篇",
+      "targetPageIds": ["progression-leveling-locations"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/progression/leveling-locations.md#练级百科三练级点篇"
+    },
+    {
+      "id": "SQ-063",
+      "query": "PVE 配队二：常用舰灵职责",
+      "targetPageIds": ["combat-pve-ship-roles"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-064",
+      "query": "练级百科二：练船策略总纲",
+      "targetPageIds": ["progression-leveling-strategy"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-065",
+      "query": "日常、活动与后续系统",
+      "targetPageIds": ["start-daily-and-events"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#daily-events-follow-up"
     }
   ],
   "noResultQueries": [

@@ -17,13 +17,40 @@ const aliasByPageId = {
     '即时海战',
     '舰灵游戏',
   ],
-  'start-first-week': ['新人开荒', '新手开荒', '第一周', '开局七天'],
+  'start-first-week': [
+    '新人开荒',
+    '新手开荒',
+    '第一周',
+    '开局七天',
+    '刚入坑先做什么',
+    '第一天怎么玩',
+  ],
   'topic-new-player-checklist': ['每日登录清单', '每日任务清单', '下线检查'],
   'progression-index': ['养成规划', '资源规划', '养成路线'],
-  'progression-leveling': ['练船', '练级点', '满编低耗'],
+  'progression-leveling': [
+    '练船',
+    '练级点',
+    '满编低耗',
+    '练级与资源投入',
+    '练船去哪里',
+    '满编还是低耗',
+  ],
   'combat-index': ['作战攻略', '战斗导航', '配队攻略'],
-  'combat-event-maps': ['活动攻略', '活动图', '活动推图'],
-  'combat-pve-team-building': ['pve阵容', 'pve配队', '编队职责'],
+  'combat-event-maps': [
+    '活动攻略',
+    '活动图',
+    '活动推图',
+    '地图条件',
+    '推图卡住怎么办',
+  ],
+  'combat-pve-team-building': [
+    'pve阵容',
+    'pve配队',
+    '编队职责',
+    'pve配队方法',
+    '队伍职责',
+    '关卡怎么配队',
+  ],
   'combat-pvp-arena': [
     'pvp',
     '竞技场',
@@ -45,8 +72,21 @@ const aliasByPageId = {
     '普攻倍率',
     '攻速数据',
   ],
-  'topic-beginner-equipment': ['新手装备', '毕业装', '过渡装', '配装'],
-  'topic-pve-selection': ['pve选人', '舰灵推荐', '角色推荐', '选船', '先养谁'],
+  'topic-beginner-equipment': [
+    '新手装备',
+    '毕业装',
+    '过渡装',
+    '配装',
+    '装备怎么配',
+  ],
+  'topic-pve-selection': [
+    'pve选人',
+    '舰灵推荐',
+    '角色推荐',
+    '选船',
+    '先养谁',
+    '新手怎么选船',
+  ],
   'topic-laguz': ['拉古兹', '拉古斯', 'laguz'],
   'about-version-log': ['更新日志', '版本记录', '2026年7月更新'],
   'about-contributing': ['编辑规范', '怎么贡献', 'frontmatter规范'],
@@ -352,6 +392,21 @@ if (
 const queryIds = fixture.queries.map((query) => query.id)
 if (new Set(queryIds).size !== queryIds.length) {
   failures.push('查询样本 ID 不唯一')
+}
+
+const phase3SplitTargets = [
+  'start-new-account',
+  'progression-leveling-locations',
+  'combat-pve-ship-roles',
+  'progression-leveling-strategy',
+  'start-daily-and-events',
+]
+for (const pageId of phase3SplitTargets) {
+  if (
+    !fixture.queries.some((query) => query.targetPageIds.includes(pageId))
+  ) {
+    failures.push(`Phase 3 拆分页缺少搜索回归样本：${pageId}`)
+  }
 }
 
 const requiredQueryClasses = [

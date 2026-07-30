@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "sources": [
+    {
+      "sourceAssetId": "src-9ac6e41a613e",
+      "sourceBodySha256": "3d46c4b9bcace582fa663c22e9a2e91bc764894c40f4d56730b3a2bf70f9a5ee",
+      "sourceChars": 2449,
+      "coveredChars": 2449,
+      "pages": [
+        {
+          "pageId": "start-handbook-history",
+          "file": "docs/start/handbook-history.md",
+          "route": "/start/handbook-history",
+          "status": "draft",
+          "sourceRange": {
+            "start": 0,
+            "end": 2449
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 37,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 1
+          },
+          "sourceSliceSha256": "3d46c4b9bcace582fa663c22e9a2e91bc764894c40f4d56730b3a2bf70f9a5ee",
+          "sourceChars": 2449,
+          "outputSha256": "da715b90c4298e35ac76f2b444bd08b4a12639fc104a2989aca004b4b090106c"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceBodySha256": "1878195cc74eebc1f4b5bb7ae6129e99cd4380abda23baafd366cf38fcba4755",
+      "sourceChars": 256,
+      "coveredChars": 256,
+      "pages": [
+        {
+          "pageId": "start-game-introduction",
+          "file": "docs/start/game-introduction.md",
+          "route": "/start/game-introduction",
+          "status": "current",
+          "sourceRange": {
+            "start": 0,
+            "end": 256
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 7,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 1
+          },
+          "sourceSliceSha256": "1878195cc74eebc1f4b5bb7ae6129e99cd4380abda23baafd366cf38fcba4755",
+          "sourceChars": 256,
+          "outputSha256": "c8c1ca38d5e5d2154c36790f256d0603d5e3f21d971c093c79d54e537fcbace6"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-842246bdb075",
+      "sourceBodySha256": "ebc69f2569471632b229940bbf441097177a6f7e2df0a0a4733415ca53311c68",
+      "sourceChars": 10756,
+      "coveredChars": 10756,
+      "pages": [
+        {
+          "pageId": "start-new-account",
+          "file": "docs/start/new-account.md",
+          "route": "/start/new-account",
+          "status": "draft",
+          "sourceRange": {
+            "start": 0,
+            "end": 1600
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 53,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 1
+          },
+          "sourceSliceSha256": "1d644c44b3336f34f2b7994fb27afa765638d3d855b81ec1df6e7cdd0b542995",
+          "sourceChars": 1600,
+          "outputSha256": "60616c8595effa8b01a9f7a4e677c33313b21e6865c065b69f39370a3e45381c"
+        },
+        {
+          "pageId": "start-mainline-roadmap",
+          "file": "docs/start/mainline-roadmap.md",
+          "route": "/start/mainline-roadmap",
+          "status": "draft",
+          "sourceRange": {
+            "start": 1600,
+            "end": 5413
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 53,
+            "bodyIndexEndExclusive": 200,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 1
+          },
+          "sourceSliceSha256": "8823d8cd8338c6d19bf75eccd917226b491d23ebccfe09536ae16b78185f5dc7",
+          "sourceChars": 3813,
+          "outputSha256": "cc7d5f1630bc7e37af7f4bf2f0b807cd82caba14de62b0230af58c1e00a1b2b1"
+        },
+        {
+          "pageId": "start-daily-and-events",
+          "file": "docs/start/daily-and-events.md",
+          "route": "/start/daily-and-events",
+          "status": "draft",
+          "sourceRange": {
+            "start": 5413,
+            "end": 10756
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 200,
+            "bodyIndexEndExclusive": 364,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 1
+          },
+          "sourceSliceSha256": "e6fb73a271bc788cbd29bc8a711f25a782e12380c5af3b1f64f3bbceae52b2c9",
+          "sourceChars": 5343,
+          "outputSha256": "706f79f79db78556934823f6bc1cbd5bdfdb35459463e263faab359338a9272a"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-6eba63c4aa7b",
+      "sourceBodySha256": "38c73337e42097e17c08249e2e3dae8deee5773d6238725166b464baf9cf4c73",
+      "sourceChars": 24925,
+      "coveredChars": 24925,
+      "pages": [
+        {
+          "pageId": "progression-leveling-ship-selection",
+          "file": "docs/progression/leveling-ship-selection.md",
+          "route": "/progression/leveling-ship-selection",
+          "status": "draft",
+          "sourceRange": {
+            "start": 0,
+            "end": 3571
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 58,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 4
+          },
+          "sourceSliceSha256": "ec4133b03f3b282d25f2678863985a5aabaebec8fb9bb9e17db48bd48b6ecfff",
+          "sourceChars": 3571,
+          "outputSha256": "aeebd0c81e154b4203b757f3e98a10583eb229e3c937490faf18d67cb689c7e5"
+        },
+        {
+          "pageId": "progression-leveling-strategy",
+          "file": "docs/progression/leveling-strategy.md",
+          "route": "/progression/leveling-strategy",
+          "status": "draft",
+          "sourceRange": {
+            "start": 3571,
+            "end": 9944
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 58,
+            "bodyIndexEndExclusive": 172,
+            "tableIndexStart": 4,
+            "tableIndexEndExclusive": 6
+          },
+          "sourceSliceSha256": "90c11bc6cd80bd1267a424c008df968cbf68744abc7f3bb4939b3fb2b013c4d4",
+          "sourceChars": 6373,
+          "outputSha256": "17e0f2a2f032d7973ee9d490afbcc46f68d4f60f8b570c99ebb1b2f591640b85"
+        },
+        {
+          "pageId": "progression-leveling-locations",
+          "file": "docs/progression/leveling-locations.md",
+          "route": "/progression/leveling-locations",
+          "status": "draft",
+          "sourceRange": {
+            "start": 9944,
+            "end": 19969
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 172,
+            "bodyIndexEndExclusive": 401,
+            "tableIndexStart": 6,
+            "tableIndexEndExclusive": 9
+          },
+          "sourceSliceSha256": "2cf7029570ab586a941241e999a028a7c965c6e36ef5943234b039a87f7a777b",
+          "sourceChars": 10025,
+          "outputSha256": "5b200c4f2ed5de492f3d201098899e1d2c95313df6771eb02f995405a0b7d8e6"
+        },
+        {
+          "pageId": "progression-leveling-efficiency",
+          "file": "docs/progression/leveling-efficiency.md",
+          "route": "/progression/leveling-efficiency",
+          "status": "draft",
+          "sourceRange": {
+            "start": 19969,
+            "end": 24925
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 401,
+            "bodyIndexEndExclusive": 555,
+            "tableIndexStart": 9,
+            "tableIndexEndExclusive": 11
+          },
+          "sourceSliceSha256": "4f4204a9994b7caee8ad3eb77b202ae7e83a19ee739373304a220cbe1277328f",
+          "sourceChars": 4956,
+          "outputSha256": "54de433fed51bf18fe669c931868ddcdf1ec39743338d25c66e10e4fa143f20e"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceBodySha256": "761976db0bfe848f7f383274aa7873718e7a0a679b14a2c8b99f05d5f77832ac",
+      "sourceChars": 4028,
+      "coveredChars": 4028,
+      "pages": [
+        {
+          "pageId": "combat-event-maps",
+          "file": "docs/combat/event-maps.md",
+          "route": "/combat/event-maps",
+          "status": "draft",
+          "sourceRange": {
+            "start": 0,
+            "end": 4028
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 84,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 2
+          },
+          "sourceSliceSha256": "761976db0bfe848f7f383274aa7873718e7a0a679b14a2c8b99f05d5f77832ac",
+          "sourceChars": 4028,
+          "outputSha256": "32b60590e0cf0959cf894dc9a2c87bf7d26a6eefc0c56e833906e255196472b3"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceBodySha256": "403dafe87d754108f63bc91a0eef434a259c0091172e979881800a613678047c",
+      "sourceChars": 7543,
+      "coveredChars": 7543,
+      "pages": [
+        {
+          "pageId": "combat-pve-enemy-analysis",
+          "file": "docs/combat/pve-enemy-analysis.md",
+          "route": "/combat/pve-enemy-analysis",
+          "status": "draft",
+          "sourceRange": {
+            "start": 0,
+            "end": 1428
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 1,
+            "bodyIndexEndExclusive": 31,
+            "tableIndexStart": 1,
+            "tableIndexEndExclusive": 2
+          },
+          "sourceSliceSha256": "c5f12e5f40faf9fe5de9968a2607466922ca88fd08ad229beb0563a8d6a8cc3c",
+          "sourceChars": 1428,
+          "outputSha256": "f73259d83fa7992aab633f34ea46519d0870b905d5f9206cfdea18ee01baaf31"
+        },
+        {
+          "pageId": "combat-pve-ship-roles",
+          "file": "docs/combat/pve-ship-roles.md",
+          "route": "/combat/pve-ship-roles",
+          "status": "draft",
+          "sourceRange": {
+            "start": 1428,
+            "end": 4310
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 31,
+            "bodyIndexEndExclusive": 52,
+            "tableIndexStart": 2,
+            "tableIndexEndExclusive": 6
+          },
+          "sourceSliceSha256": "cb84318f04bf718089efa4813f825267ce887a36495c7f317e568c0bbd304baf",
+          "sourceChars": 2882,
+          "outputSha256": "513d56404e705084b32fc5623c46fd2191ace8eb0bce5becee6bb5591d3a4c6e"
+        },
+        {
+          "pageId": "combat-pve-team-practice",
+          "file": "docs/combat/pve-team-practice.md",
+          "route": "/combat/pve-team-practice",
+          "status": "draft",
+          "sourceRange": {
+            "start": 4310,
+            "end": 7543
+          },
+          "sourceElementRange": {
+            "bodyIndexStart": 52,
+            "bodyIndexEndExclusive": 111,
+            "tableIndexStart": 6,
+            "tableIndexEndExclusive": 6
+          },
+          "sourceSliceSha256": "f46715ee90c0251b0b3889ce5757b7654c1d29c91294abf5ab324ac3dc1d2bc4",
+          "sourceChars": 3233,
+          "outputSha256": "615c05d4dc9ff56c69cc18a1717b1774b5c61d66a5023cc3c137309926521b69"
+        }
+      ]
+    }
+  ],
+  "editorialOverviews": [
+    {
+      "pageId": "start-first-week",
+      "file": "docs/start/first-week.md",
+      "route": "/start/first-week",
+      "status": "draft",
+      "editorialOverview": true,
+      "outputSha256": "5cfbbcef5b2f91e2e823ed2d47243576204d97c74c64c3789897c1491635555c"
+    },
+    {
+      "pageId": "progression-leveling",
+      "file": "docs/progression/leveling.md",
+      "route": "/progression/leveling",
+      "status": "draft",
+      "editorialOverview": true,
+      "outputSha256": "8976f7d0473ca44407285a2b7628c195152e84af573fbfc3c6b22b53b2ccb45a"
+    },
+    {
+      "pageId": "combat-pve-team-building",
+      "file": "docs/combat/pve-team-building.md",
+      "route": "/combat/pve-team-building",
+      "status": "draft",
+      "editorialOverview": true,
+      "outputSha256": "94cbc0e847520a3372b7bdc231898d1e71a015bf53fecb7173a0150211ddc834"
+    }
+  ],
+  "summary": {
+    "sourceAssets": 6,
+    "sourcePages": 13,
+    "editorialOverviews": 3,
+    "sourceChars": 49957,
+    "coveredChars": 49957
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dov-calc.local/schemas/redirects.schema.json",
+  "title": "Fuxiao Wiki URL History and Redirect Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "redirects"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "redirects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/redirect"
+      }
+    }
+  },
+  "$defs": {
+    "redirect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legacyPath",
+        "targetPageId",
+        "targetPath",
+        "kind",
+        "reason",
+        "changedAt",
+        "reviewer",
+        "status",
+        "noindex",
+        "searchIndex",
+        "sitemap"
+      ],
+      "properties": {
+        "legacyPath": {
+          "type": "string",
+          "pattern": "^/",
+          "minLength": 2
+        },
+        "targetPageId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "targetPath": {
+          "type": "string",
+          "pattern": "^/",
+          "minLength": 2
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "path",
+            "alias",
+            "anchor"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "changedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "role"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "role": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "planned",
+            "active",
+            "retired"
+          ]
+        },
+        "noindex": {
+          "const": true
+        },
+        "searchIndex": {
+          "const": false
+        },
+        "sitemap": {
+          "const": false
+        }
+      }
+    }
+  }
+}
