@@ -1833,7 +1833,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 1
+        "tableIndex": 1,
+        "bodyIndex": 46
       },
       "rowCount": 28,
       "columnCount": 4,
@@ -2093,7 +2094,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:57eb72172500e020",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 32
       },
       "relationshipId": "rId7",
       "relationshipTarget": "word/media/image1.jpg",
@@ -2107,7 +2109,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:8f2e73273956be2a",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 37
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image2.png",
@@ -2121,7 +2124,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:133b4b2a7fa31921",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 39
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image3.png",
@@ -2135,7 +2139,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:499328efba072415",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 4
+        "drawingIndex": 4,
+        "bodyIndex": 95
       },
       "relationshipId": "rId11",
       "relationshipTarget": "word/media/image4.png",
@@ -2149,7 +2154,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:5661c64da59ee703",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 5
+        "drawingIndex": 5,
+        "bodyIndex": 102
       },
       "relationshipId": "rId12",
       "relationshipTarget": "word/media/image5.png",
@@ -2163,7 +2169,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:1e05cd24ed48eab4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 6
+        "drawingIndex": 6,
+        "bodyIndex": 107
       },
       "relationshipId": "rId13",
       "relationshipTarget": "word/media/image6.png",
@@ -2177,7 +2184,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:221c8da21357dcb4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 7
+        "drawingIndex": 7,
+        "bodyIndex": 112
       },
       "relationshipId": "rId14",
       "relationshipTarget": "word/media/image7.png",
@@ -2191,7 +2199,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:80c66a3867fc2366",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 8
+        "drawingIndex": 8,
+        "bodyIndex": 118
       },
       "relationshipId": "rId15",
       "relationshipTarget": "word/media/image8.png",
@@ -2205,7 +2214,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:4dd6550206c8d8c5",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 9
+        "drawingIndex": 9,
+        "bodyIndex": 125
       },
       "relationshipId": "rId16",
       "relationshipTarget": "word/media/image9.png",
@@ -2219,7 +2229,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:e0cff0e15aab23c8",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 10
+        "drawingIndex": 10,
+        "bodyIndex": 132
       },
       "relationshipId": "rId17",
       "relationshipTarget": "word/media/image10.png",
@@ -2233,7 +2244,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:ffe854437d0194ae",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 11
+        "drawingIndex": 11,
+        "bodyIndex": 138
       },
       "relationshipId": "rId18",
       "relationshipTarget": "word/media/image11.png",
@@ -2247,7 +2259,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:38fe78495c4ba334",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 12
+        "drawingIndex": 12,
+        "bodyIndex": 139
       },
       "relationshipId": "rId19",
       "relationshipTarget": "word/media/image12.png",
@@ -2261,7 +2274,8 @@
       "sourceRelationId": "src-51475ba227c9:relation:b5c297c51948f0d2",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 13
+        "drawingIndex": 13,
+        "bodyIndex": 145
       },
       "relationshipId": "rId20",
       "relationshipTarget": "word/media/image13.png",

@@ -16,6 +16,7 @@ const targets = [
   'content/reports/xlsx-import.json',
   'content/reports/media-import.json',
   'content/migrations/core-content-pages.json',
+  'content/migrations/advanced-content-pages.json',
   'docs/start/handbook-history.md',
   'docs/start/game-introduction.md',
   'docs/start/new-account.md',
@@ -32,6 +33,29 @@ const targets = [
   'docs/combat/pve-enemy-analysis.md',
   'docs/combat/pve-ship-roles.md',
   'docs/combat/pve-team-practice.md',
+  'docs/combat/pvp-arena.md',
+  'docs/combat/pvp-fundamentals.md',
+  'docs/combat/pvp-rules-and-fleet.md',
+  'docs/combat/pvp-reference-teams.md',
+  'docs/combat/encounter.md',
+  'docs/combat/encounter-overview.md',
+  'docs/combat/encounter-preparation.md',
+  'docs/combat/encounter-practice.md',
+  'docs/combat/encounter-appendix.md',
+  'docs/combat/endless-sea.md',
+  'docs/combat/endless-sea-basics.md',
+  'docs/combat/endless-sea-mechanics.md',
+  'docs/combat/endless-sea-team-building.md',
+  'docs/mechanics/damage-model.md',
+  'docs/mechanics/damage-formula-overview.md',
+  'docs/mechanics/attack-power.md',
+  'docs/mechanics/defense-power.md',
+  'docs/mechanics/damage-multipliers.md',
+  'docs/mechanics/damage-bonuses.md',
+  'docs/mechanics/hit-critical.md',
+  'docs/mechanics/damage-examples.md',
+  'docs/topics/laguz.md',
+  'docs/topics/laguz/guide.md',
 ]
 
 async function filesUnder(target) {
@@ -81,12 +105,13 @@ run('scripts/content/import-source-corpus.mjs')
 run('scripts/content/build-stage3-docx-map.mjs')
 run('scripts/content/build-stage4-docx-map.mjs')
 run('scripts/content/build-core-content-pages.mjs')
+run('scripts/content/build-advanced-content-pages.mjs')
 run('scripts/content/build-full-content-map.mjs')
 const after = await fingerprint()
 
 assert.equal(
   after,
   before,
-  'full source import and generated core pages must be byte-stable',
+  'full source import and generated content pages must be byte-stable',
 )
-console.log('full corpus and core page determinism tests passed.')
+console.log('full corpus and generated page determinism tests passed.')

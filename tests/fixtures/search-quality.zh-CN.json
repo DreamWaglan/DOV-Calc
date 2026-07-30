@@ -563,6 +563,141 @@
       "mustBeTop1": true,
       "sourceBucket": "editorial-task",
       "sourceRef": "editorial-task-catalog:v1#daily-events-follow-up"
+    },
+    {
+      "id": "SQ-066",
+      "query": "争锋竞技场一：综合机制",
+      "targetPageIds": ["combat-pvp-fundamentals"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pvp-fundamentals.md"
+    },
+    {
+      "id": "SQ-067",
+      "query": "争锋竞技场二：规则与编队",
+      "targetPageIds": ["combat-pvp-rules-and-fleet"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pvp-rules-and-fleet.md"
+    },
+    {
+      "id": "SQ-068",
+      "query": "争锋竞技场三：参考阵容",
+      "targetPageIds": ["combat-pvp-reference-teams"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/pvp-reference-teams.md"
+    },
+    {
+      "id": "SQ-069",
+      "query": "遭遇战二：赛前备战",
+      "targetPageIds": ["combat-encounter-preparation"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/encounter-preparation.md"
+    },
+    {
+      "id": "SQ-070",
+      "query": "遭遇战三：冲分实操",
+      "targetPageIds": ["combat-encounter-practice"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/encounter-practice.md"
+    },
+    {
+      "id": "SQ-071",
+      "query": "遭遇战四：实战轴附录",
+      "targetPageIds": ["combat-encounter-appendix"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/combat/encounter-appendix.md"
+    },
+    {
+      "id": "SQ-072",
+      "query": "无尽海域一：入场须知",
+      "targetPageIds": ["combat-endless-sea-basics"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-073",
+      "query": "无尽海域二：机制知识储备",
+      "targetPageIds": ["combat-endless-sea-mechanics"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-074",
+      "query": "无尽海域三：配队思路",
+      "targetPageIds": ["combat-endless-sea-team-building"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-075",
+      "query": "拉古兹专题：完整资料",
+      "targetPageIds": ["topic-laguz-guide"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.taptap.cn/app/187170/topic"
+    },
+    {
+      "id": "SQ-076",
+      "query": "伤害构成一：总公式",
+      "targetPageIds": ["mechanics-damage-formula-overview"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#damage-formula-overview"
+    },
+    {
+      "id": "SQ-077",
+      "query": "伤害构成二：攻击力",
+      "targetPageIds": ["mechanics-attack-power"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#damage-attack-power"
+    },
+    {
+      "id": "SQ-078",
+      "query": "伤害构成三：防御力",
+      "targetPageIds": ["mechanics-defense-power"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#damage-defense-power"
+    },
+    {
+      "id": "SQ-079",
+      "query": "伤害构成五：增伤、减伤与等级压制",
+      "targetPageIds": ["mechanics-damage-bonuses"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#damage-bonuses"
+    },
+    {
+      "id": "SQ-080",
+      "query": "伤害构成六：暴击、命中与闪避",
+      "targetPageIds": ["mechanics-hit-critical"],
+      "queryClass": "formal-title",
+      "mustBeTop1": true,
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#damage-hit-critical"
     }
   ],
   "noResultQueries": [

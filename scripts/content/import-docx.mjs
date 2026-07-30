@@ -224,10 +224,12 @@ function buildDocxElements({
     }
   }
 
-  for (const table of descendants(documentXml, 'w:tbl')) {
+  for (let bodyIndex = 0; bodyIndex < bodyItems.length; bodyIndex += 1) {
+    const table = bodyItems[bodyIndex]
+    if (nodeName(table) !== 'w:tbl') continue
     tableIndex += 1
     const rows = childrenOf(table, 'w:tr')
-    const sourcePosition = {
+    const identityPosition = {
       part: 'word/document.xml',
       tableIndex,
     }
@@ -236,10 +238,13 @@ function buildDocxElements({
       sourceElementId: stableSourceElementId(
         assetId,
         'table',
-        sourcePosition,
+        identityPosition,
       ),
       elementType: 'table',
-      sourcePosition,
+      sourcePosition: {
+        ...identityPosition,
+        bodyIndex: bodyIndex + 1,
+      },
       rowCount: rows.length,
       columnCount: Math.max(
         0,
@@ -249,6 +254,14 @@ function buildDocxElements({
     })
   }
 
+  const bodyIndexByNode = new WeakMap()
+  for (let bodyIndex = 0; bodyIndex < bodyItems.length; bodyIndex += 1) {
+    for (const name of ['m:oMath', 'm:oMathPara', 'w:drawing']) {
+      for (const node of descendants(bodyItems[bodyIndex], name)) {
+        bodyIndexByNode.set(node, bodyIndex + 1)
+      }
+    }
+  }
   const formulaNodes = [
     ...descendants(documentXml, 'm:oMath').map((node) => ({
       node,
@@ -261,7 +274,7 @@ function buildDocxElements({
   ]
   for (let index = 0; index < formulaNodes.length; index += 1) {
     const { node, ooxmlKind } = formulaNodes[index]
-    const sourcePosition = {
+    const identityPosition = {
       part: 'word/document.xml',
       formulaIndex: index + 1,
       ooxmlKind,
@@ -272,10 +285,13 @@ function buildDocxElements({
       sourceElementId: stableSourceElementId(
         assetId,
         'formula',
-        sourcePosition,
+        identityPosition,
       ),
       elementType: 'formula',
-      sourcePosition,
+      sourcePosition: {
+        ...identityPosition,
+        bodyIndex: bodyIndexByNode.get(node),
+      },
       sourceTextHash: sha256(sourceText),
       equivalent: {
         format: sourceText ? 'source-text' : 'descriptive-text',
@@ -348,7 +364,7 @@ function buildDocxElements({
       const targetMedia = relationship?.resolvedTarget
         ? mediaByPath.get(relationship.resolvedTarget)
         : null
-      const sourcePosition = {
+      const identityPosition = {
         part: 'word/document.xml',
         drawingIndex: index + 1,
       }
@@ -368,9 +384,12 @@ function buildDocxElements({
         sourceRelationId: stableSourceRelationId(
           assetId,
           'drawing',
-          sourcePosition,
+          identityPosition,
         ),
-        sourcePosition,
+        sourcePosition: {
+          ...identityPosition,
+          bodyIndex: bodyIndexByNode.get(drawing),
+        },
         relationshipId,
         relationshipTarget: relationship?.resolvedTarget ?? null,
         targetMediaElementId: targetMedia?.sourceElementId ?? null,

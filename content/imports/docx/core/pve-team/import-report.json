@@ -1269,7 +1269,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 1
+        "tableIndex": 1,
+        "bodyIndex": 28
       },
       "rowCount": 23,
       "columnCount": 2,
@@ -1281,7 +1282,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 2
+        "tableIndex": 2,
+        "bodyIndex": 36
       },
       "rowCount": 9,
       "columnCount": 3,
@@ -1293,7 +1295,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 3
+        "tableIndex": 3,
+        "bodyIndex": 40
       },
       "rowCount": 8,
       "columnCount": 3,
@@ -1305,7 +1308,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 4
+        "tableIndex": 4,
+        "bodyIndex": 44
       },
       "rowCount": 13,
       "columnCount": 3,
@@ -1317,7 +1321,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 5
+        "tableIndex": 5,
+        "bodyIndex": 48
       },
       "rowCount": 21,
       "columnCount": 3,
@@ -1406,7 +1411,8 @@
       "sourceRelationId": "src-94e76e4522b1:relation:1fa73f7b912ce545",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 11
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image1.png",
@@ -1420,7 +1426,8 @@
       "sourceRelationId": "src-94e76e4522b1:relation:8fbbfd4ae8e01d21",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 13
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image2.png",
@@ -1434,7 +1441,8 @@
       "sourceRelationId": "src-94e76e4522b1:relation:a58699cd961eeb44",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 16
       },
       "relationshipId": "rId10",
       "relationshipTarget": "word/media/image3.png",
@@ -1448,7 +1456,8 @@
       "sourceRelationId": "src-94e76e4522b1:relation:bf92446344540613",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 4
+        "drawingIndex": 4,
+        "bodyIndex": 105
       },
       "relationshipId": "rId11",
       "relationshipTarget": "word/media/image4.png",

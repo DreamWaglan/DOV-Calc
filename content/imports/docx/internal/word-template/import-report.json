@@ -566,7 +566,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 1
+        "tableIndex": 1,
+        "bodyIndex": 37
       },
       "rowCount": 4,
       "columnCount": 5,
@@ -636,7 +637,8 @@
       "sourceRelationId": "src-6d7a8eecd6bb:relation:519f5fe0460e592b",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 12
       },
       "relationshipId": "rId7",
       "relationshipTarget": "word/media/image1.png",
@@ -650,7 +652,8 @@
       "sourceRelationId": "src-6d7a8eecd6bb:relation:9a6f62f800f8eae7",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 15
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image2.png",
@@ -664,7 +667,8 @@
       "sourceRelationId": "src-6d7a8eecd6bb:relation:aa5486274e21c6b2",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 35
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image3.png",

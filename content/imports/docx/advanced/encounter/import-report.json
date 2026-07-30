@@ -3894,7 +3894,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 1
+        "tableIndex": 1,
+        "bodyIndex": 10
       },
       "rowCount": 12,
       "columnCount": 3,
@@ -3906,7 +3907,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 2
+        "tableIndex": 2,
+        "bodyIndex": 51
       },
       "rowCount": 1,
       "columnCount": 3,
@@ -3918,7 +3920,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 3
+        "tableIndex": 3,
+        "bodyIndex": 61
       },
       "rowCount": 1,
       "columnCount": 3,
@@ -3930,7 +3933,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 4
+        "tableIndex": 4,
+        "bodyIndex": 67
       },
       "rowCount": 2,
       "columnCount": 2,
@@ -3942,7 +3946,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 5
+        "tableIndex": 5,
+        "bodyIndex": 71
       },
       "rowCount": 1,
       "columnCount": 3,
@@ -3954,7 +3959,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 6
+        "tableIndex": 6,
+        "bodyIndex": 77
       },
       "rowCount": 1,
       "columnCount": 1,
@@ -3966,7 +3972,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 7
+        "tableIndex": 7,
+        "bodyIndex": 88
       },
       "rowCount": 2,
       "columnCount": 3,
@@ -3978,7 +3985,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 8
+        "tableIndex": 8,
+        "bodyIndex": 93
       },
       "rowCount": 2,
       "columnCount": 4,
@@ -3990,7 +3998,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 9
+        "tableIndex": 9,
+        "bodyIndex": 97
       },
       "rowCount": 2,
       "columnCount": 4,
@@ -4002,7 +4011,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 10
+        "tableIndex": 10,
+        "bodyIndex": 101
       },
       "rowCount": 1,
       "columnCount": 2,
@@ -4014,7 +4024,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 11
+        "tableIndex": 11,
+        "bodyIndex": 115
       },
       "rowCount": 1,
       "columnCount": 4,
@@ -4026,7 +4037,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 12
+        "tableIndex": 12,
+        "bodyIndex": 120
       },
       "rowCount": 2,
       "columnCount": 2,
@@ -4038,7 +4050,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 13
+        "tableIndex": 13,
+        "bodyIndex": 125
       },
       "rowCount": 1,
       "columnCount": 4,
@@ -4050,7 +4063,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 14
+        "tableIndex": 14,
+        "bodyIndex": 138
       },
       "rowCount": 1,
       "columnCount": 2,
@@ -4062,7 +4076,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 15
+        "tableIndex": 15,
+        "bodyIndex": 143
       },
       "rowCount": 1,
       "columnCount": 4,
@@ -4074,7 +4089,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 16
+        "tableIndex": 16,
+        "bodyIndex": 150
       },
       "rowCount": 1,
       "columnCount": 3,
@@ -4086,7 +4102,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 17
+        "tableIndex": 17,
+        "bodyIndex": 168
       },
       "rowCount": 1,
       "columnCount": 2,
@@ -5201,7 +5218,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:e6d6ca63d3c4905a",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 51
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image1.png",
@@ -5215,7 +5233,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b33c42e5d1e3c708",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 51
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image2.png",
@@ -5229,7 +5248,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:5a29a88d1b9d29e4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 51
       },
       "relationshipId": "rId10",
       "relationshipTarget": "word/media/image3.png",
@@ -5243,7 +5263,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:dd5e4e6169fd8eb4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 4
+        "drawingIndex": 4,
+        "bodyIndex": 54
       },
       "relationshipId": "rId11",
       "relationshipTarget": "word/media/image4.png",
@@ -5257,7 +5278,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:fb5df86f1f164757",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 5
+        "drawingIndex": 5,
+        "bodyIndex": 55
       },
       "relationshipId": "rId12",
       "relationshipTarget": "word/media/image5.png",
@@ -5271,7 +5293,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:2e394081e584d6e8",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 6
+        "drawingIndex": 6,
+        "bodyIndex": 61
       },
       "relationshipId": "rId13",
       "relationshipTarget": "word/media/image6.png",
@@ -5285,7 +5308,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:909dc091a003287e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 7
+        "drawingIndex": 7,
+        "bodyIndex": 61
       },
       "relationshipId": "rId14",
       "relationshipTarget": "word/media/image7.png",
@@ -5299,7 +5323,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:d3fda2f5e03105ed",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 8
+        "drawingIndex": 8,
+        "bodyIndex": 61
       },
       "relationshipId": "rId15",
       "relationshipTarget": "word/media/image8.png",
@@ -5313,7 +5338,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:83a93363f2f51432",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 9
+        "drawingIndex": 9,
+        "bodyIndex": 67
       },
       "relationshipId": "rId16",
       "relationshipTarget": "word/media/image9.png",
@@ -5327,7 +5353,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:1414259faf4d4909",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 10
+        "drawingIndex": 10,
+        "bodyIndex": 67
       },
       "relationshipId": "rId17",
       "relationshipTarget": "word/media/image10.png",
@@ -5341,7 +5368,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:09cfd351ea14be8f",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 11
+        "drawingIndex": 11,
+        "bodyIndex": 67
       },
       "relationshipId": "rId18",
       "relationshipTarget": "word/media/image11.png",
@@ -5355,7 +5383,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b73793b9fcb3d68c",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 12
+        "drawingIndex": 12,
+        "bodyIndex": 67
       },
       "relationshipId": "rId19",
       "relationshipTarget": "word/media/image12.png",
@@ -5369,7 +5398,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:9fc8c18e74cad025",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 13
+        "drawingIndex": 13,
+        "bodyIndex": 71
       },
       "relationshipId": "rId20",
       "relationshipTarget": "word/media/image13.png",
@@ -5383,7 +5413,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:7002cba37720638f",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 14
+        "drawingIndex": 14,
+        "bodyIndex": 71
       },
       "relationshipId": "rId21",
       "relationshipTarget": "word/media/image14.png",
@@ -5397,7 +5428,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:eae92df2c8d6697f",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 15
+        "drawingIndex": 15,
+        "bodyIndex": 71
       },
       "relationshipId": "rId22",
       "relationshipTarget": "word/media/image15.png",
@@ -5411,7 +5443,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b1ebe013783e9e74",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 16
+        "drawingIndex": 16,
+        "bodyIndex": 77
       },
       "relationshipId": "rId23",
       "relationshipTarget": "word/media/image16.png",
@@ -5425,7 +5458,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:29ef67362f411a6b",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 17
+        "drawingIndex": 17,
+        "bodyIndex": 80
       },
       "relationshipId": "rId24",
       "relationshipTarget": "word/media/image17.png",
@@ -5439,7 +5473,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:2d16e3aa3f7a6151",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 18
+        "drawingIndex": 18,
+        "bodyIndex": 81
       },
       "relationshipId": "rId25",
       "relationshipTarget": "word/media/image18.png",
@@ -5453,7 +5488,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:e1cf6d22b55ed93d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 19
+        "drawingIndex": 19,
+        "bodyIndex": 88
       },
       "relationshipId": "rId26",
       "relationshipTarget": "word/media/image19.png",
@@ -5467,7 +5503,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:6f7371f3ea8fe909",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 20
+        "drawingIndex": 20,
+        "bodyIndex": 88
       },
       "relationshipId": "rId27",
       "relationshipTarget": "word/media/image20.png",
@@ -5481,7 +5518,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:85ac0e443dd93bdf",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 21
+        "drawingIndex": 21,
+        "bodyIndex": 88
       },
       "relationshipId": "rId28",
       "relationshipTarget": "word/media/image21.png",
@@ -5495,7 +5533,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:4dea21b19914a732",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 22
+        "drawingIndex": 22,
+        "bodyIndex": 88
       },
       "relationshipId": "rId29",
       "relationshipTarget": "word/media/image22.png",
@@ -5509,7 +5548,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b00f28148c6915ce",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 23
+        "drawingIndex": 23,
+        "bodyIndex": 88
       },
       "relationshipId": "rId30",
       "relationshipTarget": "word/media/image23.png",
@@ -5523,7 +5563,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:3d11a0f585741e5e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 24
+        "drawingIndex": 24,
+        "bodyIndex": 88
       },
       "relationshipId": "rId31",
       "relationshipTarget": "word/media/image24.png",
@@ -5537,7 +5578,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b935acbdd7cd912d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 25
+        "drawingIndex": 25,
+        "bodyIndex": 93
       },
       "relationshipId": "rId22",
       "relationshipTarget": "word/media/image15.png",
@@ -5551,7 +5593,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:85e4da84e9e5f611",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 26
+        "drawingIndex": 26,
+        "bodyIndex": 93
       },
       "relationshipId": "rId32",
       "relationshipTarget": "word/media/image25.png",
@@ -5565,7 +5608,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:4aff47b61648981d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 27
+        "drawingIndex": 27,
+        "bodyIndex": 93
       },
       "relationshipId": "rId33",
       "relationshipTarget": "word/media/image26.png",
@@ -5579,7 +5623,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:055fb1e5f04c38b4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 28
+        "drawingIndex": 28,
+        "bodyIndex": 93
       },
       "relationshipId": "rId34",
       "relationshipTarget": "word/media/image27.png",
@@ -5593,7 +5638,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:22ab0ba3ea38a24f",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 29
+        "drawingIndex": 29,
+        "bodyIndex": 93
       },
       "relationshipId": "rId35",
       "relationshipTarget": "word/media/image28.png",
@@ -5607,7 +5653,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:8a594741ec437762",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 30
+        "drawingIndex": 30,
+        "bodyIndex": 97
       },
       "relationshipId": "rId36",
       "relationshipTarget": "word/media/image29.png",
@@ -5621,7 +5668,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:64ed2193238dddb4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 31
+        "drawingIndex": 31,
+        "bodyIndex": 97
       },
       "relationshipId": "rId37",
       "relationshipTarget": "word/media/image30.png",
@@ -5635,7 +5683,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:8d148e06063b29f1",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 32
+        "drawingIndex": 32,
+        "bodyIndex": 97
       },
       "relationshipId": "rId38",
       "relationshipTarget": "word/media/image31.png",
@@ -5649,7 +5698,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:e2dcd051828ef36d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 33
+        "drawingIndex": 33,
+        "bodyIndex": 97
       },
       "relationshipId": "rId39",
       "relationshipTarget": "word/media/image32.png",
@@ -5663,7 +5713,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:4883ab015f6aaa46",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 34
+        "drawingIndex": 34,
+        "bodyIndex": 97
       },
       "relationshipId": "rId40",
       "relationshipTarget": "word/media/image33.png",
@@ -5677,7 +5728,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:be167920bf4ad492",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 35
+        "drawingIndex": 35,
+        "bodyIndex": 101
       },
       "relationshipId": "rId41",
       "relationshipTarget": "word/media/image34.png",
@@ -5691,7 +5743,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:c378f315b261f7dd",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 36
+        "drawingIndex": 36,
+        "bodyIndex": 101
       },
       "relationshipId": "rId42",
       "relationshipTarget": "word/media/image35.png",
@@ -5705,7 +5758,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:930805b4c469cac3",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 37
+        "drawingIndex": 37,
+        "bodyIndex": 108
       },
       "relationshipId": "rId43",
       "relationshipTarget": "word/media/image36.png",
@@ -5719,7 +5773,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:def54eab83d28a65",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 38
+        "drawingIndex": 38,
+        "bodyIndex": 109
       },
       "relationshipId": "rId44",
       "relationshipTarget": "word/media/image37.png",
@@ -5733,7 +5788,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:14bec82214781136",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 39
+        "drawingIndex": 39,
+        "bodyIndex": 115
       },
       "relationshipId": "rId14",
       "relationshipTarget": "word/media/image7.png",
@@ -5747,7 +5803,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:51b30f9d36074686",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 40
+        "drawingIndex": 40,
+        "bodyIndex": 115
       },
       "relationshipId": "rId45",
       "relationshipTarget": "word/media/image38.png",
@@ -5761,7 +5818,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:708ace5226dc82b6",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 41
+        "drawingIndex": 41,
+        "bodyIndex": 115
       },
       "relationshipId": "rId46",
       "relationshipTarget": "word/media/image39.png",
@@ -5775,7 +5833,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:77b8b92048f847c2",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 42
+        "drawingIndex": 42,
+        "bodyIndex": 115
       },
       "relationshipId": "rId47",
       "relationshipTarget": "word/media/image40.png",
@@ -5789,7 +5848,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:1e65aeb1e6358ffc",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 43
+        "drawingIndex": 43,
+        "bodyIndex": 120
       },
       "relationshipId": "rId16",
       "relationshipTarget": "word/media/image9.png",
@@ -5803,7 +5863,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:55d563ebea5d79bb",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 44
+        "drawingIndex": 44,
+        "bodyIndex": 120
       },
       "relationshipId": "rId17",
       "relationshipTarget": "word/media/image10.png",
@@ -5817,7 +5878,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:98534e91f8fb7733",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 45
+        "drawingIndex": 45,
+        "bodyIndex": 120
       },
       "relationshipId": "rId18",
       "relationshipTarget": "word/media/image11.png",
@@ -5831,7 +5893,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:b7ba4d3cf2f67fac",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 46
+        "drawingIndex": 46,
+        "bodyIndex": 120
       },
       "relationshipId": "rId19",
       "relationshipTarget": "word/media/image12.png",
@@ -5845,7 +5908,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:ed7975ef4be8fa41",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 47
+        "drawingIndex": 47,
+        "bodyIndex": 125
       },
       "relationshipId": "rId20",
       "relationshipTarget": "word/media/image13.png",
@@ -5859,7 +5923,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:9e2f7c43265befba",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 48
+        "drawingIndex": 48,
+        "bodyIndex": 125
       },
       "relationshipId": "rId48",
       "relationshipTarget": "word/media/image41.png",
@@ -5873,7 +5938,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:86c7508dd6e7f1e8",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 49
+        "drawingIndex": 49,
+        "bodyIndex": 125
       },
       "relationshipId": "rId49",
       "relationshipTarget": "word/media/image42.png",
@@ -5887,7 +5953,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:27dacdd7ca4b836c",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 50
+        "drawingIndex": 50,
+        "bodyIndex": 125
       },
       "relationshipId": "rId21",
       "relationshipTarget": "word/media/image14.png",
@@ -5901,7 +5968,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:0ea773b0ebfd0fcf",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 51
+        "drawingIndex": 51,
+        "bodyIndex": 132
       },
       "relationshipId": "rId50",
       "relationshipTarget": "word/media/image43.png",
@@ -5915,7 +5983,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:bcc9804f65f78f2c",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 52
+        "drawingIndex": 52,
+        "bodyIndex": 138
       },
       "relationshipId": "rId51",
       "relationshipTarget": "word/media/image44.png",
@@ -5929,7 +5998,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:197adc048dc0cd8c",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 53
+        "drawingIndex": 53,
+        "bodyIndex": 138
       },
       "relationshipId": "rId22",
       "relationshipTarget": "word/media/image15.png",
@@ -5943,7 +6013,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:84a21020874e45b1",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 54
+        "drawingIndex": 54,
+        "bodyIndex": 143
       },
       "relationshipId": "rId52",
       "relationshipTarget": "word/media/image45.png",
@@ -5957,7 +6028,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:2036bfce51124187",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 55
+        "drawingIndex": 55,
+        "bodyIndex": 143
       },
       "relationshipId": "rId53",
       "relationshipTarget": "word/media/image46.png",
@@ -5971,7 +6043,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:475ecaf987f2dd46",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 56
+        "drawingIndex": 56,
+        "bodyIndex": 143
       },
       "relationshipId": "rId54",
       "relationshipTarget": "word/media/image47.png",
@@ -5985,7 +6058,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:90d858e75deedac4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 57
+        "drawingIndex": 57,
+        "bodyIndex": 143
       },
       "relationshipId": "rId55",
       "relationshipTarget": "word/media/image48.png",
@@ -5999,7 +6073,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:0011e3d2fef518db",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 58
+        "drawingIndex": 58,
+        "bodyIndex": 150
       },
       "relationshipId": "rId56",
       "relationshipTarget": "word/media/image49.png",
@@ -6013,7 +6088,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:2d0b873dfbeb927d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 59
+        "drawingIndex": 59,
+        "bodyIndex": 150
       },
       "relationshipId": "rId57",
       "relationshipTarget": "word/media/image50.png",
@@ -6027,7 +6103,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:56487be6f948967e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 60
+        "drawingIndex": 60,
+        "bodyIndex": 150
       },
       "relationshipId": "rId58",
       "relationshipTarget": "word/media/image51.png",
@@ -6041,7 +6118,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:34b040244856ef63",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 61
+        "drawingIndex": 61,
+        "bodyIndex": 155
       },
       "relationshipId": "rId59",
       "relationshipTarget": "word/media/image52.png",
@@ -6055,7 +6133,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:125c7e2d0d8b7008",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 62
+        "drawingIndex": 62,
+        "bodyIndex": 156
       },
       "relationshipId": "rId60",
       "relationshipTarget": "word/media/image53.png",
@@ -6069,7 +6148,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:6336d9a8dd018089",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 63
+        "drawingIndex": 63,
+        "bodyIndex": 168
       },
       "relationshipId": "rId41",
       "relationshipTarget": "word/media/image34.png",
@@ -6083,7 +6163,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:6de75861025b79bf",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 64
+        "drawingIndex": 64,
+        "bodyIndex": 168
       },
       "relationshipId": "rId42",
       "relationshipTarget": "word/media/image35.png",
@@ -6097,7 +6178,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:d1447971360673ea",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 65
+        "drawingIndex": 65,
+        "bodyIndex": 195
       },
       "relationshipId": "rId65",
       "relationshipTarget": "word/media/image54.png",
@@ -6111,7 +6193,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:47b3274e1c87e6cd",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 66
+        "drawingIndex": 66,
+        "bodyIndex": 200
       },
       "relationshipId": "rId66",
       "relationshipTarget": "word/media/image55.png",
@@ -6125,7 +6208,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:dadcd4eed89a26db",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 67
+        "drawingIndex": 67,
+        "bodyIndex": 210
       },
       "relationshipId": "rId67",
       "relationshipTarget": "word/media/image56.png",
@@ -6139,7 +6223,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:bc07888d326a05ad",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 68
+        "drawingIndex": 68,
+        "bodyIndex": 212
       },
       "relationshipId": "rId68",
       "relationshipTarget": "word/media/image57.png",
@@ -6153,7 +6238,8 @@
       "sourceRelationId": "src-d35e870ffcd7:relation:a84399802a682881",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 69
+        "drawingIndex": 69,
+        "bodyIndex": 227
       },
       "relationshipId": "rId69",
       "relationshipTarget": "word/media/image58.png",

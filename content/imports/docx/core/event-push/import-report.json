@@ -990,7 +990,8 @@
       "elementType": "table",
       "sourcePosition": {
         "part": "word/document.xml",
-        "tableIndex": 1
+        "tableIndex": 1,
+        "bodyIndex": 9
       },
       "rowCount": 1,
       "columnCount": 2,
@@ -1193,7 +1194,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:66bfec67d45107a2",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 9
       },
       "relationshipId": "rId7",
       "relationshipTarget": "word/media/image1.jpeg",
@@ -1207,7 +1209,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:6eb7054908af45b0",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 9
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image2.png",
@@ -1221,7 +1224,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:ac56a70ad2ffaf55",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 15
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image3.jpeg",
@@ -1235,7 +1239,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:8bde432a7dc52a52",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 4
+        "drawingIndex": 4,
+        "bodyIndex": 22
       },
       "relationshipId": "rId10",
       "relationshipTarget": "word/media/image4.png",
@@ -1249,7 +1254,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:b7f3b8263bbc9371",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 5
+        "drawingIndex": 5,
+        "bodyIndex": 25
       },
       "relationshipId": "rId11",
       "relationshipTarget": "word/media/image5.jpg",
@@ -1263,7 +1269,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:24cee540cf92d3ca",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 6
+        "drawingIndex": 6,
+        "bodyIndex": 29
       },
       "relationshipId": "rId12",
       "relationshipTarget": "word/media/image6.png",
@@ -1277,7 +1284,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:d470e24307a62caf",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 7
+        "drawingIndex": 7,
+        "bodyIndex": 31
       },
       "relationshipId": "rId13",
       "relationshipTarget": "word/media/image7.png",
@@ -1291,7 +1299,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:7bb6af8055add5f5",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 8
+        "drawingIndex": 8,
+        "bodyIndex": 38
       },
       "relationshipId": "rId14",
       "relationshipTarget": "word/media/image8.png",
@@ -1305,7 +1314,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:02723ac9c5aa5dfe",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 9
+        "drawingIndex": 9,
+        "bodyIndex": 51
       },
       "relationshipId": "rId15",
       "relationshipTarget": "word/media/image9.png",
@@ -1319,7 +1329,8 @@
       "sourceRelationId": "src-d47e51aa8321:relation:19dca643ffde8e4e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 10
+        "drawingIndex": 10,
+        "bodyIndex": 56
       },
       "relationshipId": "rId16",
       "relationshipTarget": "word/media/image10.jpeg",

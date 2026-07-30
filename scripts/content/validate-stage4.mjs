@@ -22,6 +22,9 @@ function runNode(relativePath) {
 }
 
 runNode('scripts/content/validate-stage3.mjs')
+runNode('scripts/content/validate-advanced-content.mjs')
+runNode('scripts/content/validate-document-structures.mjs')
+runNode('scripts/content/validate-formulas.mjs')
 runNode('tests/tools/damage-calculator-helpers.mjs')
 runNode('tests/tools/equipment-lookup-model.mjs')
 
@@ -49,42 +52,45 @@ for (const [id, route] of requiredPages) {
   }
 }
 
-const pendingSourceByPage = new Map([
+const authorizedSourceByPage = new Map([
   ['combat-pvp-arena', 'src-7d080e8d651b'],
   ['combat-encounter', 'src-d35e870ffcd7'],
   ['combat-endless-sea', 'src-51475ba227c9'],
   ['mechanics-damage-model', 'src-c8852cf69a7b'],
   ['topic-laguz', 'src-e2d43eca15b2'],
-  ['data-basic-attack-cd', 'src-0c5b7db892f6'],
 ])
 
-for (const [pageId, assetId] of pendingSourceByPage) {
+for (const [pageId, assetId] of authorizedSourceByPage) {
   const page = byId.get(pageId)
   if (!page) continue
   const sources = page.frontmatter.sources ?? []
-  const pending = sources.find((source) => source.assetId === assetId)
+  const authorized = sources.find((source) => source.assetId === assetId)
   if (
-    !pending ||
-    pending.permission !== 'pending' ||
-    pending.publicUse?.body !== false ||
-    pending.publicUse?.asset !== false
+    !authorized ||
+    authorized.permission !== 'authorized' ||
+    authorized.publicUse?.body !== true ||
+    authorized.publicUse?.asset !== false
   ) {
     failures.push(
-      `${pageId}: pending source ${assetId} must keep body and asset public use disabled`,
+      `${pageId}: authorized source ${assetId} must enable body use and keep raw assets private`,
     )
   }
-  const publicEvidence = sources.some(
-    (source) =>
-      ['official', 'wiki', 'author-post', 'forum', 'video'].includes(
-        source.sourceType,
-      ) &&
-      source.permission === 'quoted' &&
-      source.publicUse?.body === true &&
-      source.publicUse?.asset === false,
+}
+
+const dataSource = byId
+  .get('data-basic-attack-cd')
+  ?.frontmatter.sources?.find(
+    (source) => source.assetId === 'src-0c5b7db892f6',
   )
-  if (!publicEvidence) {
-    failures.push(`${pageId}: missing public quoted evidence`)
-  }
+if (
+  !dataSource ||
+  dataSource.permission !== 'pending' ||
+  dataSource.publicUse?.body !== false ||
+  dataSource.publicUse?.asset !== false
+) {
+  failures.push(
+    'data-basic-attack-cd: pending XLSX source must keep body and asset public use disabled',
+  )
 }
 
 const stage4Map = await readJson('content/migration/stage4-docx-map.json')
@@ -287,7 +293,8 @@ const report = {
     failures: failures.length,
   },
   requiredPageIds: [...requiredPages.keys()],
-  pendingSourceIds: [...pendingSourceByPage.values()],
+  authorizedSourceIds: [...authorizedSourceByPage.values()],
+  pendingSourceIds: ['src-0c5b7db892f6'],
   failures,
 }
 

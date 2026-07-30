@@ -82,17 +82,26 @@ const coreMigration = JSON.parse(
     'utf8',
   ),
 )
-const coreSourceById = new Map(
-  coreMigration.sources.map((source) => [source.sourceAssetId, source]),
+const advancedMigration = JSON.parse(
+  await readFile(
+    path.join(root, 'content', 'migrations', 'advanced-content-pages.json'),
+    'utf8',
+  ),
+)
+const pageSourceById = new Map(
+  [...coreMigration.sources, ...advancedMigration.sources].map((source) => [
+    source.sourceAssetId,
+    source,
+  ]),
 )
 
-function targetPagesForElement(sourceAssetId, element, fallbackPageId) {
-  const coreSource = coreSourceById.get(sourceAssetId)
-  if (!coreSource) return fallbackPageId ? [fallbackPageId] : []
-  const allPageIds = coreSource.pages.map((page) => page.pageId)
-  const bodyIndex = element.sourcePosition?.bodyIndex
+function targetPagesForPosition(sourceAssetId, sourcePosition, fallbackPageId) {
+  const pageSource = pageSourceById.get(sourceAssetId)
+  if (!pageSource) return fallbackPageId ? [fallbackPageId] : []
+  const allPageIds = pageSource.pages.map((page) => page.pageId)
+  const bodyIndex = sourcePosition?.bodyIndex
   if (Number.isInteger(bodyIndex)) {
-    const page = coreSource.pages.find(
+    const page = pageSource.pages.find(
       (candidate) =>
         bodyIndex >= candidate.sourceElementRange.bodyIndexStart &&
         bodyIndex < candidate.sourceElementRange.bodyIndexEndExclusive,
@@ -104,9 +113,9 @@ function targetPagesForElement(sourceAssetId, element, fallbackPageId) {
     }
     return [page.pageId]
   }
-  const tableIndex = element.sourcePosition?.tableIndex
+  const tableIndex = sourcePosition?.tableIndex
   if (Number.isInteger(tableIndex)) {
-    const page = coreSource.pages.find(
+    const page = pageSource.pages.find(
       (candidate) =>
         tableIndex >= candidate.sourceElementRange.tableIndexStart &&
         tableIndex < candidate.sourceElementRange.tableIndexEndExclusive,
@@ -121,6 +130,25 @@ function targetPagesForElement(sourceAssetId, element, fallbackPageId) {
   return allPageIds
 }
 
+function targetPagesForElement(
+  sourceAssetId,
+  element,
+  fallbackPageId,
+  mediaTargetsById,
+) {
+  if (
+    element.elementType === 'media' &&
+    mediaTargetsById.has(element.sourceElementId)
+  ) {
+    return mediaTargetsById.get(element.sourceElementId)
+  }
+  return targetPagesForPosition(
+    sourceAssetId,
+    element.sourcePosition,
+    fallbackPageId,
+  )
+}
+
 const elements = []
 const drawingRelations = []
 const docxSummaries = []
@@ -132,22 +160,47 @@ for (const importedAsset of docxImport.assets) {
     await readFile(path.join(root, importedAsset.outputs.report.path), 'utf8'),
   )
   const targetPageId = DOCX_PAGE_TARGETS.get(asset.id) ?? null
+  const sourceTargetPageIds =
+    pageSourceById.get(asset.id)?.pages.map((page) => page.pageId) ??
+    (targetPageId ? [targetPageId] : [])
+  const relationTargets = report.drawingRelations.map((relation) => ({
+    relation,
+    targetPageIds: targetPagesForPosition(
+      asset.id,
+      relation.sourcePosition,
+      targetPageId,
+    ),
+  }))
+  const mediaTargetsById = new Map()
+  for (const { relation, targetPageIds } of relationTargets) {
+    if (!relation.targetMediaElementId) continue
+    const targets = mediaTargetsById.get(relation.targetMediaElementId) ?? []
+    mediaTargetsById.set(
+      relation.targetMediaElementId,
+      sourceTargetPageIds.filter(
+        (pageId) =>
+          targets.includes(pageId) || targetPageIds.includes(pageId),
+      ),
+    )
+  }
   elements.push(
     ...report.elements.map((element) =>
       migrationDecision(
         asset,
         element,
-        targetPagesForElement(asset.id, element, targetPageId),
+        targetPagesForElement(
+          asset.id,
+          element,
+          targetPageId,
+          mediaTargetsById,
+        ),
       ),
     ),
   )
-  const sourceTargetPageIds =
-    coreSourceById.get(asset.id)?.pages.map((page) => page.pageId) ??
-    (targetPageId ? [targetPageId] : [])
   drawingRelations.push(
-    ...report.drawingRelations.map((relation) => ({
+    ...relationTargets.map(({ relation, targetPageIds }) => ({
       ...relation,
-      targetPageIds: sourceTargetPageIds,
+      targetPageIds,
       authorizationEvidenceId: asset.authorization.evidenceId,
       ...reviewersFor(asset),
       status:

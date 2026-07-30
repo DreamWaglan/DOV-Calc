@@ -19,6 +19,9 @@ const ledger = await loadSourceLedger()
 const coreMigration = JSON.parse(
   await readFile('content/migrations/core-content-pages.json', 'utf8'),
 )
+const advancedMigration = JSON.parse(
+  await readFile('content/migrations/advanced-content-pages.json', 'utf8'),
+)
 const failures = []
 
 const ajv = new Ajv({ allErrors: true, strict: false })
@@ -215,9 +218,16 @@ if (tableWithoutDisposition !== 0) {
 let staleCoreOverviewTargets = 0
 let invalidCoreSplitTargets = 0
 const coreOverviewIds = new Set(
-  coreMigration.editorialOverviews.map((page) => page.pageId),
+  [
+    ...coreMigration.editorialOverviews,
+    ...advancedMigration.editorialOverviews,
+  ].map((page) => page.pageId),
 )
-for (const source of coreMigration.sources) {
+const pageMigrationSources = [
+  ...coreMigration.sources,
+  ...advancedMigration.sources,
+]
+for (const source of pageMigrationSources) {
   const allowedTargets = new Set(source.pages.map((page) => page.pageId))
   const sourceEntries = [
     ...map.elements.filter(
@@ -268,10 +278,29 @@ for (const source of coreMigration.sources) {
         `${entry.sourceElementId ?? entry.sourceRelationId}: expected owning page ${owningPage.pageId}`,
       )
     }
-    if (!owningPage && entry.targetPageIds.length !== allowedTargets.size) {
+    const mediaRelationTargets =
+      entry.elementType === 'media'
+        ? new Set(
+            map.drawingRelations
+              .filter(
+                (relation) =>
+                  relation.targetMediaElementId === entry.sourceElementId,
+              )
+              .flatMap((relation) => relation.targetPageIds),
+          )
+        : new Set()
+    const expectedUnlocatedTargets =
+      mediaRelationTargets.size > 0 ? mediaRelationTargets : allowedTargets
+    if (
+      !owningPage &&
+      (entry.targetPageIds.length !== expectedUnlocatedTargets.size ||
+        entry.targetPageIds.some(
+          (targetPageId) => !expectedUnlocatedTargets.has(targetPageId),
+        ))
+    ) {
       invalidCoreSplitTargets += 1
       failures.push(
-        `${entry.sourceElementId ?? entry.sourceRelationId}: unresolved placement must retain all ${allowedTargets.size} split-page candidates`,
+        `${entry.sourceElementId ?? entry.sourceRelationId}: unresolved placement targets do not match drawing evidence or all split-page candidates`,
       )
     }
   }
@@ -341,8 +370,8 @@ const report = {
       total: tableElements.length,
       withoutMappedDisposition: tableWithoutDisposition,
     },
-    coreSplitOwnership: {
-      sources: coreMigration.sources.length,
+    pageOwnership: {
+      sources: pageMigrationSources.length,
       staleOverviewTargets: staleCoreOverviewTargets,
       invalidTargets: invalidCoreSplitTargets,
     },

@@ -1,67 +1,38 @@
 ---
 id: topic-laguz
-title: 拉古兹专题
-description: 从公开世界观和战斗资料整理拉古兹的定位、阅读入口与待补充机制，不搬运待授权专题文档。
+title: "拉古兹专题"
+description: "拉古兹授权资料的专题入口，连接完整迁移正文与相关伤害机制。"
 section: topics
-order: 440
-audience: [beginner, regular, advanced]
-contentType: topic
+order: 510
+audience: ["regular","advanced"]
+contentType: guide
 gameVersion: "2026-07"
-sourceUpdatedAt: "2026-07-29"
-verifiedAt: "2026-07-29"
+sourceUpdatedAt: "2026-07-21"
+verifiedAt: "2026-07-30"
 status: draft
 authors:
-  - name: DOV-Calc 内容组
-    role: 专题编辑
+  - name: DOV-Calc 内容维护组
+    role: 授权资料迁移编辑
 reviewers:
-  - name: 待指派
-    role: 世界观与机制审核
+  - name: DOV-Calc 事实审核组
+    role: 进阶内容事实审核
 sources:
-  - title: 拂曉：勝利之刻 Google Play 页面
-    url: "https://play.google.com/store/apps/details?hl=zh&id=com.csoft.warship2"
-    sourceType: official
-    updatedAt: "2026-06-30"
-    permission: quoted
-    publicUse:
-      body: true
-      asset: false
-      quoteOnly: true
-  - title: 拂晓：胜利之刻缘起东方
-    url: "https://www.gamekee.com/fxslzk/686809.html"
-    sourceType: wiki
-    permission: quoted
-    publicUse:
-      body: true
-      asset: false
-      quoteOnly: true
-  - title: 9 拉古兹专题.docx
+  - title: "9 拉古兹专题.docx"
     assetId: src-e2d43eca15b2
     sourceType: docx
-    permission: pending
+    permission: authorized
     publicUse:
-      body: false
+      body: true
       asset: false
-    notes: 仅用于内部目录与事实复核，不复制正文、图片或专题表格。
-tags: [拉古兹, 世界观, 敌方机制]
-related: [start-game-introduction, mechanics-damage-model, combat-endless-sea]
+    notes: 已迁移授权正文；原始 DOCX 下载不公开，媒体派生在 Phase 5 单独审核。
+tags: ["拉古兹","专题","攻略"]
+related: ["topic-laguz-guide","mechanics-damage-bonuses"]
 ---
-
 # 拉古兹专题
 
-公开商店的世界观介绍把拉古兹描述为突然出现、对各方发动攻击的远古海洋势力。玩家以指挥官身份唤醒舰灵，与其争夺被侵蚀的海域。
+授权原稿没有可依赖的 Word 标题层级，因此本阶段保留为一个连续、可搜索的来源页，避免按猜测拆分语义边界。
 
-## 这个专题准备解决什么
+- [阅读完整资料](./laguz/guide)
+- [查看伤害构成中的拉古兹增伤位置](../mechanics/damage-bonuses)
 
-- 剧情中的拉古兹势力和主要事件；
-- 战斗中不同敌舰的职责与威胁；
-- 自爆、控制、持续伤害等需要单独处理的机制；
-- 拉古兹相关增伤、减伤和伤害类型的证据；
-- 主线、活动与无尽海域里的差异。
-
-## 当前能安全确认的内容
-
-公开剧情页出现了拉古兹攻势和自爆艇等描述。社区战斗资料也会把部分高压敌舰按功能分类，但具体伤害类型、数值和应对装备仍需要版本化证据。
-
-## 当前没有公开的内容
-
-本地《拉古兹专题》仍在确认作者与公开许可。因此，本页不会搬运其中的敌舰图鉴、数值表、截图和详细结论。后续只有在许可明确、事实复核完成后，才会把相应条目改为当前状态。
+完整资料页保持草稿状态，媒体说明和版本事实将在后续审核中关闭。

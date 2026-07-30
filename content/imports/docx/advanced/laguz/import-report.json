@@ -2794,7 +2794,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:52476ac317c514cd",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 1
+        "drawingIndex": 1,
+        "bodyIndex": 25
       },
       "relationshipId": "rId4",
       "relationshipTarget": "word/media/image1.png",
@@ -2808,7 +2809,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:92269c5218de1233",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 2
+        "drawingIndex": 2,
+        "bodyIndex": 27
       },
       "relationshipId": "rId5",
       "relationshipTarget": "word/media/image2.png",
@@ -2822,7 +2824,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:19526ad47f4549e3",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 3
+        "drawingIndex": 3,
+        "bodyIndex": 55
       },
       "relationshipId": "rId6",
       "relationshipTarget": "word/media/image3.png",
@@ -2836,7 +2839,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:7450efd0edd77247",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 4
+        "drawingIndex": 4,
+        "bodyIndex": 59
       },
       "relationshipId": "rId7",
       "relationshipTarget": "word/media/image4.png",
@@ -2850,7 +2854,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:1a1d32f0b98b7446",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 5
+        "drawingIndex": 5,
+        "bodyIndex": 59
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image5.png",
@@ -2864,7 +2869,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:4da54b6576f967eb",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 6
+        "drawingIndex": 6,
+        "bodyIndex": 63
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image6.png",
@@ -2878,7 +2884,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:80d33ce2b4919c03",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 7
+        "drawingIndex": 7,
+        "bodyIndex": 63
       },
       "relationshipId": "rId10",
       "relationshipTarget": "word/media/image7.png",
@@ -2892,7 +2899,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:19a470b9ea5171e1",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 8
+        "drawingIndex": 8,
+        "bodyIndex": 67
       },
       "relationshipId": "rId11",
       "relationshipTarget": "word/media/image8.png",
@@ -2906,7 +2914,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:9d5ad7eae2e2b0cb",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 9
+        "drawingIndex": 9,
+        "bodyIndex": 67
       },
       "relationshipId": "rId12",
       "relationshipTarget": "word/media/image9.png",
@@ -2920,7 +2929,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:8f7a12cd7fffc2eb",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 10
+        "drawingIndex": 10,
+        "bodyIndex": 70
       },
       "relationshipId": "rId13",
       "relationshipTarget": "word/media/image10.png",
@@ -2934,7 +2944,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:d4b0a587046856d5",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 11
+        "drawingIndex": 11,
+        "bodyIndex": 73
       },
       "relationshipId": "rId14",
       "relationshipTarget": "word/media/image11.png",
@@ -2948,7 +2959,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:01d4975a2f8441f6",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 12
+        "drawingIndex": 12,
+        "bodyIndex": 73
       },
       "relationshipId": "rId15",
       "relationshipTarget": "word/media/image12.png",
@@ -2962,7 +2974,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:b342805934dd03b4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 13
+        "drawingIndex": 13,
+        "bodyIndex": 77
       },
       "relationshipId": "rId16",
       "relationshipTarget": "word/media/image13.png",
@@ -2976,7 +2989,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:c1cb1407a7a5d469",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 14
+        "drawingIndex": 14,
+        "bodyIndex": 78
       },
       "relationshipId": "rId17",
       "relationshipTarget": "word/media/image14.png",
@@ -2990,7 +3004,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:2271b513ae77e896",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 15
+        "drawingIndex": 15,
+        "bodyIndex": 79
       },
       "relationshipId": "rId18",
       "relationshipTarget": "word/media/image15.png",
@@ -3004,7 +3019,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:c7be5c546cc9f4e8",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 16
+        "drawingIndex": 16,
+        "bodyIndex": 80
       },
       "relationshipId": "rId19",
       "relationshipTarget": "word/media/image16.png",
@@ -3018,7 +3034,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:7a7822f6fcdb1486",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 17
+        "drawingIndex": 17,
+        "bodyIndex": 81
       },
       "relationshipId": "rId20",
       "relationshipTarget": "word/media/image17.png",
@@ -3032,7 +3049,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:c0e75b5c2dd09f65",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 18
+        "drawingIndex": 18,
+        "bodyIndex": 82
       },
       "relationshipId": "rId21",
       "relationshipTarget": "word/media/image18.png",
@@ -3046,7 +3064,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:d52ad5b275dd8e3e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 19
+        "drawingIndex": 19,
+        "bodyIndex": 90
       },
       "relationshipId": "rId22",
       "relationshipTarget": "word/media/image19.png",
@@ -3060,7 +3079,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:6016d80b2581df1d",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 20
+        "drawingIndex": 20,
+        "bodyIndex": 92
       },
       "relationshipId": "rId23",
       "relationshipTarget": "word/media/image20.png",
@@ -3074,7 +3094,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:6345d80d88ec24b3",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 21
+        "drawingIndex": 21,
+        "bodyIndex": 96
       },
       "relationshipId": "rId24",
       "relationshipTarget": "word/media/image21.png",
@@ -3088,7 +3109,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:83cf772a8a2d1625",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 22
+        "drawingIndex": 22,
+        "bodyIndex": 98
       },
       "relationshipId": "rId25",
       "relationshipTarget": "word/media/image22.png",
@@ -3102,7 +3124,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:9af93c205063b179",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 23
+        "drawingIndex": 23,
+        "bodyIndex": 100
       },
       "relationshipId": "rId26",
       "relationshipTarget": "word/media/image23.png",
@@ -3116,7 +3139,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:85f13ee1076dabe9",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 24
+        "drawingIndex": 24,
+        "bodyIndex": 108
       },
       "relationshipId": "rId27",
       "relationshipTarget": "word/media/image24.png",
@@ -3130,7 +3154,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:e41c319b422062de",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 25
+        "drawingIndex": 25,
+        "bodyIndex": 116
       },
       "relationshipId": "rId28",
       "relationshipTarget": "word/media/image25.png",
@@ -3144,7 +3169,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:90d51d7e83356e93",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 26
+        "drawingIndex": 26,
+        "bodyIndex": 119
       },
       "relationshipId": "rId29",
       "relationshipTarget": "word/media/image26.jpeg",
@@ -3158,7 +3184,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:5245780c05a86ac7",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 27
+        "drawingIndex": 27,
+        "bodyIndex": 119
       },
       "relationshipId": "rId30",
       "relationshipTarget": "word/media/image27.jpeg",
@@ -3172,7 +3199,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:4ef4fa6532f69b95",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 28
+        "drawingIndex": 28,
+        "bodyIndex": 125
       },
       "relationshipId": "rId31",
       "relationshipTarget": "word/media/image28.png",
@@ -3186,7 +3214,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:fd22e10355cc915c",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 29
+        "drawingIndex": 29,
+        "bodyIndex": 130
       },
       "relationshipId": "rId32",
       "relationshipTarget": "word/media/image29.png",
@@ -3200,7 +3229,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:b963bcfb79e3fd2b",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 30
+        "drawingIndex": 30,
+        "bodyIndex": 137
       },
       "relationshipId": "rId33",
       "relationshipTarget": "word/media/image30.png",
@@ -3214,7 +3244,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:d7a23da5c55b201e",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 31
+        "drawingIndex": 31,
+        "bodyIndex": 142
       },
       "relationshipId": "rId34",
       "relationshipTarget": "word/media/image31.png",
@@ -3228,7 +3259,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:e4a8befd87ff2221",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 32
+        "drawingIndex": 32,
+        "bodyIndex": 147
       },
       "relationshipId": "rId35",
       "relationshipTarget": "word/media/image32.png",
@@ -3242,7 +3274,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:1f8cee9c6b64140f",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 33
+        "drawingIndex": 33,
+        "bodyIndex": 154
       },
       "relationshipId": "rId36",
       "relationshipTarget": "word/media/image33.jpeg",
@@ -3256,7 +3289,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:ee76386f22952255",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 34
+        "drawingIndex": 34,
+        "bodyIndex": 159
       },
       "relationshipId": "rId37",
       "relationshipTarget": "word/media/image34.png",
@@ -3270,7 +3304,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:999d9ebd0e94de71",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 35
+        "drawingIndex": 35,
+        "bodyIndex": 165
       },
       "relationshipId": "rId38",
       "relationshipTarget": "word/media/image35.png",
@@ -3284,7 +3319,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:0c79227a8af325e4",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 36
+        "drawingIndex": 36,
+        "bodyIndex": 172
       },
       "relationshipId": "rId39",
       "relationshipTarget": "word/media/image36.png",
@@ -3298,7 +3334,8 @@
       "sourceRelationId": "src-e2d43eca15b2:relation:ef3c5414e5e75894",
       "sourcePosition": {
         "part": "word/document.xml",
-        "drawingIndex": 37
+        "drawingIndex": 37,
+        "bodyIndex": 180
       },
       "relationshipId": "rId40",
       "relationshipTarget": "word/media/image37.png",

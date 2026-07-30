@@ -394,18 +394,33 @@ if (new Set(queryIds).size !== queryIds.length) {
   failures.push('查询样本 ID 不唯一')
 }
 
-const phase3SplitTargets = [
+const requiredSplitTargets = [
   'start-new-account',
   'progression-leveling-locations',
   'combat-pve-ship-roles',
   'progression-leveling-strategy',
   'start-daily-and-events',
+  'combat-pvp-fundamentals',
+  'combat-pvp-rules-and-fleet',
+  'combat-pvp-reference-teams',
+  'combat-encounter-preparation',
+  'combat-encounter-practice',
+  'combat-encounter-appendix',
+  'combat-endless-sea-basics',
+  'combat-endless-sea-mechanics',
+  'combat-endless-sea-team-building',
+  'mechanics-damage-formula-overview',
+  'mechanics-attack-power',
+  'mechanics-defense-power',
+  'mechanics-damage-bonuses',
+  'mechanics-hit-critical',
+  'topic-laguz-guide',
 ]
-for (const pageId of phase3SplitTargets) {
+for (const pageId of requiredSplitTargets) {
   if (
     !fixture.queries.some((query) => query.targetPageIds.includes(pageId))
   ) {
-    failures.push(`Phase 3 拆分页缺少搜索回归样本：${pageId}`)
+    failures.push(`拆分页缺少搜索回归样本：${pageId}`)
   }
 }
 

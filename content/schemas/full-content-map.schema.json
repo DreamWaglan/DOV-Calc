@@ -86,6 +86,145 @@
         "omitted-with-rationale"
       ]
     },
+    "paragraphPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "part",
+        "bodyIndex",
+        "paragraphIndex"
+      ],
+      "properties": {
+        "part": {
+          "const": "word/document.xml"
+        },
+        "bodyIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "paragraphIndex": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "tablePosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "part",
+        "bodyIndex",
+        "tableIndex"
+      ],
+      "properties": {
+        "part": {
+          "const": "word/document.xml"
+        },
+        "bodyIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tableIndex": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "mediaPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packagePath",
+        "mediaIndex"
+      ],
+      "properties": {
+        "packagePath": {
+          "type": "string",
+          "pattern": "^word/media/"
+        },
+        "mediaIndex": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "formulaPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "part",
+        "bodyIndex",
+        "formulaIndex",
+        "ooxmlKind"
+      ],
+      "properties": {
+        "part": {
+          "const": "word/document.xml"
+        },
+        "bodyIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "formulaIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ooxmlKind": {
+          "enum": [
+            "m:oMath",
+            "m:oMathPara"
+          ]
+        }
+      }
+    },
+    "drawingPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "part",
+        "bodyIndex",
+        "drawingIndex"
+      ],
+      "properties": {
+        "part": {
+          "const": "word/document.xml"
+        },
+        "bodyIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "drawingIndex": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "worksheetPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "worksheet"
+      ],
+      "properties": {
+        "worksheet": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "imagePosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceFile"
+      ],
+      "properties": {
+        "sourceFile": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
     "asset": {
       "type": "object",
       "additionalProperties": false,
@@ -140,6 +279,7 @@
     },
     "element": {
       "type": "object",
+      "additionalProperties": true,
       "required": [
         "sourceAssetId",
         "sourceElementId",
@@ -218,7 +358,108 @@
           "type": "string",
           "minLength": 1
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "enum": [
+                  "paragraph",
+                  "heading"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/paragraphPosition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "table"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/tablePosition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "media"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/mediaPosition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "formula"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/formulaPosition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "worksheet"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/worksheetPosition"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "image"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourcePosition": {
+                "$ref": "#/$defs/imagePosition"
+              }
+            }
+          }
+        }
+      ]
     },
     "drawingRelation": {
       "type": "object",
@@ -245,7 +486,7 @@
           "pattern": "^src-[a-f0-9]{12}:relation:[a-f0-9]{16}$"
         },
         "sourcePosition": {
-          "type": "object"
+          "$ref": "#/$defs/drawingPosition"
         },
         "targetMediaElementId": {
           "type": [
