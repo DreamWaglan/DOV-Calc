@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { spawnSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
+import { existsSync } from 'node:fs'
 import { readdir, readFile, stat } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
@@ -86,10 +87,10 @@ async function fingerprint() {
   return entries.join('\n')
 }
 
-function run(script) {
+function run(script, env = {}) {
   const result = spawnSync(process.execPath, [script], {
     cwd: process.cwd(),
-    env: process.env,
+    env: { ...process.env, ...env },
     encoding: 'utf8',
     windowsHide: true,
   })
@@ -98,6 +99,15 @@ function run(script) {
     0,
     `${script} failed:\n${result.stdout}\n${result.stderr}`,
   )
+}
+
+const requiredAggregateReports = [
+  'content/reports/docx-import.json',
+  'content/reports/xlsx-import.json',
+  'content/reports/media-import.json',
+]
+if (requiredAggregateReports.some((report) => !existsSync(report))) {
+  run('scripts/content/import-source-corpus.mjs')
 }
 
 const before = await fingerprint()
@@ -113,5 +123,14 @@ assert.equal(
   after,
   before,
   'full source import and generated content pages must be byte-stable',
+)
+run('scripts/content/import-source-corpus.mjs', {
+  DOV_USE_COMMITTED_IMPORTS: '1',
+})
+const committedFallback = await fingerprint()
+assert.equal(
+  committedFallback,
+  before,
+  'committed import fallback must recreate the source-derived aggregate reports byte-for-byte',
 )
 console.log('full corpus and generated page determinism tests passed.')

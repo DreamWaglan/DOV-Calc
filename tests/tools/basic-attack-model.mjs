@@ -75,9 +75,9 @@ assert.deepEqual(
 
 const page = paginate(records, 2, PAGE_SIZE)
 assert.equal(page.page, 2)
-assert.equal(page.pageSize, 10)
-assert.equal(page.records.length, 10)
-assert.equal(page.pageCount, 23)
+assert.equal(page.pageSize, 6)
+assert.equal(page.records.length, 6)
+assert.equal(page.pageCount, 38)
 
 assert.deepEqual(resetBasicAttackState(), {
   query: '',

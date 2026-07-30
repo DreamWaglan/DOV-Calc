@@ -388,6 +388,11 @@ try {
       await capture(page, 'equipment-lookup-mobile-360')
     }
     if (route === '/tools/basic-attack-lookup') {
+      await page.waitForSelector('.tool-loading button', { timeout: 10_000 })
+      await page.click('.tool-loading button')
+      await page.waitForSelector('.basic-attack-explorer', {
+        timeout: 10_000,
+      })
       await page.$eval('.basic-attack-explorer', (element) =>
         element.scrollIntoView({ block: 'start' }),
       )
@@ -701,6 +706,8 @@ try {
     waitUntil: 'networkidle0',
     timeout: 45_000,
   })
+  await page.waitForSelector('.tool-loading button', { timeout: 10_000 })
+  await page.click('.tool-loading button')
   await page.waitForSelector('.basic-attack-explorer', { timeout: 10_000 })
   const basicAttackSearch = await page.$(
     '.basic-attack-explorer input[type="search"]',

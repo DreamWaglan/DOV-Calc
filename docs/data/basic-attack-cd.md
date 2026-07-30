@@ -35,7 +35,17 @@ related: ["data-index","tool-basic-attack-lookup","mechanics-damage-model","tool
 ---
 
 <script setup>
-import BasicAttackExplorer from '../.vitepress/components/BasicAttackExplorer.vue'
+import { markRaw, ref, shallowRef } from 'vue'
+
+const BasicAttackExplorer = shallowRef(null)
+const loadingBasicAttackExplorer = ref(false)
+
+async function loadBasicAttackExplorer() {
+  loadingBasicAttackExplorer.value = true
+  BasicAttackExplorer.value = markRaw(
+    (await import('../.vitepress/components/BasicAttackExplorer.vue')).default,
+  )
+}
 </script>
 
 # 舰灵普攻倍率与 CD 数据库
@@ -47,7 +57,17 @@ import BasicAttackExplorer from '../.vitepress/components/BasicAttackExplorer.vu
 
 ## 在线筛选
 
-<BasicAttackExplorer />
+<div v-if="!BasicAttackExplorer" class="tool-loading">
+  <p>查询器包含 225 条结构化记录，按需加载可减少移动端首屏开销。</p>
+  <button
+    type="button"
+    :disabled="loadingBasicAttackExplorer"
+    @click="loadBasicAttackExplorer"
+  >
+    {{ loadingBasicAttackExplorer ? '正在加载……' : '加载普攻查询器' }}
+  </button>
+</div>
+<BasicAttackExplorer v-else />
 
 ## 分工作表浏览
 

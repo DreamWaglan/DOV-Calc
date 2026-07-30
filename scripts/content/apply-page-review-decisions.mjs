@@ -1,9 +1,12 @@
 import { createHash } from 'node:crypto'
-import { readdir, readFile, writeFile } from 'node:fs/promises'
+import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { parse as parseYaml } from 'yaml'
-import { root } from './lib/content-utils.mjs'
+import {
+  root,
+  writeFileWithRetry as writeFile,
+} from './lib/content-utils.mjs'
 
 const REVIEWED_AT = '2026-07-30'
 const reviewedAgainst = process.argv.find((argument) =>

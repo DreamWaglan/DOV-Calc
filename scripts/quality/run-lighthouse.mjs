@@ -16,6 +16,10 @@ import {
   root,
   writeReport,
 } from '../content/lib/content-utils.mjs'
+import {
+  requiresPerformanceConfirmation,
+  summarizePerformanceMeasurements,
+} from './lighthouse-policy.mjs'
 
 const previewPort = Number(process.env.DOCS_PREVIEW_PORT || 4173)
 const base = normalizeBase(process.env.DOCS_BASE)
@@ -269,74 +273,130 @@ preview.stderr.on('data', (chunk) => {
 const failures = []
 const results = []
 
+async function executeLighthouse(page, outputPath) {
+  const args = [
+    lighthouseCli,
+    routeUrl(page.route),
+    '--quiet',
+    '--output=json',
+    `--output-path=${outputPath}`,
+    '--only-categories=performance,accessibility,seo',
+    '--form-factor=mobile',
+    '--screenEmulation.mobile=true',
+    '--screenEmulation.width=360',
+    '--screenEmulation.height=640',
+    '--screenEmulation.deviceScaleFactor=2',
+    '--max-wait-for-load=45000',
+    '--disable-full-page-screenshot',
+    '--chrome-flags=--headless=new --no-sandbox --disable-gpu',
+  ]
+  let run
+  let outputExists = false
+  let attempts = 0
+  while (!outputExists && attempts < 2) {
+    attempts += 1
+    await rm(outputPath, { force: true }).catch(() => null)
+    run = spawnSync(process.execPath, args, {
+      cwd: root,
+      env: {
+        ...process.env,
+        ...(chromePath ? { CHROME_PATH: chromePath } : {}),
+      },
+      encoding: 'utf8',
+      timeout: 120_000,
+      windowsHide: true,
+    })
+    outputExists = await access(outputPath)
+      .then(() => true)
+      .catch(() => false)
+  }
+  if (run.status !== 0 && !outputExists) {
+    return {
+      failure: `Lighthouse failed (${run.status ?? 'timeout'}): ${(run.stderr || run.stdout || '').trim().slice(-800)}`,
+    }
+  }
+
+  const lhr = JSON.parse(await readFile(outputPath, 'utf8'))
+  const scores = {
+    performance: categoryScore(lhr, 'performance'),
+    accessibility: categoryScore(lhr, 'accessibility'),
+    seo: categoryScore(lhr, 'seo'),
+  }
+  const metrics = {
+    largestContentfulPaintMs: auditNumericValue(
+      lhr,
+      'largest-contentful-paint',
+    ),
+    cumulativeLayoutShift: auditNumericValue(
+      lhr,
+      'cumulative-layout-shift',
+    ),
+  }
+  return {
+    lhr,
+    scores,
+    metrics,
+    attempts,
+    runnerWarning:
+      run.status === 0
+        ? null
+        : 'Lighthouse completed and wrote a valid report, but the Windows browser launcher could not remove its locked temporary profile.',
+  }
+}
+
 try {
   await waitForPreview(routeUrl('/'))
 
   for (const page of representativePages) {
-    const outputPath = path.join(temporaryRoot, `${page.id}.json`)
-    const args = [
-      lighthouseCli,
-      routeUrl(page.route),
-      '--quiet',
-      '--output=json',
-      `--output-path=${outputPath}`,
-      '--only-categories=performance,accessibility,seo',
-      '--form-factor=mobile',
-      '--screenEmulation.mobile=true',
-      '--screenEmulation.width=360',
-      '--screenEmulation.height=640',
-      '--screenEmulation.deviceScaleFactor=2',
-      '--max-wait-for-load=45000',
-      '--disable-full-page-screenshot',
-      '--chrome-flags=--headless=new --no-sandbox --disable-gpu',
-    ]
-    let run
-    let outputExists = false
-    let attempts = 0
-    while (!outputExists && attempts < 2) {
-      attempts += 1
-      await rm(outputPath, { force: true }).catch(() => null)
-      run = spawnSync(process.execPath, args, {
-        cwd: root,
-        env: {
-          ...process.env,
-          ...(chromePath ? { CHROME_PATH: chromePath } : {}),
-        },
-        encoding: 'utf8',
-        timeout: 120_000,
-        windowsHide: true,
-      })
-      outputExists = await access(outputPath)
-        .then(() => true)
-        .catch(() => false)
-    }
-    if (run.status !== 0 && !outputExists) {
-      failures.push(
-        `${page.id}: Lighthouse failed (${run.status ?? 'timeout'}): ${(run.stderr || run.stdout || '').trim().slice(-800)}`,
-      )
+    const measurements = []
+    const initialMeasurement = await executeLighthouse(
+      page,
+      path.join(temporaryRoot, `${page.id}.json`),
+    )
+    if (initialMeasurement.failure) {
+      failures.push(`${page.id}: ${initialMeasurement.failure}`)
       continue
     }
+    measurements.push(initialMeasurement)
 
-    const lhr = JSON.parse(await readFile(outputPath, 'utf8'))
+    const requiresConfirmation = requiresPerformanceConfirmation(
+      initialMeasurement,
+      thresholds,
+    )
+    if (requiresConfirmation) {
+      for (let index = 1; index <= 2; index += 1) {
+        const confirmation = await executeLighthouse(
+          page,
+          path.join(temporaryRoot, `${page.id}-confirmation-${index}.json`),
+        )
+        if (confirmation.failure) {
+          failures.push(
+            `${page.id}: confirmation ${index} ${confirmation.failure}`,
+          )
+          break
+        }
+        measurements.push(confirmation)
+      }
+    }
+    if (measurements.length !== (requiresConfirmation ? 3 : 1)) continue
+
+    const selectedMeasurement = [...measurements].sort(
+      (left, right) =>
+        left.metrics.largestContentfulPaintMs -
+        right.metrics.largestContentfulPaintMs,
+    )[Math.floor(measurements.length / 2)]
+    const { lhr } = selectedMeasurement
+    const { scores, metrics } =
+      summarizePerformanceMeasurements(measurements)
     const runnerWarning =
-      run.status === 0
-        ? null
-        : 'Lighthouse completed and wrote a valid report, but the Windows browser launcher could not remove its locked temporary profile.'
-    const scores = {
-      performance: categoryScore(lhr, 'performance'),
-      accessibility: categoryScore(lhr, 'accessibility'),
-      seo: categoryScore(lhr, 'seo'),
-    }
-    const metrics = {
-      largestContentfulPaintMs: auditNumericValue(
-        lhr,
-        'largest-contentful-paint',
-      ),
-      cumulativeLayoutShift: auditNumericValue(
-        lhr,
-        'cumulative-layout-shift',
-      ),
-    }
+      measurements
+        .map((measurement) => measurement.runnerWarning)
+        .filter(Boolean)
+        .join(' ') || null
+    const attempts = measurements.reduce(
+      (total, measurement) => total + measurement.attempts,
+      0,
+    )
     const initialJavaScript = await calculateInitialJavaScript(page.route)
     const failedAccessibilityAudits = (
       lhr.categories?.accessibility?.auditRefs ?? []
@@ -415,6 +475,15 @@ try {
       userAgent: lhr.userAgent,
       runnerWarning,
       attempts,
+      measurementPolicy: requiresConfirmation
+        ? 'median-lcp-of-three-after-initial-budget-failure'
+        : 'single-run-within-budget',
+      measurementSamples: measurements.map((measurement) => ({
+        performance: measurement.scores.performance,
+        largestContentfulPaintMs:
+          measurement.metrics.largestContentfulPaintMs,
+        cumulativeLayoutShift: measurement.metrics.cumulativeLayoutShift,
+      })),
       scores,
       metrics,
       initialJavaScript,

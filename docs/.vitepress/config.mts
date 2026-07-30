@@ -152,6 +152,9 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'DOV工具箱 - 拂晓胜利之刻工具站',
   description: '面向拂晓：胜利之刻玩家的计算器、资料整理和攻略笔记工具站',
+  shouldPreload(link) {
+    return !link.includes('BasicAttackExplorer.')
+  },
   cleanUrls: true,
   lastUpdated: true,
   head: [

@@ -177,7 +177,17 @@ function renderOverview(dataset, source) {
     ],
   })}
 <script setup>
-import BasicAttackExplorer from '../.vitepress/components/BasicAttackExplorer.vue'
+import { markRaw, ref, shallowRef } from 'vue'
+
+const BasicAttackExplorer = shallowRef(null)
+const loadingBasicAttackExplorer = ref(false)
+
+async function loadBasicAttackExplorer() {
+  loadingBasicAttackExplorer.value = true
+  BasicAttackExplorer.value = markRaw(
+    (await import('../.vitepress/components/BasicAttackExplorer.vue')).default,
+  )
+}
 </script>
 
 # 舰灵普攻倍率与 CD 数据库
@@ -189,7 +199,17 @@ import BasicAttackExplorer from '../.vitepress/components/BasicAttackExplorer.vu
 
 ## 在线筛选
 
-<BasicAttackExplorer />
+<div v-if="!BasicAttackExplorer" class="tool-loading">
+  <p>查询器包含 225 条结构化记录，按需加载可减少移动端首屏开销。</p>
+  <button
+    type="button"
+    :disabled="loadingBasicAttackExplorer"
+    @click="loadBasicAttackExplorer"
+  >
+    {{ loadingBasicAttackExplorer ? '正在加载……' : '加载普攻查询器' }}
+  </button>
+</div>
+<BasicAttackExplorer v-else />
 
 ## 分工作表浏览
 
@@ -231,14 +251,34 @@ function renderTool(dataset, source) {
     ],
   })}
 <script setup>
-import BasicAttackExplorer from '../.vitepress/components/BasicAttackExplorer.vue'
+import { markRaw, ref, shallowRef } from 'vue'
+
+const BasicAttackExplorer = shallowRef(null)
+const loadingBasicAttackExplorer = ref(false)
+
+async function loadBasicAttackExplorer() {
+  loadingBasicAttackExplorer.value = true
+  BasicAttackExplorer.value = markRaw(
+    (await import('../.vitepress/components/BasicAttackExplorer.vue')).default,
+  )
+}
 </script>
 
 # 普攻倍率查询器
 
 查询器与[普攻数据页](../data/basic-attack-cd)读取同一个规范数据集，共 ${dataset.metadata.recordCount} 条、${dataset.metadata.worksheetCount} 个工作表，适用版本为 ${dataset.metadata.version}。可按名称、舰种、伤害类型或备注搜索，并对倍率、CD 与射程执行稳定排序。
 
-<BasicAttackExplorer />
+<div v-if="!BasicAttackExplorer" class="tool-loading">
+  <p>查询器包含 225 条结构化记录，按需加载可减少移动端首屏开销。</p>
+  <button
+    type="button"
+    :disabled="loadingBasicAttackExplorer"
+    @click="loadBasicAttackExplorer"
+  >
+    {{ loadingBasicAttackExplorer ? '正在加载……' : '加载普攻查询器' }}
+  </button>
+</div>
+<BasicAttackExplorer v-else />
 
 ## 使用边界
 

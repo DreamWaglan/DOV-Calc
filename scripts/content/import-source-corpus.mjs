@@ -1,3 +1,6 @@
+import { createHash } from 'node:crypto'
+import { existsSync } from 'node:fs'
+import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { importDocx } from './import-docx.mjs'
@@ -47,8 +50,42 @@ function summarizeDocx(result) {
   }
 }
 
+async function loadCommittedImport(asset, reportPath) {
+  const reportBytes = await readFile(reportPath)
+  const report = JSON.parse(reportBytes.toString('utf8'))
+  if (report.assetId !== asset.id) {
+    throw new Error(
+      `${reportPath}: expected asset ${asset.id}, got ${report.assetId ?? 'missing'}`,
+    )
+  }
+  if (report.source?.sha256 !== asset.hashes.sha256) {
+    throw new Error(
+      `${reportPath}: source SHA-256 does not match the registered source asset`,
+    )
+  }
+  if (
+    report.permission !== asset.permission ||
+    report.authorizationEvidenceId !== asset.authorization?.evidenceId
+  ) {
+    throw new Error(
+      `${reportPath}: authorization metadata does not match the registered source asset`,
+    )
+  }
+  if (report.outputs && path.basename(reportPath) === 'import-report.json') {
+    report.outputs.report = {
+      path: reportPath.split(path.sep).join('/'),
+      sha256: createHash('sha256').update(reportBytes).digest('hex'),
+      bytes: reportBytes.length,
+    }
+  }
+  return report
+}
+
 const ledger = await loadSourceLedger()
 const sourceRoot = ledger.sourceRoot.path
+const useCommittedImports =
+  process.env.DOV_USE_COMMITTED_IMPORTS === '1' ||
+  process.argv.includes('--use-committed-imports')
 const docxAssets = ledger.assets.filter((asset) => asset.assetType === 'docx')
 const xlsxAssets = ledger.assets.filter((asset) => asset.assetType === 'xlsx')
 const imageAssets = ledger.assets.filter((asset) => asset.assetType === 'image')
@@ -60,32 +97,61 @@ if (docxAssets.length !== 13 || xlsxAssets.length !== 1 || imageAssets.length !=
 }
 
 const docxResults = []
+let committedDocxCount = 0
 for (const asset of docxAssets) {
   const outputDir = DOCX_OUTPUTS.get(asset.id)
   if (!outputDir) throw new Error(`Missing DOCX output mapping for ${asset.id}`)
-  const result = await importDocx({
-    sourcePath: resolveSource(sourceRoot, asset.origin.path),
-    assetId: asset.id,
-    outputDir,
-  })
+  const sourcePath = resolveSource(sourceRoot, asset.origin.path)
+  const importFromSource = !useCommittedImports && existsSync(sourcePath)
+  const result = importFromSource
+    ? await importDocx({
+        sourcePath,
+        assetId: asset.id,
+        outputDir,
+      })
+    : await loadCommittedImport(asset, path.join(outputDir, 'import-report.json'))
+  if (!importFromSource) committedDocxCount += 1
   docxResults.push(summarizeDocx(result))
 }
 
 const xlsxAsset = xlsxAssets[0]
-const xlsxResult = await importXlsx({
-  sourcePath: resolveSource(sourceRoot, xlsxAsset.origin.path),
-  assetId: xlsxAsset.id,
-  outputDir: 'content/imports/xlsx/basic-attack',
-})
+const xlsxSourcePath = resolveSource(sourceRoot, xlsxAsset.origin.path)
+const xlsxOutputDir = 'content/imports/xlsx/basic-attack'
+const importXlsxFromSource =
+  !useCommittedImports && existsSync(xlsxSourcePath)
+const xlsxResult = importXlsxFromSource
+  ? await importXlsx({
+      sourcePath: xlsxSourcePath,
+      assetId: xlsxAsset.id,
+      outputDir: xlsxOutputDir,
+    })
+  : await loadCommittedImport(
+      xlsxAsset,
+      path.join(xlsxOutputDir, 'import-report.json'),
+    )
+const committedXlsxCount = importXlsxFromSource ? 0 : 1
 
 const imageResults = []
+let committedImageCount = 0
 for (const asset of imageAssets) {
-  const result = await processImage({
-    sourcePath: resolveSource(sourceRoot, asset.origin.path),
-    assetId: asset.id,
-    outputDir: path.join('content', 'imports', 'images', 'source-ledger', asset.id),
-    generateDerivatives: false,
-  })
+  const sourcePath = resolveSource(sourceRoot, asset.origin.path)
+  const outputDir = path.join(
+    'content',
+    'imports',
+    'images',
+    'source-ledger',
+    asset.id,
+  )
+  const importFromSource = !useCommittedImports && existsSync(sourcePath)
+  const result = importFromSource
+    ? await processImage({
+        sourcePath,
+        assetId: asset.id,
+        outputDir,
+        generateDerivatives: false,
+      })
+    : await loadCommittedImport(asset, path.join(outputDir, 'manifest.json'))
+  if (!importFromSource) committedImageCount += 1
   imageResults.push({
     assetId: result.assetId,
     source: result.source,
@@ -126,7 +192,7 @@ await writeReport('media-import', {
 })
 
 console.log(
-  `Source corpus imported: ${docxResults.length} DOCX, ${xlsxResult.worksheetCount} XLSX worksheets, ${imageResults.length} standalone images.`,
+  `Source corpus materialized: ${docxResults.length} DOCX, ${xlsxResult.worksheetCount} XLSX worksheets, ${imageResults.length} standalone images; committed fallback used for ${committedDocxCount} DOCX, ${committedXlsxCount} XLSX, and ${committedImageCount} images.`,
 )
 
 export { DOCX_OUTPUTS, resolveSource }

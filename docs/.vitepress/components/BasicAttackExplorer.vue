@@ -267,6 +267,8 @@ function formatValue(value, key) {
   border: 1px solid var(--vp-c-divider);
   border-radius: 10px;
   background: var(--vp-c-bg);
+  content-visibility: auto;
+  contain-intrinsic-block-size: 540px;
 }
 
 .basic-attack-explorer__table table {

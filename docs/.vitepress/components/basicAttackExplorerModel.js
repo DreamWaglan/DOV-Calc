@@ -3,7 +3,7 @@ export const DEFAULT_SORT = Object.freeze({
   direction: 'asc',
 })
 
-export const PAGE_SIZE = 10
+export const PAGE_SIZE = 6
 
 export const sortOptions = Object.freeze([
   { key: 'name', label: '舰灵名称' },

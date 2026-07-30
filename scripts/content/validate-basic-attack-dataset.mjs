@@ -278,7 +278,7 @@ for (const [relativePath, page] of [
   if (!page.includes('status: current')) {
     failures.push(`${relativePath}: page is not current`)
   }
-  if (!page.includes('<BasicAttackExplorer />')) {
+  if (!/<BasicAttackExplorer(?:\s[^>]*)?\s*\/>/.test(page)) {
     failures.push(`${relativePath}: page does not use the shared explorer`)
   }
   if (!page.includes(String(dataset.metadata.recordCount))) {

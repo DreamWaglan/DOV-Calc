@@ -163,7 +163,7 @@ if (
   dataPage?.frontmatter.status !== 'current' ||
   !dataPage?.body.includes('225/225') ||
   !dataPage?.body.includes('原始 XLSX 与批量下载保持关闭') ||
-  !dataPage?.body.includes('<BasicAttackExplorer />')
+  !/<BasicAttackExplorer(?:\s[^>]*)?\s*\/>/.test(dataPage?.body ?? '')
 ) {
   failures.push(
     'data-basic-attack-cd: reviewed count, public boundary, and shared explorer must be visible',
