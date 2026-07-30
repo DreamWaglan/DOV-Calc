@@ -31,7 +31,7 @@
     "release:rollback": "node scripts/release/verify-rollback.mjs",
     "validate:stage5": "node scripts/quality/validate-stage5.mjs",
     "test:imports": "node scripts/test-imports.mjs",
-    "docs:dev": "pnpm content:schema && vitepress dev docs",
+    "docs:dev": "pnpm content:schema && vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
     "docs:build": "pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo",
     "docs:preview": "vitepress preview docs"
   },
