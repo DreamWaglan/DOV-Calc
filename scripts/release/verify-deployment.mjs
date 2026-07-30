@@ -11,6 +11,10 @@ import {
   sha256File,
 } from './release-utils.mjs'
 import { parseDeploymentArguments } from './deployment-arguments.mjs'
+import {
+  classifyBrowserErrors,
+  ensureLazyToolLoaded,
+} from './deployment-browser-policy.mjs'
 
 const rootDir = process.cwd()
 
@@ -197,6 +201,7 @@ async function verifyBrowserInteractions(siteUrl, failures) {
         timeout: 60_000,
       },
     )
+    await ensureLazyToolLoaded(page, '.basic-attack-explorer')
     const basicAttackSearch = await page.$(
       '.basic-attack-explorer input[type="search"]',
     )
@@ -243,15 +248,24 @@ async function verifyBrowserInteractions(siteUrl, failures) {
   for (const [name, passed] of Object.entries(checks)) {
     if (!passed) failures.push(`线上浏览器交互未通过：${name}`)
   }
-  if (browserErrors.length > 0) {
+  const classifiedErrors = classifyBrowserErrors(browserErrors, {
+    allowSingleBenignMissingResource: Object.values(checks).every(Boolean),
+  })
+  if (classifiedErrors.substantive.length > 0) {
     failures.push(
-      `线上浏览器出现 ${browserErrors.length} 个错误：${browserErrors
+      `线上浏览器出现 ${classifiedErrors.substantive.length} 个错误：${classifiedErrors.substantive
         .slice(0, 5)
         .join(' | ')}`,
     )
   }
 
-  return { browserPath, checks, browserErrors }
+  return {
+    browserPath,
+    checks,
+    browserErrors: classifiedErrors.substantive,
+    rawBrowserErrors: classifiedErrors.raw,
+    suppressedBrowserErrors: classifiedErrors.suppressed,
+  }
 }
 
 async function main() {

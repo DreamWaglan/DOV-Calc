@@ -32,6 +32,7 @@ const checks = [
   'tests/quality/lighthouse-policy.mjs',
   'tests/quality/traceability-policy.mjs',
   'tests/release/deployment-arguments.mjs',
+  'tests/release/deployment-browser-policy.mjs',
   'scripts/quality/staleness-report.mjs',
 ]
 
