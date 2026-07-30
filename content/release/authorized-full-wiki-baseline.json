@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "baselineId": "authorized-full-wiki-phase-0",
+  "capturedAt": "2026-07-30T02:51:53.903Z",
+  "repository": {
+    "branch": "codex/authorized-full-wiki",
+    "commit": "cc39449",
+    "rollbackTag": "wiki-v1.0.0",
+    "rollbackCommit": "fe3370eaa2790d583411b55a345dcb981845201b"
+  },
+  "workspace": {
+    "trackedDirtyEntries": 0,
+    "docsDev": {
+      "url": "http://127.0.0.1:5173/DOV-Calc/",
+      "expectedStatus": 200,
+      "verified": true,
+      "host": "127.0.0.1",
+      "port": 5173,
+      "strictPort": true
+    }
+  },
+  "content": {
+    "pages": 33,
+    "pageStatuses": {
+      "current": 19,
+      "draft": 13,
+      "stale": 1
+    },
+    "sourceAssets": {
+      "total": 29,
+      "totalSizeBytes": 237270452,
+      "docx": 13,
+      "xlsx": 1,
+      "images": 15,
+      "pending": 29,
+      "needsReview": 29
+    },
+    "importedContentDocx": {
+      "files": 11,
+      "paragraphs": 2890,
+      "headings": 399,
+      "tables": 165,
+      "drawings": 977,
+      "media": 585,
+      "formulas": 24
+    },
+    "equipmentRecords": 93,
+    "pendingStructuredData": {
+      "worksheets": 7,
+      "records": 225,
+      "publishable": false
+    }
+  },
+  "quality": {
+    "repositoryTests": {
+      "command": "pnpm test",
+      "passed": true
+    },
+    "documentationBuild": {
+      "command": "pnpm docs:build",
+      "passed": true,
+      "pages": 33
+    },
+    "builtSearch": {
+      "queries": 60,
+      "topFiveRatePercent": 100,
+      "exactTopOneRatePercent": 100
+    },
+    "e2e": {
+      "pageChecks": 14,
+      "desktopChecks": 8,
+      "mobileChecks": 6,
+      "browserErrors": 0,
+      "failures": 0
+    },
+    "lighthouse": {
+      "representativePages": 5,
+      "minimumPerformance": 0.99,
+      "minimumAccessibility": 1,
+      "minimumSeoForIndexablePages": 1,
+      "maximumLcpMs": 1917.118,
+      "maximumCls": 0,
+      "maximumInitialJavaScriptGzipBytes": 76533,
+      "failures": 0
+    },
+    "baseBuilds": {
+      "cases": 2,
+      "passed": 2,
+      "failures": 0
+    }
+  },
+  "release": {
+    "version": "1.0.0",
+    "tag": "wiki-v1.0.0",
+    "state": "tagged",
+    "deploymentTarget": "github-pages",
+    "deploymentState": "not-verified",
+    "siteBase": "/DOV-Calc/"
+  },
+  "evidence": [
+    {
+      "path": "content/governance/source-assets.json",
+      "sha256": "9938903c5e48be3c675c7c568ff3256516fbabaf2754fed94a45f6cd5464c1a9"
+    },
+    {
+      "path": "content/reports/content-schema.json",
+      "sha256": "1e0d31296423ebc179345011c7bf930f30e3016b8d5ef349746846392c8abe77"
+    },
+    {
+      "path": "content/reports/search-quality-built.json",
+      "sha256": "f647f62aae582e3efac6b5bc4a8e75e80131b24d71b5c1325edda765b7c91db7"
+    },
+    {
+      "path": "content/reports/e2e-smoke.json",
+      "sha256": "21f8e9fcd4370a91fafc36709ab49170e989577f67b5b87ca86c10caa877476a"
+    },
+    {
+      "path": "content/reports/performance-accessibility.json",
+      "sha256": "1206e1bc0aa48a25f9af8e414ca9273abf2f781841284cbcb530b2964911430f"
+    },
+    {
+      "path": "content/reports/base-builds.json",
+      "sha256": "5ef06f39d8b1eadeb112d5d6d16b8013c006df3fd096d2de9a9ac7cbd3a4c60f"
+    },
+    {
+      "path": "content/reports/stage5-release-readiness.json",
+      "sha256": "ad7a50e8ac86de8cb8021be23b875aab0465a15893a14b31803fc8d3d2cebb16"
+    },
+    {
+      "path": "content/release/release-manifest.json",
+      "sha256": "56f7bf50b3542a8c57422c571c51ed9727bd6b38571751b18fe5a7c7e3ec353c"
+    },
+    {
+      "path": "content/imports/xlsx/basic-attack/import-report.json",
+      "sha256": "543c2d2c67c6ccdc42289e565941593d9213727b39d3625038028eb8e0a2b855"
+    },
+    {
+      "path": "content/governance/version-baselines.json",
+      "sha256": "7270f0dd4bf91105cfae454e875c8f20fa636e53934e36447d3408ed8540cccb"
+    }
+  ]
+}
