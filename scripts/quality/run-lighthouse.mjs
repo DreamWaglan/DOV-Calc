@@ -41,36 +41,48 @@ const representativePages = [
     id: 'long-guide',
     route: '/progression/leveling',
     kind: 'long-form-guide',
-    seoPolicy: 'intentional-noindex',
+    seoPolicy: 'indexable',
   },
   {
     id: 'data-table',
     route: '/data/basic-attack-cd',
     kind: 'data-page',
-    seoPolicy: 'intentional-noindex',
+    seoPolicy: 'indexable',
   },
   {
     id: 'long-image-text',
     route: '/topics/new-player-checklist',
     kind: 'long-image-text-equivalent',
-    seoPolicy: 'intentional-noindex',
+    seoPolicy: 'indexable',
   },
   {
     id: 'visual-media-index',
     route: '/topics/visual-guides/',
     kind: 'responsive-media-index',
-    seoPolicy: 'intentional-noindex',
+    seoPolicy: 'indexable',
   },
   {
     id: 'segmented-long-image',
     route: '/topics/visual-guides/src-ec1754535996',
     kind: 'segmented-responsive-image',
-    seoPolicy: 'intentional-noindex',
+    seoPolicy: 'indexable',
   },
   {
     id: 'damage-calculator',
     route: '/tools/dov-basic',
     kind: 'interactive-tool',
+    seoPolicy: 'indexable',
+  },
+  {
+    id: 'equipment-lookup',
+    route: '/tools/equipment-lookup',
+    kind: 'interactive-data-tool',
+    seoPolicy: 'indexable',
+  },
+  {
+    id: 'basic-attack-lookup',
+    route: '/tools/basic-attack-lookup',
+    kind: 'interactive-data-tool',
     seoPolicy: 'indexable',
   },
 ]
@@ -80,7 +92,7 @@ const thresholds = {
   seo: 0.9,
   largestContentfulPaintMs: 2500,
   cumulativeLayoutShift: 0.1,
-  initialJavaScriptGzipBytes: 250 * 1024,
+  initialJavaScriptGzipBytes: 250_000,
 }
 const releaseBlockingAccessibilityAudits = new Set([
   'aria-allowed-attr',
@@ -278,20 +290,26 @@ try {
       '--disable-full-page-screenshot',
       '--chrome-flags=--headless=new --no-sandbox --disable-gpu',
     ]
-    const run = spawnSync(process.execPath, args, {
-      cwd: root,
-      env: {
-        ...process.env,
-        ...(chromePath ? { CHROME_PATH: chromePath } : {}),
-      },
-      encoding: 'utf8',
-      timeout: 120_000,
-      windowsHide: true,
-    })
-
-    const outputExists = await access(outputPath)
-      .then(() => true)
-      .catch(() => false)
+    let run
+    let outputExists = false
+    let attempts = 0
+    while (!outputExists && attempts < 2) {
+      attempts += 1
+      await rm(outputPath, { force: true }).catch(() => null)
+      run = spawnSync(process.execPath, args, {
+        cwd: root,
+        env: {
+          ...process.env,
+          ...(chromePath ? { CHROME_PATH: chromePath } : {}),
+        },
+        encoding: 'utf8',
+        timeout: 120_000,
+        windowsHide: true,
+      })
+      outputExists = await access(outputPath)
+        .then(() => true)
+        .catch(() => false)
+    }
     if (run.status !== 0 && !outputExists) {
       failures.push(
         `${page.id}: Lighthouse failed (${run.status ?? 'timeout'}): ${(run.stderr || run.stdout || '').trim().slice(-800)}`,
@@ -352,7 +370,7 @@ try {
       page.seoPolicy === 'intentional-noindex' &&
       !failedSeoAudits.some((audit) => audit.id === 'is-crawlable')
     ) {
-      failures.push(`${page.id}: draft page is unexpectedly crawlable`)
+      failures.push(`${page.id}: noindex page is unexpectedly crawlable`)
     }
     if (unexpectedSeoAudits.length) {
       failures.push(
@@ -377,7 +395,7 @@ try {
       thresholds.initialJavaScriptGzipBytes
     ) {
       failures.push(
-        `${page.id}: initial JavaScript ${initialJavaScript.gzipBytes} B gzip > 256000 B`,
+        `${page.id}: initial JavaScript ${initialJavaScript.gzipBytes} B gzip > 250000 B`,
       )
     }
     if (releaseBlockingAudits.length) {
@@ -396,6 +414,7 @@ try {
       fetchTime: lhr.fetchTime,
       userAgent: lhr.userAgent,
       runnerWarning,
+      attempts,
       scores,
       metrics,
       initialJavaScript,

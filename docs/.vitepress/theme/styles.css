@@ -363,7 +363,21 @@
   color: var(--vp-c-text-2);
 }
 
-@media (max-width: 760px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .VPNavBarMenu {
+    display: none !important;
+  }
+
+  .VPNavBarHamburger {
+    display: flex !important;
+  }
+
+  .VPNavScreen {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
   .home-hero,
   .calculator-shell__body {
     grid-template-columns: 1fr;

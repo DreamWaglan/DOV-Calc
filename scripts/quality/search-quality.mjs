@@ -402,16 +402,18 @@ const pageById = new Map(index.map((page) => [page.id, page]))
 const failures = []
 const misses = []
 
-if (fixture.queries.length < 50) {
-  failures.push(`查询样本不足 50 条：${fixture.queries.length}`)
+if (fixture.queries.length < 100) {
+  failures.push(`查询样本不足 100 条：${fixture.queries.length}`)
 }
 if (
   !fixture.fixtureVersion ||
   !fixture.generatedAt ||
   !fixture.reviewer ||
-  !/^(WORKTREE|[0-9a-f]{7,40})$/i.test(fixture.commitSha ?? '')
+  !/^[0-9a-f]{40}$/i.test(fixture.commitSha ?? '')
 ) {
-  failures.push('冻结元数据必须包含 fixtureVersion、generatedAt、reviewer 和 commitSha')
+  failures.push(
+    '冻结元数据必须包含 fixtureVersion、generatedAt、reviewer 和 40 位 commitSha',
+  )
 }
 
 const queryIds = fixture.queries.map((query) => query.id)

@@ -17,18 +17,31 @@ assert.equal(routeWithoutBase('/start/first-week', '/'), '/start/first-week')
 
 for (const redirect of ledger.redirects) {
   const [pathname, hash = ''] = redirect.legacyPath.split('#', 2)
-  assert.equal(
-    legacyAnchorTarget(
-      ledger.redirects,
-      {
-        pathname: `/DOV-Calc${pathname}`,
-        hash: `#${encodeURIComponent(hash)}`,
-      },
-      '/DOV-Calc/',
-    ),
-    redirect.targetPath,
-    redirect.legacyPath,
-  )
+  for (const testCase of [
+    {
+      pathname,
+      base: '/',
+      label: 'root base',
+    },
+    {
+      pathname: `/DOV-Calc${pathname}`,
+      base: '/DOV-Calc/',
+      label: 'project base',
+    },
+  ]) {
+    assert.equal(
+      legacyAnchorTarget(
+        ledger.redirects,
+        {
+          pathname: testCase.pathname,
+          hash: `#${encodeURIComponent(hash)}`,
+        },
+        testCase.base,
+      ),
+      redirect.targetPath,
+      `${redirect.legacyPath} (${testCase.label})`,
+    )
+  }
 }
 
 assert.equal(

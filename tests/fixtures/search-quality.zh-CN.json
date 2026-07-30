@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "fixtureVersion": "2026.07-stage5-v1",
+  "fixtureVersion": "2026.07-stage8-v1",
   "generatedAt": "2026-07-29T00:00:00+08:00",
   "reviewer": "DOV-Calc 内容与质量组（匿名汇总）",
-  "commitSha": "WORKTREE",
+  "commitSha": "10e6f1f18d48056c07587279860b799b7647d60b",
   "locale": "zh-CN",
   "freezePolicy": "冻结后只新增失败样本或修正明显标注错误，不删除失败查询来提高分数。",
   "sourceMixTarget": {

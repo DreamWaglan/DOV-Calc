@@ -66,6 +66,9 @@ jobs:
       - name: Run mobile Lighthouse budgets
         run: pnpm test:perf
 
+      - name: Validate full Wiki quality gates
+        run: pnpm validate:stage8
+
       - name: Create and validate release candidate manifest
         run: |
           pnpm release:manifest

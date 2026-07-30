@@ -165,7 +165,7 @@ addAcceptance(
   '成品站内搜索覆盖冻结中文样本且 Top 5 命中率不低于 90%',
   search.passed === true &&
     builtSearch.passed === true &&
-    builtSearch.fixture?.queryCount >= 50 &&
+    builtSearch.fixture?.queryCount >= 100 &&
     builtSearch.metrics?.topFiveRatePercent >= 90 &&
     builtSearch.metrics?.exactTopOneRatePercent === 100 &&
     builtSearch.metrics?.noResultSuggestionPassCount ===
@@ -179,7 +179,9 @@ addAcceptance(
 )
 
 const mobilePages = e2e.pageChecks?.filter(
-  (page) => page.viewport === 'mobile-360',
+  (page) =>
+    page.viewport?.startsWith('mobile-') ||
+    page.viewport?.startsWith('tablet-'),
 ) ?? []
 const mobileOverflowCount = mobilePages.filter(
   (page) => page.documentOverflow,
@@ -193,7 +195,11 @@ addAcceptance(
   '360px、长表格、键盘、触摸与 200% 缩放无阻断',
   failureCount(mobileA11y) === 0 &&
     failureCount(e2e) === 0 &&
-    mobilePages.length >= 6 &&
+    mobilePages.length >= 19 &&
+    e2e.summary?.viewportChecks?.['mobile-360'] >= 5 &&
+    e2e.summary?.viewportChecks?.['mobile-390'] >= 5 &&
+    e2e.summary?.viewportChecks?.['tablet-768'] >= 5 &&
+    e2e.summary?.viewportChecks?.['desktop-1440'] >= 8 &&
     mobileOverflowCount === 0 &&
     undersizedTargetCount === 0,
   [

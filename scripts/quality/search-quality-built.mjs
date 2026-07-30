@@ -138,6 +138,11 @@ function percentage(numerator, denominator) {
 }
 
 const fixture = JSON.parse(await readFile(fixturePath, 'utf8'))
+if ((fixture.queries?.length ?? 0) < 100) {
+  failures.push(
+    `built search fixture has only ${fixture.queries?.length ?? 0}/100 queries`,
+  )
+}
 const routeByPageId = await buildRouteMap()
 const browserPath = await findBrowserPath()
 const preview = spawn(

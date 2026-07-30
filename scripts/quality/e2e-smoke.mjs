@@ -34,6 +34,7 @@ const screenshots = []
 const mediaRequests = []
 let segmentAnchorChecks = 0
 let legacyRedirectChecks = 0
+let tabletNavigationChecks = 0
 const redirectLedger = JSON.parse(
   await readFile(
     path.join(root, 'content', 'governance', 'redirects.json'),
@@ -359,7 +360,7 @@ try {
     '/topics/visual-guides/',
     '/topics/visual-guides/src-ec1754535996',
   ]) {
-    await inspectLayout(page, route, 'desktop', {
+    await inspectLayout(page, route, 'desktop-1440', {
       requireMetadata: route !== '/',
     })
   }
@@ -420,6 +421,73 @@ try {
     }
   }
 
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 })
+  for (const route of [
+    '/',
+    '/start/first-week',
+    '/data/basic-attack-cd',
+    '/tools/equipment-lookup',
+    '/topics/visual-guides/',
+  ]) {
+    await inspectLayout(page, route, 'mobile-390', {
+      requireMetadata: route !== '/',
+    })
+  }
+
+  await page.setViewport({ width: 768, height: 1024, deviceScaleFactor: 1 })
+  for (const route of [
+    '/',
+    '/progression/leveling',
+    '/combat/pve-team-building',
+    '/tools/dov-basic',
+    '/topics/visual-guides/src-ec1754535996',
+  ]) {
+    await inspectLayout(page, route, 'tablet-768', {
+      requireMetadata: route !== '/',
+    })
+  }
+
+  const tabletMenuButton = await page.$('.VPNavBarHamburger')
+  if (!tabletMenuButton) {
+    failures.push('tablet navigation: hamburger button is missing')
+  } else {
+    const tabletMenuVisible = await tabletMenuButton.evaluate((element) => {
+      const style = getComputedStyle(element)
+      const rect = element.getBoundingClientRect()
+      return (
+        style.display !== 'none' &&
+        style.visibility !== 'hidden' &&
+        rect.width >= 44 &&
+        rect.height >= 44
+      )
+    })
+    if (!tabletMenuVisible) {
+      failures.push('tablet navigation: hamburger button is not usable')
+    } else {
+      await tabletMenuButton.click()
+      await page.waitForSelector('.VPNavScreen', {
+        visible: true,
+        timeout: 10_000,
+      })
+      const tabletMenuLinks = await page.$$eval(
+        '.VPNavScreen a',
+        (links) => links.length,
+      )
+      if (tabletMenuLinks < 5) {
+        failures.push(
+          `tablet navigation: only ${tabletMenuLinks} menu links are rendered`,
+        )
+      } else {
+        tabletNavigationChecks += 1
+      }
+      await tabletMenuButton.click()
+      await page.waitForSelector('.VPNavScreen', {
+        hidden: true,
+        timeout: 10_000,
+      })
+    }
+  }
+
   await page.goto(
     routeUrl('/topics/visual-guides/src-ec1754535996'),
     {
@@ -453,6 +521,7 @@ try {
     }
   }
 
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 })
   await page.goto(routeUrl('/'), {
     waitUntil: 'networkidle0',
     timeout: 45_000,
@@ -767,6 +836,25 @@ if (substantiveBrowserErrors.length) {
   )
 }
 
+const viewportChecks = Object.fromEntries(
+  [...new Set(pageChecks.map((check) => check.viewport))]
+    .sort()
+    .map((viewport) => [
+      viewport,
+      pageChecks.filter((check) => check.viewport === viewport).length,
+    ]),
+)
+for (const viewport of [
+  'mobile-360',
+  'mobile-390',
+  'tablet-768',
+  'desktop-1440',
+]) {
+  if (!viewportChecks[viewport]) {
+    failures.push(`required viewport was not exercised: ${viewport}`)
+  }
+}
+
 const reportPath = await writeReport('e2e-smoke', {
   schemaVersion: 1,
   check: 'desktop-mobile-e2e-smoke',
@@ -775,15 +863,20 @@ const reportPath = await writeReport('e2e-smoke', {
   base,
   summary: {
     pageChecks: pageChecks.length,
-    desktopChecks: pageChecks.filter((check) => check.viewport === 'desktop')
-      .length,
-    mobileChecks: pageChecks.filter(
-      (check) => check.viewport === 'mobile-360',
+    desktopChecks: pageChecks.filter((check) =>
+      check.viewport.startsWith('desktop-'),
     ).length,
+    mobileChecks: pageChecks.filter(
+      (check) =>
+        check.viewport.startsWith('mobile-') ||
+        check.viewport.startsWith('tablet-'),
+    ).length,
+    viewportChecks,
     screenshots: screenshots.length,
     mediaRequests: mediaRequests.length,
     segmentAnchorChecks,
     legacyRedirectChecks,
+    tabletNavigationChecks,
     browserErrors: substantiveBrowserErrors.length,
     failures: failures.length,
   },

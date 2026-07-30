@@ -47,6 +47,7 @@
     "test:seo": "node scripts/quality/seo-audit.mjs",
     "test:perf": "node scripts/quality/run-lighthouse.mjs",
     "test:base": "node scripts/quality/verify-base-builds.mjs",
+    "validate:stage8": "node scripts/quality/validate-stage8.mjs",
     "content:stale": "node scripts/quality/staleness-report.mjs",
     "release:manifest": "node scripts/release/create-release-manifest.mjs",
     "release:rollback": "node scripts/release/verify-rollback.mjs",
