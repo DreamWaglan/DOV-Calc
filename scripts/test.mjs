@@ -30,6 +30,7 @@ const checks = [
   'scripts/quality/search-quality.mjs',
   'tests/quality/mobile-a11y-static.mjs',
   'tests/quality/lighthouse-policy.mjs',
+  'tests/quality/traceability-policy.mjs',
   'scripts/quality/staleness-report.mjs',
 ]
 

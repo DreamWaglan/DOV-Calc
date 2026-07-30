@@ -83,6 +83,9 @@ async function collectReports(directory) {
   }
 }
 await collectReports(path.join(root, 'content', 'imports'))
+const importAssetIds = new Set(
+  importChecks.map((check) => check.sourceAssetId),
+)
 
 const reviewQueue = []
 for (const finding of versions.driftFindings ?? []) {
@@ -151,6 +154,7 @@ const report = {
     sourceAssets: inventory.assets?.length ?? 0,
     sourceHashesChecked: sourceChecks.length,
     importArtifactsChecked: importChecks.length,
+    importAssetsChecked: importAssetIds.size,
     reviewItems: reviewQueue.length,
     failures: failures.length,
   },

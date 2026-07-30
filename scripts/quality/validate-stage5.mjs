@@ -6,6 +6,7 @@ import {
   root,
   writeReport,
 } from '../content/lib/content-utils.mjs'
+import { hasCompleteSourceTraceability } from './traceability-policy.mjs'
 
 const requireDeployed = process.argv.includes('--require-deployed')
 const requireTagged =
@@ -128,8 +129,7 @@ addAcceptance(
   '源文件台账与导入产物可追溯',
   failureCount(provenance) === 0 &&
     failureCount(drift) === 0 &&
-    drift.summary?.sourceAssets === 29 &&
-    drift.summary?.sourceHashesChecked === 29,
+    hasCompleteSourceTraceability(drift),
   [
     'content/reports/content-provenance.json',
     'content/reports/content-drift.json',
@@ -138,6 +138,8 @@ addAcceptance(
     sourceAssets: drift.summary?.sourceAssets,
     sourceHashesChecked: drift.summary?.sourceHashesChecked,
     importArtifactsChecked: drift.summary?.importArtifactsChecked,
+    importAssetsChecked: drift.summary?.importAssetsChecked,
+    sourceRootAvailable: drift.sourceRootAvailable,
   },
 )
 

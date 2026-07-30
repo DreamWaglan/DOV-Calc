@@ -295,8 +295,8 @@ record(
 record(
   'INV-RELEASE-ROLLBACK',
   '新版本使用不可变新标签，并保留上一已知良好标签作为回滚边界',
-  releaseConfig.releaseVersion === '1.1.3' &&
-    releaseConfig.candidateTag === 'wiki-v1.1.3' &&
+  releaseConfig.releaseVersion === '1.1.4' &&
+    releaseConfig.candidateTag === 'wiki-v1.1.4' &&
     releaseBaseline.repository?.rollbackTag === 'wiki-v1.0.0' &&
     releaseConfig.candidateTag !== releaseBaseline.repository?.rollbackTag &&
     releaseConfig.releaseGeneratedPaths?.includes('docs/.vitepress/dist/'),
