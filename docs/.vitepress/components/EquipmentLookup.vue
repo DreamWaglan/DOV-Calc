@@ -308,6 +308,7 @@ function toggleCategory(category) {
 }
 
 .equipment-lookup button {
+  min-width: 44px;
   min-height: 44px;
   border: 1px solid var(--calc-border);
   border-radius: 6px;
