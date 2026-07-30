@@ -7,7 +7,9 @@ import {
   writeReport,
 } from '../content/lib/content-utils.mjs'
 
-const requireTagged = process.argv.includes('--require-tagged')
+const requireDeployed = process.argv.includes('--require-deployed')
+const requireTagged =
+  process.argv.includes('--require-tagged') || requireDeployed
 const failures = []
 
 async function load(relativePath) {
@@ -309,6 +311,32 @@ addAcceptance(
     pages: schema.summary?.pages,
     stalenessPages: staleness.summary?.pages,
     linkFailures: failureCount(links),
+  },
+)
+
+const deploymentStateAccepted = requireDeployed
+  ? releaseManifest.release?.deploymentState === 'verified' &&
+    releaseManifest.deploymentEvidence?.status === 'verified' &&
+    releaseManifest.deploymentEvidence?.deployedCommit ===
+      releaseManifest.repository?.head
+  : ['not-verified', 'verified'].includes(
+      releaseManifest.release?.deploymentState,
+    )
+addAcceptance(
+  'AC-15',
+  requireDeployed
+    ? 'GitHub Pages 线上关键产物、交互、提交与工作流证据均已验证'
+    : '发布清单明确区分未验证与已验证部署状态',
+  deploymentStateAccepted,
+  [
+    'content/release/release-manifest.json',
+    'content/release/deployment-verification.json',
+  ],
+  {
+    requiredState: requireDeployed ? 'verified' : 'not-verified-or-verified',
+    deploymentState: releaseManifest.release?.deploymentState,
+    deployedCommit: releaseManifest.deploymentEvidence?.deployedCommit,
+    workflowRunId: releaseManifest.deploymentEvidence?.workflowRunId,
   },
 )
 

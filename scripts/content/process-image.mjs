@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, stat } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
@@ -10,6 +10,7 @@ import {
   stableJson,
   stableSourceElementId,
 } from './lib/migration-elements.mjs'
+import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const MAX_DERIVATIVE_PIXELS = 4_500_000
 const MAX_SOURCE_PIXELS = 50_000_000

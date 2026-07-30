@@ -1,6 +1,7 @@
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
+import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const root = process.cwd()
 const mapPath = path.join(root, 'content', 'migration', 'stage3-docx-map.json')

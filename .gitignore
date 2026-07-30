@@ -16,6 +16,7 @@ docs/.vitepress/dist/
 content/reports/
 content/release/release-manifest.json
 content/release/rollback-rehearsal.json
+content/release/deployment-verification.json
 
 # Local Codex/OMX workflow state
 .omx/

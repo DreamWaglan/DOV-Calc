@@ -1,5 +1,6 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir } from 'node:fs/promises'
 import path from 'node:path'
+import { writeFileWithRetry as writeFile } from '../lib/file-utils.mjs'
 import process from 'node:process'
 import {
   buildFileInventory,
@@ -153,6 +154,8 @@ async function main() {
     },
     rollback: {
       targetStrategy: 'previous-known-good-tag',
+      previousKnownGoodTag: config.previousKnownGoodTag,
+      rollbackBaseline: config.rollbackBaseline,
       currentCandidateCommit: git.head,
       currentCandidateTag: config.candidateTag,
       recoverySource: 'release-artifact-or-tagged-commit',
@@ -168,6 +171,7 @@ async function main() {
       'pnpm test:search-built',
       'pnpm test:e2e',
       'pnpm test:perf',
+      'pnpm validate:architecture',
       'pnpm validate:stage5',
       'pnpm docs:build',
       'node scripts/release/validate-release-manifest.mjs',
@@ -176,6 +180,11 @@ async function main() {
     taggedVerificationCommands: [
       'pnpm validate:stage5 -- --require-tagged',
       'node scripts/release/validate-release-manifest.mjs --require-tagged',
+    ],
+    deploymentVerificationCommands: [
+      'pnpm release:deploy:verify -- --deployed-commit=<sha> --workflow-run-id=<id> --workflow-url=<url>',
+      'pnpm validate:stage5 -- --require-deployed',
+      'node scripts/release/validate-release-manifest.mjs --require-deployed',
     ],
     notes:
       tagReady

@@ -640,6 +640,39 @@ try {
   if (!equipmentSearch) {
     failures.push('equipment lookup: search input is missing')
   } else {
+    const initialEquipmentPage = await page.evaluate(() => ({
+      cards: document.querySelectorAll('.equipment-card').length,
+      pager: document
+        .querySelector('.equipment-lookup__pager')
+        ?.textContent?.trim()
+        .replace(/\s+/g, ' '),
+      firstItem: document
+        .querySelector('.equipment-card strong')
+        ?.textContent?.trim(),
+    }))
+    if (
+      initialEquipmentPage.cards !== 12 ||
+      !initialEquipmentPage.pager?.includes('第 1 / 8 页')
+    ) {
+      failures.push(
+        `equipment lookup: unexpected initial pagination ${JSON.stringify(initialEquipmentPage)}`,
+      )
+    }
+    const nextEquipmentPage = await page.$(
+      '.equipment-lookup__pager button:last-of-type',
+    )
+    await nextEquipmentPage?.click()
+    await page.waitForFunction(
+      (previousItem) =>
+        document
+          .querySelector('.equipment-card strong')
+          ?.textContent?.trim() !== previousItem &&
+        document
+          .querySelector('.equipment-lookup__pager')
+          ?.textContent?.includes('第 2 / 8 页'),
+      { timeout: 10_000 },
+      initialEquipmentPage.firstItem,
+    )
     await equipmentSearch.focus()
     await page.keyboard.type('305')
     await page.waitForFunction(

@@ -1,9 +1,10 @@
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { loadSourceLedger, stableJson } from './lib/migration-elements.mjs'
 import { applyPageReviewStatus } from './lib/page-review-decisions.mjs'
+import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const root = process.cwd()
 const generatedAt = '2026-07-30T00:00:00.000Z'

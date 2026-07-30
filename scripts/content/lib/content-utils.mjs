@@ -1,6 +1,9 @@
-import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, readdir, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 import { parse as parseYaml } from 'yaml'
+import { writeFileWithRetry } from '../../lib/file-utils.mjs'
+
+export { writeFileWithRetry } from '../../lib/file-utils.mjs'
 
 export const root = process.cwd()
 export const reportsRoot = path.join(root, 'content', 'reports')
@@ -83,7 +86,11 @@ export async function readJson(relativePath) {
 export async function writeReport(name, report) {
   await mkdir(reportsRoot, { recursive: true })
   const outputPath = path.join(reportsRoot, `${name}.json`)
-  await writeFile(outputPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8')
+  await writeFileWithRetry(
+    outputPath,
+    `${JSON.stringify(report, null, 2)}\n`,
+    'utf8',
+  )
   return relative(outputPath)
 }
 

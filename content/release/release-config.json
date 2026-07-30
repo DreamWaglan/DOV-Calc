@@ -1,13 +1,16 @@
 {
   "schemaVersion": 1,
-  "releaseVersion": "1.0.0",
-  "candidateTag": "wiki-v1.0.0",
+  "releaseVersion": "1.1.0",
+  "candidateTag": "wiki-v1.1.0",
+  "previousKnownGoodTag": "wiki-v1.0.0",
+  "rollbackBaseline": "content/release/authorized-full-wiki-baseline.json",
   "deploymentTarget": "github-pages",
   "siteBase": "/DOV-Calc/",
   "releaseGeneratedPaths": [
     "content/reports/",
     "content/release/release-manifest.json",
     "content/release/rollback-rehearsal.json",
+    "content/release/deployment-verification.json",
     "docs/.vitepress/dist/"
   ],
   "excludedContentReportPaths": [

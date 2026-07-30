@@ -69,6 +69,9 @@ jobs:
       - name: Validate full Wiki quality gates
         run: pnpm validate:stage8
 
+      - name: Validate final architecture invariants
+        run: pnpm validate:architecture
+
       - name: Create and validate release candidate manifest
         run: |
           pnpm release:manifest
@@ -80,9 +83,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: content-quality-reports
+          include-hidden-files: true
           path: |
             content/reports
             content/release
+            docs/.vitepress/dist
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -100,8 +105,63 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  verify-deployment:
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.1.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Download release verification input
+        uses: actions/download-artifact@v4
+        with:
+          name: content-quality-reports
+          path: .
+
+      - name: Verify production deployment
+        run: |
+          pnpm release:deploy:verify -- \
+            --url "${{ needs.deploy.outputs.page_url }}" \
+            --deployed-commit "${{ github.sha }}" \
+            --workflow-run-id "${{ github.run_id }}" \
+            --workflow-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          node scripts/release/validate-release-manifest.mjs --require-deployed
+          pnpm validate:stage5 -- --require-deployed
+
+      - name: Upload deployment verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployment-verification
+          path: |
+            content/release/deployment-verification.json
+            content/release/release-manifest.json
+            content/reports/stage5-release-readiness.json

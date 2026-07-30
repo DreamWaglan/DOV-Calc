@@ -30,7 +30,7 @@ related: [about-maintenance, about-rollback, about-version-log]
 
 # 发布清单
 
-候选版本为 `wiki-v1.0.0`。仓库当前仍在整合阶段时，发布清单必须显示 `WORKTREE / candidate`。只有源代码进入干净提交、标签指向该提交并且上线后检查通过，维护人员才能把该版本登记为正式发布。
+候选版本为 `wiki-v1.1.0`，上一已知良好版本为 `wiki-v1.0.0`。仓库处于整合阶段时，发布清单必须显示 `WORKTREE / candidate`。只有源代码进入干净提交、不可变新标签指向该提交，并且上线后检查通过，维护人员才能把该版本登记为线上已验证发布。
 
 ## 一、候选发布门禁
 
@@ -51,15 +51,17 @@ related: [about-maintenance, about-rollback, about-version-log]
 
 ```powershell
 pnpm test
+pnpm docs:build
 pnpm test:base
 pnpm test:search-built
 pnpm test:e2e
 pnpm test:perf
-pnpm validate:stage5
-pnpm docs:build
+pnpm validate:stage8
+pnpm validate:architecture
 node scripts/release/create-release-manifest.mjs
 node scripts/release/validate-release-manifest.mjs
 node scripts/release/verify-rollback.mjs
+pnpm validate:stage5
 ```
 
 `content/release/release-manifest.json` 记录以下内容：
@@ -73,7 +75,7 @@ node scripts/release/verify-rollback.mjs
 
 `docs/.vitepress/dist`、`content/reports`、发布清单和回滚演练报告属于生成型产物。脚本会在完整工作树状态之外，单独计算排除这些文件后的 `releaseWorkspaceState`。目录规则必须以 `/` 结尾，并按相对路径前缀匹配。该字段只能用于排除可重复生成的产物，不能掩盖其他未提交的源代码或内容变更。
 
-`stage5-release-readiness.json` 会读取发布清单并汇总 AC-01 至 AC-14，因此不进入发布清单的内容报告哈希集合。该排除项必须由清单显式记录。搜索、E2E、Lighthouse、SEO、过期内容和移动端静态检查等原始报告仍必须全部登记并校验。
+`stage5-release-readiness.json` 会读取发布清单并汇总 AC-01 至 AC-15，因此不进入发布清单的内容报告哈希集合。该排除项必须由清单显式记录。搜索、E2E、Lighthouse、SEO、过期内容和移动端静态检查等原始报告仍必须全部登记并校验。
 
 发布内容再次变化后，旧清单即失效。维护人员必须重新构建、重新生成清单并重跑回滚演练。
 
@@ -81,7 +83,7 @@ node scripts/release/verify-rollback.mjs
 
 1. 审核即将进入发布提交的文件，不提交临时目录、调试输出或凭据。
 2. 创建发布提交，并确认 `git status --short` 没有源代码或内容变更。
-3. 在该提交上创建附注标签 `wiki-v1.0.0`。
+3. 在该提交上创建附注标签 `wiki-v1.1.0`。不得移动或覆盖 `wiki-v1.0.0`。
 4. 重新生成发布清单。
 5. 运行严格校验：
 
@@ -108,7 +110,21 @@ node scripts/release/validate-release-manifest.mjs --require-tagged
 - [ ] 线上 HTML、关键静态资源与发布产物清单一致；
 - [ ] GitHub Pages 对应提交、标签和发布清单中的提交一致。
 
-上线检查结果应保存为发布记录。若任一关键检查失败，应停止继续推广链接，并按[回滚流程](./rollback)处理。
+维护人员应使用部署工作流返回的提交和运行记录执行线上校验：
+
+```powershell
+pnpm release:deploy:verify -- `
+  --url "$env:DOCS_PRODUCTION_URL" `
+  --deployed-commit "<GitHub Actions head SHA>" `
+  --workflow-run-id "<GitHub Actions run ID>" `
+  --workflow-url "<GitHub Actions run URL>"
+node scripts/release/validate-release-manifest.mjs --require-deployed
+pnpm validate:stage5 -- --require-deployed
+```
+
+校验程序会逐项复核线上 HTML、JavaScript、CSS、XML、SVG 和 JSON 关键产物的大小与 SHA256，并使用无头浏览器检查搜索、三个工具页面、深层页面和 404 导航。校验通过后，程序将生成 `deployment-verification.json`，并把发布清单的 `deploymentState` 更新为 `verified`。
+
+GitHub Actions 的 `verify-deployment` 作业执行相同门禁并保存验证产物。若任一关键检查失败，工作流必须保持失败状态，维护人员应停止推广链接，并按[回滚流程](./rollback)处理。
 
 ## 五、完成条件
 

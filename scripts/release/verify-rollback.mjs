@@ -1,13 +1,15 @@
-import { cp, mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises'
+import { cp, mkdir, mkdtemp, rm } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import process from 'node:process'
+import { writeFileWithRetry as writeFile } from '../lib/file-utils.mjs'
 import {
   buildFileInventory,
   compareInventories,
   loadJson,
   relativeFrom,
   resolveFrom,
+  runGit,
 } from './release-utils.mjs'
 
 const rootDir = process.cwd()
@@ -51,12 +53,36 @@ async function main() {
   const manifest = await loadJson(manifestPath)
   const distDir = resolveFrom(rootDir, manifest.artifact.root)
   const reportPath = resolveFrom(rootDir, options.report)
+  const rollbackBaseline = await loadJson(
+    resolveFrom(rootDir, manifest.rollback.rollbackBaseline),
+  )
+  const previousKnownGoodTag = manifest.rollback.previousKnownGoodTag
+  const previousKnownGoodCommit = runGit(
+    rootDir,
+    ['rev-list', '-n', '1', previousKnownGoodTag],
+    { allowFailure: true },
+  )
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), 'dov-wiki-rollback-'))
   const archiveDir = path.join(tempRoot, 'release-archive')
   const restoredDir = path.join(tempRoot, 'restored-site')
   let failures = []
 
   try {
+    if (!previousKnownGoodCommit) {
+      failures.push(`上一已知良好标签不存在：${previousKnownGoodTag}`)
+    }
+    if (
+      previousKnownGoodCommit &&
+      previousKnownGoodCommit !== rollbackBaseline.repository?.rollbackCommit
+    ) {
+      failures.push(
+        `上一已知良好标签提交与基线不一致：${previousKnownGoodCommit} != ${rollbackBaseline.repository?.rollbackCommit}`,
+      )
+    }
+    if (previousKnownGoodCommit === manifest.repository.head) {
+      failures.push('回滚标签不得与当前候选提交相同')
+    }
+
     const currentInventory = await buildFileInventory(distDir)
     failures.push(...compareInventories(manifest.artifact, currentInventory))
 
@@ -93,6 +119,11 @@ async function main() {
       manifest: relativeFrom(rootDir, manifestPath),
       candidateTag: manifest.release.candidateTag,
       candidateCommit: manifest.repository.head,
+      previousKnownGoodTag,
+      previousKnownGoodCommit: previousKnownGoodCommit || null,
+      rollbackBaseline: manifest.rollback.rollbackBaseline,
+      rollbackBoundaryMatchesBaseline:
+        previousKnownGoodCommit === rollbackBaseline.repository?.rollbackCommit,
       method: 'temporary-directory-copy-and-full-sha256-verification',
       sourceOrDistMutated: false,
       workspaceWrites: [relativeFrom(rootDir, reportPath)],
@@ -101,6 +132,7 @@ async function main() {
       artifactBytes: restoredInventory.totalBytes,
       aggregateSha256: restoredInventory.aggregateSha256,
       checks: [
+        'previous-known-good-tag-matches-immutable-baseline',
         'current-dist-matches-release-manifest',
         'archive-copy-matches-release-manifest',
         'restored-copy-matches-release-manifest',

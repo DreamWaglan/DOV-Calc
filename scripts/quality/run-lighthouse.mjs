@@ -45,8 +45,8 @@ const representativePages = [
   },
   {
     id: 'data-table',
-    route: '/data/basic-attack-cd',
-    kind: 'data-page',
+    route: '/data/basic-attacks/destroyer',
+    kind: 'static-data-table',
     seoPolicy: 'indexable',
   },
   {

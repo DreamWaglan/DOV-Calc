@@ -1,13 +1,6 @@
 <template>
   <section class="equipment-lookup" aria-labelledby="equipment-lookup-title">
     <header class="equipment-lookup__header">
-      <!-- 
-      <div>
-        <h2 id="equipment-lookup-title">装备速查</h2>
-        <p>{{ data.metadata.sourceFile }}，共 {{ data.metadata.itemCount }} 件装备。</p>
-      </div>
-       -->
-
       <div class="equipment-lookup__source">
         <h2 id="equipment-lookup-title">装备速查</h2>
         <p>数据版本 {{ status.version }}，基准 {{ status.total }} 件，当前为{{ status.mode }}。</p>
@@ -63,7 +56,7 @@
 
     <div v-if="filteredItems.length" class="equipment-lookup__grid">
       <article
-        v-for="item in filteredItems"
+        v-for="item in visibleItems"
         :key="item.id"
         class="equipment-card"
         :style="{
@@ -104,14 +97,41 @@
       </article>
     </div>
 
-    <div v-else class="equipment-lookup__empty" role="status" aria-live="polite">
+    <nav
+      v-if="filteredItems.length"
+      class="equipment-lookup__pager"
+      aria-label="装备结果分页"
+    >
+      <button
+        type="button"
+        :disabled="page <= 1"
+        @click="page -= 1"
+      >
+        上一页
+      </button>
+      <span>第 {{ page }} / {{ pageCount }} 页</span>
+      <button
+        type="button"
+        :disabled="page >= pageCount"
+        @click="page += 1"
+      >
+        下一页
+      </button>
+    </nav>
+
+    <div
+      v-if="!filteredItems.length"
+      class="equipment-lookup__empty"
+      role="status"
+      aria-live="polite"
+    >
       没有找到匹配的装备。
     </div>
   </section>
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 import data from '../data/equipment-data.json'
 import {
@@ -123,6 +143,8 @@ import {
 const query = ref('')
 const selectedCategory = ref('')
 const selectedChannel = ref('')
+const page = ref(1)
+const pageSize = 12
 
 const categories = computed(() => data.metadata.categories)
 const channels = computed(() => getEquipmentChannels(data.items))
@@ -134,12 +156,23 @@ const filteredItems = computed(() => {
     channel: selectedChannel.value,
   })
 })
+const pageCount = computed(() =>
+  Math.max(1, Math.ceil(filteredItems.value.length / pageSize)),
+)
+const visibleItems = computed(() => {
+  const start = (page.value - 1) * pageSize
+  return filteredItems.value.slice(start, start + pageSize)
+})
 
 const status = computed(() => buildEquipmentStatus(data.metadata, filteredItems.value.length, {
   query: query.value,
   category: selectedCategory.value,
   channel: selectedChannel.value,
 }))
+
+watch([query, selectedCategory, selectedChannel], () => {
+  page.value = 1
+})
 
 function resetFilters() {
   query.value = ''
@@ -283,6 +316,19 @@ function toggleCategory(category) {
   cursor: pointer;
   font-weight: 700;
   padding: 0 12px;
+}
+
+.equipment-lookup__pager {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px 24px;
+}
+
+.equipment-lookup__pager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .equipment-lookup button:focus-visible {

@@ -1,10 +1,11 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import {
   loadSourceLedger,
   stableJson,
 } from './lib/migration-elements.mjs'
+import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const root = process.cwd()
 const outputPath = path.join(

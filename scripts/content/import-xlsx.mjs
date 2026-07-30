@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
@@ -12,6 +12,7 @@ import {
   stableJson,
   stableSourceElementId,
 } from './lib/migration-elements.mjs'
+import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const DEFAULT_SOURCE_PATH =
   'F:\\Visual Studio Project\\Project_Test\\拂晓手册\\8 主题攻略-伤害计算篇\\8.2 拂晓舰灵普攻倍率cd.xlsx'

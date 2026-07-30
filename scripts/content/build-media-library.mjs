@@ -1,10 +1,14 @@
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, readdir, rm, stat } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { unzipSync } from 'fflate'
 import sharp from 'sharp'
-import { loadPages, root } from './lib/content-utils.mjs'
+import {
+  loadPages,
+  root,
+  writeFileWithRetry as writeFile,
+} from './lib/content-utils.mjs'
 import {
   loadSourceLedger,
   stableJson,

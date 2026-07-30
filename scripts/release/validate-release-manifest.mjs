@@ -17,6 +17,7 @@ function parseArguments(argv) {
   const result = {
     manifest: 'content/release/release-manifest.json',
     requireTagged: false,
+    requireDeployed: false,
   }
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -24,6 +25,12 @@ function parseArguments(argv) {
 
     if (argument === '--require-tagged') {
       result.requireTagged = true
+      continue
+    }
+
+    if (argument === '--require-deployed') {
+      result.requireTagged = true
+      result.requireDeployed = true
       continue
     }
 
@@ -61,6 +68,12 @@ async function main() {
 
   if (!['candidate', 'tagged'].includes(manifest.release?.state)) {
     failures.push('发布状态必须为 candidate 或 tagged')
+  }
+
+  if (
+    !['not-verified', 'verified'].includes(manifest.release?.deploymentState)
+  ) {
+    failures.push('部署状态必须为 not-verified 或 verified')
   }
 
   const artifactRoot = resolveFrom(rootDir, manifest.artifact?.root ?? '')
@@ -151,6 +164,24 @@ async function main() {
     }
   }
 
+  const architectureReportPath =
+    'content/reports/architecture-invariants.json'
+  if (!manifestReportPaths.includes(architectureReportPath)) {
+    failures.push('发布清单缺少最终架构不变量报告')
+  } else {
+    const architectureReport = await loadJson(
+      resolveFrom(rootDir, architectureReportPath),
+    )
+    if (
+      architectureReport.passed !== true ||
+      architectureReport.summary?.invariants !==
+        architectureReport.summary?.passedInvariants ||
+      (architectureReport.failures ?? []).length > 0
+    ) {
+      failures.push('最终架构不变量报告未全部通过')
+    }
+  }
+
   const git = readGitState(rootDir, manifest.release.candidateTag, {
     ignoredGeneratedPaths: manifest.repository.ignoredGeneratedPaths,
   })
@@ -181,6 +212,59 @@ async function main() {
     failures.push('当前门禁要求 tagged 发布，但清单仍是 candidate')
   }
 
+  if (manifest.release.deploymentState === 'verified') {
+    const evidence = manifest.deploymentEvidence
+
+    if (!evidence?.path || !evidence?.sha256) {
+      failures.push('verified 部署缺少部署证据路径或 SHA-256')
+    } else {
+      const deploymentReportPath = resolveFrom(rootDir, evidence.path)
+      const deploymentReport = await loadJson(deploymentReportPath)
+      const deploymentReportHash = await sha256File(deploymentReportPath)
+
+      if (deploymentReportHash !== evidence.sha256) {
+        failures.push('部署证据报告 SHA-256 与发布清单不一致')
+      }
+      if (deploymentReport.status !== 'verified') {
+        failures.push('部署证据报告状态不是 verified')
+      }
+      if (
+        deploymentReport.deployment?.commit !== manifest.repository.head ||
+        evidence.deployedCommit !== manifest.repository.head
+      ) {
+        failures.push('部署证据提交与发布清单 HEAD 不一致')
+      }
+      if (
+        deploymentReport.deployment?.tag !==
+        manifest.release.candidateTag
+      ) {
+        failures.push('部署证据标签与发布清单标签不一致')
+      }
+      if (
+        deploymentReport.artifact?.aggregateSha256 !==
+        manifest.artifact.aggregateSha256
+      ) {
+        failures.push('部署证据产物聚合哈希与发布清单不一致')
+      }
+      if (
+        deploymentReport.failures?.length > 0 ||
+        deploymentReport.artifact?.criticalFilesExpected !==
+          deploymentReport.artifact?.criticalFilesVerified
+      ) {
+        failures.push('部署证据仍有失败项或关键产物未全部验证')
+      }
+    }
+  } else if (manifest.deploymentEvidence) {
+    failures.push('not-verified 部署不得保留 verified 部署证据')
+  }
+
+  if (
+    options.requireDeployed &&
+    manifest.release.deploymentState !== 'verified'
+  ) {
+    failures.push('当前门禁要求 verified 部署，但清单尚未完成线上验证')
+  }
+
   console.log(
     JSON.stringify(
       {
@@ -188,6 +272,7 @@ async function main() {
         releaseState: manifest.release.state,
         workspaceState: git.workspaceState,
         tag: git.tag,
+        deploymentState: manifest.release.deploymentState,
         artifactFiles: currentArtifact.fileCount,
         aggregateSha256: currentArtifact.aggregateSha256,
         warnings,
