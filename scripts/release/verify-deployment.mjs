@@ -10,41 +10,9 @@ import {
   resolveFrom,
   sha256File,
 } from './release-utils.mjs'
+import { parseDeploymentArguments } from './deployment-arguments.mjs'
 
 const rootDir = process.cwd()
-
-function parseArguments(argv) {
-  const options = {
-    url: 'https://dreamwaglan.github.io/DOV-Calc/',
-    manifest: 'content/release/release-manifest.json',
-    report: 'content/release/deployment-verification.json',
-    deployedCommit: '',
-    workflowRunId: '',
-    workflowUrl: '',
-  }
-
-  for (let index = 0; index < argv.length; index += 1) {
-    const argument = argv[index]
-    const key = {
-      '--url': 'url',
-      '--manifest': 'manifest',
-      '--report': 'report',
-      '--deployed-commit': 'deployedCommit',
-      '--workflow-run-id': 'workflowRunId',
-      '--workflow-url': 'workflowUrl',
-    }[argument]
-
-    if (!key) throw new Error(`不支持的参数：${argument}`)
-    const value = argv[index + 1]
-    if (!value || value.startsWith('--')) {
-      throw new Error(`参数 ${argument} 缺少取值`)
-    }
-    options[key] = value
-    index += 1
-  }
-
-  return options
-}
 
 function normalizeSiteUrl(value) {
   const url = new URL(value)
@@ -287,7 +255,7 @@ async function verifyBrowserInteractions(siteUrl, failures) {
 }
 
 async function main() {
-  const options = parseArguments(process.argv.slice(2))
+  const options = parseDeploymentArguments(process.argv.slice(2))
   const manifestPath = resolveFrom(rootDir, options.manifest)
   const reportPath = resolveFrom(rootDir, options.report)
   const manifest = await loadJson(manifestPath)

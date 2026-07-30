@@ -31,6 +31,7 @@ const checks = [
   'tests/quality/mobile-a11y-static.mjs',
   'tests/quality/lighthouse-policy.mjs',
   'tests/quality/traceability-policy.mjs',
+  'tests/release/deployment-arguments.mjs',
   'scripts/quality/staleness-report.mjs',
 ]
 

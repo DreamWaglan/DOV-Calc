@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewedAt": "2026-07-30",
-  "reviewedAgainstCommit": "e1ff931b10b60da7d3240a0e5488299657526690",
+  "reviewedAgainstCommit": "68412e0bfdc9fe902d97a7f7cb84636c8f69cad2",
   "nextAuditAt": "2026-10-28",
   "baseline": {
     "pages": 97,
@@ -134,7 +134,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "a0c0253edd2756ffc1d4d367c408f76e9c6d274a6a7922dc460e4730e289f1b6"
+      "contentSha256": "4891384e51eeb3d381cca824c6a29deaeb193c5d5ec5fdeccaf015d0df460215"
     },
     {
       "pageId": "about-rollback",
@@ -212,7 +212,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "b7b75729aaa96dd50d8f694660b063a7a50e506c22419cb942302495796c2223"
+      "contentSha256": "df57bc4796f0b84567cf586c3649c02606229de8b15266559a95a2d582d0ca83"
     },
     {
       "pageId": "combat-encounter-appendix",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "releaseVersion": "1.1.4",
-  "candidateTag": "wiki-v1.1.4",
+  "releaseVersion": "1.1.5",
+  "candidateTag": "wiki-v1.1.5",
   "previousKnownGoodTag": "wiki-v1.0.0",
   "rollbackBaseline": "content/release/authorized-full-wiki-baseline.json",
   "deploymentTarget": "github-pages",
