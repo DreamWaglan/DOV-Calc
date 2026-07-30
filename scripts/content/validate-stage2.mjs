@@ -4,6 +4,7 @@ import process from 'node:process'
 
 const scripts = [
   'validate-content-schema.mjs',
+  'validate-authorization.mjs',
   'validate-provenance.mjs',
   'validate-links.mjs',
   'validate-drift.mjs',

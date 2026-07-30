@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dov-calc.local/schemas/authorization-evidence.schema.json",
+  "title": "Fuxiao Wiki Authorization Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceType",
+    "statementDate",
+    "grantedBy",
+    "rightsHolder",
+    "evidencePath",
+    "appliesToAssetIds",
+    "confirmedScope",
+    "limitations",
+    "recordedBy",
+    "reviewedBy",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sourceType": {
+      "type": "string",
+      "enum": [
+        "user-declaration",
+        "license-document",
+        "rights-holder-message",
+        "ownership-record"
+      ]
+    },
+    "statementDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "grantedBy": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "rightsHolder": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "evidencePath": {
+      "type": "string",
+      "pattern": "^(?!.*(?:^|/)\\.\\.)(?!/)(?![A-Za-z]:).+"
+    },
+    "appliesToAssetIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "confirmedScope": {
+      "$ref": "source-asset.schema.json#/$defs/publicReleaseScope"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 400
+      }
+    },
+    "recordedBy": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "reviewedBy": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted-for-project",
+        "needs-clarification",
+        "expired",
+        "revoked"
+      ]
+    }
+  }
+}

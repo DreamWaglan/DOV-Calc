@@ -5,6 +5,10 @@ import process from 'node:process'
 const checks = [
   'scripts/content/validate-stage0.mjs',
   'scripts/content/validate-vitepress-migration.mjs',
+  'tests/content/authorization-policy.mjs',
+  'tests/content/public-artifact-policy.mjs',
+  'scripts/content/validate-authorization.mjs',
+  'scripts/content/scan-public-artifacts.mjs',
   'scripts/test-imports.mjs',
   'scripts/content/validate-stage4.mjs',
   'scripts/quality/search-quality.mjs',

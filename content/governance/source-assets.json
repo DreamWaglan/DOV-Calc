@@ -17,7 +17,7 @@
   "governanceDefaults": {
     "permission": "pending",
     "publicRelease": false,
-    "rule": "默认不公开；只有 owned 或 authorized 资产完成证据登记后才可进入公开构建。"
+    "rule": "新资产默认不公开；本台账已登记资产必须由 permission、authorization.scope 与 deniedScopes 的单一策略函数派生公开出口。"
   },
   "assets": [
     {
@@ -34,22 +34,26 @@
         "path": "0 拂晓手册企划书.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -60,11 +64,45 @@
         "asset": false,
         "searchIndex": false,
         "sitemap": false,
+        "download": false,
+        "derivative": false,
+        "structuredData": false,
         "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "reason": "授权记录有效，但未开放任何公开出口。"
       },
       "importedAt": "2026-07-29T07:43:34.916Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据已登记；该文件按内部治理/模板处置，不进入公开构建。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "该文件是项目治理或写作模板，只用于内部维护，不进入公开正文或下载。",
+          "如需公开模板，必须另行建立公开版本和独立审核记录。"
+        ],
+        "deniedScopes": [
+          "body",
+          "asset",
+          "searchIndex",
+          "sitemap",
+          "download",
+          "derivative",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": false,
+          "searchIndex": false,
+          "sitemap": false,
+          "download": false,
+          "derivative": false,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-9ac6e41a613e",
@@ -80,37 +118,71 @@
         "path": "1 前言/1 前言.docx",
         "updatedAt": "2026-07-22"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "73e75e4b885aa94aac736ce3fbf29681ba34e8669b6c2ee89a07e49cf50166c5"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.918Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-ea0b63d069bf",
@@ -126,37 +198,71 @@
         "path": "2 游戏简介/2 游戏简介.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "bdd6379d3a635181cfb2630b4766a1ee47abf165ed87b5c78f894cfa5037bb56"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.919Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-842246bdb075",
@@ -172,37 +278,71 @@
         "path": "3 萌新入坑攻略/3 萌新入坑攻略.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "2bddd2d49db26b7342236feac4df679336a7dd786cb8192468be62f2f3a3ea08"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.931Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-20f9c608ccbe",
@@ -218,22 +358,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/1-性能优化小开关教程260107.png",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -241,14 +385,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.934Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-ec1754535996",
@@ -264,22 +439,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/2-拂晓新手入门思维导图 v2.4 260720.png",
         "updatedAt": "2026-07-20"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -287,14 +466,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.959Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-a82171ad36dd",
@@ -310,22 +520,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -333,14 +547,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:34.978Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-3f75f2339e43",
@@ -356,22 +601,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/4-萌新入门配装推荐260718.png",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -379,14 +628,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.016Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-8862e9c4e1c0",
@@ -402,22 +682,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
         "updatedAt": "2026-07-12"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -425,14 +709,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.046Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-a7efaec86736",
@@ -448,22 +763,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/6-阵容分析推荐260129.png",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -471,14 +790,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.057Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-4c3487e1f8f7",
@@ -494,22 +844,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png",
         "updatedAt": "2026-05-12"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -517,14 +871,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.073Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-fc56c0350c73",
@@ -540,22 +925,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/8-PVP天赋表260721.png",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -563,14 +952,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.089Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-e3a32a586e5b",
@@ -586,22 +1006,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/拂晓舰灵改造优先级2.0.3.png",
         "updatedAt": "2026-07-29"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -609,14 +1033,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.110Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-08ba2d32a9ff",
@@ -632,22 +1087,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/拂晓剧情榜260720.png",
         "updatedAt": "2026-07-19"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -655,14 +1114,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.130Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-2d59aac1ac45",
@@ -678,22 +1168,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/舰灵面板数值计算公式251226.jpg",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -701,14 +1195,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.145Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-65d25a94c550",
@@ -724,22 +1249,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/主副炮循环装填数值表251201.png",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -747,14 +1276,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.177Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-0dc5d6791056",
@@ -770,22 +1330,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P1.jpg",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -793,14 +1357,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.179Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-1157c5077c1f",
@@ -816,22 +1411,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P2.jpg",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -839,14 +1438,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.180Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-b8f7a77d5f36",
@@ -862,22 +1492,26 @@
         "path": "5 立香也能看懂的一图流攻略合集/咨询问答表P3.jpg",
         "updatedAt": "2026-07-18"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -885,14 +1519,45 @@
       },
       "publicRelease": {
         "body": false,
-        "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": false,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.181Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "body",
+          "download",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": true,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": false
+        }
+      }
     },
     {
       "id": "src-6eba63c4aa7b",
@@ -908,37 +1573,71 @@
         "path": "6 主题攻略-基础玩法篇/6.1 练级百科.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "dd1d956df3b8c74d5bf94fe337d89b5a44504c9b95abc139c43cceb8156d7ba6"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.289Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-d47e51aa8321",
@@ -954,37 +1653,71 @@
         "path": "6 主题攻略-基础玩法篇/6.2 给萌新的活动推图攻略食用指南.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "045b74a8fe13d8bdd8bc12fa09748d0660e23e8bda99c1a4b5ab0949f763ed53"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.314Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-94e76e4522b1",
@@ -1000,37 +1733,71 @@
         "path": "6 主题攻略-基础玩法篇/6.3 给萌新的PVE配队思路.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "7320dd4b3912b7788a04efefe8bbee4397cf78e875b913ab2f5c87f8bdb2dc49"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.317Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-7d080e8d651b",
@@ -1046,37 +1813,71 @@
         "path": "7 主题攻略-进阶玩法篇/7.1 争锋竞技场简易百科.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "408c9234c25adf368c917952d8aa97a6755fe94f8464e7c003bd9bb8b683d41d"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.384Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-d35e870ffcd7",
@@ -1092,37 +1893,71 @@
         "path": "7 主题攻略-进阶玩法篇/7.2 遭遇战攻略.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "f81c24042a1b006dcf7a39e137ceaacf7f6a1b98db538b006a8b4e529851fc45"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.445Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-51475ba227c9",
@@ -1138,37 +1973,71 @@
         "path": "7 主题攻略-进阶玩法篇/7.3 无尽海域配队思路.docx",
         "updatedAt": "2026-07-17"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "18651c31684239957a3e147706ddf100e0db81fc8cfb82728c8f796f6acea323"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.481Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-c8852cf69a7b",
@@ -1184,37 +2053,71 @@
         "path": "8 主题攻略-伤害计算篇/8.1 拂晓伤害计算构成.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "e08ebb072134accc8f3315fc4f17ea0e16026ce1efca781c816840a8472e73e6"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.805Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-0c5b7db892f6",
@@ -1230,37 +2133,71 @@
         "path": "8 主题攻略-伤害计算篇/8.2 拂晓舰灵普攻倍率cd.xlsx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.806Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-e2d43eca15b2",
@@ -1276,37 +2213,71 @@
         "path": "9 主题攻略-拉古兹专题/9 拉古兹专题.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
         "sha256": "97a088849ec65b217b6ae45b9aee623bf045f0ffea9ab7b2bebbc3a7dd063b62"
       },
       "publicRelease": {
-        "body": false,
+        "body": true,
         "asset": false,
-        "searchIndex": false,
-        "sitemap": false,
-        "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true,
+        "mode": "public",
+        "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
       },
       "importedAt": "2026-07-29T07:43:35.918Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据和逐出口范围已登记；原始文件下载保持关闭。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "不提供原始 DOCX、XLSX 或高清原图下载。",
+          "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+          "作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。"
+        ],
+        "deniedScopes": [
+          "asset",
+          "download"
+        ],
+        "scope": {
+          "body": true,
+          "asset": false,
+          "searchIndex": true,
+          "sitemap": true,
+          "download": false,
+          "derivative": true,
+          "structuredData": true
+        }
+      }
     },
     {
       "id": "src-6d7a8eecd6bb",
@@ -1322,22 +2293,26 @@
         "path": "拂晓手册WORD文档格式套用模板.docx",
         "updatedAt": "2026-07-21"
       },
-      "permission": "pending",
-      "status": "needs-review",
+      "permission": "authorized",
+      "status": "approved",
       "owners": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 内容维护组",
           "role": "内容保管责任角色"
         }
       ],
       "reviewers": [
         {
-          "name": "待指派",
+          "name": "DOV-Calc 版权与来源维护组",
           "role": "版权/来源责任人"
         },
         {
-          "name": "待指派",
+          "name": "DOV-Calc 事实审核组",
           "role": "事实审核人"
+        },
+        {
+          "name": "DOV-Calc 发布维护组",
+          "role": "公开范围审核人"
         }
       ],
       "hashes": {
@@ -1348,11 +2323,46 @@
         "asset": false,
         "searchIndex": false,
         "sitemap": false,
+        "download": false,
+        "derivative": false,
+        "structuredData": false,
         "mode": "blocked",
-        "reason": "作者、适用版本和公开转载许可尚未完成签核。"
+        "reason": "授权记录有效，但未开放任何公开出口。"
       },
       "importedAt": "2026-07-29T07:43:35.924Z",
-      "notes": "源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。"
+      "notes": "授权证据已登记；该文件按内部治理/模板处置，不进入公开构建。",
+      "authorization": {
+        "evidenceId": "auth-user-declaration-20260730",
+        "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+        "grantedBy": "项目资料提供方（用户，身份未公开）",
+        "grantedAt": "2026-07-30",
+        "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+        "attribution": "按原文件标题和来源资产 ID 标注；原作者姓名未提供时不得虚构。",
+        "expiresAt": null,
+        "restrictions": [
+          "该文件是项目治理或写作模板，只用于内部维护，不进入公开正文或下载。",
+          "如需公开模板，必须另行建立公开版本和独立审核记录。"
+        ],
+        "deniedScopes": [
+          "body",
+          "asset",
+          "searchIndex",
+          "sitemap",
+          "download",
+          "derivative",
+          "structuredData"
+        ],
+        "scope": {
+          "body": false,
+          "asset": false,
+          "searchIndex": false,
+          "sitemap": false,
+          "download": false,
+          "derivative": false,
+          "structuredData": false
+        }
+      }
     }
-  ]
+  ],
+  "authorizationUpdatedAt": "2026-07-30T00:00:00.000Z"
 }

@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 import { createReadStream } from 'node:fs'
-import { mkdir, readdir, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 
@@ -11,6 +11,19 @@ const sourceRoot = path.resolve(
 )
 const outputPath = path.resolve(
   process.argv[3] ?? 'content/governance/source-assets.json',
+)
+const previousManifest = await readFile(outputPath, 'utf8').then(
+  (text) => JSON.parse(text),
+  () => null,
+)
+const previousById = new Map(
+  (previousManifest?.assets ?? []).map((asset) => [asset.id, asset]),
+)
+const previousByHash = new Map(
+  (previousManifest?.assets ?? []).map((asset) => [
+    asset.hashes?.sha256,
+    asset,
+  ]),
 )
 
 if (!process.argv[2] && !process.env.FUXIAO_SOURCE_ROOT) {
@@ -86,30 +99,46 @@ for (const absolutePath of files) {
   const relativePath = normalizeRelativePath(absolutePath)
   const extension = path.extname(absolutePath).toLowerCase()
   const classification = classify(extension)
+  const candidateId = stableSourceId(relativePath)
+  const sha256 = await sha256File(absolutePath)
+  const previous =
+    previousById.get(candidateId) ?? previousByHash.get(sha256) ?? null
+  const id = previous?.id ?? candidateId
+  const defaultPublicRelease = {
+    body: false,
+    asset: false,
+    searchIndex: false,
+    sitemap: false,
+    download: false,
+    derivative: false,
+    structuredData: false,
+    mode: 'blocked',
+    reason: '作者、适用版本和公开转载许可尚未完成签核。',
+  }
 
   assets.push({
-    id: stableSourceId(relativePath),
+    id,
     title: path.basename(absolutePath),
     extension,
     ...classification,
     sizeBytes: fileStat.size,
     modifiedAt: fileStat.mtime.toISOString(),
-    sourceTier: 'unclassified',
+    sourceTier: previous?.sourceTier ?? 'unclassified',
     origin: {
       sourceType: 'local-file',
       sourceRootAlias: 'fuxiao-handbook-integrated',
       path: relativePath,
       updatedAt: fileStat.mtime.toISOString().slice(0, 10),
     },
-    permission: 'pending',
-    status: 'needs-review',
-    owners: [
+    permission: previous?.permission ?? 'pending',
+    status: previous?.status ?? 'needs-review',
+    owners: previous?.owners ?? [
       {
         name: '待指派',
         role: '内容保管责任角色',
       },
     ],
-    reviewers: [
+    reviewers: previous?.reviewers ?? [
       {
         name: '待指派',
         role: '版权/来源责任人',
@@ -120,18 +149,22 @@ for (const absolutePath of files) {
       },
     ],
     hashes: {
-      sha256: await sha256File(absolutePath),
+      sha256,
     },
+    ...(previous?.licenseEvidence
+      ? { licenseEvidence: previous.licenseEvidence }
+      : {}),
+    ...(previous?.authorization
+      ? { authorization: previous.authorization }
+      : {}),
     publicRelease: {
-      body: false,
-      asset: false,
-      searchIndex: false,
-      sitemap: false,
-      mode: 'blocked',
-      reason: '作者、适用版本和公开转载许可尚未完成签核。',
+      ...defaultPublicRelease,
+      ...(previous?.publicRelease ?? {}),
     },
-    importedAt: new Date().toISOString(),
-    notes: '源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。',
+    importedAt: previous?.importedAt ?? new Date().toISOString(),
+    notes:
+      previous?.notes ??
+      '源文件已登记；具体作者、适用版本和许可须在内容迁移前补齐。',
   })
 }
 
@@ -159,6 +192,9 @@ const manifest = {
     publicRelease: false,
     rule: '默认不公开；只有 owned 或 authorized 资产完成证据登记后才可进入公开构建。',
   },
+  ...(previousManifest?.authorizationUpdatedAt
+    ? { authorizationUpdatedAt: previousManifest.authorizationUpdatedAt }
+    : {}),
   assets,
 }
 

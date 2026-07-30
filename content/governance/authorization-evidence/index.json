@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "entrySchema": "../../schemas/authorization-evidence.schema.json",
+  "evidence": [
+    {
+      "id": "auth-user-declaration-20260730",
+      "sourceType": "user-declaration",
+      "statementDate": "2026-07-30",
+      "grantedBy": "项目资料提供方（用户，身份未公开）",
+      "rightsHolder": "各资料原作者或权利人；由项目资料提供方确认已经授权",
+      "evidencePath": "content/governance/authorization-evidence/user-declaration-20260730.md",
+      "appliesToAssetIds": [
+        "src-90f788a9def4",
+        "src-9ac6e41a613e",
+        "src-ea0b63d069bf",
+        "src-842246bdb075",
+        "src-20f9c608ccbe",
+        "src-ec1754535996",
+        "src-a82171ad36dd",
+        "src-3f75f2339e43",
+        "src-8862e9c4e1c0",
+        "src-a7efaec86736",
+        "src-4c3487e1f8f7",
+        "src-fc56c0350c73",
+        "src-e3a32a586e5b",
+        "src-08ba2d32a9ff",
+        "src-2d59aac1ac45",
+        "src-65d25a94c550",
+        "src-0dc5d6791056",
+        "src-1157c5077c1f",
+        "src-b8f7a77d5f36",
+        "src-6eba63c4aa7b",
+        "src-d47e51aa8321",
+        "src-94e76e4522b1",
+        "src-7d080e8d651b",
+        "src-d35e870ffcd7",
+        "src-51475ba227c9",
+        "src-c8852cf69a7b",
+        "src-0c5b7db892f6",
+        "src-e2d43eca15b2",
+        "src-6d7a8eecd6bb"
+      ],
+      "confirmedScope": {
+        "body": true,
+        "asset": true,
+        "searchIndex": true,
+        "sitemap": true,
+        "download": false,
+        "derivative": true,
+        "structuredData": true
+      },
+      "limitations": [
+        "不提供原始 DOCX、XLSX 或高清原图下载。",
+        "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
+        "未提供的作者姓名、授权期限和署名要求不得虚构。"
+      ],
+      "recordedBy": "DOV-Calc 版权与来源维护组",
+      "reviewedBy": "DOV-Calc 发布维护组",
+      "status": "accepted-for-project"
+    }
+  ]
+}

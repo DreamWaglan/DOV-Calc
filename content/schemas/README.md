@@ -7,6 +7,7 @@ This directory contains JSON Schema 2020-12 contracts for the Fuxiao Wiki conten
 - `page.schema.json`: Markdown frontmatter for publishable pages.
 - `data-record.schema.json`: Versioned structured data records used by data pages and tools.
 - `source-asset.schema.json`: Source asset ledger entries for DOCX, XLSX, images, external posts, datasets, and derived assets.
+- `authorization-evidence.schema.json`: Authorization evidence records that bind a declaration or document to explicit public-release scope.
 
 ## Required Fields
 
@@ -26,7 +27,8 @@ Data records require:
 Source asset ledger entries require:
 
 - `id`, `title`, `assetType`, `origin`
-- `permission`, `status`, `owners`, `hashes`, `publicRelease`
+- `permission`, `status`, `owners`, `reviewers`, `hashes`, `publicRelease`
+- `owned`、`authorized` 与 `quoted` 还必须登记 `authorization`；七类 scope 不允许省略
 
 ## Enumerations
 
@@ -67,7 +69,7 @@ The release policy is conservative by default:
 - `pending` cannot publish copied body text or source assets. It may be represented by an external link or blocked.
 - `restricted` cannot enter public HTML, assets, search index, sitemap, download packages, or social share output.
 
-The schemas expose these decisions through `permission`, `publicUse`, and `publicRelease`. Later build gates should fail public output if any page, data record, or asset depends on `pending`, `restricted`, or an unregistered third-party asset.
+The schemas expose these decisions through `permission`, `authorization.scope`, `publicUse`, and `publicRelease`. The build gates call the same authorization policy function and fail public output if any page, data record, or asset exceeds its registered scope, depends on invalid evidence, or exposes `pending`, `restricted`, or an unregistered third-party asset.
 
 ## ID And URL Constraints
 
@@ -89,4 +91,4 @@ pnpm exec ajv validate --spec=draft2020 -s content/schemas/data-record.schema.js
 pnpm exec ajv validate --spec=draft2020 -s content/schemas/source-asset.schema.json -d path/to/source-asset.json
 ```
 
-Current scope is schema definition only. Cross-file checks such as duplicate IDs, duplicate slugs, dangling `related` IDs, missing `sourceRefs`, and public-build dependency tracing must be implemented by later content gate scripts.
+Cross-file checks are implemented by the content gates. `validate-authorization.mjs` verifies evidence and the five-state/seven-output matrix; `validate-provenance.mjs` checks page/import use; `scan-public-artifacts.mjs` scans public and built output. Duplicate IDs, dangling references and route constraints remain covered by the other content validators.

@@ -7,12 +7,20 @@ import {
   root,
   writeReport,
 } from './lib/content-utils.mjs'
+import {
+  derivePublicRelease,
+  permissionIsNoWider,
+  releaseDecisionMatches,
+} from './lib/authorization-policy.mjs'
 
 const failures = []
 const pages = await loadPages()
 const external = await readJson('content/governance/source-assets.json')
 const internal = await readJson('content/governance/internal-sources.json')
 const publicAssets = await readJson('content/governance/public-assets.json')
+const externalById = new Map(
+  (external.assets ?? []).map((source) => [source.id, source]),
+)
 
 const registry = new Map([
   ...(external.assets ?? []).map((source) => [source.id, source]),
@@ -40,11 +48,38 @@ for (const page of pages) {
     const registered = source.assetId ? registry.get(source.assetId) : null
     if (
       registered?.permission &&
-      source.permission !== registered.permission
+      !permissionIsNoWider(source.permission, registered.permission)
     ) {
       failures.push(
-        `${page.filePath}: source permission differs from registry for ${source.assetId}`,
+        `${page.filePath}: source permission is wider than registry for ${source.assetId}`,
       )
+    }
+    const externalSource = source.assetId
+      ? externalById.get(source.assetId)
+      : null
+    if (externalSource) {
+      const decision = derivePublicRelease(externalSource)
+      if (!releaseDecisionMatches(externalSource.publicRelease, decision)) {
+        failures.push(
+          `${page.filePath}: registry release decision is stale for ${source.assetId}`,
+        )
+      }
+      if (
+        source.publicUse?.body === true &&
+        decision.publicRelease.body !== true
+      ) {
+        failures.push(
+          `${page.filePath}: body use exceeds registry scope for ${source.assetId}`,
+        )
+      }
+      if (
+        source.publicUse?.asset === true &&
+        decision.publicRelease.asset !== true
+      ) {
+        failures.push(
+          `${page.filePath}: asset use exceeds registry scope for ${source.assetId}`,
+        )
+      }
     }
   }
 }
@@ -87,6 +122,15 @@ for (const collection of publicAssets.collections ?? []) {
       `${collection.root}: public collection lacks owned/authorized permission`,
     )
   }
+  const externalSource = externalById.get(collection.sourceId)
+  if (
+    externalSource &&
+    derivePublicRelease(externalSource).publicRelease.asset !== true
+  ) {
+    failures.push(
+      `${collection.root}: public collection exceeds source asset scope`,
+    )
+  }
   publicFiles.push(
     ...regularFiles.map((entry) =>
       entry.relativePath.split(path.sep).join('/'),
@@ -112,11 +156,21 @@ async function collectReports(directory) {
       const sourceAssetId = report.sourceAssetId ?? report.assetId
       const source = registry.get(sourceAssetId)
       if (!source) failures.push(`${relativePath}: source asset is not registered`)
-      if (
-        source?.permission === 'pending' &&
-        report.publishable !== false
-      ) {
-        failures.push(`${relativePath}: pending import must not be publishable`)
+      if (source && report.publishable === true) {
+        const decision = externalById.has(sourceAssetId)
+          ? derivePublicRelease(source).publicRelease
+          : source.publicRelease
+        const requiredField =
+          source.assetType === 'xlsx'
+            ? 'structuredData'
+            : source.assetType === 'image'
+              ? 'derivative'
+              : 'body'
+        if (decision?.[requiredField] !== true) {
+          failures.push(
+            `${relativePath}: publishable import exceeds ${requiredField} scope`,
+          )
+        }
       }
     }
   }

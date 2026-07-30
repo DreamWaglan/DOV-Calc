@@ -13,6 +13,7 @@
     "permission",
     "status",
     "owners",
+    "reviewers",
     "hashes",
     "publicRelease"
   ],
@@ -167,6 +168,76 @@
         }
       }
     },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidenceId",
+        "rightsHolder",
+        "grantedBy",
+        "grantedAt",
+        "evidencePath",
+        "attribution",
+        "expiresAt",
+        "restrictions",
+        "deniedScopes",
+        "scope"
+      ],
+      "properties": {
+        "evidenceId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "rightsHolder": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "grantedBy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "grantedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "evidencePath": {
+          "type": "string",
+          "pattern": "^(?!.*(?:^|/)\\.\\.)(?!/)(?![A-Za-z]:).+"
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "expiresAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          }
+        },
+        "deniedScopes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/publicReleaseField"
+          }
+        },
+        "scope": {
+          "$ref": "#/$defs/publicReleaseScope"
+        }
+      }
+    },
     "status": {
       "type": "string",
       "enum": [
@@ -225,7 +296,12 @@
         "body",
         "asset",
         "searchIndex",
-        "sitemap"
+        "sitemap",
+        "download",
+        "derivative",
+        "structuredData",
+        "mode",
+        "reason"
       ],
       "properties": {
         "body": {
@@ -238,6 +314,15 @@
           "type": "boolean"
         },
         "sitemap": {
+          "type": "boolean"
+        },
+        "download": {
+          "type": "boolean"
+        },
+        "derivative": {
+          "type": "boolean"
+        },
+        "structuredData": {
           "type": "boolean"
         },
         "mode": {
@@ -273,6 +358,27 @@
       "if": {
         "properties": {
           "permission": {
+            "enum": [
+              "owned",
+              "authorized",
+              "quoted"
+            ]
+          }
+        },
+        "required": [
+          "permission"
+        ]
+      },
+      "then": {
+        "required": [
+          "authorization"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "permission": {
             "const": "pending"
           }
         },
@@ -291,6 +397,18 @@
                 "const": false
               },
               "searchIndex": {
+                "const": false
+              },
+              "sitemap": {
+                "const": false
+              },
+              "download": {
+                "const": false
+              },
+              "derivative": {
+                "const": false
+              },
+              "structuredData": {
                 "const": false
               },
               "mode": {
@@ -331,6 +449,15 @@
               "sitemap": {
                 "const": false
               },
+              "download": {
+                "const": false
+              },
+              "derivative": {
+                "const": false
+              },
+              "structuredData": {
+                "const": false
+              },
               "mode": {
                 "const": "blocked"
               }
@@ -360,6 +487,21 @@
               "asset": {
                 "const": false
               },
+              "searchIndex": {
+                "const": false
+              },
+              "sitemap": {
+                "const": false
+              },
+              "download": {
+                "const": false
+              },
+              "derivative": {
+                "const": false
+              },
+              "structuredData": {
+                "const": false
+              },
               "mode": {
                 "const": "quote-only"
               }
@@ -370,6 +512,54 @@
     }
   ],
   "$defs": {
+    "publicReleaseField": {
+      "type": "string",
+      "enum": [
+        "body",
+        "asset",
+        "searchIndex",
+        "sitemap",
+        "download",
+        "derivative",
+        "structuredData"
+      ]
+    },
+    "publicReleaseScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "body",
+        "asset",
+        "searchIndex",
+        "sitemap",
+        "download",
+        "derivative",
+        "structuredData"
+      ],
+      "properties": {
+        "body": {
+          "type": "boolean"
+        },
+        "asset": {
+          "type": "boolean"
+        },
+        "searchIndex": {
+          "type": "boolean"
+        },
+        "sitemap": {
+          "type": "boolean"
+        },
+        "download": {
+          "type": "boolean"
+        },
+        "derivative": {
+          "type": "boolean"
+        },
+        "structuredData": {
+          "type": "boolean"
+        }
+      }
+    },
     "person": {
       "type": "object",
       "additionalProperties": false,
