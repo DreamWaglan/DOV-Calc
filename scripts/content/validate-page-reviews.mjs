@@ -1,7 +1,7 @@
-import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import {
+  canonicalTextSha256,
   loadPages,
   printResult,
   readJson,
@@ -110,7 +110,7 @@ for (const page of pages) {
     failures.push(`${id}: review decision source set differs from frontmatter`)
   }
   const source = await readFile(path.join(root, page.filePath), 'utf8')
-  const hash = createHash('sha256').update(source).digest('hex')
+  const hash = canonicalTextSha256(source)
   if (decision.contentSha256 !== hash) {
     failures.push(`${id}: reviewed content hash differs from the current page`)
   }

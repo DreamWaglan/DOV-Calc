@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto'
 import { readFile, readdir, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 import { parse as parseYaml } from 'yaml'
@@ -7,6 +8,12 @@ export { writeFileWithRetry } from '../../lib/file-utils.mjs'
 
 export const root = process.cwd()
 export const reportsRoot = path.join(root, 'content', 'reports')
+
+export function canonicalTextSha256(source) {
+  return createHash('sha256')
+    .update(String(source).replace(/\r\n?/g, '\n'))
+    .digest('hex')
+}
 
 export async function listFiles(directory, predicate = () => true) {
   const entries = await readdir(directory, { withFileTypes: true })

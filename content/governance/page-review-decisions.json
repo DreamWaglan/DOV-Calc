@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewedAt": "2026-07-30",
-  "reviewedAgainstCommit": "396e9ded8cdcd38536eff3399e981e445635aaf5",
+  "reviewedAgainstCommit": "5c3eb228e9ec753733ceb9491643f63dcc8f9fa1",
   "nextAuditAt": "2026-10-28",
   "baseline": {
     "pages": 97,
@@ -134,7 +134,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "f9f9397c19a9e6a225d06ae3538c7b2aa5bf1858c6be2b9f9aa49546153d354f"
+      "contentSha256": "98e071f633ff3603d80cba23184a8216ac3683df29e55eefb10780ad80c84bc8"
     },
     {
       "pageId": "about-rollback",
@@ -212,7 +212,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "f9d96dcb87b138002400ef54bd04eb4eafae176b661e835988cd544b7f5f620c"
+      "contentSha256": "a817c2d8e281b506109fdda7548d7d47bade11112022173a83f312f09a11369b"
     },
     {
       "pageId": "combat-encounter-appendix",
@@ -1290,7 +1290,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "79b4f44f45beb4800525890e8673814225c855b32ea89c48af3eda20a1bc63ea"
+      "contentSha256": "0c49527bd04153e5b5282b805e3fbb6b4b3c03583b49a9276297a08693f472ad"
     },
     {
       "pageId": "posts-index",
@@ -1316,7 +1316,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "272c78085bc337eb22250afa15bb8352945b0c01ee2eecb6b2b277aacc8637e3"
+      "contentSha256": "6c825a4a91c589130b694c57731b3de8a4d48fe37db6f4c7075d35aaf261e754"
     },
     {
       "pageId": "progression-index",
@@ -1798,7 +1798,7 @@
         "urlHistory": "not-applicable"
       },
       "rationale": "页面已完成编辑、来源/授权、适用版本与责任角色审核；专项迁移、数据、媒体、工具或站务门禁适用于其页面类型。",
-      "contentSha256": "da1206f3545e81808877a4bdf5b164c6e51e160eac89bdd45c6b6304a1e50ca3"
+      "contentSha256": "d876cc924f439565d0ba4ecd0873d3b52012b8ca3b56cc8ae5d2200c892e601c"
     },
     {
       "pageId": "topic-beginner-equipment",

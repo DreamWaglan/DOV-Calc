@@ -1,9 +1,9 @@
-import { createHash } from 'node:crypto'
 import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { parse as parseYaml } from 'yaml'
 import {
+  canonicalTextSha256,
   root,
   writeFileWithRetry as writeFile,
 } from './lib/content-utils.mjs'
@@ -73,10 +73,6 @@ function nextReviewAt(section) {
     return '2027-01-26'
   }
   return '2027-07-30'
-}
-
-function contentHash(source) {
-  return createHash('sha256').update(source).digest('hex')
 }
 
 function routeFromPath(relativePath) {
@@ -189,7 +185,7 @@ for (const absolutePath of markdownFiles) {
           },
         }
       : {}),
-    contentSha256: contentHash(source),
+    contentSha256: canonicalTextSha256(source),
   })
 }
 

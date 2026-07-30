@@ -18,6 +18,7 @@ const checks = [
   'scripts/content/validate-advanced-content.mjs',
   'scripts/content/validate-basic-attack-dataset.mjs',
   'tests/tools/basic-attack-model.mjs',
+  'tests/content/page-review-hash.mjs',
   'scripts/content/validate-page-reviews.mjs',
   'scripts/content/validate-drift.mjs',
   'scripts/content/validate-document-structures.mjs',
