@@ -51,7 +51,9 @@ const secondDocxFingerprint = await directoryFingerprint(docxOutput)
 assert.equal(secondDocxFingerprint, firstDocxFingerprint, 'DOCX import output must be byte-stable')
 assert.equal(firstDocx.source.sha256, secondDocx.source.sha256)
 assert.equal(firstDocx.publishable, false)
-assert.equal(firstDocx.permission, 'pending')
+assert.equal(firstDocx.permission, 'authorized')
+assert.equal(firstDocx.authorizationEvidenceId, 'auth-user-declaration-20260730')
+assert.equal(firstDocx.reviewStatus, 'migration-review-required')
 assert.equal(firstDocx.counts.paragraphs, 451)
 assert.equal(firstDocx.counts.tables, 82)
 assert.equal(firstDocx.counts.drawings, 490)
@@ -60,6 +62,20 @@ assert.equal(firstDocx.counts.footnotesPresent, true)
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'drawings'))
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'media'))
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'footnotes'))
+assert.equal(firstDocx.elements.filter((item) => item.elementType === 'media').length, 119)
+assert.equal(firstDocx.drawingRelations.length, 490)
+assert.equal(
+  new Set(firstDocx.elements.map((item) => item.sourceElementId)).size,
+  firstDocx.elements.length,
+)
+assert.equal(
+  new Set(firstDocx.drawingRelations.map((item) => item.sourceRelationId)).size,
+  firstDocx.drawingRelations.length,
+)
+assert.deepEqual(
+  secondDocx.elements.map((item) => item.sourceElementId),
+  firstDocx.elements.map((item) => item.sourceElementId),
+)
 const reviewMarkdown = await readFile(path.join(docxOutput, 'review.md'), 'utf8')
 assert.match(reviewMarkdown, /Quarantine Review Items/)
 assert.doesNotMatch(firstDocx.outputs.markdown.path, /^docs\/public\//)
@@ -83,8 +99,18 @@ assert.equal(firstImage.source.sha256, originalImageHash)
 assert.equal(firstImage.source.width, 1081)
 assert.equal(firstImage.source.height, 12800)
 assert.equal(firstImage.publishable, false)
-assert.equal(firstImage.permission, 'pending')
+assert.equal(firstImage.permission, 'authorized')
+assert.equal(firstImage.authorizationEvidenceId, 'auth-user-declaration-20260730')
+assert.equal(firstImage.reviewStatus, 'migration-review-required')
 assert.equal(firstImage.originalCopied, false)
+assert.match(
+  firstImage.sourceElement.sourceElementId,
+  /^src-[a-f0-9]{12}:image:[a-f0-9]{16}$/,
+)
+assert.equal(
+  firstImage.sourceElement.sourceElementId,
+  secondImage.sourceElement.sourceElementId,
+)
 assert.equal(firstImage.derivatives.filter((item) => item.kind === 'segment').length, 4)
 for (const derivative of firstImage.derivatives) {
   assert.ok(derivative.width > 0)

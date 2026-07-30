@@ -77,11 +77,11 @@ for (const specification of specifications) {
 
   if (
     report.assetId !== specification.assetId ||
-    report.permission !== 'pending' ||
-    report.publishable !== false
+    report.publishable !== false ||
+    report.reviewStatus !== 'migration-review-required'
   ) {
     throw new Error(
-      `${specification.importDir}: import report violates the pending-source contract`,
+      `${specification.importDir}: import report violates the migration review contract`,
     )
   }
 
@@ -94,7 +94,9 @@ for (const specification of specifications) {
     headingOutline: extractHeadings(review),
     suggestedPageId: specification.suggestedPageId,
     reviewItems: report.reviewItems,
-    permission: 'pending',
+    permission: report.permission,
+    authorizationEvidenceId: report.authorizationEvidenceId,
+    reviewStatus: report.reviewStatus,
     publishable: false,
   })
 }

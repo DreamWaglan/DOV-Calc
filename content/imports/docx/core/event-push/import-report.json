@@ -7,7 +7,20 @@
     "bytes": 5579793,
     "uncompressedBytes": 5774812
   },
-  "permission": "pending",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
   "counts": {
     "paragraphs": 82,
@@ -23,13 +36,13 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/core/event-push/review.md",
-      "sha256": "7b1d8ea64be68f66bc535fcf2c81e0cdffa3695f4b205617281ea394be3051fe",
-      "bytes": 10717
+      "sha256": "fb3e0e7626df1fac06ed365998d88be9cbbce9eb2608f208f9c15617d380bef5",
+      "bytes": 10761
     },
     "quarantine": {
       "path": "content/imports/docx/core/event-push/quarantine.json",
-      "sha256": "8c34fe2de8c036fc182271fe1505f75dc76a6739962d275de3021f2f0a2d9039",
-      "bytes": 798
+      "sha256": "ed88c38b1214da54711eaeaf8d68ce39bc90742ab3a0c76eafc40d7374bf9541",
+      "bytes": 1197
     }
   },
   "reviewItems": [
@@ -50,6 +63,1270 @@
       "count": 0,
       "disposition": "quarantined-for-manual-review",
       "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ],
+  "elements": [
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f880ad9f53855ed5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 1,
+        "paragraphIndex": 1
+      },
+      "textHash": "3750164576c03feaf4ae5ffb13342c69c91d2733f5186ec395beb8d408613967"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e5869a2c4a65e6e1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 2,
+        "paragraphIndex": 2
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:ce1305be547032a2",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 3,
+        "paragraphIndex": 3
+      },
+      "textHash": "189dc177285c0657730bb10d67c73eac4ecfb56531f7ec028ca45d9397718e8b",
+      "headingLevel": 2,
+      "title": "写在前面"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:41268879a9a0d288",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 4,
+        "paragraphIndex": 4
+      },
+      "textHash": "04b40d01cbd7af0d3bb5b0ccaefb501c7b530763449eaf87eab6ff308e2fe72c"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:237674d636241602",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 5,
+        "paragraphIndex": 5
+      },
+      "textHash": "d661c3d96d53ebc0ca8a55aae24b5df4a4d1bf28d37337b982fe8ebf54846eeb",
+      "headingLevel": 2,
+      "title": "正文"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:690d5f448af1e549",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 6,
+        "paragraphIndex": 6
+      },
+      "textHash": "3f92bfc60c090b5e4fbd7ccbaff761427ccc3f36d0cab4504b42881ac294bc53"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:bd080980cb2a1d48",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 7,
+        "paragraphIndex": 7
+      },
+      "textHash": "14569d0e88c30543c2aa060a96ecf3aa2bd39e7d7dc432c6a8a04d70dd476d2f"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:5db14a20fdc40a5a",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 8,
+        "paragraphIndex": 8
+      },
+      "textHash": "b0f6f541c8dc604c65656c03e980b20f7b79bf64c5bd0602f46b41a34a71882c",
+      "headingLevel": 3,
+      "title": "确认活动带路条件"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:847f64535a0237f4",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 10,
+        "paragraphIndex": 9
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f3cd194ed38400f8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 11,
+        "paragraphIndex": 10
+      },
+      "textHash": "f8496c089c978c137922cd7ee735ac5d039274e889aeb70c145e5850491ae139"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:3dc770f7bc0cac7a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 12,
+        "paragraphIndex": 11
+      },
+      "textHash": "8d80ba6ee0823f202eb2ff497d4298312578efe11f5c73e07274344999aa94aa"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:9a10b755004fc374",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 13,
+        "paragraphIndex": 12
+      },
+      "textHash": "2dd6326fe654200b66fc3172f68cf415342cdbff2830ace21f6f11e3517d3833",
+      "headingLevel": 3,
+      "title": "确认通关所需练度"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:3b3bbfde59a6656e",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 14,
+        "paragraphIndex": 13
+      },
+      "textHash": "71913d47b93cfbbdb8e92a052dcae52a445aa5f0753c8e4cf19516216bf5e44f"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:cffeab6001d1ad14",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 15,
+        "paragraphIndex": 14
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:46784e721848aa0f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 16,
+        "paragraphIndex": 15
+      },
+      "textHash": "09d0d68f6e514f182ae8706d6f5cd00eb1d44d1dcc9fc429c6743d54f139d52d"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:47ff965d0163028e",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 17,
+        "paragraphIndex": 16
+      },
+      "textHash": "593d6b12e6f97acda7e7030de96ecdd45583d34476dbf285197e7483da065cc0"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:bf1f11e4fa2eb460",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 18,
+        "paragraphIndex": 17
+      },
+      "textHash": "a2468fd6cadadf16e8909a5a32fe7f35a74dc2d0b7e381a3ef666e13e0724bfd"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:c2e99845b8f83402",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 19,
+        "paragraphIndex": 18
+      },
+      "textHash": "8d00a420b06135909301b15d2ab8730b55c61447e1cbfe29b8d94ab7afdf1a86"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:6f8055f122adb9eb",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 20,
+        "paragraphIndex": 19
+      },
+      "textHash": "6c6072f71d96d4e11f7e304a74f9b0eb032e167a76179cc4d1fb1494dc3e34f7"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:0f976ca46cc62bc4",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 21,
+        "paragraphIndex": 20
+      },
+      "textHash": "898224c8b524620bc7ba1dafe8aa4c45a0d97df91c2eabf041198b7229e39b0f"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f5dd59163b58118b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 22,
+        "paragraphIndex": 21
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:aaddd12b446c5c08",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 23,
+        "paragraphIndex": 22
+      },
+      "textHash": "18d074e83cd37848a7fd78b442e328072459a3238423afe3ae92d0ff156ae1e0"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:7e9936f66c7b8c62",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 24,
+        "paragraphIndex": 23
+      },
+      "textHash": "5e02b86399a775bc9672f1efe4c59298c01d46e2482e32a462934b78840a7fbd"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:14c7276fed234bf3",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 25,
+        "paragraphIndex": 24
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f5382ed478da55ed",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 26,
+        "paragraphIndex": 25
+      },
+      "textHash": "3d3882d1c1a0c666b3326a5fb82378d6e619a4c877c3d218e913eca10c7c58de"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:cbabc7a7595d18e2",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 27,
+        "paragraphIndex": 26
+      },
+      "textHash": "4869a39ecf06b039e7c8689b926be6e9dcf0bea439f4691c7fb332983515cfe8",
+      "headingLevel": 3,
+      "title": "找到自己Box中合适的舰灵并构筑队伍"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:3eec93d0355604cd",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 28,
+        "paragraphIndex": 27
+      },
+      "textHash": "49f628d5e08ba6d3d60e1bcc9b7ab6ece61fb964c0fbef515ce01d863011183f"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:bb53bf7153cf0455",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 29,
+        "paragraphIndex": 28
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:127cf300acc62f07",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 30,
+        "paragraphIndex": 29
+      },
+      "textHash": "009c7a0e4843d88659df2e3668026cbdbd6e9765a502370e36935b8433680aa1"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:9d98fb18a2d45ad7",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 31,
+        "paragraphIndex": 30
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:b95bc1be03f2a0f1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 32,
+        "paragraphIndex": 31
+      },
+      "textHash": "657582ef5287137cdc40a313a0f47fb26dc42743413240e5609b2a6d7b47610d"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:7a8b36a1a332d9bc",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 33,
+        "paragraphIndex": 32
+      },
+      "textHash": "2e655610297c7a6649c3e67b5ac529c12453f4f0164ea92d5e116f1728fc3afc"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:9871240c1871786f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 34,
+        "paragraphIndex": 33
+      },
+      "textHash": "6bc83965d6db6fbe6cdddb3e603237d35ddfa1a9c4e999303415f105dc1fd8c3"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:35e642a9f20b6956",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 35,
+        "paragraphIndex": 34
+      },
+      "textHash": "c13418508a232d43cbb12abd0c9a6355a39dba54e66dabd7e45a2336252b5645"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e0fc33a79bb9b3b4",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 36,
+        "paragraphIndex": 35
+      },
+      "textHash": "4cb077e61ff9579faa53afc5d1008f2aadaa51ebd175a71bcda28bedfedf7e3b"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f7e9b9b42933bd3c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 37,
+        "paragraphIndex": 36
+      },
+      "textHash": "06fcfe3389a14ece8f2098e20e2145dee9ff8ecb747d4e84e58fe50294678601"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:116d18402e3186f8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 38,
+        "paragraphIndex": 37
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:de6e72d1559c5e90",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 39,
+        "paragraphIndex": 38
+      },
+      "textHash": "f154b1ea41de60dc326a3c5f103367e3b6fa062d64fe6d115c967b5b34fc874f"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:5cccc15111c29c36",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 40,
+        "paragraphIndex": 39
+      },
+      "textHash": "e2aca2dad3f5b0b5c43931880fb28641a068d6cdd77f4d1851fed7ec2865125e"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:d831992d5767afe7",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 41,
+        "paragraphIndex": 40
+      },
+      "textHash": "7ce5a0877ecccf0c3bba66e1ef4a4163cd9ebea5fd6fe059a782fe79d5c4d27b"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:de4b3f05226e00b0",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 42,
+        "paragraphIndex": 41
+      },
+      "textHash": "ed416bf133df88e353b7e1fed4d2d4fcb14f5b142dbe7b74725c24586f153121",
+      "headingLevel": 3,
+      "title": "最后请一定要去关卡里面打几轮试试"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f702dd956fa56ef2",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 43,
+        "paragraphIndex": 42
+      },
+      "textHash": "746fcd570cd4fab5467af1bcc8e33e582b9312855c5ae71a98a203491b229bfc"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:9c81b1c222a1cf0b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 44,
+        "paragraphIndex": 43
+      },
+      "textHash": "83ff6a6cd34b75074b5d122fbff7b0557b48da17978624d7e266db9647b792d3"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:a92b84fc2e60cd72",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 45,
+        "paragraphIndex": 44
+      },
+      "textHash": "3fc18fcf60e16b77df0ad72af9a43bfbf4940ceb62b29059ef62369513cbb3b5"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:91545177302abe33",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 46,
+        "paragraphIndex": 45
+      },
+      "textHash": "a91e2a0c8e319d19325496f921b959db30423ab447697d640f10606482d452f8"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:c604c9cd540a84d5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 47,
+        "paragraphIndex": 46
+      },
+      "textHash": "8e414be4a5f43436d5b8acc9f63a82a40d70b970ff8e8b09898d534a80ba9c1a"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:44dbbf6d2cd2c426",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 48,
+        "paragraphIndex": 47
+      },
+      "textHash": "c5ecd2ab82c020a179b07504f36a5bdf8b273d644a927d15015eacca4a469fa2"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:ec067733a1c2dbd1",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 49,
+        "paragraphIndex": 48
+      },
+      "textHash": "10784c1f5390c487d6c5e3fa16c1fe8b7224fda0082be6b58063b72df2c2f7c2",
+      "headingLevel": 3,
+      "title": "额外的懒狗方法"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:1def2d2d77725513",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 50,
+        "paragraphIndex": 49
+      },
+      "textHash": "d4561472571eace6f9e51f4821258cb14d71ec4a0e07bd79c59d5710b7bff108"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:2733712de40f8f7c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 51,
+        "paragraphIndex": 50
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:9d9d8f2387ff5ab0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 52,
+        "paragraphIndex": 51
+      },
+      "textHash": "c58fa107991e564e84b9d92a0aeacb406a3343ea4f059119664d962df1ba425b"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:4dfb17d861279795",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 53,
+        "paragraphIndex": 52
+      },
+      "textHash": "19a9b294ce8740a52c6602bc5da3bac3c05bb360891f268f78a8c9ec22402bec"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:9135f85dffdadd46",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 54,
+        "paragraphIndex": 53
+      },
+      "textHash": "dbcce84a4141c6e557106768357dbe9daa133ee4710eff8be78f636128e87fc9"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:66d5e7254a4a51df",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 55,
+        "paragraphIndex": 54
+      },
+      "textHash": "6797fd6fa4a8c178f7a780b10dedd29156fd0f3be684005b10066fe4ae0ae484"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:69db38360941ca03",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 56,
+        "paragraphIndex": 55
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:92b6ddae90c98117",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 57,
+        "paragraphIndex": 56
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:heading:d8fcac3f60d58e33",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 58,
+        "paragraphIndex": 57
+      },
+      "textHash": "94aa3e6eeb35520adf854c3103f8e177c36c6acc6121b3e7bbc48fb6908ded10",
+      "headingLevel": 2,
+      "title": "附录：往期活动攻略链接"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:73d045caa79c2c2a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 59,
+        "paragraphIndex": 58
+      },
+      "textHash": "1f7e9cf2823f16e62fb5acf981c95576b0706e66881f835e753ee6ac51e417b4"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:3a1a9619e7a82a29",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 60,
+        "paragraphIndex": 59
+      },
+      "textHash": "4587a221cacd3e640f34db84413ddd048a0cf845aa609269287dae26e008b015"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:d6a7f35fe653967f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 61,
+        "paragraphIndex": 60
+      },
+      "textHash": "6475848c3d58be94d6a2fba2d57192e99a0e96e05810e5ef5e21bcb686fafc2b"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e293749351e8cf5d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 62,
+        "paragraphIndex": 61
+      },
+      "textHash": "a07a543ccc53a17e6bdb666b1552f4409457008fc9cb267bfac9e356959d89a5"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:23ea1b1616caf555",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 63,
+        "paragraphIndex": 62
+      },
+      "textHash": "6af924d04d3adff36cd10643975b239a0ce5f42bc99062e290581354b726b2a0"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:25a1896ccd2571c1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 64,
+        "paragraphIndex": 63
+      },
+      "textHash": "8318d2209ca7fac51340635ae947066435fa5929b4c21213aeb23e9a5786fc7d"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:dcb24c8609334cb0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 65,
+        "paragraphIndex": 64
+      },
+      "textHash": "89b39e7cb8c114d650a348044cbb7140764081280656f4eeadae73227dbbb08a"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:8020bc742f15ef8f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 66,
+        "paragraphIndex": 65
+      },
+      "textHash": "b1aa28c6a48dd79247cb89d9c781201a7e6e2c725ff6ad713748594a3ae540f8"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:35b44fc1447dbef0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 67,
+        "paragraphIndex": 66
+      },
+      "textHash": "96b38122b1b76fa96df9e91333d08faadcc8dfbed3f6e616be96d76d59b51cc2"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:192648909b73499d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 68,
+        "paragraphIndex": 67
+      },
+      "textHash": "3c94102fb51e21454210553fed15f4c5f57e472de730cf4f4c30b1e6febb1b40"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e616b86c16e87c1b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 69,
+        "paragraphIndex": 68
+      },
+      "textHash": "ab11db864ad06d48a693ae14b7ee61c575dc3c71cc5608548447ff309c87a3df"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:0b19b8320a296945",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 70,
+        "paragraphIndex": 69
+      },
+      "textHash": "ed559da98095fc4ac9e3bc441f0e00675c232e0b7627ca83d457e2311c9cb458"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:784251b689fa89a9",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 71,
+        "paragraphIndex": 70
+      },
+      "textHash": "9f228a179fc6624d959cef5ea88d4a5db6b79a5b9c11ffe174660af2eab3bccd"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:a1fbf88f5e5ade4a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 72,
+        "paragraphIndex": 71
+      },
+      "textHash": "f8b203601f6e6df66976a6e15a6ffd656c11652ff8847b0d9bc81fd475619c1a"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:16707235543bc1e1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 73,
+        "paragraphIndex": 72
+      },
+      "textHash": "5ca3d1e13fd5dabaaad5f0756bd702f6007e0a9e24f879a1d4006d2a766adc6e"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:f790333ede40a153",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 74,
+        "paragraphIndex": 73
+      },
+      "textHash": "3c0963dcdd863405d4c3f91f539d164b439b6d431a03434446c78cb604b8fc56"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:0d52474d1bae0e2b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 75,
+        "paragraphIndex": 74
+      },
+      "textHash": "2c90f5a78630461a586a3a1ce9c7e313a17732035eb7ba257f8456772b577057"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:30f73ac1244008f3",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 76,
+        "paragraphIndex": 75
+      },
+      "textHash": "f909e3cf798120be980656efcb6a6f26a22e645ea53c3d9c462c537ebd34dd41"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:b0cfafc686db20a7",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 77,
+        "paragraphIndex": 76
+      },
+      "textHash": "a8ad88b715e1f5a57e3f2f70c1138df144f1565aa2f2be9210134ffd778d4ec4"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:b8111a9a989100a0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 78,
+        "paragraphIndex": 77
+      },
+      "textHash": "82af9165e80b8b882d06d5527014b0051332cac8bb9bc27c8acec731daa9a1df"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:89a20660ec53bdc0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 79,
+        "paragraphIndex": 78
+      },
+      "textHash": "58a69861cdfbbb8085437eb67d6d28e0b2220804a37aa3be050920fced947819"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:4e7363419ac6aec5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 80,
+        "paragraphIndex": 79
+      },
+      "textHash": "8ff740618d7df6465679c95043f5deba986e7fe99051864dbdc7710c8d24f852"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:c505923d048c6d7c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 81,
+        "paragraphIndex": 80
+      },
+      "textHash": "e5e0f1f6e08dc358c05680f3663ddf54f9ad772dc969c2bd8afefb75e56c98a1"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e4209ec87b44c7e5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 82,
+        "paragraphIndex": 81
+      },
+      "textHash": "bc3f2509ba38e5fca1f20e0120618312a237db9128e9e38b14b14442b1ed6eda"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:paragraph:e89ecf1985931ee9",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 83,
+        "paragraphIndex": 82
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:table:4cbce79e5c28be16",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 1
+      },
+      "rowCount": 1,
+      "columnCount": 2,
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:9aa81d0038caca88",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image1.jpeg",
+        "mediaIndex": 1
+      },
+      "fileName": "image1.jpeg",
+      "sha256": "74c87b49ce2c69393673a9d2bb7afe0b0fb6e5afa8a97557f8f6c0898eb2c285",
+      "bytes": 629719,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId7",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:ea230b31d9905c83",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image10.jpeg",
+        "mediaIndex": 2
+      },
+      "fileName": "image10.jpeg",
+      "sha256": "b94713d1c12c342da3b971d1ad9ecc5d06f26229622d4ecc5d08a11d0c5605e2",
+      "bytes": 48297,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId16",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:a65f08106909ab4f",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image2.png",
+        "mediaIndex": 3
+      },
+      "fileName": "image2.png",
+      "sha256": "b412578ef37ba3245dd28291a28534d75aea47b8fa86ceab7d1a32f58cddfbcb",
+      "bytes": 158607,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId8",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:921e38f5f99ad0ee",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image3.jpeg",
+        "mediaIndex": 4
+      },
+      "fileName": "image3.jpeg",
+      "sha256": "618681d79a05e53ee33a7c67a44807ded11a0ca276e7832ee25e97fc7eedcdf1",
+      "bytes": 627471,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId9",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:56d67fb3cfa2b093",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image4.png",
+        "mediaIndex": 5
+      },
+      "fileName": "image4.png",
+      "sha256": "246fbcbff983abffa4c15a849143eb45eb462a8c5727b131513848460e8ce80e",
+      "bytes": 81369,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId10",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:bbc3c1a189059825",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image5.jpg",
+        "mediaIndex": 6
+      },
+      "fileName": "image5.jpg",
+      "sha256": "353c5d4b781ab9680a5ba8f3144e7b139c2b06febfa768644dc4debe326d22e5",
+      "bytes": 330243,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId11",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:6f50a038b5cf882d",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image6.png",
+        "mediaIndex": 7
+      },
+      "fileName": "image6.png",
+      "sha256": "c0c0bf118c9aec73bf2f778eac184def53075c63de96f69dcdcb66829d3ebe3b",
+      "bytes": 48462,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId12",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:8e31fbe49e193772",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image7.png",
+        "mediaIndex": 8
+      },
+      "fileName": "image7.png",
+      "sha256": "86df2d85d7f3a82575360d61e68b754eb09894686e34b6635298f148d6874589",
+      "bytes": 1952355,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId13",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:723c0e288633c4c1",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image8.png",
+        "mediaIndex": 9
+      },
+      "fileName": "image8.png",
+      "sha256": "a26fce9afc1e00d16d66de57b9fcf4778bd85d410d2b1ca74fb41e56a3c5106e",
+      "bytes": 1659271,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId14",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceElementId": "src-d47e51aa8321:media:955683f4dbdb160f",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image9.png",
+        "mediaIndex": 10
+      },
+      "fileName": "image9.png",
+      "sha256": "8acadde00277721572a281749343c0bfdb080500910ebac37683ed0edbd523ab",
+      "bytes": 6430,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId15",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    }
+  ],
+  "drawingRelations": [
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:66bfec67d45107a2",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 1
+      },
+      "relationshipId": "rId7",
+      "relationshipTarget": "word/media/image1.jpeg",
+      "targetMediaElementId": "src-d47e51aa8321:media:9aa81d0038caca88",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:6eb7054908af45b0",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 2
+      },
+      "relationshipId": "rId8",
+      "relationshipTarget": "word/media/image2.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:a65f08106909ab4f",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:ac56a70ad2ffaf55",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 3
+      },
+      "relationshipId": "rId9",
+      "relationshipTarget": "word/media/image3.jpeg",
+      "targetMediaElementId": "src-d47e51aa8321:media:921e38f5f99ad0ee",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:8bde432a7dc52a52",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 4
+      },
+      "relationshipId": "rId10",
+      "relationshipTarget": "word/media/image4.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:56d67fb3cfa2b093",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:b7f3b8263bbc9371",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 5
+      },
+      "relationshipId": "rId11",
+      "relationshipTarget": "word/media/image5.jpg",
+      "targetMediaElementId": "src-d47e51aa8321:media:bbc3c1a189059825",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:24cee540cf92d3ca",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 6
+      },
+      "relationshipId": "rId12",
+      "relationshipTarget": "word/media/image6.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:6f50a038b5cf882d",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:d470e24307a62caf",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 7
+      },
+      "relationshipId": "rId13",
+      "relationshipTarget": "word/media/image7.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:8e31fbe49e193772",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:7bb6af8055add5f5",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 8
+      },
+      "relationshipId": "rId14",
+      "relationshipTarget": "word/media/image8.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:723c0e288633c4c1",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:02723ac9c5aa5dfe",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 9
+      },
+      "relationshipId": "rId15",
+      "relationshipTarget": "word/media/image9.png",
+      "targetMediaElementId": "src-d47e51aa8321:media:955683f4dbdb160f",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-d47e51aa8321",
+      "sourceRelationId": "src-d47e51aa8321:relation:19dca643ffde8e4e",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 10
+      },
+      "relationshipId": "rId16",
+      "relationshipTarget": "word/media/image10.jpeg",
+      "targetMediaElementId": "src-d47e51aa8321:media:ea230b31d9905c83",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
     }
   ]
 }

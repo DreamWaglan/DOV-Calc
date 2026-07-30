@@ -282,7 +282,9 @@
           "message": "Footnote part was detected and must be manually reconciled against the rendered document."
         }
       ],
-      "permission": "pending",
+      "permission": "authorized",
+      "authorizationEvidenceId": "auth-user-declaration-20260730",
+      "reviewStatus": "migration-review-required",
       "publishable": false
     },
     {
@@ -488,7 +490,9 @@
           "message": "Footnote part was detected and must be manually reconciled against the rendered document."
         }
       ],
-      "permission": "pending",
+      "permission": "authorized",
+      "authorizationEvidenceId": "auth-user-declaration-20260730",
+      "reviewStatus": "migration-review-required",
       "publishable": false
     },
     {
@@ -642,7 +646,9 @@
           "message": "Footnote part was detected and must be manually reconciled against the rendered document."
         }
       ],
-      "permission": "pending",
+      "permission": "authorized",
+      "authorizationEvidenceId": "auth-user-declaration-20260730",
+      "reviewStatus": "migration-review-required",
       "publishable": false
     },
     {
@@ -930,7 +936,9 @@
           "message": "Office math objects were detected and require manual conversion review."
         }
       ],
-      "permission": "pending",
+      "permission": "authorized",
+      "authorizationEvidenceId": "auth-user-declaration-20260730",
+      "reviewStatus": "migration-review-required",
       "publishable": false
     },
     {
@@ -965,7 +973,9 @@
           "message": "Embedded media files remain in the DOCX package and require permission and placement review."
         }
       ],
-      "permission": "pending",
+      "permission": "authorized",
+      "authorizationEvidenceId": "auth-user-declaration-20260730",
+      "reviewStatus": "migration-review-required",
       "publishable": false
     }
   ]

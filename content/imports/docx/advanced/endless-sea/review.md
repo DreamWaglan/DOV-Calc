@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-51475ba227c9; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-51475ba227c9; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 7.3 无尽海域配队思路.docx
 

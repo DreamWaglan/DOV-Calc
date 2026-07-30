@@ -3,8 +3,11 @@ import path from 'node:path'
 import process from 'node:process'
 
 for (const test of [
+  'tests/content/migration-elements.mjs',
   'tests/content/import-docx-image.mjs',
   'tests/content/import-xlsx.mjs',
+  'tests/content/full-content-map.mjs',
+  'tests/content/import-determinism.mjs',
 ]) {
   const result = spawnSync(process.execPath, [path.normalize(test)], {
     cwd: process.cwd(),

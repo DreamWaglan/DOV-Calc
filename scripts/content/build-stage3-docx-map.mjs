@@ -74,11 +74,11 @@ for (const specification of specifications) {
 
   if (
     report.assetId !== specification.assetId ||
-    report.permission !== 'pending' ||
-    report.publishable !== false
+    report.publishable !== false ||
+    report.reviewStatus !== 'migration-review-required'
   ) {
     throw new Error(
-      `${specification.importDir}: import report does not match the pending source specification`,
+      `${specification.importDir}: import report does not match the migration review contract`,
     )
   }
 
@@ -91,6 +91,9 @@ for (const specification of specifications) {
     headingOutline: headingsFromReview(review),
     suggestedPageId: specification.suggestedPageId,
     reviewItems: report.reviewItems,
+    permission: report.permission,
+    authorizationEvidenceId: report.authorizationEvidenceId,
+    reviewStatus: report.reviewStatus,
     publishable: false,
   })
 }

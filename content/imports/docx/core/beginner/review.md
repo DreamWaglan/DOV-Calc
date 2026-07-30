@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-842246bdb075; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-842246bdb075; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 3 萌新入坑攻略.docx
 

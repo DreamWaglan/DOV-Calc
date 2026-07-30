@@ -22,6 +22,9 @@
     "validate:stage3": "node scripts/content/validate-stage3.mjs",
     "content:stage4-map": "node scripts/content/build-stage4-docx-map.mjs",
     "validate:stage4": "node scripts/content/validate-stage4.mjs",
+    "content:import-corpus": "node scripts/content/import-source-corpus.mjs",
+    "content:full-map": "node scripts/content/build-full-content-map.mjs",
+    "validate:full-map": "node scripts/content/validate-full-content-map.mjs",
     "test:search": "node scripts/quality/search-quality.mjs",
     "test:search-built": "node scripts/quality/search-quality-built.mjs",
     "test:a11y": "node tests/quality/mobile-a11y-static.mjs",
@@ -36,7 +39,7 @@
     "test:imports": "node scripts/test-imports.mjs",
     "test:authorization": "node tests/content/authorization-policy.mjs",
     "docs:dev": "pnpm content:schema && vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
-    "docs:build": "pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo && pnpm content:public-artifacts",
+    "docs:build": "pnpm validate:full-map && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:seo && pnpm content:public-artifacts",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],

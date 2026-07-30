@@ -6,6 +6,12 @@ import { fileURLToPath } from 'node:url'
 import Ajv from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
 import readXlsxFile from 'read-excel-file/node'
+import {
+  importGovernance,
+  loadSourceAsset,
+  stableJson,
+  stableSourceElementId,
+} from './lib/migration-elements.mjs'
 
 const DEFAULT_SOURCE_PATH =
   'F:\\Visual Studio Project\\Project_Test\\拂晓手册\\8 主题攻略-伤害计算篇\\8.2 拂晓舰灵普攻倍率cd.xlsx'
@@ -265,10 +271,6 @@ async function sha256File(filePath) {
   return sha256(await readFile(filePath))
 }
 
-function stableJson(value) {
-  return `${JSON.stringify(value, null, 2)}\n`
-}
-
 function normalizeCell(value) {
   if (typeof value === 'string') {
     const trimmed = value.trim()
@@ -397,7 +399,7 @@ function recordId(definition, name, values) {
   return `${definition.slug}-${sha256(identity).slice(0, 12)}`
 }
 
-function parseSheet(sheet, definition, errors) {
+function parseSheet(sheet, definition, errors, assetId) {
   const records = []
   const rowCount = sheet.data.length
   const header = sheet.data[definition.headerRow - 1] ?? []
@@ -450,13 +452,20 @@ function parseSheet(sheet, definition, errors) {
     dataRows += 1
     records.push({
       id: recordId(definition, rowName, values),
+      sourceElementId: stableSourceElementId(assetId, 'worksheet', {
+        worksheet: definition.name,
+        row: rowNumber,
+      }),
       name: rowName,
       category: definition.category,
       values,
       applicableVersion: APPLICABLE_VERSION,
       verifiedAt: VERIFIED_AT,
-      sourceRefs: [ASSET_ID],
+      sourceRefs: [assetId],
       status: 'current',
+      disposition: 'internal-only',
+      dispositionReason:
+        'The canonical record remains quarantined until Phase 6 dataset fact review.',
     })
   }
 
@@ -464,6 +473,9 @@ function parseSheet(sheet, definition, errors) {
     records,
     summary: {
       worksheet: definition.name,
+      sourceElementId: stableSourceElementId(assetId, 'worksheet', {
+        worksheet: definition.name,
+      }),
       rowCount,
       dataRows,
       fieldCount: definition.fields.length - 1,
@@ -509,7 +521,21 @@ function validateRecords(records, errors) {
   }
 }
 
-export function parseWorkbookSheets(sheets, { sourcePath, sourceSha256 }) {
+export function parseWorkbookSheets(
+  sheets,
+  {
+    sourcePath,
+    sourceSha256,
+    assetId = ASSET_ID,
+    governance = {
+      permission: 'authorized',
+      authorizationEvidenceId: null,
+      publicRelease: null,
+      reviewStatus: 'migration-review-required',
+      publishable: false,
+    },
+  },
+) {
   const errors = []
   const actualNames = sheets.map((sheet) => sheet.sheet)
   const expectedNames = SHEET_DEFINITIONS.map((sheet) => sheet.name)
@@ -529,7 +555,7 @@ export function parseWorkbookSheets(sheets, { sourcePath, sourceSha256 }) {
   for (const definition of SHEET_DEFINITIONS) {
     const sheet = sheets.find((candidate) => candidate.sheet === definition.name)
     if (!sheet) continue
-    const parsed = parseSheet(sheet, definition, errors)
+    const parsed = parseSheet(sheet, definition, errors, assetId)
     records.push(...parsed.records)
     worksheetSummaries.push(parsed.summary)
   }
@@ -543,13 +569,12 @@ export function parseWorkbookSheets(sheets, { sourcePath, sourceSha256 }) {
       recordCount: records.length,
       sourceFileHash: sourceSha256,
     },
-    assetId: ASSET_ID,
+    assetId,
     source: {
       fileName: path.basename(sourcePath),
       sha256: sourceSha256,
     },
-    permission: 'pending',
-    publishable: false,
+    ...governance,
     fields: FIELD_DEFINITIONS,
     worksheetSummaries,
     totalRecords: records.length,
@@ -579,7 +604,7 @@ function buildReviewMarkdown(dataset) {
   const lines = [
     '# XLSX Basic Attack Import Review',
     '',
-    `- sourceAssetId: ${ASSET_ID}`,
+    `- sourceAssetId: ${dataset.assetId}`,
     `- permission: ${dataset.permission}`,
     `- publishable: ${dataset.publishable}`,
     `- applicableVersion: ${APPLICABLE_VERSION}`,
@@ -601,7 +626,8 @@ function buildReviewMarkdown(dataset) {
     '- [x] Workbook has exactly 7 worksheets in the expected order.',
     '- [x] Headers and aviation preface rows match the maintained mapping.',
     '- [x] Names, inherited names, unique IDs, numeric ranges, empty cells, and unknown cells were validated.',
-    '- [x] Outputs are quarantined because source permission is pending.',
+    '- [x] Source authorization is recorded separately from migration review state.',
+    '- [x] Outputs remain non-publishable until dataset fact review is complete.',
   )
   return `${lines.join('\n')}\n`
 }
@@ -609,11 +635,25 @@ function buildReviewMarkdown(dataset) {
 export async function importXlsx({
   sourcePath = DEFAULT_SOURCE_PATH,
   outputDir = DEFAULT_OUTPUT_DIR,
+  assetId = ASSET_ID,
 } = {}) {
   const sourceBuffer = await readFile(sourcePath)
   const sourceSha256 = sha256(sourceBuffer)
+  const { asset } = await loadSourceAsset(assetId)
+  if (asset.assetType !== 'xlsx') {
+    throw new Error(`${assetId} is registered as ${asset.assetType}, not xlsx`)
+  }
+  if (asset.hashes.sha256 !== sourceSha256) {
+    throw new Error(`${assetId}: source SHA-256 does not match the source ledger`)
+  }
+  const governance = importGovernance(asset)
   const sheets = await readXlsxFile(sourcePath)
-  const { dataset, errors } = parseWorkbookSheets(sheets, { sourcePath, sourceSha256 })
+  const { dataset, errors } = parseWorkbookSheets(sheets, {
+    sourcePath,
+    sourceSha256,
+    assetId,
+    governance,
+  })
   errors.push(...(await validateAgainstSchema(dataset.records)))
   if (errors.length > 0) {
     const error = new Error(`XLSX import validation failed (${errors.length})`)
@@ -633,10 +673,13 @@ export async function importXlsx({
 
   const report = {
     schemaVersion: 1,
-    assetId: ASSET_ID,
+    assetId,
     source: dataset.source,
     permission: dataset.permission,
-    publishable: false,
+    authorizationEvidenceId: dataset.authorizationEvidenceId,
+    publicRelease: dataset.publicRelease,
+    reviewStatus: dataset.reviewStatus,
+    publishable: dataset.publishable,
     applicableVersion: APPLICABLE_VERSION,
     verifiedAt: VERIFIED_AT,
     worksheetCount: dataset.worksheetSummaries.length,

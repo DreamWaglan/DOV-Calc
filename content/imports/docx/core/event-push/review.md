@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-d47e51aa8321; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-d47e51aa8321; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 6.2 给萌新的活动推图攻略食用指南.docx
 

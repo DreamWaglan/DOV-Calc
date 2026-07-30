@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-08ba2d32a9ff",
+  "source": {
+    "fileName": "拂晓剧情榜260720.png",
+    "sha256": "62b82364129ca54a281afd72901f7bbd9278a5204a01f73342725af34c8464a0",
+    "bytes": 5052575,
+    "width": 1298,
+    "height": 3245,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-08ba2d32a9ff",
+    "sourceElementId": "src-08ba2d32a9ff:image:fb95c25e70d60e64",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/拂晓剧情榜260720.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

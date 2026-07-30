@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-d35e870ffcd7; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-d35e870ffcd7; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 7.2 遭遇战攻略.docx
 

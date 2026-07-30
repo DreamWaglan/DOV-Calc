@@ -10,6 +10,7 @@ const checks = [
   'scripts/content/validate-authorization.mjs',
   'scripts/content/scan-public-artifacts.mjs',
   'scripts/test-imports.mjs',
+  'scripts/content/validate-full-content-map.mjs',
   'scripts/content/validate-stage4.mjs',
   'scripts/quality/search-quality.mjs',
   'tests/quality/mobile-a11y-static.mjs',

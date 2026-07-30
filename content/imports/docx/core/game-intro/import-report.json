@@ -7,7 +7,20 @@
     "bytes": 66203,
     "uncompressedBytes": 277147
   },
-  "permission": "pending",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
   "counts": {
     "paragraphs": 6,
@@ -23,13 +36,13 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/core/game-intro/review.md",
-      "sha256": "a799aab392af8f1c402a1d5e2d10bd9a9c004bc68069144fd065de7f28524e29",
-      "bytes": 1015
+      "sha256": "fb9a93f17c30c62c8045b9ccf6c1558b2b95273a6598625ac400770f917924b1",
+      "bytes": 1059
     },
     "quarantine": {
       "path": "content/imports/docx/core/game-intro/quarantine.json",
-      "sha256": "2f5b752c4572cd8e7cf411e3ce834b7071c350bceeef2d5dedf35331f81ac3ee",
-      "bytes": 353
+      "sha256": "923fb60be32324234fc1d7136e284414cad46b9ff6147cbf634feb5822efa75e",
+      "bytes": 752
     }
   },
   "reviewItems": [
@@ -39,5 +52,74 @@
       "disposition": "quarantined-for-manual-review",
       "message": "Footnote part was detected and must be manually reconciled against the rendered document."
     }
-  ]
+  ],
+  "elements": [
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:96bdd9095cfa3eeb",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 1,
+        "paragraphIndex": 1
+      },
+      "textHash": "e8e71cadf7d09ac386e8700e40c3f8fca5d91c9d913642219f11b018b4969a2c"
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:c1d6d3dfe1c310c0",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 2,
+        "paragraphIndex": 2
+      },
+      "textHash": "8fdd7f05fc6dda84aa6f1c6244fad34a32b33bf4062c3ec30768da4292805fce"
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:743214e40b1771f7",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 3,
+        "paragraphIndex": 3
+      },
+      "textHash": "0f0ea684999bf77efe4c9c9586f7191c96f369f13e006c609b268768df3c2913"
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:ef423749ff839c47",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 4,
+        "paragraphIndex": 4
+      },
+      "textHash": "770f3228dd86a8a84e866a1e6122a94f80f860132c5ce0b07fecdfa9200fdfbb"
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:4c8a70d0635130b8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 5,
+        "paragraphIndex": 5
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-ea0b63d069bf",
+      "sourceElementId": "src-ea0b63d069bf:paragraph:5ceefe3f77a5f7fa",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 6,
+        "paragraphIndex": 6
+      },
+      "textHash": "d014d133547443ec92b45f819a39a8e1cf90df2ab26a302029765b28dd5ac2b2"
+    }
+  ],
+  "drawingRelations": []
 }

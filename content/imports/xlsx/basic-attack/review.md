@@ -1,7 +1,7 @@
 # XLSX Basic Attack Import Review
 
 - sourceAssetId: src-0c5b7db892f6
-- permission: pending
+- permission: authorized
 - publishable: false
 - applicableVersion: 2026-07
 - verifiedAt: 2026-07-29
@@ -24,4 +24,5 @@
 - [x] Workbook has exactly 7 worksheets in the expected order.
 - [x] Headers and aviation preface rows match the maintained mapping.
 - [x] Names, inherited names, unique IDs, numeric ranges, empty cells, and unknown cells were validated.
-- [x] Outputs are quarantined because source permission is pending.
+- [x] Source authorization is recorded separately from migration review state.
+- [x] Outputs remain non-publishable until dataset fact review is complete.

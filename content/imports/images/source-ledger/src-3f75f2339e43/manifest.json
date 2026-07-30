@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-3f75f2339e43",
+  "source": {
+    "fileName": "4-萌新入门配装推荐260718.png",
+    "sha256": "ed1d5a6d4a0b6d45a34434ce86ff767c7cf04e3ce683f6c473e7b0499733ddae",
+    "bytes": 8607901,
+    "width": 4000,
+    "height": 7552,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-3f75f2339e43",
+    "sourceElementId": "src-3f75f2339e43:image:4168d3297903a62b",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/4-萌新入门配装推荐260718.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

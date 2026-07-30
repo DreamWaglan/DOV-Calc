@@ -4,6 +4,12 @@ import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
+import {
+  importGovernance,
+  loadSourceAsset,
+  stableJson,
+  stableSourceElementId,
+} from './lib/migration-elements.mjs'
 
 const MAX_DERIVATIVE_PIXELS = 4_500_000
 const MAX_SOURCE_PIXELS = 50_000_000
@@ -20,10 +26,6 @@ async function fileInfo(filePath) {
   return { sha256: sha256(data), bytes: stats.size }
 }
 
-function stableJson(value) {
-  return `${JSON.stringify(value, null, 2)}\n`
-}
-
 async function writeWebp(buffer, outputPath) {
   await writeFile(outputPath, buffer)
   const metadata = await sharp(buffer).metadata()
@@ -34,7 +36,12 @@ async function writeWebp(buffer, outputPath) {
   }
 }
 
-export async function processImage({ sourcePath, assetId, outputDir }) {
+export async function processImage({
+  sourcePath,
+  assetId,
+  outputDir,
+  generateDerivatives = true,
+}) {
   if (!sourcePath || !assetId || !outputDir) {
     throw new Error('processImage requires sourcePath, assetId, and outputDir')
   }
@@ -43,55 +50,65 @@ export async function processImage({ sourcePath, assetId, outputDir }) {
   const absoluteOutputDir = path.resolve(outputDir)
   const source = await fileInfo(absoluteSourcePath)
   const image = sharp(absoluteSourcePath, {
-    limitInputPixels: MAX_SOURCE_PIXELS,
+    limitInputPixels: generateDerivatives ? MAX_SOURCE_PIXELS : false,
   })
   const metadata = await image.metadata()
   if (!metadata.width || !metadata.height) throw new Error('Unable to read image dimensions')
+  const { asset } = await loadSourceAsset(assetId)
+  if (asset.assetType !== 'image') {
+    throw new Error(`${assetId} is registered as ${asset.assetType}, not image`)
+  }
+  if (asset.hashes.sha256 !== source.sha256) {
+    throw new Error(`${assetId}: source SHA-256 does not match the source ledger`)
+  }
+  const governance = importGovernance(asset)
 
   await mkdir(absoluteOutputDir, { recursive: true })
   const derivatives = []
 
-  const thumbnailPath = path.join(absoluteOutputDir, 'thumbnail.webp')
-  const thumbnailBuffer = await sharp(absoluteSourcePath, {
-    limitInputPixels: MAX_SOURCE_PIXELS,
-  })
-    .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-    .webp({ quality: 82 })
-    .toBuffer()
-  const thumbnail = await writeWebp(thumbnailBuffer, thumbnailPath)
-  derivatives.push({
-    kind: 'thumbnail',
-    path: path.relative(process.cwd(), thumbnailPath).split(path.sep).join('/'),
-    ...thumbnail,
-    maxPixels: MAX_DERIVATIVE_PIXELS,
-  })
-
-  const segmentCount = Math.ceil(metadata.height / SEGMENT_HEIGHT)
-  for (let index = 0; index < segmentCount; index += 1) {
-    const top = index * SEGMENT_HEIGHT
-    const height = Math.min(SEGMENT_HEIGHT, metadata.height - top)
-    if (metadata.width * height > MAX_DERIVATIVE_PIXELS) {
-      throw new Error(`Segment ${index + 1} exceeds derivative pixel limit`)
-    }
-    const segmentPath = path.join(
-      absoluteOutputDir,
-      `segment-${String(index + 1).padStart(2, '0')}.webp`,
-    )
-    const segmentBuffer = await sharp(absoluteSourcePath, {
+  if (generateDerivatives) {
+    const thumbnailPath = path.join(absoluteOutputDir, 'thumbnail.webp')
+    const thumbnailBuffer = await sharp(absoluteSourcePath, {
       limitInputPixels: MAX_SOURCE_PIXELS,
     })
-      .extract({ left: 0, top, width: metadata.width, height })
-      .webp({ quality: 88 })
+      .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+      .webp({ quality: 82 })
       .toBuffer()
-    const segment = await writeWebp(segmentBuffer, segmentPath)
+    const thumbnail = await writeWebp(thumbnailBuffer, thumbnailPath)
     derivatives.push({
-      kind: 'segment',
-      index: index + 1,
-      sourceCrop: { left: 0, top, width: metadata.width, height },
-      path: path.relative(process.cwd(), segmentPath).split(path.sep).join('/'),
-      ...segment,
+      kind: 'thumbnail',
+      path: path.relative(process.cwd(), thumbnailPath).split(path.sep).join('/'),
+      ...thumbnail,
       maxPixels: MAX_DERIVATIVE_PIXELS,
     })
+
+    const segmentCount = Math.ceil(metadata.height / SEGMENT_HEIGHT)
+    for (let index = 0; index < segmentCount; index += 1) {
+      const top = index * SEGMENT_HEIGHT
+      const height = Math.min(SEGMENT_HEIGHT, metadata.height - top)
+      if (metadata.width * height > MAX_DERIVATIVE_PIXELS) {
+        throw new Error(`Segment ${index + 1} exceeds derivative pixel limit`)
+      }
+      const segmentPath = path.join(
+        absoluteOutputDir,
+        `segment-${String(index + 1).padStart(2, '0')}.webp`,
+      )
+      const segmentBuffer = await sharp(absoluteSourcePath, {
+        limitInputPixels: MAX_SOURCE_PIXELS,
+      })
+        .extract({ left: 0, top, width: metadata.width, height })
+        .webp({ quality: 88 })
+        .toBuffer()
+      const segment = await writeWebp(segmentBuffer, segmentPath)
+      derivatives.push({
+        kind: 'segment',
+        index: index + 1,
+        sourceCrop: { left: 0, top, width: metadata.width, height },
+        path: path.relative(process.cwd(), segmentPath).split(path.sep).join('/'),
+        ...segment,
+        maxPixels: MAX_DERIVATIVE_PIXELS,
+      })
+    }
   }
 
   const manifest = {
@@ -105,10 +122,20 @@ export async function processImage({ sourcePath, assetId, outputDir }) {
       height: metadata.height,
       format: metadata.format,
     },
-    permission: 'pending',
-    publishable: false,
+    ...governance,
     originalCopied: false,
+    sourceElement: {
+      sourceAssetId: assetId,
+      sourceElementId: stableSourceElementId(assetId, 'image', {
+        sourceFile: asset.origin.path,
+      }),
+      elementType: 'image',
+      sourcePosition: {
+        sourceFile: asset.origin.path,
+      },
+    },
     derivativePolicy: {
+      generated: generateDerivatives,
       format: 'webp',
       maxDerivativePixels: MAX_DERIVATIVE_PIXELS,
       maxSourcePixels: MAX_SOURCE_PIXELS,

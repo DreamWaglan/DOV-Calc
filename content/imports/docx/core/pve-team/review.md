@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-94e76e4522b1; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-94e76e4522b1; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 6.3 给萌新的PVE配队思路.docx
 

@@ -113,7 +113,9 @@ for (const asset of stage4Map.assets ?? []) {
     continue
   }
   if (
-    asset.permission !== 'pending' ||
+    asset.permission !== registered.permission ||
+    asset.authorizationEvidenceId !== registered.authorization?.evidenceId ||
+    asset.reviewStatus !== 'migration-review-required' ||
     asset.publishable !== false ||
     asset.hash !== registered.hashes?.sha256 ||
     asset.sourceFileName !== registered.title
@@ -135,14 +137,16 @@ const basicAttack = await readJson(
   'content/imports/xlsx/basic-attack/records.json',
 )
 if (
-  basicAttack.permission !== 'pending' ||
+  basicAttack.permission !== 'authorized' ||
+  basicAttack.authorizationEvidenceId !== 'auth-user-declaration-20260730' ||
+  basicAttack.reviewStatus !== 'migration-review-required' ||
   basicAttack.publishable !== false ||
   basicAttack.totalRecords !== 225 ||
   basicAttack.worksheetSummaries?.length !== 7 ||
   basicAttack.records?.length !== 225
 ) {
   failures.push(
-    'basic attack XLSX must remain a 7-sheet, 225-record pending import',
+    'basic attack XLSX must remain a 7-sheet, 225-record migration-review import',
   )
 }
 

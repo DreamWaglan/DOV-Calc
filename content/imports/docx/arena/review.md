@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-7d080e8d651b; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-7d080e8d651b; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 7.1 争锋竞技场简易百科.docx
 

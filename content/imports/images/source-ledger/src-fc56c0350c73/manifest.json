@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-fc56c0350c73",
+  "source": {
+    "fileName": "8-PVP天赋表260721.png",
+    "sha256": "10737fce25469ecf55b4ada1905d3839a25eaf5c23a59c7676b9122b657dc9cc",
+    "bytes": 3879209,
+    "width": 3972,
+    "height": 3503,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-fc56c0350c73",
+    "sourceElementId": "src-fc56c0350c73:image:f2ff9eedbcf04f30",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/8-PVP天赋表260721.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

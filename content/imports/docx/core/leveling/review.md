@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-6eba63c4aa7b; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-6eba63c4aa7b; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 6.1 练级百科.docx
 

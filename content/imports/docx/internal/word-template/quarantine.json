@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-6d7a8eecd6bb",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": false,
+    "searchIndex": false,
+    "sitemap": false,
+    "download": false,
+    "derivative": false,
+    "structuredData": false,
+    "mode": "blocked",
+    "reason": "授权记录有效，但未开放任何公开出口。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "reviewItems": [
+    {
+      "kind": "drawings",
+      "count": 3,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Drawing and floating layout content was counted but not converted into publishable Markdown."
+    },
+    {
+      "kind": "media",
+      "count": 3,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Embedded media files remain in the DOCX package and require permission and placement review."
+    },
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

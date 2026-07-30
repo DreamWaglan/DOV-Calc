@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-9ac6e41a613e; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-9ac6e41a613e; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 1 前言.docx
 

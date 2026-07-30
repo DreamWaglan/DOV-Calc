@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-e3a32a586e5b",
+  "source": {
+    "fileName": "拂晓舰灵改造优先级2.0.3.png",
+    "sha256": "c192b79ad535f1f921bf1cac4152e94fedd9f87a2bc4e96e00e42d50a0b84aec",
+    "bytes": 5201274,
+    "width": 2382,
+    "height": 9153,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-e3a32a586e5b",
+    "sourceElementId": "src-e3a32a586e5b:image:ae2cccfbd39ef645",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/拂晓舰灵改造优先级2.0.3.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

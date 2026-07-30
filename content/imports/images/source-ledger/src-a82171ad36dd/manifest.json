@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-a82171ad36dd",
+  "source": {
+    "fileName": "3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png",
+    "sha256": "294f579ae5b489c772e145e1efdf48b15adc64ab428ab6977cf1a4fe362627f1",
+    "bytes": 4190247,
+    "width": 5734,
+    "height": 3664,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-a82171ad36dd",
+    "sourceElementId": "src-a82171ad36dd:image:0e4c7c06da0e1c90",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/3-拂晓新人向PVE舰灵推荐表 v2.4 260721.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

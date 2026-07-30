@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-2d59aac1ac45",
+  "source": {
+    "fileName": "舰灵面板数值计算公式251226.jpg",
+    "sha256": "7357da369ec13670dcecfe36fa6d0ca7f6c4c7db6b5c52e5e17ba84c64962ae6",
+    "bytes": 3658187,
+    "width": 2359,
+    "height": 12986,
+    "format": "jpeg"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-2d59aac1ac45",
+    "sourceElementId": "src-2d59aac1ac45:image:0778f1a139e00861",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/舰灵面板数值计算公式251226.jpg"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

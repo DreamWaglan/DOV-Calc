@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-ec1754535996",
+  "source": {
+    "fileName": "2-拂晓新手入门思维导图 v2.4 260720.png",
+    "sha256": "f1bdd7e39067db6db0f510c5694a36d8896ab7cc2dc904be397bf9c9808b6993",
+    "bytes": 5972619,
+    "width": 1081,
+    "height": 12800,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-ec1754535996",
+    "sourceElementId": "src-ec1754535996:image:12a3d7c799738fde",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/2-拂晓新手入门思维导图 v2.4 260720.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

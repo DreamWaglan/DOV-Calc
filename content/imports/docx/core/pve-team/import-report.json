@@ -7,7 +7,20 @@
     "bytes": 614134,
     "uncompressedBytes": 1432247
   },
-  "permission": "pending",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
   "counts": {
     "paragraphs": 105,
@@ -23,13 +36,13 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/core/pve-team/review.md",
-      "sha256": "f3d93cd1fa5a5f02eba9a3580f25fd07a7fe423c7b2af53238bfa3a6fc45d7aa",
-      "bytes": 19227
+      "sha256": "5d8f39f859758a921a5ea46d58d9040bba4ac6aee1f6f29ee05910b430ba70bc",
+      "bytes": 19271
     },
     "quarantine": {
       "path": "content/imports/docx/core/pve-team/quarantine.json",
-      "sha256": "975cff4dd0f4f121950dca0ccd11ec5c9d87b223077c2e82ffbc8a7822364af2",
-      "bytes": 796
+      "sha256": "ac699ed3fe9dc60af824631b2cfdaf5e106b4697a10a152cc5e4a00800fc2991",
+      "bytes": 1195
     }
   },
   "reviewItems": [
@@ -50,6 +63,1399 @@
       "count": 0,
       "disposition": "quarantined-for-manual-review",
       "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ],
+  "elements": [
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:3eb501473968e175",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 1,
+        "paragraphIndex": 1
+      },
+      "textHash": "c699f9ec7be917ec6873035f53da139231cc367f99defd3711413f7c708828bb"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:b2da84aa43a93cc1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 2,
+        "paragraphIndex": 2
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:150a66ea86afab06",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 3,
+        "paragraphIndex": 3
+      },
+      "textHash": "8b922ea69cc9bacfe435be5d5ddd24260189f37d1a35e8d200b0dc0c45f3c414"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:61f07f52edf0bb6c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 4,
+        "paragraphIndex": 4
+      },
+      "textHash": "6fbdefb11dbe1dea6964af4fd5ff6f28f45e088e28918f8d7b6667eeff1be39b"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:02aa7270a4dc940c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 5,
+        "paragraphIndex": 5
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:f6215bb90e220dab",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 6,
+        "paragraphIndex": 6
+      },
+      "textHash": "56855cebac20b63f871d77a92e5d104a4a1bedce5f1ad515d721c261369394ce"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:b75eb382eb5eb1d4",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 7,
+        "paragraphIndex": 7
+      },
+      "textHash": "3b81ded5ea8044dc796c355cd95236d518d34fe2aaf3db5adabbdddef4ff81ca",
+      "headingLevel": 1,
+      "title": "一、观察敌方配置"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:79964c6cdf056384",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 8,
+        "paragraphIndex": 8
+      },
+      "textHash": "e04ccbb7695fcf2c1954c3071933f9df2318de067d2e5bddfd8f2fd749258f0b"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:27646ebc2f9fa884",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 9,
+        "paragraphIndex": 9
+      },
+      "textHash": "e7d29fcdd2a1f14465e19371526e9b762620fc2fe8e26324dd4b28e1bd9c780a",
+      "headingLevel": 2,
+      "title": "（一）主线"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:ea559516e60c15aa",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 10,
+        "paragraphIndex": 10
+      },
+      "textHash": "d00e6108483b8c5db7c78da2e7d9c3b24578f1c566c08d789844cae99cc1ab1c"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:e19b61b184cea2c9",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 11,
+        "paragraphIndex": 11
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:b00addb1e847148f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 12,
+        "paragraphIndex": 12
+      },
+      "textHash": "55f0833cd0f70d434396637e3f94ce6aea16cb5f0e497994880bdfd875dd3f1f"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:6b47658f79aec61c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 13,
+        "paragraphIndex": 13
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:f3fdf8fecbba08dd",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 14,
+        "paragraphIndex": 14
+      },
+      "textHash": "af0c57dca5953833899c95c670425f2681965966fda84ef6de55b0a3f73a1704",
+      "headingLevel": 2,
+      "title": "（二）打捞活动或档案"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:6f2bf6130453bbbe",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 15,
+        "paragraphIndex": 15
+      },
+      "textHash": "b1cb3b7cda75cc55f5aed4d15a4433d2cdfa6136e87333ccaa4ba48b860892e9"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:f95d0d0e143cde98",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 16,
+        "paragraphIndex": 16
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:bc0f8ecee54876b4",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 17,
+        "paragraphIndex": 17
+      },
+      "textHash": "a2a9c10093bd9ab01ddfb066f145eb723d709b9a39d643aa82d0ad63520884f7",
+      "headingLevel": 2,
+      "title": "（三）防卫战"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:99bc9ada93c34280",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 18,
+        "paragraphIndex": 18
+      },
+      "textHash": "d3105310516b0bb70aa347ecd971ce27132ddb146f7462bc7b4e760d6d45a3d0"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:751edc055c27c948",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 19,
+        "paragraphIndex": 19
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:a931980725794219",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 20,
+        "paragraphIndex": 20
+      },
+      "textHash": "f4976b71669761f69df285b5ce29def9f521ecef0aaa04a1f9ec46342b153916"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:2cb49bc78e2ce90f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 21,
+        "paragraphIndex": 21
+      },
+      "textHash": "b34b2d699ac2d00b48be3736dd62019b22b12b93bab78c1ad1c74f2dccab8778"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:e4977a1891c3dff2",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 22,
+        "paragraphIndex": 22
+      },
+      "textHash": "4c932c1b708d060de6667bc709fb8da812c47534db444b9447afbdf3351f58dd"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:cc0c27676a49e9fb",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 23,
+        "paragraphIndex": 23
+      },
+      "textHash": "784a4bf766913f285be076bddcfddfc24059fa51260cc12e11d4b4ebd48cb4f2"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:ac6a576233645476",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 24,
+        "paragraphIndex": 24
+      },
+      "textHash": "7b14ee75a6bbc0cc4bd61bf0c4d303decfa747bafec6516620772c8b8cd29389"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:4939c046f53f195b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 25,
+        "paragraphIndex": 25
+      },
+      "textHash": "b0e464197e60c96dcb6fa27e30329004a9202a657252876f66a6fa7cf54aaf40"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:457ce2cfbeb53849",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 26,
+        "paragraphIndex": 26
+      },
+      "textHash": "823b0495a59cfffac97039a988a7c9f305f2c6c42aae16c21c68d4ac380ff1f7"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:605965928f956daa",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 27,
+        "paragraphIndex": 27
+      },
+      "textHash": "286a1d40f9b3affb95db118a8db6d6d102ebd5da21498693aeaebf0731b3c698"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:b07f7f2a25b72f33",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 29,
+        "paragraphIndex": 28
+      },
+      "textHash": "847b487b32aa9fdba24976ef827b25253ab7edf52388f167cc84c03a9a483a00"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:d1610bf273f78858",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 30,
+        "paragraphIndex": 29
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:d29843bb8853e04f",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 31,
+        "paragraphIndex": 30
+      },
+      "textHash": "086c2590bf2a78dc115e0e99783541e763dc80929ec708ce33cb42824c005859",
+      "headingLevel": 1,
+      "title": "二、我方常用舰灵"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:7739cd2607ddcf46",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 32,
+        "paragraphIndex": 31
+      },
+      "textHash": "d49b56472187f24ab5733e251f9a493aaa9891ea1060529f1628a07341fd5146"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:7838a03ea6413999",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 33,
+        "paragraphIndex": 32
+      },
+      "textHash": "c2b02272c3297590b7358c168038692735ae54111c4323bfb0acd3ce015ff6fc"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:93f70945e14eaa15",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 34,
+        "paragraphIndex": 33
+      },
+      "textHash": "219bce369cc06e57f68df159359553230bf4f4dd219934ced6d6d2399915d23d",
+      "headingLevel": 2,
+      "title": "（一）前排自奶舰灵"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:19bcc11d9b80a0ac",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 35,
+        "paragraphIndex": 34
+      },
+      "textHash": "b4d96e6bd55e20a54a5536209c7aa4849640e6cfc7a290e3e8cfcb5b57e20d6f"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:665acd4f0ee7785d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 37,
+        "paragraphIndex": 35
+      },
+      "textHash": "7cfd645b8225470f66ef98b0cf61ea76ff4aa311f3c3b5afc7135b13d1b5dd86"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:f92b9371102bc787",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 38,
+        "paragraphIndex": 36
+      },
+      "textHash": "a33f6b1a4bf47ece09db2be8e5fdb50ba149981b653f702dea7983ac23aa1a9c",
+      "headingLevel": 2,
+      "title": "（二）后排奶舰灵"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:20322c6c46f854ac",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 39,
+        "paragraphIndex": 37
+      },
+      "textHash": "f78b9180fcad077fe89560e8148a7dfc726b66a8ea774e873ba3d58f31f29c75"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:2c8c1f4f3eca08a4",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 41,
+        "paragraphIndex": 38
+      },
+      "textHash": "5ad8ab9474b5a5a6cc7378b0b260740ed956a7bc6b55fc475bc369b740842534"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:218b8c7914be5d6e",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 42,
+        "paragraphIndex": 39
+      },
+      "textHash": "09867c4628503f674b74de3e584ed905d842bd0fb7aacf07537e048eda06543d",
+      "headingLevel": 2,
+      "title": "（三）前排高AOE舰灵"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:e398c383bbef945a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 43,
+        "paragraphIndex": 40
+      },
+      "textHash": "73b72d503a0ce6bf6277066dc94e356d9399a6729b72139625a4a30e5cb94708"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:691a69118f12f5ba",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 45,
+        "paragraphIndex": 41
+      },
+      "textHash": "53fb8ad52109fd2b4d7844b197ec97a93b399fae3466dd28b7dd0da6f3e2a05b",
+      "headingLevel": 2,
+      "title": "（四）后排拐与部分强力输出"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:88741bdfeff60ab5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 46,
+        "paragraphIndex": 42
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:94597b7403a52572",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 47,
+        "paragraphIndex": 43
+      },
+      "textHash": "275df7d85fa6fa9ffda059757133e405f9c4cc79539106fba3c0833e1baaa1e0"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:a65db3a512b982d8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 49,
+        "paragraphIndex": 44
+      },
+      "textHash": "57ab9a256526198505b51f825bff9bb4ff1406e0d193e8b3cd4bb5ae403aeeba"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:9b32c026ffa93d9b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 50,
+        "paragraphIndex": 45
+      },
+      "textHash": "7ad65c26bbb1601230a1c1bcb39e5ef6f245c6ac6d8a2e2433b129d3f6881931"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:e1bc249e581cf951",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 51,
+        "paragraphIndex": 46
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:ee4bdc96a06c36dd",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 52,
+        "paragraphIndex": 47
+      },
+      "textHash": "56701817b69027f73d9df0607bdbd9421d3b4678860370e3ce3b4ac2c79cdc6c",
+      "headingLevel": 1,
+      "title": "三、初步配队"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:e5ea902b7176ecf3",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 53,
+        "paragraphIndex": 48
+      },
+      "textHash": "9a18be0c20af9494a9919b3cab00b8bcf75030de49c079341bab32647ad9814c",
+      "headingLevel": 2,
+      "title": "（一）根据敌方甲种与数量筛选上阵舰灵"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:13681ba620adc245",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 54,
+        "paragraphIndex": 49
+      },
+      "textHash": "be4c9262982267d5395bf8a446011e6d107db7390238a527965bc96f66c8e74c"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:aed53c1fa370662a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 55,
+        "paragraphIndex": 50
+      },
+      "textHash": "bd5c6c89ffc0b060c47e965fc2183cd89360c9b8af8f67c59ceeb971957d425f"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:47956efac2e5d19c",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 56,
+        "paragraphIndex": 51
+      },
+      "textHash": "9ec697db8c11bcc0669852998bf7b7cb7b5fc040e2a4a12198f71f34e3883468",
+      "headingLevel": 2,
+      "title": "（二）简单主线配队思路"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:c475d27f9beccf7d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 57,
+        "paragraphIndex": 52
+      },
+      "textHash": "c35c195b0470c1da71e8a9aa1bd2f6d107083f79664bbb19ba20d10ac7287be8"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:67d211054b334ee1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 58,
+        "paragraphIndex": 53
+      },
+      "textHash": "942fcac2857ec1a58a92af2fb8070635687af73c34bb07290b734d31f0f3b26e"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:390bef46c40af3f2",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 59,
+        "paragraphIndex": 54
+      },
+      "textHash": "5cb9cf8a8f42ab419841dbd21081542b0b12a55872f889f189034d3d1ed945b8"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:f1c22c77e7597a2c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 60,
+        "paragraphIndex": 55
+      },
+      "textHash": "1d7d7738f888079be0070b7c85ca8f8fb0f27e9ccdffeef7555f122c12db34af"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:2ebe65501ef8e2b0",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 61,
+        "paragraphIndex": 56
+      },
+      "textHash": "e19494ef0aea8920b06cd34ace696815f50a8fb6bf61c157a36692a714505376",
+      "headingLevel": 2,
+      "title": "（三）打捞活动配队思路"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:7b63654209fdcc4d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 62,
+        "paragraphIndex": 57
+      },
+      "textHash": "a2c3dd8cf208d3ea9f375f820fd77df7628d7cfc6f9dc95130d02942cb61af94"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:7e77b40f04f87072",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 63,
+        "paragraphIndex": 58
+      },
+      "textHash": "ce04b641ff2141122777f9880f2d3aa4144164e211e4652c7e669f7d35ee66c4"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:0b3b49ee0217a27d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 64,
+        "paragraphIndex": 59
+      },
+      "textHash": "d89028e8c79e87b2f83a114031c82614a850442be42c12c2111e0abec517b2f5"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:3d3988f5ee9fcfe8",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 65,
+        "paragraphIndex": 60
+      },
+      "textHash": "b820b38cdd2986159aa1a0670aae140b66696c6fdd2b9f8a94a8964459460e25",
+      "headingLevel": 2,
+      "title": "（四）防卫战配队思路"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:c8dcf2463604c02c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 66,
+        "paragraphIndex": 61
+      },
+      "textHash": "0ae73a2cb93a91799ca3dc9126101960053c790ab87453a2a102f7c19b22e22f"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:4813246560497595",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 67,
+        "paragraphIndex": 62
+      },
+      "textHash": "ec50230491fd2fee3631b93129238f33c0734fb27d25eacd10ae9ac47a248228"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:4cc8849bf5333721",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 68,
+        "paragraphIndex": 63
+      },
+      "textHash": "276fdb27bbc20ab5bba83cede1221ebd541fe5e51c8967d476e641cb9860adb6"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:6abf5faee3c33cef",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 69,
+        "paragraphIndex": 64
+      },
+      "textHash": "5b9da420b46456c02ea0adf838e3b878b810c9fdf397427f83e46a400076d6b5",
+      "headingLevel": 2,
+      "title": "（五）遭遇战配队思路"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:0a1eca31200f100c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 70,
+        "paragraphIndex": 65
+      },
+      "textHash": "764e43982d973897c954c55982348ae63b4a0ed0ced1ce7e04045abd963d8b06"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:17b8f0a9ff0f8a96",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 71,
+        "paragraphIndex": 66
+      },
+      "textHash": "cdea9f6a8ac051e70f37ab9c585886a2112bb2b7edc31bf6e0c21567e802bf20"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:38339cf982909e5d",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 72,
+        "paragraphIndex": 67
+      },
+      "textHash": "4471b0c6f0d90c394a681a5b95229e13bcbe483e352b37fc3132863961f3d624",
+      "headingLevel": 2,
+      "title": "（六）无尽海域配队思路"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:f8a0712a5461168b",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 73,
+        "paragraphIndex": 68
+      },
+      "textHash": "e677ae09db0dda1ea6721685ae7e4c6c9fdb870d043ba060f6cf2b3d3c0429be"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:62229b66b3804f23",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 74,
+        "paragraphIndex": 69
+      },
+      "textHash": "8e48830bd1dec959c2d1f37afa3f0dd00862a19a7cc8f1d5d98c666da6f071dc"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:32dcbd9b11a24dcf",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 75,
+        "paragraphIndex": 70
+      },
+      "textHash": "f7b0392b4a9bcb421c2095988d580c078da8f4a87b198f9e01632038db965065"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:2ce1313bc9853af7",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 76,
+        "paragraphIndex": 71
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:c3f33d900dfdf636",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 77,
+        "paragraphIndex": 72
+      },
+      "textHash": "3d66bbc648b4f1e50c1c2d0123b495557805506094b53f64454f9b4bea9855e7",
+      "headingLevel": 1,
+      "title": "四、如何微调"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:2e96d25d102c83d1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 78,
+        "paragraphIndex": 73
+      },
+      "textHash": "d14aaf14501d6e4e15073bb73cc1dbd41f27223e62b5cbc1c28bd9115d75cfac"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:e78ca64d1bc347f4",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 79,
+        "paragraphIndex": 74
+      },
+      "textHash": "1457c95fb7d843bc352912ec5a1c4612f134805072469204d52e1376778fd5f0",
+      "headingLevel": 2,
+      "title": "（一）理论输出不足情况"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:f8ef7cd6379840b8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 80,
+        "paragraphIndex": 75
+      },
+      "textHash": "5e50e1ab81792171b1860ecb295ba038a2a9a59d50d02f9758cc791780c782fb"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:82860eaea77cb41f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 81,
+        "paragraphIndex": 76
+      },
+      "textHash": "14fd54d4a9c3b6f72e7b997f1a849eeb9326e0671847111e6adcee7e6cfb10d4"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:69e05c84ac3c7e58",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 82,
+        "paragraphIndex": 77
+      },
+      "textHash": "0a2bf8a9dc291b2806af7724d05318afaad00a60ed4414f6a91c70117a30196f"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:43462477345710c5",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 83,
+        "paragraphIndex": 78
+      },
+      "textHash": "665fd92512bb9ce50ad0b1f76432b0e894c56cd7e8f35899332d41810a8abe95"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:7b214160ecb7c0e2",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 84,
+        "paragraphIndex": 79
+      },
+      "textHash": "3fbe02ab67da20f25f95541762cc99b20f2618d6724a1ff50feba1d983cc323a",
+      "headingLevel": 2,
+      "title": "（二）实际输出不足情况"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:84433a91e56945c2",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 85,
+        "paragraphIndex": 80
+      },
+      "textHash": "10799dc87eea6e8b8314b6bea142a2935b8568b8d982ec29ea3368cb57b243d1"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:bac3ef0922d78e34",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 86,
+        "paragraphIndex": 81
+      },
+      "textHash": "411537f25109015991721a4c96df5918da3180bb4c186d8e615d4da284aa76c6"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:395ec5ebbff93130",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 87,
+        "paragraphIndex": 82
+      },
+      "textHash": "902ae7d7ea7f446ab8f1c7243188505f02d66a8ee25347b6bbe79f9f0b4a9a24"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:24afbe78451af6e4",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 88,
+        "paragraphIndex": 83
+      },
+      "textHash": "6fc4bc6fe2e57bc86d3559639531f0caa63de574caec776ca2a5d03b8260ec2d",
+      "headingLevel": 2,
+      "title": "（三）生存不足情况"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:3768e04a6bb897c6",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 89,
+        "paragraphIndex": 84
+      },
+      "textHash": "6081056b84429811f99d0f9af47ea7e9255552f6e3d674023b2b0ae5082abadc"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:d4f3ff941e6e2afc",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 90,
+        "paragraphIndex": 85
+      },
+      "textHash": "332252517fba673f7c77346745028ccfcd509819c99c1f0a91e1cc4526d2d626"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:1406c36f6d944a26",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 91,
+        "paragraphIndex": 86
+      },
+      "textHash": "5d41de2e68d35854f8d99171dcd244a3ace79e27849380661e5ff9a6c09f74cf"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:heading:cbd53de45558b736",
+      "elementType": "heading",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 92,
+        "paragraphIndex": 87
+      },
+      "textHash": "002ce8cab29996bf8750afe422b4a5dce31db8eeec88a0577f0402e7c6c23acc",
+      "headingLevel": 2,
+      "title": "（四）判断方法与常见案例"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:393f690c7dc3da17",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 93,
+        "paragraphIndex": 88
+      },
+      "textHash": "e1ae8d732feec877760e5ddf30fcb390305e23713262ecd016835012f9efb57c"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:845a62d7bcc5730d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 94,
+        "paragraphIndex": 89
+      },
+      "textHash": "d344b2874ff305a46a13b605a0821d1e868c3093e54b50e3db3dcf2ed11a2a4a"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:9461cc82261b462d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 95,
+        "paragraphIndex": 90
+      },
+      "textHash": "c7bf2ad063f861345234c47e46957a3a797f69a964fc0345b484e32f515fd8f1"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:ee51a799f00ad5f8",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 96,
+        "paragraphIndex": 91
+      },
+      "textHash": "f83bfac8bd0c49a562bc5455d967edec2309a89f00f4f68165335e457c18756d"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:fd76f4674b65a8ce",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 97,
+        "paragraphIndex": 92
+      },
+      "textHash": "18e8fa35355fa290639429a6e3a4b44c4ee22a548977dbc1653ab78a7c107dd8"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:3902a4d53aab5516",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 98,
+        "paragraphIndex": 93
+      },
+      "textHash": "5aa1e62ed2568f143e93c871d7a0eae330fec02330267ac5e193591fac5f3d83"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:68cf99310fabb88d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 99,
+        "paragraphIndex": 94
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:063796e563e7d05d",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 100,
+        "paragraphIndex": 95
+      },
+      "textHash": "0e00784925759187d617486f20d27ecbe31f03fe481fe106e804fffcd4f294f0"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:1599b5ef30254be3",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 101,
+        "paragraphIndex": 96
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:74ab46047e5a077c",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 102,
+        "paragraphIndex": 97
+      },
+      "textHash": "dd6b569655a3d1e957e6975f5669360fc8ef0507acfa0cda6f82bb79f45546d6"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:5deb53083d3de10a",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 103,
+        "paragraphIndex": 98
+      },
+      "textHash": "dbcce84a4141c6e557106768357dbe9daa133ee4710eff8be78f636128e87fc9"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:149a26fd2b9d9a96",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 104,
+        "paragraphIndex": 99
+      },
+      "textHash": "6bc538163823e3af5bab548d23d2842395d8ede32b724c7e808181e16457d4c4"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:3804320c3f37073e",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 105,
+        "paragraphIndex": 100
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:a1a14a42ef9e5ebc",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 106,
+        "paragraphIndex": 101
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:b6f2cf88f9cfc3f3",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 107,
+        "paragraphIndex": 102
+      },
+      "textHash": "fca80a5de61fedb41053ea99229983e5714e50747d2397388214e1fc834a8a50"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:3ca85615e2a8980f",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 108,
+        "paragraphIndex": 103
+      },
+      "textHash": "1d820ac8ea4c3e924cf39e6f1be8ed753a00b921887659f4653740a2d24bcb5e"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:8f796810a0aea3e1",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 109,
+        "paragraphIndex": 104
+      },
+      "textHash": "3e3ff3901596f13cf4abae304e1ecd93f07220b3ff0775f58b939f8d6dbf2b02"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:paragraph:b72957e1baa7b2a4",
+      "elementType": "paragraph",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "bodyIndex": 110,
+        "paragraphIndex": 105
+      },
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:table:b2157d1f4a867801",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 1
+      },
+      "rowCount": 23,
+      "columnCount": 2,
+      "contentHash": "4fe816c23ce636049d30bc36c80f336becea192c82efc041e08cceb2c210cde2"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:table:980e1627fa0fcf3e",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 2
+      },
+      "rowCount": 9,
+      "columnCount": 3,
+      "contentHash": "4bd98fcb7eef1f7495b950b0db7e8cce1809e09a154871b87e444aef0bc69732"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:table:65603e47b64ce258",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 3
+      },
+      "rowCount": 8,
+      "columnCount": 3,
+      "contentHash": "99d4ad97647c2fedcff29bee170df9eab8022fe734e8337798eec8273f5fb362"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:table:2cf8a43e446180e9",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 4
+      },
+      "rowCount": 13,
+      "columnCount": 3,
+      "contentHash": "38935c5a13059cb2aef0ec74e5ebe03a79b7e37a6fe53eae6a3f166d97f3ddf5"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:table:6d089109b620f8fe",
+      "elementType": "table",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "tableIndex": 5
+      },
+      "rowCount": 21,
+      "columnCount": 3,
+      "contentHash": "54fa8f83ea6fcd9824561be0b69c0e340f7993f5ca7ad94bfda615417b9a9d19"
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:media:9ad6556119d24daf",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image1.png",
+        "mediaIndex": 1
+      },
+      "fileName": "image1.png",
+      "sha256": "89f10b29b0fc351a57a6987beb9324156c5ccd8aa082378c267e2289f2c6fada",
+      "bytes": 100675,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId8",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:media:505f1a8aa6dcec6a",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image2.png",
+        "mediaIndex": 2
+      },
+      "fileName": "image2.png",
+      "sha256": "be1a5d727ec81a0c03fe978c7803e5efb8a044c6eccbaf765dfa8cf28f9d4d14",
+      "bytes": 110660,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId9",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:media:b25d88d666b5808d",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image3.png",
+        "mediaIndex": 3
+      },
+      "fileName": "image3.png",
+      "sha256": "02200c0cb694c43c406827cf1d77ce6519bd5248e35ce15511492c771b483e79",
+      "bytes": 120581,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId10",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceElementId": "src-94e76e4522b1:media:8aaf755c11b05c3e",
+      "elementType": "media",
+      "sourcePosition": {
+        "packagePath": "word/media/image4.png",
+        "mediaIndex": 4
+      },
+      "fileName": "image4.png",
+      "sha256": "9cd3236fe35697c3750f2e0ba1268ae52b187766daac6ee2b99b4a6df1176802",
+      "bytes": 41405,
+      "relationships": [
+        {
+          "sourcePart": "word/document.xml",
+          "relationshipId": "rId11",
+          "relationshipType": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ]
+    }
+  ],
+  "drawingRelations": [
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceRelationId": "src-94e76e4522b1:relation:1fa73f7b912ce545",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 1
+      },
+      "relationshipId": "rId8",
+      "relationshipTarget": "word/media/image1.png",
+      "targetMediaElementId": "src-94e76e4522b1:media:9ad6556119d24daf",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceRelationId": "src-94e76e4522b1:relation:8fbbfd4ae8e01d21",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 2
+      },
+      "relationshipId": "rId9",
+      "relationshipTarget": "word/media/image2.png",
+      "targetMediaElementId": "src-94e76e4522b1:media:505f1a8aa6dcec6a",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceRelationId": "src-94e76e4522b1:relation:a58699cd961eeb44",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 3
+      },
+      "relationshipId": "rId10",
+      "relationshipTarget": "word/media/image3.png",
+      "targetMediaElementId": "src-94e76e4522b1:media:b25d88d666b5808d",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
+    },
+    {
+      "sourceAssetId": "src-94e76e4522b1",
+      "sourceRelationId": "src-94e76e4522b1:relation:bf92446344540613",
+      "sourcePosition": {
+        "part": "word/document.xml",
+        "drawingIndex": 4
+      },
+      "relationshipId": "rId11",
+      "relationshipTarget": "word/media/image4.png",
+      "targetMediaElementId": "src-94e76e4522b1:media:8aaf755c11b05c3e",
+      "resolution": "media",
+      "disposition": "merged",
+      "reason": "Drawing relationship resolves to a registered DOCX media element."
     }
   ]
 }

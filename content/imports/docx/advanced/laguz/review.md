@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-e2d43eca15b2; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-e2d43eca15b2; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 9 拉古兹专题.docx
 

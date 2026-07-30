@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-90f788a9def4",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": false,
+    "searchIndex": false,
+    "sitemap": false,
+    "download": false,
+    "derivative": false,
+    "structuredData": false,
+    "mode": "blocked",
+    "reason": "授权记录有效，但未开放任何公开出口。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "reviewItems": [
+    {
+      "kind": "footnotes",
+      "count": 0,
+      "disposition": "quarantined-for-manual-review",
+      "message": "Footnote part was detected and must be manually reconciled against the rendered document."
+    }
+  ]
+}

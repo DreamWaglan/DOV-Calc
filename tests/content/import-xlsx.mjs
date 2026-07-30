@@ -136,7 +136,9 @@ assert.equal(secondFingerprint, firstFingerprint, 'XLSX import output must be by
 assert.equal(first.source.sha256, '0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379')
 assert.equal(first.source.sha256, second.source.sha256)
 assert.equal(first.publishable, false)
-assert.equal(first.permission, 'pending')
+assert.equal(first.permission, 'authorized')
+assert.equal(first.authorizationEvidenceId, 'auth-user-declaration-20260730')
+assert.equal(first.reviewStatus, 'migration-review-required')
 assert.equal(first.worksheetCount, 7)
 assert.equal(first.totalRecords, 225)
 assert.deepEqual(
@@ -158,5 +160,19 @@ assert.equal(records.publishable, false)
 assert.equal(records.records[0].applicableVersion, '2026-07')
 assert.equal(records.records[0].verifiedAt, '2026-07-29')
 assert.deepEqual(records.records[0].sourceRefs, ['src-0c5b7db892f6'])
+assert.equal(records.records[0].disposition, 'internal-only')
+assert.match(
+  records.records[0].sourceElementId,
+  /^src-[a-f0-9]{12}:worksheet:[a-f0-9]{16}$/,
+)
+assert.equal(
+  new Set(records.records.map((record) => record.sourceElementId)).size,
+  225,
+)
+assert.equal(
+  new Set(records.worksheetSummaries.map((summary) => summary.sourceElementId))
+    .size,
+  7,
+)
 
 console.log('import-xlsx tests passed.')

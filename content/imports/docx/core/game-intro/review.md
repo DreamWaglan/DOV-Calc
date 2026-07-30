@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-ea0b63d069bf; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-ea0b63d069bf; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 2 游戏简介.docx
 

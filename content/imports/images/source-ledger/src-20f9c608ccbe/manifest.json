@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-20f9c608ccbe",
+  "source": {
+    "fileName": "1-性能优化小开关教程260107.png",
+    "sha256": "535de403c141b97771f29bba8c8ec60422f246396f5e196a67d31517dbc25c00",
+    "bytes": 546620,
+    "width": 497,
+    "height": 3326,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-20f9c608ccbe",
+    "sourceElementId": "src-20f9c608ccbe:image:5badfddbc9d1a6d7",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/1-性能优化小开关教程260107.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

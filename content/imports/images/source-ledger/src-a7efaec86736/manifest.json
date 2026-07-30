@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-a7efaec86736",
+  "source": {
+    "fileName": "6-阵容分析推荐260129.png",
+    "sha256": "fe260315400a1839cc669d46c81beb065bcda84d6eec8800c4262dc38e23c043",
+    "bytes": 2779945,
+    "width": 1787,
+    "height": 7402,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-a7efaec86736",
+    "sourceElementId": "src-a7efaec86736:image:c2320248264a34da",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/6-阵容分析推荐260129.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

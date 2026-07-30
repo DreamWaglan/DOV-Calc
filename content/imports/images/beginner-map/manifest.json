@@ -9,10 +9,32 @@
     "height": 12800,
     "format": "png"
   },
-  "permission": "pending",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
   "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-ec1754535996",
+    "sourceElementId": "src-ec1754535996:image:12a3d7c799738fde",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/2-拂晓新手入门思维导图 v2.4 260720.png"
+    }
+  },
   "derivativePolicy": {
+    "generated": true,
     "format": "webp",
     "maxDerivativePixels": 4500000,
     "maxSourcePixels": 50000000,

@@ -154,9 +154,20 @@ for (const asset of docxMap.assets ?? []) {
         `${asset.assetId}: DOCX source file name differs from source registry`,
       )
     }
+    if (
+      asset.permission !== registered.permission ||
+      asset.authorizationEvidenceId !== registered.authorization?.evidenceId
+    ) {
+      failures.push(
+        `${asset.assetId}: DOCX map authorization differs from source registry`,
+      )
+    }
   }
   if (asset.publishable !== false) {
-    failures.push(`${asset.assetId}: pending DOCX import must not be publishable`)
+    failures.push(`${asset.assetId}: unreviewed DOCX import must not be publishable`)
+  }
+  if (asset.reviewStatus !== 'migration-review-required') {
+    failures.push(`${asset.assetId}: DOCX import review status is missing`)
   }
   if ((asset.headingOutline?.length ?? 0) > 60) {
     failures.push(`${asset.assetId}: heading outline exceeds 60 entries`)

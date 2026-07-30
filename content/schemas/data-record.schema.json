@@ -7,13 +7,16 @@
   "additionalProperties": false,
   "required": [
     "id",
+    "sourceElementId",
     "name",
     "category",
     "values",
     "applicableVersion",
     "verifiedAt",
     "sourceRefs",
-    "status"
+    "status",
+    "disposition",
+    "dispositionReason"
   ],
   "properties": {
     "id": {
@@ -22,6 +25,11 @@
       "minLength": 3,
       "maxLength": 120,
       "description": "Stable record ID. Dataset-level validation must enforce uniqueness."
+    },
+    "sourceElementId": {
+      "type": "string",
+      "pattern": "^src-[a-f0-9]{12}:worksheet:[a-f0-9]{16}$",
+      "description": "Stable source element identity derived from asset, worksheet, and row."
     },
     "name": {
       "type": "string",
@@ -70,6 +78,20 @@
         "stale",
         "archived"
       ]
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "published",
+        "merged",
+        "internal-only",
+        "omitted-with-rationale"
+      ]
+    },
+    "dispositionReason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
     },
     "dataset": {
       "type": "object",

@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dov-calc.local/schemas/full-content-map.schema.json",
+  "title": "Fuxiao Wiki Full Content Migration Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "schema",
+    "generatedAt",
+    "generationPolicy",
+    "assets",
+    "elements",
+    "drawingRelations",
+    "dataRecords",
+    "sourceSummaries",
+    "summary"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "schema": {
+      "const": "../schemas/full-content-map.schema.json"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generationPolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 29,
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "elements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/element"
+      }
+    },
+    "drawingRelations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/drawingRelation"
+      }
+    },
+    "dataRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dataRecord"
+      }
+    },
+    "sourceSummaries": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "sourceAssetId": {
+      "type": "string",
+      "pattern": "^src-[a-f0-9]{12}$"
+    },
+    "sourceElementId": {
+      "type": "string",
+      "pattern": "^src-[a-f0-9]{12}:(paragraph|heading|table|media|formula|worksheet|image):[a-f0-9]{16}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "published",
+        "merged",
+        "internal-only",
+        "omitted-with-rationale"
+      ]
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceAssetId",
+        "assetType",
+        "sourcePath",
+        "sourceSha256",
+        "permission",
+        "authorizationEvidenceId",
+        "publicRelease",
+        "disposition"
+      ],
+      "properties": {
+        "sourceAssetId": {
+          "$ref": "#/$defs/sourceAssetId"
+        },
+        "assetType": {
+          "enum": [
+            "docx",
+            "xlsx",
+            "image"
+          ]
+        },
+        "sourcePath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "permission": {
+          "enum": [
+            "owned",
+            "authorized",
+            "quoted",
+            "pending",
+            "restricted"
+          ]
+        },
+        "authorizationEvidenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicRelease": {
+          "type": "object"
+        },
+        "disposition": {
+          "$ref": "#/$defs/disposition"
+        }
+      }
+    },
+    "element": {
+      "type": "object",
+      "required": [
+        "sourceAssetId",
+        "sourceElementId",
+        "elementType",
+        "sourcePosition",
+        "targetPageIds",
+        "targetAssetIds",
+        "disposition",
+        "authorizationEvidenceId",
+        "editor",
+        "factReviewer",
+        "status",
+        "notes"
+      ],
+      "properties": {
+        "sourceAssetId": {
+          "$ref": "#/$defs/sourceAssetId"
+        },
+        "sourceElementId": {
+          "$ref": "#/$defs/sourceElementId"
+        },
+        "elementType": {
+          "enum": [
+            "paragraph",
+            "heading",
+            "table",
+            "media",
+            "formula",
+            "worksheet",
+            "image"
+          ]
+        },
+        "sourcePosition": {
+          "type": "object"
+        },
+        "targetPageIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "targetAssetIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "disposition": {
+          "$ref": "#/$defs/disposition"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorizationEvidenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "editor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "factReviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "drawingRelation": {
+      "type": "object",
+      "required": [
+        "sourceAssetId",
+        "sourceRelationId",
+        "sourcePosition",
+        "resolution",
+        "disposition",
+        "reason",
+        "targetPageIds",
+        "authorizationEvidenceId",
+        "editor",
+        "factReviewer",
+        "status",
+        "notes"
+      ],
+      "properties": {
+        "sourceAssetId": {
+          "$ref": "#/$defs/sourceAssetId"
+        },
+        "sourceRelationId": {
+          "type": "string",
+          "pattern": "^src-[a-f0-9]{12}:relation:[a-f0-9]{16}$"
+        },
+        "sourcePosition": {
+          "type": "object"
+        },
+        "targetMediaElementId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolution": {
+          "enum": [
+            "media",
+            "layout",
+            "non-media-relationship"
+          ]
+        },
+        "disposition": {
+          "$ref": "#/$defs/disposition"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targetPageIds": {
+          "type": "array"
+        },
+        "authorizationEvidenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "editor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "factReviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "dataRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceAssetId",
+        "sourceElementId",
+        "recordId",
+        "worksheet",
+        "worksheetRow",
+        "disposition",
+        "reason",
+        "targetAssetIds",
+        "authorizationEvidenceId",
+        "status"
+      ],
+      "properties": {
+        "sourceAssetId": {
+          "$ref": "#/$defs/sourceAssetId"
+        },
+        "sourceElementId": {
+          "$ref": "#/$defs/sourceElementId"
+        },
+        "recordId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worksheet": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worksheetRow": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "disposition": {
+          "$ref": "#/$defs/disposition"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targetAssetIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "authorizationEvidenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

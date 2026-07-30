@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-4c3487e1f8f7",
+  "source": {
+    "fileName": "7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png",
+    "sha256": "7dd6f9a1428a9948869e1a315375dd4048973b65f66a30404ed5adfc620fbc77",
+    "bytes": 4369780,
+    "width": 2412,
+    "height": 4974,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-4c3487e1f8f7",
+    "sourceElementId": "src-4c3487e1f8f7:image:993028570f1bd89e",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/7-连立香也能看懂的【一键装备】【一键卸装】设置流程260512.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

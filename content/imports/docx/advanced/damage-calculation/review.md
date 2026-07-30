@@ -1,4 +1,4 @@
-<!-- sourceAssetId: src-c8852cf69a7b; publishable: false; permission: pending -->
+<!-- sourceAssetId: src-c8852cf69a7b; publishable: false; permission: authorized; reviewStatus: migration-review-required -->
 
 # DOCX Import Review: 8.1 拂晓伤害计算构成.docx
 

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-8862e9c4e1c0",
+  "source": {
+    "fileName": "5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
+    "sha256": "884bc9486a8a63ccabfd34e20ba61c5ee831fbbc31cb26190a98f41b031afd42",
+    "bytes": 7418130,
+    "width": 3812,
+    "height": 15096,
+    "format": "png"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-8862e9c4e1c0",
+    "sourceElementId": "src-8862e9c4e1c0:image:e6f94791be3c1e93",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/5-拂晓：胜利之刻-装备速查表20260712高清原图.png"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

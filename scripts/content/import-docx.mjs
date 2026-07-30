@@ -5,6 +5,13 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import { unzipSync } from 'fflate'
 import { XMLParser } from 'fast-xml-parser'
+import {
+  importGovernance,
+  loadSourceAsset,
+  stableJson,
+  stableSourceElementId,
+  stableSourceRelationId,
+} from './lib/migration-elements.mjs'
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -144,6 +151,239 @@ function collectBody(documentXml) {
   return childrenOf(body).filter((child) => ['w:p', 'w:tbl'].includes(nodeName(child)))
 }
 
+function relationshipsFromPart(zip, relationshipEntry) {
+  const xml = parseXmlEntry(zip, relationshipEntry)
+  if (!xml) return []
+  const sourcePart = relationshipEntry
+    .replace('/_rels/', '/')
+    .replace(/\.rels$/, '')
+  return descendants(xml, 'Relationship').map((relationship) => {
+    const id = getAttr(relationship, 'Id')
+    const target = getAttr(relationship, 'Target')
+    const targetMode = getAttr(relationship, 'TargetMode') ?? 'Internal'
+    const resolvedTarget =
+      targetMode === 'External' || !target
+        ? null
+        : path.posix.normalize(
+            path.posix.join(path.posix.dirname(sourcePart), target),
+          )
+    return {
+      sourcePart,
+      relationshipEntry,
+      relationshipId: id,
+      relationshipType: getAttr(relationship, 'Type') ?? '',
+      target,
+      targetMode,
+      resolvedTarget,
+    }
+  })
+}
+
+function collectRelationships(zip) {
+  return Object.keys(zip)
+    .filter((entry) => entry.endsWith('.rels'))
+    .sort()
+    .flatMap((entry) => relationshipsFromPart(zip, entry))
+}
+
+function buildDocxElements({
+  assetId,
+  documentXml,
+  bodyItems,
+  mediaEntries,
+  zip,
+}) {
+  const elements = []
+  let paragraphIndex = 0
+  let tableIndex = 0
+
+  for (let bodyIndex = 0; bodyIndex < bodyItems.length; bodyIndex += 1) {
+    const item = bodyItems[bodyIndex]
+    if (nodeName(item) === 'w:p') {
+      paragraphIndex += 1
+      const level = headingLevel(paragraphStyle(item))
+      const elementType = level ? 'heading' : 'paragraph'
+      const sourcePosition = {
+        part: 'word/document.xml',
+        bodyIndex: bodyIndex + 1,
+        paragraphIndex,
+      }
+      const text = textOf(item)
+      elements.push({
+        sourceAssetId: assetId,
+        sourceElementId: stableSourceElementId(
+          assetId,
+          elementType,
+          sourcePosition,
+        ),
+        elementType,
+        sourcePosition,
+        textHash: sha256(text),
+        ...(level ? { headingLevel: level, title: text } : {}),
+      })
+    }
+  }
+
+  for (const table of descendants(documentXml, 'w:tbl')) {
+    tableIndex += 1
+    const rows = childrenOf(table, 'w:tr')
+    const sourcePosition = {
+      part: 'word/document.xml',
+      tableIndex,
+    }
+    elements.push({
+      sourceAssetId: assetId,
+      sourceElementId: stableSourceElementId(
+        assetId,
+        'table',
+        sourcePosition,
+      ),
+      elementType: 'table',
+      sourcePosition,
+      rowCount: rows.length,
+      columnCount: Math.max(
+        0,
+        ...rows.map((row) => childrenOf(row, 'w:tc').length),
+      ),
+      contentHash: sha256(textOf(table)),
+    })
+  }
+
+  const formulaNodes = [
+    ...descendants(documentXml, 'm:oMath').map((node) => ({
+      node,
+      ooxmlKind: 'm:oMath',
+    })),
+    ...descendants(documentXml, 'm:oMathPara').map((node) => ({
+      node,
+      ooxmlKind: 'm:oMathPara',
+    })),
+  ]
+  for (let index = 0; index < formulaNodes.length; index += 1) {
+    const { node, ooxmlKind } = formulaNodes[index]
+    const sourcePosition = {
+      part: 'word/document.xml',
+      formulaIndex: index + 1,
+      ooxmlKind,
+    }
+    const sourceText = textOf(node)
+    elements.push({
+      sourceAssetId: assetId,
+      sourceElementId: stableSourceElementId(
+        assetId,
+        'formula',
+        sourcePosition,
+      ),
+      elementType: 'formula',
+      sourcePosition,
+      sourceTextHash: sha256(sourceText),
+      equivalent: {
+        format: sourceText ? 'source-text' : 'descriptive-text',
+        value:
+          sourceText ||
+          `Office Math ${ooxmlKind} object ${index + 1}; exact transcription requires fact review.`,
+        reviewStatus: 'pending-fact-review',
+      },
+    })
+  }
+
+  const relationships = collectRelationships(zip)
+  const relationshipsByTarget = new Map()
+  for (const relationship of relationships) {
+    if (!relationship.resolvedTarget) continue
+    const items = relationshipsByTarget.get(relationship.resolvedTarget) ?? []
+    items.push(relationship)
+    relationshipsByTarget.set(relationship.resolvedTarget, items)
+  }
+
+  const mediaByPath = new Map()
+  for (let index = 0; index < mediaEntries.length; index += 1) {
+    const packagePath = mediaEntries[index]
+    const data = bufferFromZipEntry(zip[packagePath])
+    const sourcePosition = {
+      packagePath,
+      mediaIndex: index + 1,
+    }
+    const element = {
+      sourceAssetId: assetId,
+      sourceElementId: stableSourceElementId(
+        assetId,
+        'media',
+        sourcePosition,
+      ),
+      elementType: 'media',
+      sourcePosition,
+      fileName: path.posix.basename(packagePath),
+      sha256: sha256(data),
+      bytes: data.length,
+      relationships: (relationshipsByTarget.get(packagePath) ?? []).map(
+        (relationship) => ({
+          sourcePart: relationship.sourcePart,
+          relationshipId: relationship.relationshipId,
+          relationshipType: relationship.relationshipType,
+        }),
+      ),
+    }
+    elements.push(element)
+    mediaByPath.set(packagePath, element)
+  }
+
+  const documentRelationships = relationships.filter(
+    (relationship) => relationship.sourcePart === 'word/document.xml',
+  )
+  const documentRelationshipById = new Map(
+    documentRelationships.map((relationship) => [
+      relationship.relationshipId,
+      relationship,
+    ]),
+  )
+  const drawingRelations = descendants(documentXml, 'w:drawing').map(
+    (drawing, index) => {
+      const blip = descendants(drawing, 'a:blip')[0]
+      const relationshipId =
+        getAttr(blip, 'r:embed') ?? getAttr(blip, 'embed') ?? null
+      const relationship = relationshipId
+        ? documentRelationshipById.get(relationshipId)
+        : null
+      const targetMedia = relationship?.resolvedTarget
+        ? mediaByPath.get(relationship.resolvedTarget)
+        : null
+      const sourcePosition = {
+        part: 'word/document.xml',
+        drawingIndex: index + 1,
+      }
+      let resolution = 'layout'
+      let reason =
+        'Drawing wrapper has no embedded media relationship and is retained as layout metadata.'
+      if (targetMedia) {
+        resolution = 'media'
+        reason = 'Drawing relationship resolves to a registered DOCX media element.'
+      } else if (relationship) {
+        resolution = 'non-media-relationship'
+        reason =
+          'Drawing relationship resolves to a non-media OOXML part and is retained for manual layout review.'
+      }
+      return {
+        sourceAssetId: assetId,
+        sourceRelationId: stableSourceRelationId(
+          assetId,
+          'drawing',
+          sourcePosition,
+        ),
+        sourcePosition,
+        relationshipId,
+        relationshipTarget: relationship?.resolvedTarget ?? null,
+        targetMediaElementId: targetMedia?.sourceElementId ?? null,
+        resolution,
+        disposition: targetMedia ? 'merged' : 'internal-only',
+        reason,
+      }
+    },
+  )
+
+  return { elements, drawingRelations }
+}
+
 function buildReviewItems(counts) {
   const items = []
   const add = (kind, count, message) => {
@@ -162,10 +402,6 @@ function buildReviewItems(counts) {
   add('formulas', counts.formulas, 'Office math objects were detected and require manual conversion review.')
   add('embeddedObjects', counts.embeddedObjects, 'Embedded package or OLE objects were detected and are not imported.')
   return items
-}
-
-function stableJson(value) {
-  return `${JSON.stringify(value, null, 2)}\n`
 }
 
 export async function importDocx({ sourcePath, assetId, outputDir }) {
@@ -210,10 +446,25 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
       countInXml(zip, 'word/document.xml', 'm:oMathPara'),
     embeddedObjects: embeddedEntries.length + countInXml(zip, 'word/document.xml', 'o:OLEObject'),
   }
+  const { asset } = await loadSourceAsset(assetId)
+  if (asset.assetType !== 'docx') {
+    throw new Error(`${assetId} is registered as ${asset.assetType}, not docx`)
+  }
+  if (asset.hashes.sha256 !== sha256(sourceBuffer)) {
+    throw new Error(`${assetId}: source SHA-256 does not match the source ledger`)
+  }
+  const governance = importGovernance(asset)
+  const { elements, drawingRelations } = buildDocxElements({
+    assetId,
+    documentXml,
+    bodyItems,
+    mediaEntries: mediaEntries.sort(),
+    zip,
+  })
   const reviewItems = buildReviewItems(counts)
 
   const markdownBlocks = [
-    `<!-- sourceAssetId: ${assetId}; publishable: false; permission: pending -->`,
+    `<!-- sourceAssetId: ${assetId}; publishable: false; permission: ${governance.permission}; reviewStatus: ${governance.reviewStatus} -->`,
     '',
     `# DOCX Import Review: ${path.basename(absoluteSourcePath)}`,
     '',
@@ -234,8 +485,7 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
   const quarantine = {
     schemaVersion: 1,
     assetId,
-    publishable: false,
-    permission: 'pending',
+    ...governance,
     reviewItems,
   }
 
@@ -266,11 +516,12 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
       bytes: sourceBuffer.length,
       uncompressedBytes,
     },
-    permission: 'pending',
-    publishable: false,
+    ...governance,
     counts,
     outputs,
     reviewItems,
+    elements,
+    drawingRelations,
   }
   const reportPath = path.join(absoluteOutputDir, 'import-report.json')
   await writeFile(reportPath, stableJson(report), 'utf8')

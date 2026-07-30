@@ -1,8 +1,21 @@
 {
   "schemaVersion": 1,
   "assetId": "src-d35e870ffcd7",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
-  "permission": "pending",
   "reviewItems": [
     {
       "kind": "drawings",

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src-1157c5077c1f",
+  "source": {
+    "fileName": "咨询问答表P2.jpg",
+    "sha256": "f120c4bc3edb1fb699e0aa8ff19dc334916e23338ecceeb1a810d6653d73b967",
+    "bytes": 239781,
+    "width": 1322,
+    "height": 934,
+    "format": "jpeg"
+  },
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": false,
+    "asset": true,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": false,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
+  "publishable": false,
+  "originalCopied": false,
+  "sourceElement": {
+    "sourceAssetId": "src-1157c5077c1f",
+    "sourceElementId": "src-1157c5077c1f:image:6d3d729f736c00b0",
+    "elementType": "image",
+    "sourcePosition": {
+      "sourceFile": "5 立香也能看懂的一图流攻略合集/咨询问答表P2.jpg"
+    }
+  },
+  "derivativePolicy": {
+    "generated": false,
+    "format": "webp",
+    "maxDerivativePixels": 4500000,
+    "maxSourcePixels": 50000000,
+    "segmentHeight": 4000
+  },
+  "derivatives": []
+}

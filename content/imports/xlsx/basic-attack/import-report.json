@@ -5,7 +5,20 @@
     "fileName": "8.2 拂晓舰灵普攻倍率cd.xlsx",
     "sha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379"
   },
-  "permission": "pending",
+  "permission": "authorized",
+  "authorizationEvidenceId": "auth-user-declaration-20260730",
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "reviewStatus": "migration-review-required",
   "publishable": false,
   "applicableVersion": "2026-07",
   "verifiedAt": "2026-07-29",
@@ -13,6 +26,7 @@
   "worksheetSummaries": [
     {
       "worksheet": "驱逐",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:cf679187b8f49539",
       "rowCount": 51,
       "dataRows": 50,
       "fieldCount": 8,
@@ -21,6 +35,7 @@
     },
     {
       "worksheet": "轻巡雷巡",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ff15b03b0a0bb1ed",
       "rowCount": 42,
       "dataRows": 38,
       "fieldCount": 8,
@@ -29,6 +44,7 @@
     },
     {
       "worksheet": "重巡",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b076c0404a7780d9",
       "rowCount": 27,
       "dataRows": 26,
       "fieldCount": 8,
@@ -37,6 +53,7 @@
     },
     {
       "worksheet": "战列战巡重炮",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9b0ed2e6e1c3e7b1",
       "rowCount": 49,
       "dataRows": 43,
       "fieldCount": 10,
@@ -45,6 +62,7 @@
     },
     {
       "worksheet": "轻母",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f412a812127d4145",
       "rowCount": 20,
       "dataRows": 18,
       "fieldCount": 7,
@@ -53,6 +71,7 @@
     },
     {
       "worksheet": "航母装母",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1e1ecfc3b159fdcd",
       "rowCount": 51,
       "dataRows": 44,
       "fieldCount": 8,
@@ -61,6 +80,7 @@
     },
     {
       "worksheet": "航战水母",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:67f399e4cb82461e",
       "rowCount": 11,
       "dataRows": 6,
       "fieldCount": 5,
@@ -72,13 +92,13 @@
   "outputs": {
     "records": {
       "path": "content/imports/xlsx/basic-attack/records.json",
-      "sha256": "b78567fecffce8dca4c9b7c966874a863b35cbdbcad72355cae7c9158abdc491",
-      "bytes": 152937
+      "sha256": "4148d782361ea2d3d1f355c1b4f2c7f6835408ec058de312387fc2e3cee75c76",
+      "bytes": 202440
     },
     "review": {
       "path": "content/imports/xlsx/basic-attack/review.md",
-      "sha256": "06f70057f84ae7056070c70ae14ebffed74f51a17d91f214d39dd83defa05b88",
-      "bytes": 866
+      "sha256": "e773cc8ba858984457927550b7b8d2031b26e5570d686eed598622428ccbe8a7",
+      "bytes": 956
     }
   },
   "validation": {
