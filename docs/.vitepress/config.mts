@@ -64,6 +64,29 @@ const equipmentData = JSON.parse(
     category?: string
   }>
 }
+const basicAttackData = JSON.parse(
+  readFileSync(
+    new URL('./data/basic-attack-data.json', import.meta.url),
+    'utf8',
+  ),
+) as {
+  metadata?: {
+    version?: string
+  }
+  fields?: Array<{
+    label?: string
+    name?: string
+  }>
+  worksheets?: Array<{
+    name?: string
+    slug?: string
+  }>
+  records?: Array<{
+    name?: string
+    worksheet?: string
+    values?: Record<string, unknown>
+  }>
+}
 const searchTermsByPageId = new Map<string, Set<string>>()
 for (const query of searchFixture.queries ?? []) {
   for (const pageId of query.targetPageIds ?? []) {
@@ -80,6 +103,43 @@ for (const item of equipmentData.items ?? []) {
   }
 }
 searchTermsByPageId.set('tool-equipment-lookup', equipmentTerms)
+const basicAttackPageIdByWorksheet = new Map(
+  (basicAttackData.worksheets ?? []).map((worksheet) => [
+    worksheet.name,
+    `data-basic-attack-${worksheet.slug}`,
+  ]),
+)
+for (const record of basicAttackData.records ?? []) {
+  const pageId = basicAttackPageIdByWorksheet.get(record.worksheet)
+  if (!pageId) continue
+  const terms = searchTermsByPageId.get(pageId) ?? new Set<string>()
+  for (const value of [
+    record.name,
+    record.worksheet,
+    record.values?.gunDamageType,
+    record.values?.torpedoNote,
+    record.values?.mainGunDamageType,
+    record.values?.secondaryGunDamageType,
+    record.values?.aircraftDamageType,
+    record.values?.attackDamageType,
+    record.values?.rowNote,
+  ]) {
+    if (typeof value === 'string' && value.trim()) terms.add(value)
+  }
+  searchTermsByPageId.set(pageId, terms)
+}
+for (const pageId of ['data-basic-attack-cd', 'tool-basic-attack-lookup']) {
+  const terms = searchTermsByPageId.get(pageId) ?? new Set<string>()
+  for (const field of basicAttackData.fields ?? []) {
+    if (field.label) terms.add(field.label)
+    if (field.name) terms.add(field.name)
+  }
+  if (basicAttackData.metadata?.version) {
+    terms.add(basicAttackData.metadata.version)
+    terms.add(basicAttackData.metadata.version.replace('-', ''))
+  }
+  searchTermsByPageId.set(pageId, terms)
+}
 
 export default defineConfig({
   base,

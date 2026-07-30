@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "basic-attack",
+  "sourceAssetId": "src-0c5b7db892f6",
+  "decision": {
+    "status": "approved",
+    "publicationMode": "source-faithful-structured-data",
+    "approvedAt": "2026-07-30",
+    "applicableVersion": "2026-07",
+    "reviewScope": [
+      "source-integrity",
+      "worksheet-and-field-mapping",
+      "record-identity-and-type-validation",
+      "public-release-boundary"
+    ],
+    "limitations": [
+      "The approval confirms a source-faithful projection of the authorized workbook; it is not an independent promise that live-game values never changed after the stated applicable version.",
+      "The original XLSX and bulk-download endpoints remain unavailable."
+    ]
+  },
+  "evidence": {
+    "authorizationEvidenceId": "auth-user-declaration-20260730",
+    "sourceSha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379",
+    "importRecordsSha256": "4148d782361ea2d3d1f355c1b4f2c7f6835408ec058de312387fc2e3cee75c76",
+    "expectedWorksheetCount": 7,
+    "expectedRecordCount": 225,
+    "expectedWorksheetRecords": {
+      "驱逐": 50,
+      "轻巡雷巡": 38,
+      "重巡": 26,
+      "战列战巡重炮": 43,
+      "轻母": 18,
+      "航母装母": 44,
+      "航战水母": 6
+    },
+    "importValidationStatus": "passed"
+  },
+  "reviewerRoles": [
+    "DOV-Calc 事实审核组",
+    "DOV-Calc 版权与来源维护组",
+    "DOV-Calc 发布维护组"
+  ],
+  "notes": "本决策只批准由规范构建器生成的结构化公开投影；源文件、未审查的内部导入物和下载出口不在批准范围内。"
+}

@@ -101,7 +101,7 @@ async function inspectLayout(page, route, viewport, options = {}) {
     }
     const toolTargets = [
       ...document.querySelectorAll(
-        '.damage-calculator button, .damage-calculator input, .damage-calculator select, .equipment-lookup button, .equipment-lookup input, .equipment-lookup select',
+        '.damage-calculator button, .damage-calculator input, .damage-calculator select, .equipment-lookup button, .equipment-lookup input, .equipment-lookup select, .basic-attack-explorer button, .basic-attack-explorer input, .basic-attack-explorer select',
       ),
     ]
       .filter(visible)
@@ -321,6 +321,7 @@ try {
     '/data/basic-attack-cd',
     '/tools/dov-basic',
     '/tools/equipment-lookup',
+    '/tools/basic-attack-lookup',
     '/topics/visual-guides/',
     '/topics/visual-guides/src-ec1754535996',
   ]) {
@@ -337,6 +338,7 @@ try {
     '/topics/new-player-checklist',
     '/tools/dov-basic',
     '/tools/equipment-lookup',
+    '/tools/basic-attack-lookup',
     '/topics/visual-guides/',
     '/topics/visual-guides/src-ec1754535996',
   ]) {
@@ -349,6 +351,12 @@ try {
     }
     if (route === '/tools/equipment-lookup') {
       await capture(page, 'equipment-lookup-mobile-360')
+    }
+    if (route === '/tools/basic-attack-lookup') {
+      await page.$eval('.basic-attack-explorer', (element) =>
+        element.scrollIntoView({ block: 'start' }),
+      )
+      await capture(page, 'basic-attack-lookup-mobile-360')
     }
     if (route === '/topics/visual-guides/') {
       await page.$eval('.responsive-media', (element) =>
@@ -550,6 +558,118 @@ try {
           .querySelector('output[aria-label="当前结果数量"]')
           ?.textContent?.trim() === '93',
       { timeout: 10_000 },
+    )
+  }
+
+  await page.goto(routeUrl('/tools/basic-attack-lookup'), {
+    waitUntil: 'networkidle0',
+    timeout: 45_000,
+  })
+  await page.waitForSelector('.basic-attack-explorer', { timeout: 10_000 })
+  const basicAttackSearch = await page.$(
+    '.basic-attack-explorer input[type="search"]',
+  )
+  const basicAttackWorksheet = await page.$(
+    '.basic-attack-explorer select[aria-label="工作表筛选"]',
+  )
+  const basicAttackSort = await page.$(
+    '.basic-attack-explorer select[aria-label="排序字段"]',
+  )
+  const basicAttackDirection = await page.$(
+    '.basic-attack-explorer button[aria-label*="序"]',
+  )
+  const basicAttackReset = await page.$(
+    '.basic-attack-explorer__reset',
+  )
+  const basicAttackCountSelector =
+    '.basic-attack-explorer output[aria-label="当前普攻结果数量"]'
+  const basicAttackDefaultCount = await page
+    .$eval(basicAttackCountSelector, (element) => element.textContent?.trim())
+    .catch(() => null)
+  if (
+    !basicAttackSearch ||
+    !basicAttackWorksheet ||
+    !basicAttackSort ||
+    !basicAttackDirection ||
+    !basicAttackReset ||
+    basicAttackDefaultCount !== '225'
+  ) {
+    failures.push(
+      `basic attack lookup: controls/count are incomplete (${basicAttackDefaultCount})`,
+    )
+  } else {
+    await basicAttackSearch.focus()
+    await page.keyboard.type('DD-724')
+    await page.waitForFunction(
+      (selector) => {
+        const value = Number(document.querySelector(selector)?.textContent)
+        return value > 0 && value < 225
+      },
+      { timeout: 10_000 },
+      basicAttackCountSelector,
+    )
+    await basicAttackReset.focus()
+    await page.keyboard.press('Enter')
+    await page.waitForFunction(
+      (selector) => document.querySelector(selector)?.textContent?.trim() === '225',
+      { timeout: 10_000 },
+      basicAttackCountSelector,
+    )
+
+    const worksheetOption = await basicAttackWorksheet.evaluate((element) =>
+      [...element.options].find(
+        (option) => option.value && option.value !== 'all',
+      )?.value,
+    )
+    if (!worksheetOption) {
+      failures.push('basic attack lookup: worksheet filter has no options')
+    } else {
+      await page.select(
+        '.basic-attack-explorer select[aria-label="工作表筛选"]',
+        worksheetOption,
+      )
+      await page.waitForFunction(
+        (selector) => {
+          const value = Number(document.querySelector(selector)?.textContent)
+          return value > 0 && value < 225
+        },
+        { timeout: 10_000 },
+        basicAttackCountSelector,
+      )
+    }
+
+    const sortOption = await basicAttackSort.evaluate((element) =>
+      [...element.options].find((option) => option.value)?.value,
+    )
+    if (!sortOption) {
+      failures.push('basic attack lookup: sort control has no options')
+    } else {
+      await page.select(
+        '.basic-attack-explorer select[aria-label="排序字段"]',
+        sortOption,
+      )
+      const firstBefore = await page.$eval(
+        '.basic-attack-explorer tbody tr',
+        (element) => element.textContent?.trim(),
+      )
+      await basicAttackDirection.focus()
+      await page.keyboard.press('Enter')
+      await page.waitForFunction(
+        (previous) =>
+          document
+            .querySelector('.basic-attack-explorer tbody tr')
+            ?.textContent?.trim() !== previous,
+        { timeout: 10_000 },
+        firstBefore,
+      )
+    }
+
+    await basicAttackReset.focus()
+    await page.keyboard.press('Enter')
+    await page.waitForFunction(
+      (selector) => document.querySelector(selector)?.textContent?.trim() === '225',
+      { timeout: 10_000 },
+      basicAttackCountSelector,
     )
   }
 

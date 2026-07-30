@@ -198,8 +198,19 @@ if (versions) {
   if (!equipmentDrift) {
     failures.push('version-baselines.json: 未记录装备版本漂移')
   }
-  if (equipmentDrift?.severity !== 'release-blocking-until-reviewed') {
-    failures.push('version-baselines.json: 装备版本漂移未设置发布复核阻断')
+  const isOpenBlocker =
+    equipmentDrift?.severity === 'release-blocking-until-reviewed' &&
+    !equipmentDrift?.status
+  const isReviewedLayering =
+    equipmentDrift?.severity === 'reviewed-version-layering' &&
+    equipmentDrift?.status === 'acknowledged' &&
+    /^\d{4}-\d{2}-\d{2}$/.test(equipmentDrift?.reviewedAt ?? '') &&
+    Boolean(equipmentDrift?.disposition) &&
+    Boolean(equipmentDrift?.blockingPolicy)
+  if (!isOpenBlocker && !isReviewedLayering) {
+    failures.push(
+      'version-baselines.json: 装备版本漂移必须保持发布阻断，或记录完整的已审阅版本分层结论',
+    )
   }
 }
 

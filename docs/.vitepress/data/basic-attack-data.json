@@ -1,0 +1,6656 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "datasetId": "basic-attack",
+    "title": "拂晓舰灵普攻倍率与 CD",
+    "version": "2026-07",
+    "sourceAssetId": "src-0c5b7db892f6",
+    "sourceFileName": "8.2 拂晓舰灵普攻倍率cd.xlsx",
+    "sourceUpdatedAt": "2026-07-21",
+    "verifiedAt": "2026-07-29",
+    "reviewedAt": "2026-07-30",
+    "reviewStatus": "approved",
+    "publicationStatus": "published",
+    "worksheetCount": 7,
+    "recordCount": 225,
+    "fieldCount": 33,
+    "defaultSort": [
+      "worksheetOrder",
+      "worksheetRow",
+      "id"
+    ]
+  },
+  "publicRelease": {
+    "body": true,
+    "asset": false,
+    "searchIndex": true,
+    "sitemap": true,
+    "download": false,
+    "derivative": true,
+    "structuredData": true,
+    "mode": "public",
+    "reason": "公开出口由 authorization.scope 与 deniedScopes 派生。"
+  },
+  "integrity": {
+    "sourceSha256": "0f1e9968adbcd3dcdc669168af97f0f40d5de55f928d645e99a9e30d95bf0379",
+    "importRecordsSha256": "4148d782361ea2d3d1f355c1b4f2c7f6835408ec058de312387fc2e3cee75c76",
+    "fieldDictionarySha256": "adf9d277d31df3b902b4c4c675c2a912faaaa3a0ef68119857cc3160b165fe1c",
+    "recordsSha256": "d3c3eb10c53dc2923b3fad4648173f08f8f172ce09e7a9cb75af7ee76daf0d4d"
+  },
+  "fields": [
+    {
+      "name": "worksheet",
+      "type": "string",
+      "nullable": false,
+      "label": "来源工作表",
+      "unit": null,
+      "description": "记录在授权工作簿中的来源工作表。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "worksheetRow",
+      "type": "number",
+      "nullable": false,
+      "label": "来源工作表行号",
+      "unit": "行",
+      "description": "记录在来源工作表中的原始行号，用于追溯与复核。",
+      "searchable": false,
+      "sortable": false
+    },
+    {
+      "name": "rowNote",
+      "type": "string",
+      "nullable": true,
+      "label": "来源行备注",
+      "unit": null,
+      "description": "来源行备注；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "gunMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "炮击伤害倍率",
+      "unit": "倍率",
+      "description": "炮击伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "gunCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "炮击冷却秒数",
+      "unit": "秒",
+      "description": "炮击冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "gunRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "炮击有效射程",
+      "unit": "游戏内射程单位",
+      "description": "炮击有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "gunDamageType",
+      "type": "string",
+      "nullable": true,
+      "label": "炮击伤害类型",
+      "unit": null,
+      "description": "炮击伤害类型；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "torpedoMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "雷击伤害倍率",
+      "unit": "倍率",
+      "description": "雷击伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "torpedoNote",
+      "type": "string",
+      "nullable": true,
+      "label": "雷击备注",
+      "unit": null,
+      "description": "雷击备注；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "torpedoCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "雷击冷却秒数",
+      "unit": "秒",
+      "description": "雷击冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "torpedoRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "雷击有效射程",
+      "unit": "游戏内射程单位",
+      "description": "雷击有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "projectilesPerRound",
+      "type": "string",
+      "nullable": true,
+      "label": "每轮弹数或架数",
+      "unit": "发或架/轮",
+      "description": "每轮弹数或架数；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "mainGunMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "主炮伤害倍率",
+      "unit": "倍率",
+      "description": "主炮伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "mainGunCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "主炮冷却秒数",
+      "unit": "秒",
+      "description": "主炮冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "mainGunRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "主炮有效射程",
+      "unit": "游戏内射程单位",
+      "description": "主炮有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "mainGunDamageType",
+      "type": "string",
+      "nullable": true,
+      "label": "主炮伤害类型",
+      "unit": null,
+      "description": "主炮伤害类型；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "mainGunProjectilesPerRound",
+      "type": "string",
+      "nullable": true,
+      "label": "主炮每轮弹数",
+      "unit": "发或架/轮",
+      "description": "主炮每轮弹数；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "secondaryGunMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "副炮伤害倍率",
+      "unit": "倍率",
+      "description": "副炮伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "secondaryGunCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "副炮冷却秒数",
+      "unit": "秒",
+      "description": "副炮冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "secondaryGunRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "副炮有效射程",
+      "unit": "游戏内射程单位",
+      "description": "副炮有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "secondaryGunDamageType",
+      "type": "string",
+      "nullable": true,
+      "label": "副炮伤害类型",
+      "unit": null,
+      "description": "副炮伤害类型；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "secondaryGunProjectilesPerRound",
+      "type": "string",
+      "nullable": true,
+      "label": "副炮每轮弹数",
+      "unit": "发或架/轮",
+      "description": "副炮每轮弹数；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "aircraftMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "舰载机伤害倍率",
+      "unit": "倍率",
+      "description": "舰载机伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "aircraftCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "舰载机冷却秒数",
+      "unit": "秒",
+      "description": "舰载机冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "aircraftRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "舰载机有效射程",
+      "unit": "游戏内射程单位",
+      "description": "舰载机有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "aircraftDamageType",
+      "type": "string",
+      "nullable": true,
+      "label": "舰载机伤害类型",
+      "unit": null,
+      "description": "舰载机伤害类型；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    },
+    {
+      "name": "fighterMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "战斗机巡航倍率",
+      "unit": "倍率",
+      "description": "战斗机巡航倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "fighterCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "战斗机巡航冷却秒数",
+      "unit": "秒",
+      "description": "战斗机巡航冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "fighterRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "战斗机巡航有效射程",
+      "unit": "游戏内射程单位",
+      "description": "战斗机巡航有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "attackMultiplier",
+      "type": "number",
+      "nullable": true,
+      "label": "通用普攻伤害倍率",
+      "unit": "倍率",
+      "description": "通用普攻伤害倍率；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "attackCdSeconds",
+      "type": "number",
+      "nullable": true,
+      "label": "通用普攻冷却秒数",
+      "unit": "秒",
+      "description": "通用普攻冷却秒数；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "attackRangeUnits",
+      "type": "number",
+      "nullable": true,
+      "label": "通用普攻有效射程",
+      "unit": "游戏内射程单位",
+      "description": "通用普攻有效射程；空值表示来源工作表未提供该项。",
+      "searchable": false,
+      "sortable": true
+    },
+    {
+      "name": "attackDamageType",
+      "type": "string",
+      "nullable": true,
+      "label": "通用普攻伤害类型",
+      "unit": null,
+      "description": "通用普攻伤害类型；空值表示来源工作表未提供该项。",
+      "searchable": true,
+      "sortable": false
+    }
+  ],
+  "worksheets": [
+    {
+      "id": "worksheet-destroyer",
+      "name": "驱逐",
+      "slug": "destroyer",
+      "order": 0,
+      "recordCount": 50,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:cf679187b8f49539",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "gunMultiplier",
+        "gunCdSeconds",
+        "gunRangeUnits",
+        "gunDamageType",
+        "torpedoMultiplier",
+        "torpedoNote",
+        "torpedoCdSeconds",
+        "torpedoRangeUnits",
+        "projectilesPerRound"
+      ]
+    },
+    {
+      "id": "worksheet-light-cruiser-torpedo-cruiser",
+      "name": "轻巡雷巡",
+      "slug": "light-cruiser-torpedo-cruiser",
+      "order": 1,
+      "recordCount": 38,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ff15b03b0a0bb1ed",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "gunMultiplier",
+        "gunCdSeconds",
+        "gunRangeUnits",
+        "gunDamageType",
+        "torpedoMultiplier",
+        "torpedoNote",
+        "torpedoCdSeconds",
+        "torpedoRangeUnits",
+        "projectilesPerRound"
+      ]
+    },
+    {
+      "id": "worksheet-heavy-cruiser",
+      "name": "重巡",
+      "slug": "heavy-cruiser",
+      "order": 2,
+      "recordCount": 26,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b076c0404a7780d9",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "gunMultiplier",
+        "gunCdSeconds",
+        "gunRangeUnits",
+        "gunDamageType",
+        "torpedoMultiplier",
+        "torpedoNote",
+        "torpedoCdSeconds",
+        "torpedoRangeUnits",
+        "projectilesPerRound"
+      ]
+    },
+    {
+      "id": "worksheet-battleship-battlecruiser",
+      "name": "战列战巡重炮",
+      "slug": "battleship-battlecruiser",
+      "order": 3,
+      "recordCount": 43,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9b0ed2e6e1c3e7b1",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "mainGunMultiplier",
+        "mainGunCdSeconds",
+        "mainGunRangeUnits",
+        "mainGunDamageType",
+        "mainGunProjectilesPerRound",
+        "secondaryGunMultiplier",
+        "secondaryGunCdSeconds",
+        "secondaryGunRangeUnits",
+        "secondaryGunDamageType",
+        "secondaryGunProjectilesPerRound"
+      ]
+    },
+    {
+      "id": "worksheet-light-carrier",
+      "name": "轻母",
+      "slug": "light-carrier",
+      "order": 4,
+      "recordCount": 18,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f412a812127d4145",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "aircraftMultiplier",
+        "aircraftCdSeconds",
+        "aircraftRangeUnits",
+        "aircraftDamageType",
+        "fighterMultiplier",
+        "fighterCdSeconds",
+        "fighterRangeUnits"
+      ]
+    },
+    {
+      "id": "worksheet-carrier-armored-carrier",
+      "name": "航母装母",
+      "slug": "carrier-armored-carrier",
+      "order": 5,
+      "recordCount": 44,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1e1ecfc3b159fdcd",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "rowNote",
+        "aircraftMultiplier",
+        "aircraftCdSeconds",
+        "aircraftRangeUnits",
+        "aircraftDamageType",
+        "fighterMultiplier",
+        "fighterCdSeconds",
+        "fighterRangeUnits"
+      ]
+    },
+    {
+      "id": "worksheet-aviation-battleship-seaplane",
+      "name": "航战水母",
+      "slug": "aviation-battleship-seaplane",
+      "order": 6,
+      "recordCount": 6,
+      "sourceElementId": "src-0c5b7db892f6:worksheet:67f399e4cb82461e",
+      "fieldNames": [
+        "worksheet",
+        "worksheetRow",
+        "projectilesPerRound",
+        "attackMultiplier",
+        "attackCdSeconds",
+        "attackRangeUnits",
+        "attackDamageType"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "destroyer-d68a3eb2c827",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:23fd5ea51134e95d",
+      "name": "岛风",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 2,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 2,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-c52c7aaa37fb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8cdd24c5d4950a8e",
+      "name": "拉菲（DD-724）",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 3,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-ef032f09681f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:0960765f89cdb048",
+      "name": "吹雪",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 4,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-8d1d369262d2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:de30aa8c2bd21ae1",
+      "name": "萤火虫",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 5,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-d651f63b9047",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c42cba83d86709fd",
+      "name": "夕立",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 6,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-c274c32a2b9e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:2dc290204753c488",
+      "name": "吸血鬼",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 7,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-98e7c3388f54",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b68925b4106aa783",
+      "name": "Z1",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 8,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-36b92adbd0a6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8824ad734759a587",
+      "name": "Z16",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 9,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-1c0d606bb552",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f01e0f70d98a1ede",
+      "name": "峰风",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 10,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-a82d5bd5708e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9d35ea137fb295be",
+      "name": "黑潮",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 11,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-e8620d9258c2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4974071415d8d9fb",
+      "name": "Z22",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 12,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-dee40bf1571c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:3ae01762dc1055cb",
+      "name": "凉月",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 13,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-e02e4acb1391",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:bbc3e53a1b5c26bb",
+      "name": "深雪",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 14,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-f180ce50cacb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:cce2dea444075294",
+      "name": "初雪",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 15,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-48c33e27d686",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5f475b5010a308f1",
+      "name": "白雪",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 16,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-03998a33fa9e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:20444ba1ac33d5f4",
+      "name": "布雷恩",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 17,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-3b0dad929b05",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:355e7f65a3cc071d",
+      "name": "麦考尔",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 18,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-f5526aa9e94c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ba093fd92c9c1764",
+      "name": "秋月",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 19,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-2e1ba513ecd3",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ac2c450ccfe4e8b0",
+      "name": "晓",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 20,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-cf6295c8c594",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:0095d069352ed226",
+      "name": "基辅",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 21,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 21,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-d900fc071711",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:3433a48f4d6c62b8",
+      "name": "绫波",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 22,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 22,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-a69c3b684216",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b1b139f77c0a73b5",
+      "name": "标枪",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 23,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 23,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-b98bef67da01",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:3f65f2dfaadc53ca",
+      "name": "空想",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 24,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 24,
+        "gunMultiplier": 3.9,
+        "gunCdSeconds": 1.8,
+        "gunRangeUnits": 18,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "10发"
+      }
+    },
+    {
+      "id": "destroyer-63a6ed04ba17",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6b46b73d0eb2027c",
+      "name": "雪风",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 25,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 25,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-5bdb35b2e0fd",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e00ea444771f98a3",
+      "name": "响",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 26,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 26,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-3dbf224e8b7b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4e7195c0af063bdc",
+      "name": "不知火",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 27,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 27,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-2fa491929544",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:99e0e25ec67255e1",
+      "name": "唐斯",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 28,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 28,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-5d732ae9ff74",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f3b5bf0c9d6085ef",
+      "name": "阳炎",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 29,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 29,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-6f09af3a73b7",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:82a3963b5684e967",
+      "name": "雷",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 30,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 30,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-e38cfe572126",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1046e2040f191007",
+      "name": "电",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 31,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 31,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-019f31340635",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c3341f80128d41b6",
+      "name": "时雨",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 32,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 32,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-f5a4dd7ee31a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:27875499812d2dd9",
+      "name": "拉菲（DD-459）",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 33,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 33,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-c105c03706bb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f1fb723f636183a1",
+      "name": "莫加多尔",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 34,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 34,
+        "gunMultiplier": 0.72,
+        "gunCdSeconds": 0.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "4发"
+      }
+    },
+    {
+      "id": "destroyer-c727990d27c6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:0dd39e00b3ab128d",
+      "name": "哈曼",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 35,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 35,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-f03b9989c803",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:476e45294fd7ed28",
+      "name": "天津风",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 36,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 36,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-327f021dce68",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1f90eac044d64eb3",
+      "name": "杰维斯",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 37,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 37,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-1093eed6f3f3",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:189ce2875e28730b",
+      "name": "卡米契亚·内拉",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 38,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 38,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-c6585cb21d69",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:62a8ffe1cb11eff1",
+      "name": "火力",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 39,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 39,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-badb849cc6b5",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d53103449ba32fef",
+      "name": "拉菲·改（DD-724）",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 40,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 40,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-70eb268692f1",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:97fa62a04b8df294",
+      "name": "吹雪·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 41,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 41,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-6f6e504f521b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:856d7a889ef633d1",
+      "name": "萤火虫·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 42,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 42,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-6d835bc42c41",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:67166bf8c0d9bf72",
+      "name": "夕立·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 43,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 43,
+        "gunMultiplier": 0.72,
+        "gunCdSeconds": 0.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "3发"
+      }
+    },
+    {
+      "id": "destroyer-4b80d08f8516",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e9b4e48a6245c61a",
+      "name": "Z1·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 44,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 44,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-673b6ed74210",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:254e0a83bf8bdd0e",
+      "name": "深雪·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 45,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 45,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐通常",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-182cd607f3b2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:10ffe5cc70a0fd81",
+      "name": "初雪·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 46,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 46,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-aad619b80cfa",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:18672a109c1411ac",
+      "name": "白雪·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 47,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 47,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-9e977fc9f3a9",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7b864be87e7d440e",
+      "name": "绫波·改",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 48,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 48,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-cf85154723a6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e5150bbdca5bb915",
+      "name": "丹阳（雪风·改）",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 49,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 49,
+        "gunMultiplier": 0.81,
+        "gunCdSeconds": 5,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害，普攻模组优先上模组，cd时改用下模组",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null,
+        "projectilesPerRound": "3发"
+      }
+    },
+    {
+      "id": "destroyer-8db0c389cfc4",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5b1d8ccc12f6a946",
+      "name": "丹阳副炮",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 50,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 50,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐高爆",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "destroyer-00bcd0c63b93",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:fe27ef8780dc27f7",
+      "name": "信赖（响·改）",
+      "category": "驱逐",
+      "worksheet": "驱逐",
+      "worksheetRow": 51,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "驱逐",
+        "worksheetRow": 51,
+        "gunMultiplier": 0.54,
+        "gunCdSeconds": 0.3,
+        "gunRangeUnits": 16,
+        "gunDamageType": "驱逐穿甲",
+        "torpedoMultiplier": 0.35,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20,
+        "projectilesPerRound": "2发"
+      }
+    },
+    {
+      "id": "light-cruiser-d9e91001cf6e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ee93dd696fb3f431",
+      "name": "海伦娜",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 2,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 2,
+        "gunMultiplier": 2.85,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "15发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-ed37afb48948",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1c0fffdf89940725",
+      "name": "海伦娜副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 3,
+        "gunMultiplier": 0.24,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-bd9a61d49c1b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:70a7f6fc6c2a9a1f",
+      "name": "圣地亚哥",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 4,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 1.8,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "24发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-83542dd0c094",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e26f285791410062",
+      "name": "北上",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 5,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-853c4c260db2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:28126963936776e2",
+      "name": "应瑞",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 6,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "2发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-084e70d79299",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8b46663873f2bed8",
+      "name": "应瑞副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 7,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐通常",
+        "projectilesPerRound": "4发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-6b7df6ee50a5",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:db269c230f0fdbca",
+      "name": "大井",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 8,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-6276f13dff2d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6754d13f84fad51c",
+      "name": "长良",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 9,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-0580ec26676e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1ea20fb15d4aacc2",
+      "name": "大淀",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 10,
+        "gunMultiplier": 1.92,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "6发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害，两轮循环攻击",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-da3d47838800",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4aa2fc6f400d3f4b",
+      "name": "川内",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 11,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-8e091176155a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d3f163d6f256f56b",
+      "name": "那珂",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 12,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-4ee330567671",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b8c057f5d42ade93",
+      "name": "神通",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 13,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-9915dd1b7a5d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:048286545d8c8b8b",
+      "name": "基洛夫",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 14,
+        "gunMultiplier": 2.76,
+        "gunCdSeconds": 2.6,
+        "gunRangeUnits": 20,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "6发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-d84dc17063ed",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8edaf4eac5060f6c",
+      "name": "柯尼斯堡",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 15,
+        "gunMultiplier": 2.64,
+        "gunCdSeconds": 2.2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-75753a690a64",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:48f492a94ae36b3d",
+      "name": "奥马哈",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 16,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-0a868d2637c5",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:79002141393a1958",
+      "name": "卡尔斯鲁厄",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 17,
+        "gunMultiplier": 2.64,
+        "gunCdSeconds": 2.2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-5b8ed21f5576",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:28221d9b6faef39c",
+      "name": "科隆",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 18,
+        "gunMultiplier": 2.64,
+        "gunCdSeconds": 2.2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-4196c259851a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5746eee1a678864e",
+      "name": "里士满",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 19,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-fccbd6ef270e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:56096d51e3da1707",
+      "name": "平海",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 20,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-29c57d14d8cb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e77bdc1f01370497",
+      "name": "宁海",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 21,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 21,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-7ad3d863d0fb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8c7b6d992c9403bf",
+      "name": "天龙",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 22,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 22,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-69dd1e9a2b39",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:fc56b5ebd69ce0b1",
+      "name": "奈亚",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 23,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 23,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-5cc0c0ed2f6a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:951689ef48223311",
+      "name": "阿瑞托莎",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 24,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 24,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-74b8399e1835",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:acf984595ae14788",
+      "name": "谢菲尔德",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 25,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 25,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-0fbb12049306",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c61e171cc7079323",
+      "name": "贝尔法斯特",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 26,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 26,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-57fd9eca25a2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d149a1f1c7e4a6d9",
+      "name": "重庆",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 27,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 27,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-364f3110c4ba",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:745f7c7fae5e79a3",
+      "name": "逸仙",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 28,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 28,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "2发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-a7f8e373e059",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:bce62b0b91b0fcd4",
+      "name": "逸仙副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 29,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 29,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "4发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-7530f076d1c9",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:08473db0a11df508",
+      "name": "朱塞佩·加里波第",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 30,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 30,
+        "gunMultiplier": 3,
+        "gunCdSeconds": 2.6,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "10发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-3778d0ebd5b6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f16bdb97dab67274",
+      "name": "恰巴耶夫",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 31,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 31,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-e6600813db0e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b96bd2c73302a6e6",
+      "name": "恰巴耶夫副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 32,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 32,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-916722c809f4",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:36c541f3e39289e7",
+      "name": "海伦娜·改",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 33,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 33,
+        "gunMultiplier": 2.85,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "15发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-ca04a3fb7b8f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:546441e6f07c4a90",
+      "name": "海伦娜·改副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 34,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 34,
+        "gunMultiplier": 0.24,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-5728100b1961",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d100e008f7429895",
+      "name": "神通·改",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 35,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 35,
+        "gunMultiplier": 2.4,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡穿甲",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": 0.92,
+        "torpedoCdSeconds": 4,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-9656c7fd85c6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b664515dddf8b9fb",
+      "name": "蒙彼利埃",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 36,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 36,
+        "gunMultiplier": 2.88,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡高爆",
+        "projectilesPerRound": "12发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-fef9a183bfa0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b36909249b2da4ed",
+      "name": "蒙彼利埃副炮",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 37,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 37,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "light-cruiser-08f33101c442",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7114a952ea36f2e4",
+      "name": "北上·改",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 41,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 41,
+        "gunMultiplier": 0.5,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "2发",
+        "torpedoMultiplier": 1.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "light-cruiser-0be6f23c1103",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5511dd1dd81dc206",
+      "name": "大井·改",
+      "category": "轻巡雷巡",
+      "worksheet": "轻巡雷巡",
+      "worksheetRow": 42,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻巡雷巡",
+        "worksheetRow": 42,
+        "gunMultiplier": 0.5,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 18,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "2发",
+        "torpedoMultiplier": 1.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-3c910fb50721",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1a8e89cfe25403bb",
+      "name": "欧根亲王",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 2,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 2,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-e874bc62f9b6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d7d10520596d97ff",
+      "name": "高雄",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 3,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-02f6e560fc63",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f11d349c03fe3032",
+      "name": "羽黑",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 4,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-ddfe82eb5a9c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:013fe39b0c7d2b6d",
+      "name": "伦敦",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 5,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-ff74000a95f0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6874ed5dd6ff2f63",
+      "name": "青叶",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 6,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-0a989971c74f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f699f33e412ae446",
+      "name": "衣笠",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 7,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-1a2b0b545222",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f6f3a250c661d3d9",
+      "name": "新奥尔良",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 8,
+        "gunMultiplier": 2.34,
+        "gunCdSeconds": 3.2,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-13fa8aaf917d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:45f1aecb6bfa8620",
+      "name": "新奥尔良副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 9,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-69ba5dcf7fa4",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:dcd7de6c12c8cb78",
+      "name": "妙高",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 10,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-a562c5ddb6a9",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:724f46110377a44d",
+      "name": "昆西",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 11,
+        "gunMultiplier": 2.34,
+        "gunCdSeconds": 3.2,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-2832b90163cb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:22e36ca2f1f6b250",
+      "name": "昆西副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 12,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-ae095647cc5f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ddece1b9f3cc4ece",
+      "name": "威奇塔",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 13,
+        "gunMultiplier": 2.34,
+        "gunCdSeconds": 3.2,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-091554c3788a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6d67b1fcbe5b1430",
+      "name": "威奇塔副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 14,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-92d2b5732b21",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4cfa178e7294e9a7",
+      "name": "爱宕",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 15,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-158382e71511",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6b4a546b54527d46",
+      "name": "舍尔海军上将",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 16,
+        "gunMultiplier": 1.86,
+        "gunCdSeconds": 4.8,
+        "gunRangeUnits": 25,
+        "gunDamageType": "重巡通常",
+        "projectilesPerRound": "6发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-b490b2522bb0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:91a32abd2bb780ca",
+      "name": "舍尔海军上将副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 17,
+        "gunMultiplier": 0.48,
+        "gunCdSeconds": 2.4,
+        "gunRangeUnits": 15,
+        "gunDamageType": "轻巡通常",
+        "projectilesPerRound": "6发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-efb6d96f01f1",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:79bad4624ee4108d",
+      "name": "盐湖城",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 18,
+        "gunMultiplier": 1.35,
+        "gunCdSeconds": 4,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "5发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害，两轮循环攻击",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-9a06501f276c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:845f2608d24d45f1",
+      "name": "波拉",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 19,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-4362d40898bc",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:69370e0c0ad3921a",
+      "name": "波拉副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 20,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-1b6de027cfea",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:52525263b2f890f5",
+      "name": "诺福克",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 21,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 21,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-0883d6843ccc",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:cf7b99430fe78a09",
+      "name": "萨福克",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 22,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 22,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-3909a40844f2",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c607993f76ecbbc0",
+      "name": "约克",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 23,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 23,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-2ed16c223167",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8fd9d0c7bc2f0107",
+      "name": "坎伯兰",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 24,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 24,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡通常",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-c880731d8f59",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:abf0e64652f312f6",
+      "name": "利根",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 25,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 25,
+        "gunMultiplier": 2.16,
+        "gunCdSeconds": 3,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡高爆",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": 0.6,
+        "torpedoCdSeconds": 5,
+        "torpedoRangeUnits": 20
+      }
+    },
+    {
+      "id": "heavy-cruiser-dc8844f533bd",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d10037aa42dbb5a4",
+      "name": "明尼阿波利斯",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 26,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 26,
+        "gunMultiplier": 2.34,
+        "gunCdSeconds": 3.2,
+        "gunRangeUnits": 20,
+        "gunDamageType": "重巡穿甲",
+        "projectilesPerRound": "9发",
+        "torpedoMultiplier": null,
+        "torpedoNote": "无鱼雷伤害",
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "heavy-cruiser-e0de564fe836",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7abcc40ba3eccb37",
+      "name": "明尼阿波利斯副炮",
+      "category": "重巡",
+      "worksheet": "重巡",
+      "worksheetRow": 27,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "重巡",
+        "worksheetRow": 27,
+        "gunMultiplier": 0.4,
+        "gunCdSeconds": 2,
+        "gunRangeUnits": 15,
+        "gunDamageType": "驱逐穿甲",
+        "projectilesPerRound": "8发",
+        "torpedoMultiplier": null,
+        "torpedoCdSeconds": null,
+        "torpedoRangeUnits": null
+      }
+    },
+    {
+      "id": "battleship-4d58735b1987",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d86cf2e9cfd7daa4",
+      "name": "胡德",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 2,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 2,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-eadce5a3d4c9",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4afb08bf1c24a4ee",
+      "name": "威尔士亲王",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 3,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-02bfece80133",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6cfe9b68a4fab4a2",
+      "name": "俾斯麦",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 4,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡通常",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-2034193215ef",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:63a456f952fad227",
+      "name": "华盛顿",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 5,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-6baa2ae9c37e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:19021453a8764ef8",
+      "name": "提尔比茨",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 6,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡通常",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-efcf0e7389f3",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f6dbf2f4da1264fb",
+      "name": "罗德尼",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 7,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-dfce535d9d8a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:52e6141b54cfcaee",
+      "name": "维内托",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 8,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-58f0a8e8ba01",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:68119a6fba9a5104",
+      "name": "伊势",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 9,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-06f76aae3f37",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ddb1c9c8a9d17004",
+      "name": "长门",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 10,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-ab8f6b433f90",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:dcb0c0ce23349e20",
+      "name": "日向",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 11,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-c3a6c18b8ce4",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:43e8fc9dd2886993",
+      "name": "陆奥",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 12,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-ef103967098c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:3982854f318a84fa",
+      "name": "反击",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 13,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐通常",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-8bf6f148cf50",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c40abdef6defbada",
+      "name": "田纳西",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 14,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐通常",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-318b072aebc1",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1cfcb25ef29ca6de",
+      "name": "加利福尼亚",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 15,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐通常",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-2e7d003aec71",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c89d2374b2709cf9",
+      "name": "内华达",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 16,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-c1482151be8e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1a758de80c07beba",
+      "name": "金刚",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 17,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-68936718f12f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5cfe5cc2ecf1087d",
+      "name": "俄克拉荷马",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 18,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-c57d89e0e36c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8cdc3cb39ab49a09",
+      "name": "声望",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 19,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐通常",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-17ef37b96cf0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:581abe035b35cd61",
+      "name": "黎塞留",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 20,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-8a4abee23b2f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:81f23d7c4133bdad",
+      "name": "纳尔逊",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 21,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 21,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-ebd7a019c62e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1d65470f700e691e",
+      "name": "新泽西",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 22,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 22,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-409515d66164",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:dab8025bb463ebeb",
+      "name": "南达科他",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 23,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 23,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-79e2d192007d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9c076f559974b458",
+      "name": "雾岛",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 24,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 24,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-8c0f9bb54a88",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f9d8928f80d8708e",
+      "name": "比叡",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 25,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 25,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-e0893682df45",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:2c78ead710608f23",
+      "name": "北卡罗来纳",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 26,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 26,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-c7b1aa867cc9",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6f25b94763afb697",
+      "name": "厌战",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 27,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 27,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-f482e7979b58",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6691dc0a9147badf",
+      "name": "朱利奥·凯撒",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 28,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 28,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-ecd20d46ea87",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:78b4c75c86155a90",
+      "name": "加富尔伯爵",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 29,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 29,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-dca4ed1c8be6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f9b5ddc8646acab4",
+      "name": "敦刻尔克",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 30,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 30,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-16911be7dd40",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7457418929e67378",
+      "name": "布列塔尼",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 31,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 31,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-3c9b4077edfd",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e97a70cd22bbf7fb",
+      "name": "沙恩霍斯特",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 32,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 32,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-d22e13bac5ca",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:66f06ccd4ad63b60",
+      "name": "约克公爵",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 33,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 33,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-e9e4a48aff16",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:21c4675351fc06b1",
+      "name": "利托里奥",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 34,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 34,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-4a240ccac55e",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:df682ca74ca75e5f",
+      "name": "卡约·杜伊利奥",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 35,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 35,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-b68f953ed2f6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d6d030e7e9c6323b",
+      "name": "前卫",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 36,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 36,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡通常",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-54482363a3d0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c2506b07f758e85a",
+      "name": "伊丽莎白女王",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 37,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 37,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-e65b89347224",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5701e8012a996b5f",
+      "name": "甘古特",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 38,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 38,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡通常",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-b54ad09a172a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:735c12152857598f",
+      "name": "德弗林格尔",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 39,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 39,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列通常",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡通常",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-6875771b702f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7dc107e9e0b702a1",
+      "name": "胡德·改",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 40,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 40,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-15bb5d15f6fa",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7b38395ef7868dea",
+      "name": "维内托·改",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 41,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 41,
+        "mainGunMultiplier": 1.86,
+        "mainGunCdSeconds": 4.8,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "6发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡穿甲",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-34e59fcf92ad",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1a7ae69ed9207b08",
+      "name": "黎塞留·改",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 42,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 42,
+        "mainGunMultiplier": 1.76,
+        "mainGunCdSeconds": 4.2,
+        "mainGunRangeUnits": 25,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "4发",
+        "secondaryGunMultiplier": 0.48,
+        "secondaryGunCdSeconds": 2.4,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "轻巡高爆",
+        "secondaryGunProjectilesPerRound": "6发"
+      }
+    },
+    {
+      "id": "battleship-648c5d3e7c9d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b44c4c17393bc98b",
+      "name": "黑暗界",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 48,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 48,
+        "mainGunMultiplier": 1.54,
+        "mainGunCdSeconds": 3,
+        "mainGunRangeUnits": 20,
+        "mainGunDamageType": "战列高爆",
+        "mainGunProjectilesPerRound": "2发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐高爆",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "battleship-32aceb4345ec",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5b0865ea4137ff35",
+      "name": "恐怖",
+      "category": "战列战巡重炮",
+      "worksheet": "战列战巡重炮",
+      "worksheetRow": 49,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "战列战巡重炮",
+        "worksheetRow": 49,
+        "mainGunMultiplier": 1.54,
+        "mainGunCdSeconds": 3,
+        "mainGunRangeUnits": 20,
+        "mainGunDamageType": "战列穿甲",
+        "mainGunProjectilesPerRound": "2发",
+        "secondaryGunMultiplier": 0.4,
+        "secondaryGunCdSeconds": 2,
+        "secondaryGunRangeUnits": 15,
+        "secondaryGunDamageType": "驱逐穿甲",
+        "secondaryGunProjectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "light-carrier-9c8c9736038a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ce4e50ea7cfc7d4b",
+      "name": "巨像",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 3,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": 1.76,
+        "fighterCdSeconds": 5,
+        "fighterRangeUnits": 30
+      }
+    },
+    {
+      "id": "light-carrier-34deaf79d631",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:2e748fedf645a87a",
+      "name": "巨像",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 4,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-a4899c3753d6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:df0682af9ee65fda",
+      "name": "飞鹰",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 5,
+        "aircraftMultiplier": 1.33,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-d46e38bdae64",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b1101012512f2fa0",
+      "name": "飞鹰",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 6,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-3ac5aa8342fb",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9dd866cccab8c512",
+      "name": "兰利",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 7,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-123e408e869f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5c21bc78e204161d",
+      "name": "兰利",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 8,
+        "aircraftMultiplier": 1.33,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-829b115b3c6b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4ad1d4ebcdad9c6c",
+      "name": "博格",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 9,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-36b45af5de0c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:868e34721ff7c1b2",
+      "name": "百眼巨人",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 10,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-bce37789c007",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:37f95c975b7afc08",
+      "name": "龙骧",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 11,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-2991684d9482",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:79a26f47364fe051",
+      "name": "隼鹰",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 12,
+        "aircraftMultiplier": 1.33,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-9c29cad6fb33",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:3fdbc49f6ebebff1",
+      "name": "隼鹰",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 13,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-85838522dcf0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9872599638fa6d7f",
+      "name": "独角兽",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 14,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-5f84693f7d2b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1e065ab69c06f443",
+      "name": "埃罗芒什（巨像·改）",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 15,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-d58896bb5765",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:718224ee52af8b77",
+      "name": "埃罗芒什（巨像·改）",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 16,
+        "aircraftMultiplier": 1.66,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-1dc0059b4df8",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:ee5c6182ea8fe67d",
+      "name": "飞鹰·改",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 17,
+        "aircraftMultiplier": 1.33,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-e76fbb4c650b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8040e7dec965845d",
+      "name": "飞鹰·改",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 18,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-68a41c1cc943",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:779e536349346c1f",
+      "name": "独立",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 19,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "light-carrier-be9b45943a99",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b9332b11172986d0",
+      "name": "独立",
+      "category": "轻母",
+      "worksheet": "轻母",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "轻母",
+        "worksheetRow": 20,
+        "aircraftMultiplier": 1.33,
+        "aircraftCdSeconds": 3.5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-6554cc181681",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4282741be3c2741b",
+      "name": "赤城",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 3,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": 1.76,
+        "fighterCdSeconds": 5,
+        "fighterRangeUnits": 30
+      }
+    },
+    {
+      "id": "carrier-ee065cf4b79d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b1ce1147f934dd4d",
+      "name": "赤城",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 4,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-17b8bd2c4716",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8594e2cf048b668a",
+      "name": "加贺",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 5,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-37c5db631818",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:244d7653ce778626",
+      "name": "加贺",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 6,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 6,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-7c107762afce",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d3833abb23b8c6d5",
+      "name": "列克星敦",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 7,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 7,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-f9873ad9dea6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:a8b002142e2eb8c0",
+      "name": "列克星敦",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 8,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 8,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-e13db9d591a0",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1f6aa7f6f3f4f1f3",
+      "name": "萨拉托加",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 9,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 9,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-a4af8fe24c2a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:33c3d3fe3bdbcafa",
+      "name": "萨拉托加",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 10,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-11d418d4ad22",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1e0877f017a745c3",
+      "name": "齐柏林伯爵",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 11,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-d8be92c8f101",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:38a98d40baa8b017",
+      "name": "齐柏林伯爵",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 12,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 12,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-e8355662311b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5e50296941b5694e",
+      "name": "皇家方舟",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 13,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 13,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-1c2a8c2ba648",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c714f6aae1c4c0d8",
+      "name": "皇家方舟",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 14,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 14,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-ca19c029147a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:09f8b701969ebc63",
+      "name": "约克城",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 15,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 15,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-7aec4f7be0b1",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:24127e69c35e6880",
+      "name": "约克城",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 16,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 16,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-e19dea3eb295",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:e3e3558b2ff6c84f",
+      "name": "企业",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 17,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 17,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-ea67bf736170",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:0dd451457b7e79be",
+      "name": "企业",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 18,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 18,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-3005e08c62ba",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4409df26c9e09432",
+      "name": "大黄蜂",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 19,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 19,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-f03de3bde1e7",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:eeeb7c99d96a38f9",
+      "name": "大黄蜂",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 20,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 20,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-682c0c3e18cf",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:2b437975b7a70369",
+      "name": "埃塞克斯",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 21,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 21,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-a31040ded5de",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d4e66d68d72b52f2",
+      "name": "埃塞克斯",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 22,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 22,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-f9fa301354a1",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7507b04f6a2f39af",
+      "name": "贝亚恩",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 23,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 23,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-ea025a6648ce",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c9e0b53888c847c6",
+      "name": "贝亚恩",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 24,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 24,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-fb69d7994136",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:8ed2881644128667",
+      "name": "翔鹤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 25,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 25,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-56fdef80d911",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:18c3ba586df6d721",
+      "name": "翔鹤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 26,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 26,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-b7f71d239909",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:9b021630f3d47a9c",
+      "name": "瑞鹤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 27,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 27,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-f014abd41920",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:b3eb1bfd00aee876",
+      "name": "瑞鹤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 28,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 28,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-9aa649d40f0f",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4c719727fc351c9a",
+      "name": "列克星敦（CV-16)",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 29,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 29,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-691e33659d4b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6e437f1738a1647b",
+      "name": "鹰",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 30,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 30,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-fd57fc834888",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4747d6befdee0bdb",
+      "name": "苍龙",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 31,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 31,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-9d64b796895a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d377d1a784bd2b77",
+      "name": "苍龙",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 32,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 32,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-812c342ed99a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:f9123cbad2d5b17b",
+      "name": "飞龙",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 33,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 33,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-c986f29358ed",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:06657ec26af569e6",
+      "name": "飞龙",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 34,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 34,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-d03f24eed456",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:5a75d848ae3a312a",
+      "name": "天鹰",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 35,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 35,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": "天鹰为1轰炸机1鱼雷机同时释放",
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-b1355ae0b6b6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:2970a5f4829eb9da",
+      "name": "天鹰",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 36,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 36,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-475cb40ed4f6",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:47e88db866bdafb2",
+      "name": "列克星敦·改",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 37,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 37,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-3a766c210c37",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:239816fe73c4be82",
+      "name": "萨拉托加·改",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 38,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 38,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-bc4466bc0884",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:a5fc01a7c5fdde56",
+      "name": "齐柏林伯爵·改",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 39,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 39,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-cb540ad8d16a",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:4e0c6d4e41d33acd",
+      "name": "齐柏林伯爵·改副炮",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 40,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 40,
+        "aircraftMultiplier": 0.48,
+        "aircraftCdSeconds": 2.4,
+        "aircraftRangeUnits": 15,
+        "aircraftDamageType": "轻巡通常",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-efeb3cc1669b",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d6ad711c74d3d398",
+      "name": "大凤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 46,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 46,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-9f265b433063",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:62845ede2635c5db",
+      "name": "大凤",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 47,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 47,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-264b01894e5d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:081d32af6660e95d",
+      "name": "光辉",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 48,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 48,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-966779af1d7d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:645a46aa8f412b99",
+      "name": "光辉",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 49,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 49,
+        "aircraftMultiplier": 2,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-279529fe1526",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:6ad33d787540555c",
+      "name": "大凤·改",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 50,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 50,
+        "aircraftMultiplier": 1.6,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "轰炸",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "carrier-f854d07b17cf",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:d1c7cf3fcdacad88",
+      "name": "大凤·改",
+      "category": "航母装母",
+      "worksheet": "航母装母",
+      "worksheetRow": 51,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航母装母",
+        "worksheetRow": 51,
+        "aircraftMultiplier": 2.4,
+        "aircraftCdSeconds": 5,
+        "aircraftRangeUnits": 30,
+        "aircraftDamageType": "鱼雷",
+        "rowNote": null,
+        "fighterMultiplier": null,
+        "fighterCdSeconds": null,
+        "fighterRangeUnits": null
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-c33130023a32",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:bdec667a0ddf9c58",
+      "name": "伊势·改",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 2,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 2,
+        "attackMultiplier": 1.76,
+        "attackCdSeconds": 4.2,
+        "attackRangeUnits": 25,
+        "attackDamageType": "战列高爆",
+        "projectilesPerRound": "4发"
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-2bf24c28290c",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:1577955377de2c82",
+      "name": "伊势·改",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 3,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 3,
+        "attackMultiplier": 0.6,
+        "attackCdSeconds": 3.5,
+        "attackRangeUnits": 30,
+        "attackDamageType": "轰炸",
+        "projectilesPerRound": "1架/轮"
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-89b87796aaf3",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:c10e6ddd919878cd",
+      "name": "日向·改",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 4,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 4,
+        "attackMultiplier": 1.76,
+        "attackCdSeconds": 4.2,
+        "attackRangeUnits": 25,
+        "attackDamageType": "战列高爆",
+        "projectilesPerRound": "4发"
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-a198d308c76d",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:7cd86f395eab4670",
+      "name": "日向·改",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 5,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 5,
+        "attackMultiplier": 0.6,
+        "attackCdSeconds": 3.5,
+        "attackRangeUnits": 30,
+        "attackDamageType": "轰炸",
+        "projectilesPerRound": "1架/轮"
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-d56758d24c75",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:0a7c0f04908209f5",
+      "name": "镇海",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 10,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 10,
+        "attackMultiplier": 0.4,
+        "attackCdSeconds": 2,
+        "attackRangeUnits": 15,
+        "attackDamageType": "驱逐通常",
+        "projectilesPerRound": "8发"
+      }
+    },
+    {
+      "id": "aviation-battleship-seaplane-498b076cc1cc",
+      "sourceElementId": "src-0c5b7db892f6:worksheet:be35e34ea23f8eee",
+      "name": "镇海",
+      "category": "航战水母",
+      "worksheet": "航战水母",
+      "worksheetRow": 11,
+      "applicableVersion": "2026-07",
+      "verifiedAt": "2026-07-29",
+      "sourceRefs": [
+        "src-0c5b7db892f6"
+      ],
+      "status": "current",
+      "disposition": "published",
+      "values": {
+        "worksheet": "航战水母",
+        "worksheetRow": 11,
+        "attackMultiplier": 0.8,
+        "attackCdSeconds": 3.5,
+        "attackRangeUnits": 30,
+        "attackDamageType": "轰炸",
+        "projectilesPerRound": "1架/轮"
+      }
+    }
+  ]
+}

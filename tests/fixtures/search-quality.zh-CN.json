@@ -194,10 +194,10 @@
       "id": "SQ-021",
       "query": "普攻倍率与 CD 数据状态",
       "targetPageIds": ["data-basic-attack-cd"],
-      "queryClass": "formal-title",
+      "queryClass": "legacy-alias",
       "mustBeTop1": true,
       "sourceBucket": "manual-content",
-      "sourceRef": "docs/data/basic-attack-cd.md#普攻倍率与-CD-数据状态"
+      "sourceRef": "docs/data/basic-attack-cd.md#舰灵普攻倍率与-cd-数据库"
     },
     {
       "id": "SQ-022",
@@ -698,6 +698,168 @@
       "mustBeTop1": true,
       "sourceBucket": "editorial-task",
       "sourceRef": "editorial-task-catalog:v1#damage-hit-critical"
+    },
+    {
+      "id": "SQ-081",
+      "query": "拉菲（DD-724）",
+      "targetPageIds": ["data-basic-attack-destroyer"],
+      "queryClass": "unique-entity",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/destroyer.md"
+    },
+    {
+      "id": "SQ-082",
+      "query": "吹雪普攻",
+      "targetPageIds": ["data-basic-attack-destroyer"],
+      "queryClass": "entity-alias",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/destroyer.md"
+    },
+    {
+      "id": "SQ-083",
+      "query": "海伦娜副炮",
+      "targetPageIds": ["data-basic-attack-light-cruiser-torpedo-cruiser"],
+      "queryClass": "unique-entity",
+      "mustBeTop1": true,
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/light-cruiser-torpedo-cruiser.md"
+    },
+    {
+      "id": "SQ-084",
+      "query": "应瑞普攻倍率",
+      "targetPageIds": ["data-basic-attack-light-cruiser-torpedo-cruiser"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/light-cruiser-torpedo-cruiser.md"
+    },
+    {
+      "id": "SQ-085",
+      "query": "羽黑普攻",
+      "targetPageIds": ["data-basic-attack-heavy-cruiser"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/heavy-cruiser.md"
+    },
+    {
+      "id": "SQ-086",
+      "query": "青叶普攻CD",
+      "targetPageIds": ["data-basic-attack-heavy-cruiser"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/heavy-cruiser.md"
+    },
+    {
+      "id": "SQ-087",
+      "query": "华盛顿主炮倍率",
+      "targetPageIds": ["data-basic-attack-battleship-battlecruiser"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/battleship-battlecruiser.md"
+    },
+    {
+      "id": "SQ-088",
+      "query": "提尔比茨副炮",
+      "targetPageIds": ["data-basic-attack-battleship-battlecruiser"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "manual-content",
+      "sourceRef": "docs/data/basic-attacks/battleship-battlecruiser.md"
+    },
+    {
+      "id": "SQ-089",
+      "query": "兰利普攻数据",
+      "targetPageIds": ["data-basic-attack-light-carrier"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-090",
+      "query": "飞鹰舰载机倍率",
+      "targetPageIds": ["data-basic-attack-light-carrier"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-091",
+      "query": "加贺普攻倍率",
+      "targetPageIds": ["data-basic-attack-carrier-armored-carrier"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-092",
+      "query": "列克星敦舰载机CD",
+      "targetPageIds": ["data-basic-attack-carrier-armored-carrier"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-093",
+      "query": "伊势·改普攻",
+      "targetPageIds": ["data-basic-attack-aviation-battleship-seaplane"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-094",
+      "query": "镇海普攻倍率",
+      "targetPageIds": ["data-basic-attack-aviation-battleship-seaplane"],
+      "queryClass": "unique-entity",
+      "sourceBucket": "public-community",
+      "sourceRef": "https://www.gamekee.com/fxslzk/"
+    },
+    {
+      "id": "SQ-095",
+      "query": "按工作表筛选普攻",
+      "targetPageIds": ["tool-basic-attack-lookup"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-worksheet-filter"
+    },
+    {
+      "id": "SQ-096",
+      "query": "普攻CD排序",
+      "targetPageIds": ["tool-basic-attack-lookup"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-cd-sort"
+    },
+    {
+      "id": "SQ-097",
+      "query": "伤害类型筛选",
+      "targetPageIds": ["tool-basic-attack-lookup"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-damage-type"
+    },
+    {
+      "id": "SQ-098",
+      "query": "炮击伤害倍率字段",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "mechanic-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-field-dictionary"
+    },
+    {
+      "id": "SQ-099",
+      "query": "225条普攻数据",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "task-phrase",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-completeness"
+    },
+    {
+      "id": "SQ-100",
+      "query": "普攻数据版本202607",
+      "targetPageIds": ["data-basic-attack-cd"],
+      "queryClass": "version-term",
+      "sourceBucket": "editorial-task",
+      "sourceRef": "editorial-task-catalog:v1#basic-attack-version"
     }
   ],
   "noResultQueries": [

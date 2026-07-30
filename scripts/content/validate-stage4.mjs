@@ -27,6 +27,8 @@ runNode('scripts/content/validate-document-structures.mjs')
 runNode('scripts/content/validate-formulas.mjs')
 runNode('tests/tools/damage-calculator-helpers.mjs')
 runNode('tests/tools/equipment-lookup-model.mjs')
+runNode('scripts/content/validate-basic-attack-dataset.mjs')
+runNode('tests/tools/basic-attack-model.mjs')
 
 const failures = []
 const pages = await loadPages()
@@ -84,12 +86,12 @@ const dataSource = byId
   )
 if (
   !dataSource ||
-  dataSource.permission !== 'pending' ||
-  dataSource.publicUse?.body !== false ||
+  dataSource.permission !== 'authorized' ||
+  dataSource.publicUse?.body !== true ||
   dataSource.publicUse?.asset !== false
 ) {
   failures.push(
-    'data-basic-attack-cd: pending XLSX source must keep body and asset public use disabled',
+    'data-basic-attack-cd: reviewed XLSX source must enable body use and keep raw assets private',
   )
 }
 
@@ -157,25 +159,29 @@ if (
 }
 
 const dataPage = byId.get('data-basic-attack-cd')
-for (const record of basicAttack.records?.slice(0, 25) ?? []) {
-  if (dataPage?.body.includes(record.name)) {
-    failures.push(
-      `data-basic-attack-cd: pending record name leaked into public body (${record.name})`,
-    )
-    break
-  }
-}
 if (
-  !dataPage?.body.includes('publishable: false') ||
-  !dataPage?.body.includes('不会包含这 225 条数值记录')
+  dataPage?.frontmatter.status !== 'current' ||
+  !dataPage?.body.includes('225/225') ||
+  !dataPage?.body.includes('原始 XLSX 与批量下载保持关闭') ||
+  !dataPage?.body.includes('<BasicAttackExplorer />')
 ) {
   failures.push(
-    'data-basic-attack-cd: permission gate and withheld-record notice must be visible',
+    'data-basic-attack-cd: reviewed count, public boundary, and shared explorer must be visible',
   )
 }
 
+const canonicalBasicAttackPath =
+  'docs/.vitepress/data/basic-attack-data.json'
+const canonicalBasicAttackExists = await access(
+  path.join(root, canonicalBasicAttackPath),
+).then(
+  () => true,
+  () => false,
+)
+if (!canonicalBasicAttackExists) {
+  failures.push(`${canonicalBasicAttackPath}: reviewed public projection is missing`)
+}
 for (const forbiddenPath of [
-  'docs/.vitepress/data/basic-attack-data.json',
   'docs/public/data/basic-attack-data.json',
   'docs/public/basic-attack-data.json',
 ]) {
@@ -183,7 +189,7 @@ for (const forbiddenPath of [
     () => true,
     () => false,
   )
-  if (exists) failures.push(`${forbiddenPath}: pending XLSX data entered public source`)
+  if (exists) failures.push(`${forbiddenPath}: download-style dataset copy is forbidden`)
 }
 
 const damagePage = byId.get('mechanics-damage-model')
@@ -294,7 +300,7 @@ const report = {
   },
   requiredPageIds: [...requiredPages.keys()],
   authorizedSourceIds: [...authorizedSourceByPage.values()],
-  pendingSourceIds: ['src-0c5b7db892f6'],
+  releasedStructuredDataSourceIds: ['src-0c5b7db892f6'],
   failures,
 }
 

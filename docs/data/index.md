@@ -30,7 +30,8 @@ related: [data-basic-attack-cd, tool-equipment-lookup, mechanics-damage-model]
 
 # 数据目录
 
-数据页先显示适用版本、来源和许可，再提供筛选或下载。未完成许可审核的数据可以进入内部导入和质量检查，但不会进入公开数据包。
+数据页先显示适用版本、来源、许可与审查范围，再提供筛选。未完成许可或事实审核的数据可以进入内部导入和质量检查，但不会进入公开数据包；没有下载授权的数据只提供站内查询。
 
-- [普攻倍率与 CD 数据状态](./basic-attack-cd)
+- [舰灵普攻倍率与 CD 数据库](./basic-attack-cd)
+- [普攻倍率查询器](../tools/basic-attack-lookup)
 - [装备速查](../tools/equipment-lookup)

@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dov-calc.local/schemas/basic-attack-dataset.schema.json",
+  "title": "Basic attack canonical public dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "metadata",
+    "publicRelease",
+    "integrity",
+    "fields",
+    "worksheets",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "datasetId",
+        "title",
+        "version",
+        "sourceAssetId",
+        "sourceFileName",
+        "sourceUpdatedAt",
+        "verifiedAt",
+        "reviewedAt",
+        "reviewStatus",
+        "publicationStatus",
+        "worksheetCount",
+        "recordCount",
+        "fieldCount",
+        "defaultSort"
+      ],
+      "properties": {
+        "datasetId": { "const": "basic-attack" },
+        "title": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+        "sourceAssetId": { "const": "src-0c5b7db892f6" },
+        "sourceFileName": { "type": "string", "minLength": 1 },
+        "sourceUpdatedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "verifiedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewStatus": { "const": "approved" },
+        "publicationStatus": { "const": "published" },
+        "worksheetCount": { "const": 7 },
+        "recordCount": { "const": 225 },
+        "fieldCount": { "type": "integer", "minimum": 1 },
+        "defaultSort": {
+          "const": ["worksheetOrder", "worksheetRow", "id"]
+        }
+      }
+    },
+    "publicRelease": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "body",
+        "asset",
+        "searchIndex",
+        "sitemap",
+        "download",
+        "structuredData"
+      ],
+      "properties": {
+        "body": { "const": true },
+        "asset": { "const": false },
+        "searchIndex": { "const": true },
+        "sitemap": { "const": true },
+        "download": { "const": false },
+        "structuredData": { "const": true }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceSha256",
+        "importRecordsSha256",
+        "fieldDictionarySha256",
+        "recordsSha256"
+      ],
+      "properties": {
+        "sourceSha256": { "$ref": "#/$defs/sha256" },
+        "importRecordsSha256": { "$ref": "#/$defs/sha256" },
+        "fieldDictionarySha256": { "$ref": "#/$defs/sha256" },
+        "recordsSha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "label",
+          "type",
+          "nullable",
+          "unit",
+          "description",
+          "searchable",
+          "sortable"
+        ],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z][A-Za-z0-9]*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "type": { "enum": ["number", "string"] },
+          "nullable": { "type": "boolean" },
+          "unit": { "type": ["string", "null"] },
+          "description": { "type": "string", "minLength": 1 },
+          "searchable": { "type": "boolean" },
+          "sortable": { "type": "boolean" }
+        }
+      }
+    },
+    "worksheets": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "order",
+          "recordCount",
+          "sourceElementId",
+          "fieldNames"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^worksheet-" },
+          "name": { "type": "string", "minLength": 1 },
+          "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "order": { "type": "integer", "minimum": 0, "maximum": 6 },
+          "recordCount": { "type": "integer", "minimum": 1 },
+          "sourceElementId": { "type": "string", "minLength": 1 },
+          "fieldNames": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 225,
+      "maxItems": 225,
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nullableNumber": {
+      "type": ["number", "null"]
+    },
+    "nullableString": {
+      "type": ["string", "null"]
+    },
+    "values": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["worksheet", "worksheetRow"],
+      "properties": {
+        "worksheet": { "type": "string", "minLength": 1 },
+        "worksheetRow": { "type": "integer", "minimum": 1 },
+        "rowNote": { "$ref": "#/$defs/nullableString" },
+        "gunMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "gunCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "gunRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "gunDamageType": { "$ref": "#/$defs/nullableString" },
+        "torpedoMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "torpedoNote": { "$ref": "#/$defs/nullableString" },
+        "torpedoCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "torpedoRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "projectilesPerRound": { "$ref": "#/$defs/nullableString" },
+        "mainGunMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "mainGunCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "mainGunRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "mainGunDamageType": { "$ref": "#/$defs/nullableString" },
+        "mainGunProjectilesPerRound": { "$ref": "#/$defs/nullableString" },
+        "secondaryGunMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "secondaryGunCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "secondaryGunRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "secondaryGunDamageType": { "$ref": "#/$defs/nullableString" },
+        "secondaryGunProjectilesPerRound": { "$ref": "#/$defs/nullableString" },
+        "aircraftMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "aircraftCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "aircraftRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "aircraftDamageType": { "$ref": "#/$defs/nullableString" },
+        "fighterMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "fighterCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "fighterRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "attackMultiplier": { "$ref": "#/$defs/nullableNumber" },
+        "attackCdSeconds": { "$ref": "#/$defs/nullableNumber" },
+        "attackRangeUnits": { "$ref": "#/$defs/nullableNumber" },
+        "attackDamageType": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sourceElementId",
+        "name",
+        "category",
+        "worksheet",
+        "worksheetRow",
+        "applicableVersion",
+        "verifiedAt",
+        "sourceRefs",
+        "status",
+        "disposition",
+        "values"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "sourceElementId": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string", "minLength": 1 },
+        "worksheet": { "type": "string", "minLength": 1 },
+        "worksheetRow": { "type": "integer", "minimum": 1 },
+        "applicableVersion": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}$"
+        },
+        "verifiedAt": { "type": "string", "format": "date" },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "status": { "const": "current" },
+        "disposition": { "const": "published" },
+        "values": { "$ref": "#/$defs/values" }
+      }
+    }
+  }
+}

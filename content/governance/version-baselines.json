@@ -9,7 +9,9 @@
       "version": "20260511",
       "recordCount": 93,
       "sha256": "2370fb61d36fac1f0672d51e4ea6ce9e1bdafd2c39e78815dc095da4e4aa3791",
-      "status": "needs-review"
+      "status": "reviewed-stale",
+      "reviewedAt": "2026-07-30",
+      "reviewDecision": "保留为 2026-05-11 旧版装备速查基线；不得标记为当前最新装备结论。"
     },
     {
       "id": "equipment-one-image-guide",
@@ -18,7 +20,9 @@
       "sourcePath": "5 立香也能看懂的一图流攻略合集/5-拂晓：胜利之刻-装备速查表20260712高清原图.png",
       "version": "20260712",
       "sha256": "884bc9486a8a63ccabfd34e20ba61c5ee831fbbc31cb26190a98f41b031afd42",
-      "status": "needs-review"
+      "status": "reviewed-reference",
+      "reviewedAt": "2026-07-30",
+      "reviewDecision": "识别为较新的装备一图流参考来源；在完成逐项结构化比对前，不合并到 93 条装备 JSON。"
     }
   ],
   "driftFindings": [
@@ -29,10 +33,13 @@
       "olderVersion": "20260511",
       "newerBaselineId": "equipment-one-image-guide",
       "newerVersion": "20260712",
-      "severity": "release-blocking-until-reviewed",
-      "disposition": "在事实审核人确认差异并更新或明确归档前，不得把当前装备 JSON 标记为最新版本。",
+      "severity": "reviewed-version-layering",
+      "status": "acknowledged",
+      "reviewedAt": "2026-07-30",
+      "disposition": "已按版本分层关闭发布阻断：装备速查工具继续以 stale 页面公开 2026-05-11 的 93 条旧数据；2026-07-12 一图流仅作为较新参考，不替换、不合并、不扩大下载或结构化数据出口。",
       "ownerRole": "装备数据维护者",
-      "reviewerRole": "事实审核人"
+      "reviewerRole": "事实审核人",
+      "blockingPolicy": "只有当受影响装备页面被标记为 stale、draft 或 archived，且页面说明清楚旧基线与较新参考的关系时，允许继续发布无依赖内容。"
     }
   ]
 }
