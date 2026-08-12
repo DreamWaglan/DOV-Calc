@@ -6,10 +6,12 @@ import process from 'node:process'
 import puppeteer from 'puppeteer-core'
 import {
   printResult,
+  readJson,
   relative,
   root,
   writeReport,
 } from '../content/lib/content-utils.mjs'
+import { launchBrowser } from './lib/browser-launch.mjs'
 
 const port = Number(process.env.DOCS_E2E_PORT || 4174)
 const base = normalizeBase(process.env.DOCS_BASE)
@@ -32,7 +34,25 @@ const browserErrors = []
 const pageChecks = []
 const screenshots = []
 const mediaRequests = []
-let segmentAnchorChecks = 0
+const mediaPolicyChecks = {
+  indexThumbnail: 0,
+  longOriginal: 0,
+  sourceOriginal: 0,
+}
+const imageViewerChecks = {
+  pureImagePresentation: 0,
+  intrinsicSize: 0,
+  openAndClose: 0,
+  controls: 0,
+  wheelAndDoubleClick: 0,
+  keyboardShortcuts: 0,
+  keyboardPan: 0,
+  pointerPan: 0,
+  touchGestures: 0,
+  mobileSafeArea: 0,
+  noGovernanceUi: 0,
+  focusReturn: 0,
+}
 let legacyRedirectChecks = 0
 let tabletNavigationChecks = 0
 const redirectLedger = JSON.parse(
@@ -41,6 +61,11 @@ const redirectLedger = JSON.parse(
     'utf8',
   ),
 )
+const mediaLibrary = await readJson('content/migrations/media-library.json')
+const corePages = await readJson('content/migrations/core-content-pages.json')
+const advancedPages = await readJson('content/migrations/advanced-content-pages.json')
+const fullContentMap = await readJson('content/migrations/full-content-map.json')
+const sourceMediaProbeRoute = selectSourceMediaProbeRoute()
 
 function normalizeBase(value = '/DOV-Calc/') {
   const trimmed = value.trim()
@@ -51,6 +76,47 @@ function normalizeBase(value = '/DOV-Calc/') {
 function routeUrl(route) {
   const suffix = route === '/' ? '' : route.replace(/^\//, '')
   return new URL(suffix, `${previewOrigin}${base}`).toString()
+}
+
+function isOriginalMediaUrl(url) {
+  return /\/wiki-media\/.+\/original\.(?:png|jpe?g)(?:[\s?]|$)/i.test(url)
+}
+
+function isThumbnailMediaUrl(url) {
+  return /\/wiki-media\/.+\/thumbnail\.webp(?:[\s?]|$)/i.test(url)
+}
+
+function isSegmentMediaUrl(url) {
+  return /\/wiki-media\/.+\/segment-/i.test(url)
+}
+
+function mediaPolicyForRoute(route) {
+  if (route === '/topics/visual-guides/') return 'thumbnail'
+  if (route.startsWith('/topics/visual-guides/') || route === sourceMediaProbeRoute) return 'original'
+  return 'mixed'
+}
+
+function selectSourceMediaProbeRoute() {
+  const contentSourceIds = new Set([
+    ...(corePages.sources ?? []).map((source) => source.sourceAssetId),
+    ...(advancedPages.sources ?? []).map((source) => source.sourceAssetId),
+  ])
+  const routeByPageId = new Map(
+    [...(corePages.sources ?? []), ...(advancedPages.sources ?? [])].flatMap(
+      (source) => source.pages.map((page) => [page.pageId, page.route]),
+    ),
+  )
+  const counts = new Map()
+  for (const relation of fullContentMap.drawingRelations ?? []) {
+    if (!contentSourceIds.has(relation.sourceAssetId) || relation.resolution !== 'media') continue
+    for (const pageId of relation.targetPageIds ?? []) {
+      counts.set(pageId, (counts.get(pageId) ?? 0) + 1)
+    }
+  }
+  const [pageId] = [...counts.entries()]
+    .filter(([id]) => routeByPageId.has(id))
+    .sort((left, right) => left[1] - right[1])[0] ?? []
+  return pageId ? routeByPageId.get(pageId) : '/start/game-introduction'
 }
 
 async function waitForPreview(url, timeoutMs = 30_000) {
@@ -168,13 +234,23 @@ async function inspectLayout(page, route, viewport, options = {}) {
     ].map((figure) => {
       const image = figure.querySelector('img')
       const sources = [...figure.querySelectorAll('source')]
+      const download = figure.querySelector('a[download]')
+      const figureStyle = window.getComputedStyle(figure)
+      const imageRect = image?.getBoundingClientRect()
       return {
+        mode: figure.getAttribute('data-media-mode') ?? '',
         alt: image?.getAttribute('alt') ?? '',
+        imgSrc: image?.getAttribute('src') ?? '',
         width: image?.getAttribute('width') ?? '',
         height: image?.getAttribute('height') ?? '',
+        naturalWidth: image?.naturalWidth ?? 0,
+        renderedWidth: imageRect?.width ?? 0,
         loading: image?.getAttribute('loading') ?? '',
         decoding: image?.getAttribute('decoding') ?? '',
+        downloadHref: download?.getAttribute('href') ?? '',
+        hasTrigger: Boolean(figure.querySelector('.responsive-media__trigger')),
         sourceCount: sources.length,
+        sourceSrcsets: sources.map((source) => source.getAttribute('srcset') ?? ''),
         completeSources: sources.filter(
           (source) =>
             source.hasAttribute('srcset') &&
@@ -184,6 +260,8 @@ async function inspectLayout(page, route, viewport, options = {}) {
             ),
         ).length,
         caption: figure.querySelector('figcaption')?.textContent?.trim() ?? '',
+        borderTopWidth: figureStyle.borderTopWidth,
+        backgroundColor: figureStyle.backgroundColor,
       }
     })
 
@@ -217,10 +295,12 @@ async function inspectLayout(page, route, viewport, options = {}) {
       `${viewport}:${route}: document overflows ${metrics.documentScrollWidth}/${metrics.documentClientWidth}`,
     )
   }
-  if (options.requireMetadata) {
+  if (options.requirePageChrome) {
     if (!metrics.statusVisible) failures.push(`${viewport}:${route}: status missing`)
-    if (!metrics.sourcesVisible) failures.push(`${viewport}:${route}: sources missing`)
     if (!metrics.relatedVisible) failures.push(`${viewport}:${route}: related pages missing`)
+  }
+  if (metrics.sourcesVisible) {
+    failures.push(`${viewport}:${route}: public source list must not be rendered`)
   }
   if (metrics.undersizedTargets.length) {
     failures.push(
@@ -239,17 +319,67 @@ async function inspectLayout(page, route, viewport, options = {}) {
     }
   }
   for (const media of metrics.responsiveMedia) {
+    const mediaPolicy = options.mediaPolicy ?? mediaPolicyForRoute(route)
     if (
       !media.alt ||
       !/^\d+$/.test(media.width) ||
       !/^\d+$/.test(media.height) ||
       media.loading !== 'lazy' ||
       media.decoding !== 'async' ||
-      media.sourceCount === 0 ||
       media.completeSources !== media.sourceCount ||
-      !media.caption
+      !media.mode
     ) {
       failures.push(`${viewport}:${route}: responsive media contract is incomplete`)
+    }
+    if (isSegmentMediaUrl(media.imgSrc) || media.sourceSrcsets.some(isSegmentMediaUrl)) {
+      failures.push(`${viewport}:${route}: segmented media URL was rendered`)
+    }
+    if (mediaPolicy === 'thumbnail') {
+      if (
+        media.mode !== 'index' ||
+        media.caption ||
+        media.downloadHref ||
+        media.hasTrigger
+      ) {
+        failures.push(`${viewport}:${route}: thumbnail media must be image-only with no download UI`)
+      }
+      if (!isThumbnailMediaUrl(media.imgSrc)) {
+        failures.push(`${viewport}:${route}: index media img is not thumbnail.webp`)
+      }
+      if (
+        media.sourceCount === 0 ||
+        !media.sourceSrcsets.every((srcset) =>
+          srcset.split(',').every((part) => isThumbnailMediaUrl(part)),
+        )
+      ) {
+        failures.push(`${viewport}:${route}: index media sources are not thumbnail-only`)
+      }
+    }
+    if (mediaPolicy === 'original') {
+      if (
+        media.mode !== 'viewer' ||
+        media.caption ||
+        media.downloadHref ||
+        !media.hasTrigger ||
+        media.borderTopWidth !== '0px' ||
+        media.backgroundColor !== 'rgba(0, 0, 0, 0)'
+      ) {
+        failures.push(`${viewport}:${route}: original media is not a pure-image viewer trigger`)
+      }
+      if (!isOriginalMediaUrl(media.imgSrc)) {
+        failures.push(`${viewport}:${route}: content/detail media img is not original PNG/JPG/JPEG`)
+      }
+      if (media.sourceSrcsets.some((srcset) => srcset.includes('/wiki-media/'))) {
+        failures.push(`${viewport}:${route}: original media page should not use derivative source srcset`)
+      }
+      if (
+        media.naturalWidth > 0 &&
+        media.renderedWidth > media.naturalWidth + 1
+      ) {
+        failures.push(
+          `${viewport}:${route}: original media was upscaled ${media.renderedWidth}/${media.naturalWidth}`,
+        )
+      }
     }
   }
 
@@ -265,6 +395,39 @@ async function capture(page, name) {
     bytes: bytes.byteLength,
     sha256: createHash('sha256').update(bytes).digest('hex'),
   })
+}
+
+async function captureMediaRequestsDuring(action) {
+  const start = mediaRequests.length
+  await action()
+  return mediaRequests.slice(start)
+}
+
+function assertNoSegmentRequests(label, requests) {
+  const segmentRequests = requests.filter(isSegmentMediaUrl)
+  if (segmentRequests.length) {
+    failures.push(`${label}: segmented media was requested ${segmentRequests.slice(0, 3).join(' | ')}`)
+  }
+}
+
+function assertThumbnailRequestPolicy(label, requests) {
+  assertNoSegmentRequests(label, requests)
+  const thumbnailRequests = requests.filter(isThumbnailMediaUrl)
+  const originalRequests = requests.filter(isOriginalMediaUrl)
+  if (thumbnailRequests.length === 0) {
+    failures.push(`${label}: no thumbnail.webp media request was observed`)
+  }
+  if (originalRequests.length) {
+    failures.push(`${label}: index/list requested original media ${originalRequests.slice(0, 3).join(' | ')}`)
+  }
+}
+
+function assertOriginalRequestPolicy(label, requests) {
+  assertNoSegmentRequests(label, requests)
+  const originalRequests = requests.filter(isOriginalMediaUrl)
+  if (originalRequests.length === 0) {
+    failures.push(`${label}: no original PNG/JPG/JPEG media request was observed`)
+  }
 }
 
 await mkdir(screenshotRoot, { recursive: true })
@@ -302,9 +465,8 @@ try {
   const browserProfileRoot = path.join(root, '.omx', 'browser-profiles')
   await mkdir(browserProfileRoot, { recursive: true })
   browserProfile = await mkdtemp(path.join(browserProfileRoot, 'e2e-'))
-  chromium = await puppeteer.launch({
+  chromium = await launchBrowser(puppeteer, {
     executablePath: browserPath,
-    headless: true,
     userDataDir: browserProfile,
     args: ['--no-sandbox', '--disable-gpu'],
   })
@@ -359,9 +521,10 @@ try {
     '/tools/basic-attack-lookup',
     '/topics/visual-guides/',
     '/topics/visual-guides/src-ec1754535996',
+    sourceMediaProbeRoute,
   ]) {
     await inspectLayout(page, route, 'desktop-1440', {
-      requireMetadata: route !== '/',
+      requirePageChrome: route !== '/',
     })
   }
 
@@ -376,9 +539,10 @@ try {
     '/tools/basic-attack-lookup',
     '/topics/visual-guides/',
     '/topics/visual-guides/src-ec1754535996',
+    sourceMediaProbeRoute,
   ]) {
     await inspectLayout(page, route, 'mobile-360', {
-      requireMetadata: route !== '/',
+      requirePageChrome: route !== '/',
     })
     if (route === '/') await capture(page, 'home-mobile-360')
     if (route === '/tools/dov-basic') {
@@ -422,7 +586,7 @@ try {
         },
         { timeout: 15_000 },
       )
-      await capture(page, 'segmented-long-image-mobile-360')
+      await capture(page, 'long-original-image-mobile-360')
     }
   }
 
@@ -435,7 +599,7 @@ try {
     '/topics/visual-guides/',
   ]) {
     await inspectLayout(page, route, 'mobile-390', {
-      requireMetadata: route !== '/',
+      requirePageChrome: route !== '/',
     })
   }
 
@@ -446,9 +610,10 @@ try {
     '/combat/pve-team-building',
     '/tools/dov-basic',
     '/topics/visual-guides/src-ec1754535996',
+    sourceMediaProbeRoute,
   ]) {
     await inspectLayout(page, route, 'tablet-768', {
-      requireMetadata: route !== '/',
+      requirePageChrome: route !== '/',
     })
   }
 
@@ -493,40 +658,574 @@ try {
     }
   }
 
-  await page.goto(
-    routeUrl('/topics/visual-guides/src-ec1754535996'),
-    {
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 })
+  const indexRequests = await captureMediaRequestsDuring(async () => {
+    await page.goto(routeUrl('/topics/visual-guides/'), {
       waitUntil: 'networkidle0',
       timeout: 45_000,
-    },
+    })
+    await page.$eval('.responsive-media', (element) =>
+      element.scrollIntoView({ block: 'center' }),
+    )
+    await page.waitForFunction(
+      () => {
+        const image = document.querySelector('.responsive-media img')
+        return image?.complete && image.naturalWidth > 0
+      },
+      { timeout: 15_000 },
+    )
+  })
+  assertThumbnailRequestPolicy('visual media index', indexRequests)
+  mediaPolicyChecks.indexThumbnail += 1
+
+  const longImageRoute =
+    mediaLibrary.standaloneItems.find((item) => item.longImage)?.detailRoute ??
+    '/topics/visual-guides/src-ec1754535996'
+  const longImageRequests = await captureMediaRequestsDuring(async () => {
+    await page.goto(routeUrl(longImageRoute), {
+      waitUntil: 'networkidle0',
+      timeout: 45_000,
+    })
+    await page.$eval('.responsive-media', (element) =>
+      element.scrollIntoView({ block: 'center' }),
+    )
+    await page.waitForFunction(
+      () => {
+        const figures = document.querySelectorAll('.responsive-media')
+        const figure = document.querySelector('.responsive-media')
+        const image = document.querySelector('.responsive-media img')
+        return (
+          figures.length === 1 &&
+          figure?.getAttribute('data-media-mode') === 'viewer' &&
+          Boolean(figure.querySelector('.responsive-media__trigger')) &&
+          !figure.querySelector('figcaption') &&
+          !figure.querySelector('a[download]') &&
+          image?.complete &&
+          image.naturalWidth > 0 &&
+          /\/wiki-media\/.+\/original\.(png|jpe?g)$/i.test(image.getAttribute('src') ?? '') &&
+          !document.body.innerHTML.includes('segment-')
+        )
+      },
+      { timeout: 15_000 },
+    )
+  })
+  assertOriginalRequestPolicy('long original detail', longImageRequests)
+  mediaPolicyChecks.longOriginal += 1
+
+  const sourceRequests = await captureMediaRequestsDuring(async () => {
+    await page.goto(routeUrl(sourceMediaProbeRoute), {
+      waitUntil: 'networkidle0',
+      timeout: 45_000,
+    })
+    await page.$eval('.responsive-media', (element) =>
+      element.scrollIntoView({ block: 'center' }),
+    )
+    await page.waitForFunction(
+      () => {
+        const figure = document.querySelector('.responsive-media')
+        const image = document.querySelector('.responsive-media img')
+        return (
+          figure?.getAttribute('data-media-mode') === 'viewer' &&
+          Boolean(figure.querySelector('.responsive-media__trigger')) &&
+          !figure.querySelector('figcaption') &&
+          !figure.querySelector('a[download]') &&
+          image?.complete &&
+          image.naturalWidth > 0 &&
+          /\/wiki-media\/.+\/original\.(png|jpe?g)$/i.test(image.getAttribute('src') ?? '')
+        )
+      },
+      { timeout: 15_000 },
+    )
+  })
+  assertOriginalRequestPolicy('source content media', sourceRequests)
+  mediaPolicyChecks.sourceOriginal += 1
+
+  await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 })
+  await page.goto(routeUrl('/start/new-account'), {
+    waitUntil: 'networkidle0',
+    timeout: 45_000,
+  })
+  const intrinsicImageSelector = '.responsive-media img[width="606"][height="164"]'
+  await page.$eval(intrinsicImageSelector, (element) =>
+    element.scrollIntoView({ block: 'center' }),
   )
-  const segmentLink = await page.$('.vp-doc a[href^="#wiki-image-"]')
-  if (!segmentLink) {
-    failures.push('segmented media: directory anchor link is missing')
+  await page.waitForFunction(
+    (selector) => {
+      const image = document.querySelector(selector)
+      return image?.complete && image.naturalWidth === 606
+    },
+    { timeout: 15_000 },
+    intrinsicImageSelector,
+  )
+  const pureImageMetrics = await page.$eval(intrinsicImageSelector, (image) => {
+    const figure = image.closest('.responsive-media')
+    const trigger = image.closest('.responsive-media__trigger')
+    const figureStyle = figure ? getComputedStyle(figure) : null
+    const rect = image.getBoundingClientRect()
+    return {
+      mode: figure?.getAttribute('data-media-mode'),
+      hasCaption: Boolean(figure?.querySelector('figcaption')),
+      hasInlineDownload: Boolean(figure?.querySelector('a[download]')),
+      triggerLabel: trigger?.getAttribute('aria-label') ?? '',
+      renderedWidth: rect.width,
+      naturalWidth: image.naturalWidth,
+      borderTopWidth: figureStyle?.borderTopWidth,
+      backgroundColor: figureStyle?.backgroundColor,
+    }
+  })
+  if (
+    pureImageMetrics.mode !== 'viewer' ||
+    pureImageMetrics.hasCaption ||
+    pureImageMetrics.hasInlineDownload ||
+    !pureImageMetrics.triggerLabel.startsWith('查看原图：') ||
+    pureImageMetrics.borderTopWidth !== '0px' ||
+    pureImageMetrics.backgroundColor !== 'rgba(0, 0, 0, 0)'
+  ) {
+    failures.push(`image viewer: default media is not image-only ${JSON.stringify(pureImageMetrics)}`)
   } else {
-    const target = await segmentLink.evaluate((element) =>
-      element.getAttribute('href'),
+    imageViewerChecks.pureImagePresentation += 1
+  }
+  if (pureImageMetrics.renderedWidth > pureImageMetrics.naturalWidth + 1) {
+    failures.push(
+      `image viewer: 606px original was upscaled to ${pureImageMetrics.renderedWidth}px`,
     )
-    await segmentLink.click()
-    await page
-      .waitForFunction(
-        (expected) => location.hash === expected,
-        { timeout: 10_000 },
-        target,
+  } else {
+    imageViewerChecks.intrinsicSize += 1
+  }
+  await capture(page, 'pure-original-image-desktop-1440')
+
+  await page.$eval(intrinsicImageSelector, (image) => {
+    const trigger = image.closest('.responsive-media__trigger')
+    if (!(trigger instanceof HTMLButtonElement)) throw new Error('viewer trigger missing')
+    trigger.focus()
+    trigger.click()
+  })
+  await page.waitForSelector('.image-viewer__dialog', {
+    visible: true,
+    timeout: 10_000,
+  })
+  const viewerMetrics = await page.$eval('.image-viewer__dialog', (element) => {
+    const buttons = [...element.querySelectorAll('button')]
+    return {
+      role: element.getAttribute('role'),
+      ariaModal: element.getAttribute('aria-modal'),
+      activeLabel: document.activeElement?.getAttribute('aria-label') ?? '',
+      hasDownload: Boolean(element.querySelector('[download], .image-viewer__download')),
+      hasInfo: Boolean(element.querySelector('.image-viewer__info, details')),
+      text: element.textContent?.replace(/\s+/g, ' ').trim() ?? '',
+      buttonLabels: buttons.map(
+        (button) => button.getAttribute('aria-label') || button.textContent?.trim() || '',
+      ),
+      viewerImageSrc: element.querySelector('img')?.getAttribute('src') ?? '',
+    }
+  })
+  if (
+    viewerMetrics.role !== 'dialog' ||
+    viewerMetrics.ariaModal !== 'true' ||
+    viewerMetrics.activeLabel !== '关闭原图查看器'
+  ) {
+    failures.push(`image viewer: dialog semantics/focus are incomplete ${JSON.stringify(viewerMetrics)}`)
+  } else {
+    imageViewerChecks.openAndClose += 1
+  }
+  if (
+    !['缩小图片', '放大图片', '适应窗口', '100%', '关闭原图查看器'].every((label) =>
+      viewerMetrics.buttonLabels.includes(label),
+    )
+  ) {
+    failures.push(`image viewer: controls are incomplete ${JSON.stringify(viewerMetrics.buttonLabels)}`)
+  } else {
+    imageViewerChecks.controls += 1
+  }
+  if (
+    !isOriginalMediaUrl(viewerMetrics.viewerImageSrc) ||
+    viewerMetrics.hasDownload ||
+    viewerMetrics.hasInfo ||
+    /(来源|版本|授权|下载原图)/.test(viewerMetrics.text)
+  ) {
+    failures.push(`image viewer: public governance UI was rendered ${JSON.stringify(viewerMetrics)}`)
+  } else {
+    imageViewerChecks.noGovernanceUi += 1
+  }
+
+  await page.click('button[aria-label="放大图片"]')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '125%',
+    { timeout: 10_000 },
+  )
+  await page.click('button[aria-label="缩小图片"]')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  const wheelAnchorBefore = await page.$eval('.image-viewer__stage', (element) => {
+    const rect = element.getBoundingClientRect()
+    const image = element.querySelector('img')
+    const imageRect = image?.getBoundingClientRect()
+    const clientX = rect.left + rect.width * 0.65
+    const clientY = rect.top + rect.height * 0.55
+    const imagePoint = imageRect
+      ? {
+          x: (clientX - imageRect.left) / imageRect.width,
+          y: (clientY - imageRect.top) / imageRect.height,
+        }
+      : null
+    element.dispatchEvent(
+      new WheelEvent('wheel', {
+        bubbles: true,
+        cancelable: true,
+        deltaY: -100,
+        clientX,
+        clientY,
+      }),
+    )
+    return { clientX, clientY, imagePoint, pageScrollY: window.scrollY }
+  })
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() !== '100%',
+    { timeout: 10_000 },
+  )
+  const wheelAnchorAfter = await page.$eval(
+    '.image-viewer__stage',
+    (element, before) => {
+      const imageRect = element.querySelector('img')?.getBoundingClientRect()
+      return {
+        imagePoint: imageRect
+          ? {
+              x: (before.clientX - imageRect.left) / imageRect.width,
+              y: (before.clientY - imageRect.top) / imageRect.height,
+            }
+          : null,
+        pageScrollY: window.scrollY,
+      }
+    },
+    wheelAnchorBefore,
+  )
+  await page.$eval('.image-viewer__stage', (element) => {
+    const rect = element.getBoundingClientRect()
+    element.dispatchEvent(
+      new MouseEvent('dblclick', {
+        bubbles: true,
+        cancelable: true,
+        clientX: rect.left + rect.width / 2,
+        clientY: rect.top + rect.height / 2,
+      }),
+    )
+  })
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  const anchorDrift =
+    wheelAnchorBefore.imagePoint && wheelAnchorAfter.imagePoint
+      ? Math.hypot(
+          wheelAnchorBefore.imagePoint.x - wheelAnchorAfter.imagePoint.x,
+          wheelAnchorBefore.imagePoint.y - wheelAnchorAfter.imagePoint.y,
+        )
+      : Number.POSITIVE_INFINITY
+  if (
+    anchorDrift > 0.03 ||
+    wheelAnchorAfter.pageScrollY !== wheelAnchorBefore.pageScrollY
+  ) {
+    failures.push(
+      `image viewer: plain wheel did not preserve the pointer anchor ${JSON.stringify({ anchorDrift, wheelAnchorBefore, wheelAnchorAfter })}`,
+    )
+  } else {
+    imageViewerChecks.wheelAndDoubleClick += 1
+  }
+
+  await page.$eval('.image-viewer__stage', (element) => element.focus())
+  await page.keyboard.press('+')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '125%',
+    { timeout: 10_000 },
+  )
+  await page.keyboard.press('-')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  await page.keyboard.press('+')
+  await page.keyboard.press('f')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  await page.keyboard.press('+')
+  await page.keyboard.press('0')
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  imageViewerChecks.keyboardShortcuts += 1
+
+  for (let index = 0; index < 5; index += 1) {
+    await page.click('button[aria-label="放大图片"]')
+  }
+  await page.waitForFunction(
+    () => {
+      const stage = document.querySelector('.image-viewer__stage')
+      return Boolean(stage && stage.scrollWidth > stage.clientWidth + 1)
+    },
+    { timeout: 10_000 },
+  )
+  const keyboardPanBefore = await page.$eval('.image-viewer__stage', (element) => {
+    element.focus()
+    element.scrollLeft = 0
+    return {
+      activeLabel: document.activeElement?.getAttribute('aria-label') ?? '',
+      scrollLeft: element.scrollLeft,
+    }
+  })
+  await page.keyboard.press('ArrowRight')
+  await page.waitForFunction(
+    () => (document.querySelector('.image-viewer__stage')?.scrollLeft ?? 0) > 0,
+    { timeout: 10_000 },
+  )
+  const keyboardPanAfter = await page.$eval(
+    '.image-viewer__stage',
+    (element) => element.scrollLeft,
+  )
+  if (
+    !keyboardPanBefore.activeLabel.includes('方向键') ||
+    keyboardPanAfter <= keyboardPanBefore.scrollLeft
+  ) {
+    failures.push(
+      `image viewer: keyboard pan failed ${JSON.stringify({ keyboardPanBefore, keyboardPanAfter })}`,
+    )
+  } else {
+    imageViewerChecks.keyboardPan += 1
+  }
+
+  const stageHandle = await page.$('.image-viewer__stage')
+  const stageBox = await stageHandle?.boundingBox()
+  if (!stageBox) {
+    failures.push('image viewer: scroll stage has no pointer target')
+  } else {
+    await page.$eval('.image-viewer__stage', (element) => {
+      element.scrollLeft = Math.floor((element.scrollWidth - element.clientWidth) / 2)
+    })
+    const pointerPanBefore = await page.$eval(
+      '.image-viewer__stage',
+      (element) => element.scrollLeft,
+    )
+    const pointerX = stageBox.x + stageBox.width / 2
+    const pointerY = stageBox.y + stageBox.height / 2
+    await page.mouse.move(pointerX, pointerY)
+    await page.mouse.down()
+    await page.mouse.move(pointerX + 120, pointerY, { steps: 6 })
+    await page.mouse.up()
+    const pointerPanAfter = await page.$eval(
+      '.image-viewer__stage',
+      (element) => element.scrollLeft,
+    )
+    if (pointerPanAfter >= pointerPanBefore - 10) {
+      failures.push(
+        `image viewer: pointer drag did not pan ${pointerPanBefore}/${pointerPanAfter}`,
       )
-      .catch(() => null)
-    const targetExists = await page.evaluate(
-      (id) => Boolean(document.getElementById(id)),
-      target?.slice(1),
-    )
-    if (!target || !targetExists) {
-      failures.push('segmented media: directory anchor target is unresolved')
     } else {
-      segmentAnchorChecks += 1
+      imageViewerChecks.pointerPan += 1
     }
   }
 
+  await page.$$eval('.image-viewer__toolbar button', (buttons) => {
+    const actualSize = buttons.find((button) => button.textContent?.trim() === '100%')
+    if (!(actualSize instanceof HTMLButtonElement)) throw new Error('100% control missing')
+    actualSize.click()
+  })
+  await page.waitForFunction(
+    () => document.querySelector('.image-viewer__zoom')?.textContent?.trim() === '100%',
+    { timeout: 10_000 },
+  )
+  await capture(page, 'original-image-viewer-desktop-1440')
+  await page.keyboard.press('Escape')
+  await page.waitForFunction(
+    () => !document.querySelector('.image-viewer__dialog'),
+    { timeout: 10_000 },
+  )
+  const focusReturned = await page.evaluate(
+    () => document.activeElement?.classList.contains('responsive-media__trigger') ?? false,
+  )
+  if (!focusReturned) {
+    failures.push('image viewer: focus did not return to the triggering image')
+  } else {
+    imageViewerChecks.focusReturn += 1
+  }
+
   await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 })
+  await page.$eval(intrinsicImageSelector, (image) => {
+    const trigger = image.closest('.responsive-media__trigger')
+    if (!(trigger instanceof HTMLButtonElement)) throw new Error('mobile viewer trigger missing')
+    trigger.click()
+  })
+  await page.waitForSelector('.image-viewer__dialog', {
+    visible: true,
+    timeout: 10_000,
+  })
+  const mobileViewerMetrics = await page.$eval('.image-viewer__dialog', (element) => {
+    const rect = element.getBoundingClientRect()
+    const stage = element.querySelector('.image-viewer__stage')
+    const buttons = [...element.querySelectorAll('button')].map((button) => {
+      const buttonRect = button.getBoundingClientRect()
+      return { width: buttonRect.width, height: buttonRect.height }
+    })
+    return {
+      width: rect.width,
+      height: rect.height,
+      viewportWidth: window.innerWidth,
+      viewportHeight: window.innerHeight,
+      touchAction: stage ? getComputedStyle(stage).touchAction : '',
+      buttons,
+      hasHorizontalOverflow:
+        document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+    }
+  })
+  if (
+    mobileViewerMetrics.width > mobileViewerMetrics.viewportWidth + 1 ||
+    mobileViewerMetrics.height > mobileViewerMetrics.viewportHeight + 1 ||
+    mobileViewerMetrics.touchAction !== 'none' ||
+    mobileViewerMetrics.hasHorizontalOverflow ||
+    mobileViewerMetrics.buttons.some(
+      (button) => button.width < 44 || button.height < 44,
+    )
+  ) {
+    failures.push(`image viewer: mobile safe-area layout failed ${JSON.stringify(mobileViewerMetrics)}`)
+  } else {
+    imageViewerChecks.mobileSafeArea += 1
+  }
+
+  const mobileFitZoom = await page.$eval(
+    '.image-viewer__zoom',
+    (element) => Number.parseInt(element.textContent ?? '0', 10),
+  )
+  await page.$eval('.image-viewer__stage', (element) => {
+    const rect = element.getBoundingClientRect()
+    const y = rect.top + rect.height / 2
+    const send = (type, pointerId, x, buttons) => {
+      element.dispatchEvent(
+        new PointerEvent(type, {
+          bubbles: true,
+          cancelable: true,
+          pointerId,
+          pointerType: 'touch',
+          isPrimary: pointerId === 11,
+          clientX: x,
+          clientY: y,
+          button: type === 'pointerdown' ? 0 : -1,
+          buttons,
+        }),
+      )
+    }
+    const center = rect.left + rect.width / 2
+    send('pointerdown', 11, center - 30, 1)
+    send('pointerdown', 12, center + 30, 1)
+    send('pointermove', 11, center - 90, 1)
+    send('pointermove', 12, center + 90, 1)
+  })
+  await page.waitForFunction(
+    (fitZoom) =>
+      Number.parseInt(
+        document.querySelector('.image-viewer__zoom')?.textContent ?? '0',
+        10,
+      ) >= fitZoom * 2.5,
+    { timeout: 10_000 },
+    mobileFitZoom,
+  )
+  const pinchZoom = await page.$eval(
+    '.image-viewer__zoom',
+    (element) => Number.parseInt(element.textContent ?? '0', 10),
+  )
+  await page.$eval('.image-viewer__stage', (element) => {
+    const rect = element.getBoundingClientRect()
+    const y = rect.top + rect.height / 2
+    const center = rect.left + rect.width / 2
+    const send = (type, pointerId, x, buttons) => {
+      element.dispatchEvent(
+        new PointerEvent(type, {
+          bubbles: true,
+          cancelable: true,
+          pointerId,
+          pointerType: 'touch',
+          isPrimary: pointerId === 11,
+          clientX: x,
+          clientY: y,
+          button: -1,
+          buttons,
+        }),
+      )
+    }
+    send('pointerup', 11, center - 90, 0)
+    send('pointerup', 12, center + 90, 0)
+    element.scrollLeft = Math.floor((element.scrollWidth - element.clientWidth) / 2)
+    const before = element.scrollLeft
+    send('pointerdown', 13, rect.left + rect.width * 0.7, 1)
+    send('pointermove', 13, rect.left + rect.width * 0.3, 1)
+    send('pointerup', 13, rect.left + rect.width * 0.3, 0)
+    element.dataset.touchPanBefore = String(before)
+    element.dataset.touchPanAfter = String(element.scrollLeft)
+  })
+  const touchPan = await page.$eval('.image-viewer__stage', (element) => ({
+    before: Number(element.dataset.touchPanBefore),
+    after: Number(element.dataset.touchPanAfter),
+  }))
+  await page.$eval('.image-viewer__stage', (element) => {
+    const rect = element.getBoundingClientRect()
+    const x = rect.left + rect.width / 2
+    const y = rect.top + rect.height / 2
+    const tap = (pointerId) => {
+      element.dispatchEvent(
+        new PointerEvent('pointerdown', {
+          bubbles: true,
+          cancelable: true,
+          pointerId,
+          pointerType: 'touch',
+          isPrimary: true,
+          clientX: x,
+          clientY: y,
+          button: 0,
+          buttons: 1,
+        }),
+      )
+      element.dispatchEvent(
+        new PointerEvent('pointerup', {
+          bubbles: true,
+          cancelable: true,
+          pointerId,
+          pointerType: 'touch',
+          isPrimary: true,
+          clientX: x,
+          clientY: y,
+          button: -1,
+          buttons: 0,
+        }),
+      )
+    }
+    tap(14)
+    tap(15)
+  })
+  await page.waitForFunction(
+    (fitZoom) =>
+      Number.parseInt(
+        document.querySelector('.image-viewer__zoom')?.textContent ?? '0',
+        10,
+      ) === fitZoom,
+    { timeout: 10_000 },
+    mobileFitZoom,
+  )
+  if (pinchZoom < mobileFitZoom * 2.5 || touchPan.after <= touchPan.before + 10) {
+    failures.push(
+      `image viewer: touch gestures failed ${JSON.stringify({ pinchZoom, touchPan })}`,
+    )
+  } else {
+    imageViewerChecks.touchGestures += 1
+  }
+  await capture(page, 'original-image-viewer-mobile-390')
+  await page.keyboard.press('Escape')
+  await page.waitForFunction(
+    () => !document.querySelector('.image-viewer__dialog'),
+    { timeout: 10_000 },
+  )
+
   await page.goto(routeUrl('/'), {
     waitUntil: 'networkidle0',
     timeout: 45_000,
@@ -843,18 +1542,17 @@ try {
     )
   }
 
-  const invalidMediaRequests = mediaRequests.filter(
-    (url) =>
-      /\.(?:png|jpe?g)(?:$|\?)/i.test(url) ||
-      url.toLowerCase().includes('original'),
-  )
-  if (invalidMediaRequests.length) {
+  const segmentMediaRequests = mediaRequests.filter(isSegmentMediaUrl)
+  if (segmentMediaRequests.length) {
     failures.push(
-      `media requests: original/non-derivative files loaded ${invalidMediaRequests.slice(0, 5).join(' | ')}`,
+      `media requests: segmented files loaded ${segmentMediaRequests.slice(0, 5).join(' | ')}`,
     )
   }
-  if (mediaRequests.length === 0) {
-    failures.push('media requests: no responsive media derivative was requested')
+  if (!mediaRequests.some(isThumbnailMediaUrl)) {
+    failures.push('media requests: no thumbnail.webp request was observed')
+  }
+  if (!mediaRequests.some(isOriginalMediaUrl)) {
+    failures.push('media requests: no original PNG/JPG/JPEG request was observed')
   }
 } catch (error) {
   failures.push(error instanceof Error ? error.stack ?? error.message : String(error))
@@ -862,7 +1560,20 @@ try {
   await chromium?.close()
   preview.kill()
   if (browserProfile) {
-    await rm(browserProfile, { recursive: true, force: true }).catch(() => null)
+    try {
+      await rm(browserProfile, {
+        recursive: true,
+        force: true,
+        maxRetries: 20,
+        retryDelay: 250,
+      })
+    } catch (error) {
+      failures.push(
+        `browser profile cleanup failed: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      )
+    }
   }
 }
 
@@ -914,7 +1625,9 @@ const reportPath = await writeReport('e2e-smoke', {
     viewportChecks,
     screenshots: screenshots.length,
     mediaRequests: mediaRequests.length,
-    segmentAnchorChecks,
+    mediaPolicyChecks,
+    imageViewerChecks,
+    sourceMediaProbeRoute,
     legacyRedirectChecks,
     tabletNavigationChecks,
     browserErrors: substantiveBrowserErrors.length,

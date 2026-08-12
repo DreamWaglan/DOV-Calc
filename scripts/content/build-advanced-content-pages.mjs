@@ -4,6 +4,10 @@ import path from 'node:path'
 import process from 'node:process'
 import { loadSourceLedger, stableJson } from './lib/migration-elements.mjs'
 import { pageReviewStatus } from './lib/page-review-decisions.mjs'
+import {
+  insertPlacedMedia,
+  loadPageMediaPlacements,
+} from './lib/media-embed.mjs'
 import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const root = process.cwd()
@@ -35,7 +39,10 @@ function normalizeSourceMarkdown(markdown) {
 }
 
 function countMarkdownTables(markdown) {
-  return [...markdown.matchAll(/^\|\s*:?-{3,}/gm)].length
+  return (
+    [...markdown.matchAll(/^\|\s*:?-{3,}/gm)].length +
+    [...markdown.matchAll(/<div class="docx-table-scroll"/g)].length
+  )
 }
 
 function resolvePartitions(source, pageDefinitions) {
@@ -127,10 +134,10 @@ function frontmatter(definition, asset) {
     'verifiedAt: "2026-07-30"',
     `status: ${status}`,
     'authors:',
-    '  - name: DOV-Calc 内容维护组',
+    '  - name: 拂晓凤栖攻略组',
     '    role: 授权资料迁移编辑',
     'reviewers:',
-    '  - name: DOV-Calc 事实审核组',
+    '  - name: 暂无',
     '    role: 进阶内容事实审核',
     'sources:',
     `  - title: ${JSON.stringify(asset.title)}`,
@@ -140,7 +147,7 @@ function frontmatter(definition, asset) {
     '    publicUse:',
     '      body: true',
     '      asset: false',
-    '    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。',
+    '    notes: 已迁移授权正文；原始 DOCX 文件不开放下载，已授权的 DOCX 内嵌原图可在正文显示并下载。',
     `tags: ${JSON.stringify(definition.tags)}`,
     `related: ${JSON.stringify([
       ...new Set([
@@ -158,22 +165,15 @@ async function writeSourcePage(definition, asset, partition) {
     definition.id,
     definition.status ?? 'draft',
   )
-  const reviewNotice =
-    status === 'current'
-      ? [
-          '> [!INFO] 审核状态',
-          '> 本页已完成授权原稿迁移、元素归属、版本边界与事实复核；正文按页面所示版本发布，原始 DOCX 不开放下载。',
-        ]
-      : [
-          '> [!WARNING] 审核状态',
-          '> 本页已完成授权原稿的可搜索迁移与元素归属，但版本数值、公式复算和媒体说明仍在事实审核队列。',
-        ]
   const body = [
     `# ${definition.title}`,
     '',
-    ...reviewNotice,
-    '',
-    normalizeSourceMarkdown(partition.source),
+    insertPlacedMedia(
+      normalizeSourceMarkdown(partition.source),
+      definition.id,
+      asset.id,
+      pageMediaPlacements,
+    ),
     '',
     definition.nextLink ?? '',
   ]
@@ -609,6 +609,7 @@ const ledger = await loadSourceLedger()
 const assetsById = new Map(ledger.assets.map((asset) => [asset.id, asset]))
 const sourceEntries = []
 const overviewEntries = []
+const pageMediaPlacements = await loadPageMediaPlacements()
 
 for (const migration of migrations) {
   const asset = assetsById.get(migration.assetId)

@@ -16,7 +16,7 @@
     "asset": true,
     "searchIndex": true,
     "sitemap": true,
-    "download": false,
+    "download": true,
     "derivative": true,
     "structuredData": false,
     "mode": "public",
@@ -38,7 +38,7 @@
     "format": "webp",
     "maxDerivativePixels": 4500000,
     "maxSourcePixels": 50000000,
-    "segmentHeight": 4000
+    "segmentation": "disabled"
   },
   "derivatives": [
     {
@@ -51,67 +51,12 @@
       "maxPixels": 4500000
     },
     {
-      "kind": "segment",
-      "index": 1,
-      "sourceCrop": {
-        "left": 0,
-        "top": 0,
-        "width": 1081,
-        "height": 4000
-      },
-      "path": "content/imports/images/beginner-map/segment-01.webp",
-      "width": 1081,
-      "height": 4000,
-      "sha256": "6f50ffc596cb87f2ccfc1a5c45bec2878729ef4c1f335a4060257c158881a78c",
-      "bytes": 450654,
-      "maxPixels": 4500000
-    },
-    {
-      "kind": "segment",
-      "index": 2,
-      "sourceCrop": {
-        "left": 0,
-        "top": 4000,
-        "width": 1081,
-        "height": 4000
-      },
-      "path": "content/imports/images/beginner-map/segment-02.webp",
-      "width": 1081,
-      "height": 4000,
-      "sha256": "1c781e685534b06031b442245b61fa1cc9cd45a3a155643b53e33d94d0777e35",
-      "bytes": 484374,
-      "maxPixels": 4500000
-    },
-    {
-      "kind": "segment",
-      "index": 3,
-      "sourceCrop": {
-        "left": 0,
-        "top": 8000,
-        "width": 1081,
-        "height": 4000
-      },
-      "path": "content/imports/images/beginner-map/segment-03.webp",
-      "width": 1081,
-      "height": 4000,
-      "sha256": "3d75f8f3830d7266bf79e1059e23c27b7f618d09e5d4bf251269c39a2a5e984a",
-      "bytes": 469632,
-      "maxPixels": 4500000
-    },
-    {
-      "kind": "segment",
-      "index": 4,
-      "sourceCrop": {
-        "left": 0,
-        "top": 12000,
-        "width": 1081,
-        "height": 800
-      },
-      "path": "content/imports/images/beginner-map/segment-04.webp",
-      "width": 1081,
-      "height": 800,
-      "sha256": "138f106ac016c7de3d4672141b0757c6b8caf139854e6bdce0919d35db84e5d3",
-      "bytes": 77270,
+      "kind": "preview",
+      "path": "content/imports/images/beginner-map/preview.webp",
+      "width": 616,
+      "height": 7294,
+      "sha256": "5a604b2b017d66c8df337eeba6bdfca5c6bd33cd17169e40b7b9e3070b7edc0f",
+      "bytes": 731262,
       "maxPixels": 4500000
     }
   ]

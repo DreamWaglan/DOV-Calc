@@ -24,28 +24,21 @@ sources:
     publicUse:
       body: false
       asset: true
-    notes: 仅发布授权范围内的响应式派生图；原始文件不对外提供。
+    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。
 tags: ["图片资料","一图流","响应式图片"]
 related: ["topic-visual-guides-index","start-index"]
 ---
 
 # 拂晓剧情榜260720
 
-> [!INFO] 授权与原始文件范围
-> 本页只展示经授权生成的 AVIF/WebP 派生图。原始图片不对外提供。
-
-## 响应式预览
+## 原图
 
 <ResponsiveMedia
-  media-id="wiki-image-62b82364129ca54a-fb95c25e70d60e64-preview"
+  media-id="wiki-image-62b82364129ca54a-original"
   alt="拂晓剧情榜260720一图流，包含图中列出的步骤、结论与说明"
-  caption="拂晓剧情榜260720；版本日期 2026-07-19。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="拂晓剧情榜260720.png"
-  version="2026-07-19"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-08ba2d32a9ff/preview-0480.avif","width":480},{"path":"/wiki-media/src-08ba2d32a9ff/preview-0960.avif","width":960}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-08ba2d32a9ff/preview-0480.webp","width":480},{"path":"/wiki-media/src-08ba2d32a9ff/preview-0960.webp","width":960}]}]'
-  fallback-path="/wiki-media/src-08ba2d32a9ff/preview-0960.webp"
-  :width="960"
-  :height="2400"
-  :download-allowed="false"
+  display-mode="viewer"
+  :variants='[]'
+  fallback-path="/wiki-media/src-08ba2d32a9ff/original.png"
+  :width="1298"
+  :height="3245"
 />

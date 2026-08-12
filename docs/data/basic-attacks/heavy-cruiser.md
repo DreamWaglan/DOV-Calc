@@ -16,7 +16,7 @@ authors:
 reviewers:
   - name: DOV-Calc 版权与来源维护组
     role: 版权/来源责任人
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 事实审核人
   - name: DOV-Calc 发布维护组
     role: 公开范围审核人

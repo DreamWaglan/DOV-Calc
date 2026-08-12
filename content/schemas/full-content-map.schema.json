@@ -461,6 +461,79 @@
         }
       ]
     },
+    "tableCellPathEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tableIndex",
+        "tableSourceElementId",
+        "rowIndex",
+        "cellIndex",
+        "gridColumn",
+        "gridSpan",
+        "verticalMerge"
+      ],
+      "properties": {
+        "tableIndex": { "type": "integer", "minimum": 1 },
+        "tableSourceElementId": {
+          "type": "string",
+          "pattern": "^src-[a-f0-9]{12}:table:[a-f0-9]{16}$"
+        },
+        "rowIndex": { "type": "integer", "minimum": 1 },
+        "cellIndex": { "type": "integer", "minimum": 1 },
+        "gridColumn": { "type": "integer", "minimum": 1 },
+        "gridSpan": { "type": "integer", "minimum": 1 },
+        "verticalMerge": { "enum": ["restart", "continue", null] }
+      }
+    },
+    "tableCellPlacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cellPlacementId",
+        "tableIndex",
+        "tableSourceElementId",
+        "rowIndex",
+        "cellIndex",
+        "gridColumn",
+        "gridSpan",
+        "rowSpan",
+        "verticalMerge",
+        "paragraphIndex",
+        "runIndex",
+        "drawingIndexInParagraph",
+        "drawingIndexInCell",
+        "cellContentOrdinal",
+        "cellPath"
+      ],
+      "properties": {
+        "cellPlacementId": {
+          "type": "string",
+          "pattern": "^src-[a-f0-9]{12}:placement:[a-f0-9]{16}$"
+        },
+        "tableIndex": { "type": "integer", "minimum": 1 },
+        "tableSourceElementId": {
+          "type": "string",
+          "pattern": "^src-[a-f0-9]{12}:table:[a-f0-9]{16}$"
+        },
+        "rowIndex": { "type": "integer", "minimum": 1 },
+        "cellIndex": { "type": "integer", "minimum": 1 },
+        "gridColumn": { "type": "integer", "minimum": 1 },
+        "gridSpan": { "type": "integer", "minimum": 1 },
+        "rowSpan": { "type": "integer", "minimum": 0 },
+        "verticalMerge": { "enum": ["restart", "continue", null] },
+        "paragraphIndex": { "type": "integer", "minimum": 0 },
+        "runIndex": { "type": "integer", "minimum": 0 },
+        "drawingIndexInParagraph": { "type": "integer", "minimum": 0 },
+        "drawingIndexInCell": { "type": "integer", "minimum": 1 },
+        "cellContentOrdinal": { "type": "integer", "minimum": 1 },
+        "cellPath": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/tableCellPathEntry" }
+        }
+      }
+    },
     "drawingRelation": {
       "type": "object",
       "required": [
@@ -492,6 +565,35 @@
           "type": [
             "string",
             "null"
+          ]
+        },
+        "tableCell": {
+          "$ref": "#/$defs/tableCellPlacement"
+        },
+        "placement": {
+          "type": "object",
+          "properties": {
+            "slot": {
+              "enum": [
+                "inline-after-anchor",
+                "float-after-anchor",
+                "source-header",
+                "source-footer",
+                "table-cell"
+              ]
+            },
+            "tableCell": {
+              "$ref": "#/$defs/tableCellPlacement"
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": { "slot": { "const": "table-cell" } },
+                "required": ["slot"]
+              },
+              "then": { "required": ["tableCell"] }
+            }
           ]
         },
         "resolution": {

@@ -1,7 +1,6 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, rm, stat } from 'node:fs/promises'
 import path from 'node:path'
-import process from 'node:process'
 import { unzipSync } from 'fflate'
 import sharp from 'sharp'
 import {
@@ -31,12 +30,20 @@ const PUBLIC_ASSETS_PATH = path.join(
   'governance',
   'public-assets.json',
 )
+const BUILD_STATE_PATH = path.join(root, '.omx', 'media-library-build.json')
 const MAX_INPUT_PIXELS = 100_000_000
 const MAX_DERIVATIVE_PIXELS = 4_500_000
-const SEGMENT_HEIGHT = 3200
 const RESPONSIVE_WIDTHS = [480, 960]
 const THUMB_WIDTH = 360
 const VISUAL_INDEX_ID = 'topic-visual-guides-index'
+const IMAGE_MIME_BY_EXT = new Map([
+  ['.avif', 'image/avif'],
+  ['.gif', 'image/gif'],
+  ['.jpeg', 'image/jpeg'],
+  ['.jpg', 'image/jpeg'],
+  ['.png', 'image/png'],
+  ['.webp', 'image/webp'],
+])
 
 const STANDALONE_RELATED = new Map([
   ['src-20f9c608ccbe', ['start-new-account', 'start-first-week']],
@@ -71,6 +78,39 @@ function publicPath(absolutePath) {
     .join('/')}`
 }
 
+function normalizedExtension(filePath, format) {
+  const extension = path.extname(filePath).toLocaleLowerCase('en-US')
+  if (IMAGE_MIME_BY_EXT.has(extension)) return extension
+  if (format === 'jpeg') return '.jpg'
+  if (format && IMAGE_MIME_BY_EXT.has(`.${format}`)) return `.${format}`
+  throw new Error(`Unsupported image extension or format: ${filePath}`)
+}
+
+function mimeTypeForExtension(extension) {
+  const mimeType = IMAGE_MIME_BY_EXT.get(extension)
+  if (!mimeType) throw new Error(`Unsupported image extension: ${extension}`)
+  return mimeType
+}
+
+async function writeOriginal(buffer, outputDir, filePath, metadata) {
+  const extension = normalizedExtension(filePath, metadata.format)
+  const outputPath = path.join(outputDir, `original${extension}`)
+  await mkdir(path.dirname(outputPath), { recursive: true })
+  await writeFile(outputPath, buffer)
+  return {
+    path: repositoryPath(outputPath),
+    publicPath: publicPath(outputPath),
+    sha256: sha256(buffer),
+    bytes: buffer.length,
+    width: metadata.width,
+    height: metadata.height,
+    format: metadata.format,
+    extension,
+    mimeType: mimeTypeForExtension(extension),
+    fileName: `original${extension}`,
+  }
+}
+
 function cleanTitle(title) {
   return title.replace(/\.(?:png|jpe?g)$/i, '').trim()
 }
@@ -96,6 +136,31 @@ async function safeReset(absolutePath, expectedPath) {
   }
   await rm(absolutePath, { recursive: true, force: true })
   await mkdir(absolutePath, { recursive: true })
+}
+
+async function resetManagedMediaCollections(publicAssets) {
+  const expectedRoot = path.resolve(PUBLIC_ROOT)
+  await mkdir(expectedRoot, { recursive: true })
+  const roots = [
+    ...new Set(
+      (publicAssets.collections ?? [])
+        .filter((collection) => collection.id.startsWith('wiki-media-'))
+        .map((collection) => path.resolve(root, collection.root)),
+    ),
+  ]
+  for (const collectionRoot of roots) {
+    const relation = path.relative(expectedRoot, collectionRoot)
+    if (
+      relation === '' ||
+      relation.startsWith('..') ||
+      path.isAbsolute(relation)
+    ) {
+      throw new Error(
+        `Refusing to reset media collection outside wiki-media root: ${collectionRoot}`,
+      )
+    }
+    await rm(collectionRoot, { recursive: true, force: true })
+  }
 }
 
 async function writeDerivative(buffer, outputPath, format, width) {
@@ -159,13 +224,19 @@ async function createVariantSet({
   return files
 }
 
-async function deriveVisual(buffer, outputDir) {
+async function deriveVisual(buffer, outputDir, originalFilePath) {
   const metadata = await sharp(buffer, {
     limitInputPixels: MAX_INPUT_PIXELS,
   }).metadata()
   if (!metadata.width || !metadata.height) {
     throw new Error(`Unable to read image dimensions for ${outputDir}`)
   }
+  const original = await writeOriginal(
+    buffer,
+    outputDir,
+    originalFilePath,
+    metadata,
+  )
   const thumbnailWidth = constrainedWidth(
     metadata.width,
     metadata.height,
@@ -181,34 +252,8 @@ async function deriveVisual(buffer, outputDir) {
     metadata.height > 4000 ||
     metadata.height / metadata.width > 3.5 ||
     metadata.width * metadata.height > MAX_DERIVATIVE_PIXELS
-  const groups = []
-  if (longImage) {
-    const segmentCount = Math.ceil(metadata.height / SEGMENT_HEIGHT)
-    for (let index = 0; index < segmentCount; index += 1) {
-      const top = index * SEGMENT_HEIGHT
-      const height = Math.min(SEGMENT_HEIGHT, metadata.height - top)
-      const segment = await sharp(buffer, {
-        limitInputPixels: MAX_INPUT_PIXELS,
-      })
-        .extract({ left: 0, top, width: metadata.width, height })
-        .toBuffer()
-      const files = await createVariantSet({
-        buffer: segment,
-        outputDir,
-        prefix: `segment-${String(index + 1).padStart(2, '0')}`,
-        sourceWidth: metadata.width,
-        sourceHeight: height,
-      })
-      groups.push({
-        kind: 'segment',
-        index: index + 1,
-        anchorId: `segment-${String(index + 1).padStart(2, '0')}`,
-        sourceCrop: { left: 0, top, width: metadata.width, height },
-        files,
-      })
-    }
-  } else {
-    groups.push({
+  const groups = [
+    {
       kind: 'preview',
       index: 1,
       anchorId: 'preview',
@@ -219,14 +264,15 @@ async function deriveVisual(buffer, outputDir) {
         sourceWidth: metadata.width,
         sourceHeight: metadata.height,
       }),
-    })
-  }
+    },
+  ]
   return {
     source: {
       width: metadata.width,
       height: metadata.height,
       format: metadata.format,
     },
+    original,
     longImage,
     thumbnail,
     groups,
@@ -280,15 +326,23 @@ function responsiveMediaMarkup(item, group, altSuffix = '') {
   return `<ResponsiveMedia
   media-id="${html(mediaAnchor(item, group))}"
   alt="${html(`${item.alt}${altSuffix}`)}"
-  caption="${html(item.caption)}"
-  source-label="${html(item.sourceLabel)}"
-  version="${html(item.version)}"
-  authorization="${html(item.authorizationEvidenceId)}"
+  display-mode="index"
   :variants='${JSON.stringify(variants)}'
   fallback-path="${html(fallback.publicPath)}"
   :width="${fallback.width}"
   :height="${fallback.height}"
-  :download-allowed="${item.downloadAllowed}"
+/>`
+}
+
+function originalMediaMarkup(item, altSuffix = '') {
+  return `<ResponsiveMedia
+  media-id="${html(`${item.libraryId}-original`)}"
+  alt="${html(`${item.alt}${altSuffix}`)}"
+  display-mode="viewer"
+  :variants='[]'
+  fallback-path="${html(item.original.publicPath)}"
+  :width="${item.original.width}"
+  :height="${item.original.height}"
 />`
 }
 
@@ -333,7 +387,7 @@ function pageFrontmatter({
     '    publicUse:',
     `      body: ${source.publicRelease.body === true}`,
     `      asset: ${source.publicRelease.asset === true}`,
-    '    notes: 仅发布授权范围内的响应式派生图；原始文件不对外提供。',
+    '    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。',
     `tags: ${JSON.stringify(tags)}`,
     `related: ${JSON.stringify([...new Set(related)])}`,
     '---',
@@ -342,27 +396,12 @@ function pageFrontmatter({
 }
 
 async function writeStandalonePage(item, asset, order) {
-  const segmentLinks = item.longImage
-    ? [
-        '## 分段目录',
-        '',
-        ...item.groups.map(
-          (group) =>
-            `- [第 ${group.index} 段](#${mediaAnchor(item, group)})`,
-        ),
-        '',
-      ]
-    : []
-  const figures = item.groups.flatMap((group) => [
-    `## ${group.kind === 'segment' ? `第 ${group.index} 段` : '响应式预览'}`,
+  const figures = [
+    '## 原图',
     '',
-    responsiveMediaMarkup(
-      item,
-      group,
-      group.kind === 'segment' ? `，第 ${group.index} 段` : '',
-    ),
+    originalMediaMarkup(item),
     '',
-  ])
+  ]
   const output = [
     pageFrontmatter({
       id: item.detailPageId,
@@ -375,10 +414,6 @@ async function writeStandalonePage(item, asset, order) {
     }),
     `# ${item.title}`,
     '',
-    '> [!INFO] 授权与原始文件范围',
-    '> 本页只展示经授权生成的 AVIF/WebP 派生图。原始图片不对外提供。',
-    '',
-    ...segmentLinks,
     ...figures,
   ].join('\n')
   const outputPath = path.join(PAGE_ROOT, `${item.sourceAssetId}.md`)
@@ -391,21 +426,15 @@ async function writeDocxGalleryPage(items, asset, order) {
   const figures = items.flatMap((item, itemIndex) => [
     `## 插图 ${itemIndex + 1}`,
     '',
-    ...item.groups.flatMap((group) => [
-      responsiveMediaMarkup(
-        item,
-        group,
-        group.kind === 'segment' ? `，第 ${group.index} 段` : '',
-      ),
-      '',
-    ]),
+    originalMediaMarkup(item),
+    '',
   ])
   const targetPageIds = [...new Set(items.flatMap((item) => item.targetPageIds))]
   const output = [
     pageFrontmatter({
       id: galleryId,
       title: `${cleanTitle(asset.title)}：配套图片`,
-      description: `展示《${cleanTitle(asset.title)}》中的授权媒体派生图，并保留页面归属、说明与来源。`,
+      description: `展示《${cleanTitle(asset.title)}》中的配套图片。`,
       order,
       source: asset,
       related: [
@@ -416,7 +445,7 @@ async function writeDocxGalleryPage(items, asset, order) {
     }),
     `# ${cleanTitle(asset.title)}：配套图片`,
     '',
-    `本页收录 ${items.length} 个媒体元素。图片按原始 OOXML 关系定位，并关联到正文页面；只发布响应式派生图，不发布 DOCX 内的原始媒体字节。`,
+    `本页收录 ${items.length} 张配套图片。`,
     '',
     ...figures,
   ].join('\n')
@@ -448,7 +477,7 @@ async function writeIndexPage({
     '    publicUse:',
     `      body: ${asset.publicRelease.body === true}`,
     `      asset: ${asset.publicRelease.asset === true}`,
-    '    notes: 仅发布授权范围内的响应式派生图，原始文件不对外提供。',
+    '    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。',
   ])
   const standaloneCards = standaloneItems.flatMap((item) => {
     const asset = assetsById.get(item.sourceAssetId)
@@ -472,8 +501,8 @@ async function writeIndexPage({
   const output = [
     '---',
     `id: ${VISUAL_INDEX_ID}`,
-    'title: 授权图片与视觉资料库',
-    'description: 浏览 15 张独立一图流和 11 份内容文档中的响应式媒体派生图。',
+    'title: 图片与视觉资料库',
+    'description: 浏览独立一图流和内容文档中的配套图片。',
     'section: topics',
     'order: 600',
     'audience: ["beginner","regular","advanced","editor"]',
@@ -494,9 +523,9 @@ async function writeIndexPage({
     'related: ["about-sources","start-index","combat-index","mechanics-index"]',
     '---',
     '',
-    '# 授权图片与视觉资料库',
+    '# 图片与视觉资料库',
     '',
-    '所有图片均按授权范围生成响应式派生资源。页面展示来源、版本、授权证据编号、替代文本和尺寸；当前资料的原始文件均不对外提供。',
+    '按专题浏览图片，进入详情页可查看原始尺寸。',
     '',
     '## 独立一图流',
     '',
@@ -527,76 +556,21 @@ async function mapLimit(items, limit, mapper) {
   return results
 }
 
-if (process.argv.includes('--pages-only')) {
-  const ledger = await loadSourceLedger()
-  const assetsById = new Map(ledger.assets.map((asset) => [asset.id, asset]))
-  const library = JSON.parse(await readFile(LIBRARY_PATH, 'utf8'))
-  const fullMap = JSON.parse(
-    await readFile(
-      path.join(root, 'content', 'migrations', 'full-content-map.json'),
-      'utf8',
-    ),
-  )
-  const docxSourceIds = fullMap.sourceSummaries.docx
-    .filter((summary) => summary.contentDocument)
-    .map((summary) => summary.sourceAssetId)
-  const docxGroups = new Map(
-    docxSourceIds.map((sourceAssetId) => [
-      sourceAssetId,
-      (library.docxMediaItems ?? []).filter(
-        (item) => item.sourceAssetId === sourceAssetId,
-      ),
-    ]),
-  )
-
-  await safeReset(PAGE_ROOT, PAGE_ROOT)
-  for (const item of library.standaloneItems ?? []) {
-    const asset = assetsById.get(item.sourceAssetId)
-    item.detailFile = await writeStandalonePage(
-      item,
-      asset,
-      610 + item.order - 1,
-    )
-  }
-
-  const docxGalleryPages = []
-  let docxOrder = 700
-  for (const [sourceAssetId, items] of docxGroups) {
-    const asset = assetsById.get(sourceAssetId)
-    const gallery = await writeDocxGalleryPage(items, asset, docxOrder)
-    docxOrder += 1
-    docxGalleryPages.push({
-      sourceAssetId,
-      ...gallery,
-      mediaElements: items.length,
-    })
-  }
-
-  library.docxGalleryPages = docxGalleryPages
-  library.indexPage.file = await writeIndexPage({
-    standaloneItems: library.standaloneItems ?? [],
-    docxGroups,
-    assetsById,
-  })
-  await writeFile(LIBRARY_PATH, stableJson(library), 'utf8')
-  const publicAssets = JSON.parse(await readFile(PUBLIC_ASSETS_PATH, 'utf8'))
-  publicAssets.collections = publicAssets.collections.filter(
-    (collection) =>
-      !(
-        collection.id.startsWith('wiki-media-') &&
-        collection.expectedFileCount === 0
-      ),
-  )
-  await writeFile(PUBLIC_ASSETS_PATH, stableJson(publicAssets), 'utf8')
-  console.log(
-    `Media pages regenerated: ${(library.standaloneItems ?? []).length} standalone pages, ${docxGalleryPages.length} DOCX galleries.`,
-  )
-  process.exit(0)
-}
-
-await safeReset(PUBLIC_ROOT, PUBLIC_ROOT)
-await safeReset(PAGE_ROOT, PAGE_ROOT)
-await safeReset(MANIFEST_ROOT, MANIFEST_ROOT)
+await writeFile(
+  BUILD_STATE_PATH,
+  stableJson({
+    schemaVersion: 1,
+    state: 'in-progress',
+    outputs: [
+      repositoryPath(PUBLIC_ROOT),
+      repositoryPath(PAGE_ROOT),
+      repositoryPath(MANIFEST_ROOT),
+      repositoryPath(LIBRARY_PATH),
+      repositoryPath(PUBLIC_ASSETS_PATH),
+    ],
+  }),
+  'utf8',
+)
 
 const ledger = await loadSourceLedger()
 const fullMap = JSON.parse(
@@ -606,6 +580,9 @@ const fullMap = JSON.parse(
   ),
 )
 const publicAssets = JSON.parse(await readFile(PUBLIC_ASSETS_PATH, 'utf8'))
+await resetManagedMediaCollections(publicAssets)
+await safeReset(PAGE_ROOT, PAGE_ROOT)
+await safeReset(MANIFEST_ROOT, MANIFEST_ROOT)
 const existingPages = await loadPages()
 const existingPageIds = new Set(
   existingPages.map((page) => page.frontmatter.id),
@@ -651,6 +628,7 @@ const standaloneItems = await mapLimit(
     const derived = await deriveVisual(
       buffer,
       path.join(PUBLIC_ROOT, asset.id),
+      asset.origin.path,
     )
     const title = cleanTitle(asset.title)
     const detailPageId = `visual-guide-${asset.id.slice(4)}`
@@ -676,17 +654,18 @@ const standaloneItems = await mapLimit(
         ...derived.source,
         bytes: buffer.length,
       },
+      original: derived.original,
       authorizationEvidenceId: asset.authorization.evidenceId,
       attribution: asset.authorization.attribution,
       publicRelease: asset.publicRelease,
       downloadAllowed: asset.publicRelease.download === true,
-      originalPublicPath: null,
+      originalPublicPath: derived.original.publicPath,
       targetPageIds: [VISUAL_INDEX_ID, detailPageId],
       relatedPageIds,
       detailPageId,
       detailRoute: `/topics/visual-guides/${asset.id}`,
       alt: `${title}一图流，包含图中列出的步骤、结论与说明`,
-      caption: `${title}；版本日期 ${asset.origin.updatedAt}。仅展示授权响应式派生图，原图不对外提供。`,
+      caption: `${title}；版本日期 ${asset.origin.updatedAt}。原图按授权范围公开。`,
       longImage: derived.longImage,
       thumbnail: derived.thumbnail,
       groups: derived.groups,
@@ -740,6 +719,7 @@ for (const sourceAssetId of contentDocxIds) {
         sourceAssetId,
         media.sourceElementId.split(':').at(-1),
       ),
+      media.sourcePosition.packagePath,
     )
     const relations = relationsByMedia[media.sourceElementId] ?? []
     const firstBodyIndex = Math.min(
@@ -768,14 +748,20 @@ for (const sourceAssetId of contentDocxIds) {
         packagePath: media.sourcePosition.packagePath,
         mediaIndex: media.sourcePosition.mediaIndex,
       },
+      original: {
+        ...derived.original,
+        packagePath: media.sourcePosition.packagePath,
+        mediaIndex: media.sourcePosition.mediaIndex,
+      },
       authorizationEvidenceId: asset.authorization.evidenceId,
       attribution: asset.authorization.attribution,
       publicRelease: {
         ...asset.publicRelease,
-        asset: false,
+        asset: true,
+        download: true,
       },
-      downloadAllowed: false,
-      originalPublicPath: null,
+      downloadAllowed: true,
+      originalPublicPath: derived.original.publicPath,
       targetPageIds: [
         ...new Set([
           ...media.targetPageIds,
@@ -784,7 +770,7 @@ for (const sourceAssetId of contentDocxIds) {
       ],
       detailPageId: `media-source-${asset.id.slice(4)}`,
       alt: `《${cleanTitle(asset.title)}》${context}的相关插图`,
-      caption: `来源：《${cleanTitle(asset.title)}》${context}；原始媒体不公开，仅展示授权响应式派生图。`,
+      caption: `来源：《${cleanTitle(asset.title)}》${context}；DOCX 内嵌原始媒体按授权范围公开。`,
       longImage: derived.longImage,
       thumbnail: derived.thumbnail,
       groups: derived.groups,
@@ -823,15 +809,18 @@ for (const asset of [
 ]) {
   const items = allItems.filter((item) => item.sourceAssetId === asset.id)
   const files = items.flatMap((item) => item.files)
+  const originals = items.map((item) => item.original)
   const manifest = {
     schemaVersion: 1,
     generatedAt: GENERATED_AT,
     sourceId: asset.id,
     derivedFrom: asset.hashes.sha256,
     authorizationEvidenceId: asset.authorization.evidenceId,
-    downloadAllowed: asset.publicRelease.download === true,
-    originalCopied: false,
-    files,
+    downloadAllowed: originals.length > 0,
+    originalCopied: originals.length > 0,
+    originals,
+    files: [...originals, ...files],
+    derivatives: files,
   }
   const manifestPath = path.join(MANIFEST_ROOT, `${asset.id}.json`)
   await writeFile(manifestPath, stableJson(manifest), 'utf8')
@@ -840,13 +829,13 @@ for (const asset of [
       id: `wiki-media-${asset.id}`,
       root: repositoryPath(path.join(PUBLIC_ROOT, asset.id)),
       glob: '**/*',
-      expectedFileCount: files.length,
+      expectedFileCount: files.length + originals.length,
       sourceId: asset.id,
       permission: asset.permission,
       publicUse: true,
       derivative: true,
       manifest: repositoryPath(manifestPath),
-      download: asset.publicRelease.download === true,
+      download: originals.length > 0,
       pageIds:
         asset.assetType === 'image'
           ? [
@@ -881,10 +870,10 @@ const library = {
     formats: ['avif', 'webp'],
     responsiveWidths: RESPONSIVE_WIDTHS,
     thumbnailWidth: THUMB_WIDTH,
-    segmentHeight: SEGMENT_HEIGHT,
+    segmentation: 'disabled',
     maxDerivativePixels: MAX_DERIVATIVE_PIXELS,
     exifPolicy: 'stripped',
-    originalPolicy: 'never-copied-when-download-false',
+    originalPolicy: 'copied-for-authorized-image-and-docx-embedded-media',
   },
   indexPage: {
     id: VISUAL_INDEX_ID,
@@ -908,7 +897,7 @@ const library = {
     ),
     longImages: allItems.filter((item) => item.longImage).length,
     downloadsAllowed: allItems.filter((item) => item.downloadAllowed).length,
-    sourceOriginalsCopied: 0,
+    sourceOriginalsCopied: allItems.filter((item) => item.original).length,
   },
 }
 await writeFile(LIBRARY_PATH, stableJson(library), 'utf8')
@@ -925,6 +914,8 @@ await collectFiles(PUBLIC_ROOT)
 const totalBytes = (
   await Promise.all(publicFiles.map((file) => stat(file)))
 ).reduce((total, metadata) => total + metadata.size, 0)
+
+await rm(BUILD_STATE_PATH, { force: true })
 
 console.log(
   `Media library generated: ${library.summary.libraryItems} items, ${library.summary.derivativeFiles} derivatives, ${library.summary.longImages} long images, ${(totalBytes / 1024 / 1024).toFixed(2)} MiB.`,

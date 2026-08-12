@@ -27,17 +27,21 @@
     "headings": 0,
     "tables": 0,
     "drawings": 0,
+    "inlineDrawings": 0,
+    "floatingDrawings": 0,
+    "drawingParts": [],
     "media": 0,
     "footnotes": 0,
     "footnotesPresent": true,
     "formulas": 0,
-    "embeddedObjects": 0
+    "embeddedObjects": 0,
+    "tableCellDrawings": 0
   },
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/internal/project-plan/review.md",
-      "sha256": "fe64e2bd6ea35a40bfa29e6dae5bac72e6dbd88b0e0607bdfc274fd4d07109e8",
-      "bytes": 3714
+      "sha256": "efd1a5b190edc0ddf0c7a186b5127161388a3bda9bcd2bac05ccac5423d56164",
+      "bytes": 6907
     },
     "quarantine": {
       "path": "content/imports/docx/internal/project-plan/quarantine.json",

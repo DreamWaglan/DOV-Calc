@@ -26,7 +26,7 @@ function scopeFor(asset) {
       asset: true,
       searchIndex: true,
       sitemap: true,
-      download: false,
+      download: true,
       derivative: true,
       structuredData: false,
     }
@@ -44,7 +44,7 @@ function scopeFor(asset) {
 
 function deniedScopesFor(asset) {
   if (internalOnlyIds.has(asset.id)) return [...PUBLIC_RELEASE_FIELDS]
-  if (asset.assetType === 'image') return ['body', 'download', 'structuredData']
+  if (asset.assetType === 'image') return ['body', 'structuredData']
   return ['asset', 'download']
 }
 
@@ -56,7 +56,7 @@ function restrictionsFor(asset) {
     ]
   }
   return [
-    '不提供原始 DOCX、XLSX 或高清原图下载。',
+    '不提供原始 DOCX 或 XLSX 文件下载；独立图片和 DOCX 内嵌媒体可按 Wiki 上下文查看和下载。',
     '不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。',
     '作者姓名、授权期限或署名要求未在现有资料中提供时不得虚构。',
   ]
@@ -105,7 +105,7 @@ inventory.assets = inventory.assets.map((asset) => {
     status: 'approved',
     owners: [
       {
-        name: 'DOV-Calc 内容维护组',
+        name: '拂晓凤栖攻略组',
         role: '内容保管责任角色',
       },
     ],
@@ -115,7 +115,7 @@ inventory.assets = inventory.assets.map((asset) => {
         role: '版权/来源责任人',
       },
       {
-        name: 'DOV-Calc 事实审核组',
+        name: '暂无',
         role: '事实审核人',
       },
       {
@@ -130,7 +130,7 @@ inventory.assets = inventory.assets.map((asset) => {
     publicRelease: derivePublicRelease(updated).publicRelease,
     notes: internalOnlyIds.has(asset.id)
       ? '授权证据已登记；该文件按内部治理/模板处置，不进入公开构建。'
-      : '授权证据和逐出口范围已登记；原始文件下载保持关闭。',
+      : '授权证据和逐出口范围已登记；独立图片与 DOCX 内嵌媒体原始字节可在 Wiki 上下文中公开。',
   }
 })
 

@@ -11,10 +11,10 @@ sourceUpdatedAt: "2026-07-17"
 verifiedAt: "2026-07-30"
 status: current
 authors:
-  - name: DOV-Calc 内容维护组
+  - name: 拂晓凤栖攻略组
     role: 授权资料迁移编辑
 reviewers:
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 进阶内容事实审核
 sources:
   - title: "7.3 无尽海域配队思路.docx"
@@ -24,7 +24,7 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
+    notes: 已迁移授权正文；原始 DOCX 文件不开放下载，已授权的 DOCX 内嵌原图可在正文显示并下载。
 tags: ["无尽海域","PVE","配队"]
 related: ["combat-endless-sea-basics","combat-endless-sea-mechanics","combat-endless-sea-team-building","media-source-51475ba227c9"]
 ---

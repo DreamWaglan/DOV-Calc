@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises'
+import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import {
@@ -10,6 +10,19 @@ import {
 
 const failures = []
 const invariants = []
+const mediaBuildStatePath = path.join(
+  root,
+  '.omx',
+  'media-library-build.json',
+)
+let mediaBuildStateClean = true
+
+try {
+  await access(mediaBuildStatePath)
+  mediaBuildStateClean = false
+} catch (error) {
+  if (error?.code !== 'ENOENT') throw error
+}
 
 async function loadJson(relativePath) {
   return JSON.parse(await readFile(path.join(root, relativePath), 'utf8'))
@@ -37,6 +50,7 @@ const [
   formulas,
   xlsxImport,
   mediaLibrary,
+  mediaPlacement,
   pageReviews,
   schema,
   provenance,
@@ -59,6 +73,7 @@ const [
   loadJson('content/reports/formulas.json'),
   loadJson('content/reports/xlsx-import.json'),
   loadJson('content/reports/media-library.json'),
+  loadJson('content/reports/media-placement.json'),
   loadJson('content/reports/page-reviews.json'),
   loadJson('content/reports/content-schema.json'),
   loadJson('content/reports/content-provenance.json'),
@@ -167,11 +182,23 @@ record(
     mediaLibrary.summary?.libraryItems === 600 &&
     mediaLibrary.summary?.verifiedFiles ===
       mediaLibrary.summary?.derivativeFiles &&
-    mediaLibrary.summary?.sourceOriginalsCopied === 0,
+    mediaLibrary.summary?.verifiedOriginals === 600 &&
+    mediaLibrary.summary?.verifiedStandaloneSourceBytes === 15 &&
+    mediaLibrary.summary?.verifiedDocxPackageMedia === 585 &&
+    mediaLibrary.summary?.sourceOriginalsCopied === 600 &&
+    mediaLibrary.summary?.downloadsAllowed === 600 &&
+    mediaLibrary.summary?.unmanagedPublicFiles === 0 &&
+    mediaLibrary.summary?.missingManifestFiles === 0 &&
+    mediaLibrary.summary?.buildStateClean === true &&
+    mediaBuildStateClean &&
+    failureCount(mediaPlacement) === 0 &&
+    mediaPlacement.summary?.contentMediaOccurrences === 977 &&
+    mediaPlacement.summary?.renderedOccurrences === 977,
   [
     'content/reports/document-structures.json',
     'content/reports/formulas.json',
     'content/reports/media-library.json',
+    'content/reports/media-placement.json',
   ],
   {
     contentDocxSources: documentStructures.summary?.contentDocxSources,
@@ -179,6 +206,13 @@ record(
     formulas: formulas.summary?.formulas,
     libraryItems: mediaLibrary.summary?.libraryItems,
     derivativeFiles: mediaLibrary.summary?.derivativeFiles,
+    verifiedOriginals: mediaLibrary.summary?.verifiedOriginals,
+    verifiedStandaloneSourceBytes:
+      mediaLibrary.summary?.verifiedStandaloneSourceBytes,
+    verifiedDocxPackageMedia: mediaLibrary.summary?.verifiedDocxPackageMedia,
+    unmanagedPublicFiles: mediaLibrary.summary?.unmanagedPublicFiles,
+    mediaBuildStateClean,
+    renderedOccurrences: mediaPlacement.summary?.renderedOccurrences,
   },
 )
 

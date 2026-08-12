@@ -24,49 +24,21 @@ sources:
     publicUse:
       body: false
       asset: true
-    notes: 仅发布授权范围内的响应式派生图；原始文件不对外提供。
+    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。
 tags: ["图片资料","一图流","响应式图片"]
 related: ["topic-visual-guides-index","start-new-account","start-first-week"]
 ---
 
 # 1-性能优化小开关教程260107
 
-> [!INFO] 授权与原始文件范围
-> 本页只展示经授权生成的 AVIF/WebP 派生图。原始图片不对外提供。
-
-## 分段目录
-
-- [第 1 段](#wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-01)
-- [第 2 段](#wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-02)
-
-## 第 1 段
+## 原图
 
 <ResponsiveMedia
-  media-id="wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-01"
-  alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="1-性能优化小开关教程260107.png"
-  version="2026-07-18"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-20f9c608ccbe/segment-01-0480.avif","width":480},{"path":"/wiki-media/src-20f9c608ccbe/segment-01-0497.avif","width":497}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-20f9c608ccbe/segment-01-0480.webp","width":480},{"path":"/wiki-media/src-20f9c608ccbe/segment-01-0497.webp","width":497}]}]'
-  fallback-path="/wiki-media/src-20f9c608ccbe/segment-01-0497.webp"
+  media-id="wiki-image-535de403c141b977-original"
+  alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明"
+  display-mode="viewer"
+  :variants='[]'
+  fallback-path="/wiki-media/src-20f9c608ccbe/original.png"
   :width="497"
-  :height="3200"
-  :download-allowed="false"
-/>
-
-## 第 2 段
-
-<ResponsiveMedia
-  media-id="wiki-image-535de403c141b977-5badfddbc9d1a6d7-segment-02"
-  alt="1-性能优化小开关教程260107一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="1-性能优化小开关教程260107；版本日期 2026-07-18。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="1-性能优化小开关教程260107.png"
-  version="2026-07-18"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-20f9c608ccbe/segment-02-0480.avif","width":480},{"path":"/wiki-media/src-20f9c608ccbe/segment-02-0497.avif","width":497}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-20f9c608ccbe/segment-02-0480.webp","width":480},{"path":"/wiki-media/src-20f9c608ccbe/segment-02-0497.webp","width":497}]}]'
-  fallback-path="/wiki-media/src-20f9c608ccbe/segment-02-0497.webp"
-  :width="497"
-  :height="126"
-  :download-allowed="false"
+  :height="3326"
 />

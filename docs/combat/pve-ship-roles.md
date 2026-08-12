@@ -11,10 +11,10 @@ sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
 status: current
 authors:
-  - name: DOV-Calc 内容维护组
+  - name: 拂晓凤栖攻略组
     role: 授权资料迁移编辑
 reviewers:
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 核心阅读路径事实审核
 sources:
   - title: "6.3 给萌新的PVE配队思路.docx"
@@ -24,23 +24,25 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
+    notes: 已迁移授权正文；原始 DOCX 文件不开放下载，已授权的 DOCX 内嵌原图可在正文显示并下载。
 tags: ["PVE","舰灵职责","治疗","输出"]
 related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-selection","media-source-94e76e4522b1"]
 ---
 # PVE 配队二：常用舰灵职责
-> [!INFO] 来源说明
-> 本页正文来自已登记授权资料；仅开放网页正文，不提供原始 DOCX 下载。
-
 ## 二、我方常用舰灵
+<!-- source-body:31:src-94e76e4522b1:heading:d29843bb8853e04f:paragraph -->
 
 对于萌新而言，了解我能用什么舰灵也是比较重要的一件事。本节列出常用舰灵供参考，实际通关时可选择表外舰灵，不做限制。
+<!-- source-body:32:src-94e76e4522b1:paragraph:7739cd2607ddcf46:paragraph -->
 
 我方常用舰灵可分别为前排自奶舰灵，后排奶舰灵，前排AOE舰灵，后排强力拐与输出舰灵等，下表尽量列出萌新易获取的舰灵的作用。
+<!-- source-body:33:src-94e76e4522b1:paragraph:7838a03ea6413999:paragraph -->
 
 ### （一）前排自奶舰灵
+<!-- source-body:34:src-94e76e4522b1:heading:93f70945e14eaa15:paragraph -->
 
 表 前排自奶舰灵
+<!-- source-body:35:src-94e76e4522b1:paragraph:19bcc11d9b80a0ac:paragraph -->
 
 | 名称 | 获取方式 | 奶量 |
 | --- | --- | --- |
@@ -52,12 +54,16 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 | 新奥尔良 | 2-5、2-3H开始可打捞，活动与档案可打捞，常规调遣与建造 | 28S cd 回复10%血量，少量 |
 | 唐斯 | 白卡随处可见 | 22S cd 回复15%血量，中等，但本体血量太少，实际回血量低 |
 | 卡约·杜伊利奥 | 档案打捞 | 32S cd 持续秒每秒回复2%血量同时攻击伤害减免+20%，少量；天赋每秒回复5%血量，中等 |
+<!-- source-body:36:src-94e76e4522b1:table:980e1627fa0fcf3e:table -->
 
 此外，部分限定舰灵如明尼、光辉、企业、沙恩、利托、卡约、重庆、逸仙、布列尼塔、火力、甘古特、恰巴耶夫、独立、蒙彼利埃均存在自回。由于属于限定舰灵，本处不列出具体回血额度，如果已拿到舰灵，请自行查看。
+<!-- source-body:37:src-94e76e4522b1:paragraph:665acd4f0ee7785d:paragraph -->
 
 ### （二）后排奶舰灵
+<!-- source-body:38:src-94e76e4522b1:heading:f92b9371102bc787:paragraph -->
 
 表3 后排奶舰灵
+<!-- source-body:39:src-94e76e4522b1:paragraph:20322c6c46f854ac:paragraph -->
 
 | 名称 | 获取方式 | 奶量 |
 | --- | --- | --- |
@@ -68,12 +74,16 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 | 镇海 | 主线19-5、19-3H打捞 | 20S cd，进行次对前排最低血量单位5%血量回复，分别判定，少量 |
 | 独角兽 | 主线19-10、19-5H打捞 | 13S cd，前排持续10S每秒回复1% 群奶，少量 |
 | 卡约·杜伊利奥 | 档案打捞 | 21S cd，前排每秒回复1%，持续6S 群奶，少量 |
+<!-- source-body:40:src-94e76e4522b1:table:65603e47b64ce258:table -->
 
 此处还有限定奶：阿瑞托莎（后排群体奶），杰维斯（后排群体奶+机动），女灶神（大量奶），火力（暴击才能回血），白雪（仅对四雪回血）如果拿到了再进行考虑。
+<!-- source-body:41:src-94e76e4522b1:paragraph:2c8c1f4f3eca08a4:paragraph -->
 
 ### （三）前排高AOE舰灵
+<!-- source-body:42:src-94e76e4522b1:heading:218b8c7914be5d6e:paragraph -->
 
 表 前排高AOE舰灵
+<!-- source-body:43:src-94e76e4522b1:paragraph:e398c383bbef945a:paragraph -->
 
 | 名称 | 获得方式 | AOE力度 |
 | --- | --- | --- |
@@ -89,10 +99,15 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 | 重庆 | 限时活动打捞 | 20S 扇形AOE |
 | 逸仙 | 限时活动打捞 | 24S激光 |
 | 威尔士亲王 | 档案打捞 | 36S激光 |
+<!-- source-body:44:src-94e76e4522b1:table:2cf8a43e446180e9:table -->
 
 ### （四）后排拐与部分强力输出
+<!-- source-body:45:src-94e76e4522b1:heading:691a69118f12f5ba:paragraph -->
+
+<!-- source-body:46:src-94e76e4522b1:paragraph:88741bdfeff60ab5:paragraph -->
 
 表 后排拐与部分强力输出舰灵
+<!-- source-body:47:src-94e76e4522b1:paragraph:94597b7403a52572:paragraph -->
 
 | 名称 | 获得方式 | 功能 |
 | --- | --- | --- |
@@ -116,8 +131,13 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 | 约克城 | 档案打捞 | 支援技高鱼雷伤 |
 | 凌波 | 主线11-5、14-5、11-3H、14-3H打捞 | 支援技短cd鱼雷，改造后输出更高 |
 | 萨拉托加 | 建造，常规调遣 | 支援技前排航系增伤 |
+<!-- source-body:48:src-94e76e4522b1:table:6d089109b620f8fe:table -->
 
 本处列出均为常驻舰灵，如果有限定舰灵会在后续章节提及。
+<!-- source-body:49:src-94e76e4522b1:paragraph:a65db3a512b982d8:paragraph -->
 
 注：谢菲尔德（支援技cd短），敦刻尔克（对中重甲高伤），维内托（支援技加暴击且高伤），鹰（后排高伤鱼雷机），大淀（支援技增伤与加命中），初雪（穿甲弹，支援技cd短带减甲），企业（支援技给敌方上减抗），苍龙（支援技给敌方上减抗），伊丽莎白女王（支援技高伤）等也为不错的后排
+<!-- source-body:50:src-94e76e4522b1:paragraph:9b32c026ffa93d9b:paragraph -->
+
+<!-- source-body:51:src-94e76e4522b1:paragraph:e1bc249e581cf951:paragraph -->
 下一章：[初步配队与微调](./pve-team-practice)。

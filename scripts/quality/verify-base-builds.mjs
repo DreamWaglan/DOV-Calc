@@ -19,6 +19,7 @@ import {
   root,
   writeReport,
 } from '../content/lib/content-utils.mjs'
+import { launchBrowser } from './lib/browser-launch.mjs'
 
 const vitepressCli = path.join(
   root,
@@ -244,9 +245,10 @@ try {
   if (!browserPath) {
     failures.push('dual-base browser checks: no Chromium browser was found')
   } else {
-    chromium = await puppeteer.launch({
+    const browserProfile = path.join(tempRoot, 'browser-profile')
+    chromium = await launchBrowser(puppeteer, {
       executablePath: browserPath,
-      headless: true,
+      userDataDir: browserProfile,
       args: ['--no-sandbox', '--disable-gpu'],
     })
   }
@@ -502,7 +504,12 @@ try {
   }
 } finally {
   await chromium?.close()
-  await rm(tempRoot, { recursive: true, force: true })
+  await rm(tempRoot, {
+    recursive: true,
+    force: true,
+    maxRetries: 20,
+    retryDelay: 250,
+  })
 }
 
 const reportPath = await writeReport('base-builds', {

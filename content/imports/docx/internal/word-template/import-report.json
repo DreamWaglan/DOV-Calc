@@ -27,17 +27,29 @@
     "headings": 5,
     "tables": 1,
     "drawings": 3,
+    "inlineDrawings": 3,
+    "floatingDrawings": 0,
+    "drawingParts": [
+      {
+        "part": "word/document.xml",
+        "kind": "body",
+        "drawings": 3,
+        "inlineDrawings": 3,
+        "floatingDrawings": 0
+      }
+    ],
     "media": 3,
     "footnotes": 0,
     "footnotesPresent": true,
     "formulas": 0,
-    "embeddedObjects": 0
+    "embeddedObjects": 0,
+    "tableCellDrawings": 0
   },
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/internal/word-template/review.md",
-      "sha256": "de5dfb3569e8afab75694132e284628d5115ad5fc4642092cbde433c56250267",
-      "bytes": 5668
+      "sha256": "65b1dd53fd639f9d21d8ac318ec9240514f0c3d0440a435f6394a3f1953bcb40",
+      "bytes": 9159
     },
     "quarantine": {
       "path": "content/imports/docx/internal/word-template/quarantine.json",
@@ -635,6 +647,9 @@
     {
       "sourceAssetId": "src-6d7a8eecd6bb",
       "sourceRelationId": "src-6d7a8eecd6bb:relation:519f5fe0460e592b",
+      "occurrenceId": "src-6d7a8eecd6bb:relation:519f5fe0460e592b",
+      "placementId": "src-6d7a8eecd6bb:placement:ed23644c2157be2c",
+      "sourceElementId": "src-6d7a8eecd6bb:media:2a264b8004704ffb",
       "sourcePosition": {
         "part": "word/document.xml",
         "drawingIndex": 1,
@@ -642,14 +657,53 @@
       },
       "relationshipId": "rId7",
       "relationshipTarget": "word/media/image1.png",
+      "relationshipOrdinal": 1,
+      "drawingOrdinal": 1,
+      "partOrdinal": 1,
+      "bodyOrdinal": 1,
+      "placementKind": "inline",
+      "extent": {
+        "widthEmu": 4145654,
+        "heightEmu": 2158212
+      },
       "targetMediaElementId": "src-6d7a8eecd6bb:media:2a264b8004704ffb",
       "resolution": "media",
       "disposition": "merged",
-      "reason": "Drawing relationship resolves to a registered DOCX media element."
+      "reason": "Drawing relationship resolves to a registered DOCX media element.",
+      "placement": {
+        "placementId": "src-6d7a8eecd6bb:placement:ed23644c2157be2c",
+        "occurrenceId": "src-6d7a8eecd6bb:relation:519f5fe0460e592b",
+        "sourceElementId": "src-6d7a8eecd6bb:media:2a264b8004704ffb",
+        "part": "word/document.xml",
+        "partKind": "body",
+        "relationshipId": "rId7",
+        "relationshipOrdinal": 1,
+        "drawingOrdinal": 1,
+        "partOrdinal": 1,
+        "bodyOrdinal": 1,
+        "pageId": null,
+        "pageIds": [],
+        "anchor": {
+          "sourceElementId": "src-6d7a8eecd6bb:paragraph:2fdc6d2c5b74cd3a",
+          "bodyIndex": 12,
+          "elementType": "paragraph",
+          "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "slot": "inline-after-anchor",
+        "placementKind": "inline",
+        "extent": {
+          "widthEmu": 4145654,
+          "heightEmu": 2158212
+        }
+      },
+      "diagnostics": []
     },
     {
       "sourceAssetId": "src-6d7a8eecd6bb",
       "sourceRelationId": "src-6d7a8eecd6bb:relation:9a6f62f800f8eae7",
+      "occurrenceId": "src-6d7a8eecd6bb:relation:9a6f62f800f8eae7",
+      "placementId": "src-6d7a8eecd6bb:placement:6e3c7de7ed35288f",
+      "sourceElementId": "src-6d7a8eecd6bb:media:30484c07fa96c428",
       "sourcePosition": {
         "part": "word/document.xml",
         "drawingIndex": 2,
@@ -657,14 +711,53 @@
       },
       "relationshipId": "rId8",
       "relationshipTarget": "word/media/image2.png",
+      "relationshipOrdinal": 1,
+      "drawingOrdinal": 2,
+      "partOrdinal": 2,
+      "bodyOrdinal": 1,
+      "placementKind": "inline",
+      "extent": {
+        "widthEmu": 5580380,
+        "heightEmu": 3228975
+      },
       "targetMediaElementId": "src-6d7a8eecd6bb:media:30484c07fa96c428",
       "resolution": "media",
       "disposition": "merged",
-      "reason": "Drawing relationship resolves to a registered DOCX media element."
+      "reason": "Drawing relationship resolves to a registered DOCX media element.",
+      "placement": {
+        "placementId": "src-6d7a8eecd6bb:placement:6e3c7de7ed35288f",
+        "occurrenceId": "src-6d7a8eecd6bb:relation:9a6f62f800f8eae7",
+        "sourceElementId": "src-6d7a8eecd6bb:media:30484c07fa96c428",
+        "part": "word/document.xml",
+        "partKind": "body",
+        "relationshipId": "rId8",
+        "relationshipOrdinal": 1,
+        "drawingOrdinal": 2,
+        "partOrdinal": 2,
+        "bodyOrdinal": 1,
+        "pageId": null,
+        "pageIds": [],
+        "anchor": {
+          "sourceElementId": "src-6d7a8eecd6bb:paragraph:96dac21167343405",
+          "bodyIndex": 15,
+          "elementType": "paragraph",
+          "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "slot": "inline-after-anchor",
+        "placementKind": "inline",
+        "extent": {
+          "widthEmu": 5580380,
+          "heightEmu": 3228975
+        }
+      },
+      "diagnostics": []
     },
     {
       "sourceAssetId": "src-6d7a8eecd6bb",
       "sourceRelationId": "src-6d7a8eecd6bb:relation:aa5486274e21c6b2",
+      "occurrenceId": "src-6d7a8eecd6bb:relation:aa5486274e21c6b2",
+      "placementId": "src-6d7a8eecd6bb:placement:bc77a88e8ac6d8be",
+      "sourceElementId": "src-6d7a8eecd6bb:media:dc56e120d3e59897",
       "sourcePosition": {
         "part": "word/document.xml",
         "drawingIndex": 3,
@@ -672,10 +765,46 @@
       },
       "relationshipId": "rId9",
       "relationshipTarget": "word/media/image3.png",
+      "relationshipOrdinal": 1,
+      "drawingOrdinal": 3,
+      "partOrdinal": 3,
+      "bodyOrdinal": 1,
+      "placementKind": "inline",
+      "extent": {
+        "widthEmu": 4695825,
+        "heightEmu": 1314450
+      },
       "targetMediaElementId": "src-6d7a8eecd6bb:media:dc56e120d3e59897",
       "resolution": "media",
       "disposition": "merged",
-      "reason": "Drawing relationship resolves to a registered DOCX media element."
+      "reason": "Drawing relationship resolves to a registered DOCX media element.",
+      "placement": {
+        "placementId": "src-6d7a8eecd6bb:placement:bc77a88e8ac6d8be",
+        "occurrenceId": "src-6d7a8eecd6bb:relation:aa5486274e21c6b2",
+        "sourceElementId": "src-6d7a8eecd6bb:media:dc56e120d3e59897",
+        "part": "word/document.xml",
+        "partKind": "body",
+        "relationshipId": "rId9",
+        "relationshipOrdinal": 1,
+        "drawingOrdinal": 3,
+        "partOrdinal": 3,
+        "bodyOrdinal": 1,
+        "pageId": null,
+        "pageIds": [],
+        "anchor": {
+          "sourceElementId": "src-6d7a8eecd6bb:paragraph:8ea0758c30e6d7f2",
+          "bodyIndex": 35,
+          "elementType": "paragraph",
+          "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "slot": "inline-after-anchor",
+        "placementKind": "inline",
+        "extent": {
+          "widthEmu": 4695825,
+          "heightEmu": 1314450
+        }
+      },
+      "diagnostics": []
     }
   ]
 }

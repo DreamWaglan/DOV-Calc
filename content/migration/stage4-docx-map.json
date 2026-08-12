@@ -13,11 +13,23 @@
         "headings": 79,
         "tables": 82,
         "drawings": 490,
+        "inlineDrawings": 490,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 490,
+            "inlineDrawings": 490,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 119,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 474
       },
       "headingOutline": [
         {
@@ -297,11 +309,23 @@
         "headings": 41,
         "tables": 17,
         "drawings": 69,
+        "inlineDrawings": 69,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 69,
+            "inlineDrawings": 69,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 58,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 55
       },
       "headingOutline": [
         {
@@ -505,11 +529,23 @@
         "headings": 28,
         "tables": 1,
         "drawings": 13,
+        "inlineDrawings": 13,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 13,
+            "inlineDrawings": 13,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 13,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [
         {
@@ -661,11 +697,23 @@
         "headings": 86,
         "tables": 49,
         "drawings": 222,
+        "inlineDrawings": 222,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 222,
+            "inlineDrawings": 222,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 223,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 24,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 152
       },
       "headingOutline": [
         {
@@ -951,11 +999,23 @@
         "headings": 0,
         "tables": 0,
         "drawings": 37,
+        "inlineDrawings": 37,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 37,
+            "inlineDrawings": 37,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 37,
         "footnotes": 0,
         "footnotesPresent": false,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [],
       "suggestedPageId": "topic-laguz",

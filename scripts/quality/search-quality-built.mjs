@@ -1,5 +1,6 @@
 import { spawn } from 'node:child_process'
-import { access, readFile, readdir } from 'node:fs/promises'
+import { access, mkdtemp, readFile, readdir, rm } from 'node:fs/promises'
+import os from 'node:os'
 import path from 'node:path'
 import process from 'node:process'
 import puppeteer from 'puppeteer-core'
@@ -8,6 +9,7 @@ import {
   root,
   writeReport,
 } from '../content/lib/content-utils.mjs'
+import { launchBrowser } from './lib/browser-launch.mjs'
 
 const fixturePath = path.join(
   root,
@@ -172,13 +174,17 @@ preview.stderr.on('data', (chunk) => {
 })
 
 let browser
+let browserProfile
 const queryResults = []
 const noResultChecks = []
 try {
   await waitForPreview(routeUrl('/'))
-  browser = await puppeteer.launch({
+  browserProfile = await mkdtemp(
+    path.join(os.tmpdir(), 'dov-wiki-search-browser-'),
+  )
+  browser = await launchBrowser(puppeteer, {
     executablePath: browserPath,
-    headless: true,
+    userDataDir: browserProfile,
     args: ['--no-sandbox', '--disable-gpu'],
   })
   const page = await browser.newPage()
@@ -300,6 +306,22 @@ try {
 } finally {
   await browser?.close()
   preview.kill()
+  if (browserProfile) {
+    try {
+      await rm(browserProfile, {
+        recursive: true,
+        force: true,
+        maxRetries: 20,
+        retryDelay: 250,
+      })
+    } catch (error) {
+      failures.push(
+        `browser profile cleanup failed: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      )
+    }
+  }
 }
 
 const topFivePassCount = queryResults.filter((item) => item.topFivePassed).length

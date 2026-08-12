@@ -14,7 +14,6 @@ import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const MAX_DERIVATIVE_PIXELS = 4_500_000
 const MAX_SOURCE_PIXELS = 50_000_000
-const SEGMENT_HEIGHT = 4000
 const THUMB_WIDTH = 360
 
 function sha256(data) {
@@ -90,32 +89,25 @@ export async function processImage({
       maxPixels: MAX_DERIVATIVE_PIXELS,
     })
 
-    const segmentCount = Math.ceil(metadata.height / SEGMENT_HEIGHT)
-    for (let index = 0; index < segmentCount; index += 1) {
-      const top = index * SEGMENT_HEIGHT
-      const height = Math.min(SEGMENT_HEIGHT, metadata.height - top)
-      const width = constrainedWidth(metadata.width, height, metadata.width)
-      const segmentPath = path.join(
-        absoluteOutputDir,
-        `segment-${String(index + 1).padStart(2, '0')}.webp`,
-      )
-      const segmentBuffer = await sharp(absoluteSourcePath, {
-        limitInputPixels: MAX_SOURCE_PIXELS,
-      })
-        .extract({ left: 0, top, width: metadata.width, height })
-        .resize({ width, withoutEnlargement: true })
-        .webp({ quality: 88 })
-        .toBuffer()
-      const segment = await writeWebp(segmentBuffer, segmentPath)
-      derivatives.push({
-        kind: 'segment',
-        index: index + 1,
-        sourceCrop: { left: 0, top, width: metadata.width, height },
-        path: path.relative(process.cwd(), segmentPath).split(path.sep).join('/'),
-        ...segment,
-        maxPixels: MAX_DERIVATIVE_PIXELS,
-      })
-    }
+    const previewWidth = constrainedWidth(
+      metadata.width,
+      metadata.height,
+      metadata.width,
+    )
+    const previewPath = path.join(absoluteOutputDir, 'preview.webp')
+    const previewBuffer = await sharp(absoluteSourcePath, {
+      limitInputPixels: MAX_SOURCE_PIXELS,
+    })
+      .resize({ width: previewWidth, withoutEnlargement: true })
+      .webp({ quality: 88 })
+      .toBuffer()
+    const preview = await writeWebp(previewBuffer, previewPath)
+    derivatives.push({
+      kind: 'preview',
+      path: path.relative(process.cwd(), previewPath).split(path.sep).join('/'),
+      ...preview,
+      maxPixels: MAX_DERIVATIVE_PIXELS,
+    })
   }
 
   const manifest = {
@@ -146,7 +138,7 @@ export async function processImage({
       format: 'webp',
       maxDerivativePixels: MAX_DERIVATIVE_PIXELS,
       maxSourcePixels: MAX_SOURCE_PIXELS,
-      segmentHeight: SEGMENT_HEIGHT,
+      segmentation: 'disabled',
     },
     derivatives,
   }

@@ -14,7 +14,7 @@ authors:
   - name: DOV-Calc 内容组
     role: PVE 速查编辑
 reviewers:
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 角色与版本审核
 sources:
   - title: 拂晓 TapTap 官方论坛

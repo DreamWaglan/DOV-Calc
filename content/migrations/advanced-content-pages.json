@@ -4,9 +4,9 @@
   "sources": [
     {
       "sourceAssetId": "src-7d080e8d651b",
-      "sourceBodySha256": "34d74fe7aa1082dc50838a076a9209d848d0fe621fc0382b52c0e03e7b47eb2a",
-      "sourceChars": 17560,
-      "coveredChars": 17560,
+      "sourceBodySha256": "17a3cbbb2c6ab75c0509a61e63bf97667fa4727b003d83670a8e662edd07ba13",
+      "sourceChars": 186826,
+      "coveredChars": 186826,
       "pages": [
         {
           "pageId": "combat-pvp-fundamentals",
@@ -15,7 +15,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 3162
+            "end": 11144
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -23,9 +23,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "bf1da7b45263f064276feed6654f79d983bb362ffc9ee458f074108266579a70",
-          "sourceChars": 3162,
-          "outputSha256": "2c0ad76cfad37ba94b91bc0b234ae83382006434df3bb03b6aaa8e0a58c2b07c"
+          "sourceSliceSha256": "e86de7a1ba5a3a6ed5f9488efa314a189fcac6e63d0d51a472811408f60d44cc",
+          "sourceChars": 11144,
+          "outputSha256": "2abdb30f16bbc52af6da98d4796045c7147a138eebd4dcd290b6f145f64ddb3a"
         },
         {
           "pageId": "combat-pvp-rules-and-fleet",
@@ -33,8 +33,8 @@
           "route": "/combat/pvp-rules-and-fleet",
           "status": "current",
           "sourceRange": {
-            "start": 3162,
-            "end": 5560
+            "start": 11144,
+            "end": 19495
           },
           "sourceElementRange": {
             "bodyIndexStart": 104,
@@ -42,9 +42,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 4
           },
-          "sourceSliceSha256": "e5bb983524ca09c07141927306edcffb76cb895c9e705f0ed152b05ca0666698",
-          "sourceChars": 2398,
-          "outputSha256": "b8267c5b69dd5dd9a19c5fbce79623506a62f324e16ff48cac9017f52f6c8de4"
+          "sourceSliceSha256": "a70c54977772011380854551bc22881f53b619149216a767889ff0f56073e3d5",
+          "sourceChars": 8351,
+          "outputSha256": "1d2dd51b062ea913cc3de7383acbceb8b3611c61096708bf94683ccbc78344ac"
         },
         {
           "pageId": "combat-pvp-reference-teams",
@@ -52,8 +52,8 @@
           "route": "/combat/pvp-reference-teams",
           "status": "current",
           "sourceRange": {
-            "start": 5560,
-            "end": 17560
+            "start": 19495,
+            "end": 186826
           },
           "sourceElementRange": {
             "bodyIndexStart": 180,
@@ -61,17 +61,17 @@
             "tableIndexStart": 4,
             "tableIndexEndExclusive": 83
           },
-          "sourceSliceSha256": "fbf4b12a7211d305de4d1d8aec481ed9ddcc5fde24ee7fdbe121299423a13a35",
-          "sourceChars": 12000,
-          "outputSha256": "52f21de580ad555ebba9d6307889ee711862eaa4487a7ac43c961354d4f7ed05"
+          "sourceSliceSha256": "eb1df67950ef527b03f60169892e000ca1bbdae9aed6c791af9680cdb876ea1a",
+          "sourceChars": 167331,
+          "outputSha256": "eb508decbc9639de8959f5ac2719ea6a7931338af11e093ba5a19b9267ae7a5a"
         }
       ]
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
-      "sourceBodySha256": "e1ea561ae2721c25e0bc457a761b72bb8d7f3061ce97b5b01a296afe97700835",
-      "sourceChars": 9895,
-      "coveredChars": 9895,
+      "sourceBodySha256": "f3beeca66fcf6a6ec1e8edec1b2ebdddeb3366a678303b520097a46e1d506bfc",
+      "sourceChars": 49537,
+      "coveredChars": 49537,
       "pages": [
         {
           "pageId": "combat-encounter-overview",
@@ -80,7 +80,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 241
+            "end": 625
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -88,9 +88,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "74f5cf304c253e6b2318b5541e025a2ebdaed12b8c67881fda05a785eb41b59c",
-          "sourceChars": 241,
-          "outputSha256": "56c825b2a96663b27a16200afed900e2542a5a881e45e108ecba50597520a643"
+          "sourceSliceSha256": "b06c90f1464edc21acc89e5d78ff1543f466023c8be92837d068e5ad370b0f68",
+          "sourceChars": 625,
+          "outputSha256": "eb32699f1a6b405da8bee63ec53d86de9c946e17683566881aa362a8625b54e5"
         },
         {
           "pageId": "combat-encounter-preparation",
@@ -98,8 +98,8 @@
           "route": "/combat/encounter-preparation",
           "status": "current",
           "sourceRange": {
-            "start": 241,
-            "end": 6771
+            "start": 625,
+            "end": 34321
           },
           "sourceElementRange": {
             "bodyIndexStart": 6,
@@ -107,9 +107,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 18
           },
-          "sourceSliceSha256": "b8b783921890787c63291e7f7e34ac5155574ee90a80febf6b98ab231a7dee1c",
-          "sourceChars": 6530,
-          "outputSha256": "2e06ece809c00c87993dce26bdaa68a8e5772a23881080a375f9e880cf7fa4ab"
+          "sourceSliceSha256": "31b71b498afd1d80458be10cf819353687f67854e1713a333c38faa069a85988",
+          "sourceChars": 33696,
+          "outputSha256": "f144b65c9298593fadb8ae3c2f8c4f7c14ff809fedabc177d8d91713f96df841"
         },
         {
           "pageId": "combat-encounter-practice",
@@ -117,8 +117,8 @@
           "route": "/combat/encounter-practice",
           "status": "current",
           "sourceRange": {
-            "start": 6771,
-            "end": 7961
+            "start": 34321,
+            "end": 37488
           },
           "sourceElementRange": {
             "bodyIndexStart": 205,
@@ -126,9 +126,9 @@
             "tableIndexStart": 18,
             "tableIndexEndExclusive": 18
           },
-          "sourceSliceSha256": "f56127b2e53e0b86e76441b44b7e883b9e1d697a82addfc0ab133cc43543b4b1",
-          "sourceChars": 1190,
-          "outputSha256": "a8b2973a8d6cbfd86ee34af120917d5cc8bd4daa2f1f247c669e68d8fc98db3e"
+          "sourceSliceSha256": "8e62c319a58e26bb2b4352ffb5204b38b2977911f98dead6fcf356ce9f592dce",
+          "sourceChars": 3167,
+          "outputSha256": "57afe9d6dd2a3945a998ee0c522a071209294c2839ba588894dcb4a8d391b11b"
         },
         {
           "pageId": "combat-encounter-appendix",
@@ -136,8 +136,8 @@
           "route": "/combat/encounter-appendix",
           "status": "current",
           "sourceRange": {
-            "start": 7961,
-            "end": 9895
+            "start": 37488,
+            "end": 49537
           },
           "sourceElementRange": {
             "bodyIndexStart": 230,
@@ -145,17 +145,17 @@
             "tableIndexStart": 18,
             "tableIndexEndExclusive": 18
           },
-          "sourceSliceSha256": "735863c03c41bdca1b7913987fe14fb98279961311a3948761da037446a03a3a",
-          "sourceChars": 1934,
-          "outputSha256": "81d88f93cc2ba7c920de2db9a0cab7e0cbda41f8d5a9142a01f25933df424ac0"
+          "sourceSliceSha256": "842ce085c9c35ec7effd18a71c4ff09dc1f51c781eed75ec6a014789a4f35015",
+          "sourceChars": 12049,
+          "outputSha256": "842e8922a77210acda32c2660498a6a1cbed2e0fe9d28527f9be1de7880065c7"
         }
       ]
     },
     {
       "sourceAssetId": "src-51475ba227c9",
-      "sourceBodySha256": "6f1e44a5154a3823e8866267bb457b2a6a861b81a15b9514184c06b385957748",
-      "sourceChars": 4762,
-      "coveredChars": 4762,
+      "sourceBodySha256": "a638e8c36d2c1be141f1f405a17adfd18bd3dadd06c0c51fc61521b6f890e9bb",
+      "sourceChars": 16934,
+      "coveredChars": 16934,
       "pages": [
         {
           "pageId": "combat-endless-sea-basics",
@@ -164,7 +164,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 535
+            "end": 2002
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -172,9 +172,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "7bf0e2e5337c77ce0098b423d574b5d91c07a8e4fb39546193f505de60e61024",
-          "sourceChars": 535,
-          "outputSha256": "ca209fe346e06b36abf0f0156b83410d6fe9c1088b8c1ae89e49c83c43b48e83"
+          "sourceSliceSha256": "ff4f3605383c8239eab414a3240f49d6d45e6a779a299960e255a302511d812d",
+          "sourceChars": 2002,
+          "outputSha256": "e57e3ab266c6ab9e446c70ab98f7f71357f67778e88e259e38bbcbb24aea7015"
         },
         {
           "pageId": "combat-endless-sea-mechanics",
@@ -182,8 +182,8 @@
           "route": "/combat/endless-sea-mechanics",
           "status": "current",
           "sourceRange": {
-            "start": 535,
-            "end": 2914
+            "start": 2002,
+            "end": 8262
           },
           "sourceElementRange": {
             "bodyIndexStart": 20,
@@ -191,9 +191,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 2
           },
-          "sourceSliceSha256": "114d74d0b814bcaf670cf78e3d80e81775799a1c3bdaa57a10b8bb584a2000cb",
-          "sourceChars": 2379,
-          "outputSha256": "e3a69f87b67b524193136f8d5ac0c8eecf05470bae32cdedcd09a602a7cfd4af"
+          "sourceSliceSha256": "3d2aefb75f8dea95c9ee91ef49e8658c3d1198dc92f0b463f936a7cceba7ddb8",
+          "sourceChars": 6260,
+          "outputSha256": "2394e3938117cd2584199a4151b8f43c672c458a427956692d193480942a4ad3"
         },
         {
           "pageId": "combat-endless-sea-team-building",
@@ -201,8 +201,8 @@
           "route": "/combat/endless-sea-team-building",
           "status": "current",
           "sourceRange": {
-            "start": 2914,
-            "end": 4762
+            "start": 8262,
+            "end": 16934
           },
           "sourceElementRange": {
             "bodyIndexStart": 70,
@@ -210,17 +210,17 @@
             "tableIndexStart": 2,
             "tableIndexEndExclusive": 2
           },
-          "sourceSliceSha256": "0e151b7c6c6dd408a73f06d3b99bbc71a48367b70bb7824671f8c45d6470df9c",
-          "sourceChars": 1848,
-          "outputSha256": "685b8d92bc1dd2b437bc1410c5ca38a6c27943c2cd66651984f3550c5d1756c8"
+          "sourceSliceSha256": "e4b5c2c041271b35ff6c03a9352c92e7bcd2f9826b90b1ff3e51ca9bef8bccbf",
+          "sourceChars": 8672,
+          "outputSha256": "63aa7666644ea9985391bee5a1a9f978ddbb24899b957ebd2e84b9726cdb7757"
         }
       ]
     },
     {
       "sourceAssetId": "src-c8852cf69a7b",
-      "sourceBodySha256": "7d89cb9ae46db230d9f6ad438d8bd31563bd198975c464c58135e5eab0821157",
-      "sourceChars": 29360,
-      "coveredChars": 29360,
+      "sourceBodySha256": "0c8f417fa47bebdcfeb286d50f9f11c9975adc0b3bec3baee2296d724d154903",
+      "sourceChars": 111395,
+      "coveredChars": 111395,
       "pages": [
         {
           "pageId": "mechanics-damage-formula-overview",
@@ -229,7 +229,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 350
+            "end": 1352
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -237,9 +237,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "9ca211ae1fb02542d9c53e8791466bed2a445817d0a3b6a4bb620085af9ad782",
-          "sourceChars": 350,
-          "outputSha256": "1acf6707efbd75ae5a3861d3d9abdc670290aa331c1405f2b9902db2daaf720c"
+          "sourceSliceSha256": "1b30e306b8df6f01de6916810f8c345a0318218c996f3a6b083df2050f2bcef3",
+          "sourceChars": 1352,
+          "outputSha256": "a127ed94054c9c26f879fe07b704f4634d9f18338506d1d938ff7a9e5cf0ad32"
         },
         {
           "pageId": "mechanics-attack-power",
@@ -247,8 +247,8 @@
           "route": "/mechanics/attack-power",
           "status": "current",
           "sourceRange": {
-            "start": 350,
-            "end": 13982
+            "start": 1352,
+            "end": 56072
           },
           "sourceElementRange": {
             "bodyIndexStart": 14,
@@ -256,9 +256,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 27
           },
-          "sourceSliceSha256": "bb2ddc4570a8c70bce74cf5f4bb16cb12d6f65a7fa5eed535e4c93deaf6cf688",
-          "sourceChars": 13632,
-          "outputSha256": "126038ce7b8fee0d6fda11e9cabc7fcd56fe51fe7f5e9a00e8a34b6a66c85362"
+          "sourceSliceSha256": "eab014ae737b12edb9cd8107fa827861a5c4ce5e890f947a373b969abd9be8b3",
+          "sourceChars": 54720,
+          "outputSha256": "31db4f7ede7a1c83a26081a72f3d9a79b7917f36427eab2d6bd7fd3971a6ba28"
         },
         {
           "pageId": "mechanics-defense-power",
@@ -266,8 +266,8 @@
           "route": "/mechanics/defense-power",
           "status": "current",
           "sourceRange": {
-            "start": 13982,
-            "end": 17023
+            "start": 56072,
+            "end": 68944
           },
           "sourceElementRange": {
             "bodyIndexStart": 283,
@@ -275,9 +275,9 @@
             "tableIndexStart": 27,
             "tableIndexEndExclusive": 34
           },
-          "sourceSliceSha256": "204a7164dc2d898a9a8ab0d07ea0e5f350f47bb18e6f6249a443965d4aea2181",
-          "sourceChars": 3041,
-          "outputSha256": "c933bd1548c2172fb8f9d7d9a2a770f555dac1a16f9ef11cb1bfd4d48a965bda"
+          "sourceSliceSha256": "b20e933b7a44a77e9e4b79a5340215033b855af2570c7a41cf89c0548b617362",
+          "sourceChars": 12872,
+          "outputSha256": "247a0008a5a996df96c3bdfc0c07259476157228a35dd9a9a584a7b35d5fb9d3"
         },
         {
           "pageId": "mechanics-damage-multipliers",
@@ -285,8 +285,8 @@
           "route": "/mechanics/damage-multipliers",
           "status": "current",
           "sourceRange": {
-            "start": 17023,
-            "end": 20755
+            "start": 68944,
+            "end": 79932
           },
           "sourceElementRange": {
             "bodyIndexStart": 375,
@@ -294,9 +294,9 @@
             "tableIndexStart": 34,
             "tableIndexEndExclusive": 41
           },
-          "sourceSliceSha256": "e01a5248fc866b244d7fd97cad71152babd81c4e685ead699ee0a2dd59572078",
-          "sourceChars": 3732,
-          "outputSha256": "70b56378d676a8631e6a8423016797bfddee082837b043a30497ad5c3decabd9"
+          "sourceSliceSha256": "662712c86d26987246f07e08b29340164fa95e452e77cc7a0418bae0393fce01",
+          "sourceChars": 10988,
+          "outputSha256": "7dd76e64488ba233adc7d8916f4c4cec6e0e6aa5364c3db471520069f8e1b477"
         },
         {
           "pageId": "mechanics-damage-bonuses",
@@ -304,8 +304,8 @@
           "route": "/mechanics/damage-bonuses",
           "status": "current",
           "sourceRange": {
-            "start": 20755,
-            "end": 24678
+            "start": 79932,
+            "end": 92177
           },
           "sourceElementRange": {
             "bodyIndexStart": 450,
@@ -313,9 +313,9 @@
             "tableIndexStart": 41,
             "tableIndexEndExclusive": 44
           },
-          "sourceSliceSha256": "43f50747cd661a66a0d468500c3ab7069b421e9005660a099f48210b640e99c7",
-          "sourceChars": 3923,
-          "outputSha256": "da884b1854ea99b6ae5ee45ab20cd736b9953fa997a036ce126c7f90beb45373"
+          "sourceSliceSha256": "772136ad0adbfe88db269ad90157a6747e71deaac8e73b74cbb5b9b9124ba0d4",
+          "sourceChars": 12245,
+          "outputSha256": "3865540c2a4891ba360c180b569b64e74e62c781425838e6254d268f9fc929ad"
         },
         {
           "pageId": "mechanics-hit-critical",
@@ -323,8 +323,8 @@
           "route": "/mechanics/hit-critical",
           "status": "current",
           "sourceRange": {
-            "start": 24678,
-            "end": 28019
+            "start": 92177,
+            "end": 106976
           },
           "sourceElementRange": {
             "bodyIndexStart": 534,
@@ -332,9 +332,9 @@
             "tableIndexStart": 44,
             "tableIndexEndExclusive": 49
           },
-          "sourceSliceSha256": "d27548659f2aa5cd56939b3acd8c7944a3ba3c85c73466b2eaaf84c9ccd9278c",
-          "sourceChars": 3341,
-          "outputSha256": "c1ab23ca379bad979bef88cb1d620e29bcedae8b5b8b3dc04c5b8b82fc3c095e"
+          "sourceSliceSha256": "8b1298626b94e9454681d799aab75371879267eeacd586b6e093b870c653b11f",
+          "sourceChars": 14799,
+          "outputSha256": "f261e2b762355f287c40daec17fafc0771a612b8f1242dd3c841128ae2919831"
         },
         {
           "pageId": "mechanics-damage-examples",
@@ -342,8 +342,8 @@
           "route": "/mechanics/damage-examples",
           "status": "current",
           "sourceRange": {
-            "start": 28019,
-            "end": 29360
+            "start": 106976,
+            "end": 111395
           },
           "sourceElementRange": {
             "bodyIndexStart": 635,
@@ -351,17 +351,17 @@
             "tableIndexStart": 49,
             "tableIndexEndExclusive": 50
           },
-          "sourceSliceSha256": "082caacb9f060654bd269826ad65b78705745d6c1bda1eb7670921f7d1a25043",
-          "sourceChars": 1341,
-          "outputSha256": "485e9c161fe78e79edd2538861822c8fc5c23f11295d8bbf0f139a9381a5cd74"
+          "sourceSliceSha256": "ac3cdc803384db05ba28d59bceffe386749f1807ed3cf1593147a82e7270f5de",
+          "sourceChars": 4419,
+          "outputSha256": "c73a43e602121a35c1b1353bdf6bd27b80208a090ec95111573a33ad3aee81aa"
         }
       ]
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
-      "sourceBodySha256": "646f4f91a6ffd67ea61719438990cc27c1af9cdf47d22b44955c202385465e95",
-      "sourceChars": 7865,
-      "coveredChars": 7865,
+      "sourceBodySha256": "415b2543dfee464e947a9f7037df1318e9835aba5c60be88f21d019d8107d64f",
+      "sourceChars": 22325,
+      "coveredChars": 22325,
       "pages": [
         {
           "pageId": "topic-laguz-guide",
@@ -370,7 +370,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 7865
+            "end": 22325
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -378,9 +378,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "646f4f91a6ffd67ea61719438990cc27c1af9cdf47d22b44955c202385465e95",
-          "sourceChars": 7865,
-          "outputSha256": "c616a806047c2928f3f5986681cbd69b0490269d17cda6d8f8af68258c1af1ac"
+          "sourceSliceSha256": "415b2543dfee464e947a9f7037df1318e9835aba5c60be88f21d019d8107d64f",
+          "sourceChars": 22325,
+          "outputSha256": "17dde0ef9eac791160985f29dc1fb441f87971ca23b17bf85df99de16e055d15"
         }
       ]
     }
@@ -392,7 +392,7 @@
       "route": "/combat/pvp-arena",
       "status": "current",
       "editorialOverview": true,
-      "outputSha256": "4b4d790b4475c54190f14de0a0e9d5d5ad6af41374c023a465e0571aa4408c5b"
+      "outputSha256": "3bc3f5df28bd78580449f4d907e3832bc980b7bbe67691bb5af287b1bd50e159"
     },
     {
       "pageId": "combat-encounter",
@@ -400,7 +400,7 @@
       "route": "/combat/encounter",
       "status": "current",
       "editorialOverview": true,
-      "outputSha256": "dab207f73a3815ea1288a0833133b6b612607382090c84357a7487173f3f47ab"
+      "outputSha256": "83719214fb44f7add71e0fca267f7cbe7469b145f465e048251a25163b9a25cb"
     },
     {
       "pageId": "combat-endless-sea",
@@ -408,7 +408,7 @@
       "route": "/combat/endless-sea",
       "status": "current",
       "editorialOverview": true,
-      "outputSha256": "53829b29ad80d7ac1ebdd3df69f772fc333ca531864a7ed9275f2f1f208d7463"
+      "outputSha256": "2239a867020ef9dfd68744e6ddf7e7f63576a6382354adeeae99db1587a2334e"
     },
     {
       "pageId": "mechanics-damage-model",
@@ -416,7 +416,7 @@
       "route": "/mechanics/damage-model",
       "status": "current",
       "editorialOverview": true,
-      "outputSha256": "42a9ab856440952212db1da55676f481c6c9be37ab87da5e48a7aba9cc92626a"
+      "outputSha256": "3700bc7133abd57def4a5e8bb455c5daaf4395560c59a333c86acfed884131d5"
     },
     {
       "pageId": "topic-laguz",
@@ -424,14 +424,14 @@
       "route": "/topics/laguz",
       "status": "current",
       "editorialOverview": true,
-      "outputSha256": "7a85e9946d13de70b4d99c91a92f7c551fb92424dd2ea5e5ef8b40cd8f512f3f"
+      "outputSha256": "20877c01eeabe61a8e9519ecc0425b937f3d74c41d90071b4537b2a0bd7212aa"
     }
   ],
   "summary": {
     "sourceAssets": 5,
     "sourcePages": 18,
     "editorialOverviews": 5,
-    "sourceChars": 69442,
-    "coveredChars": 69442
+    "sourceChars": 387017,
+    "coveredChars": 387017
   }
 }

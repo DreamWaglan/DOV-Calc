@@ -18,14 +18,22 @@ const files = {
     'components',
     'ResponsiveMedia.vue',
   ),
+  originalImageViewer: path.join(
+    docsRoot,
+    '.vitepress',
+    'theme',
+    'components',
+    'OriginalImageViewer.vue',
+  ),
 }
 
-const [theme, layout, damage, equipment, responsiveMedia, markdownPaths] = await Promise.all([
+const [theme, layout, damage, equipment, responsiveMedia, originalImageViewer, markdownPaths] = await Promise.all([
   readFile(files.theme, 'utf8'),
   readFile(files.layout, 'utf8'),
   readFile(files.damage, 'utf8'),
   readFile(files.equipment, 'utf8'),
   readFile(files.responsiveMedia, 'utf8'),
+  readFile(files.originalImageViewer, 'utf8'),
   collectMarkdownFiles(docsRoot),
 ])
 
@@ -76,7 +84,9 @@ const checks = [
   check(
     'tables-keyboard-focusable',
     layout.includes("document.querySelectorAll<HTMLTableElement>('.vp-doc table')") &&
-      layout.includes('table.tabIndex = 0') &&
+      layout.includes('focusTarget.tabIndex = 0') &&
+      layout.includes("event.key === 'ArrowRight'") &&
+      layout.includes('focusTarget.scrollTo') &&
       layout.includes("table.setAttribute('aria-label'"),
   ),
   check(
@@ -128,8 +138,59 @@ const checks = [
       responsiveMedia.includes(':height="height"') &&
       responsiveMedia.includes('loading="lazy"') &&
       responsiveMedia.includes('decoding="async"') &&
-      responsiveMedia.includes('<figcaption>') &&
-      responsiveMedia.includes('v-if="downloadAllowed && downloadPath"'),
+      responsiveMedia.includes("displayMode?: 'viewer' | 'index' | 'table-cell'") &&
+      responsiveMedia.includes(':class="`responsive-media--${resolvedMode}`"') &&
+      responsiveMedia.includes('class="responsive-media__trigger"') &&
+      responsiveMedia.includes('v-if="isIndexCard"') &&
+      responsiveMedia.includes('<OriginalImageViewer') &&
+      theme.includes('.responsive-media__trigger img') &&
+      theme.includes('.responsive-media--table-cell .responsive-media__trigger') &&
+      theme.includes('min-width: 44px') &&
+      theme.includes('min-height: 44px') &&
+      theme.includes('.docx-table-scroll') &&
+      theme.includes('overflow-x: auto') &&
+      theme.includes('width: auto') &&
+      theme.includes('max-width: 100%'),
+  ),
+  check(
+    'public-governance-ui-hidden',
+    !layout.includes('SourceList') &&
+      !responsiveMedia.includes('<figcaption>') &&
+      !responsiveMedia.includes('download') &&
+      !originalImageViewer.includes('sourceLabel') &&
+      !originalImageViewer.includes('authorization') &&
+      !originalImageViewer.includes('image-viewer__download') &&
+      !originalImageViewer.includes('image-viewer__info'),
+  ),
+  check(
+    'original-image-viewer-contract',
+    originalImageViewer.includes('<Teleport v-if="mounted && open" to="body">') &&
+      originalImageViewer.includes('role="dialog"') &&
+      originalImageViewer.includes('aria-modal="true"') &&
+      originalImageViewer.includes("event.key === 'Escape'") &&
+      originalImageViewer.includes("event.key === '+' || event.key === '='") &&
+      originalImageViewer.includes("event.key === '0'") &&
+      originalImageViewer.includes("event.key.toLowerCase() === 'f'") &&
+      originalImageViewer.includes('closeButton.value?.focus()') &&
+      originalImageViewer.includes('previousFocus?.focus()') &&
+      originalImageViewer.includes('role="region"') &&
+      originalImageViewer.includes('tabindex="0"') &&
+      originalImageViewer.includes('方向键或拖动浏览') &&
+      originalImageViewer.includes('@pointermove="onPointerMove"') &&
+      originalImageViewer.includes('@dblclick="onDoubleClick"') &&
+      originalImageViewer.includes('@wheel="onWheel"') &&
+      originalImageViewer.includes('activePointers') &&
+      originalImageViewer.includes('beginPinch') &&
+      originalImageViewer.includes('handleTouchTap') &&
+      !originalImageViewer.includes('event.ctrlKey') &&
+      theme.includes('.image-viewer__dialog') &&
+      theme.includes('html.image-viewer-open') &&
+      theme.includes('env(safe-area-inset-top)') &&
+      theme.includes('env(safe-area-inset-bottom)') &&
+      theme.includes('height: 100dvh') &&
+      theme.includes('touch-action: none') &&
+      theme.includes('min-width: 44px') &&
+      theme.includes('min-height: 44px'),
   ),
   check(
     'damage-calculator-name-and-live-result',

@@ -16,7 +16,7 @@
     "asset": true,
     "searchIndex": true,
     "sitemap": true,
-    "download": false,
+    "download": true,
     "derivative": true,
     "structuredData": false,
     "mode": "public",
@@ -38,7 +38,7 @@
     "format": "webp",
     "maxDerivativePixels": 4500000,
     "maxSourcePixels": 50000000,
-    "segmentHeight": 4000
+    "segmentation": "disabled"
   },
   "derivatives": []
 }

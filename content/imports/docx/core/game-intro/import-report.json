@@ -27,17 +27,21 @@
     "headings": 0,
     "tables": 0,
     "drawings": 0,
+    "inlineDrawings": 0,
+    "floatingDrawings": 0,
+    "drawingParts": [],
     "media": 0,
     "footnotes": 0,
     "footnotesPresent": true,
     "formulas": 0,
-    "embeddedObjects": 0
+    "embeddedObjects": 0,
+    "tableCellDrawings": 0
   },
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/core/game-intro/review.md",
-      "sha256": "fb9a93f17c30c62c8045b9ccf6c1558b2b95273a6598625ac400770f917924b1",
-      "bytes": 1059
+      "sha256": "93ef1c6ae52c5c24a97f8160b7d21c442cc0fc1e4be70ee0d29d2aae12ddee90",
+      "bytes": 1522
     },
     "quarantine": {
       "path": "content/imports/docx/core/game-intro/quarantine.json",

@@ -1,7 +1,7 @@
 ---
 id: media-source-9ac6e41a613e
 title: "1 前言.docx：配套图片"
-description: "展示《1 前言.docx》中的授权媒体派生图，并保留页面归属、说明与来源。"
+description: "展示《1 前言.docx》中的配套图片。"
 section: topics
 order: 700
 audience: ["beginner","regular","advanced"]
@@ -24,11 +24,11 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 仅发布授权范围内的响应式派生图；原始文件不对外提供。
+    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。
 tags: ["图片资料","DOCX 媒体","来源追溯"]
 related: ["topic-visual-guides-index"]
 ---
 
 # 1 前言.docx：配套图片
 
-本页收录 0 个媒体元素。图片按原始 OOXML 关系定位，并关联到正文页面；只发布响应式派生图，不发布 DOCX 内的原始媒体字节。
+本页收录 0 张配套图片。

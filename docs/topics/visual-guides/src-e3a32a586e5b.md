@@ -24,66 +24,21 @@ sources:
     publicUse:
       body: false
       asset: true
-    notes: 仅发布授权范围内的响应式派生图；原始文件不对外提供。
+    notes: 独立图片和 DOCX 内嵌媒体按授权范围公开原始字节；索引入口使用缩略图。
 tags: ["图片资料","一图流","响应式图片"]
 related: ["topic-visual-guides-index","progression-index","topic-pve-selection"]
 ---
 
 # 拂晓舰灵改造优先级2.0.3
 
-> [!INFO] 授权与原始文件范围
-> 本页只展示经授权生成的 AVIF/WebP 派生图。原始图片不对外提供。
-
-## 分段目录
-
-- [第 1 段](#wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-01)
-- [第 2 段](#wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-02)
-- [第 3 段](#wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-03)
-
-## 第 1 段
+## 原图
 
 <ResponsiveMedia
-  media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-01"
-  alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 1 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="拂晓舰灵改造优先级2.0.3.png"
-  version="2026-07-29"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-01-0480.avif","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-01-0960.avif","width":960}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-01-0480.webp","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-01-0960.webp","width":960}]}]'
-  fallback-path="/wiki-media/src-e3a32a586e5b/segment-01-0960.webp"
-  :width="960"
-  :height="1290"
-  :download-allowed="false"
-/>
-
-## 第 2 段
-
-<ResponsiveMedia
-  media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-02"
-  alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 2 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="拂晓舰灵改造优先级2.0.3.png"
-  version="2026-07-29"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-02-0480.avif","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-02-0960.avif","width":960}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-02-0480.webp","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-02-0960.webp","width":960}]}]'
-  fallback-path="/wiki-media/src-e3a32a586e5b/segment-02-0960.webp"
-  :width="960"
-  :height="1290"
-  :download-allowed="false"
-/>
-
-## 第 3 段
-
-<ResponsiveMedia
-  media-id="wiki-image-c192b79ad535f1f9-ae2cccfbd39ef645-segment-03"
-  alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明，第 3 段"
-  caption="拂晓舰灵改造优先级2.0.3；版本日期 2026-07-29。仅展示授权响应式派生图，原图不对外提供。"
-  source-label="拂晓舰灵改造优先级2.0.3.png"
-  version="2026-07-29"
-  authorization="auth-user-declaration-20260730"
-  :variants='[{"type":"image/avif","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-03-0480.avif","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-03-0960.avif","width":960}]},{"type":"image/webp","candidates":[{"path":"/wiki-media/src-e3a32a586e5b/segment-03-0480.webp","width":480},{"path":"/wiki-media/src-e3a32a586e5b/segment-03-0960.webp","width":960}]}]'
-  fallback-path="/wiki-media/src-e3a32a586e5b/segment-03-0960.webp"
-  :width="960"
-  :height="1110"
-  :download-allowed="false"
+  media-id="wiki-image-c192b79ad535f1f9-original"
+  alt="拂晓舰灵改造优先级2.0.3一图流，包含图中列出的步骤、结论与说明"
+  display-mode="viewer"
+  :variants='[]'
+  fallback-path="/wiki-media/src-e3a32a586e5b/original.png"
+  :width="2382"
+  :height="9153"
 />

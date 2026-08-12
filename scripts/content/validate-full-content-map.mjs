@@ -6,6 +6,7 @@ import {
   SOURCE_ELEMENT_TYPES,
   dispositionErrors,
   loadSourceLedger,
+  tableCellPlacementErrors,
 } from './lib/migration-elements.mjs'
 import { printResult, writeReport } from './lib/content-utils.mjs'
 
@@ -144,9 +145,85 @@ if (tableElements.length !== 165) {
 
 const mediaIds = new Set(mediaElements.map((element) => element.sourceElementId))
 let orphanDrawings = 0
+let incompletePlacements = 0
+let duplicateOccurrenceIds = 0
+let duplicatePlacementIds = 0
+let drawingOrderErrors = 0
+let floatPlacementWarnings = 0
+const occurrenceIds = new Set()
+const placementIds = new Set()
+const relationsBySourcePart = new Map()
 for (const relation of map.drawingRelations.filter((entry) =>
   contentDocxIds.has(entry.sourceAssetId),
 )) {
+  if (occurrenceIds.has(relation.occurrenceId)) duplicateOccurrenceIds += 1
+  occurrenceIds.add(relation.occurrenceId)
+  if (placementIds.has(relation.placementId)) duplicatePlacementIds += 1
+  placementIds.add(relation.placementId)
+  const placement = relation.placement
+  const bodySlot = ['inline-after-anchor', 'float-after-anchor', 'table-cell'].includes(
+    placement?.slot,
+  )
+  const sourcePartSlot = ['source-header', 'source-footer'].includes(
+    placement?.slot,
+  )
+  const placementComplete =
+    typeof relation.occurrenceId === 'string' &&
+    relation.occurrenceId === relation.sourceRelationId &&
+    typeof relation.placementId === 'string' &&
+    placement?.placementId === relation.placementId &&
+    placement?.occurrenceId === relation.occurrenceId &&
+    placement?.sourceElementId === relation.sourceElementId &&
+    relation.sourceElementId === relation.targetMediaElementId &&
+    placement?.part === relation.sourcePosition?.part &&
+    ['body', 'header', 'footer'].includes(placement?.partKind) &&
+    Number.isInteger(placement?.relationshipOrdinal) &&
+    Number.isInteger(placement?.drawingOrdinal) &&
+    Number.isInteger(placement?.partOrdinal) &&
+    Array.isArray(placement?.pageIds) &&
+    placement.pageIds.length === relation.targetPageIds.length &&
+    placement.pageIds.every((pageId) => relation.targetPageIds.includes(pageId)) &&
+    placement.pageId === relation.pageId &&
+    ((placement?.partKind === 'body' && bodySlot) ||
+      (placement?.partKind === 'header' && placement?.slot === 'source-header') ||
+      (placement?.partKind === 'footer' && placement?.slot === 'source-footer')) &&
+    (bodySlot
+      ? Number.isInteger(placement?.bodyOrdinal) &&
+        typeof placement?.pageId === 'string' &&
+        relation.targetPageIds.includes(placement.pageId) &&
+        placement?.anchor?.sourceElementId
+      : sourcePartSlot &&
+        placement?.bodyOrdinal === null &&
+        placement?.pageId === null &&
+        placement?.anchor === null)
+  if (!placementComplete) {
+    incompletePlacements += 1
+    failures.push(`${relation.sourceRelationId}: occurrence placement is incomplete`)
+  }
+  if (placement?.slot === 'table-cell') {
+    for (const error of tableCellPlacementErrors(placement.tableCell)) {
+      failures.push(`${relation.sourceRelationId}: ${error}`)
+    }
+    if (JSON.stringify(relation.tableCell) !== JSON.stringify(placement.tableCell)) {
+      failures.push(`${relation.sourceRelationId}: relation and placement tableCell differ`)
+    }
+  } else if (relation.tableCell !== undefined || placement?.tableCell !== undefined) {
+    failures.push(`${relation.sourceRelationId}: non-cell placement carries tableCell metadata`)
+  }
+  const sourcePartKey = `${relation.sourceAssetId}#${relation.sourcePosition?.part}`
+  const sourcePartRelations = relationsBySourcePart.get(sourcePartKey) ?? []
+  sourcePartRelations.push(relation)
+  relationsBySourcePart.set(sourcePartKey, sourcePartRelations)
+  if (placement?.slot === 'float-after-anchor') {
+    const hasWarning = (relation.diagnostics ?? []).some(
+      (item) => item.severity === 'warning' && item.code === 'float-after-anchor',
+    )
+    if (!hasWarning) {
+      failures.push(`${relation.sourceRelationId}: floating placement lacks machine warning`)
+    } else {
+      floatPlacementWarnings += 1
+    }
+  }
   const resolved =
     ['media', 'layout', 'non-media-relationship'].includes(
       relation.resolution,
@@ -170,6 +247,28 @@ if (contentDrawingRelations.length !== 977) {
 }
 if (orphanDrawings !== 0) {
   failures.push(`orphan drawing relations: ${orphanDrawings}`)
+}
+if (duplicateOccurrenceIds !== 0) {
+  failures.push(`duplicate occurrence IDs: ${duplicateOccurrenceIds}`)
+}
+if (duplicatePlacementIds !== 0) {
+  failures.push(`duplicate placement IDs: ${duplicatePlacementIds}`)
+}
+for (const [sourcePartKey, relations] of relationsBySourcePart) {
+  const ordinals = relations
+    .map((relation) => relation.placement?.partOrdinal)
+    .filter(Number.isInteger)
+    .sort((left, right) => left - right)
+  for (let index = 0; index < ordinals.length; index += 1) {
+    if (ordinals[index] !== index + 1) {
+      drawingOrderErrors += 1
+      failures.push(`${sourcePartKey}: drawing part ordinals are not contiguous`)
+      break
+    }
+  }
+}
+if (drawingOrderErrors !== 0) {
+  failures.push(`drawing order errors: ${drawingOrderErrors}`)
 }
 
 let orphanMedia = 0
@@ -361,6 +460,11 @@ const report = {
       mediaElements: mediaElements.length,
       orphanDrawings,
       orphanMedia,
+      incompletePlacements,
+      duplicateOccurrenceIds,
+      duplicatePlacementIds,
+      drawingOrderErrors,
+      floatPlacementWarnings,
     },
     formulas: {
       total: formulaElements.length,

@@ -14,7 +14,7 @@ authors:
   - name: DOV-Calc 内容组
     role: 速查编辑
 reviewers:
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 新手内容审核
 sources:
   - title: 拂晓基础向介绍

@@ -13,11 +13,15 @@
         "headings": 0,
         "tables": 0,
         "drawings": 0,
+        "inlineDrawings": 0,
+        "floatingDrawings": 0,
+        "drawingParts": [],
         "media": 0,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [],
       "suggestedPageId": "start-preface",
@@ -44,11 +48,15 @@
         "headings": 0,
         "tables": 0,
         "drawings": 0,
+        "inlineDrawings": 0,
+        "floatingDrawings": 0,
+        "drawingParts": [],
         "media": 0,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [],
       "suggestedPageId": "start-game-introduction",
@@ -75,11 +83,23 @@
         "headings": 64,
         "tables": 0,
         "drawings": 50,
+        "inlineDrawings": 50,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 50,
+            "inlineDrawings": 50,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 49,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [
         {
@@ -359,11 +379,23 @@
         "headings": 72,
         "tables": 10,
         "drawings": 82,
+        "inlineDrawings": 81,
+        "floatingDrawings": 1,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 82,
+            "inlineDrawings": 81,
+            "floatingDrawings": 1
+          }
+        ],
         "media": 72,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 17
       },
       "headingOutline": [
         {
@@ -643,11 +675,23 @@
         "headings": 8,
         "tables": 1,
         "drawings": 10,
+        "inlineDrawings": 10,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 10,
+            "inlineDrawings": 10,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 10,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 2
       },
       "headingOutline": [
         {
@@ -719,11 +763,23 @@
         "headings": 21,
         "tables": 5,
         "drawings": 4,
+        "inlineDrawings": 4,
+        "floatingDrawings": 0,
+        "drawingParts": [
+          {
+            "part": "word/document.xml",
+            "kind": "body",
+            "drawings": 4,
+            "inlineDrawings": 4,
+            "floatingDrawings": 0
+          }
+        ],
         "media": 4,
         "footnotes": 0,
         "footnotesPresent": true,
         "formulas": 0,
-        "embeddedObjects": 0
+        "embeddedObjects": 0,
+        "tableCellDrawings": 0
       },
       "headingOutline": [
         {

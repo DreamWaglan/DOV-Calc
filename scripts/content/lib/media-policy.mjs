@@ -29,23 +29,23 @@ export function validateMediaItem(item, { maxDerivativePixels }) {
   if (item.downloadAllowed !== true && item.originalPublicPath !== null) {
     errors.push(`${label}: original path is exposed while download is disabled`)
   }
+  if (
+    item.downloadAllowed === true &&
+    (!item.original?.publicPath ||
+      item.originalPublicPath !== item.original.publicPath ||
+      !/\/original\.(?:png|jpe?g)$/i.test(item.original.publicPath))
+  ) {
+    errors.push(`${label}: authorized original download metadata is incomplete`)
+  }
 
   const anchors = new Set()
-  const segmentIndexes = []
   for (const group of item.groups ?? []) {
     if (!group.anchorId || anchors.has(group.anchorId)) {
       errors.push(`${label}: segment/preview anchors are missing or duplicated`)
     }
     anchors.add(group.anchorId)
-    if (group.kind === 'segment') segmentIndexes.push(group.index)
-  }
-  if (item.longImage) {
-    const expected = Array.from(
-      { length: segmentIndexes.length },
-      (_, index) => index + 1,
-    )
-    if (JSON.stringify(segmentIndexes) !== JSON.stringify(expected)) {
-      errors.push(`${label}: long-image segment indexes are not contiguous`)
+    if (group.kind === 'segment') {
+      errors.push(`${label}: segmented media groups are forbidden`)
     }
   }
 

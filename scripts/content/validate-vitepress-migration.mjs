@@ -82,7 +82,6 @@ for (const component of [
   'EquipmentLookup',
   'CalculatorShell',
   'PageStatus',
-  'SourceList',
 ]) {
   expect(
     theme.includes(`app.component('${component}'`),

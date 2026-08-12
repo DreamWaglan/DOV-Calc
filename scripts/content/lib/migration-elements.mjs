@@ -55,6 +55,72 @@ export function stableSourceRelationId(sourceAssetId, relationType, sourcePositi
   return `${sourceAssetId}:relation:${digest}`
 }
 
+export function stablePlacementId(sourceAssetId, placementType, sourcePosition) {
+  const identity = JSON.stringify(
+    canonicalize({ sourceAssetId, placementType, sourcePosition }),
+  )
+  const digest = createHash('sha256').update(identity).digest('hex').slice(0, 16)
+  return `${sourceAssetId}:placement:${digest}`
+}
+
+export function tableCellMediaToken(occurrenceId) {
+  return `<!-- docx-cell-media:${occurrenceId} -->`
+}
+
+export function tableCellPlacementErrors(tableCell) {
+  const errors = []
+  const integerAtLeast = (value, minimum) =>
+    Number.isInteger(value) && value >= minimum
+  if (!tableCell || typeof tableCell !== 'object') return ['missing tableCell']
+  if (!/^src-[a-f0-9]{12}:placement:[a-f0-9]{16}$/.test(tableCell.cellPlacementId ?? '')) {
+    errors.push('invalid cellPlacementId')
+  }
+  if (!/^src-[a-f0-9]{12}:table:[a-f0-9]{16}$/.test(tableCell.tableSourceElementId ?? '')) {
+    errors.push('invalid tableSourceElementId')
+  }
+  for (const [field, minimum] of [
+    ['tableIndex', 1],
+    ['rowIndex', 1],
+    ['cellIndex', 1],
+    ['gridColumn', 1],
+    ['gridSpan', 1],
+    ['rowSpan', 0],
+    ['paragraphIndex', 0],
+    ['runIndex', 0],
+    ['drawingIndexInParagraph', 0],
+    ['drawingIndexInCell', 1],
+    ['cellContentOrdinal', 1],
+  ]) {
+    if (!integerAtLeast(tableCell[field], minimum)) errors.push(`invalid ${field}`)
+  }
+  if (![null, 'restart', 'continue'].includes(tableCell.verticalMerge)) {
+    errors.push('invalid verticalMerge')
+  }
+  if (tableCell.verticalMerge === 'continue' && tableCell.rowSpan !== 0) {
+    errors.push('vertical merge continuation must have rowSpan 0')
+  }
+  if (tableCell.verticalMerge !== 'continue' && tableCell.rowSpan < 1) {
+    errors.push('rendered cell must have rowSpan at least 1')
+  }
+  if (!Array.isArray(tableCell.cellPath) || tableCell.cellPath.length === 0) {
+    errors.push('missing cellPath')
+    return errors
+  }
+  const leaf = tableCell.cellPath.at(-1)
+  for (const field of [
+    'tableIndex',
+    'tableSourceElementId',
+    'rowIndex',
+    'cellIndex',
+    'gridColumn',
+    'gridSpan',
+    'verticalMerge',
+  ]) {
+    if (leaf?.[field] !== tableCell[field]) errors.push(`cellPath leaf mismatch: ${field}`)
+  }
+  return errors
+}
+
 export function dispositionErrors(entry) {
   const errors = []
   if (!DISPOSITIONS.includes(entry?.disposition)) {

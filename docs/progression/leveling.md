@@ -11,10 +11,10 @@ sourceUpdatedAt: "2026-07-21"
 verifiedAt: "2026-07-30"
 status: current
 authors:
-  - name: DOV-Calc 内容维护组
+  - name: 拂晓凤栖攻略组
     role: 授权资料迁移编辑
 reviewers:
-  - name: DOV-Calc 事实审核组
+  - name: 暂无
     role: 核心阅读路径事实审核
 sources:
   - title: "6.1 练级百科.docx"
@@ -24,7 +24,7 @@ sources:
     publicUse:
       body: true
       asset: false
-    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。
+    notes: 已迁移授权正文；原始 DOCX 文件不开放下载，已授权的 DOCX 内嵌原图可在正文显示并下载。
 tags: ["练级","经验","省油","养成"]
 related: ["progression-leveling-ship-selection","progression-leveling-strategy","progression-leveling-locations","progression-leveling-efficiency","media-source-6eba63c4aa7b"]
 ---

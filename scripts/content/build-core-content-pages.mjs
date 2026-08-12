@@ -4,6 +4,10 @@ import path from 'node:path'
 import process from 'node:process'
 import { loadSourceLedger, stableJson } from './lib/migration-elements.mjs'
 import { applyPageReviewStatus } from './lib/page-review-decisions.mjs'
+import {
+  insertPlacedMedia,
+  loadPageMediaPlacements,
+} from './lib/media-embed.mjs'
 import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
 
 const root = process.cwd()
@@ -53,7 +57,10 @@ function extractImportedBody(markdown, filePath) {
 }
 
 function countMarkdownTables(markdown) {
-  return [...markdown.matchAll(/^\|\s*:?-{3,}/gm)].length
+  return (
+    [...markdown.matchAll(/^\|\s*:?-{3,}/gm)].length +
+    [...markdown.matchAll(/<div class="docx-table-scroll"/g)].length
+  )
 }
 
 function splitRanges(body, markers, elements) {
@@ -157,10 +164,10 @@ function pageFrontmatter({
     'verifiedAt: "2026-07-30"',
     `status: ${status}`,
     'authors:',
-    '  - name: DOV-Calc 内容维护组',
+    '  - name: 拂晓凤栖攻略组',
     '    role: 授权资料迁移编辑',
     'reviewers:',
-    '  - name: DOV-Calc 事实审核组',
+    '  - name: 暂无',
     '    role: 核心阅读路径事实审核',
     'sources:',
     `  - title: ${JSON.stringify(asset.title)}`,
@@ -170,7 +177,7 @@ function pageFrontmatter({
     '    publicUse:',
     '      body: true',
     '      asset: false',
-    '    notes: 已迁移授权正文；原始 DOCX 和媒体字节不公开，配套图片仅发布授权响应式派生图。',
+    '    notes: 已迁移授权正文；原始 DOCX 文件不开放下载，已授权的 DOCX 内嵌原图可在正文显示并下载。',
     `tags: ${JSON.stringify(tags)}`,
     `related: ${JSON.stringify([
       ...new Set([...related, `media-source-${asset.id.slice(4)}`]),
@@ -181,24 +188,16 @@ function pageFrontmatter({
 }
 
 async function writePage(definition, asset, sourceSlice = null) {
-  const warning =
-    definition.status === 'draft'
-      ? [
-          '> [!WARNING] 审核状态',
-          '> 本页已完成授权原稿的可搜索迁移，但版本数字、图示依赖和实战结论仍在 Phase 7 事实审核队列。页面状态为 `draft`，使用前请结合当前游戏版本核对。',
-          '',
-        ].join('\n')
-      : [
-          '> [!INFO] 来源说明',
-          '> 本页正文来自已登记授权资料；仅开放网页正文，不提供原始 DOCX 下载。',
-          '',
-        ].join('\n')
   const body = sourceSlice
     ? [
         `# ${definition.title}`,
         '',
-        warning,
-        normalizeSourceMarkdown(sourceSlice.source),
+        insertPlacedMedia(
+          normalizeSourceMarkdown(sourceSlice.source),
+          definition.id,
+          asset.id,
+          pageMediaPlacements,
+        ),
         '',
         definition.nextLink ?? '',
       ]
@@ -232,6 +231,7 @@ async function writePage(definition, asset, sourceSlice = null) {
 const ledger = await loadSourceLedger()
 const assetsById = new Map(ledger.assets.map((asset) => [asset.id, asset]))
 const sourceBodies = {}
+const pageMediaPlacements = await loadPageMediaPlacements()
 for (const [key, source] of Object.entries(sources)) {
   const asset = assetsById.get(source.assetId)
   if (!asset) throw new Error(`Core source is not registered: ${source.assetId}`)

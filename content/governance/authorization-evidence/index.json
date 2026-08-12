@@ -45,12 +45,12 @@
         "asset": true,
         "searchIndex": true,
         "sitemap": true,
-        "download": false,
+        "download": true,
         "derivative": true,
         "structuredData": true
       },
       "limitations": [
-        "不提供原始 DOCX、XLSX 或高清原图下载。",
+        "不提供原始 DOCX 或 XLSX 文件下载；独立图片和 DOCX 内嵌媒体可按 Wiki 上下文查看和下载。",
         "不提供脱离 Wiki 上下文的素材包、镜像包或批量再分发。",
         "未提供的作者姓名、授权期限和署名要求不得虚构。"
       ],

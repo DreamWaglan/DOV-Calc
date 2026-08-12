@@ -64,6 +64,21 @@ assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'media'))
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'footnotes'))
 assert.equal(firstDocx.elements.filter((item) => item.elementType === 'media').length, 119)
 assert.equal(firstDocx.drawingRelations.length, 490)
+const tableCellRelations = firstDocx.drawingRelations.filter(
+  (relation) => relation.placement?.slot === 'table-cell',
+)
+assert.equal(firstDocx.counts.tableCellDrawings, tableCellRelations.length)
+assert.ok(tableCellRelations.length > 0)
+for (const relation of tableCellRelations) {
+  assert.equal(relation.tableCell.cellPlacementId, relation.placement.tableCell.cellPlacementId)
+  assert.equal(relation.tableCell.cellPath.at(-1).tableIndex, relation.tableCell.tableIndex)
+  assert.equal(relation.tableCell.cellPath.at(-1).rowIndex, relation.tableCell.rowIndex)
+  assert.equal(relation.tableCell.cellPath.at(-1).cellIndex, relation.tableCell.cellIndex)
+  assert.ok(relation.tableCell.gridColumn >= 1)
+  assert.ok(relation.tableCell.gridSpan >= 1)
+  assert.ok(relation.tableCell.drawingIndexInCell >= 1)
+  assert.ok(relation.tableCell.cellContentOrdinal >= 1)
+}
 assert.equal(
   new Set(firstDocx.elements.map((item) => item.sourceElementId)).size,
   firstDocx.elements.length,
@@ -78,6 +93,10 @@ assert.deepEqual(
 )
 const reviewMarkdown = await readFile(path.join(docxOutput, 'review.md'), 'utf8')
 assert.match(reviewMarkdown, /Quarantine Review Items/)
+assert.equal(
+  [...reviewMarkdown.matchAll(/<!-- source-body:/g)].length,
+  firstDocx.counts.paragraphs + firstDocx.counts.tables,
+)
 assert.doesNotMatch(firstDocx.outputs.markdown.path, /^docs\/public\//)
 
 const originalImageHash = await fileHash(imageSource)
@@ -111,7 +130,10 @@ assert.equal(
   firstImage.sourceElement.sourceElementId,
   secondImage.sourceElement.sourceElementId,
 )
-assert.equal(firstImage.derivatives.filter((item) => item.kind === 'segment').length, 4)
+assert.equal(firstImage.derivativePolicy.segmentation, 'disabled')
+assert.equal(firstImage.derivatives.filter((item) => item.kind === 'segment').length, 0)
+assert.equal(firstImage.derivatives.filter((item) => item.kind === 'thumbnail').length, 1)
+assert.equal(firstImage.derivatives.filter((item) => item.kind === 'preview').length, 1)
 for (const derivative of firstImage.derivatives) {
   assert.ok(derivative.width > 0)
   assert.ok(derivative.height > 0)

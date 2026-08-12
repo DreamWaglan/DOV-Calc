@@ -1,4 +1,5 @@
 import { readJson, writeReport, printResult } from './lib/content-utils.mjs'
+import { tableCellPlacementErrors } from './lib/migration-elements.mjs'
 
 const fullMap = await readJson('content/migrations/full-content-map.json')
 const failures = []
@@ -34,6 +35,9 @@ for (const [key, value] of Object.entries(expected)) {
 }
 
 const seenRelations = new Set()
+const seenOccurrences = new Set()
+const seenPlacements = new Set()
+let floatWarnings = 0
 for (const table of contentElements.filter(
   (element) => element.elementType === 'table',
 )) {
@@ -82,11 +86,81 @@ for (const relation of contentRelations) {
     failures.push(`${relation.sourceRelationId}: duplicate drawing relation`)
   }
   seenRelations.add(relation.sourceRelationId)
+  if (seenOccurrences.has(relation.occurrenceId)) {
+    failures.push(`${relation.sourceRelationId}: duplicate occurrence id`)
+  }
+  seenOccurrences.add(relation.occurrenceId)
+  if (seenPlacements.has(relation.placementId)) {
+    failures.push(`${relation.sourceRelationId}: duplicate placement id`)
+  }
+  seenPlacements.add(relation.placementId)
   if (
     !Number.isInteger(relation.sourcePosition?.bodyIndex) ||
     !Number.isInteger(relation.sourcePosition?.drawingIndex)
   ) {
     failures.push(`${relation.sourceRelationId}: drawing source position is incomplete`)
+  }
+  const placement = relation.placement
+  const bodySlot = ['inline-after-anchor', 'float-after-anchor', 'table-cell'].includes(
+    placement?.slot,
+  )
+  const sourcePartSlot = ['source-header', 'source-footer'].includes(
+    placement?.slot,
+  )
+  if (
+    relation.occurrenceId !== relation.sourceRelationId ||
+    !relation.placementId ||
+    placement?.placementId !== relation.placementId ||
+    placement?.occurrenceId !== relation.occurrenceId ||
+    placement?.sourceElementId !== relation.sourceElementId ||
+    relation.sourceElementId !== relation.targetMediaElementId ||
+    placement?.part !== relation.sourcePosition?.part ||
+    !['body', 'header', 'footer'].includes(placement?.partKind) ||
+    !Number.isInteger(placement?.relationshipOrdinal) ||
+    !Number.isInteger(placement?.drawingOrdinal) ||
+    !Number.isInteger(placement?.partOrdinal) ||
+    placement?.pageId !== relation.pageId ||
+    !Array.isArray(placement?.pageIds) ||
+    placement.pageIds.length !== relation.targetPageIds.length ||
+    placement.pageIds.some((pageId) => !relation.targetPageIds.includes(pageId)) ||
+    (bodySlot && !relation.targetPageIds.includes(placement?.pageId)) ||
+    (sourcePartSlot && placement?.pageId !== null) ||
+    (!bodySlot && !sourcePartSlot) ||
+    !(
+      (placement?.partKind === 'body' && bodySlot) ||
+      (placement?.partKind === 'header' && placement?.slot === 'source-header') ||
+      (placement?.partKind === 'footer' && placement?.slot === 'source-footer')
+    ) ||
+    (bodySlot &&
+      (!Number.isInteger(placement?.bodyOrdinal) ||
+        !placement?.anchor?.sourceElementId)) ||
+    (sourcePartSlot && placement?.anchor !== null)
+  ) {
+    failures.push(`${relation.sourceRelationId}: drawing placement metadata is incomplete`)
+  }
+  if (placement?.slot === 'table-cell') {
+    for (const error of tableCellPlacementErrors(placement.tableCell)) {
+      failures.push(`${relation.sourceRelationId}: ${error}`)
+    }
+    if (JSON.stringify(relation.tableCell) !== JSON.stringify(placement.tableCell)) {
+      failures.push(`${relation.sourceRelationId}: relation and placement tableCell differ`)
+    }
+    const table = elementsById.get(placement.tableCell?.tableSourceElementId)
+    if (table?.elementType !== 'table' || table.sourceAssetId !== relation.sourceAssetId) {
+      failures.push(`${relation.sourceRelationId}: tableCell target table is invalid`)
+    }
+  } else if (relation.tableCell !== undefined || placement?.tableCell !== undefined) {
+    failures.push(`${relation.sourceRelationId}: non-cell placement carries tableCell metadata`)
+  }
+  if (placement?.slot === 'float-after-anchor') {
+    const hasWarning = (relation.diagnostics ?? []).some(
+      (item) => item.severity === 'warning' && item.code === 'float-after-anchor',
+    )
+    if (!hasWarning) {
+      failures.push(`${relation.sourceRelationId}: float placement lacks warning`)
+    } else {
+      floatWarnings += 1
+    }
   }
   if (relation.resolution === 'media') {
     const media = elementsById.get(relation.targetMediaElementId)
@@ -129,6 +203,9 @@ const report = {
   summary: {
     contentDocxSources: contentDocxIds.size,
     ...totals,
+    occurrences: seenOccurrences.size,
+    placements: seenPlacements.size,
+    floatWarnings,
     failures: failures.length,
   },
   expected,
@@ -137,7 +214,7 @@ const report = {
     tableOwnership: 'bodyIndex plus tableIndex, mapped to an owning page',
     mediaIdentity: 'OOXML package path plus SHA-256 and target asset ID',
     drawingOwnership:
-      'bodyIndex drawing relation; relation pages must be a subset of media pages',
+      'bodyIndex drawing relation with occurrence placement; relation pages must be a subset of media pages',
     visualReview:
       'media remains pending visual review until Phase 5 derivative and rights review',
   },

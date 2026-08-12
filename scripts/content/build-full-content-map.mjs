@@ -31,8 +31,8 @@ const DOCX_PAGE_TARGETS = new Map([
 
 function reviewersFor(asset) {
   return {
-    editor: asset.owners?.[0]?.name ?? 'DOV-Calc 内容维护组',
-    factReviewer: asset.reviewers?.[1]?.name ?? 'DOV-Calc 事实审核组',
+    editor: asset.owners?.[0]?.name ?? '拂晓凤栖攻略组',
+    factReviewer: asset.reviewers?.[1]?.name ?? '暂无',
   }
 }
 
@@ -150,6 +150,22 @@ function targetPagesForElement(
   )
 }
 
+function placementForRelation(relation, targetPageIds) {
+  const pageId = targetPageIds.length === 1 ? targetPageIds[0] : null
+  const placement = relation.placement
+    ? {
+        ...relation.placement,
+        pageId,
+        pageIds: targetPageIds,
+      }
+    : null
+  return {
+    ...relation,
+    pageId,
+    ...(placement ? { placement } : {}),
+  }
+}
+
 const elements = []
 const drawingRelations = []
 const docxSummaries = []
@@ -200,7 +216,7 @@ for (const importedAsset of docxImport.assets) {
   )
   drawingRelations.push(
     ...relationTargets.map(({ relation, targetPageIds }) => ({
-      ...relation,
+      ...placementForRelation(relation, targetPageIds),
       targetPageIds,
       authorizationEvidenceId: asset.authorization.evidenceId,
       ...reviewersFor(asset),

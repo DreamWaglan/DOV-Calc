@@ -25,10 +25,18 @@ assert(
 )
 
 const exposedOriginal = structuredClone(sample)
-exposedOriginal.originalPublicPath = '/source.png'
+exposedOriginal.downloadAllowed = false
 assert(
   validateMediaItem(exposedOriginal, { maxDerivativePixels }).some((error) =>
-    error.includes('original path is exposed'),
+    error.includes('original path is exposed while download is disabled'),
+  ),
+)
+
+const mismatchedOriginal = structuredClone(sample)
+mismatchedOriginal.originalPublicPath = '/wiki-media/mismatched/original.png'
+assert(
+  validateMediaItem(mismatchedOriginal, { maxDerivativePixels }).some((error) =>
+    error.includes('authorized original download metadata is incomplete'),
   ),
 )
 
@@ -43,10 +51,15 @@ assert(
 const longSample = structuredClone(
   library.standaloneItems.find((item) => item.longImage),
 )
-longSample.groups[1].index = 99
+longSample.groups.push({
+  kind: 'segment',
+  index: 1,
+  anchorId: 'segment-1',
+  files: [],
+})
 assert(
   validateMediaItem(longSample, { maxDerivativePixels }).some((error) =>
-    error.includes('segment indexes are not contiguous'),
+    error.includes('segmented media groups are forbidden'),
   ),
 )
 

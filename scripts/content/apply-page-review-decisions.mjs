@@ -53,7 +53,7 @@ function reviewerGroup(section, contentType, pageId) {
   ) {
     return 'DOV-Calc 编辑审核组'
   }
-  return 'DOV-Calc 事实审核组'
+  return '暂无'
 }
 
 function parseFrontmatter(source, relativePath) {

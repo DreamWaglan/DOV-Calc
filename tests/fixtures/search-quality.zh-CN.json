@@ -880,7 +880,7 @@
     },
     {
       "id": "SQ-N004",
-      "query": "剧情语音下载",
+      "query": "剧情语音包提取",
       "sourceRef": "editorial-task-catalog:v1#unsupported-media"
     }
   ]

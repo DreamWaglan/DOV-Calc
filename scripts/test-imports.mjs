@@ -4,6 +4,7 @@ import process from 'node:process'
 
 for (const test of [
   'tests/content/migration-elements.mjs',
+  'tests/content/docx-table-cell-placement.mjs',
   'tests/content/import-docx-image.mjs',
   'tests/content/import-xlsx.mjs',
   'tests/content/basic-attack-dataset.mjs',

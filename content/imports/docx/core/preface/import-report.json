@@ -27,17 +27,21 @@
     "headings": 0,
     "tables": 0,
     "drawings": 0,
+    "inlineDrawings": 0,
+    "floatingDrawings": 0,
+    "drawingParts": [],
     "media": 0,
     "footnotes": 0,
     "footnotesPresent": true,
     "formulas": 0,
-    "embeddedObjects": 0
+    "embeddedObjects": 0,
+    "tableCellDrawings": 0
   },
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/core/preface/review.md",
-      "sha256": "ce6a6810b680cca5c5ac8725d1c80533b05d64c92af6aa9504861d586a147a60",
-      "bytes": 7498
+      "sha256": "22333a7d277450be6a2b407a847a02d48e7b02bd09ddb1aa85cdf96f61223c78",
+      "bytes": 10300
     },
     "quarantine": {
       "path": "content/imports/docx/core/preface/quarantine.json",
