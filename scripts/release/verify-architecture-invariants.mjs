@@ -1,6 +1,7 @@
 import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
+import { hasCompleteMediaSourceTraceability } from '../quality/media-source-policy.mjs'
 import {
   loadPages,
   printResult,
@@ -183,8 +184,7 @@ record(
     mediaLibrary.summary?.verifiedFiles ===
       mediaLibrary.summary?.derivativeFiles &&
     mediaLibrary.summary?.verifiedOriginals === 600 &&
-    mediaLibrary.summary?.verifiedStandaloneSourceBytes === 15 &&
-    mediaLibrary.summary?.verifiedDocxPackageMedia === 585 &&
+    hasCompleteMediaSourceTraceability(mediaLibrary) &&
     mediaLibrary.summary?.sourceOriginalsCopied === 600 &&
     mediaLibrary.summary?.downloadsAllowed === 600 &&
     mediaLibrary.summary?.unmanagedPublicFiles === 0 &&
@@ -210,6 +210,10 @@ record(
     verifiedStandaloneSourceBytes:
       mediaLibrary.summary?.verifiedStandaloneSourceBytes,
     verifiedDocxPackageMedia: mediaLibrary.summary?.verifiedDocxPackageMedia,
+    skippedStandaloneSourceBytes:
+      mediaLibrary.summary?.skippedStandaloneSourceBytes,
+    skippedDocxPackageMedia: mediaLibrary.summary?.skippedDocxPackageMedia,
+    sourceRootAvailable: mediaLibrary.sourceRootAvailable,
     unmanagedPublicFiles: mediaLibrary.summary?.unmanagedPublicFiles,
     mediaBuildStateClean,
     renderedOccurrences: mediaPlacement.summary?.renderedOccurrences,

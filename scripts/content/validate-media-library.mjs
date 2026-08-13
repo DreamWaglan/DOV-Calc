@@ -19,6 +19,15 @@ const sourceAssets = await readJson('content/governance/source-assets.json')
 const pages = await loadPages()
 const pageIds = new Set(pages.map((page) => page.frontmatter.id))
 const failures = []
+const configuredSourceRoot =
+  process.env.CONTENT_SOURCE_ROOT ?? sourceAssets.sourceRoot?.path
+const sourceRootAvailable = Boolean(
+  configuredSourceRoot &&
+    (await access(configuredSourceRoot).then(
+      () => true,
+      () => false,
+    )),
+)
 const buildStatePath = path.join(root, '.omx', 'media-library-build.json')
 let buildStateClean = true
 
@@ -176,67 +185,83 @@ const assetsById = new Map(
 )
 let verifiedStandaloneSourceBytes = 0
 let verifiedDocxPackageMedia = 0
-for (const item of items.filter((candidate) => candidate.kind !== 'docx-media')) {
-  const asset = assetsById.get(item.sourceAssetId)
-  const sourcePath =
-    asset?.origin?.path && sourceAssets.sourceRoot?.path
-      ? path.join(sourceAssets.sourceRoot.path, asset.origin.path)
-      : null
-  const [sourceData, publicData] = await Promise.all([
-    sourcePath ? readFile(sourcePath).catch(() => null) : null,
-    readFile(path.join(root, item.original.path)).catch(() => null),
-  ])
-  if (
-    !sourceData ||
-    !publicData ||
-    !sourceData.equals(publicData) ||
-    createHash('sha256').update(sourceData).digest('hex') !== item.sourceSha256
-  ) {
-    failures.push(`${item.libraryId}: standalone public original differs from source bytes`)
-  } else {
-    verifiedStandaloneSourceBytes += 1
-  }
-}
-for (const [sourceAssetId, docxItems] of Map.groupBy(
+let skippedStandaloneSourceBytes = 0
+let skippedDocxPackageMedia = 0
+const standaloneItems = items.filter(
+  (candidate) => candidate.kind !== 'docx-media',
+)
+const groupedDocxItems = Map.groupBy(
   items.filter((item) => item.kind === 'docx-media'),
   (item) => item.sourceAssetId,
-)) {
-  const asset = assetsById.get(sourceAssetId)
-  const sourcePath =
-    asset?.origin?.path && sourceAssets.sourceRoot?.path
-      ? path.join(sourceAssets.sourceRoot.path, asset.origin.path)
+)
+if (sourceRootAvailable) {
+  for (const item of standaloneItems) {
+    const asset = assetsById.get(item.sourceAssetId)
+    const sourcePath = asset?.origin?.path
+      ? path.join(configuredSourceRoot, asset.origin.path)
       : null
-  const docxData = sourcePath
-    ? await readFile(sourcePath).catch(() => null)
-    : null
-  if (
-    !docxData ||
-    createHash('sha256').update(docxData).digest('hex') !== asset?.hashes?.sha256
-  ) {
-    failures.push(`${sourceAssetId}: source DOCX bytes are missing or differ from the ledger`)
-    continue
-  }
-  const zip = unzipSync(new Uint8Array(docxData))
-  for (const item of docxItems) {
-    const packageEntry = zip[item.original.packagePath]
-    const publicData = await readFile(path.join(root, item.original.path)).catch(
-      () => null,
-    )
-    const packageData = packageEntry ? Buffer.from(packageEntry) : null
+    const [sourceData, publicData] = await Promise.all([
+      sourcePath ? readFile(sourcePath).catch(() => null) : null,
+      readFile(path.join(root, item.original.path)).catch(() => null),
+    ])
     if (
-      !packageData ||
+      !sourceData ||
       !publicData ||
-      !packageData.equals(publicData) ||
-      createHash('sha256').update(packageData).digest('hex') !==
-        item.original.sha256
+      !sourceData.equals(publicData) ||
+      createHash('sha256').update(sourceData).digest('hex') !== item.sourceSha256
     ) {
       failures.push(
-        `${item.libraryId}: public original differs from ${item.original.packagePath}`,
+        `${item.libraryId}: standalone public original differs from source bytes`,
       )
     } else {
-      verifiedDocxPackageMedia += 1
+      verifiedStandaloneSourceBytes += 1
     }
   }
+  for (const [sourceAssetId, docxItems] of groupedDocxItems) {
+    const asset = assetsById.get(sourceAssetId)
+    const sourcePath = asset?.origin?.path
+      ? path.join(configuredSourceRoot, asset.origin.path)
+      : null
+    const docxData = sourcePath
+      ? await readFile(sourcePath).catch(() => null)
+      : null
+    if (
+      !docxData ||
+      createHash('sha256').update(docxData).digest('hex') !== asset?.hashes?.sha256
+    ) {
+      failures.push(
+        `${sourceAssetId}: source DOCX bytes are missing or differ from the ledger`,
+      )
+      continue
+    }
+    const zip = unzipSync(new Uint8Array(docxData))
+    for (const item of docxItems) {
+      const packageEntry = zip[item.original.packagePath]
+      const publicData = await readFile(path.join(root, item.original.path)).catch(
+        () => null,
+      )
+      const packageData = packageEntry ? Buffer.from(packageEntry) : null
+      if (
+        !packageData ||
+        !publicData ||
+        !packageData.equals(publicData) ||
+        createHash('sha256').update(packageData).digest('hex') !==
+          item.original.sha256
+      ) {
+        failures.push(
+          `${item.libraryId}: public original differs from ${item.original.packagePath}`,
+        )
+      } else {
+        verifiedDocxPackageMedia += 1
+      }
+    }
+  }
+} else {
+  skippedStandaloneSourceBytes = standaloneItems.length
+  skippedDocxPackageMedia = [...groupedDocxItems.values()].reduce(
+    (total, docxItems) => total + docxItems.length,
+    0,
+  )
 }
 
 const mediaCollections = publicAssets.collections.filter((collection) =>
@@ -382,8 +407,10 @@ for (const gallery of library.docxGalleryPages ?? []) {
 }
 
 const report = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   check: 'authorized-responsive-media-library',
+  sourceRootAvailable,
+  sourceRootAlias: sourceAssets.sourceRoot?.alias ?? null,
   summary: {
     standaloneImages: library.summary?.standaloneImages ?? 0,
     contentDocxSources: library.summary?.contentDocxSources ?? 0,
@@ -398,6 +425,8 @@ const report = {
     verifiedOriginalBytes,
     verifiedStandaloneSourceBytes,
     verifiedDocxPackageMedia,
+    skippedStandaloneSourceBytes,
+    skippedDocxPackageMedia,
     downloadsAllowed: library.summary?.downloadsAllowed ?? 0,
     sourceOriginalsCopied: library.summary?.sourceOriginalsCopied ?? 0,
     manifestFiles: manifestPublicPaths.size,
