@@ -349,8 +349,6 @@ function renderWorksheetPage(dataset, worksheet, source) {
 ${rows}
 
 </div>
-
-
 `
 }
 

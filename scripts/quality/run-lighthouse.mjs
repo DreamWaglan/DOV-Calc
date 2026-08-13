@@ -17,7 +17,9 @@ import {
   writeReport,
 } from '../content/lib/content-utils.mjs'
 import {
+  effectivePerformanceThresholds,
   requiresPerformanceConfirmation,
+  resolvePerformanceBudgetEnforcement,
   summarizePerformanceMeasurements,
 } from './lighthouse-policy.mjs'
 
@@ -39,6 +41,20 @@ const lighthouseCli = path.join(
   'cli',
   'index.js',
 )
+const originalLongImageContract = {
+  exceptionId: 'authorized-original-media-transfer-bound',
+  route: '/topics/visual-guides/src-ec1754535996',
+  sourceAssetId: 'src-ec1754535996',
+  manifestPath: 'content/migrations/media-assets/src-ec1754535996.json',
+  originalPath:
+    'docs/public/wiki-media/src-ec1754535996/original.png',
+  publicPath: '/wiki-media/src-ec1754535996/original.png',
+  bytes: 5_972_619,
+  width: 1081,
+  height: 12_800,
+  format: 'png',
+  sha256: 'f1bdd7e39067db6db0f510c5694a36d8896ab7cc2dc904be397bf9c9808b6993',
+}
 const representativePages = [
   { id: 'home', route: '/', kind: 'home', seoPolicy: 'indexable' },
   {
@@ -66,10 +82,18 @@ const representativePages = [
     seoPolicy: 'indexable',
   },
   {
-    id: 'segmented-long-image',
-    route: '/topics/visual-guides/src-ec1754535996',
-    kind: 'segmented-responsive-image',
+    id: 'original-long-image',
+    route: originalLongImageContract.route,
+    kind: 'original-long-image',
     seoPolicy: 'indexable',
+    performanceBudgetException: {
+      id: originalLongImageContract.exceptionId,
+      sourceAssetId: originalLongImageContract.sourceAssetId,
+      manifestPath: originalLongImageContract.manifestPath,
+      exemptBudgets: ['performance', 'largestContentfulPaintMs'],
+      rationale:
+        'The accepted Wiki fidelity contract requires this 1081x12800 source image to remain one original PNG in article and detail views. Lighthouse simulated-mobile transfer time for the registered 5.97 MB original exceeds the global LCP budget by construction; accessibility, SEO, CLS, and initial-JavaScript budgets remain enforced.',
+    },
   },
   {
     id: 'damage-calculator',
@@ -148,6 +172,98 @@ function resolveDistAsset(url) {
   const prefix = base === '/' ? '' : base.slice(0, -1)
   if (prefix && pathname.startsWith(prefix)) pathname = pathname.slice(prefix.length)
   return path.join(distRoot, pathname.replace(/^\/+/, ''))
+}
+
+async function verifyPerformanceBudgetException(page) {
+  const exception = page.performanceBudgetException
+  if (!exception) return null
+
+  const expectedBudgets = ['largestContentfulPaintMs', 'performance']
+  const actualBudgets = [...new Set(exception.exemptBudgets)].sort()
+  if (
+    page.route !== originalLongImageContract.route ||
+    exception.id !== originalLongImageContract.exceptionId ||
+    exception.sourceAssetId !== originalLongImageContract.sourceAssetId ||
+    exception.manifestPath !== originalLongImageContract.manifestPath ||
+    JSON.stringify(actualBudgets) !== JSON.stringify(expectedBudgets)
+  ) {
+    throw new Error(
+      `${exception.id} is not bound to the single registered original-media transfer constraint`,
+    )
+  }
+
+  const manifest = JSON.parse(
+    await readFile(path.join(root, exception.manifestPath), 'utf8'),
+  )
+  const original = manifest.originals?.[0]
+  if (
+    manifest.sourceId !== exception.sourceAssetId ||
+    manifest.originalCopied !== true ||
+    manifest.originals?.length !== 1 ||
+    !original
+  ) {
+    throw new Error(`${exception.id} has invalid original-media evidence`)
+  }
+
+  const publicRoot = path.resolve(root, 'docs', 'public')
+  const originalPath = path.resolve(root, original.path)
+  if (
+    originalPath !== publicRoot &&
+    !originalPath.startsWith(`${publicRoot}${path.sep}`)
+  ) {
+    throw new Error(`${exception.id} original asset escapes docs/public`)
+  }
+
+  const [asset, assetStat] = await Promise.all([
+    readFile(originalPath),
+    stat(originalPath),
+  ])
+  const sha256 = createHash('sha256').update(asset).digest('hex')
+  if (
+    original.path !== originalLongImageContract.originalPath ||
+    original.publicPath !== originalLongImageContract.publicPath ||
+    original.bytes !== originalLongImageContract.bytes ||
+    assetStat.size !== originalLongImageContract.bytes ||
+    original.sha256 !== originalLongImageContract.sha256 ||
+    sha256 !== originalLongImageContract.sha256 ||
+    original.width !== originalLongImageContract.width ||
+    original.height !== originalLongImageContract.height ||
+    original.format !== originalLongImageContract.format
+  ) {
+    throw new Error(`${exception.id} original asset no longer matches its evidence`)
+  }
+
+  const builtHtml = await readFile(htmlPathForRoute(page.route), 'utf8')
+  const originalImageElements = (builtHtml.match(/<img\b[^>]*>/gi) ?? []).filter(
+    (tag) => {
+      const src = tag.match(/\bsrc=["']([^"']+)["']/i)?.[1]
+      if (!src) return false
+      const pathname = new URL(src, `${previewOrigin}${base}`).pathname
+      const basePrefix = base === '/' ? '' : base.slice(0, -1)
+      const publicPath =
+        basePrefix && pathname.startsWith(`${basePrefix}/`)
+          ? pathname.slice(basePrefix.length)
+          : pathname
+      return publicPath === originalLongImageContract.publicPath
+    },
+  )
+  if (originalImageElements.length !== 1) {
+    throw new Error(
+      `${exception.id} requires exactly one built original-image element, got ${originalImageElements.length}`,
+    )
+  }
+
+  return {
+    ...exception,
+    originalAsset: {
+      publicPath: original.publicPath,
+      bytes: original.bytes,
+      width: original.width,
+      height: original.height,
+      format: original.format,
+      sha256: original.sha256,
+    },
+  }
 }
 
 async function calculateInitialJavaScript(route) {
@@ -348,6 +464,19 @@ try {
   await waitForPreview(routeUrl('/'))
 
   for (const page of representativePages) {
+    const performanceBudgetEnforcement =
+      resolvePerformanceBudgetEnforcement(page)
+    let performanceBudgetException = null
+    try {
+      performanceBudgetException =
+        await verifyPerformanceBudgetException(page)
+    } catch (error) {
+      failures.push(
+        `${page.id}: invalid performance budget exception: ${error instanceof Error ? error.message : String(error)}`,
+      )
+      continue
+    }
+
     const measurements = []
     const initialMeasurement = await executeLighthouse(
       page,
@@ -359,9 +488,10 @@ try {
     }
     measurements.push(initialMeasurement)
 
+    const pageThresholds = effectivePerformanceThresholds(page, thresholds)
     const requiresConfirmation = requiresPerformanceConfirmation(
       initialMeasurement,
-      thresholds,
+      pageThresholds,
     )
     if (requiresConfirmation) {
       for (let index = 1; index <= 2; index += 1) {
@@ -412,7 +542,10 @@ try {
       releaseBlockingAccessibilityAudits.has(audit.id),
     )
 
-    if (scores.performance < thresholds.performance) {
+    if (
+      performanceBudgetEnforcement.performance &&
+      scores.performance < thresholds.performance
+    ) {
       failures.push(`${page.id}: Performance ${scores.performance} < 0.85`)
     }
     if (scores.accessibility < thresholds.accessibility) {
@@ -438,6 +571,7 @@ try {
       )
     }
     if (
+      performanceBudgetEnforcement.largestContentfulPaintMs &&
       metrics.largestContentfulPaintMs >
       thresholds.largestContentfulPaintMs
     ) {
@@ -445,12 +579,16 @@ try {
         `${page.id}: LCP ${metrics.largestContentfulPaintMs} ms > 2500 ms`,
       )
     }
-    if (metrics.cumulativeLayoutShift > thresholds.cumulativeLayoutShift) {
+    if (
+      performanceBudgetEnforcement.cumulativeLayoutShift &&
+      metrics.cumulativeLayoutShift > thresholds.cumulativeLayoutShift
+    ) {
       failures.push(
         `${page.id}: CLS ${metrics.cumulativeLayoutShift} > 0.1`,
       )
     }
     if (
+      performanceBudgetEnforcement.initialJavaScriptGzipBytes &&
       initialJavaScript.gzipBytes >
       thresholds.initialJavaScriptGzipBytes
     ) {
@@ -475,6 +613,8 @@ try {
       userAgent: lhr.userAgent,
       runnerWarning,
       attempts,
+      performanceBudgetException,
+      performanceBudgetEnforcement,
       measurementPolicy: requiresConfirmation
         ? 'median-lcp-of-three-after-initial-budget-failure'
         : 'single-run-within-budget',
@@ -503,8 +643,16 @@ if (results.length !== representativePages.length) {
   )
 }
 
+const performanceBudgetResults = results.filter(
+  (result) => result.performanceBudgetEnforcement.performance,
+)
+const lcpBudgetResults = results.filter(
+  (result) =>
+    result.performanceBudgetEnforcement.largestContentfulPaintMs,
+)
+
 const reportPath = await writeReport('performance-accessibility', {
-  schemaVersion: 1,
+  schemaVersion: 2,
   check: 'lighthouse-mobile',
   generatedAt: new Date().toISOString(),
   auditProfile: {
@@ -514,10 +662,25 @@ const reportPath = await writeReport('performance-accessibility', {
     browser: chromePath || 'auto-detected by Lighthouse',
   },
   thresholds,
+  performanceBudgetExceptions: results
+    .filter((result) => result.performanceBudgetException)
+    .map((result) => ({
+      pageId: result.id,
+      route: result.route,
+      ...result.performanceBudgetException,
+    })),
   summary: {
     representativePages: representativePages.length,
     completedPages: results.length,
     minimumPerformance:
+      performanceBudgetResults.length > 0
+        ? Math.min(
+            ...performanceBudgetResults.map(
+              (result) => result.scores.performance,
+            ),
+          )
+        : 0,
+    observedMinimumPerformance:
       results.length > 0
         ? Math.min(...results.map((result) => result.scores.performance))
         : 0,
@@ -537,6 +700,14 @@ const reportPath = await writeReport('performance-accessibility', {
       (result) => result.seoPolicy === 'intentional-noindex',
     ).length,
     maximumLcpMs:
+      lcpBudgetResults.length > 0
+        ? Math.max(
+            ...lcpBudgetResults.map(
+              (result) => result.metrics.largestContentfulPaintMs,
+            ),
+          )
+        : null,
+    observedMaximumLcpMs:
       results.length > 0
         ? Math.max(
             ...results.map(
@@ -560,6 +731,9 @@ const reportPath = await writeReport('performance-accessibility', {
             ),
           )
         : null,
+    registeredBudgetExceptions: results.filter(
+      (result) => result.performanceBudgetException,
+    ).length,
     failures: failures.length,
   },
   pages: results,

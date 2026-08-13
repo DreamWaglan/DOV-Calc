@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict'
 import {
+  effectivePerformanceThresholds,
+  isPerformanceBudgetEnforced,
   median,
   requiresPerformanceConfirmation,
+  resolvePerformanceBudgetEnforcement,
   summarizePerformanceMeasurements,
 } from '../../scripts/quality/lighthouse-policy.mjs'
 
@@ -25,6 +28,62 @@ assert.equal(median([3, 1, 2]), 2)
 assert.equal(median([4, 2]), 3)
 assert.throws(() => median([]), /at least one value/)
 assert.throws(() => median([1, Number.NaN]), /finite numbers/)
+
+const originalMediaPage = {
+  performanceBudgetException: {
+    exemptBudgets: ['performance', 'largestContentfulPaintMs'],
+  },
+}
+assert.equal(
+  isPerformanceBudgetEnforced(originalMediaPage, 'performance'),
+  false,
+)
+assert.equal(
+  isPerformanceBudgetEnforced(
+    originalMediaPage,
+    'largestContentfulPaintMs',
+  ),
+  false,
+)
+assert.equal(
+  isPerformanceBudgetEnforced(originalMediaPage, 'cumulativeLayoutShift'),
+  true,
+)
+assert.throws(
+  () => isPerformanceBudgetEnforced(originalMediaPage, 'unknown-budget'),
+  /unknown performance budget/,
+)
+assert.deepEqual(resolvePerformanceBudgetEnforcement(originalMediaPage), {
+  performance: false,
+  largestContentfulPaintMs: false,
+  cumulativeLayoutShift: true,
+  initialJavaScriptGzipBytes: true,
+})
+
+const originalMediaThresholds = effectivePerformanceThresholds(
+  originalMediaPage,
+  thresholds,
+)
+assert.equal(originalMediaThresholds.performance, Number.NEGATIVE_INFINITY)
+assert.equal(
+  originalMediaThresholds.largestContentfulPaintMs,
+  Number.POSITIVE_INFINITY,
+)
+assert.equal(originalMediaThresholds.cumulativeLayoutShift, 0.1)
+assert.equal(
+  requiresPerformanceConfirmation(
+    measurement(0.6, 32_000, 0.02),
+    originalMediaThresholds,
+  ),
+  false,
+)
+assert.equal(
+  requiresPerformanceConfirmation(
+    measurement(0.6, 32_000, 0.11),
+    originalMediaThresholds,
+  ),
+  true,
+)
 
 assert.equal(
   requiresPerformanceConfirmation(

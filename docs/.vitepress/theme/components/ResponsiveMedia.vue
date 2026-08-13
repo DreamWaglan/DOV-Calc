@@ -44,6 +44,14 @@ const resolvedMode = computed(() =>
   isIndexCard.value ? 'index' : isTableCell.value ? 'table-cell' : 'viewer',
 )
 const imagePath = computed(() => withBase(props.fallbackPath))
+const viewerFrameStyle = computed(() =>
+  resolvedMode.value === 'viewer'
+    ? {
+        width: `min(100%, ${props.width}px)`,
+        aspectRatio: `${props.width} / ${props.height}`,
+      }
+    : undefined,
+)
 </script>
 
 <template>
@@ -52,6 +60,7 @@ const imagePath = computed(() => withBase(props.fallbackPath))
     class="responsive-media"
     :class="`responsive-media--${resolvedMode}`"
     :data-media-mode="resolvedMode"
+    :style="viewerFrameStyle"
   >
     <template v-if="isIndexCard">
       <picture>

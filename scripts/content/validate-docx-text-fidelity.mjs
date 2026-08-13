@@ -8,7 +8,8 @@ import { collectBody, parseWordprocessingXml } from './import-docx.mjs'
 import { loadPages, printResult, writeReport } from './lib/content-utils.mjs'
 
 const ledgerPath = 'content/governance/source-assets.json'
-const corpusReportPath = 'content/reports/docx-import.json'
+const corpusReportPath =
+  process.env.DOCX_IMPORT_REPORT_PATH ?? 'content/reports/docx-import.json'
 const fullContentMapPath = 'content/migrations/full-content-map.json'
 const failures = []
 const markdownIt = new MarkdownIt({
@@ -321,28 +322,89 @@ const reportByAssetId = new Map(
   corpusReport.assets.map((report) => [report.assetId, report]),
 )
 const perSource = []
+const configuredSourceRoot =
+  process.env.CONTENT_SOURCE_ROOT ?? ledger.sourceRoot.path
+const sourceRootAvailable = Boolean(
+  configuredSourceRoot && existsSync(path.resolve(configuredSourceRoot)),
+)
+
+function unavailableSourceReport(asset, status, reason) {
+  return {
+    sourceAssetId: asset.id,
+    sourcePath: asset.origin.path,
+    sourceSha256: null,
+    contentDocument: contentDocumentIds.has(asset.id),
+    status,
+    skipReason: status === 'skipped' ? reason : null,
+    failureReason: status === 'failed' ? reason : null,
+    rawTextNodes: 0,
+    parsedTextNodes: 0,
+    numericTextNodes: 0,
+    lexicalSensitiveTextNodes: 0,
+    nonStringTextNodes: 0,
+    sourceBodyElements: 0,
+    reviewComparedElements: 0,
+    publicPages: 0,
+    publicMappedElements: 0,
+    publicComparedElements: 0,
+    publicUnmappedTextElements: 0,
+  }
+}
 
 if (docxAssets.length !== 13) {
   failures.push(`expected 13 registered DOCX assets, got ${docxAssets.length}`)
 }
 
 for (const asset of docxAssets) {
-  const sourcePath = resolveSource(ledger.sourceRoot.path, asset.origin.path)
-  if (!existsSync(sourcePath)) {
-    failures.push(`${asset.id}: registered source DOCX is unavailable`)
+  if (!sourceRootAvailable) {
+    perSource.push(
+      unavailableSourceReport(asset, 'skipped', 'source-root-unavailable'),
+    )
     continue
   }
 
-  const sourceBytes = await readFile(sourcePath)
+  const sourcePath = resolveSource(configuredSourceRoot, asset.origin.path)
+  if (!existsSync(sourcePath)) {
+    failures.push(`${asset.id}: registered source DOCX is unavailable`)
+    perSource.push(
+      unavailableSourceReport(asset, 'failed', 'source-file-unavailable'),
+    )
+    continue
+  }
+
+  let sourceBytes
+  try {
+    sourceBytes = await readFile(sourcePath)
+  } catch (error) {
+    failures.push(`${asset.id}: registered source DOCX is unreadable: ${error.message}`)
+    perSource.push(
+      unavailableSourceReport(asset, 'failed', 'source-file-unreadable'),
+    )
+    continue
+  }
+
+  const sourceFailureStart = failures.length
   const sourceHash = sha256(sourceBytes)
   if (sourceHash !== asset.hashes.sha256) {
     failures.push(`${asset.id}: source SHA-256 differs from the governance ledger`)
   }
 
-  const zip = unzipSync(new Uint8Array(sourceBytes))
+  let zip
+  try {
+    zip = unzipSync(new Uint8Array(sourceBytes))
+  } catch (error) {
+    failures.push(`${asset.id}: registered source DOCX is corrupt: ${error.message}`)
+    perSource.push(
+      unavailableSourceReport(asset, 'failed', 'source-file-corrupt'),
+    )
+    continue
+  }
   const documentEntry = zip['word/document.xml']
   if (!documentEntry) {
     failures.push(`${asset.id}: word/document.xml is missing`)
+    perSource.push(
+      unavailableSourceReport(asset, 'failed', 'document-xml-missing'),
+    )
     continue
   }
 
@@ -371,6 +433,14 @@ for (const asset of docxAssets) {
   const importSummary = reportByAssetId.get(asset.id)
   if (!importSummary) {
     failures.push(`${asset.id}: aggregate DOCX import report entry is missing`)
+    perSource.push({
+      ...unavailableSourceReport(
+        asset,
+        'failed',
+        'import-report-entry-missing',
+      ),
+      sourceSha256: sourceHash,
+    })
     continue
   }
   if (importSummary.source?.sha256 !== asset.hashes.sha256) {
@@ -485,6 +555,10 @@ for (const asset of docxAssets) {
     sourcePath: asset.origin.path,
     sourceSha256: sourceHash,
     contentDocument: contentDocumentIds.has(asset.id),
+    status: failures.length === sourceFailureStart ? 'validated' : 'failed',
+    skipReason: null,
+    failureReason:
+      failures.length === sourceFailureStart ? null : 'validation-failed',
     rawTextNodes: rawTextNodes.length,
     parsedTextNodes: parsedTextNodes.length,
     numericTextNodes: numericTextNodes.length,
@@ -554,15 +628,26 @@ const totals = perSource.reduce(
 )
 
 const reportPath = await writeReport('docx-text-fidelity', {
-  schemaVersion: 2,
+  schemaVersion: 3,
   check: 'docx-source-to-public-text-fidelity',
+  sourceRootAvailable,
+  sourceRootAlias: ledger.sourceRoot.alias ?? null,
   summary: {
     sources: perSource.length,
+    registeredSources: docxAssets.length,
+    validatedSources: perSource.filter((source) => source.status === 'validated')
+      .length,
+    skippedSources: perSource.filter((source) => source.status === 'skipped')
+      .length,
+    failedSources: perSource.filter((source) => source.status === 'failed')
+      .length,
     contentDocuments: perSource.filter((source) => source.contentDocument).length,
     ...totals,
     failures: failures.length,
   },
   policy: {
+    sourceAvailability:
+      'when the entire registered external source root is unavailable, source-backed comparisons are explicitly skipped; when the root exists, every registered DOCX remains mandatory',
     sourceMutation: 'forbidden; source SHA-256 must match the governance ledger',
     tagValueCoercion: 'forbidden for w:t; source lexical strings must be preserved',
     parserSequence: 'parsed w:t values must exactly match raw OOXML order and spelling',

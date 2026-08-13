@@ -172,6 +172,13 @@
   object-fit: contain;
 }
 
+.responsive-media--viewer .responsive-media__trigger,
+.responsive-media--viewer .responsive-media__trigger picture,
+.responsive-media--viewer .responsive-media__trigger img {
+  width: 100%;
+  height: 100%;
+}
+
 .responsive-media__trigger:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--vp-c-brand-1) 72%, transparent);
   outline-offset: 4px;

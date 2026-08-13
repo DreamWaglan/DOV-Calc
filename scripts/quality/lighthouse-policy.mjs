@@ -12,6 +12,52 @@ export function median(values) {
     : sorted[midpoint]
 }
 
+const performanceBudgetKeys = new Set([
+  'performance',
+  'largestContentfulPaintMs',
+  'cumulativeLayoutShift',
+  'initialJavaScriptGzipBytes',
+])
+
+export function isPerformanceBudgetEnforced(page, budgetKey) {
+  if (!performanceBudgetKeys.has(budgetKey)) {
+    throw new Error(`unknown performance budget: ${budgetKey}`)
+  }
+  return !(
+    page.performanceBudgetException?.exemptBudgets?.includes(budgetKey) ?? false
+  )
+}
+
+export function resolvePerformanceBudgetEnforcement(page) {
+  return Object.fromEntries(
+    [...performanceBudgetKeys].map((budgetKey) => [
+      budgetKey,
+      isPerformanceBudgetEnforced(page, budgetKey),
+    ]),
+  )
+}
+
+export function effectivePerformanceThresholds(page, thresholds) {
+  return {
+    ...thresholds,
+    performance: isPerformanceBudgetEnforced(page, 'performance')
+      ? thresholds.performance
+      : Number.NEGATIVE_INFINITY,
+    largestContentfulPaintMs: isPerformanceBudgetEnforced(
+      page,
+      'largestContentfulPaintMs',
+    )
+      ? thresholds.largestContentfulPaintMs
+      : Number.POSITIVE_INFINITY,
+    cumulativeLayoutShift: isPerformanceBudgetEnforced(
+      page,
+      'cumulativeLayoutShift',
+    )
+      ? thresholds.cumulativeLayoutShift
+      : Number.POSITIVE_INFINITY,
+  }
+}
+
 export function requiresPerformanceConfirmation(measurement, thresholds) {
   return (
     measurement.scores.performance < thresholds.performance ||

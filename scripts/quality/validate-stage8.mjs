@@ -145,7 +145,7 @@ const blockingAccessibilityAudits = (performance.pages ?? []).flatMap(
 )
 addGate(
   'P8-A11Y-PERFORMANCE',
-  '代表页面满足 Lighthouse、LCP、CLS、首屏 JS 与 axe 支持的阻断级可访问性门槛',
+  '代表页面满足适用的 Lighthouse、LCP、CLS、首屏 JS 与 axe 阻断门槛，原图传输例外有完整登记',
   failureCount(performance) === 0 &&
     failureCount(mobileA11y) === 0 &&
     performance.summary?.completedPages ===
@@ -157,6 +157,7 @@ addGate(
     performance.summary?.maximumLcpMs <= 2500 &&
     performance.summary?.maximumCls <= 0.1 &&
     performance.summary?.maximumInitialJavaScriptGzipBytes <= 250_000 &&
+    performance.summary?.registeredBudgetExceptions === 1 &&
     blockingAccessibilityAudits.length === 0,
   [
     'content/reports/performance-accessibility.json',

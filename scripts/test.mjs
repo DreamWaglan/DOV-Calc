@@ -12,6 +12,7 @@ const checks = [
   'scripts/test-imports.mjs',
   'scripts/content/validate-full-content-map.mjs',
   'scripts/content/validate-media-placement.mjs',
+  'tests/content/docx-text-fidelity-source-availability.mjs',
   'scripts/content/validate-docx-text-fidelity.mjs',
   'scripts/content/validate-docx-table-layouts.mjs',
   'tests/content/advanced-content-ownership.mjs',

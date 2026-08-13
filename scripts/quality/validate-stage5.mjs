@@ -232,7 +232,7 @@ addAcceptance(
 
 addAcceptance(
   'AC-11',
-  '代表页面满足 Performance、Accessibility、SEO、LCP、CLS 与首屏 JS 门槛',
+  '代表页面满足适用的 Performance、Accessibility、SEO、LCP、CLS 与首屏 JS 门槛，原图传输例外有完整登记',
   failureCount(performance) === 0 &&
     performance.summary?.completedPages ===
       performance.summary?.representativePages &&
@@ -242,6 +242,7 @@ addAcceptance(
     performance.summary?.maximumLcpMs <= 2500 &&
     performance.summary?.maximumCls <= 0.1 &&
     performance.summary?.maximumInitialJavaScriptGzipBytes <= 250_000 &&
+    performance.summary?.registeredBudgetExceptions === 1 &&
     failureCount(seo) === 0,
   [
     'content/reports/performance-accessibility.json',
