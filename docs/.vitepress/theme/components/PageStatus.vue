@@ -7,7 +7,7 @@ const props = defineProps<{
 
 const statusLabels: Record<string, string> = {
   draft: '草稿',
-  current: '当前有效',
+  current: '2026年8月13日更新',
   stale: '待复核',
   archived: '已归档',
 }

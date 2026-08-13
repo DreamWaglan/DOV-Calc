@@ -8,6 +8,7 @@ const reportPath = path.join(root, 'content', 'reports', 'mobile-a11y-static.jso
 
 const files = {
   theme: path.join(docsRoot, '.vitepress', 'theme', 'styles.css'),
+  config: path.join(docsRoot, '.vitepress', 'config.mts'),
   layout: path.join(docsRoot, '.vitepress', 'theme', 'WikiLayout.vue'),
   damage: path.join(docsRoot, '.vitepress', 'components', 'DamageCalculator.vue'),
   equipment: path.join(docsRoot, '.vitepress', 'components', 'EquipmentLookup.vue'),
@@ -27,8 +28,9 @@ const files = {
   ),
 }
 
-const [theme, layout, damage, equipment, responsiveMedia, originalImageViewer, markdownPaths] = await Promise.all([
+const [theme, config, layout, damage, equipment, responsiveMedia, originalImageViewer, markdownPaths] = await Promise.all([
   readFile(files.theme, 'utf8'),
+  readFile(files.config, 'utf8'),
   readFile(files.layout, 'utf8'),
   readFile(files.damage, 'utf8'),
   readFile(files.equipment, 'utf8'),
@@ -74,6 +76,16 @@ const checks = [
     theme.includes('.VPDoc .content') &&
       theme.includes('min-width: 0') &&
       theme.includes('overflow-wrap: anywhere'),
+  ),
+  check(
+    'article-prose-first-line-indent',
+    config.includes('installArticleParagraphSemantics') &&
+      theme.includes('.vp-doc p.article-prose') &&
+      theme.includes('text-indent: 2em') &&
+      !theme.includes('.vp-doc p {') &&
+      markdownEntries.some(({ body }) =>
+        body.includes('<!-- article-paragraph:non-prose -->'),
+      ),
   ),
   check(
     'tables-scroll-locally',

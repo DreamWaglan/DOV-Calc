@@ -48,8 +48,8 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/advanced/laguz/review.md",
-      "sha256": "cfd6bcf392bf1b326d5847cc6dde15ae446586cc2e0744dd6f0b7af6789b01bf",
-      "bytes": 37256
+      "sha256": "ad7f24822b760a837e472189b0470f2352232b7fe4dd9c933b191a3bf3fa2270",
+      "bytes": 42293
     },
     "quarantine": {
       "path": "content/imports/docx/advanced/laguz/quarantine.json",
@@ -81,7 +81,9 @@
         "bodyIndex": 1,
         "paragraphIndex": 1
       },
-      "textHash": "36024fd72aaecd9c07673504e9ff1088bd0d0304f2ebf33555b34b1ec22b97c1"
+      "paragraphStyleId": "",
+      "textHash": "36024fd72aaecd9c07673504e9ff1088bd0d0304f2ebf33555b34b1ec22b97c1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -92,7 +94,9 @@
         "bodyIndex": 2,
         "paragraphIndex": 2
       },
-      "textHash": "54f673dba0f3a3bb74547f1590a8ca7cf3d2262d6434ffb2235d59080595659d"
+      "paragraphStyleId": "",
+      "textHash": "54f673dba0f3a3bb74547f1590a8ca7cf3d2262d6434ffb2235d59080595659d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -103,7 +107,9 @@
         "bodyIndex": 3,
         "paragraphIndex": 3
       },
-      "textHash": "c0aa97c4630b2ddac90c98ff8d3a8131875a3405a8d4f9cd0028df85c092cdac"
+      "paragraphStyleId": "",
+      "textHash": "c0aa97c4630b2ddac90c98ff8d3a8131875a3405a8d4f9cd0028df85c092cdac",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -114,7 +120,9 @@
         "bodyIndex": 4,
         "paragraphIndex": 4
       },
-      "textHash": "082ab6397d45c2e4397eef8afb182bac29265a7c08e2b89871512a856d77736a"
+      "paragraphStyleId": "",
+      "textHash": "082ab6397d45c2e4397eef8afb182bac29265a7c08e2b89871512a856d77736a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -125,7 +133,9 @@
         "bodyIndex": 5,
         "paragraphIndex": 5
       },
-      "textHash": "0381ac59232e80767231710679fcde3c0c1e252706818c1e36eab7693e2f0cbe"
+      "paragraphStyleId": "",
+      "textHash": "0381ac59232e80767231710679fcde3c0c1e252706818c1e36eab7693e2f0cbe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -136,7 +146,9 @@
         "bodyIndex": 6,
         "paragraphIndex": 6
       },
-      "textHash": "0d4a3bf08c95ba8f394cc8f3d746ef630744de83e8c466c15915027b882d872b"
+      "paragraphStyleId": "",
+      "textHash": "0d4a3bf08c95ba8f394cc8f3d746ef630744de83e8c466c15915027b882d872b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -147,7 +159,9 @@
         "bodyIndex": 7,
         "paragraphIndex": 7
       },
-      "textHash": "668cb0341b89d73db570cb644aeec75fb19cdf6019395314485d0c806cc37c4c"
+      "paragraphStyleId": "",
+      "textHash": "668cb0341b89d73db570cb644aeec75fb19cdf6019395314485d0c806cc37c4c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -158,7 +172,9 @@
         "bodyIndex": 8,
         "paragraphIndex": 8
       },
-      "textHash": "89973b9c3b1d4ec5b97d1e1fdc4122881ef6f2dfa3d9f30bf2d90854618b8562"
+      "paragraphStyleId": "",
+      "textHash": "89973b9c3b1d4ec5b97d1e1fdc4122881ef6f2dfa3d9f30bf2d90854618b8562",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -169,7 +185,9 @@
         "bodyIndex": 9,
         "paragraphIndex": 9
       },
-      "textHash": "3da10939af9aab17c95b7556823b2c27b631561a01a757e753b79d014b952c39"
+      "paragraphStyleId": "",
+      "textHash": "3da10939af9aab17c95b7556823b2c27b631561a01a757e753b79d014b952c39",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -180,7 +198,9 @@
         "bodyIndex": 10,
         "paragraphIndex": 10
       },
-      "textHash": "952d3f927bb140cdb6ec840d6c32a7d83785ab5667572db3db28e6076686b037"
+      "paragraphStyleId": "",
+      "textHash": "952d3f927bb140cdb6ec840d6c32a7d83785ab5667572db3db28e6076686b037",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -191,7 +211,9 @@
         "bodyIndex": 11,
         "paragraphIndex": 11
       },
-      "textHash": "4748afa78a9b60256a0777f8acf0f451b4f4142b2f9f6e237326fe995d2bdac2"
+      "paragraphStyleId": "",
+      "textHash": "4748afa78a9b60256a0777f8acf0f451b4f4142b2f9f6e237326fe995d2bdac2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -202,7 +224,9 @@
         "bodyIndex": 12,
         "paragraphIndex": 12
       },
-      "textHash": "3c8b3551916a823b7fc2b1bbf4c2f7aefd61e22f2427719f8752817949d645ed"
+      "paragraphStyleId": "",
+      "textHash": "3c8b3551916a823b7fc2b1bbf4c2f7aefd61e22f2427719f8752817949d645ed",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -213,7 +237,9 @@
         "bodyIndex": 13,
         "paragraphIndex": 13
       },
-      "textHash": "e23722ddf6f18cc15ff6104aa9f197c0d59fe23df69ef7acb720d6782e6665f7"
+      "paragraphStyleId": "",
+      "textHash": "e23722ddf6f18cc15ff6104aa9f197c0d59fe23df69ef7acb720d6782e6665f7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -224,7 +250,9 @@
         "bodyIndex": 14,
         "paragraphIndex": 14
       },
-      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41"
+      "paragraphStyleId": "",
+      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -235,7 +263,9 @@
         "bodyIndex": 15,
         "paragraphIndex": 15
       },
-      "textHash": "640e0be093b168ab4329eec7d1fa851be73928c43898a2617a0bd683a21dea0a"
+      "paragraphStyleId": "",
+      "textHash": "640e0be093b168ab4329eec7d1fa851be73928c43898a2617a0bd683a21dea0a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -246,7 +276,9 @@
         "bodyIndex": 16,
         "paragraphIndex": 16
       },
-      "textHash": "7d9c71c92ed67aa7fa6928221cd590c2879c06cf85d976d85edde160123bb52c"
+      "paragraphStyleId": "",
+      "textHash": "7d9c71c92ed67aa7fa6928221cd590c2879c06cf85d976d85edde160123bb52c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -257,7 +289,9 @@
         "bodyIndex": 17,
         "paragraphIndex": 17
       },
-      "textHash": "178921c74813b4181ab59508680a623342e9a2f1aeadcfe2d9d12f0677acb3a1"
+      "paragraphStyleId": "",
+      "textHash": "178921c74813b4181ab59508680a623342e9a2f1aeadcfe2d9d12f0677acb3a1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -268,7 +302,9 @@
         "bodyIndex": 18,
         "paragraphIndex": 18
       },
-      "textHash": "7abc0c27d0a8a21ab079eafb11a440000fde433748e31cd0afeb5f273e8d31dd"
+      "paragraphStyleId": "",
+      "textHash": "7abc0c27d0a8a21ab079eafb11a440000fde433748e31cd0afeb5f273e8d31dd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -279,7 +315,9 @@
         "bodyIndex": 19,
         "paragraphIndex": 19
       },
-      "textHash": "72647b859398c671775d779cf861866e1161639462a695e12ec1326278df2461"
+      "paragraphStyleId": "",
+      "textHash": "72647b859398c671775d779cf861866e1161639462a695e12ec1326278df2461",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -290,7 +328,9 @@
         "bodyIndex": 20,
         "paragraphIndex": 20
       },
-      "textHash": "486483ba4ebc907c17c27899af753fd9ec7b5e993e301037c050d365179f5acd"
+      "paragraphStyleId": "",
+      "textHash": "486483ba4ebc907c17c27899af753fd9ec7b5e993e301037c050d365179f5acd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -301,7 +341,9 @@
         "bodyIndex": 21,
         "paragraphIndex": 21
       },
-      "textHash": "d04edecdce6ddc76507aaa684f32ccef7970ec76e5e073e380a259f5d51df5e0"
+      "paragraphStyleId": "",
+      "textHash": "d04edecdce6ddc76507aaa684f32ccef7970ec76e5e073e380a259f5d51df5e0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -312,7 +354,9 @@
         "bodyIndex": 22,
         "paragraphIndex": 22
       },
-      "textHash": "910e472170cb03c4f352c0aec696f45784e21f88366b0fb56eceb331f209260c"
+      "paragraphStyleId": "",
+      "textHash": "910e472170cb03c4f352c0aec696f45784e21f88366b0fb56eceb331f209260c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -323,7 +367,9 @@
         "bodyIndex": 23,
         "paragraphIndex": 23
       },
-      "textHash": "3e4c81b85cdbd17fc73a94cdd634d2ceeea7902ce6ece6e8ec3cd581b08a08fa"
+      "paragraphStyleId": "",
+      "textHash": "3e4c81b85cdbd17fc73a94cdd634d2ceeea7902ce6ece6e8ec3cd581b08a08fa",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -334,7 +380,9 @@
         "bodyIndex": 24,
         "paragraphIndex": 24
       },
-      "textHash": "88a632a25348530289c449862d36e1de0b4821b26dedd8301b573e48938719d9"
+      "paragraphStyleId": "",
+      "textHash": "88a632a25348530289c449862d36e1de0b4821b26dedd8301b573e48938719d9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -345,7 +393,9 @@
         "bodyIndex": 25,
         "paragraphIndex": 25
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -356,7 +406,9 @@
         "bodyIndex": 26,
         "paragraphIndex": 26
       },
-      "textHash": "364d01b02d732c6e2b6d0b9a6c803f4c119af2da5e0a5b464df7d3a02354d8a0"
+      "paragraphStyleId": "",
+      "textHash": "364d01b02d732c6e2b6d0b9a6c803f4c119af2da5e0a5b464df7d3a02354d8a0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -367,7 +419,9 @@
         "bodyIndex": 27,
         "paragraphIndex": 27
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -378,7 +432,9 @@
         "bodyIndex": 28,
         "paragraphIndex": 28
       },
-      "textHash": "0383a4a4a00fa30c7a1ce871640a3bf484b5a05dee9e7148923716548afe95f6"
+      "paragraphStyleId": "",
+      "textHash": "0383a4a4a00fa30c7a1ce871640a3bf484b5a05dee9e7148923716548afe95f6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -389,7 +445,9 @@
         "bodyIndex": 29,
         "paragraphIndex": 29
       },
-      "textHash": "150bea17629ee7811f0a9bc990cde29c9e71dfe5075c61a900fc985b7e9a3c77"
+      "paragraphStyleId": "",
+      "textHash": "150bea17629ee7811f0a9bc990cde29c9e71dfe5075c61a900fc985b7e9a3c77",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -400,7 +458,9 @@
         "bodyIndex": 30,
         "paragraphIndex": 30
       },
-      "textHash": "d6562a86a8af68af1d99e7f02dd461a491e45e1db5d37d4eb388477725a4350e"
+      "paragraphStyleId": "",
+      "textHash": "d6562a86a8af68af1d99e7f02dd461a491e45e1db5d37d4eb388477725a4350e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -411,7 +471,9 @@
         "bodyIndex": 31,
         "paragraphIndex": 31
       },
-      "textHash": "c701e85ecc346f03c3f33e7ce1136501b4bb5b65c39208880f6abaed7af1600d"
+      "paragraphStyleId": "",
+      "textHash": "c701e85ecc346f03c3f33e7ce1136501b4bb5b65c39208880f6abaed7af1600d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -422,7 +484,9 @@
         "bodyIndex": 32,
         "paragraphIndex": 32
       },
-      "textHash": "96aaf364be3711079c8c450b751fc13d49476aba67f9489aad8f508a9f9996b3"
+      "paragraphStyleId": "",
+      "textHash": "96aaf364be3711079c8c450b751fc13d49476aba67f9489aad8f508a9f9996b3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -433,7 +497,9 @@
         "bodyIndex": 33,
         "paragraphIndex": 33
       },
-      "textHash": "37bb3e4a6b98220d6d3c39d50451917aaacd9cadb578922d2c0dfeb3e1bd8220"
+      "paragraphStyleId": "",
+      "textHash": "37bb3e4a6b98220d6d3c39d50451917aaacd9cadb578922d2c0dfeb3e1bd8220",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -444,7 +510,9 @@
         "bodyIndex": 34,
         "paragraphIndex": 34
       },
-      "textHash": "3c33a5954aa0e8f5f64474a35fc8ac9f53e9adb5cf8a7b4f28b4e5ace4631067"
+      "paragraphStyleId": "",
+      "textHash": "3c33a5954aa0e8f5f64474a35fc8ac9f53e9adb5cf8a7b4f28b4e5ace4631067",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -455,7 +523,9 @@
         "bodyIndex": 35,
         "paragraphIndex": 35
       },
-      "textHash": "0039e0ef5bee4d6a7a8620f11ac577c9619a2c35db764b11b7bda81d16003189"
+      "paragraphStyleId": "",
+      "textHash": "0039e0ef5bee4d6a7a8620f11ac577c9619a2c35db764b11b7bda81d16003189",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -466,7 +536,9 @@
         "bodyIndex": 36,
         "paragraphIndex": 36
       },
-      "textHash": "92ba23ff19e3a37a3d150aa105feeb67589d8ab0ad212aff591b4957f7e3fd44"
+      "paragraphStyleId": "",
+      "textHash": "92ba23ff19e3a37a3d150aa105feeb67589d8ab0ad212aff591b4957f7e3fd44",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -477,7 +549,9 @@
         "bodyIndex": 37,
         "paragraphIndex": 37
       },
-      "textHash": "3237b5f384951eeece8c01b2310768f7698d4efe2267418b4056d0d1a5f8a586"
+      "paragraphStyleId": "",
+      "textHash": "3237b5f384951eeece8c01b2310768f7698d4efe2267418b4056d0d1a5f8a586",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -488,7 +562,9 @@
         "bodyIndex": 38,
         "paragraphIndex": 38
       },
-      "textHash": "7f3ea92cffb4206b598f473ccb2ca13fde7fb8b9d85f4892bbaa7be2c42153d6"
+      "paragraphStyleId": "",
+      "textHash": "7f3ea92cffb4206b598f473ccb2ca13fde7fb8b9d85f4892bbaa7be2c42153d6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -499,7 +575,9 @@
         "bodyIndex": 39,
         "paragraphIndex": 39
       },
-      "textHash": "76ebeecaaa41a88bd5f72173af680092baab120a5c3a0e5ff097a096fd1f1ebe"
+      "paragraphStyleId": "",
+      "textHash": "76ebeecaaa41a88bd5f72173af680092baab120a5c3a0e5ff097a096fd1f1ebe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -510,7 +588,9 @@
         "bodyIndex": 40,
         "paragraphIndex": 40
       },
-      "textHash": "364f07232f9e55b268e785a421fa1c164a65e1a433f8941cf34cea97bdfc10e2"
+      "paragraphStyleId": "",
+      "textHash": "364f07232f9e55b268e785a421fa1c164a65e1a433f8941cf34cea97bdfc10e2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -521,7 +601,9 @@
         "bodyIndex": 41,
         "paragraphIndex": 41
       },
-      "textHash": "db4d41fb976d9adb439e300f396bdac32361536686b6736cdf0b5816ba558843"
+      "paragraphStyleId": "",
+      "textHash": "db4d41fb976d9adb439e300f396bdac32361536686b6736cdf0b5816ba558843",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -532,7 +614,9 @@
         "bodyIndex": 42,
         "paragraphIndex": 42
       },
-      "textHash": "4935b5cc43e4121532c866170e36520d7b9dd932ac2c4f0bbf4534e2cf91ba92"
+      "paragraphStyleId": "",
+      "textHash": "4935b5cc43e4121532c866170e36520d7b9dd932ac2c4f0bbf4534e2cf91ba92",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -543,7 +627,9 @@
         "bodyIndex": 43,
         "paragraphIndex": 43
       },
-      "textHash": "158c34bb94b949835c0ffe9d6d77e59879210c5f1be877ba16f5ce2e628001cc"
+      "paragraphStyleId": "",
+      "textHash": "158c34bb94b949835c0ffe9d6d77e59879210c5f1be877ba16f5ce2e628001cc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -554,7 +640,9 @@
         "bodyIndex": 44,
         "paragraphIndex": 44
       },
-      "textHash": "0010929b964e34c4b838487137571a48bab9bf16f87a43080dd0eb1f7c97a9fd"
+      "paragraphStyleId": "",
+      "textHash": "0010929b964e34c4b838487137571a48bab9bf16f87a43080dd0eb1f7c97a9fd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -565,7 +653,9 @@
         "bodyIndex": 45,
         "paragraphIndex": 45
       },
-      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41"
+      "paragraphStyleId": "",
+      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -576,7 +666,9 @@
         "bodyIndex": 46,
         "paragraphIndex": 46
       },
-      "textHash": "9bc9b9189298eb1cccdb130af2061ba056f2d6f6956d0f81fb8c42d18d45ee84"
+      "paragraphStyleId": "",
+      "textHash": "9bc9b9189298eb1cccdb130af2061ba056f2d6f6956d0f81fb8c42d18d45ee84",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -587,7 +679,9 @@
         "bodyIndex": 47,
         "paragraphIndex": 47
       },
-      "textHash": "906658669863a28e8aeeb662d2c3e9bca220bb9654b24ead53b04b6c4a1c4b8f"
+      "paragraphStyleId": "",
+      "textHash": "906658669863a28e8aeeb662d2c3e9bca220bb9654b24ead53b04b6c4a1c4b8f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -598,7 +692,9 @@
         "bodyIndex": 48,
         "paragraphIndex": 48
       },
-      "textHash": "4cb0c4c029f88415bb5a1edd31caa05d639ce3f65dbdf9071b9b40117825f195"
+      "paragraphStyleId": "",
+      "textHash": "4cb0c4c029f88415bb5a1edd31caa05d639ce3f65dbdf9071b9b40117825f195",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -609,7 +705,9 @@
         "bodyIndex": 49,
         "paragraphIndex": 49
       },
-      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41"
+      "paragraphStyleId": "",
+      "textHash": "944718b923a738cf8e58d96af1b1b0cc9a0d213813ae2557db0a66d5169a8c41",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -620,7 +718,9 @@
         "bodyIndex": 50,
         "paragraphIndex": 50
       },
-      "textHash": "c86ec9c62395bea690159c6c8c0f808a7e6880ae017811c1ebf64491e65685f2"
+      "paragraphStyleId": "",
+      "textHash": "c86ec9c62395bea690159c6c8c0f808a7e6880ae017811c1ebf64491e65685f2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -631,7 +731,9 @@
         "bodyIndex": 51,
         "paragraphIndex": 51
       },
-      "textHash": "55c95bd1c9a4902777e494b8600153b9339cf8f48e57365d685f5e2dd146c6b2"
+      "paragraphStyleId": "",
+      "textHash": "55c95bd1c9a4902777e494b8600153b9339cf8f48e57365d685f5e2dd146c6b2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -642,7 +744,9 @@
         "bodyIndex": 52,
         "paragraphIndex": 52
       },
-      "textHash": "ccaa8d8076fb2f8792825d0c510c057e05362b23590eabf7905591cc610a3f2a"
+      "paragraphStyleId": "",
+      "textHash": "ccaa8d8076fb2f8792825d0c510c057e05362b23590eabf7905591cc610a3f2a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -653,7 +757,9 @@
         "bodyIndex": 53,
         "paragraphIndex": 53
       },
-      "textHash": "1b0aff2f10e874ab9e5615c1d9b72d174485bf86307c48e8fcdf506a66b4cd86"
+      "paragraphStyleId": "",
+      "textHash": "1b0aff2f10e874ab9e5615c1d9b72d174485bf86307c48e8fcdf506a66b4cd86",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -664,7 +770,9 @@
         "bodyIndex": 54,
         "paragraphIndex": 54
       },
-      "textHash": "47930ae693859b3a85319151a715ad77db595784c777250fee4e2f978c373cbc"
+      "paragraphStyleId": "",
+      "textHash": "47930ae693859b3a85319151a715ad77db595784c777250fee4e2f978c373cbc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -675,7 +783,9 @@
         "bodyIndex": 55,
         "paragraphIndex": 55
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -686,7 +796,9 @@
         "bodyIndex": 56,
         "paragraphIndex": 56
       },
-      "textHash": "620b5d8c8500ae50c3aa9ffbf97c391233a95d4aa466be6e5081d540778f3b98"
+      "paragraphStyleId": "",
+      "textHash": "620b5d8c8500ae50c3aa9ffbf97c391233a95d4aa466be6e5081d540778f3b98",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -697,7 +809,9 @@
         "bodyIndex": 57,
         "paragraphIndex": 57
       },
-      "textHash": "840c23f6e19391f8821fd3bb0c2d297ec46d6e50bccc74c850189136a46f32a4"
+      "paragraphStyleId": "",
+      "textHash": "840c23f6e19391f8821fd3bb0c2d297ec46d6e50bccc74c850189136a46f32a4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -708,7 +822,9 @@
         "bodyIndex": 58,
         "paragraphIndex": 58
       },
-      "textHash": "3850f8b381d3df724247df1117bbc3574db08f24053cf86c081f09dbc0d9d5c7"
+      "paragraphStyleId": "",
+      "textHash": "3850f8b381d3df724247df1117bbc3574db08f24053cf86c081f09dbc0d9d5c7",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -719,7 +835,9 @@
         "bodyIndex": 59,
         "paragraphIndex": 59
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -730,7 +848,9 @@
         "bodyIndex": 60,
         "paragraphIndex": 60
       },
-      "textHash": "1ced7575329281f87012b8454f3065af6a5239314e5cf60809d81f14e7a73a31"
+      "paragraphStyleId": "",
+      "textHash": "1ced7575329281f87012b8454f3065af6a5239314e5cf60809d81f14e7a73a31",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -741,7 +861,9 @@
         "bodyIndex": 61,
         "paragraphIndex": 61
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -752,7 +874,9 @@
         "bodyIndex": 62,
         "paragraphIndex": 62
       },
-      "textHash": "a76cab1b81a53a087a45752801f55303371ad6220f9dc0ef6944f44c62a31879"
+      "paragraphStyleId": "",
+      "textHash": "a76cab1b81a53a087a45752801f55303371ad6220f9dc0ef6944f44c62a31879",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -763,7 +887,9 @@
         "bodyIndex": 63,
         "paragraphIndex": 63
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -774,7 +900,9 @@
         "bodyIndex": 64,
         "paragraphIndex": 64
       },
-      "textHash": "c819c389edcf2ecdde749a119e37659c643e5e752c69634706f8434b34541d32"
+      "paragraphStyleId": "",
+      "textHash": "c819c389edcf2ecdde749a119e37659c643e5e752c69634706f8434b34541d32",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -785,7 +913,9 @@
         "bodyIndex": 65,
         "paragraphIndex": 65
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -796,7 +926,9 @@
         "bodyIndex": 66,
         "paragraphIndex": 66
       },
-      "textHash": "c63342d1889e7dbd7aec68683b07e4a178926072e03d659f585ec69aa59e3835"
+      "paragraphStyleId": "",
+      "textHash": "c63342d1889e7dbd7aec68683b07e4a178926072e03d659f585ec69aa59e3835",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -807,7 +939,9 @@
         "bodyIndex": 67,
         "paragraphIndex": 67
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -818,7 +952,9 @@
         "bodyIndex": 68,
         "paragraphIndex": 68
       },
-      "textHash": "ca4e25da07cc6c353fc04aabbc1e6c0da5ef13783f06170910327c608a62d3ec"
+      "paragraphStyleId": "",
+      "textHash": "ca4e25da07cc6c353fc04aabbc1e6c0da5ef13783f06170910327c608a62d3ec",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -829,7 +965,9 @@
         "bodyIndex": 69,
         "paragraphIndex": 69
       },
-      "textHash": "a49b4a080104aadbe2642a9840712eb25147076ab7a5dae7821add413cfa6a65"
+      "paragraphStyleId": "",
+      "textHash": "a49b4a080104aadbe2642a9840712eb25147076ab7a5dae7821add413cfa6a65",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -840,7 +978,9 @@
         "bodyIndex": 70,
         "paragraphIndex": 70
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -851,7 +991,9 @@
         "bodyIndex": 71,
         "paragraphIndex": 71
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -862,7 +1004,9 @@
         "bodyIndex": 72,
         "paragraphIndex": 72
       },
-      "textHash": "469c39c677e6adda26da021e19cc11e2120032fda79f91d45e02e8b6bcc0f5a1"
+      "paragraphStyleId": "",
+      "textHash": "469c39c677e6adda26da021e19cc11e2120032fda79f91d45e02e8b6bcc0f5a1",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -873,7 +1017,9 @@
         "bodyIndex": 73,
         "paragraphIndex": 73
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -884,7 +1030,9 @@
         "bodyIndex": 74,
         "paragraphIndex": 74
       },
-      "textHash": "fc17288b782e36541a21bed602df4d2160160c05b3ba09b80f5bcd53102cc43e"
+      "paragraphStyleId": "",
+      "textHash": "fc17288b782e36541a21bed602df4d2160160c05b3ba09b80f5bcd53102cc43e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -895,7 +1043,9 @@
         "bodyIndex": 75,
         "paragraphIndex": 75
       },
-      "textHash": "4927a9570b535431ea19d2992d499dd1d2f9347fae71b66441ac41ba7cfd195e"
+      "paragraphStyleId": "",
+      "textHash": "4927a9570b535431ea19d2992d499dd1d2f9347fae71b66441ac41ba7cfd195e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -906,7 +1056,9 @@
         "bodyIndex": 76,
         "paragraphIndex": 76
       },
-      "textHash": "f2838c91e383301604dd18a053ca04230a87830659e774ad3cf6208715b0de9f"
+      "paragraphStyleId": "",
+      "textHash": "f2838c91e383301604dd18a053ca04230a87830659e774ad3cf6208715b0de9f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -917,7 +1069,9 @@
         "bodyIndex": 77,
         "paragraphIndex": 77
       },
-      "textHash": "2345d3cee78b6567fe26f4988aa434cd31b3430ffa67030ee9800566b6c3e010"
+      "paragraphStyleId": "",
+      "textHash": "2345d3cee78b6567fe26f4988aa434cd31b3430ffa67030ee9800566b6c3e010",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -928,7 +1082,9 @@
         "bodyIndex": 78,
         "paragraphIndex": 78
       },
-      "textHash": "0d11ecad577c57650c1514313556bd17df867ce71b072e30df6db73885f74312"
+      "paragraphStyleId": "",
+      "textHash": "0d11ecad577c57650c1514313556bd17df867ce71b072e30df6db73885f74312",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -939,7 +1095,9 @@
         "bodyIndex": 79,
         "paragraphIndex": 79
       },
-      "textHash": "a882b256073671b0f9e3e7efbc31a37e0f2bea2f6bff71ee1544b76733ea33ea"
+      "paragraphStyleId": "",
+      "textHash": "a882b256073671b0f9e3e7efbc31a37e0f2bea2f6bff71ee1544b76733ea33ea",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -950,7 +1108,9 @@
         "bodyIndex": 80,
         "paragraphIndex": 80
       },
-      "textHash": "59ebc94c5d497a2fb6de9cdd73a637bdc4cd9356816365e990c4a7e3cdb779df"
+      "paragraphStyleId": "",
+      "textHash": "59ebc94c5d497a2fb6de9cdd73a637bdc4cd9356816365e990c4a7e3cdb779df",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -961,7 +1121,9 @@
         "bodyIndex": 81,
         "paragraphIndex": 81
       },
-      "textHash": "7bac762358ea7b6b1f9a9af710030ba26a6fda050a39bc0497e7d38ecfa3fc4e"
+      "paragraphStyleId": "",
+      "textHash": "7bac762358ea7b6b1f9a9af710030ba26a6fda050a39bc0497e7d38ecfa3fc4e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -972,7 +1134,9 @@
         "bodyIndex": 82,
         "paragraphIndex": 82
       },
-      "textHash": "af6f83f83d5fede67c23adb3da75f861b09c32ba44c571d431a8395ba7bdf98d"
+      "paragraphStyleId": "",
+      "textHash": "af6f83f83d5fede67c23adb3da75f861b09c32ba44c571d431a8395ba7bdf98d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -983,7 +1147,9 @@
         "bodyIndex": 83,
         "paragraphIndex": 83
       },
-      "textHash": "7d06f7dee7bd367b6671f127c2e6648a26e8a8570b720e039409db7226bd035f"
+      "paragraphStyleId": "",
+      "textHash": "7d06f7dee7bd367b6671f127c2e6648a26e8a8570b720e039409db7226bd035f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -994,7 +1160,9 @@
         "bodyIndex": 84,
         "paragraphIndex": 84
       },
-      "textHash": "59cdc03fa4158481a4dc2a048e10bf10798d94ee680c1472aaa7fb467f7e62c2"
+      "paragraphStyleId": "",
+      "textHash": "59cdc03fa4158481a4dc2a048e10bf10798d94ee680c1472aaa7fb467f7e62c2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1005,7 +1173,9 @@
         "bodyIndex": 85,
         "paragraphIndex": 85
       },
-      "textHash": "aadbb469ff94da6bda425a71042686a4f9b87ee577deea7cc856484a4e8c9c58"
+      "paragraphStyleId": "",
+      "textHash": "aadbb469ff94da6bda425a71042686a4f9b87ee577deea7cc856484a4e8c9c58",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1016,7 +1186,9 @@
         "bodyIndex": 86,
         "paragraphIndex": 86
       },
-      "textHash": "764f2f8f4f92a93599699a29208db7d98b6aba9b31bc2cd5f4a5bcb6c97a1aa4"
+      "paragraphStyleId": "",
+      "textHash": "764f2f8f4f92a93599699a29208db7d98b6aba9b31bc2cd5f4a5bcb6c97a1aa4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1027,7 +1199,9 @@
         "bodyIndex": 87,
         "paragraphIndex": 87
       },
-      "textHash": "a15f8690752ecdec0ed14ad8b772c7942f09c89fcf73e8d60cc9652248862763"
+      "paragraphStyleId": "",
+      "textHash": "a15f8690752ecdec0ed14ad8b772c7942f09c89fcf73e8d60cc9652248862763",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1038,7 +1212,9 @@
         "bodyIndex": 88,
         "paragraphIndex": 88
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1049,7 +1225,9 @@
         "bodyIndex": 89,
         "paragraphIndex": 89
       },
-      "textHash": "d0f4b5e0553da0a4a0f317315eaa17c0c6fcd17f5e2e00a8a57228303662467b"
+      "paragraphStyleId": "",
+      "textHash": "d0f4b5e0553da0a4a0f317315eaa17c0c6fcd17f5e2e00a8a57228303662467b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1060,7 +1238,9 @@
         "bodyIndex": 90,
         "paragraphIndex": 90
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1071,7 +1251,9 @@
         "bodyIndex": 91,
         "paragraphIndex": 91
       },
-      "textHash": "8e13d58e0be9d4ad73cb2da39e23796fba64a07539d8968be0fddbf886e8510a"
+      "paragraphStyleId": "",
+      "textHash": "8e13d58e0be9d4ad73cb2da39e23796fba64a07539d8968be0fddbf886e8510a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1082,7 +1264,9 @@
         "bodyIndex": 92,
         "paragraphIndex": 92
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1093,7 +1277,9 @@
         "bodyIndex": 93,
         "paragraphIndex": 93
       },
-      "textHash": "4a1d8fe7514ee91bc39e1c77191da311febdd029f87279cc2a19786fe571b4d4"
+      "paragraphStyleId": "",
+      "textHash": "4a1d8fe7514ee91bc39e1c77191da311febdd029f87279cc2a19786fe571b4d4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1104,7 +1290,9 @@
         "bodyIndex": 94,
         "paragraphIndex": 94
       },
-      "textHash": "55be811809abd67516219fff6035ee6ba6d825ed1ca5264a92292a733bb13a57"
+      "paragraphStyleId": "",
+      "textHash": "55be811809abd67516219fff6035ee6ba6d825ed1ca5264a92292a733bb13a57",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1115,7 +1303,9 @@
         "bodyIndex": 95,
         "paragraphIndex": 95
       },
-      "textHash": "0ff75aaaf722ca08f1fa48dfb87ad337927a375c985936233a5d111c96fe9313"
+      "paragraphStyleId": "",
+      "textHash": "0ff75aaaf722ca08f1fa48dfb87ad337927a375c985936233a5d111c96fe9313",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1126,7 +1316,9 @@
         "bodyIndex": 96,
         "paragraphIndex": 96
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1137,7 +1329,9 @@
         "bodyIndex": 97,
         "paragraphIndex": 97
       },
-      "textHash": "7cfec3894e518ff51835eb6283d6c319a4ba148b5f3bb5e65f38007ce5d78e67"
+      "paragraphStyleId": "",
+      "textHash": "7cfec3894e518ff51835eb6283d6c319a4ba148b5f3bb5e65f38007ce5d78e67",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1148,7 +1342,9 @@
         "bodyIndex": 98,
         "paragraphIndex": 98
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1159,7 +1355,9 @@
         "bodyIndex": 99,
         "paragraphIndex": 99
       },
-      "textHash": "a0448ce38e20e372c53e1ecf97fd71b02fa761438e65135b55729e91892bb188"
+      "paragraphStyleId": "",
+      "textHash": "a0448ce38e20e372c53e1ecf97fd71b02fa761438e65135b55729e91892bb188",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1170,7 +1368,9 @@
         "bodyIndex": 100,
         "paragraphIndex": 100
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1181,7 +1381,9 @@
         "bodyIndex": 101,
         "paragraphIndex": 101
       },
-      "textHash": "73589ecc144e3a12868caf231afcf5bb3e658f9cb24a4a398dc823737f7dacbf"
+      "paragraphStyleId": "",
+      "textHash": "73589ecc144e3a12868caf231afcf5bb3e658f9cb24a4a398dc823737f7dacbf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1192,7 +1394,9 @@
         "bodyIndex": 102,
         "paragraphIndex": 102
       },
-      "textHash": "540fd924527fa12f129c38390e379c30f8c336307300ce8d6116b042578820f6"
+      "paragraphStyleId": "",
+      "textHash": "540fd924527fa12f129c38390e379c30f8c336307300ce8d6116b042578820f6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1203,7 +1407,9 @@
         "bodyIndex": 103,
         "paragraphIndex": 103
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1214,7 +1420,9 @@
         "bodyIndex": 104,
         "paragraphIndex": 104
       },
-      "textHash": "178b9bdba0fc68aebe477791c722a62c31a020b683e9d34b4a7ce5977f0cc0d6"
+      "paragraphStyleId": "",
+      "textHash": "178b9bdba0fc68aebe477791c722a62c31a020b683e9d34b4a7ce5977f0cc0d6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1225,7 +1433,9 @@
         "bodyIndex": 105,
         "paragraphIndex": 105
       },
-      "textHash": "4e36da46a9d2750a115af250a7fe0a4647989c4c056b2a57b48d2ad7c1e6c2e0"
+      "paragraphStyleId": "",
+      "textHash": "4e36da46a9d2750a115af250a7fe0a4647989c4c056b2a57b48d2ad7c1e6c2e0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1236,7 +1446,9 @@
         "bodyIndex": 106,
         "paragraphIndex": 106
       },
-      "textHash": "56807c950549f7ce259e85ba6c78f393322836234d5e274a449ad790d13c293c"
+      "paragraphStyleId": "",
+      "textHash": "56807c950549f7ce259e85ba6c78f393322836234d5e274a449ad790d13c293c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1247,7 +1459,9 @@
         "bodyIndex": 107,
         "paragraphIndex": 107
       },
-      "textHash": "27bb2ea7ad367f60aea8ec2fd7dc7e04fb18ee7b054bf4bbe0f94dbbbd5da24d"
+      "paragraphStyleId": "",
+      "textHash": "27bb2ea7ad367f60aea8ec2fd7dc7e04fb18ee7b054bf4bbe0f94dbbbd5da24d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1258,7 +1472,9 @@
         "bodyIndex": 108,
         "paragraphIndex": 108
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1269,7 +1485,9 @@
         "bodyIndex": 109,
         "paragraphIndex": 109
       },
-      "textHash": "3b63119547f7dba1f97523731d78470bb788bfa74b66706bba88f3a4002409fc"
+      "paragraphStyleId": "",
+      "textHash": "3b63119547f7dba1f97523731d78470bb788bfa74b66706bba88f3a4002409fc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1280,7 +1498,9 @@
         "bodyIndex": 110,
         "paragraphIndex": 110
       },
-      "textHash": "34285ba3e73f6794bf2769376c1a5c5dc17b0f9aaa2e11fbf3497464991ee25b"
+      "paragraphStyleId": "",
+      "textHash": "34285ba3e73f6794bf2769376c1a5c5dc17b0f9aaa2e11fbf3497464991ee25b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1291,7 +1511,9 @@
         "bodyIndex": 111,
         "paragraphIndex": 111
       },
-      "textHash": "42684cc2cdfbca24ad5794d41000fbd331b399019eef5ff4f621a6875e627aab"
+      "paragraphStyleId": "",
+      "textHash": "42684cc2cdfbca24ad5794d41000fbd331b399019eef5ff4f621a6875e627aab",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1302,7 +1524,9 @@
         "bodyIndex": 112,
         "paragraphIndex": 112
       },
-      "textHash": "2b48c1248cb800d429ad04de3c3726a71605cf0b7a1163228bdd742d85b7c91c"
+      "paragraphStyleId": "",
+      "textHash": "2b48c1248cb800d429ad04de3c3726a71605cf0b7a1163228bdd742d85b7c91c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1313,7 +1537,9 @@
         "bodyIndex": 113,
         "paragraphIndex": 113
       },
-      "textHash": "cb6f711508a9e38c2d2ba4445428f1500054e9cf96d661a54fe5db8e4831d79a"
+      "paragraphStyleId": "",
+      "textHash": "cb6f711508a9e38c2d2ba4445428f1500054e9cf96d661a54fe5db8e4831d79a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1324,7 +1550,9 @@
         "bodyIndex": 114,
         "paragraphIndex": 114
       },
-      "textHash": "82d8d5f4771c029f7b797102c26afdfa85cde9f2cd375d6aa46262b27589669b"
+      "paragraphStyleId": "",
+      "textHash": "82d8d5f4771c029f7b797102c26afdfa85cde9f2cd375d6aa46262b27589669b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1335,7 +1563,9 @@
         "bodyIndex": 115,
         "paragraphIndex": 115
       },
-      "textHash": "170200cc02865dc2962d338bdebc134a479dd8ad95f57647f4b2748db90d03ae"
+      "paragraphStyleId": "",
+      "textHash": "170200cc02865dc2962d338bdebc134a479dd8ad95f57647f4b2748db90d03ae",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1346,7 +1576,9 @@
         "bodyIndex": 116,
         "paragraphIndex": 116
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1357,7 +1589,9 @@
         "bodyIndex": 117,
         "paragraphIndex": 117
       },
-      "textHash": "401e3d5bb62e6d4cb80e03d5178806942ae472f3a844c751107df3633154c04c"
+      "paragraphStyleId": "",
+      "textHash": "401e3d5bb62e6d4cb80e03d5178806942ae472f3a844c751107df3633154c04c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1368,7 +1602,9 @@
         "bodyIndex": 118,
         "paragraphIndex": 118
       },
-      "textHash": "e1e2367362a4542f4725d852ae4b269ee9051f8581b0d6755391c62b97f3248f"
+      "paragraphStyleId": "",
+      "textHash": "e1e2367362a4542f4725d852ae4b269ee9051f8581b0d6755391c62b97f3248f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1379,7 +1615,9 @@
         "bodyIndex": 119,
         "paragraphIndex": 119
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1390,7 +1628,9 @@
         "bodyIndex": 120,
         "paragraphIndex": 120
       },
-      "textHash": "d430ecb2dbb0b43b90b036414d953e1aef5ca485ee39233813e0c2b75bc80c2e"
+      "paragraphStyleId": "",
+      "textHash": "d430ecb2dbb0b43b90b036414d953e1aef5ca485ee39233813e0c2b75bc80c2e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1401,7 +1641,9 @@
         "bodyIndex": 121,
         "paragraphIndex": 121
       },
-      "textHash": "fe31360af1c36a4ca45743b814859a919412f8ebcc60ec235e2e64f259c485e9"
+      "paragraphStyleId": "",
+      "textHash": "fe31360af1c36a4ca45743b814859a919412f8ebcc60ec235e2e64f259c485e9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1412,7 +1654,9 @@
         "bodyIndex": 122,
         "paragraphIndex": 122
       },
-      "textHash": "3fdd9b7bebd024034b5bceb344bfb11914e29cc6dc3425a30ac57eb3f2d4a9b7"
+      "paragraphStyleId": "",
+      "textHash": "3fdd9b7bebd024034b5bceb344bfb11914e29cc6dc3425a30ac57eb3f2d4a9b7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1423,7 +1667,9 @@
         "bodyIndex": 123,
         "paragraphIndex": 123
       },
-      "textHash": "09335915588732dd59a79775b986c964cd61a56e44d2f470915fdd7c22b85623"
+      "paragraphStyleId": "",
+      "textHash": "09335915588732dd59a79775b986c964cd61a56e44d2f470915fdd7c22b85623",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1434,7 +1680,9 @@
         "bodyIndex": 124,
         "paragraphIndex": 124
       },
-      "textHash": "c6b411b84b8e9c79bef6072e2a7a0cbbe9ee0923ece14060e1018e4318410efa"
+      "paragraphStyleId": "",
+      "textHash": "c6b411b84b8e9c79bef6072e2a7a0cbbe9ee0923ece14060e1018e4318410efa",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1445,7 +1693,9 @@
         "bodyIndex": 125,
         "paragraphIndex": 125
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1456,7 +1706,9 @@
         "bodyIndex": 126,
         "paragraphIndex": 126
       },
-      "textHash": "c46d38694ec675898d810c0d730cbf21a0593260797068880cfcffd047968525"
+      "paragraphStyleId": "",
+      "textHash": "c46d38694ec675898d810c0d730cbf21a0593260797068880cfcffd047968525",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1467,7 +1719,9 @@
         "bodyIndex": 127,
         "paragraphIndex": 127
       },
-      "textHash": "685d38f24627d2734db44e52a0292c4caba115aa39b8ff50e6a01189c63ef0f7"
+      "paragraphStyleId": "",
+      "textHash": "685d38f24627d2734db44e52a0292c4caba115aa39b8ff50e6a01189c63ef0f7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1478,7 +1732,9 @@
         "bodyIndex": 128,
         "paragraphIndex": 128
       },
-      "textHash": "849b702ccb9e515580a50299d515286cf95be3c93707e6d5a697118647622b70"
+      "paragraphStyleId": "",
+      "textHash": "849b702ccb9e515580a50299d515286cf95be3c93707e6d5a697118647622b70",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1489,7 +1745,9 @@
         "bodyIndex": 129,
         "paragraphIndex": 129
       },
-      "textHash": "109ce797c339b6e8a7f34864bcfd27d4cd506ca71566652d5711ea587e5110e9"
+      "paragraphStyleId": "",
+      "textHash": "109ce797c339b6e8a7f34864bcfd27d4cd506ca71566652d5711ea587e5110e9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1500,7 +1758,9 @@
         "bodyIndex": 130,
         "paragraphIndex": 130
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1511,7 +1771,9 @@
         "bodyIndex": 131,
         "paragraphIndex": 131
       },
-      "textHash": "c46d38694ec675898d810c0d730cbf21a0593260797068880cfcffd047968525"
+      "paragraphStyleId": "",
+      "textHash": "c46d38694ec675898d810c0d730cbf21a0593260797068880cfcffd047968525",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1522,7 +1784,9 @@
         "bodyIndex": 132,
         "paragraphIndex": 132
       },
-      "textHash": "44328ab6f7600db36b1c7639d2d537fa2f1462fae4b40caa8cfd9f62ffc33a48"
+      "paragraphStyleId": "",
+      "textHash": "44328ab6f7600db36b1c7639d2d537fa2f1462fae4b40caa8cfd9f62ffc33a48",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1533,7 +1797,9 @@
         "bodyIndex": 133,
         "paragraphIndex": 133
       },
-      "textHash": "9b3804704ef0307102aa249f770c17ab5394727413259b2e08a825f5349c0e81"
+      "paragraphStyleId": "",
+      "textHash": "9b3804704ef0307102aa249f770c17ab5394727413259b2e08a825f5349c0e81",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1544,7 +1810,9 @@
         "bodyIndex": 134,
         "paragraphIndex": 134
       },
-      "textHash": "c1dba6b33254c5a19159ffe8c756aab55070e9ff37c5e611322d68fe81fe1342"
+      "paragraphStyleId": "",
+      "textHash": "c1dba6b33254c5a19159ffe8c756aab55070e9ff37c5e611322d68fe81fe1342",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1555,7 +1823,9 @@
         "bodyIndex": 135,
         "paragraphIndex": 135
       },
-      "textHash": "3530e09ef9ec4a49d866158e8684750949d32f073e32f44ccd439cf142a519f5"
+      "paragraphStyleId": "",
+      "textHash": "3530e09ef9ec4a49d866158e8684750949d32f073e32f44ccd439cf142a519f5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1566,7 +1836,9 @@
         "bodyIndex": 136,
         "paragraphIndex": 136
       },
-      "textHash": "b8a2961eebc29f50307b5a36e9ab274ac1da7d166c8665b1ef6a56d518e30266"
+      "paragraphStyleId": "",
+      "textHash": "b8a2961eebc29f50307b5a36e9ab274ac1da7d166c8665b1ef6a56d518e30266",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1577,7 +1849,9 @@
         "bodyIndex": 137,
         "paragraphIndex": 137
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1588,7 +1862,9 @@
         "bodyIndex": 138,
         "paragraphIndex": 138
       },
-      "textHash": "c911575cf553b5886cd4630bb1af9aa0ce4ecdbd51d146a0d6cbb0c5c583cd6d"
+      "paragraphStyleId": "",
+      "textHash": "c911575cf553b5886cd4630bb1af9aa0ce4ecdbd51d146a0d6cbb0c5c583cd6d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1599,7 +1875,9 @@
         "bodyIndex": 139,
         "paragraphIndex": 139
       },
-      "textHash": "630b0e465b3db4a69e9af1acca0b1943096aab3f678820176a3f9a1d084a4ceb"
+      "paragraphStyleId": "",
+      "textHash": "630b0e465b3db4a69e9af1acca0b1943096aab3f678820176a3f9a1d084a4ceb",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1610,7 +1888,9 @@
         "bodyIndex": 140,
         "paragraphIndex": 140
       },
-      "textHash": "66f0368c71b61bf0edd899a65f979d7cbe0bbf066a50214c8aad87d3b1d4d7cd"
+      "paragraphStyleId": "",
+      "textHash": "66f0368c71b61bf0edd899a65f979d7cbe0bbf066a50214c8aad87d3b1d4d7cd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1621,7 +1901,9 @@
         "bodyIndex": 141,
         "paragraphIndex": 141
       },
-      "textHash": "9a6fc2caee8665f43d20ae54f4a2eb3e6c8ebd272dbf0fb2fdc13e69eb2ba2bf"
+      "paragraphStyleId": "",
+      "textHash": "9a6fc2caee8665f43d20ae54f4a2eb3e6c8ebd272dbf0fb2fdc13e69eb2ba2bf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1632,7 +1914,9 @@
         "bodyIndex": 142,
         "paragraphIndex": 142
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1643,7 +1927,9 @@
         "bodyIndex": 143,
         "paragraphIndex": 143
       },
-      "textHash": "c911575cf553b5886cd4630bb1af9aa0ce4ecdbd51d146a0d6cbb0c5c583cd6d"
+      "paragraphStyleId": "",
+      "textHash": "c911575cf553b5886cd4630bb1af9aa0ce4ecdbd51d146a0d6cbb0c5c583cd6d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1654,7 +1940,9 @@
         "bodyIndex": 144,
         "paragraphIndex": 144
       },
-      "textHash": "f71122337df75878642a547fd3f807a5fbf36456b085159912ca5158c96868ff"
+      "paragraphStyleId": "",
+      "textHash": "f71122337df75878642a547fd3f807a5fbf36456b085159912ca5158c96868ff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1665,7 +1953,9 @@
         "bodyIndex": 145,
         "paragraphIndex": 145
       },
-      "textHash": "cee58b6bb8db0456b297df87395fb28b4009e274476387446ceedad21784bffd"
+      "paragraphStyleId": "",
+      "textHash": "cee58b6bb8db0456b297df87395fb28b4009e274476387446ceedad21784bffd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1676,7 +1966,9 @@
         "bodyIndex": 146,
         "paragraphIndex": 146
       },
-      "textHash": "1aafd9f831fac73224d9dde8ca7ede2111a0c51e3bc8a6fd89b19729015f9b78"
+      "paragraphStyleId": "",
+      "textHash": "1aafd9f831fac73224d9dde8ca7ede2111a0c51e3bc8a6fd89b19729015f9b78",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1687,7 +1979,9 @@
         "bodyIndex": 147,
         "paragraphIndex": 147
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1698,7 +1992,9 @@
         "bodyIndex": 148,
         "paragraphIndex": 148
       },
-      "textHash": "5247d0c48b407c1fe54df6b9d9c8f08f078fac3f078d590b5dac747d233d1a29"
+      "paragraphStyleId": "",
+      "textHash": "5247d0c48b407c1fe54df6b9d9c8f08f078fac3f078d590b5dac747d233d1a29",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1709,7 +2005,9 @@
         "bodyIndex": 149,
         "paragraphIndex": 149
       },
-      "textHash": "b98f27f7cc80a5df0a28f476c757294ec5270231ea92388089d8f9663b13b855"
+      "paragraphStyleId": "",
+      "textHash": "b98f27f7cc80a5df0a28f476c757294ec5270231ea92388089d8f9663b13b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1720,7 +2018,9 @@
         "bodyIndex": 150,
         "paragraphIndex": 150
       },
-      "textHash": "51aa431daf72d81626aedbbc425d9bbf37cdb0d82f98f6f2eea0eb12130116ec"
+      "paragraphStyleId": "",
+      "textHash": "51aa431daf72d81626aedbbc425d9bbf37cdb0d82f98f6f2eea0eb12130116ec",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1731,7 +2031,9 @@
         "bodyIndex": 151,
         "paragraphIndex": 151
       },
-      "textHash": "2c5e786bcb492ad96b2543a5f42d26e522b9f1a8d1ed86f177c030a76df2e00a"
+      "paragraphStyleId": "",
+      "textHash": "2c5e786bcb492ad96b2543a5f42d26e522b9f1a8d1ed86f177c030a76df2e00a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1742,7 +2044,9 @@
         "bodyIndex": 152,
         "paragraphIndex": 152
       },
-      "textHash": "d976e450ad3a98131db9f7baef679d486e093997edbd281fd7ead5720de3e545"
+      "paragraphStyleId": "",
+      "textHash": "d976e450ad3a98131db9f7baef679d486e093997edbd281fd7ead5720de3e545",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1753,7 +2057,9 @@
         "bodyIndex": 153,
         "paragraphIndex": 153
       },
-      "textHash": "539b0bc8be5d6b723ac3fbb17227f954ef7fe472552b62761c879ac9a1c77183"
+      "paragraphStyleId": "",
+      "textHash": "539b0bc8be5d6b723ac3fbb17227f954ef7fe472552b62761c879ac9a1c77183",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1764,7 +2070,9 @@
         "bodyIndex": 154,
         "paragraphIndex": 154
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1775,7 +2083,9 @@
         "bodyIndex": 155,
         "paragraphIndex": 155
       },
-      "textHash": "80f0267009a515bffa7e89471592d8db9702f2fe0d0e05f1e994c82c335d70d6"
+      "paragraphStyleId": "",
+      "textHash": "80f0267009a515bffa7e89471592d8db9702f2fe0d0e05f1e994c82c335d70d6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1786,7 +2096,9 @@
         "bodyIndex": 156,
         "paragraphIndex": 156
       },
-      "textHash": "a6ee59cbe93dee3a0e7348c4d07d575ae0da58318a722079e1f2ebf5057ec95a"
+      "paragraphStyleId": "",
+      "textHash": "a6ee59cbe93dee3a0e7348c4d07d575ae0da58318a722079e1f2ebf5057ec95a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1797,7 +2109,9 @@
         "bodyIndex": 157,
         "paragraphIndex": 157
       },
-      "textHash": "91da13097f5b881767c46d84cad5ce8d1f127a065a253c9287811e87653460c0"
+      "paragraphStyleId": "",
+      "textHash": "91da13097f5b881767c46d84cad5ce8d1f127a065a253c9287811e87653460c0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1808,7 +2122,9 @@
         "bodyIndex": 158,
         "paragraphIndex": 158
       },
-      "textHash": "273b972f4117ce6eb7f28afa8a426a64892ac5e095f6fdeac18ed074d08a5d2e"
+      "paragraphStyleId": "",
+      "textHash": "273b972f4117ce6eb7f28afa8a426a64892ac5e095f6fdeac18ed074d08a5d2e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1819,7 +2135,9 @@
         "bodyIndex": 159,
         "paragraphIndex": 159
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1830,7 +2148,9 @@
         "bodyIndex": 160,
         "paragraphIndex": 160
       },
-      "textHash": "9e66c06cd6b5ac8073580617148632bf488dcdd734954bce85180771884e281e"
+      "paragraphStyleId": "",
+      "textHash": "9e66c06cd6b5ac8073580617148632bf488dcdd734954bce85180771884e281e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1841,7 +2161,9 @@
         "bodyIndex": 161,
         "paragraphIndex": 161
       },
-      "textHash": "74240a1bdafd0f1aa5df5884fa654693c9a8677dc6109b4b3161a187aaef0b97"
+      "paragraphStyleId": "",
+      "textHash": "74240a1bdafd0f1aa5df5884fa654693c9a8677dc6109b4b3161a187aaef0b97",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1852,7 +2174,9 @@
         "bodyIndex": 162,
         "paragraphIndex": 162
       },
-      "textHash": "4e0e5b536cac7efd8c351a6c462c9dc63560b9df39761499552f790bff232186"
+      "paragraphStyleId": "",
+      "textHash": "4e0e5b536cac7efd8c351a6c462c9dc63560b9df39761499552f790bff232186",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1863,7 +2187,9 @@
         "bodyIndex": 163,
         "paragraphIndex": 163
       },
-      "textHash": "b60d85973afa449a08147f0f7cd13376311504d0e2de9e88ff71de05b82de2a1"
+      "paragraphStyleId": "",
+      "textHash": "b60d85973afa449a08147f0f7cd13376311504d0e2de9e88ff71de05b82de2a1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1874,7 +2200,9 @@
         "bodyIndex": 164,
         "paragraphIndex": 164
       },
-      "textHash": "9aca6e16864e22a2d75fe319f22159665d7372df1263334d2b3cf2bfd7c4ca66"
+      "paragraphStyleId": "",
+      "textHash": "9aca6e16864e22a2d75fe319f22159665d7372df1263334d2b3cf2bfd7c4ca66",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1885,7 +2213,9 @@
         "bodyIndex": 165,
         "paragraphIndex": 165
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1896,7 +2226,9 @@
         "bodyIndex": 166,
         "paragraphIndex": 166
       },
-      "textHash": "dd3ddb33d886831da47ddd8cc2b676d26fbcba3b4f57aae89c7d722c4dc005dd"
+      "paragraphStyleId": "",
+      "textHash": "dd3ddb33d886831da47ddd8cc2b676d26fbcba3b4f57aae89c7d722c4dc005dd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1907,7 +2239,9 @@
         "bodyIndex": 167,
         "paragraphIndex": 167
       },
-      "textHash": "05c05d17ac621489b3f939b838244bc709712685a3b7c782c5174bc1cd42d6b4"
+      "paragraphStyleId": "",
+      "textHash": "05c05d17ac621489b3f939b838244bc709712685a3b7c782c5174bc1cd42d6b4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1918,7 +2252,9 @@
         "bodyIndex": 168,
         "paragraphIndex": 168
       },
-      "textHash": "b0f2b3e744d2dc05c84e11a7e8f7b72d75da2195c5b69cd4da8ccfe249747eaf"
+      "paragraphStyleId": "",
+      "textHash": "b0f2b3e744d2dc05c84e11a7e8f7b72d75da2195c5b69cd4da8ccfe249747eaf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1929,7 +2265,9 @@
         "bodyIndex": 169,
         "paragraphIndex": 169
       },
-      "textHash": "547c63e37c3354e747f217229b04500102c541ed7dafa830241b599ae95d99f2"
+      "paragraphStyleId": "",
+      "textHash": "547c63e37c3354e747f217229b04500102c541ed7dafa830241b599ae95d99f2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1940,7 +2278,9 @@
         "bodyIndex": 170,
         "paragraphIndex": 170
       },
-      "textHash": "b1fd02ff0d0396864a85932eae154b84abe0cd97d64683e3cc31cc939e177a99"
+      "paragraphStyleId": "",
+      "textHash": "b1fd02ff0d0396864a85932eae154b84abe0cd97d64683e3cc31cc939e177a99",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1951,7 +2291,9 @@
         "bodyIndex": 171,
         "paragraphIndex": 171
       },
-      "textHash": "55d7c706542554d5345a6ddbd67c9093e40c1a466e086e0cc4bdb9a6fdf4164b"
+      "paragraphStyleId": "",
+      "textHash": "55d7c706542554d5345a6ddbd67c9093e40c1a466e086e0cc4bdb9a6fdf4164b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1962,7 +2304,9 @@
         "bodyIndex": 172,
         "paragraphIndex": 172
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1973,7 +2317,9 @@
         "bodyIndex": 173,
         "paragraphIndex": 173
       },
-      "textHash": "3f6e08ffe170797c14b9bdbc16e6404e8d4e12e170e82dc4361ca50a0bb816f6"
+      "paragraphStyleId": "",
+      "textHash": "3f6e08ffe170797c14b9bdbc16e6404e8d4e12e170e82dc4361ca50a0bb816f6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1984,7 +2330,9 @@
         "bodyIndex": 174,
         "paragraphIndex": 174
       },
-      "textHash": "d90b0f19d92a92546e28e79416e358f5d98c9fd422c9ca6745a26c8e5949c8af"
+      "paragraphStyleId": "",
+      "textHash": "d90b0f19d92a92546e28e79416e358f5d98c9fd422c9ca6745a26c8e5949c8af",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -1995,7 +2343,9 @@
         "bodyIndex": 175,
         "paragraphIndex": 175
       },
-      "textHash": "6e9cbba965911898ffad3c91709bbb374753a757a12a114120217400478830fe"
+      "paragraphStyleId": "",
+      "textHash": "6e9cbba965911898ffad3c91709bbb374753a757a12a114120217400478830fe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2006,7 +2356,9 @@
         "bodyIndex": 176,
         "paragraphIndex": 176
       },
-      "textHash": "8d109dccd76ff822ed59728a5a153b3c0268b5e6dd2cd1a3f09468bfbb2c9eb4"
+      "paragraphStyleId": "",
+      "textHash": "8d109dccd76ff822ed59728a5a153b3c0268b5e6dd2cd1a3f09468bfbb2c9eb4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2017,7 +2369,9 @@
         "bodyIndex": 177,
         "paragraphIndex": 177
       },
-      "textHash": "8a723c4eed260e6005be4c86e9243e910f661fa39a6ab86454c8b853e23f32fc"
+      "paragraphStyleId": "",
+      "textHash": "8a723c4eed260e6005be4c86e9243e910f661fa39a6ab86454c8b853e23f32fc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2028,7 +2382,9 @@
         "bodyIndex": 178,
         "paragraphIndex": 178
       },
-      "textHash": "a33a1e9d92dd3101e5562155484e3b95cced7185db959f16952eb385c39be4ed"
+      "paragraphStyleId": "",
+      "textHash": "a33a1e9d92dd3101e5562155484e3b95cced7185db959f16952eb385c39be4ed",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2039,7 +2395,9 @@
         "bodyIndex": 179,
         "paragraphIndex": 179
       },
-      "textHash": "38761e7b5808813f9eca4a563b06373236a2df6341a48ba5d2163c20efe06f9e"
+      "paragraphStyleId": "",
+      "textHash": "38761e7b5808813f9eca4a563b06373236a2df6341a48ba5d2163c20efe06f9e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2050,7 +2408,9 @@
         "bodyIndex": 180,
         "paragraphIndex": 180
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2061,7 +2421,9 @@
         "bodyIndex": 181,
         "paragraphIndex": 181
       },
-      "textHash": "d02c8f0b587bbb6fd94e9827bdc63fce3cef95e1c0936a269601511b0cb4267c"
+      "paragraphStyleId": "",
+      "textHash": "d02c8f0b587bbb6fd94e9827bdc63fce3cef95e1c0936a269601511b0cb4267c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2072,7 +2434,9 @@
         "bodyIndex": 182,
         "paragraphIndex": 182
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2083,7 +2447,9 @@
         "bodyIndex": 183,
         "paragraphIndex": 183
       },
-      "textHash": "446794badbc1439d0c512a1ac20e590d4081779f58b2dd036a7ac1bc04413aed"
+      "paragraphStyleId": "",
+      "textHash": "446794badbc1439d0c512a1ac20e590d4081779f58b2dd036a7ac1bc04413aed",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",
@@ -2094,7 +2460,9 @@
         "bodyIndex": 184,
         "paragraphIndex": 184
       },
-      "textHash": "9de50cbf2b39f8c816fa910d5437a64aae539fa02d963dfd2b9fb9defb8a6ebd"
+      "paragraphStyleId": "",
+      "textHash": "4719ad2e258136360b069a1a496d27f3531b44b64bb1672df4ac696dd7ac8263",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-e2d43eca15b2",

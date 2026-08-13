@@ -10,7 +10,7 @@ const retryableWriteErrorCodes = new Set([
 ])
 
 export async function writeFileWithRetry(filePath, data, options) {
-  const maximumAttempts = process.platform === 'win32' ? 6 : 1
+  const maximumAttempts = process.platform === 'win32' ? 9 : 1
 
   for (let attempt = 1; attempt <= maximumAttempts; attempt += 1) {
     try {
@@ -22,7 +22,7 @@ export async function writeFileWithRetry(filePath, data, options) {
 
       if (!retryable) throw error
 
-      const delayMs = 100 * 2 ** (attempt - 1)
+      const delayMs = Math.min(2_000, 100 * 2 ** (attempt - 1))
       const displayPath = path.relative(process.cwd(), filePath) || filePath
       console.warn(
         `[file-write] ${displayPath} locked (${error.code}); retry ${attempt}/${maximumAttempts - 1} after ${delayMs}ms`,
@@ -31,4 +31,3 @@ export async function writeFileWithRetry(filePath, data, options) {
     }
   }
 }
-

@@ -253,8 +253,10 @@ function formatValue(value, key) {
 }
 
 .basic-attack-explorer__pager button:disabled {
+  border-color: var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
   cursor: not-allowed;
-  opacity: 0.55;
 }
 
 .basic-attack-explorer__status {

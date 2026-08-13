@@ -60,6 +60,7 @@ related: [about-contributing, about-version-log, start-preface]
 - 用它们规划目录和人工审核任务；
 - 在页面来源区登记对应资产 ID。
 
+<!-- article-paragraph:non-prose -->
 现阶段不允许：
 
 - 把源文段落改几个词后公开；

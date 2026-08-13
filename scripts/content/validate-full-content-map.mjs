@@ -8,6 +8,10 @@ import {
   loadSourceLedger,
   tableCellPlacementErrors,
 } from './lib/migration-elements.mjs'
+import {
+  articleParagraphPolicyErrors,
+  resolveImportedParagraphSemantic,
+} from './lib/article-prose.mjs'
 import { printResult, writeReport } from './lib/content-utils.mjs'
 
 const map = JSON.parse(
@@ -17,6 +21,9 @@ const schema = JSON.parse(
   await readFile('content/schemas/full-content-map.schema.json', 'utf8'),
 )
 const ledger = await loadSourceLedger()
+const paragraphSemanticPolicy = JSON.parse(
+  await readFile('content/governance/paragraph-semantics.json', 'utf8'),
+)
 const coreMigration = JSON.parse(
   await readFile('content/migrations/core-content-pages.json', 'utf8'),
 )
@@ -24,6 +31,9 @@ const advancedMigration = JSON.parse(
   await readFile('content/migrations/advanced-content-pages.json', 'utf8'),
 )
 const failures = []
+for (const error of articleParagraphPolicyErrors(paragraphSemanticPolicy)) {
+  failures.push(`paragraph semantic policy: ${error}`)
+}
 
 const ajv = new Ajv({ allErrors: true, strict: false })
 addFormats(ajv)
@@ -96,6 +106,30 @@ for (const element of map.elements) {
   }
   if (typeof element.status !== 'string' || element.status.trim() === '') {
     failures.push(`${element.sourceElementId}: missing isolation status`)
+  }
+  if (
+    ['paragraph', 'heading'].includes(element.elementType) &&
+    typeof element.paragraphStyleId !== 'string'
+  ) {
+    failures.push(`${element.sourceElementId}: missing paragraphStyleId`)
+  }
+  if (element.elementType === 'paragraph') {
+    if (!paragraphSemanticPolicy.sources[element.sourceAssetId]) {
+      failures.push(
+        `${element.sourceElementId}: source is missing from paragraph semantic policy`,
+      )
+    }
+    const expectedSemantic = resolveImportedParagraphSemantic(
+      element,
+      paragraphSemanticPolicy,
+    )
+    if (element.paragraphSemantic !== expectedSemantic) {
+      failures.push(
+        `${element.sourceElementId}: paragraphSemantic expected ${expectedSemantic}, got ${element.paragraphSemantic}`,
+      )
+    }
+  } else if (element.paragraphSemantic !== undefined) {
+    failures.push(`${element.sourceElementId}: paragraphSemantic is only valid on paragraphs`)
   }
 }
 

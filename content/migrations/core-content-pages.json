@@ -4,9 +4,9 @@
   "sources": [
     {
       "sourceAssetId": "src-9ac6e41a613e",
-      "sourceBodySha256": "4aa117c309a18ceda946b4b3c5a0f0e25178514b682bc6232b7191d9558af8f7",
-      "sourceChars": 5251,
-      "coveredChars": 5251,
+      "sourceBodySha256": "c72072027940faa0d66a615fe0d7becb86b6e48cf1caaad3c923f0094b32641d",
+      "sourceChars": 6389,
+      "coveredChars": 6389,
       "pages": [
         {
           "pageId": "start-handbook-history",
@@ -15,7 +15,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 5251
+            "end": 6389
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -23,17 +23,17 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "4aa117c309a18ceda946b4b3c5a0f0e25178514b682bc6232b7191d9558af8f7",
-          "sourceChars": 5251,
-          "outputSha256": "f473c0dcbf826375f2a756fea42d8280d03730549fba3f9ec9ae648d8d1396b1"
+          "sourceSliceSha256": "c72072027940faa0d66a615fe0d7becb86b6e48cf1caaad3c923f0094b32641d",
+          "sourceChars": 6389,
+          "outputSha256": "22ef93c23e6df20ea79cccdfbc65ba6fc84244f9743000ca89a92bb8f794ce06"
         }
       ]
     },
     {
       "sourceAssetId": "src-ea0b63d069bf",
-      "sourceBodySha256": "b6ec192afdf0a8a0c9d8cb46a9af72ba12e40e392e61dfedd701f55c3020d0cc",
-      "sourceChars": 719,
-      "coveredChars": 719,
+      "sourceBodySha256": "254335c556aa2f9cd573e607ef941c6e0fe29b54d1e6d51bab9582bfb4903b39",
+      "sourceChars": 892,
+      "coveredChars": 892,
       "pages": [
         {
           "pageId": "start-game-introduction",
@@ -42,7 +42,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 719
+            "end": 892
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -50,17 +50,17 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "b6ec192afdf0a8a0c9d8cb46a9af72ba12e40e392e61dfedd701f55c3020d0cc",
-          "sourceChars": 719,
-          "outputSha256": "141a75afc9d54fe721afca32c69ab5ee3b186cc579841ba655dadbc3c1ae69bb"
+          "sourceSliceSha256": "254335c556aa2f9cd573e607ef941c6e0fe29b54d1e6d51bab9582bfb4903b39",
+          "sourceChars": 892,
+          "outputSha256": "37562b887939c1d6f8892b5f66750663445484e722de2de290d4aaf0f0518a8e"
         }
       ]
     },
     {
       "sourceAssetId": "src-842246bdb075",
-      "sourceBodySha256": "e141d2356bdc031dfdf58aabc519fbc40a0866b8369efd18febdc1425a360aba",
-      "sourceChars": 39253,
-      "coveredChars": 39253,
+      "sourceBodySha256": "80981924f4427ebf4b54e746fa086c9018d2180df58368f3cafad20886d9520d",
+      "sourceChars": 47664,
+      "coveredChars": 47664,
       "pages": [
         {
           "pageId": "start-new-account",
@@ -69,7 +69,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 5631
+            "end": 6868
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -77,9 +77,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "d0ff379c9dd9d14be6232c1ef1f45a26e931d6f14335a318da8c5d1b4742e552",
-          "sourceChars": 5631,
-          "outputSha256": "5668277ada7b9c9f96f17e0ce8b570755fc1c1260e1b0b3606d345d6fe38a42f"
+          "sourceSliceSha256": "e00ce0f4c307c6d82098c9a5d05604cb48aa557e6f165722c9b6c4f67b911bac",
+          "sourceChars": 6868,
+          "outputSha256": "842d7135a00da5b3f24631c9717c0910dec5084d837c3075847a4f1145e686a2"
         },
         {
           "pageId": "start-mainline-roadmap",
@@ -87,8 +87,8 @@
           "route": "/start/mainline-roadmap",
           "status": "current",
           "sourceRange": {
-            "start": 5631,
-            "end": 20989
+            "start": 6868,
+            "end": 25483
           },
           "sourceElementRange": {
             "bodyIndexStart": 53,
@@ -96,9 +96,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "bfab1c07e2ad0ee37453f9dc50844b308a9b3a1b73a5f381006c5fdf7335c3a1",
-          "sourceChars": 15358,
-          "outputSha256": "347adfbce5e4addedd2e2c2629579af1dccf8f9d4a80c1d62780e307429c2f76"
+          "sourceSliceSha256": "cbcb59db17954377d20aab10b8df7251f2f6e74c9dfc42ca00e97417039c7513",
+          "sourceChars": 18615,
+          "outputSha256": "470cb968ced67d37e6d3eab6500663993a484b0c7548e897e871859a8aea4ca0"
         },
         {
           "pageId": "start-daily-and-events",
@@ -106,8 +106,8 @@
           "route": "/start/daily-and-events",
           "status": "current",
           "sourceRange": {
-            "start": 20989,
-            "end": 39253
+            "start": 25483,
+            "end": 47664
           },
           "sourceElementRange": {
             "bodyIndexStart": 200,
@@ -115,17 +115,17 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 1
           },
-          "sourceSliceSha256": "15ddeb09681998f00db971ce907c023b4d766ce5b9d0fac935f8b5fbe22295c8",
-          "sourceChars": 18264,
-          "outputSha256": "928ab21ccdcc6b47b838073a00cc744bfdd1a1ee5be2c89148e5885fb50013b8"
+          "sourceSliceSha256": "c9ec8dbc3ea6a9c30146a2440163892e58d8c4758261ff98e7eb7429c785df0b",
+          "sourceChars": 22181,
+          "outputSha256": "94b1427317147021ec842c20efb0b20b5624ea667011035d159ce8403205e7dc"
         }
       ]
     },
     {
       "sourceAssetId": "src-6eba63c4aa7b",
-      "sourceBodySha256": "04168f3dd98f868662f29d87c1ea210d977c72c976c52bac70bf7716c472ce79",
-      "sourceChars": 86650,
-      "coveredChars": 86650,
+      "sourceBodySha256": "52c73437d8f880efdea642c295cdc32090ff650f6943118a07d0333256f01133",
+      "sourceChars": 124565,
+      "coveredChars": 124565,
       "pages": [
         {
           "pageId": "progression-leveling-ship-selection",
@@ -134,7 +134,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 19022
+            "end": 28395
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -142,9 +142,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 4
           },
-          "sourceSliceSha256": "aa044362c324e356eb2b3dc02708f9a0c9e8290333bc73ca4686768b9bd8ca1f",
-          "sourceChars": 19022,
-          "outputSha256": "e94a0430eb25d328bb764e94691074ff97b0e72a32608fe89661c34aab02233b"
+          "sourceSliceSha256": "8df4e360b1cf94ccd33e1c2f9d57c02f1627cc41de675a13edeaef1ac7135b88",
+          "sourceChars": 28395,
+          "outputSha256": "35ebab119770b02f6509816223782380127105e13e592d7db328d934d9a0c416"
         },
         {
           "pageId": "progression-leveling-strategy",
@@ -152,8 +152,8 @@
           "route": "/progression/leveling-strategy",
           "status": "current",
           "sourceRange": {
-            "start": 19022,
-            "end": 34337
+            "start": 28395,
+            "end": 52002
           },
           "sourceElementRange": {
             "bodyIndexStart": 58,
@@ -161,9 +161,9 @@
             "tableIndexStart": 4,
             "tableIndexEndExclusive": 6
           },
-          "sourceSliceSha256": "5851b919a8c7f9d1f50f8e11e20330c18be93250fb8ec9d97882be1c5136f758",
-          "sourceChars": 15315,
-          "outputSha256": "577c03bc73bbe6f98a37f61427fff4206aab69aec6a294e2e54658bbfecebb33"
+          "sourceSliceSha256": "3d161d501b893a43517e5921d27bd7f8bb8927e80f3b3f929157c2eb32467c3e",
+          "sourceChars": 23607,
+          "outputSha256": "0680a7ba0f7e3d09541f932faa5fdc1efad187ad85af349c29b90f7916fc2bdb"
         },
         {
           "pageId": "progression-leveling-locations",
@@ -171,8 +171,8 @@
           "route": "/progression/leveling-locations",
           "status": "current",
           "sourceRange": {
-            "start": 34337,
-            "end": 69522
+            "start": 52002,
+            "end": 98772
           },
           "sourceElementRange": {
             "bodyIndexStart": 172,
@@ -180,9 +180,9 @@
             "tableIndexStart": 6,
             "tableIndexEndExclusive": 9
           },
-          "sourceSliceSha256": "18898f86a9b2bb50ebe64ff6199a82b49938dcc7f424a61eaa5616883a2993d1",
-          "sourceChars": 35185,
-          "outputSha256": "7aaa216579c201eb0743b84003d6723171cf126171aa3ed98396c2536a1c9c62"
+          "sourceSliceSha256": "3b0b847f2b9618a02347b3b544baab7045454673be5ffda48b76a53e827c2a46",
+          "sourceChars": 46770,
+          "outputSha256": "6f61881268f27af3b8028a66d5ec6f5b2c063231b0258ce853f6f295cff1b202"
         },
         {
           "pageId": "progression-leveling-efficiency",
@@ -190,8 +190,8 @@
           "route": "/progression/leveling-efficiency",
           "status": "current",
           "sourceRange": {
-            "start": 69522,
-            "end": 86650
+            "start": 98772,
+            "end": 124565
           },
           "sourceElementRange": {
             "bodyIndexStart": 401,
@@ -199,17 +199,17 @@
             "tableIndexStart": 9,
             "tableIndexEndExclusive": 11
           },
-          "sourceSliceSha256": "fecd2ae38e3edadc08e276f51aaf0dd0224851f26b57eab93bd75f53d4d66e50",
-          "sourceChars": 17128,
-          "outputSha256": "22cb53363d8c240bc2803d2cb6d630c520b71497156a395f5205ffc3b9688cc9"
+          "sourceSliceSha256": "a08fdd50543dafebeefaa600e0365d35e60b510b56553171db63574f78a3c846",
+          "sourceChars": 25793,
+          "outputSha256": "cc12604718c78ff955300eb2b04f115eed0f84e89014aae2af6e85756aebf2a7"
         }
       ]
     },
     {
       "sourceAssetId": "src-d47e51aa8321",
-      "sourceBodySha256": "551f8f462690ac9ebd9f57c84bfe2ae88aac8b32a6b7c03906057a24198756cc",
-      "sourceChars": 10935,
-      "coveredChars": 10935,
+      "sourceBodySha256": "4233c93b4c876fab0d8fb7adb52d95fc08b1dc881506614dcabe955c9c804ecb",
+      "sourceChars": 13206,
+      "coveredChars": 13206,
       "pages": [
         {
           "pageId": "combat-event-maps",
@@ -218,7 +218,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 10935
+            "end": 13206
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -226,17 +226,17 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 2
           },
-          "sourceSliceSha256": "551f8f462690ac9ebd9f57c84bfe2ae88aac8b32a6b7c03906057a24198756cc",
-          "sourceChars": 10935,
-          "outputSha256": "b2caa8821eadf42cd21c8b3db1d85303b0e6b7721cce707aad76f321b3093215"
+          "sourceSliceSha256": "4233c93b4c876fab0d8fb7adb52d95fc08b1dc881506614dcabe955c9c804ecb",
+          "sourceChars": 13206,
+          "outputSha256": "dce9df2d015b6b96d5dc05d48a0134407371226b7d73d1ebb6495ebc0dcf8787"
         }
       ]
     },
     {
       "sourceAssetId": "src-94e76e4522b1",
-      "sourceBodySha256": "5e2561bae5e560604c18eb5ccb481bea03f6875aed3bf97df6e46a3b7b438e8c",
-      "sourceChars": 16058,
-      "coveredChars": 16058,
+      "sourceBodySha256": "1299c20c96271d8cf8bfb199f0b7b70f2bdc8ea13d9fa741e42f961d6954bf53",
+      "sourceChars": 38407,
+      "coveredChars": 38407,
       "pages": [
         {
           "pageId": "combat-pve-enemy-analysis",
@@ -245,7 +245,7 @@
           "status": "current",
           "sourceRange": {
             "start": 0,
-            "end": 3750
+            "end": 8992
           },
           "sourceElementRange": {
             "bodyIndexStart": 1,
@@ -253,9 +253,9 @@
             "tableIndexStart": 1,
             "tableIndexEndExclusive": 2
           },
-          "sourceSliceSha256": "7a89c427697f1637ab11ac8c45c96577c90c22d3556fe8dae728214063c2d3b8",
-          "sourceChars": 3750,
-          "outputSha256": "59f22e56392427abd26ff410d6cef99189af823bc38012f8310a965dac412dbc"
+          "sourceSliceSha256": "b75ea39d74103322250771333b53a275d1f1da3fc9c0ca0edb5c87cff692e7e5",
+          "sourceChars": 8992,
+          "outputSha256": "96f509e1ef3cbcc8144af9e458f7d7178ed85af3cabbf4ef6f45d4a0b23c89d0"
         },
         {
           "pageId": "combat-pve-ship-roles",
@@ -263,8 +263,8 @@
           "route": "/combat/pve-ship-roles",
           "status": "current",
           "sourceRange": {
-            "start": 3750,
-            "end": 8230
+            "start": 8992,
+            "end": 29201
           },
           "sourceElementRange": {
             "bodyIndexStart": 31,
@@ -272,9 +272,9 @@
             "tableIndexStart": 2,
             "tableIndexEndExclusive": 6
           },
-          "sourceSliceSha256": "72dc485ec9504ddfd6b1267364784a07881c050a734d4799e2fdee153dca2bbc",
-          "sourceChars": 4480,
-          "outputSha256": "81ad6aff899c3e81f5b5524660410355756b0358f55a775e0afb8677ec59b9b9"
+          "sourceSliceSha256": "dfcfd255438a69f566da4483572493be1341c5f5600ac51e5d08729cf2a85d9f",
+          "sourceChars": 20209,
+          "outputSha256": "6d37bfbda067e2bedba56c4ccff05c5b2d788ded44afd813419fa6b7180cf111"
         },
         {
           "pageId": "combat-pve-team-practice",
@@ -282,8 +282,8 @@
           "route": "/combat/pve-team-practice",
           "status": "current",
           "sourceRange": {
-            "start": 8230,
-            "end": 16058
+            "start": 29201,
+            "end": 38407
           },
           "sourceElementRange": {
             "bodyIndexStart": 52,
@@ -291,9 +291,9 @@
             "tableIndexStart": 6,
             "tableIndexEndExclusive": 6
           },
-          "sourceSliceSha256": "5cea0b224a60ebe3386d0f966386a46f24d36a5fc8b10a44d38c28ffecface28",
-          "sourceChars": 7828,
-          "outputSha256": "2b1bc56b4f6ebc3887c5fbecef6948ef78d1382259eac698d539d74da736558c"
+          "sourceSliceSha256": "488e4b24491b9a1a9692a3fd1f31a7c806f47b912162dd99f0dbc58687705cfa",
+          "sourceChars": 9206,
+          "outputSha256": "a0a7062786369bde91d075e3db09a1863bc3a21a6dbee068328bbd71a7537837"
         }
       ]
     }
@@ -328,7 +328,7 @@
     "sourceAssets": 6,
     "sourcePages": 13,
     "editorialOverviews": 3,
-    "sourceChars": 158866,
-    "coveredChars": 158866
+    "sourceChars": 231123,
+    "coveredChars": 231123
   }
 }

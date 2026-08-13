@@ -12,6 +12,8 @@ const checks = [
   'scripts/test-imports.mjs',
   'scripts/content/validate-full-content-map.mjs',
   'scripts/content/validate-media-placement.mjs',
+  'scripts/content/validate-docx-text-fidelity.mjs',
+  'scripts/content/validate-docx-table-layouts.mjs',
   'tests/content/advanced-content-ownership.mjs',
   'tests/content/redirect-policy.mjs',
   'tests/content/legacy-anchor-redirects.mjs',

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "defaultSemantic": "prose",
+  "classificationPolicy": "DOCX paragraph style IDs plus audited sourceElementId overrides; never derived from text length or punctuation at runtime.",
+  "sources": {
+    "src-9ac6e41a613e": {
+      "nonProseStyleIds": ["a3", "af6"],
+      "overrides": {}
+    },
+    "src-ea0b63d069bf": {
+      "nonProseStyleIds": ["a3"],
+      "overrides": {
+        "src-ea0b63d069bf:paragraph:5ceefe3f77a5f7fa": "non-prose"
+      }
+    },
+    "src-842246bdb075": {
+      "nonProseStyleIds": ["a3", "a5", "a7", "a9", "ad"],
+      "overrides": {
+        "src-842246bdb075:paragraph:62d86f00d6864ef4": "non-prose"
+      }
+    },
+    "src-6eba63c4aa7b": {
+      "nonProseStyleIds": ["a3", "a5", "a7", "a9"],
+      "overrides": {
+        "src-6eba63c4aa7b:paragraph:14e566965305db2c": "non-prose",
+        "src-6eba63c4aa7b:paragraph:0ea5f9f00ad9237d": "non-prose",
+        "src-6eba63c4aa7b:paragraph:03a90273ed76baad": "non-prose",
+        "src-6eba63c4aa7b:paragraph:96366456a8af2f58": "non-prose",
+        "src-6eba63c4aa7b:paragraph:cf20f514381d9fa3": "non-prose",
+        "src-6eba63c4aa7b:paragraph:ec485ec648d0a870": "non-prose",
+        "src-6eba63c4aa7b:paragraph:63ca0f856036491a": "non-prose",
+        "src-6eba63c4aa7b:paragraph:1c8790fd748dff99": "non-prose",
+        "src-6eba63c4aa7b:paragraph:5bbf70be9ed7615a": "non-prose",
+        "src-6eba63c4aa7b:paragraph:b345cbefaa75d017": "non-prose",
+        "src-6eba63c4aa7b:paragraph:8ab4ac512ea15b42": "non-prose",
+        "src-6eba63c4aa7b:paragraph:62b2fdc51ce3c4e1": "non-prose",
+        "src-6eba63c4aa7b:paragraph:991b2163e9bcfa2d": "non-prose",
+        "src-6eba63c4aa7b:paragraph:cd70ebb4f5b8f3e9": "non-prose",
+        "src-6eba63c4aa7b:paragraph:1416729066d6a904": "non-prose",
+        "src-6eba63c4aa7b:paragraph:c6497ea98e44fb0c": "non-prose",
+        "src-6eba63c4aa7b:paragraph:6235ca58cc0f3d8a": "non-prose",
+        "src-6eba63c4aa7b:paragraph:da6660ebb5b8fdca": "non-prose",
+        "src-6eba63c4aa7b:paragraph:95e80c00db286afd": "non-prose",
+        "src-6eba63c4aa7b:paragraph:0ea3ccb6440942cc": "non-prose",
+        "src-6eba63c4aa7b:paragraph:773451a3df54911b": "non-prose",
+        "src-6eba63c4aa7b:paragraph:ee260d9158670103": "non-prose",
+        "src-6eba63c4aa7b:paragraph:c7044fa475d07636": "non-prose",
+        "src-6eba63c4aa7b:paragraph:eb9a1dc80a7b5893": "non-prose",
+        "src-6eba63c4aa7b:paragraph:8127a1c3ebba0db0": "non-prose",
+        "src-6eba63c4aa7b:paragraph:f6cce371fd4592f9": "non-prose",
+        "src-6eba63c4aa7b:paragraph:08558bd54697568e": "non-prose",
+        "src-6eba63c4aa7b:paragraph:61e8cce7c81b03e5": "non-prose",
+        "src-6eba63c4aa7b:paragraph:88303782f4f6d6ba": "non-prose",
+        "src-6eba63c4aa7b:paragraph:0c7f8c3845122ba9": "non-prose",
+        "src-6eba63c4aa7b:paragraph:69663c17c63fabdd": "non-prose",
+        "src-6eba63c4aa7b:paragraph:c40a398336364367": "non-prose"
+      }
+    },
+    "src-d47e51aa8321": {
+      "nonProseStyleIds": ["a3", "a9", "aff2"],
+      "overrides": {
+        "src-d47e51aa8321:paragraph:9135f85dffdadd46": "non-prose",
+        "src-d47e51aa8321:paragraph:c505923d048c6d7c": "non-prose",
+        "src-d47e51aa8321:paragraph:e4209ec87b44c7e5": "non-prose"
+      }
+    },
+    "src-94e76e4522b1": {
+      "nonProseStyleIds": ["a3", "a5", "a9", "ad", "af6", "afc"],
+      "overrides": {
+        "src-94e76e4522b1:paragraph:5deb53083d3de10a": "non-prose",
+        "src-94e76e4522b1:paragraph:b6f2cf88f9cfc3f3": "non-prose"
+      }
+    },
+    "src-7d080e8d651b": {
+      "nonProseStyleIds": ["a3", "a5", "a9", "af0", "af1", "af6", "afc"],
+      "overrides": {
+        "src-7d080e8d651b:paragraph:788dd08cc7fd79e2": "non-prose",
+        "src-7d080e8d651b:paragraph:7b27f1c498eb1552": "non-prose",
+        "src-7d080e8d651b:paragraph:f5195b0c9890afbb": "non-prose",
+        "src-7d080e8d651b:paragraph:3db30b505de2d070": "non-prose",
+        "src-7d080e8d651b:paragraph:2a7a2080607169c0": "non-prose",
+        "src-7d080e8d651b:paragraph:b823664f46b3af3d": "non-prose",
+        "src-7d080e8d651b:paragraph:baebcf3846df7c3a": "non-prose",
+        "src-7d080e8d651b:paragraph:a6806a5bb0a0c58a": "non-prose",
+        "src-7d080e8d651b:paragraph:c8eea752718eba84": "non-prose"
+      }
+    },
+    "src-d35e870ffcd7": {
+      "nonProseStyleIds": ["ab", "af7", "aff1", "aff5"],
+      "overrides": {
+        "src-d35e870ffcd7:paragraph:1226a1188bde8d67": "non-prose",
+        "src-d35e870ffcd7:paragraph:b42244a2769b2f1c": "non-prose",
+        "src-d35e870ffcd7:paragraph:7b86c7d3d7d98a2d": "non-prose",
+        "src-d35e870ffcd7:paragraph:3b987071e6246a78": "non-prose",
+        "src-d35e870ffcd7:paragraph:c7eea5cd8bde9ff0": "non-prose",
+        "src-d35e870ffcd7:paragraph:38f6a7de4f093e74": "non-prose",
+        "src-d35e870ffcd7:paragraph:92e5a242602fbb58": "non-prose",
+        "src-d35e870ffcd7:paragraph:45bb84a2c5ca1fd4": "non-prose",
+        "src-d35e870ffcd7:paragraph:68330476f7b7d352": "non-prose",
+        "src-d35e870ffcd7:paragraph:15a8ae3112c113c2": "non-prose",
+        "src-d35e870ffcd7:paragraph:f91bec0562714bec": "non-prose",
+        "src-d35e870ffcd7:paragraph:eb3a42cbbd716738": "non-prose",
+        "src-d35e870ffcd7:paragraph:cbdd1953252c1dc0": "non-prose"
+      }
+    },
+    "src-51475ba227c9": {
+      "nonProseStyleIds": ["a5", "a7", "a9", "af6"],
+      "overrides": {
+        "src-51475ba227c9:paragraph:8eccf6a2f9d43372": "non-prose"
+      }
+    },
+    "src-c8852cf69a7b": {
+      "nonProseStyleIds": ["a3", "a9", "aff6", "affa", "affc"],
+      "overrides": {
+        "src-c8852cf69a7b:paragraph:351ca9879d972931": "non-prose",
+        "src-c8852cf69a7b:paragraph:9338fa1cff2015e1": "non-prose",
+        "src-c8852cf69a7b:paragraph:a5902043c5d14a25": "non-prose",
+        "src-c8852cf69a7b:paragraph:972b687259049f77": "non-prose",
+        "src-c8852cf69a7b:paragraph:bd7825c46ca7182c": "non-prose",
+        "src-c8852cf69a7b:paragraph:bffb16bd1fb48d1d": "non-prose",
+        "src-c8852cf69a7b:paragraph:e24ed23f00c16368": "non-prose"
+      }
+    },
+    "src-e2d43eca15b2": {
+      "nonProseStyleIds": [],
+      "overrides": {
+        "src-e2d43eca15b2:paragraph:432c8d0cfd27ad00": "non-prose",
+        "src-e2d43eca15b2:paragraph:ac97c1e7ab6232c9": "non-prose",
+        "src-e2d43eca15b2:paragraph:1b84fac4efdf908b": "non-prose",
+        "src-e2d43eca15b2:paragraph:f3a4515117317f94": "non-prose",
+        "src-e2d43eca15b2:paragraph:183616e1a657abb1": "non-prose"
+      }
+    },
+    "src-90f788a9def4": {
+      "nonProseStyleIds": [],
+      "overrides": {}
+    },
+    "src-6d7a8eecd6bb": {
+      "nonProseStyleIds": [],
+      "overrides": {
+        "src-6d7a8eecd6bb:paragraph:8d7ca3e9443ccee7": "non-prose"
+      }
+    }
+  }
+}

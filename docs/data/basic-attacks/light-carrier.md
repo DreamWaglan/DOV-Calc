@@ -62,5 +62,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 独立 | 20 | 1.33 | 3.5 | 30 | 鱼雷 | — | — | — |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

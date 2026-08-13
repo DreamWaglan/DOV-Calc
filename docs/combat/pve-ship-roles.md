@@ -32,73 +32,50 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 ## 二、我方常用舰灵
 <!-- source-body:31:src-94e76e4522b1:heading:d29843bb8853e04f:paragraph -->
 
+<!-- article-paragraph:prose -->
 对于萌新而言，了解我能用什么舰灵也是比较重要的一件事。本节列出常用舰灵供参考，实际通关时可选择表外舰灵，不做限制。
 <!-- source-body:32:src-94e76e4522b1:paragraph:7739cd2607ddcf46:paragraph -->
 
+<!-- article-paragraph:prose -->
 我方常用舰灵可分别为前排自奶舰灵，后排奶舰灵，前排AOE舰灵，后排强力拐与输出舰灵等，下表尽量列出萌新易获取的舰灵的作用。
 <!-- source-body:33:src-94e76e4522b1:paragraph:7838a03ea6413999:paragraph -->
 
 ### （一）前排自奶舰灵
 <!-- source-body:34:src-94e76e4522b1:heading:93f70945e14eaa15:paragraph -->
 
-表 前排自奶舰灵
+<!-- article-paragraph:non-prose -->
+表2 前排自奶舰灵
 <!-- source-body:35:src-94e76e4522b1:paragraph:19bcc11d9b80a0ac:paragraph -->
 
-| 名称 | 获取方式 | 奶量 |
-| --- | --- | --- |
-| 小拉菲·改(DD-724) | 灵晶改造 | 12S cd回复3%，少量 |
-| 萨拉托加·改 | 灵晶改造 | 20S cd 持续秒每秒回复3%，少量 |
-| 雪风 | 主线15-10与15-5H打捞 | 10S cd 持续秒每秒回复2%血量，同时添加30%血量护盾，大量 |
-| 响/信赖 | 主线14-5、14-3H（信赖需灵晶改造） | 20S cd 回复5%血量同时攻击伤害减免+30%，中等 |
-| 大拉菲（DD-459） | 档案打捞 | 24S cd 每个敌人被该技能击杀后回复10%，理论可奶满，少量 |
-| 新奥尔良 | 2-5、2-3H开始可打捞，活动与档案可打捞，常规调遣与建造 | 28S cd 回复10%血量，少量 |
-| 唐斯 | 白卡随处可见 | 22S cd 回复15%血量，中等，但本体血量太少，实际回血量低 |
-| 卡约·杜伊利奥 | 档案打捞 | 32S cd 持续秒每秒回复2%血量同时攻击伤害减免+20%，少量；天赋每秒回复5%血量，中等 |
+<div class="docx-table-scroll" data-source-table="src-94e76e4522b1:table:980e1627fa0fcf3e" tabindex="0" role="region" aria-label="DOCX 原稿表格，可横向滚动"><table class="docx-table" aria-label="DOCX 原稿表格" data-source-table="src-94e76e4522b1:table:980e1627fa0fcf3e" data-grid-columns="3"><tbody><tr><th data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:1:1">名称</th><th data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:1:2">获取方式</th><th data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:1:3">奶量</th></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:2:1">小拉菲·改(DD-724)</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:2:2">9000灵晶改造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:2:3">12S cd回复3%，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:3:1">萨拉托加·改</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:3:2">18500灵晶改造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:3:3">20S cd 持续3秒每秒回复3%，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:4:1">雪风</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:4:2">主线15-10与15-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:4:3">10S cd 持续5秒每秒回复2%血量，同时添加30%血量护盾，大量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:5:1">响/信赖</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:5:2">主线14-5、14-3H（信赖需9000灵晶改造）</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:5:3">20S cd 回复5%血量同时攻击伤害减免+30%，中等</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:6:1">大拉菲（DD-459）</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:6:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:6:3">24S cd 每个敌人被该技能击杀后回复10%，理论可奶满，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:7:1">新奥尔良</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:7:2">2-5、2-3H开始可打捞，活动与档案可打捞，常规调遣与建造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:7:3">28S cd 回复10%血量，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:8:1">唐斯</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:8:2">白卡随处可见</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:8:3">22S cd 回复15%血量，中等，但本体血量太少，实际回血量低</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:9:1">卡约·杜伊利奥</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:9:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:980e1627fa0fcf3e:9:3">32S cd 持续6秒每秒回复2%血量同时攻击伤害减免+20%，少量；天赋每5秒回复5%血量，中等</td></tr></tbody></table></div>
 <!-- source-body:36:src-94e76e4522b1:table:980e1627fa0fcf3e:table -->
 
+<!-- article-paragraph:prose -->
 此外，部分限定舰灵如明尼、光辉、企业、沙恩、利托、卡约、重庆、逸仙、布列尼塔、火力、甘古特、恰巴耶夫、独立、蒙彼利埃均存在自回。由于属于限定舰灵，本处不列出具体回血额度，如果已拿到舰灵，请自行查看。
 <!-- source-body:37:src-94e76e4522b1:paragraph:665acd4f0ee7785d:paragraph -->
 
 ### （二）后排奶舰灵
 <!-- source-body:38:src-94e76e4522b1:heading:f92b9371102bc787:paragraph -->
 
+<!-- article-paragraph:non-prose -->
 表3 后排奶舰灵
 <!-- source-body:39:src-94e76e4522b1:paragraph:20322c6c46f854ac:paragraph -->
 
-| 名称 | 获取方式 | 奶量 |
-| --- | --- | --- |
-| 吸血鬼 | 3-10、3-5H打捞，活动打捞，档案打捞，常规调遣与建造 | 11S cd，回复前排最低血量单位8%血量，少量 |
-| 伦敦 | 1-10、1-5H开始可打捞，活动与档案可打捞，常规调遣与建造 | 30S cd 前排任一低于50%血量回复自身30%+目标45% 单体奶，巨量，cd从开始奶计算 |
-| 巨像 | 1-10、1-5H开始可打捞，活动与档案可打捞，常规调遣与建造 | 30S cd 前排装母，航母，轻母回复自身30%血量，中量 |
-| 哈曼 | 主线2-5打捞，常规调遣与建造，部分限时活动打捞 | 18S cd，回复前排最低血量单位自身30%+目标15%血量，大量 |
-| 镇海 | 主线19-5、19-3H打捞 | 20S cd，进行次对前排最低血量单位5%血量回复，分别判定，少量 |
-| 独角兽 | 主线19-10、19-5H打捞 | 13S cd，前排持续10S每秒回复1% 群奶，少量 |
-| 卡约·杜伊利奥 | 档案打捞 | 21S cd，前排每秒回复1%，持续6S 群奶，少量 |
+<div class="docx-table-scroll" data-source-table="src-94e76e4522b1:table:65603e47b64ce258" tabindex="0" role="region" aria-label="DOCX 原稿表格，可横向滚动"><table class="docx-table" aria-label="DOCX 原稿表格" data-source-table="src-94e76e4522b1:table:65603e47b64ce258" data-grid-columns="3"><tbody><tr><th data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:1:1">名称</th><th data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:1:2">获取方式</th><th data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:1:3">奶量</th></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:2:1">吸血鬼</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:2:2">3-10、3-5H打捞，活动打捞，档案打捞，常规调遣与建造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:2:3">11S cd，回复前排最低血量单位8%血量，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:3:1">伦敦</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:3:2">1-10、1-5H开始可打捞，活动与档案可打捞，常规调遣与建造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:3:3">30S cd 前排任一低于50%血量回复自身30%+目标45% 单体奶，巨量，cd从开始奶计算</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:4:1">巨像</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:4:2">1-10、1-5H开始可打捞，活动与档案可打捞，常规调遣与建造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:4:3">30S cd 前排装母，航母，轻母回复自身30%血量，中量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:5:1">哈曼</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:5:2">主线2-5打捞，常规调遣与建造，部分限时活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:5:3">18S cd，回复前排最低血量单位自身30%+目标15%血量，大量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:6:1">镇海</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:6:2">主线19-5、19-3H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:6:3">20S cd，进行3次对前排最低血量单位5%血量回复，分别判定，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:7:1">独角兽</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:7:2">主线19-10、19-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:7:3">13S cd，前排持续10S每秒回复1% 群奶，少量</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:8:1">卡约·杜伊利奥</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:8:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:65603e47b64ce258:8:3">21S cd，前排每秒回复1%，持续6S 群奶，少量</td></tr></tbody></table></div>
 <!-- source-body:40:src-94e76e4522b1:table:65603e47b64ce258:table -->
 
+<!-- article-paragraph:prose -->
 此处还有限定奶：阿瑞托莎（后排群体奶），杰维斯（后排群体奶+机动），女灶神（大量奶），火力（暴击才能回血），白雪（仅对四雪回血）如果拿到了再进行考虑。
 <!-- source-body:41:src-94e76e4522b1:paragraph:2c8c1f4f3eca08a4:paragraph -->
 
 ### （三）前排高AOE舰灵
 <!-- source-body:42:src-94e76e4522b1:heading:218b8c7914be5d6e:paragraph -->
 
-表 前排高AOE舰灵
+<!-- article-paragraph:non-prose -->
+表4 前排高AOE舰灵
 <!-- source-body:43:src-94e76e4522b1:paragraph:e398c383bbef945a:paragraph -->
 
-| 名称 | 获得方式 | AOE力度 |
-| --- | --- | --- |
-| 前卫 | 限时打捞活动，自选 | 高平炮强者，通常必杀都带大范围AOE |
-| 北卡罗来纳 | 主线10-10、10-5H打捞 | 通常技°高平炮 |
-| 小拉菲·改（DD-724改） | 灵晶改造 | 必杀技°旋转，非手操会后撤步 |
-| 齐柏林伯爵 | 建造，档案打捞，主线4-10、4-5H打捞 | 通常技°轻巡炮通常，改后更强力 |
-| 胡德 | 档案打捞 | 激光炮，可大范围攻击，但CD较长（35S） |
-| 宁海（带信物） | 主线8-10、8-5H打捞，档案活动打捞（必须换一个信物本体，需要好感到爱装备） | 12S的龙拳，能高效清杂 |
-| 大黄蜂 | 常规调遣，活动打捞，档案打捞 | 唯2 飞机AOE航母 |
-| 天鹰 | 限时活动打捞 | 唯2 飞机AOE航母 |
-| 空想 | 功勋商店兑换 | 本质高频超模普攻 |
-| 重庆 | 限时活动打捞 | 20S 扇形AOE |
-| 逸仙 | 限时活动打捞 | 24S激光 |
-| 威尔士亲王 | 档案打捞 | 36S激光 |
+<div class="docx-table-scroll" data-source-table="src-94e76e4522b1:table:2cf8a43e446180e9" tabindex="0" role="region" aria-label="DOCX 原稿表格，可横向滚动"><table class="docx-table" aria-label="DOCX 原稿表格" data-source-table="src-94e76e4522b1:table:2cf8a43e446180e9" data-grid-columns="3"><tbody><tr><th data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:1:1">名称</th><th data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:1:2">获得方式</th><th data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:1:3">AOE力度</th></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:2:1">前卫</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:2:2">限时打捞活动，88自选</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:2:3">高平炮强者，通常必杀都带大范围AOE</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:3:1">北卡罗来纳</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:3:2">主线10-10、10-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:3:3">通常技360°高平炮</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:4:1">小拉菲·改（DD-724改）</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:4:2">9000灵晶改造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:4:3">必杀技360°旋转，非手操会后撤步</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:5:1">齐柏林伯爵</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:5:2">建造，档案打捞，主线4-10、4-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:5:3">通常技360°轻巡炮通常，改后更强力</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:6:1">胡德</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:6:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:6:3">激光炮，可大范围攻击，但CD较长（35S）</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:7:1">宁海（带信物）</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:7:2">主线8-10、8-5H打捞，档案活动打捞（必须换一个信物本体，需要好感到爱装备）</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:7:3">12S的龙拳，能高效清杂</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:8:1">大黄蜂</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:8:2">常规调遣，活动打捞，档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:8:3">唯2 飞机AOE航母</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:9:1">天鹰</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:9:2">限时活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:9:3">唯2 飞机AOE航母</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:10:1">空想</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:10:2">功勋商店兑换</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:10:3">本质高频超模普攻</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:11:1">重庆</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:11:2">限时活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:11:3">20S 扇形AOE</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:12:1">逸仙</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:12:2">限时活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:12:3">24S激光</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:13:1">威尔士亲王</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:13:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:2cf8a43e446180e9:13:3">36S激光</td></tr></tbody></table></div>
 <!-- source-body:44:src-94e76e4522b1:table:2cf8a43e446180e9:table -->
 
 ### （四）后排拐与部分强力输出
@@ -106,36 +83,18 @@ related: ["combat-pve-enemy-analysis","combat-pve-team-practice","topic-pve-sele
 
 <!-- source-body:46:src-94e76e4522b1:paragraph:88741bdfeff60ab5:paragraph -->
 
-表 后排拐与部分强力输出舰灵
+<!-- article-paragraph:non-prose -->
+表5 后排拐与部分强力输出舰灵
 <!-- source-body:47:src-94e76e4522b1:paragraph:94597b7403a52572:paragraph -->
 
-| 名称 | 获得方式 | 功能 |
-| --- | --- | --- |
-| 海伦娜 | 14-10、14-5H打捞 | 支援技增加索敌 |
-| 列克星敦 | 常规调遣，活动打捞 | 支援技高频飞机打击 |
-| 吹雪 | 主线4-5、4-3H开始打捞，活动打捞 | 范围鱼雷处理重甲 |
-| 平海 | 主线7-10、7-5H打捞，档案打捞，常规调遣 | 支援技降低敌方单体攻击伤害减免 |
-| 北上·改 | 刚需灵晶改造，推荐16-5H获取、档案打捞 | 支援技高伤鱼雷处理重甲 |
-| 大井·改 | 刚需灵晶改造，推荐16-3H获取、档案打捞 | 支援技高伤范围鱼雷处理重甲 |
-| Z-1 | 建造，常规调遣，主线3-10开始获取 | 支援技短CD 穿甲炮处理轻中甲 |
-| Z-16 | 建造，常规调遣，主线1-5开始获取 | 支援技给前排增加暴击爆伤 |
-| 应瑞 | 主线11-5、11-3H开始获取 | 支援技增加前排单舰灵闪避 |
-| 奥马哈 | 主线1-5、1-3H开始获取，建造，活动打捞 | 支援技增加前排机动与暴击 |
-| 卡米契亚·内拉 | 主线20-5、20-3H打捞 | 支援技减少旗舰必杀技cd |
-| 凉月 | 主线12-10、12-5H打捞 | 支援技减少敌方装甲值 |
-| 埃罗芒什 | 巨像灵晶改造 | 支援技高频轰炸 |
-| 长门 | 通关3-5H后送一只 | 支援技对中甲重甲高伤 |
-| 加贺 | 建造，常规调遣 | 支援技鱼雷机高伤害 |
-| 神通-改 | 刚需灵晶改造 | 支援技高鱼雷伤 |
-| 皇家方舟 | 档案打捞 | 支援技高鱼雷伤 |
-| 约克城 | 档案打捞 | 支援技高鱼雷伤 |
-| 凌波 | 主线11-5、14-5、11-3H、14-3H打捞 | 支援技短cd鱼雷，改造后输出更高 |
-| 萨拉托加 | 建造，常规调遣 | 支援技前排航系增伤 |
+<div class="docx-table-scroll" data-source-table="src-94e76e4522b1:table:6d089109b620f8fe" tabindex="0" role="region" aria-label="DOCX 原稿表格，可横向滚动"><table class="docx-table" aria-label="DOCX 原稿表格" data-source-table="src-94e76e4522b1:table:6d089109b620f8fe" data-grid-columns="3"><tbody><tr><th data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:1:1">名称</th><th data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:1:2">获得方式</th><th data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:1:3">功能</th></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:2:1">海伦娜</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:2:2">14-10、14-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:2:3">支援技增加索敌</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:3:1">列克星敦</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:3:2">常规调遣，活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:3:3">支援技高频飞机打击</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:4:1">吹雪</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:4:2">主线4-5、4-3H开始打捞，活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:4:3">范围鱼雷处理重甲</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:5:1">平海</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:5:2">主线7-10、7-5H打捞，档案打捞，常规调遣</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:5:3">支援技降低敌方单体攻击伤害减免</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:6:1">北上·改</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:6:2">刚需18500灵晶改造，推荐16-5H获取、档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:6:3">支援技高伤鱼雷处理重甲</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:7:1">大井·改</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:7:2">刚需18500灵晶改造，推荐16-3H获取、档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:7:3">支援技高伤范围鱼雷处理重甲</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:8:1">Z-1</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:8:2">建造，常规调遣，主线3-10开始获取</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:8:3">支援技短CD 穿甲炮处理轻中甲</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:9:1">Z-16</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:9:2">建造，常规调遣，主线1-5开始获取</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:9:3">支援技给前排增加暴击爆伤</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:10:1">应瑞</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:10:2">主线11-5、11-3H开始获取</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:10:3">支援技增加前排单舰灵闪避</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:11:1">奥马哈</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:11:2">主线1-5、1-3H开始获取，建造，活动打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:11:3">支援技增加前排机动与暴击</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:12:1">卡米契亚·内拉</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:12:2">主线20-5、20-3H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:12:3">支援技减少旗舰必杀技cd</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:13:1">凉月</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:13:2">主线12-10、12-5H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:13:3">支援技减少敌方装甲值</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:14:1">埃罗芒什</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:14:2">巨像18500灵晶改造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:14:3">支援技高频轰炸</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:15:1">长门</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:15:2">通关3-5H后送一只</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:15:3">支援技对中甲重甲高伤</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:16:1">加贺</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:16:2">建造，常规调遣</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:16:3">支援技鱼雷机高伤害</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:17:1">神通-改</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:17:2">刚需18500灵晶改造</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:17:3">支援技高鱼雷伤</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:18:1">皇家方舟</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:18:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:18:3">支援技高鱼雷伤</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:19:1">约克城</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:19:2">档案打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:19:3">支援技高鱼雷伤</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:20:1">凌波</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:20:2">主线11-5、14-5、11-3H、14-3H打捞</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:20:3">支援技短cd鱼雷，改造后输出更高</td></tr><tr><td data-grid-column="1" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:21:1">萨拉托加</td><td data-grid-column="2" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:21:2">建造，常规调遣</td><td data-grid-column="3" data-source-cell="src-94e76e4522b1:table:6d089109b620f8fe:21:3">支援技前排航系增伤</td></tr></tbody></table></div>
 <!-- source-body:48:src-94e76e4522b1:table:6d089109b620f8fe:table -->
 
+<!-- article-paragraph:prose -->
 本处列出均为常驻舰灵，如果有限定舰灵会在后续章节提及。
 <!-- source-body:49:src-94e76e4522b1:paragraph:a65db3a512b982d8:paragraph -->
 
+<!-- article-paragraph:prose -->
 注：谢菲尔德（支援技cd短），敦刻尔克（对中重甲高伤），维内托（支援技加暴击且高伤），鹰（后排高伤鱼雷机），大淀（支援技增伤与加命中），初雪（穿甲弹，支援技cd短带减甲），企业（支援技给敌方上减抗），苍龙（支援技给敌方上减抗），伊丽莎白女王（支援技高伤）等也为不错的后排
 <!-- source-body:50:src-94e76e4522b1:paragraph:9b32c026ffa93d9b:paragraph -->
 

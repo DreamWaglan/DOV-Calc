@@ -30,6 +30,8 @@
     "content:advanced-pages": "node scripts/content/build-advanced-content-pages.mjs",
     "validate:advanced": "node scripts/content/validate-advanced-content.mjs",
     "validate:media-placement": "node scripts/content/validate-media-placement.mjs",
+    "validate:docx-text": "node scripts/content/validate-docx-text-fidelity.mjs",
+    "validate:docx-tables": "node scripts/content/validate-docx-table-layouts.mjs",
     "content:basic-attack": "node scripts/content/build-basic-attack-dataset.mjs",
     "validate:basic-attack": "node scripts/content/validate-basic-attack-dataset.mjs",
     "test:basic-attack": "node tests/tools/basic-attack-model.mjs",
@@ -58,7 +60,7 @@
     "test:imports": "node scripts/test-imports.mjs",
     "test:authorization": "node tests/content/authorization-policy.mjs",
     "docs:dev": "pnpm content:basic-attack && pnpm validate:basic-attack && pnpm validate:page-reviews && pnpm content:drift && pnpm content:schema && vitepress dev docs --host 127.0.0.1 --port 5173 --strictPort",
-    "docs:build": "pnpm content:basic-attack && pnpm validate:basic-attack && pnpm test:basic-attack && pnpm validate:page-reviews && pnpm content:drift && pnpm validate:full-map && pnpm validate:core && pnpm validate:advanced && pnpm validate:media-placement && pnpm validate:structures && pnpm validate:formulas && pnpm validate:media && pnpm validate:redirects && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:media-built && pnpm test:seo && pnpm content:public-artifacts",
+    "docs:build": "pnpm content:basic-attack && pnpm validate:basic-attack && pnpm test:basic-attack && pnpm validate:page-reviews && pnpm content:drift && pnpm validate:full-map && pnpm validate:core && pnpm validate:advanced && pnpm validate:media-placement && pnpm validate:docx-text && pnpm validate:docx-tables && pnpm validate:structures && pnpm validate:formulas && pnpm validate:media && pnpm validate:redirects && pnpm validate:stage4 && pnpm test:search && pnpm test:a11y && vitepress build docs && pnpm test:media-built && pnpm test:seo && pnpm content:public-artifacts",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],

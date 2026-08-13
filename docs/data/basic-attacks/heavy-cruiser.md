@@ -70,5 +70,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 明尼阿波利斯副炮 | 27 | 0.4 | 2 | 15 | 驱逐穿甲 | — | — | — | — | 8发 |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

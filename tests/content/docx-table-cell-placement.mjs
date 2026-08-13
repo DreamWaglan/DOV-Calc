@@ -3,7 +3,9 @@ import {
   collectBody,
   collectTableCellLayouts,
   parseWordprocessingXml,
+  renderHtmlTable,
 } from '../../scripts/content/import-docx.mjs'
+import { auditDocxTableHtml } from '../../scripts/content/validate-docx-table-layouts.mjs'
 
 const fixtureXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
@@ -86,5 +88,76 @@ assert.ok(
 assert.equal(first.drawings[2].cellPath.length, 2, 'nested drawings need a full cell path')
 assert.equal(first.drawings[2].cellPath[0].tableIndex, 1)
 assert.equal(first.drawings[2].cellPath[1].tableIndex, 2)
+
+const alignmentFixtureXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:tbl>
+      <w:tblGrid>
+        <w:gridCol/><w:gridCol/><w:gridCol/><w:gridCol/><w:gridCol/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc><w:tcPr><w:vMerge w:val="restart"/></w:tcPr><w:p><w:r><w:t>纵向表头</w:t></w:r></w:p></w:tc>
+        <w:tc><w:p><w:r><w:t>第一列</w:t></w:r></w:p></w:tc>
+        <w:tc><w:tcPr><w:gridSpan w:val="2"/></w:tcPr><w:p><w:r><w:t>跨两列</w:t></w:r></w:p></w:tc>
+        <w:tc><w:p><w:r><w:t>末列</w:t></w:r></w:p></w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p/></w:tc>
+        <w:tc><w:p><w:r><w:t>第二行</w:t></w:r></w:p></w:tc>
+        <w:tc><w:tcPr><w:gridSpan w:val="2"/></w:tcPr><w:p><w:r><w:t>尾部合并</w:t></w:r></w:p></w:tc>
+        <w:tc><w:p><w:r><w:t>第二行末列</w:t></w:r></w:p></w:tc>
+      </w:tr>
+      <w:tr>
+        <w:trPr><w:gridBefore w:val="2"/></w:trPr>
+        <w:tc><w:tcPr><w:gridSpan w:val="2"/></w:tcPr><w:p><w:r><w:t>偏移内容</w:t></w:r></w:p></w:tc>
+        <w:tc><w:p><w:r><w:t>第三行末列</w:t></w:r></w:p></w:tc>
+      </w:tr>
+    </w:tbl>
+  </w:body>
+</w:document>`
+
+const alignmentDocument = parseWordprocessingXml(alignmentFixtureXml)
+const alignmentBody = collectBody(alignmentDocument)
+const alignmentLayouts = collectTableCellLayouts({
+  assetId: 'src-bbbbbbbbbbbb',
+  bodyItems: alignmentBody,
+})
+const alignmentHtml = renderHtmlTable(
+  alignmentLayouts.tables[0].node,
+  alignmentLayouts.tableLayoutByNode,
+  new WeakMap(),
+)
+
+assert.doesNotMatch(
+  alignmentHtml,
+  /<thead>/,
+  'a first-row rowspan must not cross thead/tbody row-group boundaries',
+)
+assert.match(
+  alignmentHtml,
+  /data-grid-placeholder-start="1"/,
+  'gridBefore gaps not covered by an active rowspan need structural placeholders',
+)
+assert.doesNotMatch(
+  alignmentHtml,
+  /aria-hidden="true"/,
+  'structural placeholders must remain in the accessible table grid',
+)
+assert.match(
+  alignmentHtml,
+  /class="docx-table-scroll"[^>]*tabindex="0"[^>]*role="region"[^>]*aria-label=/,
+  'the local scroll container must be keyboard-focusable and labelled',
+)
+assert.equal(
+  alignmentHtml.match(/data-grid-placeholder-start="1"/g)?.length,
+  1,
+  'active rowspans must not receive duplicate placeholder cells',
+)
+assert.deepEqual(
+  auditDocxTableHtml(alignmentHtml).failures,
+  [],
+  'rendered rows must land on their declared Word grid columns',
+)
 
 console.log('docx-table-cell-placement tests passed.')

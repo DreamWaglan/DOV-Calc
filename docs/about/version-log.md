@@ -116,6 +116,7 @@ related: [about-sources, about-contributing, site-build-record]
 - 发布校验器检查构建、版本日志、内容报告、提交与标签的一致性。
 - 回滚演练在系统临时目录中完成归档、恢复和全量哈希复核，不改写源文件或构建产物。
 
+<!-- article-paragraph:non-prose -->
 当前状态：
 
 - 本地正式标签 `wiki-v1.0.0` 已创建并指向提交 `fe3370e`。
@@ -132,6 +133,7 @@ related: [about-sources, about-contributing, site-build-record]
 - 计算器增加当前伤害类型、防御口径、阵型、索敌、制空和自动修正摘要。
 - 装备速查显示数据版本、基准条数和当前筛选模式。
 
+<!-- article-paragraph:non-prose -->
 已知限制：
 
 - 遭遇战进阶版的独立伤害机制尚未进入计算器；
@@ -147,6 +149,7 @@ related: [about-sources, about-contributing, site-build-record]
 - 6 份核心 DOCX 完成内部结构导入，全部保持 `pending` 与不可发布状态。
 - 增加来源与版权、编辑规范和版本日志。
 
+<!-- article-paragraph:non-prose -->
 已知限制：
 
 - 战术页面仍为草稿，缺少指定事实审核人的签核；

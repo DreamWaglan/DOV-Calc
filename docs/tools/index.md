@@ -28,9 +28,9 @@ tags: [工具, 计算器]
 related: [site-home, tool-damage-calculator, tool-equipment-lookup]
 ---
 
-# 计算器工具
+# 便捷工具
 
-这里是 DOV 计算器工具入口。后续每个计算器可以独立成页，包含适用场景、输入参数、结果解释和公式来源。
+这里是 DOV 便捷工具入口，提供了伤害计算、装备速查等功能。
 
 <div class="tool-grid">
   <a class="tool-card" href="./dov-basic">

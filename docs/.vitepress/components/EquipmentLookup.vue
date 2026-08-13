@@ -328,13 +328,15 @@ function toggleCategory(category) {
 }
 
 .equipment-lookup__pager button:disabled {
+  border-color: var(--calc-border);
+  background: var(--calc-surface-soft);
+  color: var(--calc-text-muted);
   cursor: not-allowed;
-  opacity: 0.55;
 }
 
 .equipment-lookup button:focus-visible {
-  border-color: var(--c-brand);
-  outline: 3px solid color-mix(in srgb, var(--c-brand) 24%, transparent);
+  border-color: var(--calc-accent);
+  outline: 3px solid var(--calc-accent);
   outline-offset: 2px;
 }
 
@@ -352,9 +354,9 @@ function toggleCategory(category) {
 }
 
 .equipment-lookup__category-strip button.is-active {
-  border-color: var(--c-brand);
-  background: var(--c-brand);
-  color: #ffffff;
+  border-color: var(--calc-accent);
+  background: var(--calc-accent);
+  color: var(--calc-on-accent);
 }
 
 .equipment-lookup__grid {

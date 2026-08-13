@@ -32,6 +32,7 @@ const screenshotRoot = path.join(
 const failures = []
 const browserErrors = []
 const pageChecks = []
+const buttonContrastChecks = []
 const screenshots = []
 const mediaRequests = []
 const mediaPolicyChecks = {
@@ -197,13 +198,16 @@ async function inspectLayout(page, route, viewport, options = {}) {
     )
     const tables = [...document.querySelectorAll('.vp-doc table')].map(
       (table) => {
-        const style = window.getComputedStyle(table)
+        const scrollContainer = table.closest('.docx-table-scroll') ?? table
+        const style = window.getComputedStyle(scrollContainer)
         return {
-          scrollWidth: table.scrollWidth,
-          clientWidth: table.clientWidth,
+          scrollWidth: scrollContainer.scrollWidth,
+          clientWidth: scrollContainer.clientWidth,
           overflowX: style.overflowX,
-          focusable: table.getAttribute('tabindex') === '0',
-          label: table.getAttribute('aria-label'),
+          focusable: scrollContainer.getAttribute('tabindex') === '0',
+          label:
+            scrollContainer.getAttribute('aria-label') ||
+            table.getAttribute('aria-label'),
         }
       },
     )
@@ -264,6 +268,17 @@ async function inspectLayout(page, route, viewport, options = {}) {
         backgroundColor: figureStyle.backgroundColor,
       }
     })
+    const articleProse = {
+      prose: [...document.querySelectorAll('.vp-doc p.article-prose')].map(
+        (paragraph) => window.getComputedStyle(paragraph).textIndent,
+      ),
+      nonProse: [
+        ...document.querySelectorAll('.vp-doc p.article-non-prose'),
+      ].map((paragraph) => window.getComputedStyle(paragraph).textIndent),
+      excludedWithProseClass: document.querySelectorAll(
+        '.vp-doc li p.article-prose, .vp-doc blockquote p.article-prose, .vp-doc table p.article-prose, .vp-doc .custom-block p.article-prose, .vp-doc .responsive-media p.article-prose',
+      ).length,
+    }
 
     return {
       title: document.title,
@@ -281,6 +296,7 @@ async function inspectLayout(page, route, viewport, options = {}) {
       toolTargets: toolTargets.length,
       undersizedTargets,
       responsiveMedia,
+      articleProse,
     }
   })
 
@@ -306,6 +322,28 @@ async function inspectLayout(page, route, viewport, options = {}) {
     failures.push(
       `${viewport}:${route}: undersized tool targets ${JSON.stringify(metrics.undersizedTargets.slice(0, 5))}`,
     )
+  }
+  if (options.requireArticleProse) {
+    if (
+      metrics.articleProse.prose.length === 0 ||
+      metrics.articleProse.prose.some((indent) => Number.parseFloat(indent) <= 0)
+    ) {
+      failures.push(
+        `${viewport}:${route}: narrative prose does not have a positive first-line indent`,
+      )
+    }
+    if (
+      metrics.articleProse.nonProse.some(
+        (indent) => Number.parseFloat(indent) !== 0,
+      )
+    ) {
+      failures.push(`${viewport}:${route}: non-prose paragraph was indented`)
+    }
+    if (metrics.articleProse.excludedWithProseClass !== 0) {
+      failures.push(
+        `${viewport}:${route}: excluded container received article-prose class`,
+      )
+    }
   }
   for (const table of metrics.tables) {
     if (!table.focusable || !table.label) {
@@ -384,6 +422,285 @@ async function inspectLayout(page, route, viewport, options = {}) {
   }
 
   pageChecks.push({ viewport, route, ...metrics })
+  await inspectButtonContrast(page, route, viewport)
+}
+
+async function inspectButtonContrast(page, route, viewport) {
+  const targets = buttonContrastTargetsForRoute(route)
+  if (targets.length === 0) return
+
+  await prepareButtonContrastState(page, route)
+
+  const results = await page.evaluate(async (contracts) => {
+    const originalDark = document.documentElement.classList.contains('dark')
+    const originalColorScheme = document.documentElement.style.colorScheme
+    const themes = [
+      { name: 'light', dark: false, colorScheme: 'light' },
+      { name: 'dark', dark: true, colorScheme: 'dark' },
+    ]
+    const collected = []
+
+    for (const theme of themes) {
+      document.documentElement.classList.toggle('dark', theme.dark)
+      document.documentElement.style.colorScheme = theme.colorScheme
+      await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)))
+
+      for (const contract of contracts) {
+        for (const element of document.querySelectorAll(contract.selector)) {
+          if (!(element instanceof HTMLElement)) continue
+          const style = window.getComputedStyle(element)
+          const rect = element.getBoundingClientRect()
+          const visible =
+            style.display !== 'none' &&
+            style.visibility !== 'hidden' &&
+            Number.parseFloat(style.opacity) > 0 &&
+            rect.width > 0 &&
+            rect.height > 0
+          if (!visible) continue
+
+          const text = (element.textContent ?? '').trim().replace(/\s+/g, ' ')
+          const accessibleName =
+            element.getAttribute('aria-label')?.trim() ||
+            element.getAttribute('title')?.trim() ||
+            text
+          const color = parseColor(style.color)
+          const background = composedBackground(element)
+          const parentBackground = composedBackground(element.parentElement)
+          const borderColor = parseColor(style.borderColor)
+          const outlineColor = parseColor(style.outlineColor)
+          const textContrast = color && background ? contrastRatio(color, background) : 0
+          const stateIndicatorContrast =
+            contract.requiresStateIndicator && background && parentBackground
+              ? contrastRatio(background, parentBackground)
+              : null
+          const borderContrast =
+            borderColor && background && Number.parseFloat(style.borderTopWidth) > 0
+              ? contrastRatio(borderColor, background)
+              : null
+          const focusIndicatorContrast =
+            outlineColor && background && Number.parseFloat(style.outlineWidth) > 0
+              ? contrastRatio(outlineColor, background)
+              : null
+          const scrollOverflow =
+            element.scrollWidth > element.clientWidth + 1 ||
+            element.scrollHeight > element.clientHeight + 1
+
+          collected.push({
+            id: contract.id,
+            selector: contract.selector,
+            theme: theme.name,
+            text,
+            accessibleName,
+            color: style.color,
+            backgroundColor: colorToCss(background),
+            parentBackgroundColor: colorToCss(parentBackground),
+            borderColor: style.borderColor,
+            outlineColor: style.outlineColor,
+            textContrast: roundContrast(textContrast),
+            stateIndicatorContrast:
+              stateIndicatorContrast === null ? null : roundContrast(stateIndicatorContrast),
+            borderContrast: borderContrast === null ? null : roundContrast(borderContrast),
+            focusIndicatorContrast:
+              focusIndicatorContrast === null ? null : roundContrast(focusIndicatorContrast),
+            width: Math.round(rect.width),
+            height: Math.round(rect.height),
+            visible,
+            disabled: element.matches(':disabled, [aria-disabled="true"], .disabled'),
+            scrollOverflow,
+            clipped:
+              scrollOverflow ||
+              rect.width < element.scrollWidth - 1 ||
+              rect.height < element.scrollHeight - 1,
+            textThreshold: contract.textThreshold ?? 4.5,
+            nonTextThreshold: contract.nonTextThreshold ?? 3,
+            touchTarget: contract.touchTarget ?? 44,
+            requiresStateIndicator: Boolean(contract.requiresStateIndicator),
+          })
+        }
+      }
+    }
+
+    document.documentElement.classList.toggle('dark', originalDark)
+    document.documentElement.style.colorScheme = originalColorScheme
+    return collected
+
+    function composedBackground(element) {
+      let current = element
+      let color = null
+      while (current) {
+        const parsed = parseColor(window.getComputedStyle(current).backgroundColor)
+        if (parsed && parsed.a > 0) {
+          color = color ? alphaComposite(color, parsed) : parsed
+          if (color.a >= 0.999) return { ...color, a: 1 }
+        }
+        current = current.parentElement
+      }
+      const canvas = window.getComputedStyle(document.documentElement).colorScheme.includes('dark')
+        ? { r: 0, g: 0, b: 0, a: 1 }
+        : { r: 255, g: 255, b: 255, a: 1 }
+      return color ? alphaComposite(color, canvas) : canvas
+    }
+
+    function parseColor(value) {
+      const match = value.match(
+        /^rgba?\(\s*([0-9.]+)\s*,\s*([0-9.]+)\s*,\s*([0-9.]+)(?:\s*,\s*([0-9.]+))?\s*\)$/i,
+      )
+      if (!match) return null
+      return {
+        r: Number(match[1]),
+        g: Number(match[2]),
+        b: Number(match[3]),
+        a: match[4] === undefined ? 1 : Number(match[4]),
+      }
+    }
+
+    function alphaComposite(foreground, background) {
+      const alpha = foreground.a + background.a * (1 - foreground.a)
+      if (alpha <= 0) return { r: 0, g: 0, b: 0, a: 0 }
+      return {
+        r: (foreground.r * foreground.a + background.r * background.a * (1 - foreground.a)) / alpha,
+        g: (foreground.g * foreground.a + background.g * background.a * (1 - foreground.a)) / alpha,
+        b: (foreground.b * foreground.a + background.b * background.a * (1 - foreground.a)) / alpha,
+        a: alpha,
+      }
+    }
+
+    function contrastRatio(left, right) {
+      const lighter = Math.max(relativeLuminance(left), relativeLuminance(right))
+      const darker = Math.min(relativeLuminance(left), relativeLuminance(right))
+      return (lighter + 0.05) / (darker + 0.05)
+    }
+
+    function relativeLuminance(color) {
+      const channels = [color.r, color.g, color.b].map((value) => {
+        const channel = value / 255
+        return channel <= 0.03928
+          ? channel / 12.92
+          : ((channel + 0.055) / 1.055) ** 2.4
+      })
+      return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722
+    }
+
+    function colorToCss(color) {
+      if (!color) return ''
+      return `rgba(${Math.round(color.r)}, ${Math.round(color.g)}, ${Math.round(color.b)}, ${roundContrast(color.a)})`
+    }
+
+    function roundContrast(value) {
+      return Math.round(value * 100) / 100
+    }
+  }, targets)
+
+  buttonContrastChecks.push(...results.map((result) => ({ viewport, route, ...result })))
+
+  const foundIds = new Set(results.map((result) => result.id))
+  for (const target of targets) {
+    if (!foundIds.has(target.id)) {
+      failures.push(`${viewport}:${route}:${target.id}: button contract target missing (${target.selector})`)
+    }
+  }
+
+  for (const result of results) {
+    const label = `${viewport}:${route}:${result.theme}:${result.id}`
+    if (!result.accessibleName) {
+      failures.push(`${label}: button has no accessible name`)
+    }
+    if (!result.text && !result.accessibleName) {
+      failures.push(`${label}: button has no visible text or accessible icon name`)
+    }
+    if (result.textContrast < result.textThreshold) {
+      failures.push(
+        `${label}: text contrast ${result.textContrast}:1 is below ${result.textThreshold}:1 (${result.color} on ${result.backgroundColor})`,
+      )
+    }
+    if (
+      result.requiresStateIndicator &&
+      (result.stateIndicatorContrast === null ||
+        result.stateIndicatorContrast < result.nonTextThreshold)
+    ) {
+      failures.push(
+        `${label}: state indicator contrast ${result.stateIndicatorContrast ?? 'missing'}:1 is below ${result.nonTextThreshold}:1`,
+      )
+    }
+    if (result.width < result.touchTarget || result.height < result.touchTarget) {
+      failures.push(
+        `${label}: touch target ${result.width}x${result.height} is below ${result.touchTarget}px`,
+      )
+    }
+    if (result.clipped) {
+      failures.push(`${label}: text appears clipped or overflowing`)
+    }
+  }
+}
+
+async function prepareButtonContrastState(page, route) {
+  if (route === '/data/basic-attack-cd') {
+    await page.click('.tool-loading button')
+    await page.waitForSelector('.basic-attack-explorer__pager button:disabled', {
+      timeout: 10_000,
+    })
+  }
+
+  if (route === '/tools/equipment-lookup') {
+    await page.click('.equipment-lookup__category-strip button')
+    await page.waitForSelector(
+      '.equipment-lookup__category-strip button.is-active',
+      { timeout: 5_000 },
+    )
+  }
+
+  if (route === '/tools/dov-basic') {
+    await page.click('.damage-calculator__reset')
+    await page.waitForSelector('.damage-calculator__reset.is-selected', {
+      timeout: 5_000,
+    })
+  }
+}
+
+function buttonContrastTargetsForRoute(route) {
+  const contracts = {
+    homePrimary: {
+      id: 'home-primary-start-route',
+      selector: '.home-hero__button--primary',
+      requiresStateIndicator: true,
+    },
+    homeSecondary: {
+      id: 'home-secondary-toolbox',
+      selector: '.home-hero__button:not(.home-hero__button--primary)',
+    },
+    toolLoading: {
+      id: 'tool-loading-retry',
+      selector: '.vp-doc .tool-loading button',
+      requiresStateIndicator: true,
+    },
+    equipmentCategoryActive: {
+      id: 'equipment-category-active',
+      selector: '.equipment-lookup__category-strip button.is-active',
+      requiresStateIndicator: true,
+    },
+    equipmentPagerDisabled: {
+      id: 'equipment-pager-disabled',
+      selector: '.equipment-lookup__pager button:disabled',
+    },
+    basicAttackPagerDisabled: {
+      id: 'basic-attack-pager-disabled',
+      selector: '.basic-attack-explorer__pager button:disabled',
+    },
+    damageResetSelected: {
+      id: 'damage-reset-selected',
+      selector: '.damage-calculator__reset.is-selected',
+      requiresStateIndicator: true,
+    },
+  }
+
+  if (route === '/') return [contracts.homePrimary, contracts.homeSecondary]
+  if (route === '/tools/basic-attack-lookup') return [contracts.toolLoading]
+  if (route === '/tools/equipment-lookup') {
+    return [contracts.equipmentCategoryActive, contracts.equipmentPagerDisabled]
+  }
+  if (route === '/tools/dov-basic') return [contracts.damageResetSelected]
+  if (route === '/data/basic-attack-cd') return [contracts.basicAttackPagerDisabled]
+  return []
 }
 
 async function capture(page, name) {
@@ -395,6 +712,132 @@ async function capture(page, name) {
     bytes: bytes.byteLength,
     sha256: createHash('sha256').update(bytes).digest('hex'),
   })
+}
+
+async function inspectLevelingShipTable(page, viewport, captureName = null) {
+  const sourceTableId = 'src-6eba63c4aa7b:table:300f7d4a7a72390a'
+  const selector = `table.docx-table[data-source-table="${sourceTableId}"]`
+  await page.waitForSelector(selector, { timeout: 15_000 })
+  await page.$eval(selector, (table) =>
+    table.scrollIntoView({ block: 'center', inline: 'start' }),
+  )
+  await page.waitForFunction(
+    (targetSelector) => {
+      const target = document.querySelector(targetSelector)
+      const images = [...(target?.querySelectorAll('img') ?? [])]
+      return (
+        images.length === 5 &&
+        images.every((image) => image.complete && image.naturalWidth > 0)
+      )
+    },
+    { timeout: 20_000 },
+    selector,
+  )
+  const metrics = await page.$eval(selector, (table) => {
+    const wrapper = table.closest('.docx-table-scroll')
+    const sourceCells = [...table.querySelectorAll('[data-grid-column]')]
+    const sourceCell = (row, column) =>
+      table.querySelector(
+        `[data-source-cell$=":${row}:${column}"][data-grid-column="${column}"]`,
+      )
+    const cellContract = [
+      [3, 4, '吸血鬼'],
+      [3, 6, '拉菲DD724'],
+      [3, 8, '埃罗芒什'],
+    ].map(([row, column, text]) => ({
+      row,
+      column,
+      expectedText: text,
+      actualText: sourceCell(row, column)?.textContent?.trim() ?? '',
+    }))
+    const arrowContract = [5, 7].map((column) => {
+      const cell = sourceCell(1, column)
+      return {
+        column,
+        text: cell?.textContent?.trim() ?? '',
+        rowSpan: cell?.rowSpan ?? 0,
+      }
+    })
+    const images = [...table.querySelectorAll('.responsive-media img')]
+    return {
+      gridColumns: Number(table.getAttribute('data-grid-columns')),
+      rowCount: table.rows.length,
+      tHeadPresent: Boolean(table.tHead),
+      bodyCount: table.tBodies.length,
+      sourceCellCount: sourceCells.length,
+      placeholderCount: table.querySelectorAll('.docx-grid-placeholder').length,
+      mediaCount: images.length,
+      unloadedMedia: images.filter(
+        (image) => !image.complete || image.naturalWidth <= 0,
+      ).length,
+      upscaledMedia: images.filter(
+        (image) => image.getBoundingClientRect().width > image.naturalWidth + 1,
+      ).length,
+      nonOriginalMedia: images.filter(
+        (image) =>
+          !/\/original\.(?:png|jpe?g)(?:\?|$)/i.test(
+            image.currentSrc || image.src,
+          ),
+      ).length,
+      cellContract,
+      arrowContract,
+      wrapperOverflowX: wrapper
+        ? window.getComputedStyle(wrapper).overflowX
+        : 'missing',
+      wrapperScrollWidth: wrapper?.scrollWidth ?? 0,
+      wrapperClientWidth: wrapper?.clientWidth ?? 0,
+    }
+  })
+
+  if (
+    metrics.gridColumns !== 9 ||
+    metrics.rowCount !== 9 ||
+    metrics.tHeadPresent ||
+    metrics.bodyCount !== 1
+  ) {
+    failures.push(
+      `${viewport}: leveling ship table row-group/grid contract failed ${JSON.stringify(metrics)}`,
+    )
+  }
+  if (
+    metrics.mediaCount !== 5 ||
+    metrics.unloadedMedia !== 0 ||
+    metrics.upscaledMedia !== 0 ||
+    metrics.nonOriginalMedia !== 0 ||
+    metrics.sourceCellCount !== 60 ||
+    metrics.placeholderCount !== 1
+  ) {
+    failures.push(
+      `${viewport}: leveling ship table media/source-cell contract failed ${JSON.stringify(metrics)}`,
+    )
+  }
+  if (
+    metrics.cellContract.some(
+      (cell) => cell.actualText !== cell.expectedText,
+    ) ||
+    metrics.arrowContract.some(
+      (cell) => cell.text !== '>' || cell.rowSpan !== 8,
+    )
+  ) {
+    failures.push(
+      `${viewport}: leveling ship table source-column contract failed ${JSON.stringify(metrics)}`,
+    )
+  }
+  if (!['auto', 'scroll'].includes(metrics.wrapperOverflowX)) {
+    failures.push(
+      `${viewport}: leveling ship table wrapper lacks local scrolling ${JSON.stringify(metrics)}`,
+    )
+  }
+
+  if (captureName) {
+    await capture(page, captureName)
+    await page.$eval(selector, (table) => {
+      const wrapper = table.closest('.docx-table-scroll')
+      if (wrapper) wrapper.scrollLeft = wrapper.scrollWidth
+    })
+    await new Promise((resolve) => setTimeout(resolve, 100))
+    await capture(page, `${captureName}-right`)
+  }
 }
 
 async function captureMediaRequestsDuring(action) {
@@ -514,6 +957,7 @@ try {
     '/start/game-introduction',
     '/start/first-week',
     '/progression/leveling',
+    '/progression/leveling-ship-selection',
     '/combat/pve-team-building',
     '/data/basic-attack-cd',
     '/tools/dov-basic',
@@ -525,15 +969,25 @@ try {
   ]) {
     await inspectLayout(page, route, 'desktop-1440', {
       requirePageChrome: route !== '/',
+      requireArticleProse: route === '/start/game-introduction',
     })
+    if (route === '/progression/leveling-ship-selection') {
+      await inspectLevelingShipTable(
+        page,
+        'desktop-1440',
+        'leveling-ship-table-desktop-1440',
+      )
+    }
   }
 
   await page.setViewport({ width: 360, height: 640, deviceScaleFactor: 2 })
   for (const route of [
     '/',
     '/progression/leveling',
+    '/progression/leveling-ship-selection',
     '/data/basic-attack-cd',
     '/topics/new-player-checklist',
+    '/start/game-introduction',
     '/tools/dov-basic',
     '/tools/equipment-lookup',
     '/tools/basic-attack-lookup',
@@ -543,7 +997,17 @@ try {
   ]) {
     await inspectLayout(page, route, 'mobile-360', {
       requirePageChrome: route !== '/',
+      requireArticleProse:
+        route === '/start/game-introduction' ||
+        route === '/topics/new-player-checklist',
     })
+    if (route === '/progression/leveling-ship-selection') {
+      await inspectLevelingShipTable(
+        page,
+        'mobile-360',
+        'leveling-ship-table-mobile-360',
+      )
+    }
     if (route === '/') await capture(page, 'home-mobile-360')
     if (route === '/tools/dov-basic') {
       await capture(page, 'damage-calculator-mobile-360')
@@ -594,19 +1058,26 @@ try {
   for (const route of [
     '/',
     '/start/first-week',
+    '/start/game-introduction',
+    '/progression/leveling-ship-selection',
     '/data/basic-attack-cd',
     '/tools/equipment-lookup',
     '/topics/visual-guides/',
   ]) {
     await inspectLayout(page, route, 'mobile-390', {
       requirePageChrome: route !== '/',
+      requireArticleProse: route === '/start/game-introduction',
     })
+    if (route === '/progression/leveling-ship-selection') {
+      await inspectLevelingShipTable(page, 'mobile-390')
+    }
   }
 
   await page.setViewport({ width: 768, height: 1024, deviceScaleFactor: 1 })
   for (const route of [
     '/',
     '/progression/leveling',
+    '/progression/leveling-ship-selection',
     '/combat/pve-team-building',
     '/tools/dov-basic',
     '/topics/visual-guides/src-ec1754535996',
@@ -615,6 +1086,9 @@ try {
     await inspectLayout(page, route, 'tablet-768', {
       requirePageChrome: route !== '/',
     })
+    if (route === '/progression/leveling-ship-selection') {
+      await inspectLevelingShipTable(page, 'tablet-768')
+    }
   }
 
   const tabletMenuButton = await page.$('.VPNavBarHamburger')
@@ -806,6 +1280,23 @@ try {
   })
   const viewerMetrics = await page.$eval('.image-viewer__dialog', (element) => {
     const buttons = [...element.querySelectorAll('button')]
+    const buttonContrast = buttons.map((button) => {
+      const style = getComputedStyle(button)
+      const foreground = parseRgb(style.color)
+      const background = parseRgb(style.backgroundColor)
+      const rect = button.getBoundingClientRect()
+      return {
+        label: button.getAttribute('aria-label') || button.textContent?.trim() || '',
+        disabled: button.disabled,
+        contrast:
+          foreground && background
+            ? Math.round(contrastRatio(foreground, background) * 100) / 100
+            : 0,
+        opacity: Number.parseFloat(style.opacity),
+        width: Math.round(rect.width),
+        height: Math.round(rect.height),
+      }
+    })
     return {
       role: element.getAttribute('role'),
       ariaModal: element.getAttribute('aria-modal'),
@@ -817,6 +1308,32 @@ try {
         (button) => button.getAttribute('aria-label') || button.textContent?.trim() || '',
       ),
       viewerImageSrc: element.querySelector('img')?.getAttribute('src') ?? '',
+      buttonContrast,
+    }
+
+    function parseRgb(value) {
+      const match = value.match(
+        /^rgba?\(\s*([0-9.]+)\s*,\s*([0-9.]+)\s*,\s*([0-9.]+)/i,
+      )
+      return match
+        ? { r: Number(match[1]), g: Number(match[2]), b: Number(match[3]) }
+        : null
+    }
+
+    function contrastRatio(left, right) {
+      const lighter = Math.max(relativeLuminance(left), relativeLuminance(right))
+      const darker = Math.min(relativeLuminance(left), relativeLuminance(right))
+      return (lighter + 0.05) / (darker + 0.05)
+    }
+
+    function relativeLuminance(color) {
+      const channels = [color.r, color.g, color.b].map((value) => {
+        const channel = value / 255
+        return channel <= 0.03928
+          ? channel / 12.92
+          : ((channel + 0.055) / 1.055) ** 2.4
+      })
+      return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722
     }
   })
   if (
@@ -836,6 +1353,20 @@ try {
     failures.push(`image viewer: controls are incomplete ${JSON.stringify(viewerMetrics.buttonLabels)}`)
   } else {
     imageViewerChecks.controls += 1
+  }
+  if (
+    viewerMetrics.buttonContrast.some(
+      (button) =>
+        !button.label ||
+        button.contrast < 4.5 ||
+        button.opacity < 1 ||
+        button.width < 44 ||
+        button.height < 44,
+    )
+  ) {
+    failures.push(
+      `image viewer: button readability contract failed ${JSON.stringify(viewerMetrics.buttonContrast)}`,
+    )
   }
   if (
     !isOriginalMediaUrl(viewerMetrics.viewerImageSrc) ||
@@ -1623,6 +2154,7 @@ const reportPath = await writeReport('e2e-smoke', {
         check.viewport.startsWith('tablet-'),
     ).length,
     viewportChecks,
+    buttonContrastChecks: buttonContrastChecks.length,
     screenshots: screenshots.length,
     mediaRequests: mediaRequests.length,
     mediaPolicyChecks,
@@ -1634,6 +2166,7 @@ const reportPath = await writeReport('e2e-smoke', {
     failures: failures.length,
   },
   pageChecks,
+  buttonContrastChecks,
   screenshots,
   mediaRequests: [...new Set(mediaRequests)],
   browserErrors: substantiveBrowserErrors,

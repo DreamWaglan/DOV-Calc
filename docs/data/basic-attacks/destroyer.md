@@ -94,5 +94,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 信赖（响·改） | 51 | 0.54 | 0.3 | 16 | 驱逐穿甲 | 0.35 | — | 5 | 20 | 2发 |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

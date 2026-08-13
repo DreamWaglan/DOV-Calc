@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p>
+      <w:r><w:t>纯整数</w:t></w:r>
+      <w:r><w:t>80</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>负数</w:t></w:r>
+      <w:r><w:t>-7</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>小数</w:t></w:r>
+      <w:r><w:t>1.0</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>尾随小数点</w:t></w:r>
+      <w:r><w:t>15.</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>前导零</w:t></w:r>
+      <w:r><w:t>0012</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>百分比拆分</w:t></w:r>
+      <w:r><w:t>0.94</w:t></w:r>
+      <w:r><w:t>%</w:t></w:r>
+    </w:p>
+    <w:p>
+      <w:r><w:t>中英文混排</w:t></w:r>
+      <w:r><w:t>A80级B</w:t></w:r>
+      <w:r><w:t>英A中80</w:t></w:r>
+    </w:p>
+  </w:body>
+</w:document>

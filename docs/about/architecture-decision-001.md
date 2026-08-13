@@ -112,6 +112,7 @@ VitePress 负责把 Markdown、Frontmatter 和 Vue 组件构建为静态 HTML。
 
 ## 决策
 
+<!-- article-paragraph:non-prose -->
 站点继续采用以下边界：
 
 1. VitePress 负责页面构建、路由、主题、SEO 和交互工具承载。

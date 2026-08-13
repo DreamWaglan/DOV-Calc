@@ -88,5 +88,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 大凤·改 | 51 | 2.4 | 5 | 30 | 鱼雷 | — | — | — |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

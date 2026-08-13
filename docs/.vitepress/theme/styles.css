@@ -3,6 +3,7 @@
   --vp-c-brand-2: #0969da;
   --vp-c-brand-3: #0550ae;
   --calc-accent: var(--vp-c-brand-1);
+  --calc-on-accent: #ffffff;
   --calc-surface: var(--vp-c-bg);
   --calc-surface-soft: var(--vp-c-bg-soft);
   --calc-border: var(--vp-c-divider);
@@ -20,6 +21,7 @@
   --vp-c-brand-1: #79c0ff;
   --vp-c-brand-2: #58a6ff;
   --vp-c-brand-3: #a5d6ff;
+  --calc-on-accent: #111318;
   --calc-surface: var(--vp-c-bg);
   --calc-surface-soft: var(--vp-c-bg-soft);
   --calc-border: var(--vp-c-divider);
@@ -36,6 +38,10 @@
 
 .vp-doc {
   overflow-wrap: anywhere;
+}
+
+.vp-doc p.article-prose {
+  text-indent: 2em;
 }
 
 .vp-doc table {
@@ -260,7 +266,7 @@ html.image-viewer-open {
   text-decoration: none;
 }
 
-.image-viewer__toolbar button:hover {
+.image-viewer__toolbar button:hover:not(:disabled) {
   border-color: #79c0ff;
   background: #343c49;
 }
@@ -271,8 +277,10 @@ html.image-viewer-open {
 }
 
 .image-viewer__toolbar button:disabled {
+  border-color: rgb(255 255 255 / 28%);
+  background: #222630;
+  color: #d7dce5;
   cursor: not-allowed;
-  opacity: 0.45;
 }
 
 .image-viewer__zoom {
@@ -368,7 +376,7 @@ html.image-viewer-open {
   margin-top: 24px;
 }
 
-.home-hero__button {
+.vp-doc a.home-hero__button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -378,12 +386,20 @@ html.image-viewer-open {
   border-radius: 8px;
   color: var(--calc-accent);
   font-weight: 600;
+  text-decoration: none;
+  transition: none;
+  -webkit-text-fill-color: currentColor;
 }
 
-.home-hero__button--primary {
+.vp-doc a.home-hero__button--primary {
   border-color: var(--calc-accent);
   background: var(--calc-accent);
-  color: #ffffff;
+  color: var(--calc-on-accent);
+}
+
+.vp-doc .tool-loading button,
+.image-viewer__toolbar button {
+  -webkit-text-fill-color: currentColor;
 }
 
 .home-hero__panel,

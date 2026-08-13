@@ -87,5 +87,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 恐怖 | 49 | 1.54 | 3 | 20 | 战列穿甲 | 2发 | 0.4 | 2 | 15 | 驱逐穿甲 | 8发 |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

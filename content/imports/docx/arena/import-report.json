@@ -48,8 +48,8 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/arena/review.md",
-      "sha256": "f26cd404518e5e66c2db27814592722541d5f0177cee5edbf016b6724411d9e9",
-      "bytes": 205719
+      "sha256": "090121d400d2ea753bc3956f127be57a5bd88cdf775ba9ca8edd47df3343bcdf",
+      "bytes": 238310
     },
     "quarantine": {
       "path": "content/imports/docx/arena/quarantine.json",
@@ -87,7 +87,9 @@
         "bodyIndex": 1,
         "paragraphIndex": 1
       },
-      "textHash": "2c9c534401af1cb3520dc36aa9538070055a4d606943d365eef32ff11aff9a87"
+      "paragraphStyleId": "a3",
+      "textHash": "2c9c534401af1cb3520dc36aa9538070055a4d606943d365eef32ff11aff9a87",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -98,7 +100,9 @@
         "bodyIndex": 2,
         "paragraphIndex": 2
       },
-      "textHash": "668ca8fac1405ba7d9224d8272bc897d2e9b70d58770a70d96d9f251bc9e1d75"
+      "paragraphStyleId": "a5",
+      "textHash": "668ca8fac1405ba7d9224d8272bc897d2e9b70d58770a70d96d9f251bc9e1d75",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -109,7 +113,9 @@
         "bodyIndex": 3,
         "paragraphIndex": 3
       },
-      "textHash": "3da0ba896060f18b99825d09988f77d83ddad8ac8bc2b4d32db46392c7cc98b2"
+      "paragraphStyleId": "",
+      "textHash": "3da0ba896060f18b99825d09988f77d83ddad8ac8bc2b4d32db46392c7cc98b2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -120,7 +126,9 @@
         "bodyIndex": 4,
         "paragraphIndex": 4
       },
-      "textHash": "33e287d21e6ffebdcd9be1c7d912e28bb82cd11d00fcdd741006693a6e03d32a"
+      "paragraphStyleId": "",
+      "textHash": "33e287d21e6ffebdcd9be1c7d912e28bb82cd11d00fcdd741006693a6e03d32a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -131,6 +139,7 @@
         "bodyIndex": 5,
         "paragraphIndex": 5
       },
+      "paragraphStyleId": "1",
       "textHash": "830c4c8dcc0eca7a939e74a40eb9c493537196a43c5efc951ec1d211cad762aa",
       "headingLevel": 1,
       "title": "一、综合篇"
@@ -144,6 +153,7 @@
         "bodyIndex": 6,
         "paragraphIndex": 6
       },
+      "paragraphStyleId": "2",
       "textHash": "f5a244961bf5e0b0abb3f945c3d34fbf50907fdc8dfbe2de5fa5185290e9fee3",
       "headingLevel": 2,
       "title": "（一）入门"
@@ -157,7 +167,9 @@
         "bodyIndex": 7,
         "paragraphIndex": 7
       },
-      "textHash": "41fa58b2b07a8a5979945592ba2258ce6434e5ed27806c3c10b1d7babb93f469"
+      "paragraphStyleId": "",
+      "textHash": "2dd0eff93cb0717c865c023d6f86a3c6459df5d6d7dd9d8ddd931eb032630ed7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -168,7 +180,9 @@
         "bodyIndex": 8,
         "paragraphIndex": 8
       },
-      "textHash": "02ee31a6cd2897f3f65d4fa107ffd3303c05bed6e3515586c98864febec24b11"
+      "paragraphStyleId": "",
+      "textHash": "02ee31a6cd2897f3f65d4fa107ffd3303c05bed6e3515586c98864febec24b11",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -179,7 +193,9 @@
         "bodyIndex": 9,
         "paragraphIndex": 9
       },
-      "textHash": "e4fb903818bd5703dad0225ae148c7620b573e6c43a30f7ac61836b0f75b134f"
+      "paragraphStyleId": "",
+      "textHash": "e4fb903818bd5703dad0225ae148c7620b573e6c43a30f7ac61836b0f75b134f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -190,7 +206,9 @@
         "bodyIndex": 10,
         "paragraphIndex": 10
       },
-      "textHash": "9a9b4a926316c28c0bab98509c7f3dc79bc66a13c8e00a183c994c4dc8741c91"
+      "paragraphStyleId": "",
+      "textHash": "9a9b4a926316c28c0bab98509c7f3dc79bc66a13c8e00a183c994c4dc8741c91",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -201,6 +219,7 @@
         "bodyIndex": 11,
         "paragraphIndex": 11
       },
+      "paragraphStyleId": "2",
       "textHash": "eaf197e6fe70e4ac9149eb9b9051a0cf9c62c7cdbdb847145069ed1a34d472b9",
       "headingLevel": 2,
       "title": "（二）参数/公式相关"
@@ -214,9 +233,10 @@
         "bodyIndex": 12,
         "paragraphIndex": 12
       },
-      "textHash": "14b2894fc94d437f2ecc160675801af57d14ff7ac5feac77898c591b3c68a38d",
+      "paragraphStyleId": "3",
+      "textHash": "ded91d19bb66cd5613ca7aaa75727768a1728e9fb2206bd3f593aebcdacbd6ac",
       "headingLevel": 3,
-      "title": "索敌/制空判定"
+      "title": "1.索敌/制空判定"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -227,7 +247,9 @@
         "bodyIndex": 13,
         "paragraphIndex": 13
       },
-      "textHash": "d84c4d730bfe4a90fb36a0cc5e31c2ec0a9625713b92031e42971d3128be85a0"
+      "paragraphStyleId": "",
+      "textHash": "d84c4d730bfe4a90fb36a0cc5e31c2ec0a9625713b92031e42971d3128be85a0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -238,6 +260,7 @@
         "bodyIndex": 14,
         "paragraphIndex": 14
       },
+      "paragraphStyleId": "4",
       "textHash": "e5174d0902b656e6a07c0348c066e89ff6b6636408cd507e02d37afe64a4743f",
       "headingLevel": 4,
       "title": "①索敌判定"
@@ -251,7 +274,9 @@
         "bodyIndex": 15,
         "paragraphIndex": 15
       },
-      "textHash": "90577c5ff4d7735ca133f8d71071b65e7e7260fb3a0ea4023d853a31efc48982"
+      "paragraphStyleId": "",
+      "textHash": "90577c5ff4d7735ca133f8d71071b65e7e7260fb3a0ea4023d853a31efc48982",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -262,7 +287,9 @@
         "bodyIndex": 16,
         "paragraphIndex": 16
       },
-      "textHash": "c10c9d803c4b48b4a8a7ab93e09921474506a153e9293f24320da7d68c4ea718"
+      "paragraphStyleId": "",
+      "textHash": "401d95a93757ce6de2de03e81beb5c2a23a7948e30f06eac993bfe4f05de4a98",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -273,7 +300,9 @@
         "bodyIndex": 17,
         "paragraphIndex": 17
       },
-      "textHash": "43dc6b7d06c428a250acf8aff1e5120900eb3d724208ff307ac22938e559f360"
+      "paragraphStyleId": "",
+      "textHash": "43dc6b7d06c428a250acf8aff1e5120900eb3d724208ff307ac22938e559f360",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -284,7 +313,9 @@
         "bodyIndex": 18,
         "paragraphIndex": 18
       },
-      "textHash": "67a878264bd75a47d3505d02851bc68cc598c30de1c54978c0c1031dd1d9e3c9"
+      "paragraphStyleId": "",
+      "textHash": "ee5035cddbc60e0128d93ba6ed72ee6617365f2fcdadcceee3d01e6722ab96b3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -295,6 +326,7 @@
         "bodyIndex": 19,
         "paragraphIndex": 19
       },
+      "paragraphStyleId": "4",
       "textHash": "24ba4e48fa881cd56ffa304ec5b793c23a55dc078d711e7551c5352bc215b406",
       "headingLevel": 4,
       "title": "②制空判定"
@@ -308,7 +340,9 @@
         "bodyIndex": 20,
         "paragraphIndex": 20
       },
-      "textHash": "8e40e2cc17021c815a023ab7d80cee3943dd644d61b054005c6cedca20c229e9"
+      "paragraphStyleId": "",
+      "textHash": "8e40e2cc17021c815a023ab7d80cee3943dd644d61b054005c6cedca20c229e9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -319,7 +353,9 @@
         "bodyIndex": 21,
         "paragraphIndex": 21
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -330,6 +366,7 @@
         "bodyIndex": 22,
         "paragraphIndex": 22
       },
+      "paragraphStyleId": "4",
       "textHash": "bee796ed647162e70c691568b4e44ca5f4247f8ca099fe4d04b2b0a4b4dd96b3",
       "headingLevel": 4,
       "title": "小结："
@@ -343,7 +380,9 @@
         "bodyIndex": 23,
         "paragraphIndex": 23
       },
-      "textHash": "e99176b890a2c8a736ae38361394ecb27dae8c36eab49f625725df82f4a3300b"
+      "paragraphStyleId": "",
+      "textHash": "c569c39c1dde8739afc04d1fff29d020b76349a1dfb02b62a3b4bba0ede8bf4e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -354,7 +393,9 @@
         "bodyIndex": 24,
         "paragraphIndex": 24
       },
-      "textHash": "419e3736805c910f429d4b74a1f69984ad28ba705202e3567a0912806633a834"
+      "paragraphStyleId": "",
+      "textHash": "419e3736805c910f429d4b74a1f69984ad28ba705202e3567a0912806633a834",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -365,7 +406,9 @@
         "bodyIndex": 25,
         "paragraphIndex": 25
       },
-      "textHash": "63d2616d5fec38b652ab516027a2d680a2c1d9b29cdf9ea46438d4b8af5cdddf"
+      "paragraphStyleId": "",
+      "textHash": "63d2616d5fec38b652ab516027a2d680a2c1d9b29cdf9ea46438d4b8af5cdddf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -376,7 +419,9 @@
         "bodyIndex": 26,
         "paragraphIndex": 26
       },
-      "textHash": "ecb4b6a47d7ef89725ff54c29b0916856c17e4c69ddea6b7f94e256dd35659af"
+      "paragraphStyleId": "",
+      "textHash": "ecb4b6a47d7ef89725ff54c29b0916856c17e4c69ddea6b7f94e256dd35659af",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -387,7 +432,9 @@
         "bodyIndex": 27,
         "paragraphIndex": 27
       },
-      "textHash": "87f11589d9a30733631adf5bd164f605f5f1ef4f14ae66e4a0cffd7718be8fbe"
+      "paragraphStyleId": "",
+      "textHash": "87f11589d9a30733631adf5bd164f605f5f1ef4f14ae66e4a0cffd7718be8fbe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -398,9 +445,10 @@
         "bodyIndex": 28,
         "paragraphIndex": 28
       },
-      "textHash": "383ebffb87d818a9c8953c471b7535212e2bd5eaa2b46b8ecdcc07f9b16f8aed",
+      "paragraphStyleId": "2",
+      "textHash": "00c7adb5548d84bad279d5c376220a4f511504837ade35e269c77cad9d53041c",
       "headingLevel": 2,
-      "title": "增伤和减伤"
+      "title": "2.增伤和减伤"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -411,7 +459,9 @@
         "bodyIndex": 29,
         "paragraphIndex": 29
       },
-      "textHash": "6d7a3e417b30c484dfa84a9c74770be90e95d65d37d83431b6707ded14882f71"
+      "paragraphStyleId": "",
+      "textHash": "6d7a3e417b30c484dfa84a9c74770be90e95d65d37d83431b6707ded14882f71",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -422,7 +472,9 @@
         "bodyIndex": 30,
         "paragraphIndex": 30
       },
-      "textHash": "0afc909b4131362db96fff20a26e5c1d36f7b74fdafa3ac33769c73c8962f4c7"
+      "paragraphStyleId": "",
+      "textHash": "0afc909b4131362db96fff20a26e5c1d36f7b74fdafa3ac33769c73c8962f4c7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -433,7 +485,9 @@
         "bodyIndex": 31,
         "paragraphIndex": 31
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -444,7 +498,9 @@
         "bodyIndex": 32,
         "paragraphIndex": 32
       },
-      "textHash": "cd38e72d27d41af1664f08f0e885fac13e4c82909b1fe03dd0480629285c2c5b"
+      "paragraphStyleId": "",
+      "textHash": "cd38e72d27d41af1664f08f0e885fac13e4c82909b1fe03dd0480629285c2c5b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -455,7 +511,9 @@
         "bodyIndex": 33,
         "paragraphIndex": 33
       },
-      "textHash": "d43e3b58298ada24548047aeff3cb6b73370e12d41c4b6738cbf6d28795511c7"
+      "paragraphStyleId": "",
+      "textHash": "d43e3b58298ada24548047aeff3cb6b73370e12d41c4b6738cbf6d28795511c7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -466,7 +524,9 @@
         "bodyIndex": 34,
         "paragraphIndex": 34
       },
-      "textHash": "d26440bd8ab4d8b8af35ff3cccfebed1020b9ec2fe2f031d3ea4244e61fa967e"
+      "paragraphStyleId": "",
+      "textHash": "d26440bd8ab4d8b8af35ff3cccfebed1020b9ec2fe2f031d3ea4244e61fa967e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -477,7 +537,9 @@
         "bodyIndex": 35,
         "paragraphIndex": 35
       },
-      "textHash": "2de3941b870cc7932c26b09008c5d9db6e874eb6ab3b5196dffc40088de72ad1"
+      "paragraphStyleId": "",
+      "textHash": "2de3941b870cc7932c26b09008c5d9db6e874eb6ab3b5196dffc40088de72ad1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -488,7 +550,9 @@
         "bodyIndex": 36,
         "paragraphIndex": 36
       },
-      "textHash": "181e2d67e45d63a2fe4d16203dc311f04c1953e1f2b0da5fe0d4329fb47d70cb"
+      "paragraphStyleId": "",
+      "textHash": "181e2d67e45d63a2fe4d16203dc311f04c1953e1f2b0da5fe0d4329fb47d70cb",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -499,7 +563,9 @@
         "bodyIndex": 37,
         "paragraphIndex": 37
       },
-      "textHash": "08c4dc5e6870dcbbf3633a3ca4a4dbb85c98551270132beb869a79f81cc9c202"
+      "paragraphStyleId": "",
+      "textHash": "08c4dc5e6870dcbbf3633a3ca4a4dbb85c98551270132beb869a79f81cc9c202",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -510,9 +576,10 @@
         "bodyIndex": 38,
         "paragraphIndex": 38
       },
-      "textHash": "6be2775c6b0a0dcb25b58fb5138214cf5d0543f64b9cbe9f361adb826101a312",
+      "paragraphStyleId": "2",
+      "textHash": "5e4f036814d4adc34036f4685cd56eb1598469fbdad5e7c6e30f7aea5225a541",
       "headingLevel": 2,
-      "title": "局内外加成"
+      "title": "3.局内外加成"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -523,7 +590,9 @@
         "bodyIndex": 39,
         "paragraphIndex": 39
       },
-      "textHash": "6cdf8e6235188da67638bf9614b5875fbeece65f54538cad8f0816470b4ecb9c"
+      "paragraphStyleId": "",
+      "textHash": "6cdf8e6235188da67638bf9614b5875fbeece65f54538cad8f0816470b4ecb9c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -534,7 +603,9 @@
         "bodyIndex": 40,
         "paragraphIndex": 40
       },
-      "textHash": "89c3d6c18b06f5f609392bcfb84a738911517afdd92d969b18e5f4c57b33e81c"
+      "paragraphStyleId": "",
+      "textHash": "89c3d6c18b06f5f609392bcfb84a738911517afdd92d969b18e5f4c57b33e81c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -545,7 +616,9 @@
         "bodyIndex": 41,
         "paragraphIndex": 41
       },
-      "textHash": "fc73748a2e299bf4b9ccf2fca972616cfdcb6ec425d44aa7453340ac02fcee51"
+      "paragraphStyleId": "",
+      "textHash": "7040fdbf98eb6eb9e9d6f5da9088c3686824ad978a88bda5bc4e5aed96e28767",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -556,9 +629,10 @@
         "bodyIndex": 42,
         "paragraphIndex": 42
       },
-      "textHash": "776c8199d84a64bdfc86da40d83ed6fd2b4c3d4f7406e7c4f7caf43dc9110e95",
+      "paragraphStyleId": "2",
+      "textHash": "c1b956feb6cf837ba1d7bcdc0822c6e16002725b435429fcaf75c68d6b0fc419",
       "headingLevel": 2,
-      "title": "弹种克制"
+      "title": "4.弹种克制"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -569,7 +643,9 @@
         "bodyIndex": 43,
         "paragraphIndex": 43
       },
-      "textHash": "3110723eb3383a10ad16cdde348228bba17aec00d9db7afa506029d9a0006261"
+      "paragraphStyleId": "",
+      "textHash": "3110723eb3383a10ad16cdde348228bba17aec00d9db7afa506029d9a0006261",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -580,7 +656,9 @@
         "bodyIndex": 44,
         "paragraphIndex": 44
       },
-      "textHash": "b44cfa967f58f9331c047ae4e470e5fb7aabe0584cae7870cfa3333c1218297f"
+      "paragraphStyleId": "",
+      "textHash": "b44cfa967f58f9331c047ae4e470e5fb7aabe0584cae7870cfa3333c1218297f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -591,7 +669,9 @@
         "bodyIndex": 45,
         "paragraphIndex": 45
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -602,9 +682,10 @@
         "bodyIndex": 46,
         "paragraphIndex": 46
       },
-      "textHash": "e5a1144f5c0e1f361aaa6fa1024a61d097160be76fe72c0754c3e0591ba10c30",
+      "paragraphStyleId": "2",
+      "textHash": "a48d114f435d1e5a87ca562520958d2856ed3d5ab1afa1faf0c1ef10a83ab460",
       "headingLevel": 2,
-      "title": "幸运值"
+      "title": "5.幸运值"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -615,7 +696,9 @@
         "bodyIndex": 47,
         "paragraphIndex": 47
       },
-      "textHash": "e7427fc3f3f91c37de08c674dd3d4ed7057761be1536f3f334055043c3e7370c"
+      "paragraphStyleId": "",
+      "textHash": "e7427fc3f3f91c37de08c674dd3d4ed7057761be1536f3f334055043c3e7370c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -626,7 +709,9 @@
         "bodyIndex": 48,
         "paragraphIndex": 48
       },
-      "textHash": "f5238fe6aa972f98e8a554d04e322fc7d0dea440a499f2645ad1a4438a288899"
+      "paragraphStyleId": "",
+      "textHash": "f5238fe6aa972f98e8a554d04e322fc7d0dea440a499f2645ad1a4438a288899",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -637,7 +722,9 @@
         "bodyIndex": 49,
         "paragraphIndex": 49
       },
-      "textHash": "ea28a6367dbb7252624b4a6eb1752f7de45f2cb9f44d655849abedcdd4f31821"
+      "paragraphStyleId": "",
+      "textHash": "ea28a6367dbb7252624b4a6eb1752f7de45f2cb9f44d655849abedcdd4f31821",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -648,7 +735,9 @@
         "bodyIndex": 50,
         "paragraphIndex": 50
       },
-      "textHash": "e7a1af3560c20683d99e73e270ddb5ed3bdea773cb3cbd12b6936f02cf53e263"
+      "paragraphStyleId": "",
+      "textHash": "e7a1af3560c20683d99e73e270ddb5ed3bdea773cb3cbd12b6936f02cf53e263",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -659,7 +748,9 @@
         "bodyIndex": 51,
         "paragraphIndex": 51
       },
-      "textHash": "4a20724126fe45100aa6bfa7b1ace1f2dda743bcda2a2f84ed646143cdc234cc"
+      "paragraphStyleId": "",
+      "textHash": "4a20724126fe45100aa6bfa7b1ace1f2dda743bcda2a2f84ed646143cdc234cc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -670,7 +761,9 @@
         "bodyIndex": 52,
         "paragraphIndex": 52
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -681,9 +774,10 @@
         "bodyIndex": 53,
         "paragraphIndex": 53
       },
-      "textHash": "65174ab6b143cace4f2b238708955ff35b86fa9291c42c4f97a5fcfb3cfd09fc",
+      "paragraphStyleId": "2",
+      "textHash": "ebbe3f4cf000169fc2e47013e7dd8f0f13c05d06c7edad2c39d507440323e5ba",
       "headingLevel": 2,
-      "title": "命中与机动"
+      "title": "6.命中与机动"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -694,7 +788,9 @@
         "bodyIndex": 54,
         "paragraphIndex": 54
       },
-      "textHash": "46a857a72401e2ba5b9093c48fbca1c90018286021169d4112891667f8fada3a"
+      "paragraphStyleId": "",
+      "textHash": "46a857a72401e2ba5b9093c48fbca1c90018286021169d4112891667f8fada3a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -705,7 +801,9 @@
         "bodyIndex": 55,
         "paragraphIndex": 55
       },
-      "textHash": "252353f93175da3b51928abb2885d35186b3edf139cb80a44571f60a0b3f334c"
+      "paragraphStyleId": "",
+      "textHash": "252353f93175da3b51928abb2885d35186b3edf139cb80a44571f60a0b3f334c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -716,7 +814,9 @@
         "bodyIndex": 56,
         "paragraphIndex": 56
       },
-      "textHash": "295806eaa0f74076a9eb38ffd657505e36601b760ac7f4bc461e8b0439f0fe32"
+      "paragraphStyleId": "",
+      "textHash": "295806eaa0f74076a9eb38ffd657505e36601b760ac7f4bc461e8b0439f0fe32",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -727,7 +827,9 @@
         "bodyIndex": 57,
         "paragraphIndex": 57
       },
-      "textHash": "5b8d3d88eca265c2142af3f1dfcb2425bb7de1185d4d9828baaae2aa9a94e032"
+      "paragraphStyleId": "",
+      "textHash": "5b8d3d88eca265c2142af3f1dfcb2425bb7de1185d4d9828baaae2aa9a94e032",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -738,7 +840,9 @@
         "bodyIndex": 58,
         "paragraphIndex": 58
       },
-      "textHash": "5a7b27fbc0a6d12f72a19db5955d1163edb2b88f14ea0ca1cdf5abbeb590edcd"
+      "paragraphStyleId": "",
+      "textHash": "0a67f977d86e27b98a039e28956f9b00c185c52d0bb75cb9a8a2153537069884",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -749,7 +853,9 @@
         "bodyIndex": 59,
         "paragraphIndex": 59
       },
-      "textHash": "e9281fef5ef9ffae79e7fd4188b4665734b51265d8f867acfc4752fd12e567f2"
+      "paragraphStyleId": "",
+      "textHash": "5c68c3554b545741350cbcdf8575544d00f7156d377fe01559a17ad27cbf6761",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -760,7 +866,9 @@
         "bodyIndex": 60,
         "paragraphIndex": 60
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -771,9 +879,10 @@
         "bodyIndex": 61,
         "paragraphIndex": 61
       },
-      "textHash": "f0b85d4ce4bc200a8f0ea77008f1e6fc65e86082658365e6fe6cfa7c3492d241",
+      "paragraphStyleId": "2",
+      "textHash": "9dfbe74163d31fa03e19e55fe1e0be5926e9dc86021697dce6b833a38b2d66c4",
       "headingLevel": 2,
-      "title": "伤害计算公式"
+      "title": "7.伤害计算公式"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -784,6 +893,7 @@
         "bodyIndex": 62,
         "paragraphIndex": 62
       },
+      "paragraphStyleId": "3",
       "textHash": "4fada61c371a7e65e0c769b90301edb8738fabb8daa1dc7cc9e7f11d7317af52",
       "headingLevel": 3,
       "title": "①对空伤害"
@@ -797,7 +907,9 @@
         "bodyIndex": 63,
         "paragraphIndex": 63
       },
-      "textHash": "25016e940d16cb95237f020ca00d42292a0fc51184753f384d4ad845f4caf13c"
+      "paragraphStyleId": "",
+      "textHash": "25016e940d16cb95237f020ca00d42292a0fc51184753f384d4ad845f4caf13c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -808,6 +920,7 @@
         "bodyIndex": 64,
         "paragraphIndex": 64
       },
+      "paragraphStyleId": "3",
       "textHash": "431613d62ebf4fd457ba3b464042f87316283d4eb724e0760ad0cf356b4411e6",
       "headingLevel": 3,
       "title": "②注意乘区"
@@ -821,7 +934,9 @@
         "bodyIndex": 65,
         "paragraphIndex": 65
       },
-      "textHash": "77a39687809249eb097eabb228a8dabbe7016cd4c4175b66ac452ef80a34a803"
+      "paragraphStyleId": "",
+      "textHash": "77a39687809249eb097eabb228a8dabbe7016cd4c4175b66ac452ef80a34a803",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -832,6 +947,7 @@
         "bodyIndex": 66,
         "paragraphIndex": 66
       },
+      "paragraphStyleId": "3",
       "textHash": "a6bd86c97f9934801ab89b8b4bd3098899198dd592cdd95694ab9279007af740",
       "headingLevel": 3,
       "title": "③攻击力的计算"
@@ -845,9 +961,10 @@
         "bodyIndex": 67,
         "paragraphIndex": 67
       },
-      "textHash": "6f5e39e025453b0908f7d43a5032a580beca229b5ef344838138c36cb6567f50",
+      "paragraphStyleId": "4",
+      "textHash": "c8bebdddfa1e08049baf377112da2425c3b2b7211c694f590b395fb463826fa2",
       "headingLevel": 4,
-      "title": "（）炮击/雷击攻击力："
+      "title": "（1）炮击/雷击攻击力："
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -858,7 +975,9 @@
         "bodyIndex": 68,
         "paragraphIndex": 68
       },
-      "textHash": "9d3ccf983d1b89bbc29cdd53d8c244eb872ed5cf8d64222b6b66819362602420"
+      "paragraphStyleId": "",
+      "textHash": "9d3ccf983d1b89bbc29cdd53d8c244eb872ed5cf8d64222b6b66819362602420",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -869,9 +988,10 @@
         "bodyIndex": 69,
         "paragraphIndex": 69
       },
-      "textHash": "15a6570bdbcf898e7e71938031e84d75506bb603bc4e15d6a9076bc6548c8ce1",
+      "paragraphStyleId": "4",
+      "textHash": "8a18f5f301f735dad7babdb98922fd877a7121b072a1545a55b80bd8c5dc0e60",
       "headingLevel": 4,
-      "title": "（）航空攻击力："
+      "title": "（2）航空攻击力："
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -882,7 +1002,9 @@
         "bodyIndex": 70,
         "paragraphIndex": 70
       },
-      "textHash": "58ca909424a4cd68a515f84a54c27726386bbddf2e59be567a5331c1142e7a68"
+      "paragraphStyleId": "",
+      "textHash": "58ca909424a4cd68a515f84a54c27726386bbddf2e59be567a5331c1142e7a68",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -893,7 +1015,9 @@
         "bodyIndex": 71,
         "paragraphIndex": 71
       },
-      "textHash": "2e1c095efd36cb97526ba6fe3cd61f25b28004084eee93854d655d44a6a31e64"
+      "paragraphStyleId": "",
+      "textHash": "2e1c095efd36cb97526ba6fe3cd61f25b28004084eee93854d655d44a6a31e64",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -904,7 +1028,9 @@
         "bodyIndex": 72,
         "paragraphIndex": 72
       },
-      "textHash": "ea0a84d47a2beccb2697197d6af20b441a6ea1977b3990c2dcbc9bea8570df6d"
+      "paragraphStyleId": "",
+      "textHash": "ea0a84d47a2beccb2697197d6af20b441a6ea1977b3990c2dcbc9bea8570df6d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -915,7 +1041,9 @@
         "bodyIndex": 73,
         "paragraphIndex": 73
       },
-      "textHash": "f0d2d55d9236acc8b612f7993452c54e24f0315e6dfd5663aac82eaf94e3d597"
+      "paragraphStyleId": "",
+      "textHash": "f0d2d55d9236acc8b612f7993452c54e24f0315e6dfd5663aac82eaf94e3d597",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -926,6 +1054,7 @@
         "bodyIndex": 74,
         "paragraphIndex": 74
       },
+      "paragraphStyleId": "3",
       "textHash": "c4714f22e5becfda27ed2cae9fc6f0c4f39fa50c86d94d6ef3121bcfc3dd5fd1",
       "headingLevel": 3,
       "title": "④伤害计算公式（简化）"
@@ -939,7 +1068,9 @@
         "bodyIndex": 75,
         "paragraphIndex": 75
       },
-      "textHash": "d313a36aa7e1fe313d613fabf3fa6d26ab943ff2903ba8c42684c276b6d80949"
+      "paragraphStyleId": "",
+      "textHash": "d313a36aa7e1fe313d613fabf3fa6d26ab943ff2903ba8c42684c276b6d80949",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -950,7 +1081,9 @@
         "bodyIndex": 76,
         "paragraphIndex": 76
       },
-      "textHash": "6ce5d41b577ee9e6ff38ead9708d1c1658be204fc5137f12799f3174c5a6e232"
+      "paragraphStyleId": "",
+      "textHash": "6ce5d41b577ee9e6ff38ead9708d1c1658be204fc5137f12799f3174c5a6e232",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -961,7 +1094,9 @@
         "bodyIndex": 77,
         "paragraphIndex": 77
       },
-      "textHash": "c3548beb51ff317c4d902d6106a908a17562a08c97e7117f404145818c39fdf3"
+      "paragraphStyleId": "",
+      "textHash": "c3548beb51ff317c4d902d6106a908a17562a08c97e7117f404145818c39fdf3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -972,7 +1107,9 @@
         "bodyIndex": 78,
         "paragraphIndex": 78
       },
-      "textHash": "db5a82c4cb2c9a39c81f712fc329b83cb09851fe2ff0b4ddf5f38ad159d49159"
+      "paragraphStyleId": "",
+      "textHash": "db5a82c4cb2c9a39c81f712fc329b83cb09851fe2ff0b4ddf5f38ad159d49159",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -983,9 +1120,10 @@
         "bodyIndex": 79,
         "paragraphIndex": 79
       },
-      "textHash": "fabcd6ddc585a3c529109ae97560a22f8d069e10137a33c8ceb62f2abbb869b7",
+      "paragraphStyleId": "2",
+      "textHash": "2ec777c6235dbfe284b853b0218d8e207d1bc9d6183911816df02cb0386b989f",
       "headingLevel": 2,
-      "title": "装填"
+      "title": "8.装填"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -996,7 +1134,9 @@
         "bodyIndex": 80,
         "paragraphIndex": 80
       },
-      "textHash": "f3ebd51c31a2839f525da01021c79df279c5dd6c1f59f6df7d035755e87fada7"
+      "paragraphStyleId": "",
+      "textHash": "f3ebd51c31a2839f525da01021c79df279c5dd6c1f59f6df7d035755e87fada7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1007,6 +1147,7 @@
         "bodyIndex": 81,
         "paragraphIndex": 81
       },
+      "paragraphStyleId": "2",
       "textHash": "5e7d5898461f8e3b59061bfb7de396a7997164b386769b121886a723a5031135",
       "headingLevel": 2,
       "title": "（三）站位"
@@ -1020,7 +1161,9 @@
         "bodyIndex": 82,
         "paragraphIndex": 82
       },
-      "textHash": "637d25684e4568c659832b3a6b22e9efc8bd991e82bb4e42384c2c775fb3ebc8"
+      "paragraphStyleId": "",
+      "textHash": "d94e92a0e0ba9ab8b575da1ae896218c43be8bee329f713782121973ed5ba50c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1031,7 +1174,9 @@
         "bodyIndex": 83,
         "paragraphIndex": 83
       },
-      "textHash": "274cd0484b3d0dece6be8997fb5cf7b5103d5d5004f2b3e16e0c4f2e206dd11a"
+      "paragraphStyleId": "",
+      "textHash": "25a13f0e64d264a5b2455b7fd03ae6a0a13f5e95f33d13c9084253f140129121",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1042,7 +1187,9 @@
         "bodyIndex": 84,
         "paragraphIndex": 84
       },
-      "textHash": "4353110dbef776430810744e0cb915bc01c2d3b2dd477103a74ccf6e1617d2fb"
+      "paragraphStyleId": "",
+      "textHash": "4353110dbef776430810744e0cb915bc01c2d3b2dd477103a74ccf6e1617d2fb",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1053,6 +1200,7 @@
         "bodyIndex": 85,
         "paragraphIndex": 85
       },
+      "paragraphStyleId": "2",
       "textHash": "c3c57d56fa98aa8a86739810db3ec7e24e2b8377e2ddf24f73e957dbeaa33c68",
       "headingLevel": 2,
       "title": "（四）舰灵天赋"
@@ -1066,7 +1214,9 @@
         "bodyIndex": 86,
         "paragraphIndex": 86
       },
-      "textHash": "c1a50cd0e66303348c9a08c345e03e4e0fa5b4d5551e32498b25e27a77d24911"
+      "paragraphStyleId": "",
+      "textHash": "c1a50cd0e66303348c9a08c345e03e4e0fa5b4d5551e32498b25e27a77d24911",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1077,6 +1227,7 @@
         "bodyIndex": 87,
         "paragraphIndex": 87
       },
+      "paragraphStyleId": "2",
       "textHash": "781a95c0d6d781b77ebd1fda83b71c312c8f2c1ae96db895b09d757a0cf98113",
       "headingLevel": 2,
       "title": "（五）舰灵装备"
@@ -1090,7 +1241,9 @@
         "bodyIndex": 88,
         "paragraphIndex": 88
       },
-      "textHash": "7345c0cee2b376042606819ae0332978fd94324444f52e5079d0a4163e35691f"
+      "paragraphStyleId": "",
+      "textHash": "7345c0cee2b376042606819ae0332978fd94324444f52e5079d0a4163e35691f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1101,6 +1254,7 @@
         "bodyIndex": 89,
         "paragraphIndex": 89
       },
+      "paragraphStyleId": "2",
       "textHash": "f4707cd49121852aa96e09ed6234482e29165a8ea577427bd336727e1102e463",
       "headingLevel": 2,
       "title": "（六）信物"
@@ -1114,7 +1268,9 @@
         "bodyIndex": 90,
         "paragraphIndex": 90
       },
-      "textHash": "62b46b16447f3fe9be15ce8ef3c7cac267be7948c0f99a3c674f5e94a12883e5"
+      "paragraphStyleId": "",
+      "textHash": "62b46b16447f3fe9be15ce8ef3c7cac267be7948c0f99a3c674f5e94a12883e5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1125,7 +1281,9 @@
         "bodyIndex": 91,
         "paragraphIndex": 91
       },
-      "textHash": "011a9cc70bdbc34c9e9cdab8ad2b6c799c7891e2aa0cd0fd7efa0c9cba794f06"
+      "paragraphStyleId": "",
+      "textHash": "011a9cc70bdbc34c9e9cdab8ad2b6c799c7891e2aa0cd0fd7efa0c9cba794f06",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1136,6 +1294,7 @@
         "bodyIndex": 92,
         "paragraphIndex": 92
       },
+      "paragraphStyleId": "2",
       "textHash": "9d7f6b1b46abefe3c44050ecc234eb2292b2288996563cf899beabac6917881a",
       "headingLevel": 2,
       "title": "（七）阵型"
@@ -1149,7 +1308,9 @@
         "bodyIndex": 93,
         "paragraphIndex": 93
       },
-      "textHash": "6ac3ecce163cd82f5b7d1197ed33a089729ffbd164ee735b3387a9c8a7da2ce1"
+      "paragraphStyleId": "",
+      "textHash": "6ac3ecce163cd82f5b7d1197ed33a089729ffbd164ee735b3387a9c8a7da2ce1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1160,7 +1321,9 @@
         "bodyIndex": 94,
         "paragraphIndex": 94
       },
-      "textHash": "394f71b633c6c240b2031746d4a2e0866eee9460ce85bf7525c4ddda6d04d93c"
+      "paragraphStyleId": "",
+      "textHash": "394f71b633c6c240b2031746d4a2e0866eee9460ce85bf7525c4ddda6d04d93c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1171,6 +1334,7 @@
         "bodyIndex": 95,
         "paragraphIndex": 95
       },
+      "paragraphStyleId": "2",
       "textHash": "129d187f0e5997bc7f030c52b0f58b9cb72def53497d1764eb2de7268d0491b8",
       "headingLevel": 2,
       "title": "（八）赛季天气"
@@ -1184,7 +1348,9 @@
         "bodyIndex": 96,
         "paragraphIndex": 96
       },
-      "textHash": "bd841dd34306afbc654bb58ce36261a3686f1766083de847a3e028bfd4646cae"
+      "paragraphStyleId": "",
+      "textHash": "bd841dd34306afbc654bb58ce36261a3686f1766083de847a3e028bfd4646cae",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1195,7 +1361,9 @@
         "bodyIndex": 97,
         "paragraphIndex": 97
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1206,6 +1374,7 @@
         "bodyIndex": 98,
         "paragraphIndex": 98
       },
+      "paragraphStyleId": "2",
       "textHash": "3dd84103e3484f82a8c49ba0a959be139106d054b1144a7b1d9485edbe0ef2ae",
       "headingLevel": 2,
       "title": "（九）通用法则"
@@ -1219,7 +1388,9 @@
         "bodyIndex": 99,
         "paragraphIndex": 99
       },
-      "textHash": "c63b03ba69bfd2a9e021bea446acfc7024f8d8f61ac3e0457a04517a4ce36d2f"
+      "paragraphStyleId": "",
+      "textHash": "c63b03ba69bfd2a9e021bea446acfc7024f8d8f61ac3e0457a04517a4ce36d2f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1230,7 +1401,9 @@
         "bodyIndex": 100,
         "paragraphIndex": 100
       },
-      "textHash": "9f25df74a8a57782ac3295b68c00aae9f66884543ded5c0ee62f06f2ad528bed"
+      "paragraphStyleId": "",
+      "textHash": "9f25df74a8a57782ac3295b68c00aae9f66884543ded5c0ee62f06f2ad528bed",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1241,7 +1414,9 @@
         "bodyIndex": 101,
         "paragraphIndex": 101
       },
-      "textHash": "99f8b68d31ad43bebd88410e568ab3c39200182b6d485672fd419e3d949430c0"
+      "paragraphStyleId": "",
+      "textHash": "99f8b68d31ad43bebd88410e568ab3c39200182b6d485672fd419e3d949430c0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1252,7 +1427,9 @@
         "bodyIndex": 102,
         "paragraphIndex": 102
       },
-      "textHash": "8145fe766ec4053d4fcfc05ca8ad3394c66886caf9cbcd378a773362cbb2ae32"
+      "paragraphStyleId": "",
+      "textHash": "8145fe766ec4053d4fcfc05ca8ad3394c66886caf9cbcd378a773362cbb2ae32",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1263,7 +1440,9 @@
         "bodyIndex": 103,
         "paragraphIndex": 103
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1274,6 +1453,7 @@
         "bodyIndex": 104,
         "paragraphIndex": 104
       },
+      "paragraphStyleId": "1",
       "textHash": "930012e538f138112a9fdd91d440ba3eedbb2b525a059ebb89c15ca4ccb4024c",
       "headingLevel": 1,
       "title": "二、争锋竞技场简介"
@@ -1287,6 +1467,7 @@
         "bodyIndex": 105,
         "paragraphIndex": 105
       },
+      "paragraphStyleId": "2",
       "textHash": "57a8f9ec6e00e2013ed044482b005745a1160a29ccde60eda68d6c446d38cfd6",
       "headingLevel": 2,
       "title": "（一）争锋机制介绍"
@@ -1300,7 +1481,9 @@
         "bodyIndex": 106,
         "paragraphIndex": 106
       },
-      "textHash": "e0f49187337f263b9cf7a6c54fbc719575a7336299e243da1699426767e46fb8"
+      "paragraphStyleId": "",
+      "textHash": "e0f49187337f263b9cf7a6c54fbc719575a7336299e243da1699426767e46fb8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1311,7 +1494,9 @@
         "bodyIndex": 107,
         "paragraphIndex": 107
       },
-      "textHash": "55c6d0c9f23587d444f79e8f541e239f243f3a03336716e187f4544a4c67e05f"
+      "paragraphStyleId": "",
+      "textHash": "64d802251e73b5fb7f67586dd263d7c3ddc7b523d99192c13dd27b5ebfb2f82c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1322,7 +1507,9 @@
         "bodyIndex": 108,
         "paragraphIndex": 108
       },
-      "textHash": "790217fd9bf47f53497133d8b1ef7cb7fb2bf14f4d0865314cc26919f0b10dd5"
+      "paragraphStyleId": "",
+      "textHash": "790217fd9bf47f53497133d8b1ef7cb7fb2bf14f4d0865314cc26919f0b10dd5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1333,7 +1520,9 @@
         "bodyIndex": 109,
         "paragraphIndex": 109
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1344,7 +1533,9 @@
         "bodyIndex": 110,
         "paragraphIndex": 110
       },
-      "textHash": "fc623af224d23b8445b2e4353ab45bcff25a2af42f4fa741fed6b19a10b0e930"
+      "paragraphStyleId": "",
+      "textHash": "9ee235dc381900c1b3a14a3ecb6c75e1068beb2e792a35c0c4780c3100101841",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1355,7 +1546,9 @@
         "bodyIndex": 111,
         "paragraphIndex": 111
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1366,7 +1559,9 @@
         "bodyIndex": 112,
         "paragraphIndex": 112
       },
-      "textHash": "943609caaba1f0883fe986e9ea535d52afc3417777c48a5d4e75352d58d5c0dd"
+      "paragraphStyleId": "",
+      "textHash": "e8404a8cca22acf739307e222dd295f5410287ec2565fb7c61499d590fec7557",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1377,7 +1572,9 @@
         "bodyIndex": 113,
         "paragraphIndex": 113
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1388,6 +1585,7 @@
         "bodyIndex": 114,
         "paragraphIndex": 114
       },
+      "paragraphStyleId": "2",
       "textHash": "2a2bb33f5b398c97544fbef4de0c15affd10d2a1b0999b37e3f8b410334834d8",
       "headingLevel": 2,
       "title": "（二）争锋编队构成与配装简介"
@@ -1401,7 +1599,9 @@
         "bodyIndex": 115,
         "paragraphIndex": 115
       },
-      "textHash": "113c985b36d55096d503d8cdc3d3e6de7e49c4db1b24a2d5148dcaa503a270fe"
+      "paragraphStyleId": "",
+      "textHash": "113c985b36d55096d503d8cdc3d3e6de7e49c4db1b24a2d5148dcaa503a270fe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1412,7 +1612,9 @@
         "bodyIndex": 116,
         "paragraphIndex": 116
       },
-      "textHash": "fe9eb02dc34c99dafc5f09927426e3f4bdc33cb3732468e283f11376eb8f7d18"
+      "paragraphStyleId": "",
+      "textHash": "fe9eb02dc34c99dafc5f09927426e3f4bdc33cb3732468e283f11376eb8f7d18",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1423,7 +1625,9 @@
         "bodyIndex": 117,
         "paragraphIndex": 117
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1434,9 +1638,10 @@
         "bodyIndex": 118,
         "paragraphIndex": 118
       },
-      "textHash": "107c08a7073a6a65e36ac5d0b09d21cdef96e1e169783fae37d2fb0c27941d63",
+      "paragraphStyleId": "3",
+      "textHash": "a80fa34f55243c6d775cf17d12e21a3efa2a804e8a205143e98fd5420bc423dd",
       "headingLevel": 3,
-      "title": "小船场"
+      "title": "1.小船场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1447,7 +1652,9 @@
         "bodyIndex": 119,
         "paragraphIndex": 119
       },
-      "textHash": "9961bf4f200a1305b493d006ba86016c66fca0cc51be96ae2bbf1318412fb88f"
+      "paragraphStyleId": "",
+      "textHash": "9961bf4f200a1305b493d006ba86016c66fca0cc51be96ae2bbf1318412fb88f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1458,7 +1665,9 @@
         "bodyIndex": 120,
         "paragraphIndex": 120
       },
-      "textHash": "db1af8bdeb98a3c341bc3a1bd5de34a30c28d6cface2f1d7914d824baece1bf5"
+      "paragraphStyleId": "",
+      "textHash": "db1af8bdeb98a3c341bc3a1bd5de34a30c28d6cface2f1d7914d824baece1bf5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1469,7 +1678,9 @@
         "bodyIndex": 122,
         "paragraphIndex": 121
       },
-      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa"
+      "paragraphStyleId": "",
+      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1480,6 +1691,7 @@
         "bodyIndex": 123,
         "paragraphIndex": 122
       },
+      "paragraphStyleId": "4",
       "textHash": "43b54588773053a2054f00fbced0d8a6ba16872461ec74d1e158c4ce963aaf62",
       "headingLevel": 4,
       "title": "①驱逐"
@@ -1493,7 +1705,9 @@
         "bodyIndex": 124,
         "paragraphIndex": 123
       },
-      "textHash": "c661b94e8e5cc06b49285c7ba4c62b19a0d17bd14430d503207471e8921cf8cc"
+      "paragraphStyleId": "",
+      "textHash": "cd0569a1025f5666bd04f7fedcb702e6f7033d6c311f6497addde4b5026489c9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1504,7 +1718,9 @@
         "bodyIndex": 125,
         "paragraphIndex": 124
       },
-      "textHash": "d24fd5cf08cea5b3bd126c169a6447013c604938582be3923e7dece9c879ee05"
+      "paragraphStyleId": "",
+      "textHash": "d24fd5cf08cea5b3bd126c169a6447013c604938582be3923e7dece9c879ee05",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1515,7 +1731,9 @@
         "bodyIndex": 126,
         "paragraphIndex": 125
       },
-      "textHash": "2385de8de0660b03327e8b40a7c691045eb28ef05a2ec74cc44424180c30d743"
+      "paragraphStyleId": "",
+      "textHash": "2385de8de0660b03327e8b40a7c691045eb28ef05a2ec74cc44424180c30d743",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1526,6 +1744,7 @@
         "bodyIndex": 127,
         "paragraphIndex": 126
       },
+      "paragraphStyleId": "4",
       "textHash": "bacebd26295712fef2521549cbe44da4daf209ca9b610cc384c1838a958e4e45",
       "headingLevel": 4,
       "title": "②补给（女灶神）"
@@ -1539,7 +1758,9 @@
         "bodyIndex": 128,
         "paragraphIndex": 127
       },
-      "textHash": "f50f505d82ddd114e85db6db916bfbdd1b2eccc01206779b19b037220099058f"
+      "paragraphStyleId": "",
+      "textHash": "f50f505d82ddd114e85db6db916bfbdd1b2eccc01206779b19b037220099058f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1550,7 +1771,9 @@
         "bodyIndex": 129,
         "paragraphIndex": 128
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1561,6 +1784,7 @@
         "bodyIndex": 130,
         "paragraphIndex": 129
       },
+      "paragraphStyleId": "4",
       "textHash": "fb2f3eae405760dcb08e43ce4982c27112c30c07adaced13863d58916ee04c46",
       "headingLevel": 4,
       "title": "③水母（镇海）"
@@ -1574,7 +1798,9 @@
         "bodyIndex": 131,
         "paragraphIndex": 130
       },
-      "textHash": "ecce839f9f7a37c45922c536285f365f637cabe99296e7cfa28b31edba43cfb3"
+      "paragraphStyleId": "",
+      "textHash": "ecce839f9f7a37c45922c536285f365f637cabe99296e7cfa28b31edba43cfb3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1585,7 +1811,9 @@
         "bodyIndex": 132,
         "paragraphIndex": 131
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1596,7 +1824,9 @@
         "bodyIndex": 133,
         "paragraphIndex": 132
       },
-      "textHash": "ecce839f9f7a37c45922c536285f365f637cabe99296e7cfa28b31edba43cfb3"
+      "paragraphStyleId": "",
+      "textHash": "ecce839f9f7a37c45922c536285f365f637cabe99296e7cfa28b31edba43cfb3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1607,9 +1837,10 @@
         "bodyIndex": 134,
         "paragraphIndex": 133
       },
-      "textHash": "80cadd8c5014f3e48139170a2e233a70e3d3166378cf65cf500dc14a43abbaaf",
+      "paragraphStyleId": "3",
+      "textHash": "db8d48577f0db7cd2937b599ed595b4ba060e7cdb6c6bfe61033819d7a31959e",
       "headingLevel": 3,
-      "title": "中船场"
+      "title": "2.中船场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1620,7 +1851,9 @@
         "bodyIndex": 135,
         "paragraphIndex": 134
       },
-      "textHash": "4ce7454f11cb7c7ecdbe194dd534ffe70473205481d588ba7ee96dbf741338da"
+      "paragraphStyleId": "",
+      "textHash": "4ce7454f11cb7c7ecdbe194dd534ffe70473205481d588ba7ee96dbf741338da",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1631,7 +1864,9 @@
         "bodyIndex": 137,
         "paragraphIndex": 135
       },
-      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa"
+      "paragraphStyleId": "",
+      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1642,6 +1877,7 @@
         "bodyIndex": 138,
         "paragraphIndex": 136
       },
+      "paragraphStyleId": "4",
       "textHash": "2c97201cf1f892a09fbdcee8a2fa11ae3e3010ae1faba156af26ee93b18e38d7",
       "headingLevel": 4,
       "title": "①轻母"
@@ -1655,7 +1891,9 @@
         "bodyIndex": 139,
         "paragraphIndex": 137
       },
-      "textHash": "36a7522262a77ce995adb8d0ffaa5a57045bf008d70e7f095c9be05f5497a5f5"
+      "paragraphStyleId": "",
+      "textHash": "29ec447d47a7e8b09a2650b6bea9ce5466cd984be500d3d1b10265e748fb8f12",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1666,7 +1904,9 @@
         "bodyIndex": 140,
         "paragraphIndex": 138
       },
-      "textHash": "399a23bb5b48dae34fbe8ccb8330f9407529ac1bd05214c004216be142d6f8a0"
+      "paragraphStyleId": "",
+      "textHash": "253924226a6910c4847b52e2c16b0074ef59f47145609ca96d53085b872fe43f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1677,7 +1917,9 @@
         "bodyIndex": 141,
         "paragraphIndex": 139
       },
-      "textHash": "ede8746390f8c6fd18379c2ca2cc30256e1b6cc687d239a2d79e891f7528bd25"
+      "paragraphStyleId": "",
+      "textHash": "e9f0fb6d8295bf612c6232e4612c7431842f1841b7f315d2fa42b46335f3a73b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1688,7 +1930,9 @@
         "bodyIndex": 142,
         "paragraphIndex": 140
       },
-      "textHash": "7f29484518993250a24774ef244409e641c15d52ae559c33d5dd181a40df8535"
+      "paragraphStyleId": "",
+      "textHash": "34a15b30cb7b0ff6d91823be4a5e2958d91cb92669a6701b67a52c6c7b9ff6ec",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1699,6 +1943,7 @@
         "bodyIndex": 143,
         "paragraphIndex": 141
       },
+      "paragraphStyleId": "4",
       "textHash": "edfbbdf5e21262f87d44538ab93c5bd2448431a9d5d1860b6298a75d3a04adfc",
       "headingLevel": 4,
       "title": "②轻巡"
@@ -1712,7 +1957,9 @@
         "bodyIndex": 144,
         "paragraphIndex": 142
       },
-      "textHash": "8c111dddcdb8179bac6ebcebecee58ac93aea32e407154ae1d1beebd8f22d288"
+      "paragraphStyleId": "",
+      "textHash": "fc68c49b5f5752a61db875c45d55c6585d1156ba4345c758ff2ab0268d640cb5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1723,7 +1970,9 @@
         "bodyIndex": 145,
         "paragraphIndex": 143
       },
-      "textHash": "0446d8872f7fe4a86bc9d1d7db70c06b510ee391670e587be630ba68e965ea57"
+      "paragraphStyleId": "",
+      "textHash": "7711466f58b44517ff74dc1a238a0b881c3179573d1881fcd72c0ca309a0a5c1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1734,7 +1983,9 @@
         "bodyIndex": 146,
         "paragraphIndex": 144
       },
-      "textHash": "39d6aa2b31c8168a1b5f7980627a55ed89fbe0b064c7c80ad43d26f9e80ae01d"
+      "paragraphStyleId": "",
+      "textHash": "d9245a99144967f1f1e1032d753bd8a31245459b29984f9317813fb352833eca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1745,7 +1996,9 @@
         "bodyIndex": 147,
         "paragraphIndex": 145
       },
-      "textHash": "f4921647f9a53d7b1a2a6454d63eba41eef699e9ec864f97ed349b768a3fd73c"
+      "paragraphStyleId": "",
+      "textHash": "442fad3bbef617f45e08663e2392851a33ee062be7dd73cd03286163a2c76492",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1756,6 +2009,7 @@
         "bodyIndex": 148,
         "paragraphIndex": 146
       },
+      "paragraphStyleId": "4",
       "textHash": "09682180b45740479016f5bcbf34561c40f6e13593d11d099d2ade09fed9c1e5",
       "headingLevel": 4,
       "title": "③重巡"
@@ -1769,7 +2023,9 @@
         "bodyIndex": 149,
         "paragraphIndex": 147
       },
-      "textHash": "7f73e84345fd75c3412a7fe564954f5d7cae846a2a642433530e9357655796be"
+      "paragraphStyleId": "",
+      "textHash": "2203385333ffddbef462fdbd7b02194d8cc84f4385070f0082283581054ccca1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1780,7 +2036,9 @@
         "bodyIndex": 150,
         "paragraphIndex": 148
       },
-      "textHash": "dc9e8f6ef5ffd7b98cf1742717bd79a896fafd8ab0d16b28e3de0551ac5c1d09"
+      "paragraphStyleId": "",
+      "textHash": "01060fbc9337a5ee8a4aea5468f536e8ac816c8bfe99ba47d974d47c5e2236ad",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1791,7 +2049,9 @@
         "bodyIndex": 151,
         "paragraphIndex": 149
       },
-      "textHash": "1cdbdcebf336dc7085073987110a005e94283d4a73a988801394adc741ef6061"
+      "paragraphStyleId": "",
+      "textHash": "22e6e2eb6039716438aa4d1a4764e0ca5ad7c1369895951f3c15a1be0be4beff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1802,7 +2062,9 @@
         "bodyIndex": 152,
         "paragraphIndex": 150
       },
-      "textHash": "9908586ce6420687c0c0f415d79f3e37a567c592b52371e7742359d2797babcd"
+      "paragraphStyleId": "",
+      "textHash": "094c3fb6f5ac4e605994c75f551daa1317d8685e6ecfdf73ae25119ac2ccb7a4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1813,6 +2075,7 @@
         "bodyIndex": 153,
         "paragraphIndex": 151
       },
+      "paragraphStyleId": "4",
       "textHash": "1cd9a5c4412a7651cdcd68623d4642c1f982a7e8f4ee16bdd89a8fc901975889",
       "headingLevel": 4,
       "title": "④重炮（刚需高命中）"
@@ -1826,7 +2089,9 @@
         "bodyIndex": 154,
         "paragraphIndex": 152
       },
-      "textHash": "d684fb5c8739a429219a289081e41be2f44de67b7a561527540c4a1f93c26663"
+      "paragraphStyleId": "",
+      "textHash": "58409617ec0b134c4ba67e0fba9c4f4180d421aee119c7014d07865ddeba69c2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1837,7 +2102,9 @@
         "bodyIndex": 155,
         "paragraphIndex": 153
       },
-      "textHash": "3eccf3f4005f96b4ad134284014a62f0ee876c7a35242d865ac8441f2e191f91"
+      "paragraphStyleId": "",
+      "textHash": "d8125e9b151dd59980747b7d0e2949ca6956a6f449b2d850c687ff533ce46148",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1848,7 +2115,9 @@
         "bodyIndex": 156,
         "paragraphIndex": 154
       },
-      "textHash": "d14b7937b6c20b0c15e05a3fbd73e28294a0d4a6e0abee873a611be6cded79f1"
+      "paragraphStyleId": "",
+      "textHash": "eaf1b881024a94320c037c8bb3d4b6e1ab1b676d5e289e871c5a820bd1c49c38",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1859,7 +2128,9 @@
         "bodyIndex": 157,
         "paragraphIndex": 155
       },
-      "textHash": "0fa430bd524af9a2d5d561d2327bbe602e931bc9029942fee1da0e4cd33d0f7d"
+      "paragraphStyleId": "",
+      "textHash": "b9362a4cd7e8aed7b838d945230be0ba32c7333980dc6eedd18bfb4dcdae8e3c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1870,6 +2141,7 @@
         "bodyIndex": 158,
         "paragraphIndex": 156
       },
+      "paragraphStyleId": "4",
       "textHash": "0b6e57f243a12af012dee7f38c604df06ee0b63d0864eea62c14da456dafae2d",
       "headingLevel": 4,
       "title": "⑤雷巡"
@@ -1883,7 +2155,9 @@
         "bodyIndex": 159,
         "paragraphIndex": 157
       },
-      "textHash": "fe1b7272e17ab09082b1299a2172010748d9c6be4ae738d9b16d59f6c5994578"
+      "paragraphStyleId": "",
+      "textHash": "8e1386865a4e89819dd21302359ddeed0397dfa7384223f5837edb333ee84279",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1894,7 +2168,9 @@
         "bodyIndex": 160,
         "paragraphIndex": 158
       },
-      "textHash": "b599a86c9343679f7511ee87f566530710fe58bcf436368d4628c0a5e3dd323b"
+      "paragraphStyleId": "",
+      "textHash": "f2e9a6faaa63c1c7c68bf69da2912d2135d7645131f477cf07ef866dd498decc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1905,7 +2181,9 @@
         "bodyIndex": 161,
         "paragraphIndex": 159
       },
-      "textHash": "71a8464a9595ce83fe9221ff724628ecba7d6e87c8360849e4aa4c5cbc12299d"
+      "paragraphStyleId": "",
+      "textHash": "fcc48e95ca32d96e0a1fc982c3d9d56b70ab2a26586454419deec6295f5f782f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1916,9 +2194,10 @@
         "bodyIndex": 162,
         "paragraphIndex": 160
       },
-      "textHash": "57ec824c1b31d70960ddb0c108bb4d4f1b88b0bd1cf7c25c4a9cb59bb57bde6f",
+      "paragraphStyleId": "3",
+      "textHash": "7bbe53a9aa825a32c6f441617ab2972915cdcb389f857a8cfe86ff390d0bc504",
       "headingLevel": 3,
-      "title": "大船场"
+      "title": "3.大船场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1929,7 +2208,9 @@
         "bodyIndex": 163,
         "paragraphIndex": 161
       },
-      "textHash": "f1258ad9b702a7f31dae89d6e77d01a1623c6360cb2c81d473bef6d33b3b4fa5"
+      "paragraphStyleId": "",
+      "textHash": "f1258ad9b702a7f31dae89d6e77d01a1623c6360cb2c81d473bef6d33b3b4fa5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1940,7 +2221,9 @@
         "bodyIndex": 165,
         "paragraphIndex": 162
       },
-      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa"
+      "paragraphStyleId": "",
+      "textHash": "23bb9c9eed1307ae2331bcf13750dd85924ad9b0ee6545c150c3935bd392a5aa",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1951,6 +2234,7 @@
         "bodyIndex": 166,
         "paragraphIndex": 163
       },
+      "paragraphStyleId": "4",
       "textHash": "a4f18e44cd9fe2dffd51e996968f5614bfc4f6fac77d623b1913c3ed432d4a9c",
       "headingLevel": 4,
       "title": "①战列，战巡（CD长单发炮弹，需要高命中）"
@@ -1964,7 +2248,9 @@
         "bodyIndex": 167,
         "paragraphIndex": 164
       },
-      "textHash": "498b5a4b9ceb10923a280a0d74c4b5c3ddd69085b2c0ad3122e88d858151fd5c"
+      "paragraphStyleId": "",
+      "textHash": "498b5a4b9ceb10923a280a0d74c4b5c3ddd69085b2c0ad3122e88d858151fd5c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1975,7 +2261,9 @@
         "bodyIndex": 168,
         "paragraphIndex": 165
       },
-      "textHash": "2d0948e4b6c2224c37aa260c90a9817ed0773ece894511a2985cf3c9069128ad"
+      "paragraphStyleId": "",
+      "textHash": "892a4bf321aaf5e600a549d4da89983782ccc55c3b3cc89a92cf4ca753273c95",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1986,7 +2274,9 @@
         "bodyIndex": 169,
         "paragraphIndex": 166
       },
-      "textHash": "610cea59ef76cf868794b07e9de667182367cf5fa0a69f6af4369fcc93ff8fb8"
+      "paragraphStyleId": "",
+      "textHash": "ec4dafa4f1396c5415188069058ff5bc28274420d2eda0a5adbe39a154006690",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -1997,7 +2287,9 @@
         "bodyIndex": 170,
         "paragraphIndex": 167
       },
-      "textHash": "0d80740b6ad163a1252abdd75f42fe8fd9cc254fe479f88ca12f41bd3ed5224a"
+      "paragraphStyleId": "",
+      "textHash": "f2f516f76e5dd0b007aef4dec89195cb63f72874cbd8240b7cfba35ef1424431",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2008,6 +2300,7 @@
         "bodyIndex": 171,
         "paragraphIndex": 168
       },
+      "paragraphStyleId": "4",
       "textHash": "745c3485391c04f60ef225638d4d4d707acb8297fbb006a487fd61e6f6572d85",
       "headingLevel": 4,
       "title": "②装母，航母"
@@ -2021,7 +2314,9 @@
         "bodyIndex": 172,
         "paragraphIndex": 169
       },
-      "textHash": "ea5f89dc33f0c54a4cca48d0a889237af715e04b8458eb8b21509cee52a98a51"
+      "paragraphStyleId": "",
+      "textHash": "1d4a60469d8f68b99609af8d8dda31339be894ced9a3dec524112dece9e1efa1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2032,7 +2327,9 @@
         "bodyIndex": 173,
         "paragraphIndex": 170
       },
-      "textHash": "88c80a9cc298b0bf2f5c374511220bf13c332ec0e52101abd3f3928339d9b6dd"
+      "paragraphStyleId": "",
+      "textHash": "34ad807923fd30bf5b09ae4657522a472c550826b7303e5af2448808d70d907f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2043,7 +2340,9 @@
         "bodyIndex": 174,
         "paragraphIndex": 171
       },
-      "textHash": "89caa6e55def8e6c81af228ccb7e80a22d901ff08dac701d5684925fd6d77f5e"
+      "paragraphStyleId": "",
+      "textHash": "1dea9d68496f81614ff123f0e302e1fb18b7c3f62002db6bfed63494cfc7fcd4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2054,6 +2353,7 @@
         "bodyIndex": 175,
         "paragraphIndex": 172
       },
+      "paragraphStyleId": "4",
       "textHash": "3b7bf7ff79d39d2f88e34c0cbf538b25185d20575f6d45835bc34a1f0881678d",
       "headingLevel": 4,
       "title": "③航战"
@@ -2067,7 +2367,9 @@
         "bodyIndex": 176,
         "paragraphIndex": 173
       },
-      "textHash": "d73d883c4390e462785d1eaa2d866d8904911c7aa913eac612cb7fddc44461f5"
+      "paragraphStyleId": "",
+      "textHash": "5a1224f83d6856920564150f314e8f553b24bbb95a9660af4c353c90be706e93",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2078,7 +2380,9 @@
         "bodyIndex": 177,
         "paragraphIndex": 174
       },
-      "textHash": "83edf59884c58563c00d649db33c40fbf08270ff254f10ad09e0c54ec8895b98"
+      "paragraphStyleId": "",
+      "textHash": "07658e02df97527d91fd40e04fda70f6a08dd142aa1220fa8981c251d0500b11",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2089,7 +2393,9 @@
         "bodyIndex": 178,
         "paragraphIndex": 175
       },
-      "textHash": "a23bb07d4b8a2aacdebaff0ef5d6a7b3a83a62b42eccf5857378e30c916cda6d"
+      "paragraphStyleId": "",
+      "textHash": "8665b524618ce7417918b251035d61f8058267d565cdd1eba6f316e82a22fa88",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2100,7 +2406,9 @@
         "bodyIndex": 179,
         "paragraphIndex": 176
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2111,6 +2419,7 @@
         "bodyIndex": 180,
         "paragraphIndex": 177
       },
+      "paragraphStyleId": "1",
       "textHash": "05df8ed038d7162b29a3054ba5771ee9710f2269da1a6f1364bd8db0970946aa",
       "headingLevel": 1,
       "title": "三、参考阵容推荐"
@@ -2124,7 +2433,9 @@
         "bodyIndex": 181,
         "paragraphIndex": 178
       },
-      "textHash": "721ef2a8b97bbcebc76bf9e3d055c763fa7450ae09963c7cc9cee49acc2372fc"
+      "paragraphStyleId": "",
+      "textHash": "721ef2a8b97bbcebc76bf9e3d055c763fa7450ae09963c7cc9cee49acc2372fc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2135,7 +2446,9 @@
         "bodyIndex": 182,
         "paragraphIndex": 179
       },
-      "textHash": "976b27157c16c8a3e9e1dcb4dd4ff0576b024b8c9fb21ef8c48b8d52355f6d25"
+      "paragraphStyleId": "",
+      "textHash": "976b27157c16c8a3e9e1dcb4dd4ff0576b024b8c9fb21ef8c48b8d52355f6d25",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2146,7 +2459,9 @@
         "bodyIndex": 183,
         "paragraphIndex": 180
       },
-      "textHash": "0b8f5acd6eecadaeb4723dba9ee5cdc0250585609dca17a1edad2243388a1a95"
+      "paragraphStyleId": "",
+      "textHash": "0b8f5acd6eecadaeb4723dba9ee5cdc0250585609dca17a1edad2243388a1a95",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2157,7 +2472,9 @@
         "bodyIndex": 184,
         "paragraphIndex": 181
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2168,6 +2485,7 @@
         "bodyIndex": 185,
         "paragraphIndex": 182
       },
+      "paragraphStyleId": "2",
       "textHash": "f65999c0bbc9d2d95fa515c8031c0719df37902efc51da1c1fc60b46c7c2257f",
       "headingLevel": 2,
       "title": "（一）金场"
@@ -2181,9 +2499,10 @@
         "bodyIndex": 186,
         "paragraphIndex": 183
       },
-      "textHash": "94fb285169e89f6c4ae1795dd8a9961894c790647530189d5de6a433f3575e83",
+      "paragraphStyleId": "3",
+      "textHash": "deb00d4409c56562872f293fce6f54aec285dc9c661278921ed485eb549e9788",
       "headingLevel": 3,
-      "title": "金小船"
+      "title": "1.金小船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2194,7 +2513,9 @@
         "bodyIndex": 187,
         "paragraphIndex": 184
       },
-      "textHash": "0ce58114e5844ae7f115880f6615160841eb4889e3518ae12e153dc0e4d08ee9"
+      "paragraphStyleId": "",
+      "textHash": "e6f143a741ba737d3e877f23bf6ae61a2a6e1398c39ebeac8c75eed55896036c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2205,7 +2526,9 @@
         "bodyIndex": 188,
         "paragraphIndex": 185
       },
-      "textHash": "491bb83e0bf3a015be63203ba6e642e98cf48616d82e9e717518c3407297b04e"
+      "paragraphStyleId": "",
+      "textHash": "491bb83e0bf3a015be63203ba6e642e98cf48616d82e9e717518c3407297b04e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2216,7 +2539,9 @@
         "bodyIndex": 189,
         "paragraphIndex": 186
       },
-      "textHash": "350c054ced465ed3e708cd81bc6475f3aa5e0e7cc260e8664e854fa85db90ec7"
+      "paragraphStyleId": "",
+      "textHash": "350c054ced465ed3e708cd81bc6475f3aa5e0e7cc260e8664e854fa85db90ec7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2227,7 +2552,9 @@
         "bodyIndex": 190,
         "paragraphIndex": 187
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2238,7 +2565,9 @@
         "bodyIndex": 191,
         "paragraphIndex": 188
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2249,7 +2578,9 @@
         "bodyIndex": 192,
         "paragraphIndex": 189
       },
-      "textHash": "7d6b565fa9f36091ae9b8b44e9b8c2d3ca086e97da02b7481b46da48844a8c00"
+      "paragraphStyleId": "",
+      "textHash": "7d6b565fa9f36091ae9b8b44e9b8c2d3ca086e97da02b7481b46da48844a8c00",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2260,7 +2591,9 @@
         "bodyIndex": 193,
         "paragraphIndex": 190
       },
-      "textHash": "f40fe992b8954efe7b32f4a4148298586f325328a032922e1252fc5e013aecf8"
+      "paragraphStyleId": "",
+      "textHash": "f40fe992b8954efe7b32f4a4148298586f325328a032922e1252fc5e013aecf8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2271,7 +2604,9 @@
         "bodyIndex": 194,
         "paragraphIndex": 191
       },
-      "textHash": "336686765c9883cfaea559ce9ca8037c6067cece4181a3350f3c43ece6231b2a"
+      "paragraphStyleId": "",
+      "textHash": "336686765c9883cfaea559ce9ca8037c6067cece4181a3350f3c43ece6231b2a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2282,6 +2617,7 @@
         "bodyIndex": 195,
         "paragraphIndex": 192
       },
+      "paragraphStyleId": "4",
       "textHash": "cef2025e7f859d9e48f2bc875b37b34e495171f66af71bd3519306eadb840681",
       "headingLevel": 4,
       "title": "①优选同航阵容（全马桶）"
@@ -2295,7 +2631,9 @@
         "bodyIndex": 197,
         "paragraphIndex": 193
       },
-      "textHash": "383a4dbfdb678a2beb0954d270227460148a536b031696a97de99a6237995125"
+      "paragraphStyleId": "",
+      "textHash": "383a4dbfdb678a2beb0954d270227460148a536b031696a97de99a6237995125",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2306,7 +2644,9 @@
         "bodyIndex": 199,
         "paragraphIndex": 194
       },
-      "textHash": "7a3cda77e10a28b9fa4bfe1bcdfc40fd146cb53813049d62d277174a80411fe8"
+      "paragraphStyleId": "",
+      "textHash": "7a3cda77e10a28b9fa4bfe1bcdfc40fd146cb53813049d62d277174a80411fe8",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2317,7 +2657,9 @@
         "bodyIndex": 201,
         "paragraphIndex": 195
       },
-      "textHash": "583a252985a7687e2be78d27dae4b8827a1faefe8aaa0a2648d71cfa7ec720d2"
+      "paragraphStyleId": "",
+      "textHash": "583a252985a7687e2be78d27dae4b8827a1faefe8aaa0a2648d71cfa7ec720d2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2328,7 +2670,9 @@
         "bodyIndex": 203,
         "paragraphIndex": 196
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2339,7 +2683,9 @@
         "bodyIndex": 205,
         "paragraphIndex": 197
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2350,7 +2696,9 @@
         "bodyIndex": 207,
         "paragraphIndex": 198
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2361,7 +2709,9 @@
         "bodyIndex": 208,
         "paragraphIndex": 199
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2372,7 +2722,9 @@
         "bodyIndex": 210,
         "paragraphIndex": 200
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2383,7 +2735,9 @@
         "bodyIndex": 212,
         "paragraphIndex": 201
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2394,7 +2748,9 @@
         "bodyIndex": 213,
         "paragraphIndex": 202
       },
-      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b"
+      "paragraphStyleId": "",
+      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2405,7 +2761,9 @@
         "bodyIndex": 214,
         "paragraphIndex": 203
       },
-      "textHash": "e7d20812db268bd36d80952c2f2c9a0a1fdcb4b6f12e3f7b1d4a8ce675046e30"
+      "paragraphStyleId": "",
+      "textHash": "e7d20812db268bd36d80952c2f2c9a0a1fdcb4b6f12e3f7b1d4a8ce675046e30",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2416,7 +2774,9 @@
         "bodyIndex": 215,
         "paragraphIndex": 204
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2427,7 +2787,9 @@
         "bodyIndex": 216,
         "paragraphIndex": 205
       },
-      "textHash": "3c0bf0cc1ff53acfd9ee3f96d3dce1482be7491c364057ab4022a6b85bffae0f"
+      "paragraphStyleId": "",
+      "textHash": "ab00d0dc765c4f748e92c93b9404a1f9598679d0765c695ffad6ad224b9c605b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2438,7 +2800,9 @@
         "bodyIndex": 217,
         "paragraphIndex": 206
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2449,7 +2813,9 @@
         "bodyIndex": 218,
         "paragraphIndex": 207
       },
-      "textHash": "9944b630de6ed02bf176de0421f8ed6d3b0623b13850c2017be9d5667d2c7e79"
+      "paragraphStyleId": "",
+      "textHash": "9944b630de6ed02bf176de0421f8ed6d3b0623b13850c2017be9d5667d2c7e79",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2460,9 +2826,10 @@
         "bodyIndex": 219,
         "paragraphIndex": 208
       },
-      "textHash": "1b5d7fdad5e69760b1f9f2bbf67942a3fa29f907f6febb26be38c122ad592da9",
+      "paragraphStyleId": "3",
+      "textHash": "dbf3514dfe8f59f026fdd76ca04e95af09e57a629801a910ff544b91e01f76be",
       "headingLevel": 3,
-      "title": "金中船"
+      "title": "2.金中船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2473,7 +2840,9 @@
         "bodyIndex": 220,
         "paragraphIndex": 209
       },
-      "textHash": "8e3c63306220dc3acfb737cf694da66b4a84dc3f2a1a119f4f006be42455615e"
+      "paragraphStyleId": "",
+      "textHash": "d83091177e6cb7b1f9ccf5e06db8f719b5a111da10b6a70bef0b29fb62aba873",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2484,7 +2853,9 @@
         "bodyIndex": 221,
         "paragraphIndex": 210
       },
-      "textHash": "bd331afea705dfec76e3f782107fb5d40fdf1de713455f53442e6279ea730333"
+      "paragraphStyleId": "",
+      "textHash": "bd331afea705dfec76e3f782107fb5d40fdf1de713455f53442e6279ea730333",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2495,7 +2866,9 @@
         "bodyIndex": 222,
         "paragraphIndex": 211
       },
-      "textHash": "bb60db8b626791033c4e1479b4ba76aabf58011d8ab9a7de406f509dd7677aaf"
+      "paragraphStyleId": "",
+      "textHash": "bb60db8b626791033c4e1479b4ba76aabf58011d8ab9a7de406f509dd7677aaf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2506,7 +2879,9 @@
         "bodyIndex": 223,
         "paragraphIndex": 212
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2517,7 +2892,9 @@
         "bodyIndex": 224,
         "paragraphIndex": 213
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2528,7 +2905,9 @@
         "bodyIndex": 225,
         "paragraphIndex": 214
       },
-      "textHash": "3758f2d337c398d29c48baaaba52d872770bba5a0ab8348d5f9f3376cda9e727"
+      "paragraphStyleId": "",
+      "textHash": "3758f2d337c398d29c48baaaba52d872770bba5a0ab8348d5f9f3376cda9e727",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2539,6 +2918,7 @@
         "bodyIndex": 226,
         "paragraphIndex": 215
       },
+      "paragraphStyleId": "4",
       "textHash": "41cf1d48feb665a361b440857ab9bda0ea26a35347e3e04d707441d14f444b8e",
       "headingLevel": 4,
       "title": "①凤栖队"
@@ -2552,7 +2932,9 @@
         "bodyIndex": 227,
         "paragraphIndex": 216
       },
-      "textHash": "0e8ca977567c2a7d47a691566cd945ffa5144237e41d4877c52f5f82f0496ef2"
+      "paragraphStyleId": "",
+      "textHash": "0e8ca977567c2a7d47a691566cd945ffa5144237e41d4877c52f5f82f0496ef2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2563,7 +2945,9 @@
         "bodyIndex": 228,
         "paragraphIndex": 217
       },
-      "textHash": "731a2b84b3dbe7a78009e4cb889872b4137e40637309f4581922c790278c8edf"
+      "paragraphStyleId": "",
+      "textHash": "731a2b84b3dbe7a78009e4cb889872b4137e40637309f4581922c790278c8edf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2574,7 +2958,9 @@
         "bodyIndex": 229,
         "paragraphIndex": 218
       },
-      "textHash": "8ea5ffd2b57dfe7d74fe4bd3250cb3b721da01a9f000b91bb9e383e8860b8044"
+      "paragraphStyleId": "",
+      "textHash": "8ea5ffd2b57dfe7d74fe4bd3250cb3b721da01a9f000b91bb9e383e8860b8044",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2585,7 +2971,9 @@
         "bodyIndex": 231,
         "paragraphIndex": 219
       },
-      "textHash": "a1c4c5e2f304e20b7b0e6aa41acf994e0ffb127097850724ed860eb9055bc98d"
+      "paragraphStyleId": "",
+      "textHash": "a1c4c5e2f304e20b7b0e6aa41acf994e0ffb127097850724ed860eb9055bc98d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2596,7 +2984,9 @@
         "bodyIndex": 232,
         "paragraphIndex": 220
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2607,6 +2997,7 @@
         "bodyIndex": 233,
         "paragraphIndex": 221
       },
+      "paragraphStyleId": "4",
       "textHash": "5a8240dca3e9f467384c95beaa648ed1ee5279f6b3796c254ba5b3a1de6657f4",
       "headingLevel": 4,
       "title": "②高索敌T优队"
@@ -2620,7 +3011,9 @@
         "bodyIndex": 234,
         "paragraphIndex": 222
       },
-      "textHash": "c8a65cea03002c3e96b91a7dd56e61e7d2eb77de3106b3bd37984ac24c58fa3a"
+      "paragraphStyleId": "",
+      "textHash": "c8a65cea03002c3e96b91a7dd56e61e7d2eb77de3106b3bd37984ac24c58fa3a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2631,7 +3024,9 @@
         "bodyIndex": 236,
         "paragraphIndex": 223
       },
-      "textHash": "486259640425760fa1d1577fe84ae674f3c5911a1a4b048951569fcdfd94478f"
+      "paragraphStyleId": "",
+      "textHash": "35c7416e0196ff629638b5fe2c8ba6021dfc8929c4bfe1d66a9ba77058e10672",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2642,7 +3037,9 @@
         "bodyIndex": 237,
         "paragraphIndex": 224
       },
-      "textHash": "93bad49579022d67cb6331f00f35fe80bc64a01138694493e5f3c9834fd6f1ed"
+      "paragraphStyleId": "",
+      "textHash": "93bad49579022d67cb6331f00f35fe80bc64a01138694493e5f3c9834fd6f1ed",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2653,7 +3050,9 @@
         "bodyIndex": 238,
         "paragraphIndex": 225
       },
-      "textHash": "b2286d21fd998ffcd9ec83ace634435eb62067a2622ffb0ae3b44f6df3b5da03"
+      "paragraphStyleId": "",
+      "textHash": "b2286d21fd998ffcd9ec83ace634435eb62067a2622ffb0ae3b44f6df3b5da03",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2664,7 +3063,9 @@
         "bodyIndex": 240,
         "paragraphIndex": 226
       },
-      "textHash": "0f5d38044510fa97639a86c19a55632b4e513bc75994273db3ea48031bb1512d"
+      "paragraphStyleId": "",
+      "textHash": "0f5d38044510fa97639a86c19a55632b4e513bc75994273db3ea48031bb1512d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2675,7 +3076,9 @@
         "bodyIndex": 242,
         "paragraphIndex": 227
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2686,7 +3089,9 @@
         "bodyIndex": 244,
         "paragraphIndex": 228
       },
-      "textHash": "781b6de85359c6b0519a79bd27dc35eaa9154cf6cfff04cff4aee2638ff19ca1"
+      "paragraphStyleId": "",
+      "textHash": "781b6de85359c6b0519a79bd27dc35eaa9154cf6cfff04cff4aee2638ff19ca1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2697,7 +3102,9 @@
         "bodyIndex": 245,
         "paragraphIndex": 229
       },
-      "textHash": "cc4e3289e5f34759b8b5fbb8ebc3ee53ca8dd19df10139dff9a908f44de22c43"
+      "paragraphStyleId": "",
+      "textHash": "cc4e3289e5f34759b8b5fbb8ebc3ee53ca8dd19df10139dff9a908f44de22c43",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2708,7 +3115,9 @@
         "bodyIndex": 246,
         "paragraphIndex": 230
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2719,6 +3128,7 @@
         "bodyIndex": 247,
         "paragraphIndex": 231
       },
+      "paragraphStyleId": "4",
       "textHash": "f253c416469edee37fff0f8624f20ffafefa938ac780d83862ae3f55eb7ed20d",
       "headingLevel": 4,
       "title": "③单轻母"
@@ -2732,7 +3142,9 @@
         "bodyIndex": 248,
         "paragraphIndex": 232
       },
-      "textHash": "e68e45137e617f6f86abd59c82e536d1769c72ae946c17c3da92519cfa50eb84"
+      "paragraphStyleId": "",
+      "textHash": "e68e45137e617f6f86abd59c82e536d1769c72ae946c17c3da92519cfa50eb84",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2743,7 +3155,9 @@
         "bodyIndex": 250,
         "paragraphIndex": 233
       },
-      "textHash": "a7df543647a3e58dffe2cb0a426d15a87505c1fca16ee6523bfa2f4d3649e292"
+      "paragraphStyleId": "",
+      "textHash": "a7df543647a3e58dffe2cb0a426d15a87505c1fca16ee6523bfa2f4d3649e292",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2754,7 +3168,9 @@
         "bodyIndex": 251,
         "paragraphIndex": 234
       },
-      "textHash": "a219582938ecb84432cce28fbc3f2137fbf9bc9477b2ce02565581c18b5e8044"
+      "paragraphStyleId": "",
+      "textHash": "a219582938ecb84432cce28fbc3f2137fbf9bc9477b2ce02565581c18b5e8044",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2765,7 +3181,9 @@
         "bodyIndex": 252,
         "paragraphIndex": 235
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2776,7 +3194,9 @@
         "bodyIndex": 253,
         "paragraphIndex": 236
       },
-      "textHash": "d9c884ecdcefc70f6502ff5f57a6854a42a11db8d765b68cf050bac6bf03ab51"
+      "paragraphStyleId": "",
+      "textHash": "d9c884ecdcefc70f6502ff5f57a6854a42a11db8d765b68cf050bac6bf03ab51",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2787,7 +3207,9 @@
         "bodyIndex": 254,
         "paragraphIndex": 237
       },
-      "textHash": "e9e3a26b58f6496052d1b0b5b1e4e971d90958ab969dc4f4cdc5a689f30fec09"
+      "paragraphStyleId": "",
+      "textHash": "f29e05229a2a81a0d466544c2de91a4d2c0645ea0a071945654760647ebaf607",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2798,7 +3220,9 @@
         "bodyIndex": 255,
         "paragraphIndex": 238
       },
-      "textHash": "da47924424a750991a012eafd583314b652868931189a20b3b6e4f4f8cdde0d9"
+      "paragraphStyleId": "",
+      "textHash": "11a5a23202e42521147c2701d29a1bfde60bce05621b06dadd9e8889d46cb87d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2809,7 +3233,9 @@
         "bodyIndex": 256,
         "paragraphIndex": 239
       },
-      "textHash": "245443c3f11fe4818ce14794b222a5f322d39757a7a456018d90b238e181c213"
+      "paragraphStyleId": "",
+      "textHash": "245443c3f11fe4818ce14794b222a5f322d39757a7a456018d90b238e181c213",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2820,7 +3246,9 @@
         "bodyIndex": 258,
         "paragraphIndex": 240
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2831,7 +3259,9 @@
         "bodyIndex": 260,
         "paragraphIndex": 241
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2842,6 +3272,7 @@
         "bodyIndex": 262,
         "paragraphIndex": 242
       },
+      "paragraphStyleId": "4",
       "textHash": "f53b9609e7a3100f1ac7a5342d695f740488acdbe273a6dd1179cd7586610079",
       "headingLevel": 4,
       "title": "④三轻利根队（欧根旗）"
@@ -2855,7 +3286,9 @@
         "bodyIndex": 263,
         "paragraphIndex": 243
       },
-      "textHash": "26134a40df742f475d7b5c26355fcbf7b22fa55deda5d67f9dcc187f2e72a458"
+      "paragraphStyleId": "",
+      "textHash": "26134a40df742f475d7b5c26355fcbf7b22fa55deda5d67f9dcc187f2e72a458",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2866,7 +3299,9 @@
         "bodyIndex": 264,
         "paragraphIndex": 244
       },
-      "textHash": "105de1989e15ce569f1c38d7aba10d769250880a36ae181d1290e5dddca13df9"
+      "paragraphStyleId": "",
+      "textHash": "105de1989e15ce569f1c38d7aba10d769250880a36ae181d1290e5dddca13df9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2877,7 +3312,9 @@
         "bodyIndex": 265,
         "paragraphIndex": 245
       },
-      "textHash": "91a1ac483ab18cffe5b196f67bc35423790c695cfa5eefc819a8cef27a7e49c6"
+      "paragraphStyleId": "",
+      "textHash": "91a1ac483ab18cffe5b196f67bc35423790c695cfa5eefc819a8cef27a7e49c6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2888,7 +3325,9 @@
         "bodyIndex": 267,
         "paragraphIndex": 246
       },
-      "textHash": "346b844fb5574a8c7580b6f8be96e67a26d3ee55142a205691a0c5953c73bd7d"
+      "paragraphStyleId": "",
+      "textHash": "346b844fb5574a8c7580b6f8be96e67a26d3ee55142a205691a0c5953c73bd7d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2899,7 +3338,9 @@
         "bodyIndex": 268,
         "paragraphIndex": 247
       },
-      "textHash": "358293f173f43d51a55511cd74426e2d34d8b7ea035b35f1c2e34ba05a97357a"
+      "paragraphStyleId": "",
+      "textHash": "358293f173f43d51a55511cd74426e2d34d8b7ea035b35f1c2e34ba05a97357a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2910,7 +3351,9 @@
         "bodyIndex": 269,
         "paragraphIndex": 248
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2921,6 +3364,7 @@
         "bodyIndex": 270,
         "paragraphIndex": 249
       },
+      "paragraphStyleId": "4",
       "textHash": "01d4387117a070d4045ac89efa746052fe9e8a0b51f57c9b975545ec7ec3bcb9",
       "headingLevel": 4,
       "title": "⑤零轻母炮击队"
@@ -2934,7 +3378,9 @@
         "bodyIndex": 271,
         "paragraphIndex": 250
       },
-      "textHash": "14f8ef1d9ea6db6724beb81916a1c1b0004e03e22678566987cfcd3431360926"
+      "paragraphStyleId": "",
+      "textHash": "14f8ef1d9ea6db6724beb81916a1c1b0004e03e22678566987cfcd3431360926",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2945,7 +3391,9 @@
         "bodyIndex": 272,
         "paragraphIndex": 251
       },
-      "textHash": "8346212f1c94d833e8b5010845a9376c9f4047b588a7e5fd81356a598b56a18a"
+      "paragraphStyleId": "",
+      "textHash": "8346212f1c94d833e8b5010845a9376c9f4047b588a7e5fd81356a598b56a18a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2956,7 +3404,9 @@
         "bodyIndex": 273,
         "paragraphIndex": 252
       },
-      "textHash": "7f1ae3bc45864005aa134879cb5068893e7ef35d193cf42dc17ddf0b95ca526f"
+      "paragraphStyleId": "",
+      "textHash": "7f1ae3bc45864005aa134879cb5068893e7ef35d193cf42dc17ddf0b95ca526f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2967,7 +3417,9 @@
         "bodyIndex": 275,
         "paragraphIndex": 253
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2978,7 +3430,9 @@
         "bodyIndex": 277,
         "paragraphIndex": 254
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -2989,7 +3443,9 @@
         "bodyIndex": 279,
         "paragraphIndex": 255
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3000,7 +3456,9 @@
         "bodyIndex": 281,
         "paragraphIndex": 256
       },
-      "textHash": "ae38e7c3b2e753109bf5fc1e2fb5cda133fc6cdb703ac576c220d3063851247a"
+      "paragraphStyleId": "",
+      "textHash": "ae38e7c3b2e753109bf5fc1e2fb5cda133fc6cdb703ac576c220d3063851247a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3011,7 +3469,9 @@
         "bodyIndex": 282,
         "paragraphIndex": 257
       },
-      "textHash": "47f3e93bd6d648ecb2e46b63b73be6dd5e9159f4c3df101901b7c70679acd2d4"
+      "paragraphStyleId": "",
+      "textHash": "47f3e93bd6d648ecb2e46b63b73be6dd5e9159f4c3df101901b7c70679acd2d4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3022,7 +3482,9 @@
         "bodyIndex": 283,
         "paragraphIndex": 258
       },
-      "textHash": "b35a15ec13e7fbb2ac94bc4eb3e423eddf2b62491bb64cbea41026859486ed44"
+      "paragraphStyleId": "",
+      "textHash": "b35a15ec13e7fbb2ac94bc4eb3e423eddf2b62491bb64cbea41026859486ed44",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3033,6 +3495,7 @@
         "bodyIndex": 285,
         "paragraphIndex": 259
       },
+      "paragraphStyleId": "4",
       "textHash": "17d1f30f28ea86f9245d39607388f83e2d46dadb5e3f989dc668f5ce1a5d8266",
       "headingLevel": 4,
       "title": "⑦大淀滑板雷击队（纯娱乐）"
@@ -3046,7 +3509,9 @@
         "bodyIndex": 286,
         "paragraphIndex": 260
       },
-      "textHash": "c0a5bb0c4856f0dc6616e65906006dd261fe3702569365e9fb421ced758a6c10"
+      "paragraphStyleId": "",
+      "textHash": "c0a5bb0c4856f0dc6616e65906006dd261fe3702569365e9fb421ced758a6c10",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3057,7 +3522,9 @@
         "bodyIndex": 287,
         "paragraphIndex": 261
       },
-      "textHash": "575b0720ce6f46ce71f94b6d294968ab98ce6f5b9e17ee84b03f104f9bcf6a76"
+      "paragraphStyleId": "",
+      "textHash": "575b0720ce6f46ce71f94b6d294968ab98ce6f5b9e17ee84b03f104f9bcf6a76",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3068,7 +3535,9 @@
         "bodyIndex": 288,
         "paragraphIndex": 262
       },
-      "textHash": "88a9394c166d2c3abbf4565979671eadc517a8c77cd4dfbfe1b7239416a2aa89"
+      "paragraphStyleId": "",
+      "textHash": "88a9394c166d2c3abbf4565979671eadc517a8c77cd4dfbfe1b7239416a2aa89",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3079,7 +3548,9 @@
         "bodyIndex": 290,
         "paragraphIndex": 263
       },
-      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b"
+      "paragraphStyleId": "",
+      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3090,7 +3561,9 @@
         "bodyIndex": 291,
         "paragraphIndex": 264
       },
-      "textHash": "3d95b71aa63ef4194303b6ae10c55d38bb29be67f1fd7bfbf09030e92ce6e274"
+      "paragraphStyleId": "",
+      "textHash": "3d95b71aa63ef4194303b6ae10c55d38bb29be67f1fd7bfbf09030e92ce6e274",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3101,7 +3574,9 @@
         "bodyIndex": 292,
         "paragraphIndex": 265
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3112,7 +3587,9 @@
         "bodyIndex": 293,
         "paragraphIndex": 266
       },
-      "textHash": "3fc0530cc430796ffd98f7e76647ea9493123e9e68adb51cd631caf8a1d5162c"
+      "paragraphStyleId": "",
+      "textHash": "3fc0530cc430796ffd98f7e76647ea9493123e9e68adb51cd631caf8a1d5162c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3123,7 +3600,9 @@
         "bodyIndex": 294,
         "paragraphIndex": 267
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3134,7 +3613,9 @@
         "bodyIndex": 295,
         "paragraphIndex": 268
       },
-      "textHash": "9bfe4103e818472377b78a1504c0b3d9be3188056755c148dcf342dd37ae9f5c"
+      "paragraphStyleId": "",
+      "textHash": "9bfe4103e818472377b78a1504c0b3d9be3188056755c148dcf342dd37ae9f5c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3145,7 +3626,9 @@
         "bodyIndex": 296,
         "paragraphIndex": 269
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3156,9 +3639,10 @@
         "bodyIndex": 297,
         "paragraphIndex": 270
       },
-      "textHash": "cd1202ec5d3713c985defb69d2ab4822101791d2bab63ff64f3b1742329c8f54",
+      "paragraphStyleId": "3",
+      "textHash": "b6727ab54cb4d5edd454a63d4ecb461a5aef83381ae11d82786d19055b3cf5ff",
       "headingLevel": 3,
-      "title": "金大船"
+      "title": "3.金大船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3169,7 +3653,9 @@
         "bodyIndex": 298,
         "paragraphIndex": 271
       },
-      "textHash": "c40ea3824c2ae66cb5e039fe48f190b133e20b1ae010a4455b3525f9f472a98c"
+      "paragraphStyleId": "",
+      "textHash": "35d529c36aa0f8a8c46c31c4bd1c16b5356a48a2659905f835a534e6fb18ece5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3180,7 +3666,9 @@
         "bodyIndex": 299,
         "paragraphIndex": 272
       },
-      "textHash": "71b36450e3fbe6e99700e964b10e3ab634ac5a210d0f4ae7b48cca12ce5cd6ae"
+      "paragraphStyleId": "",
+      "textHash": "71b36450e3fbe6e99700e964b10e3ab634ac5a210d0f4ae7b48cca12ce5cd6ae",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3191,7 +3679,9 @@
         "bodyIndex": 300,
         "paragraphIndex": 273
       },
-      "textHash": "ec57116b43ba402a65a1fba7e583d9445dec9ee3ff643f263d247506879cc871"
+      "paragraphStyleId": "",
+      "textHash": "ec57116b43ba402a65a1fba7e583d9445dec9ee3ff643f263d247506879cc871",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3202,7 +3692,9 @@
         "bodyIndex": 301,
         "paragraphIndex": 274
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3213,7 +3705,9 @@
         "bodyIndex": 302,
         "paragraphIndex": 275
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3224,6 +3718,7 @@
         "bodyIndex": 303,
         "paragraphIndex": 276
       },
+      "paragraphStyleId": "4",
       "textHash": "c1e1282f209f8fda930eda46ff738b9b3ec67281a9e9c18b3f83e62f4603515d",
       "headingLevel": 4,
       "title": "①VV旗"
@@ -3237,7 +3732,9 @@
         "bodyIndex": 304,
         "paragraphIndex": 277
       },
-      "textHash": "9b33c1126175cd07ae78d4498c166676346fe541488935b785784af301c3dc6f"
+      "paragraphStyleId": "",
+      "textHash": "9b33c1126175cd07ae78d4498c166676346fe541488935b785784af301c3dc6f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3248,7 +3745,9 @@
         "bodyIndex": 305,
         "paragraphIndex": 278
       },
-      "textHash": "f431ec71c4bbc560695db20c0e1bfcf40f951564af0d945bffd707a173d0119c"
+      "paragraphStyleId": "",
+      "textHash": "f431ec71c4bbc560695db20c0e1bfcf40f951564af0d945bffd707a173d0119c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3259,7 +3758,9 @@
         "bodyIndex": 306,
         "paragraphIndex": 279
       },
-      "textHash": "76bc789b5be6da2c7291e2b705055e7b40243c6ca8164dc6b040a1405c825282"
+      "paragraphStyleId": "",
+      "textHash": "76bc789b5be6da2c7291e2b705055e7b40243c6ca8164dc6b040a1405c825282",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3270,7 +3771,9 @@
         "bodyIndex": 308,
         "paragraphIndex": 280
       },
-      "textHash": "0e526aec74774aee1eb4d6f415031a4da6e9d0adfe81031e3929629f15dcd73c"
+      "paragraphStyleId": "",
+      "textHash": "0e526aec74774aee1eb4d6f415031a4da6e9d0adfe81031e3929629f15dcd73c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3281,7 +3784,9 @@
         "bodyIndex": 309,
         "paragraphIndex": 281
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3292,7 +3797,9 @@
         "bodyIndex": 311,
         "paragraphIndex": 282
       },
-      "textHash": "8963b5e34c17c2dc3b38c9864f4dc980bcd444121f384af381ca98b70e1928db"
+      "paragraphStyleId": "",
+      "textHash": "8963b5e34c17c2dc3b38c9864f4dc980bcd444121f384af381ca98b70e1928db",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3303,7 +3810,9 @@
         "bodyIndex": 313,
         "paragraphIndex": 283
       },
-      "textHash": "b54f8494ab8a0f5c59513e98b6a65f9cb47a950a53ed0537be13402e63394b7c"
+      "paragraphStyleId": "",
+      "textHash": "b54f8494ab8a0f5c59513e98b6a65f9cb47a950a53ed0537be13402e63394b7c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3314,7 +3823,9 @@
         "bodyIndex": 314,
         "paragraphIndex": 284
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3325,6 +3836,7 @@
         "bodyIndex": 315,
         "paragraphIndex": 285
       },
+      "paragraphStyleId": "4",
       "textHash": "b74688c89890513e0baadb588b9d59e3cee2b68385271bd0f466d77a19dfa87e",
       "headingLevel": 4,
       "title": "②墩旗"
@@ -3338,7 +3850,9 @@
         "bodyIndex": 316,
         "paragraphIndex": 286
       },
-      "textHash": "b62a286936d05d5b1f74983fa473e74a3c068eb2300db91fbfd1afee1e9414f9"
+      "paragraphStyleId": "",
+      "textHash": "8c646af18078e537dd5a8756ca3a9c58c7889b41225e1641d958ac73db4256b7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3349,7 +3863,9 @@
         "bodyIndex": 317,
         "paragraphIndex": 287
       },
-      "textHash": "a8cce5c122944d0b542df7afde74c4440d2b22aea3aa36f8305a0bc7e5c93be8"
+      "paragraphStyleId": "",
+      "textHash": "a8cce5c122944d0b542df7afde74c4440d2b22aea3aa36f8305a0bc7e5c93be8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3360,7 +3876,9 @@
         "bodyIndex": 318,
         "paragraphIndex": 288
       },
-      "textHash": "a1cc99aa4df935f1c79906699b5f991006165b0fe88234eeb950a9b5e70277ac"
+      "paragraphStyleId": "",
+      "textHash": "a1cc99aa4df935f1c79906699b5f991006165b0fe88234eeb950a9b5e70277ac",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3371,7 +3889,9 @@
         "bodyIndex": 320,
         "paragraphIndex": 289
       },
-      "textHash": "4ace7783c7ee18c0b38f3fc8f40ecbdf9bbbc717d755550a14055dd1c0e35e82"
+      "paragraphStyleId": "",
+      "textHash": "4ace7783c7ee18c0b38f3fc8f40ecbdf9bbbc717d755550a14055dd1c0e35e82",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3382,7 +3902,9 @@
         "bodyIndex": 322,
         "paragraphIndex": 290
       },
-      "textHash": "834f467d5d6e7640c1c7ccd851d9239e3e0372d3bf0b40163afbb531e7d0d526"
+      "paragraphStyleId": "",
+      "textHash": "834f467d5d6e7640c1c7ccd851d9239e3e0372d3bf0b40163afbb531e7d0d526",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3393,7 +3915,9 @@
         "bodyIndex": 323,
         "paragraphIndex": 291
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3404,6 +3928,7 @@
         "bodyIndex": 324,
         "paragraphIndex": 292
       },
+      "paragraphStyleId": "4",
       "textHash": "c759b95580434ba769f8c0bce8fba89c5c3dcb3990902c42915149b4183b9902",
       "headingLevel": 4,
       "title": "③前卫旗"
@@ -3417,7 +3942,9 @@
         "bodyIndex": 325,
         "paragraphIndex": 293
       },
-      "textHash": "0b263a183f60dca91f65976c147fee90f1d9e708bc54071764bc9e141a4f64ec"
+      "paragraphStyleId": "",
+      "textHash": "0b263a183f60dca91f65976c147fee90f1d9e708bc54071764bc9e141a4f64ec",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3428,7 +3955,9 @@
         "bodyIndex": 326,
         "paragraphIndex": 294
       },
-      "textHash": "1313a59466d9c43c59eff40b57fb57684cba30c16799894f07fe7dac9f8dd338"
+      "paragraphStyleId": "",
+      "textHash": "1313a59466d9c43c59eff40b57fb57684cba30c16799894f07fe7dac9f8dd338",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3439,7 +3968,9 @@
         "bodyIndex": 327,
         "paragraphIndex": 295
       },
-      "textHash": "f4e28a91b3c5879bce699f98d296ae229c687303f2473445a45100a6c946710c"
+      "paragraphStyleId": "",
+      "textHash": "f4e28a91b3c5879bce699f98d296ae229c687303f2473445a45100a6c946710c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3450,7 +3981,9 @@
         "bodyIndex": 329,
         "paragraphIndex": 296
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3461,7 +3994,9 @@
         "bodyIndex": 331,
         "paragraphIndex": 297
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3472,7 +4007,9 @@
         "bodyIndex": 333,
         "paragraphIndex": 298
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3483,6 +4020,7 @@
         "bodyIndex": 334,
         "paragraphIndex": 299
       },
+      "paragraphStyleId": "4",
       "textHash": "86c491881c66e92ec9a10efad9f9ffd0b4ab40a3dee02cdb047d772b2b96069b",
       "headingLevel": 4,
       "title": "④英队"
@@ -3496,7 +4034,9 @@
         "bodyIndex": 335,
         "paragraphIndex": 300
       },
-      "textHash": "8aeb8c9962e41a8517bb146bba30236ab4a7904063c3c496308d9eb2236dc777"
+      "paragraphStyleId": "",
+      "textHash": "8aeb8c9962e41a8517bb146bba30236ab4a7904063c3c496308d9eb2236dc777",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3507,7 +4047,9 @@
         "bodyIndex": 337,
         "paragraphIndex": 301
       },
-      "textHash": "df769e9dda184d66f805b367a53ba8cbb6e150886283e26d1efd95d2d266020a"
+      "paragraphStyleId": "",
+      "textHash": "df769e9dda184d66f805b367a53ba8cbb6e150886283e26d1efd95d2d266020a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3518,7 +4060,9 @@
         "bodyIndex": 338,
         "paragraphIndex": 302
       },
-      "textHash": "4b8cf932b33df7f821466ed4d59e5bebd6e10a152a13e4abaf429fc7426e14cc"
+      "paragraphStyleId": "",
+      "textHash": "4b8cf932b33df7f821466ed4d59e5bebd6e10a152a13e4abaf429fc7426e14cc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3529,7 +4073,9 @@
         "bodyIndex": 339,
         "paragraphIndex": 303
       },
-      "textHash": "9fc21b6ed68a1c9a26f840d5a89b29b8ec8b587121ecca7b900e5b5ad2911efd"
+      "paragraphStyleId": "",
+      "textHash": "9fc21b6ed68a1c9a26f840d5a89b29b8ec8b587121ecca7b900e5b5ad2911efd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3540,7 +4086,9 @@
         "bodyIndex": 340,
         "paragraphIndex": 304
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3551,7 +4099,9 @@
         "bodyIndex": 341,
         "paragraphIndex": 305
       },
-      "textHash": "6d4d35b4072dc572c3d0260c7e580573ecfe6184d859f3c07aefac3319bee648"
+      "paragraphStyleId": "",
+      "textHash": "6d4d35b4072dc572c3d0260c7e580573ecfe6184d859f3c07aefac3319bee648",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3562,7 +4112,9 @@
         "bodyIndex": 343,
         "paragraphIndex": 306
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3573,7 +4125,9 @@
         "bodyIndex": 345,
         "paragraphIndex": 307
       },
-      "textHash": "9474204fa2796aab37ba4c1b8838f5a48dc531dc3f3abbc381a6f47f2d07328b"
+      "paragraphStyleId": "",
+      "textHash": "9474204fa2796aab37ba4c1b8838f5a48dc531dc3f3abbc381a6f47f2d07328b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3584,7 +4138,9 @@
         "bodyIndex": 346,
         "paragraphIndex": 308
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3595,6 +4151,7 @@
         "bodyIndex": 347,
         "paragraphIndex": 309
       },
+      "paragraphStyleId": "4",
       "textHash": "596bee1b07cc7bcb0d4cd05cc2ccc832046ffecf9f34e63228d72915bb7bb7bc",
       "headingLevel": 4,
       "title": "⑤天鹰旗"
@@ -3608,7 +4165,9 @@
         "bodyIndex": 348,
         "paragraphIndex": 310
       },
-      "textHash": "12655c86ea8362a0c5466d617e6f277f5ce48253579f9d6a83d08d95570033c5"
+      "paragraphStyleId": "",
+      "textHash": "12655c86ea8362a0c5466d617e6f277f5ce48253579f9d6a83d08d95570033c5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3619,7 +4178,9 @@
         "bodyIndex": 349,
         "paragraphIndex": 311
       },
-      "textHash": "e76f6945b4453b5c0f788ee75c8b6cc4907b9fb40f7135f232a4ee25c4332809"
+      "paragraphStyleId": "",
+      "textHash": "e76f6945b4453b5c0f788ee75c8b6cc4907b9fb40f7135f232a4ee25c4332809",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3630,7 +4191,9 @@
         "bodyIndex": 350,
         "paragraphIndex": 312
       },
-      "textHash": "e13dfc262a2066c4971d356631985044cd0b492793765c5e956559fe7a4a3644"
+      "paragraphStyleId": "",
+      "textHash": "e13dfc262a2066c4971d356631985044cd0b492793765c5e956559fe7a4a3644",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3641,7 +4204,9 @@
         "bodyIndex": 352,
         "paragraphIndex": 313
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "afc",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3652,7 +4217,9 @@
         "bodyIndex": 354,
         "paragraphIndex": 314
       },
-      "textHash": "7901d7ec4484ebb987fbdc273c9388e1a21ef03350c97616e1e26de3de236e9c"
+      "paragraphStyleId": "",
+      "textHash": "7901d7ec4484ebb987fbdc273c9388e1a21ef03350c97616e1e26de3de236e9c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3663,7 +4230,9 @@
         "bodyIndex": 355,
         "paragraphIndex": 315
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3674,6 +4243,7 @@
         "bodyIndex": 356,
         "paragraphIndex": 316
       },
+      "paragraphStyleId": "4",
       "textHash": "b0e67d8b6c0d5ece1f9f97eb54016d1ee74e3a3555446e4d91c01028d857ecd4",
       "headingLevel": 4,
       "title": "⑥日航（机动航）"
@@ -3687,7 +4257,9 @@
         "bodyIndex": 357,
         "paragraphIndex": 317
       },
-      "textHash": "2515ab5777174fabf4b71e4c2078f0ace96469fa275bdd947961256a351d41f8"
+      "paragraphStyleId": "",
+      "textHash": "2515ab5777174fabf4b71e4c2078f0ace96469fa275bdd947961256a351d41f8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3698,7 +4270,9 @@
         "bodyIndex": 358,
         "paragraphIndex": 318
       },
-      "textHash": "32a5cf3950775fd8274140a3476a85cb65de314734f9e210a47b49b423c57e83"
+      "paragraphStyleId": "",
+      "textHash": "da190729785f814325d80b0c00167f57e1890da0c974a35a3075e95ce98522e3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3709,7 +4283,9 @@
         "bodyIndex": 359,
         "paragraphIndex": 319
       },
-      "textHash": "8db384877d8287f05c71ae02bb405211271ede052fa040e0f61bbf9493ef04fd"
+      "paragraphStyleId": "",
+      "textHash": "8db384877d8287f05c71ae02bb405211271ede052fa040e0f61bbf9493ef04fd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3720,7 +4296,9 @@
         "bodyIndex": 360,
         "paragraphIndex": 320
       },
-      "textHash": "5c72ca35676c900b2b056c4b364291f5f7f8b171715901bda9d1bcdaafa86392"
+      "paragraphStyleId": "",
+      "textHash": "5c72ca35676c900b2b056c4b364291f5f7f8b171715901bda9d1bcdaafa86392",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3731,7 +4309,9 @@
         "bodyIndex": 362,
         "paragraphIndex": 321
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3742,7 +4322,9 @@
         "bodyIndex": 364,
         "paragraphIndex": 322
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3753,7 +4335,9 @@
         "bodyIndex": 366,
         "paragraphIndex": 323
       },
-      "textHash": "e894e4b93931e7efa07260051d092f3067deafb630b04b1140757b612aaa9d5e"
+      "paragraphStyleId": "",
+      "textHash": "e894e4b93931e7efa07260051d092f3067deafb630b04b1140757b612aaa9d5e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3764,7 +4348,9 @@
         "bodyIndex": 367,
         "paragraphIndex": 324
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3775,6 +4361,7 @@
         "bodyIndex": 368,
         "paragraphIndex": 325
       },
+      "paragraphStyleId": "4",
       "textHash": "162fbaa30e2b412d3a388cc8104597ecb3d0679dd59de9d223dce4e543b2c891",
       "headingLevel": 4,
       "title": "⑦美队"
@@ -3788,7 +4375,9 @@
         "bodyIndex": 369,
         "paragraphIndex": 326
       },
-      "textHash": "7ffeca5306dce95e72746b06eeedfa4db3d4ee3bc9cfdc3dbf81a179e12e1da4"
+      "paragraphStyleId": "",
+      "textHash": "7ffeca5306dce95e72746b06eeedfa4db3d4ee3bc9cfdc3dbf81a179e12e1da4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3799,7 +4388,9 @@
         "bodyIndex": 370,
         "paragraphIndex": 327
       },
-      "textHash": "15dd28926df1a08e9810f35b682335be68299ab91b8573879deb819dc239e392"
+      "paragraphStyleId": "",
+      "textHash": "15dd28926df1a08e9810f35b682335be68299ab91b8573879deb819dc239e392",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3810,7 +4401,9 @@
         "bodyIndex": 371,
         "paragraphIndex": 328
       },
-      "textHash": "4d605d81f429af548dd927ae6a0392c2c47a8a0c7569b68da2b8302df5f30ad0"
+      "paragraphStyleId": "",
+      "textHash": "4d605d81f429af548dd927ae6a0392c2c47a8a0c7569b68da2b8302df5f30ad0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3821,7 +4414,9 @@
         "bodyIndex": 373,
         "paragraphIndex": 329
       },
-      "textHash": "5dbc4453dfff6d02ad2d2a7b513723fab9077e1f4010ffbdd2db3ef773706007"
+      "paragraphStyleId": "",
+      "textHash": "5dbc4453dfff6d02ad2d2a7b513723fab9077e1f4010ffbdd2db3ef773706007",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3832,7 +4427,9 @@
         "bodyIndex": 375,
         "paragraphIndex": 330
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af1",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3843,7 +4440,9 @@
         "bodyIndex": 377,
         "paragraphIndex": 331
       },
-      "textHash": "6fbae93ce16aa7dd45a0c09f391220954fe4f7e00b296def9da285611317c024"
+      "paragraphStyleId": "",
+      "textHash": "6fbae93ce16aa7dd45a0c09f391220954fe4f7e00b296def9da285611317c024",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3854,7 +4453,9 @@
         "bodyIndex": 378,
         "paragraphIndex": 332
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3865,7 +4466,9 @@
         "bodyIndex": 380,
         "paragraphIndex": 333
       },
-      "textHash": "c4f45f620b0917b254f209d21456e93152b58d33528177ff74eb1c41ecef0ead"
+      "paragraphStyleId": "",
+      "textHash": "c4f45f620b0917b254f209d21456e93152b58d33528177ff74eb1c41ecef0ead",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3876,7 +4479,9 @@
         "bodyIndex": 381,
         "paragraphIndex": 334
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3887,7 +4492,9 @@
         "bodyIndex": 382,
         "paragraphIndex": 335
       },
-      "textHash": "495916e7e96d48389dc970ce35723d4bd0fa19427e2ec41c6d2b63c8adb34deb"
+      "paragraphStyleId": "",
+      "textHash": "495916e7e96d48389dc970ce35723d4bd0fa19427e2ec41c6d2b63c8adb34deb",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3898,7 +4505,9 @@
         "bodyIndex": 384,
         "paragraphIndex": 336
       },
-      "textHash": "586d9fb18b535289d69a9853b37847249116c93121336c8115ffefe17eee5c7b"
+      "paragraphStyleId": "",
+      "textHash": "586d9fb18b535289d69a9853b37847249116c93121336c8115ffefe17eee5c7b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3909,7 +4518,9 @@
         "bodyIndex": 385,
         "paragraphIndex": 337
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3920,7 +4531,9 @@
         "bodyIndex": 387,
         "paragraphIndex": 338
       },
-      "textHash": "879c01d0e14352079ae54dd3e0efb8efa5b144fbca32bff26f37e02b9b2f850c"
+      "paragraphStyleId": "",
+      "textHash": "512c609af3079c992fbeac0e8b6020da8fc6580b8f62d3d6e4ba3e9eab40b284",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3931,7 +4544,9 @@
         "bodyIndex": 388,
         "paragraphIndex": 339
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3942,7 +4557,9 @@
         "bodyIndex": 389,
         "paragraphIndex": 340
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3953,7 +4570,9 @@
         "bodyIndex": 390,
         "paragraphIndex": 341
       },
-      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b"
+      "paragraphStyleId": "",
+      "textHash": "1a59195d6129a057a21c2b57b360724b094ac48470c24e055303880286ec898b",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3964,7 +4583,9 @@
         "bodyIndex": 391,
         "paragraphIndex": 342
       },
-      "textHash": "cd24dfba65af42312c8ecab69ac369b7415629e96f31f301d0c86faedf8faf4e"
+      "paragraphStyleId": "",
+      "textHash": "cd24dfba65af42312c8ecab69ac369b7415629e96f31f301d0c86faedf8faf4e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3975,7 +4596,9 @@
         "bodyIndex": 392,
         "paragraphIndex": 343
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3986,7 +4609,9 @@
         "bodyIndex": 393,
         "paragraphIndex": 344
       },
-      "textHash": "4e35ee61cdf789a1c2b5f9761c9e61e486f510764aa4eb1b6ffd95f2d3461b59"
+      "paragraphStyleId": "",
+      "textHash": "4e35ee61cdf789a1c2b5f9761c9e61e486f510764aa4eb1b6ffd95f2d3461b59",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -3997,7 +4622,9 @@
         "bodyIndex": 394,
         "paragraphIndex": 345
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4008,7 +4635,9 @@
         "bodyIndex": 395,
         "paragraphIndex": 346
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4019,7 +4648,9 @@
         "bodyIndex": 396,
         "paragraphIndex": 347
       },
-      "textHash": "dd65ffcbea15e8a22cdf76650c916b817e1b37927702171e66b4c1f276856b76"
+      "paragraphStyleId": "",
+      "textHash": "dd65ffcbea15e8a22cdf76650c916b817e1b37927702171e66b4c1f276856b76",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4030,7 +4661,9 @@
         "bodyIndex": 397,
         "paragraphIndex": 348
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4041,7 +4674,9 @@
         "bodyIndex": 398,
         "paragraphIndex": 349
       },
-      "textHash": "5a6c1696a1dda9335460253973050917c0d0cd883eaa8ea6595bad3ec7cc0ccc"
+      "paragraphStyleId": "",
+      "textHash": "5a6c1696a1dda9335460253973050917c0d0cd883eaa8ea6595bad3ec7cc0ccc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4052,7 +4687,9 @@
         "bodyIndex": 399,
         "paragraphIndex": 350
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4063,7 +4700,9 @@
         "bodyIndex": 400,
         "paragraphIndex": 351
       },
-      "textHash": "237b0a8d4b0edcf6f754c1df12b52ffe5c644456d8da941d0ae1317ecd205a29"
+      "paragraphStyleId": "",
+      "textHash": "237b0a8d4b0edcf6f754c1df12b52ffe5c644456d8da941d0ae1317ecd205a29",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4074,7 +4713,9 @@
         "bodyIndex": 401,
         "paragraphIndex": 352
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "a9",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4085,6 +4726,7 @@
         "bodyIndex": 402,
         "paragraphIndex": 353
       },
+      "paragraphStyleId": "2",
       "textHash": "285d151c5df3702cc24f6f766380b7b59e2f57b2df176ec23c5b2d68345af358",
       "headingLevel": 2,
       "title": "（二）主力舰队（紫场）"
@@ -4098,7 +4740,9 @@
         "bodyIndex": 403,
         "paragraphIndex": 354
       },
-      "textHash": "f804d2e22f7dc9c72a5f43f75e393a2eaaf3195aa7a040a53fc50c203c916912"
+      "paragraphStyleId": "",
+      "textHash": "f804d2e22f7dc9c72a5f43f75e393a2eaaf3195aa7a040a53fc50c203c916912",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4109,9 +4753,10 @@
         "bodyIndex": 404,
         "paragraphIndex": 355
       },
-      "textHash": "b2f29de8071394de8644cd74f082175d4feaea8f3987842c660d96c6998e1f6a",
+      "paragraphStyleId": "3",
+      "textHash": "170bede587c19c95adefa828d964e68d4f7c48f8bf35cb887de770efc2929ae6",
       "headingLevel": 3,
-      "title": "紫小船"
+      "title": "1.紫小船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4122,7 +4767,9 @@
         "bodyIndex": 405,
         "paragraphIndex": 356
       },
-      "textHash": "64800d674e1752911ac5126240bb3f60e7a87fe6b534c16b2f9be12e678f1d9c"
+      "paragraphStyleId": "",
+      "textHash": "1a6f7d67ef47292992c7af4e7ea5a459471840dfb532f16231806eef0e8f9d21",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4133,7 +4780,9 @@
         "bodyIndex": 406,
         "paragraphIndex": 357
       },
-      "textHash": "ee16ff0c989e6976d388c56512add57e5965151da109a0399191c2ecf42bba7d"
+      "paragraphStyleId": "",
+      "textHash": "ee16ff0c989e6976d388c56512add57e5965151da109a0399191c2ecf42bba7d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4144,7 +4793,9 @@
         "bodyIndex": 407,
         "paragraphIndex": 358
       },
-      "textHash": "ba2f7efeea0e30198ea42a0c3da3bc3653891868fa91220fabca126e871a1ed1"
+      "paragraphStyleId": "",
+      "textHash": "ba2f7efeea0e30198ea42a0c3da3bc3653891868fa91220fabca126e871a1ed1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4155,7 +4806,9 @@
         "bodyIndex": 408,
         "paragraphIndex": 359
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4166,7 +4819,9 @@
         "bodyIndex": 409,
         "paragraphIndex": 360
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4177,6 +4832,7 @@
         "bodyIndex": 410,
         "paragraphIndex": 361
       },
+      "paragraphStyleId": "4",
       "textHash": "4a3ef2a9f4d5daf02c30d76d3b382f059e83f7daed096bc03c0d2e07c69b9365",
       "headingLevel": 4,
       "title": "①特驱队"
@@ -4190,7 +4846,9 @@
         "bodyIndex": 411,
         "paragraphIndex": 362
       },
-      "textHash": "7ca268ba37e470cbc8b66dc48ba8b7f86d561824ddbaeaec1d563e2e7a9b12d0"
+      "paragraphStyleId": "",
+      "textHash": "7ca268ba37e470cbc8b66dc48ba8b7f86d561824ddbaeaec1d563e2e7a9b12d0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4201,7 +4859,9 @@
         "bodyIndex": 413,
         "paragraphIndex": 363
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4212,7 +4872,9 @@
         "bodyIndex": 415,
         "paragraphIndex": 364
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4223,7 +4885,9 @@
         "bodyIndex": 417,
         "paragraphIndex": 365
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4234,7 +4898,9 @@
         "bodyIndex": 419,
         "paragraphIndex": 366
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4245,7 +4911,9 @@
         "bodyIndex": 420,
         "paragraphIndex": 367
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4256,6 +4924,7 @@
         "bodyIndex": 421,
         "paragraphIndex": 368
       },
+      "paragraphStyleId": "4",
       "textHash": "0b876e0ace23dd76b939e0aede678ad7820031ddf9420a220a16bb435edacd05",
       "headingLevel": 4,
       "title": "②Z1旗"
@@ -4269,7 +4938,9 @@
         "bodyIndex": 422,
         "paragraphIndex": 369
       },
-      "textHash": "803b0e8226ee2f8b93338f0ec17306d4158e8fdb16bcebfbd2194f600bae6101"
+      "paragraphStyleId": "",
+      "textHash": "803b0e8226ee2f8b93338f0ec17306d4158e8fdb16bcebfbd2194f600bae6101",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4280,7 +4951,9 @@
         "bodyIndex": 424,
         "paragraphIndex": 370
       },
-      "textHash": "6c63b614606014afbb3aba7d23d136e1ec6df1079cd3ecf0771ce7a7604ed138"
+      "paragraphStyleId": "",
+      "textHash": "6c63b614606014afbb3aba7d23d136e1ec6df1079cd3ecf0771ce7a7604ed138",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4291,7 +4964,9 @@
         "bodyIndex": 426,
         "paragraphIndex": 371
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4302,9 +4977,10 @@
         "bodyIndex": 427,
         "paragraphIndex": 372
       },
-      "textHash": "b727747d49875f6df8f1b5211ca86434edbcf27b44b766f5cb403e96e2f5ba84",
+      "paragraphStyleId": "3",
+      "textHash": "c956ae1b305fff0415599b1346d8a0daf88c1b51526bc2a627d4a6edbe5c7d4e",
       "headingLevel": 3,
-      "title": "紫中船"
+      "title": "2.紫中船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4315,7 +4991,9 @@
         "bodyIndex": 428,
         "paragraphIndex": 373
       },
-      "textHash": "91d8b1043c68fdc49ef2cf306c8979c0dc2458e1c885165185d56056a231502c"
+      "paragraphStyleId": "",
+      "textHash": "91d8b1043c68fdc49ef2cf306c8979c0dc2458e1c885165185d56056a231502c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4326,7 +5004,9 @@
         "bodyIndex": 429,
         "paragraphIndex": 374
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4337,6 +5017,7 @@
         "bodyIndex": 430,
         "paragraphIndex": 375
       },
+      "paragraphStyleId": "4",
       "textHash": "b519a5878e5665d540effa2acfc4132ea3da11dbb4639522b1635aa2deae94f3",
       "headingLevel": 4,
       "title": "①诺福克旗"
@@ -4350,7 +5031,9 @@
         "bodyIndex": 431,
         "paragraphIndex": 376
       },
-      "textHash": "c567c2de585040026f10914136f4ecff0f807c1fe0762d7da1749694fcedc958"
+      "paragraphStyleId": "",
+      "textHash": "c567c2de585040026f10914136f4ecff0f807c1fe0762d7da1749694fcedc958",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4361,7 +5044,9 @@
         "bodyIndex": 433,
         "paragraphIndex": 377
       },
-      "textHash": "fee2d6461474669c3462e55333ec4fc795101143c1f2937091c43a7f0960d5f2"
+      "paragraphStyleId": "",
+      "textHash": "fee2d6461474669c3462e55333ec4fc795101143c1f2937091c43a7f0960d5f2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4372,7 +5057,9 @@
         "bodyIndex": 435,
         "paragraphIndex": 378
       },
-      "textHash": "e3e9e90980a6664bd506b2428205fe8e2ae99b7f6588a3ef5d6685b904c131b2"
+      "paragraphStyleId": "",
+      "textHash": "e3e9e90980a6664bd506b2428205fe8e2ae99b7f6588a3ef5d6685b904c131b2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4383,7 +5070,9 @@
         "bodyIndex": 437,
         "paragraphIndex": 379
       },
-      "textHash": "efa754b69c134be9ac6606774a8c8d46f46eed585198b4a98a82d9816f968185"
+      "paragraphStyleId": "",
+      "textHash": "efa754b69c134be9ac6606774a8c8d46f46eed585198b4a98a82d9816f968185",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4394,7 +5083,9 @@
         "bodyIndex": 438,
         "paragraphIndex": 380
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4405,7 +5096,9 @@
         "bodyIndex": 439,
         "paragraphIndex": 381
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4416,6 +5109,7 @@
         "bodyIndex": 440,
         "paragraphIndex": 382
       },
+      "paragraphStyleId": "4",
       "textHash": "fc80b048d76f81aa5759136fccc051e36d6a1ab818baae64adeeecbf88a449de",
       "headingLevel": 4,
       "title": "②衣笠旗"
@@ -4429,7 +5123,9 @@
         "bodyIndex": 441,
         "paragraphIndex": 383
       },
-      "textHash": "2d228675c9412c077d848aa5fcc4c0b485ad0c88c29b6c1aa2f6380e2139a246"
+      "paragraphStyleId": "",
+      "textHash": "2d228675c9412c077d848aa5fcc4c0b485ad0c88c29b6c1aa2f6380e2139a246",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4440,7 +5136,9 @@
         "bodyIndex": 443,
         "paragraphIndex": 384
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4451,7 +5149,9 @@
         "bodyIndex": 445,
         "paragraphIndex": 385
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4462,7 +5162,9 @@
         "bodyIndex": 447,
         "paragraphIndex": 386
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4473,9 +5175,10 @@
         "bodyIndex": 449,
         "paragraphIndex": 387
       },
-      "textHash": "980a18c2caed866217cbb3a50685019fc0d3839f85b5355bd6ca4fd0aee3f408",
+      "paragraphStyleId": "3",
+      "textHash": "83307cd48a266c252a8a2c7c08e948f1061b830575ae05d98178aff3f1d4adfb",
       "headingLevel": 3,
-      "title": "紫大船"
+      "title": "3.紫大船"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4486,7 +5189,9 @@
         "bodyIndex": 450,
         "paragraphIndex": 388
       },
-      "textHash": "9d9e93f23117d97b611911c3dc5da7522d5596a764e1d1a484f0c9e5e7bfb981"
+      "paragraphStyleId": "",
+      "textHash": "9d9e93f23117d97b611911c3dc5da7522d5596a764e1d1a484f0c9e5e7bfb981",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4497,7 +5202,9 @@
         "bodyIndex": 451,
         "paragraphIndex": 389
       },
-      "textHash": "d579d64933bd4d6ba6df78b12269a5c801d7c230bb0341fee93cefbcb627690b"
+      "paragraphStyleId": "",
+      "textHash": "12891a497c2402c2340b81550ca83b058dce041bb33483f2f6e8b6f9c1ddcdd3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4508,7 +5215,9 @@
         "bodyIndex": 452,
         "paragraphIndex": 390
       },
-      "textHash": "5f72948ce439e1a4370e01ba681121e095fe88341eac087ce5f649e19828f7e2"
+      "paragraphStyleId": "",
+      "textHash": "5f72948ce439e1a4370e01ba681121e095fe88341eac087ce5f649e19828f7e2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4519,7 +5228,9 @@
         "bodyIndex": 453,
         "paragraphIndex": 391
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4530,7 +5241,9 @@
         "bodyIndex": 454,
         "paragraphIndex": 392
       },
-      "textHash": "4e6ebd340ea0f04c3f0325fdb5816436410fc3dd59f62f8f5eccb9cfa462ca35"
+      "paragraphStyleId": "",
+      "textHash": "4e6ebd340ea0f04c3f0325fdb5816436410fc3dd59f62f8f5eccb9cfa462ca35",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4541,7 +5254,9 @@
         "bodyIndex": 455,
         "paragraphIndex": 393
       },
-      "textHash": "997286fea25d4c6abe9a4c8540c736dee2f3847a2d7bbb1366cb49d7ad446e3d"
+      "paragraphStyleId": "",
+      "textHash": "997286fea25d4c6abe9a4c8540c736dee2f3847a2d7bbb1366cb49d7ad446e3d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4552,7 +5267,9 @@
         "bodyIndex": 456,
         "paragraphIndex": 394
       },
-      "textHash": "957335ac328742f40ba2b6f271faa1775e5c3a02dcced8253cd5bda5f0413e07"
+      "paragraphStyleId": "",
+      "textHash": "957335ac328742f40ba2b6f271faa1775e5c3a02dcced8253cd5bda5f0413e07",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4563,7 +5280,9 @@
         "bodyIndex": 457,
         "paragraphIndex": 395
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4574,7 +5293,9 @@
         "bodyIndex": 458,
         "paragraphIndex": 396
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4585,6 +5306,7 @@
         "bodyIndex": 459,
         "paragraphIndex": 397
       },
+      "paragraphStyleId": "4",
       "textHash": "bc58a14339e4d4eea16a2cce60a82911a6d4aaaa717d3d6aa10667a972b38d85",
       "headingLevel": 4,
       "title": "①纯航"
@@ -4598,7 +5320,9 @@
         "bodyIndex": 460,
         "paragraphIndex": 398
       },
-      "textHash": "72c4929e66018fbed84703cf7fbe3af1a6da77472e235ce5317497f3c894f5b1"
+      "paragraphStyleId": "",
+      "textHash": "72c4929e66018fbed84703cf7fbe3af1a6da77472e235ce5317497f3c894f5b1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4609,7 +5333,9 @@
         "bodyIndex": 462,
         "paragraphIndex": 399
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4620,7 +5346,9 @@
         "bodyIndex": 463,
         "paragraphIndex": 400
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4631,7 +5359,9 @@
         "bodyIndex": 465,
         "paragraphIndex": 401
       },
-      "textHash": "139093d39dd002fd701a111f55a135744e980c90c51747067f00f690a3fd3fa6"
+      "paragraphStyleId": "",
+      "textHash": "139093d39dd002fd701a111f55a135744e980c90c51747067f00f690a3fd3fa6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4642,7 +5372,9 @@
         "bodyIndex": 467,
         "paragraphIndex": 402
       },
-      "textHash": "7607ce7867a84d83d7cda413f65c3d2b5fba146ccba9b465c1a19888561d6b66"
+      "paragraphStyleId": "",
+      "textHash": "7607ce7867a84d83d7cda413f65c3d2b5fba146ccba9b465c1a19888561d6b66",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4653,7 +5385,9 @@
         "bodyIndex": 468,
         "paragraphIndex": 403
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4664,6 +5398,7 @@
         "bodyIndex": 469,
         "paragraphIndex": 404
       },
+      "paragraphStyleId": "4",
       "textHash": "f62e5aa0637948d8e352d841a5439357dbc13e105f5e4a7f2041261780687469",
       "headingLevel": 4,
       "title": "②荷马旗"
@@ -4677,7 +5412,9 @@
         "bodyIndex": 470,
         "paragraphIndex": 405
       },
-      "textHash": "3d5feb3ea547e903fc465ee4d40177ff1be89b8661d1afb2c44298e596870aca"
+      "paragraphStyleId": "",
+      "textHash": "3d5feb3ea547e903fc465ee4d40177ff1be89b8661d1afb2c44298e596870aca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4688,7 +5425,9 @@
         "bodyIndex": 472,
         "paragraphIndex": 406
       },
-      "textHash": "744d7961693decc7825c5b68344432e3dd96aa11d2b966438202c93cec52ba47"
+      "paragraphStyleId": "",
+      "textHash": "744d7961693decc7825c5b68344432e3dd96aa11d2b966438202c93cec52ba47",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4699,7 +5438,9 @@
         "bodyIndex": 474,
         "paragraphIndex": 407
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4710,7 +5451,9 @@
         "bodyIndex": 476,
         "paragraphIndex": 408
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4721,7 +5464,9 @@
         "bodyIndex": 478,
         "paragraphIndex": 409
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4732,6 +5477,7 @@
         "bodyIndex": 479,
         "paragraphIndex": 410
       },
+      "paragraphStyleId": "4",
       "textHash": "9e2f6e6e08e100e5430a53915611e1b264f8328833f6c6030f5ecad3b8a21b10",
       "headingLevel": 4,
       "title": "③T劣龟炮"
@@ -4745,7 +5491,9 @@
         "bodyIndex": 481,
         "paragraphIndex": 411
       },
-      "textHash": "26347781d53f5ac314a279356a24aac67d5be93d0bc1172ae4f946c058026048"
+      "paragraphStyleId": "",
+      "textHash": "783aeb450d0e1045ee0055ac0c76e4023e9e8fbc4bc045b09e23f0dc7a5fd650",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4756,7 +5504,9 @@
         "bodyIndex": 482,
         "paragraphIndex": 412
       },
-      "textHash": "ccf95e4e1110a02a19f9298b07d70e2b4b2bdd1ac49e9580f374009546413a96"
+      "paragraphStyleId": "",
+      "textHash": "ccf95e4e1110a02a19f9298b07d70e2b4b2bdd1ac49e9580f374009546413a96",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4767,7 +5517,9 @@
         "bodyIndex": 483,
         "paragraphIndex": 413
       },
-      "textHash": "29b0892e87c0661c9e72244817a241231107ea1f10d24171bb6667b31f439a6f"
+      "paragraphStyleId": "",
+      "textHash": "29b0892e87c0661c9e72244817a241231107ea1f10d24171bb6667b31f439a6f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4778,7 +5530,9 @@
         "bodyIndex": 484,
         "paragraphIndex": 414
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4789,7 +5543,9 @@
         "bodyIndex": 485,
         "paragraphIndex": 415
       },
-      "textHash": "a0b320d15c4d3f06db044b4d03d0f076be1b55bd72f299882f8ba9d93d782ecc"
+      "paragraphStyleId": "",
+      "textHash": "a0b320d15c4d3f06db044b4d03d0f076be1b55bd72f299882f8ba9d93d782ecc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4800,7 +5556,9 @@
         "bodyIndex": 486,
         "paragraphIndex": 416
       },
-      "textHash": "0b7ef43ce517358ef2d1970404224b80e35fa515cfd7c6799f7c419a4ef9d0fa"
+      "paragraphStyleId": "",
+      "textHash": "0b7ef43ce517358ef2d1970404224b80e35fa515cfd7c6799f7c419a4ef9d0fa",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4811,7 +5569,9 @@
         "bodyIndex": 487,
         "paragraphIndex": 417
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4822,7 +5582,9 @@
         "bodyIndex": 488,
         "paragraphIndex": 418
       },
-      "textHash": "c5de9af07a0d7f077a00a58a18a1aa9e989038597a92faa2ebed026d0caccac1"
+      "paragraphStyleId": "",
+      "textHash": "c5de9af07a0d7f077a00a58a18a1aa9e989038597a92faa2ebed026d0caccac1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4833,6 +5595,7 @@
         "bodyIndex": 489,
         "paragraphIndex": 419
       },
+      "paragraphStyleId": "2",
       "textHash": "c87758e3f0e6518cb5aaae76d7340eefffe9fc5add0041deefa5e6628d958f0b",
       "headingLevel": 2,
       "title": "（三）海岸警备（蓝场）"
@@ -4846,7 +5609,9 @@
         "bodyIndex": 490,
         "paragraphIndex": 420
       },
-      "textHash": "455822c53fda493a680129d65dc08e6b30ea8e5470a3ad9e7ec38c12d307a287"
+      "paragraphStyleId": "",
+      "textHash": "455822c53fda493a680129d65dc08e6b30ea8e5470a3ad9e7ec38c12d307a287",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4857,7 +5622,9 @@
         "bodyIndex": 491,
         "paragraphIndex": 421
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4868,7 +5635,9 @@
         "bodyIndex": 492,
         "paragraphIndex": 422
       },
-      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff"
+      "paragraphStyleId": "",
+      "textHash": "07b9cbc5284a8fd7afa847cc962c868d72b3b51f180df2f95bd1586349099bff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4879,9 +5648,10 @@
         "bodyIndex": 493,
         "paragraphIndex": 423
       },
-      "textHash": "472755a95251ad2f52ab2579474585fcf33a4b742c15661239e1d2237fb0e425",
+      "paragraphStyleId": "3",
+      "textHash": "3fa5060dc2139df4b55a7f50dbeae27ebc7b83ec4e0bb305c445caf9caa6e8ef",
       "headingLevel": 3,
-      "title": "蓝小场"
+      "title": "1.蓝小场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4892,7 +5662,9 @@
         "bodyIndex": 494,
         "paragraphIndex": 424
       },
-      "textHash": "676ffb31a3fb36228eb577fd245850891b815506aaeb44199f382366218c89ba"
+      "paragraphStyleId": "",
+      "textHash": "676ffb31a3fb36228eb577fd245850891b815506aaeb44199f382366218c89ba",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4903,7 +5675,9 @@
         "bodyIndex": 496,
         "paragraphIndex": 425
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4914,7 +5688,9 @@
         "bodyIndex": 498,
         "paragraphIndex": 426
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4925,7 +5701,9 @@
         "bodyIndex": 500,
         "paragraphIndex": 427
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4936,7 +5714,9 @@
         "bodyIndex": 502,
         "paragraphIndex": 428
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4947,9 +5727,10 @@
         "bodyIndex": 504,
         "paragraphIndex": 429
       },
-      "textHash": "2a8ceeb7a803838d149d77908c860a704d35c8b7b5758e86fff351992252d75f",
+      "paragraphStyleId": "3",
+      "textHash": "f1db99b18605f7216c955d00318c278dca0648d315e73c00f20e386d4b9112ff",
       "headingLevel": 3,
-      "title": "蓝中场"
+      "title": "2.蓝中场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4960,7 +5741,9 @@
         "bodyIndex": 505,
         "paragraphIndex": 430
       },
-      "textHash": "676ffb31a3fb36228eb577fd245850891b815506aaeb44199f382366218c89ba"
+      "paragraphStyleId": "",
+      "textHash": "676ffb31a3fb36228eb577fd245850891b815506aaeb44199f382366218c89ba",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4971,7 +5754,9 @@
         "bodyIndex": 507,
         "paragraphIndex": 431
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4982,7 +5767,9 @@
         "bodyIndex": 509,
         "paragraphIndex": 432
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -4993,7 +5780,9 @@
         "bodyIndex": 511,
         "paragraphIndex": 433
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5004,9 +5793,10 @@
         "bodyIndex": 513,
         "paragraphIndex": 434
       },
-      "textHash": "168eb0eedb7f27105fb73a55ea85907aea385006301d419b8413a472652f3392",
+      "paragraphStyleId": "3",
+      "textHash": "f68a3fe2669538f9705e34338cc207f6886c49564e05d0e4acd1bdbe0120ca26",
       "headingLevel": 3,
-      "title": ".蓝大场"
+      "title": "3.蓝大场"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5017,7 +5807,9 @@
         "bodyIndex": 514,
         "paragraphIndex": 435
       },
-      "textHash": "da96f000bc7c27e34b5b89597eeb0b77a45cd08912d44ba2e2a795f6c6c810e2"
+      "paragraphStyleId": "",
+      "textHash": "da96f000bc7c27e34b5b89597eeb0b77a45cd08912d44ba2e2a795f6c6c810e2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5028,7 +5820,9 @@
         "bodyIndex": 515,
         "paragraphIndex": 436
       },
-      "textHash": "2b84a85ccb73eac8e3682442e1a2a5731cd9ae47b8b8aa0860b496cb304ffe92"
+      "paragraphStyleId": "",
+      "textHash": "2b84a85ccb73eac8e3682442e1a2a5731cd9ae47b8b8aa0860b496cb304ffe92",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5039,7 +5833,9 @@
         "bodyIndex": 517,
         "paragraphIndex": 437
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5050,7 +5846,9 @@
         "bodyIndex": 519,
         "paragraphIndex": 438
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "af0",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5061,7 +5859,9 @@
         "bodyIndex": 521,
         "paragraphIndex": 439
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5072,7 +5872,9 @@
         "bodyIndex": 522,
         "paragraphIndex": 440
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5083,6 +5885,7 @@
         "bodyIndex": 523,
         "paragraphIndex": 441
       },
+      "paragraphStyleId": "1",
       "textHash": "1e6c828e24b5ea24b3b41b6377747c648d9cb5fdcbcdbd701f418bb54c15af4c",
       "headingLevel": 1,
       "title": "四、结语"
@@ -5096,7 +5899,9 @@
         "bodyIndex": 524,
         "paragraphIndex": 442
       },
-      "textHash": "ff1ccd33dc85e3704133cc5e710caf665a266bafb2e99d6db437cf967130772f"
+      "paragraphStyleId": "",
+      "textHash": "ff1ccd33dc85e3704133cc5e710caf665a266bafb2e99d6db437cf967130772f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5107,7 +5912,9 @@
         "bodyIndex": 525,
         "paragraphIndex": 443
       },
-      "textHash": "e5b8f4a5e1e45a0d88d81b7dff978af53cc0c7ff3fc458a09e6f55cd72430945"
+      "paragraphStyleId": "",
+      "textHash": "e5b8f4a5e1e45a0d88d81b7dff978af53cc0c7ff3fc458a09e6f55cd72430945",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5118,7 +5925,9 @@
         "bodyIndex": 526,
         "paragraphIndex": 444
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5129,7 +5938,9 @@
         "bodyIndex": 527,
         "paragraphIndex": 445
       },
-      "textHash": "bdfc8723af59e73c9e27515f907e69711f1ea53c54c76af8ff943ef01ead7adf"
+      "paragraphStyleId": "",
+      "textHash": "bdfc8723af59e73c9e27515f907e69711f1ea53c54c76af8ff943ef01ead7adf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5140,7 +5951,9 @@
         "bodyIndex": 528,
         "paragraphIndex": 446
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5151,7 +5964,9 @@
         "bodyIndex": 529,
         "paragraphIndex": 447
       },
-      "textHash": "36c42dbf5ce0c9efc5f9721cbd1a8133bf8fbff112c9cc032df2740b6d6a91d0"
+      "paragraphStyleId": "af6",
+      "textHash": "36c42dbf5ce0c9efc5f9721cbd1a8133bf8fbff112c9cc032df2740b6d6a91d0",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5162,7 +5977,9 @@
         "bodyIndex": 530,
         "paragraphIndex": 448
       },
-      "textHash": "2f5f81f8a48d7c7c76341431205576e35b3c184b94216d3e09ef64d5076d8a11"
+      "paragraphStyleId": "af6",
+      "textHash": "2f5f81f8a48d7c7c76341431205576e35b3c184b94216d3e09ef64d5076d8a11",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5173,7 +5990,9 @@
         "bodyIndex": 531,
         "paragraphIndex": 449
       },
-      "textHash": "b84e10dd1b1b82516da0aa6c8a8412c1eab1a8109b6326effdf191d6d4ca34f4"
+      "paragraphStyleId": "af6",
+      "textHash": "b84e10dd1b1b82516da0aa6c8a8412c1eab1a8109b6326effdf191d6d4ca34f4",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5184,7 +6003,9 @@
         "bodyIndex": 532,
         "paragraphIndex": 450
       },
-      "textHash": "087152ed367ae64c8218551e14956d4d0238ea5324012a6e4c2093437ae418f9"
+      "paragraphStyleId": "af6",
+      "textHash": "087152ed367ae64c8218551e14956d4d0238ea5324012a6e4c2093437ae418f9",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",
@@ -5195,7 +6016,9 @@
         "bodyIndex": 533,
         "paragraphIndex": 451
       },
-      "textHash": "cab906dafd8a0b8c764392ed36dec2b08c992ab3da4e71c74eb633a7e7d9504c"
+      "paragraphStyleId": "af6",
+      "textHash": "cab906dafd8a0b8c764392ed36dec2b08c992ab3da4e71c74eb633a7e7d9504c",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-7d080e8d651b",

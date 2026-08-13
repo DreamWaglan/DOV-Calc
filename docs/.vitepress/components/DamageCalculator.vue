@@ -728,9 +728,6 @@ function isValidStoredString(key, value) {
   min-height: 44px;
   padding: 8px 14px;
   transition:
-    background-color 0.18s ease,
-    border-color 0.18s ease,
-    color 0.18s ease,
     box-shadow 0.18s ease,
     transform 0.12s ease;
 }
@@ -739,11 +736,12 @@ function isValidStoredString(key, value) {
 .damage-calculator__reset:focus-visible {
   border-color: var(--calc-accent);
   color: var(--calc-accent);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--c-brand) 16%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--calc-accent) 16%, transparent);
 }
 
 .damage-calculator__reset:focus-visible {
-  outline: none;
+  outline: 3px solid var(--calc-accent);
+  outline-offset: 2px;
 }
 
 .damage-calculator__reset:active {
@@ -753,8 +751,8 @@ function isValidStoredString(key, value) {
 .damage-calculator__reset.is-selected {
   border-color: var(--calc-accent);
   background: var(--calc-accent);
-  color: #ffffff;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-brand) 18%, transparent);
+  color: var(--calc-on-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--calc-accent) 18%, transparent);
 }
 
 .damage-calculator__results {

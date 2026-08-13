@@ -50,5 +50,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 镇海 | 11 | 1架/轮 | 0.8 | 3.5 | 30 | 轰炸 |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

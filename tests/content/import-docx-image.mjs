@@ -63,6 +63,27 @@ assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'drawings'))
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'media'))
 assert.ok(firstDocx.reviewItems.some((item) => item.kind === 'footnotes'))
 assert.equal(firstDocx.elements.filter((item) => item.elementType === 'media').length, 119)
+const paragraphElements = firstDocx.elements.filter(
+  (item) => item.elementType === 'paragraph',
+)
+const headingElements = firstDocx.elements.filter(
+  (item) => item.elementType === 'heading',
+)
+assert.equal(paragraphElements.length + headingElements.length, firstDocx.counts.paragraphs)
+assert.ok(
+  paragraphElements.every(
+    (item) =>
+      typeof item.paragraphStyleId === 'string' &&
+      ['prose', 'non-prose'].includes(item.paragraphSemantic),
+  ),
+)
+assert.ok(
+  headingElements.every(
+    (item) =>
+      typeof item.paragraphStyleId === 'string' &&
+      item.paragraphSemantic === undefined,
+  ),
+)
 assert.equal(firstDocx.drawingRelations.length, 490)
 const tableCellRelations = firstDocx.drawingRelations.filter(
   (relation) => relation.placement?.slot === 'table-cell',
@@ -96,6 +117,11 @@ assert.match(reviewMarkdown, /Quarantine Review Items/)
 assert.equal(
   [...reviewMarkdown.matchAll(/<!-- source-body:/g)].length,
   firstDocx.counts.paragraphs + firstDocx.counts.tables,
+)
+assert.equal(
+  [...reviewMarkdown.matchAll(/<!-- article-paragraph:(?:prose|non-prose) -->/g)]
+    .length,
+  paragraphElements.filter((item) => item.textHash !== sha256('')).length,
 )
 assert.doesNotMatch(firstDocx.outputs.markdown.path, /^docs\/public\//)
 

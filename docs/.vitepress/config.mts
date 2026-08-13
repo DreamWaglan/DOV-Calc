@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { defineConfig } from 'vitepress'
+import { installArticleParagraphSemantics } from '../../scripts/content/lib/article-prose.mjs'
 import { nav, pages, sidebar } from './navigation.mts'
 
 function normalizeBase(base = '/DOV-Calc/'): string {
@@ -177,6 +178,11 @@ export default defineConfig({
         }
         return sitemapRoutes.has(normalizeRoute(pathname))
       })
+    },
+  },
+  markdown: {
+    config(markdown) {
+      markdown.use(installArticleParagraphSemantics)
     },
   },
   transformPageData(pageData) {

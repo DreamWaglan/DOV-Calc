@@ -82,5 +82,3 @@ related: ["data-basic-attack-cd","tool-basic-attack-lookup"]
 | 大井·改 | 42 | 0.5 | 3 | 18 | 轻巡通常 | 1.6 | — | 5 | 20 | 2发 |
 
 </div>
-
-空值以“—”显示；“来源行”用于反馈问题时定位授权工作簿中的记录。

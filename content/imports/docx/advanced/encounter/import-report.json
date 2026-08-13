@@ -48,8 +48,8 @@
   "outputs": {
     "markdown": {
       "path": "content/imports/docx/advanced/encounter/review.md",
-      "sha256": "9a2c1e3b78d16e92d727513aa9c4cf20ba4891f237bbc6a39bd2c40cdda512da",
-      "bytes": 64357
+      "sha256": "941c45ef18e89b300a846bb180523a9eac19582c5fe14f3e04d84494698837d2",
+      "bytes": 80017
     },
     "quarantine": {
       "path": "content/imports/docx/advanced/encounter/quarantine.json",
@@ -87,7 +87,9 @@
         "bodyIndex": 1,
         "paragraphIndex": 1
       },
-      "textHash": "239ccb2fb2bcb46144f0c84b54fb22fdac84c195f047c9992886e2b102055684"
+      "paragraphStyleId": "ab",
+      "textHash": "239ccb2fb2bcb46144f0c84b54fb22fdac84c195f047c9992886e2b102055684",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -98,7 +100,9 @@
         "bodyIndex": 2,
         "paragraphIndex": 2
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -109,7 +113,9 @@
         "bodyIndex": 3,
         "paragraphIndex": 3
       },
-      "textHash": "8fa7bd70161e712d7c010e19d27c598eb07d695ab13e9de7542a5df868be693b"
+      "paragraphStyleId": "",
+      "textHash": "8fa7bd70161e712d7c010e19d27c598eb07d695ab13e9de7542a5df868be693b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -120,6 +126,7 @@
         "bodyIndex": 4,
         "paragraphIndex": 4
       },
+      "paragraphStyleId": "1",
       "textHash": "221bc8f3c3c877bc72071dc6bad72b87b2f294a680c7ba2611af4eb35ebaec32",
       "headingLevel": 1,
       "title": "遭遇战是什么"
@@ -133,7 +140,9 @@
         "bodyIndex": 5,
         "paragraphIndex": 5
       },
-      "textHash": "79a215856e214f3ff4d415962a35597777c446179748c26a8aae4a1d581cd2ee"
+      "paragraphStyleId": "",
+      "textHash": "56e6f16645ee1015a8de24dc345656422d5f2a9d01722a54b648c0d8cf9aa383",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -144,6 +153,7 @@
         "bodyIndex": 6,
         "paragraphIndex": 6
       },
+      "paragraphStyleId": "1",
       "textHash": "69795ca132be9b9e3636fbdb86fb92047c5d6a6b861f3bfe9555efdfe3d85870",
       "headingLevel": 1,
       "title": "遭遇战赛前备战"
@@ -157,6 +167,7 @@
         "bodyIndex": 7,
         "paragraphIndex": 7
       },
+      "paragraphStyleId": "2",
       "textHash": "23234b8337242a9159eb5f0f7119e5d151f9c314b186a9e24f2c77b912d71e66",
       "headingLevel": 2,
       "title": "BOSS甲种与吨位（或者说排水量）"
@@ -170,7 +181,9 @@
         "bodyIndex": 8,
         "paragraphIndex": 8
       },
-      "textHash": "9afb2b2d0a7ec4150a37f920ec1ea1c34f492fd2702f2fa2b86d014cd8fd1b06"
+      "paragraphStyleId": "",
+      "textHash": "9afb2b2d0a7ec4150a37f920ec1ea1c34f492fd2702f2fa2b86d014cd8fd1b06",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -181,7 +194,9 @@
         "bodyIndex": 9,
         "paragraphIndex": 9
       },
-      "textHash": "3a1c59936e2fb31b8827ef74ff60ca8d700fa611d9f87e0c0057a01810b21c01"
+      "paragraphStyleId": "aff1",
+      "textHash": "b56db23bb6124020f69162e61036d76d158d6206271750693c4ff3472e728a15",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -192,7 +207,9 @@
         "bodyIndex": 11,
         "paragraphIndex": 10
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -203,7 +220,9 @@
         "bodyIndex": 12,
         "paragraphIndex": 11
       },
-      "textHash": "9227b5f7d1d1c22b030a6dab5706b1a804bf80a185d75c55e6150401eb267ed6"
+      "paragraphStyleId": "",
+      "textHash": "6203f778f19099fca2be761fbeb39369aab528ed41d738003cc26aae0de30f58",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -214,6 +233,7 @@
         "bodyIndex": 13,
         "paragraphIndex": 12
       },
+      "paragraphStyleId": "2",
       "textHash": "9c4ada042ee842fe113833523ae9c6513dbce378cc8b04de1cefc765028163a7",
       "headingLevel": 2,
       "title": "舰灵选择"
@@ -227,6 +247,7 @@
         "bodyIndex": 14,
         "paragraphIndex": 13
       },
+      "paragraphStyleId": "3",
       "textHash": "600fb196a4f91c7ae8c209995de53cb024b9f1384687fb83197f4ac75f88c790",
       "headingLevel": 3,
       "title": "（一）顶分配队"
@@ -240,7 +261,9 @@
         "bodyIndex": 15,
         "paragraphIndex": 14
       },
-      "textHash": "9e4373701853f41288139c21d43573662453f76ad48b59757a0603ca9e008da2"
+      "paragraphStyleId": "",
+      "textHash": "9e4373701853f41288139c21d43573662453f76ad48b59757a0603ca9e008da2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -251,7 +274,9 @@
         "bodyIndex": 16,
         "paragraphIndex": 15
       },
-      "textHash": "dce4a622b0ac22f8e052302d5b41793e1a6e2dcbba3d2b9165a53ac7812af86d"
+      "paragraphStyleId": "",
+      "textHash": "453ebd12aec625067410b3f3f680c3b1e4653e42cc2bdcd1e50d1172137df60e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -262,7 +287,9 @@
         "bodyIndex": 17,
         "paragraphIndex": 16
       },
-      "textHash": "fbd925a61276bcf82baaf833e236cf8050a8e5787388a8f34bda07f3c45a2932"
+      "paragraphStyleId": "",
+      "textHash": "fbd925a61276bcf82baaf833e236cf8050a8e5787388a8f34bda07f3c45a2932",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -273,7 +300,9 @@
         "bodyIndex": 18,
         "paragraphIndex": 17
       },
-      "textHash": "05a50c36a34d6e0696ea68a352b60f9057acc1b0c0dfbab5c040364e268c4c6d"
+      "paragraphStyleId": "",
+      "textHash": "05a50c36a34d6e0696ea68a352b60f9057acc1b0c0dfbab5c040364e268c4c6d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -284,7 +313,9 @@
         "bodyIndex": 19,
         "paragraphIndex": 18
       },
-      "textHash": "38219016561217081516ea391c09ff221a6c6f3634a80a1ccaeb5e77f3f3eb2a"
+      "paragraphStyleId": "",
+      "textHash": "38219016561217081516ea391c09ff221a6c6f3634a80a1ccaeb5e77f3f3eb2a",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -295,7 +326,9 @@
         "bodyIndex": 20,
         "paragraphIndex": 19
       },
-      "textHash": "4615acdabfd65b7aed532157738013acd3d36c554ce8d20b422d807774a7861a"
+      "paragraphStyleId": "",
+      "textHash": "38e6dbb5adc07bf43d319a9cb902950bee62109d8e659e8b8c81c06dbe6995c7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -306,7 +339,9 @@
         "bodyIndex": 21,
         "paragraphIndex": 20
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -317,7 +352,9 @@
         "bodyIndex": 22,
         "paragraphIndex": 21
       },
-      "textHash": "e18b1fbe48e1ca2b3f87cd0c5605438c1eb2d4ea16230456adcf65b342f930de"
+      "paragraphStyleId": "",
+      "textHash": "e18b1fbe48e1ca2b3f87cd0c5605438c1eb2d4ea16230456adcf65b342f930de",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -328,7 +365,9 @@
         "bodyIndex": 23,
         "paragraphIndex": 22
       },
-      "textHash": "2c6d908ff0a9b492a68101849283f8c97166ab25c119bfbe905533689dfdbd91"
+      "paragraphStyleId": "",
+      "textHash": "feca096bea47658ec165c13046ea450dd9e0ba47b2df48f5f8fb0e561d2ce8da",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -339,7 +378,9 @@
         "bodyIndex": 24,
         "paragraphIndex": 23
       },
-      "textHash": "68aacb06bc77e72f14ab00dbaad1f8149c01a0fbda6b97353a0cfd62eee708c5"
+      "paragraphStyleId": "",
+      "textHash": "f0a73102d9a2cca0fcbd7451d77851f4e1a1b99b9f50004d13c344962e6c4fb7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -350,7 +391,9 @@
         "bodyIndex": 25,
         "paragraphIndex": 24
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -361,7 +404,9 @@
         "bodyIndex": 26,
         "paragraphIndex": 25
       },
-      "textHash": "a92c6575aae988c774d76186214f3b3a2f3ae6b4c0a5844237b70800aad07081"
+      "paragraphStyleId": "",
+      "textHash": "a92c6575aae988c774d76186214f3b3a2f3ae6b4c0a5844237b70800aad07081",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -372,7 +417,9 @@
         "bodyIndex": 27,
         "paragraphIndex": 26
       },
-      "textHash": "a5e0ded98e1a66a42bb238e9f40ee13616e6876829627dff0c31b8a91c05d34e"
+      "paragraphStyleId": "",
+      "textHash": "09de354531db7f09979fa8b46efe6fe7ad0e4022f785f607d25579abaff02cab",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -383,7 +430,9 @@
         "bodyIndex": 28,
         "paragraphIndex": 27
       },
-      "textHash": "785cd46fb5cfe668310e891f2ff1df2d024a34f82d3879f0a2918fca51b066b2"
+      "paragraphStyleId": "",
+      "textHash": "c1dd9b7122cebd98011452a7c9b9cd1ab6d57e460ba7df75c3c02d2186819221",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -394,7 +443,9 @@
         "bodyIndex": 29,
         "paragraphIndex": 28
       },
-      "textHash": "1192dc66b3e0969660a7be4e75a4ec9733732347a3ae84ff99fd0546d249935a"
+      "paragraphStyleId": "",
+      "textHash": "1192dc66b3e0969660a7be4e75a4ec9733732347a3ae84ff99fd0546d249935a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -405,6 +456,7 @@
         "bodyIndex": 30,
         "paragraphIndex": 29
       },
+      "paragraphStyleId": "3",
       "textHash": "d687f6e9804c504f6ebf52f2c40e20db531d2dcba4adb254abd3933a478ce71d",
       "headingLevel": 3,
       "title": "（二）其他可选舰灵"
@@ -418,7 +470,9 @@
         "bodyIndex": 31,
         "paragraphIndex": 30
       },
-      "textHash": "bd663be6707d67aef8d20f578e5e9d4c039e48eb2ddb9a3cf8061e84ea72af14"
+      "paragraphStyleId": "",
+      "textHash": "bd663be6707d67aef8d20f578e5e9d4c039e48eb2ddb9a3cf8061e84ea72af14",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -429,7 +483,9 @@
         "bodyIndex": 32,
         "paragraphIndex": 31
       },
-      "textHash": "a848120e70c090db5785629273981b94844bdbc4c1d16170f902e12154410ff9"
+      "paragraphStyleId": "",
+      "textHash": "88bba9a0057e31893f0b60130f3a397c554b54a8a857d15160127f1df54aea48",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -440,7 +496,9 @@
         "bodyIndex": 33,
         "paragraphIndex": 32
       },
-      "textHash": "f17f7a1826d69e30df12d993da80b32b5c203e1591a6ae652dcaa15bfc6d76fa"
+      "paragraphStyleId": "",
+      "textHash": "2ad7103bebb802e002839f2e8d08129f0c5371deab3bafc94fc63667b0adf14c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -451,7 +509,9 @@
         "bodyIndex": 34,
         "paragraphIndex": 33
       },
-      "textHash": "4bd93c3e3f2008c52ebee8669766bb30df6d158bc70b8373eeeb49fc07d67777"
+      "paragraphStyleId": "",
+      "textHash": "a3925391c375348f8d21a84ab4dcada3a6b8d0b01cce6bb953caaff65d3bb2de",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -462,7 +522,9 @@
         "bodyIndex": 35,
         "paragraphIndex": 34
       },
-      "textHash": "915d3ed94928b2c24577a7d3399936b229e872e46b279213156c74d34b111066"
+      "paragraphStyleId": "",
+      "textHash": "4be1eab0f0f407f4150036fe582aea506885a507d39e7dc2a88f49e53e104e04",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -473,7 +535,9 @@
         "bodyIndex": 36,
         "paragraphIndex": 35
       },
-      "textHash": "09a1b20e345a0ad6ed94ca02a7982444e7285dc96493ee386589e5a82334b280"
+      "paragraphStyleId": "",
+      "textHash": "7d995b264ac176835b0265d0a93fd28c9ba6c42af2808776c11e3fc0de4f25d1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -484,7 +548,9 @@
         "bodyIndex": 37,
         "paragraphIndex": 36
       },
-      "textHash": "426ded36cea29def8f3a2e26c42d76b5b4ada0386016ff7240704f202e4e2be6"
+      "paragraphStyleId": "",
+      "textHash": "f6feef8e015e79522e65bb9cbb2ccb107ba2759c0f6157ee94670edd2753f075",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -495,7 +561,9 @@
         "bodyIndex": 38,
         "paragraphIndex": 37
       },
-      "textHash": "60a2967e1992c1768e732bfabcc6eae0e9d55e42232e552285a338c99178a836"
+      "paragraphStyleId": "",
+      "textHash": "883944ff55c12581ac00445d35b4ada3f818b2ef159a346f87651ccad29f5809",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -506,7 +574,9 @@
         "bodyIndex": 39,
         "paragraphIndex": 38
       },
-      "textHash": "53d68c5fdacc1c2f8b5c2dc321e69f37329aae7aaf6da5a0ba5d0b0fb18b10a0"
+      "paragraphStyleId": "",
+      "textHash": "2d09692b96b60373372968e770f31e58d006c8e9806b0510990c3972511f6a7e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -517,7 +587,9 @@
         "bodyIndex": 40,
         "paragraphIndex": 39
       },
-      "textHash": "09c2082c67c6a894b3b2e50648414eafc56324ba445801b7f64c873ed45ba761"
+      "paragraphStyleId": "",
+      "textHash": "3bebde53fbe2d3ce511dcaf02dd699dd48eb6a6786f45e8e02628faeea20a9c4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -528,7 +600,9 @@
         "bodyIndex": 41,
         "paragraphIndex": 40
       },
-      "textHash": "1493cfa00326e776e4622152317da04370566c66cc113cd6971e711b4bf3fe20"
+      "paragraphStyleId": "",
+      "textHash": "7bb63e5adfa36a0d7a2c40dd0f6c899345d0da9e277c74cbaa59e4dcbb741307",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -539,7 +613,9 @@
         "bodyIndex": 42,
         "paragraphIndex": 41
       },
-      "textHash": "e54b850923b09d426aa53380908dd689c8f6aaa56ee14c18039fd5e03cac65c7"
+      "paragraphStyleId": "",
+      "textHash": "5b658f24b35dce9ad0c97a91b1196097fd385bd3d8c686265578050ffe9730a5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -550,7 +626,9 @@
         "bodyIndex": 43,
         "paragraphIndex": 42
       },
-      "textHash": "27f28c075717a19651f05127e84fb0aa56a6e446eee889dd25b88b90081d673a"
+      "paragraphStyleId": "",
+      "textHash": "27f28c075717a19651f05127e84fb0aa56a6e446eee889dd25b88b90081d673a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -561,7 +639,9 @@
         "bodyIndex": 44,
         "paragraphIndex": 43
       },
-      "textHash": "98e2290aa6c205f91134742a98975ef6d910c264258ab7e0e763708103a45e65"
+      "paragraphStyleId": "",
+      "textHash": "98e2290aa6c205f91134742a98975ef6d910c264258ab7e0e763708103a45e65",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -572,7 +652,9 @@
         "bodyIndex": 45,
         "paragraphIndex": 44
       },
-      "textHash": "598c8e0155459d17efc1934906838cfb0294d6036d8e444c41617aeba3020dcf"
+      "paragraphStyleId": "",
+      "textHash": "598c8e0155459d17efc1934906838cfb0294d6036d8e444c41617aeba3020dcf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -583,6 +665,7 @@
         "bodyIndex": 46,
         "paragraphIndex": 45
       },
+      "paragraphStyleId": "2",
       "textHash": "d45903293eb3b1afae01777220d7db404e769215f39832135e5b438fff2e5bfc",
       "headingLevel": 2,
       "title": "装备选择"
@@ -596,7 +679,9 @@
         "bodyIndex": 47,
         "paragraphIndex": 46
       },
-      "textHash": "dda800ac8c9f4a5fed20fea6f22df761769c145c4f4513f0be0e8c724224a712"
+      "paragraphStyleId": "",
+      "textHash": "6af498d0cb5add18c6d5fb7289b26c3298b8b763cf3f530a21e3e68c22cf7d22",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -607,6 +692,7 @@
         "bodyIndex": 48,
         "paragraphIndex": 47
       },
+      "paragraphStyleId": "3",
       "textHash": "d1353a6598f08d0ae70ef1b7e14994a9dc5e9f5d71ea4890c41f254e302fd39a",
       "headingLevel": 3,
       "title": "（一）命中雷达"
@@ -620,7 +706,9 @@
         "bodyIndex": 49,
         "paragraphIndex": 48
       },
-      "textHash": "9171484045fb0e50087b3f622806de4e046ebba0b8c20eea32aa7737979f6597"
+      "paragraphStyleId": "",
+      "textHash": "1a1e05d7e6ad587e5404adc8b52df714b876b6368efe0bc29b537c6ea38d493d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -631,7 +719,9 @@
         "bodyIndex": 50,
         "paragraphIndex": 49
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -642,7 +732,9 @@
         "bodyIndex": 52,
         "paragraphIndex": 50
       },
-      "textHash": "ec2f29cb8ea0fee8279f1503f3a18c70b959f9f5e31010ee2842f8c9c65caaa1"
+      "paragraphStyleId": "",
+      "textHash": "ec2f29cb8ea0fee8279f1503f3a18c70b959f9f5e31010ee2842f8c9c65caaa1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -653,6 +745,7 @@
         "bodyIndex": 53,
         "paragraphIndex": 51
       },
+      "paragraphStyleId": "3",
       "textHash": "44bc32d8fd68f9b6f84e38e17f892743d6572d53474a403bfe9f827713f99a16",
       "headingLevel": 3,
       "title": "（二）轰炸航母"
@@ -666,7 +759,9 @@
         "bodyIndex": 54,
         "paragraphIndex": 52
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -677,7 +772,9 @@
         "bodyIndex": 55,
         "paragraphIndex": 53
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -688,7 +785,9 @@
         "bodyIndex": 56,
         "paragraphIndex": 54
       },
-      "textHash": "b12bf93622c9917ab6fc737cddcc1112c12d6a0c521de99fcf4973280f71b2ee"
+      "paragraphStyleId": "aff1",
+      "textHash": "b12bf93622c9917ab6fc737cddcc1112c12d6a0c521de99fcf4973280f71b2ee",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -699,7 +798,9 @@
         "bodyIndex": 57,
         "paragraphIndex": 55
       },
-      "textHash": "e6ad596019f86f2734323eda5f29dd65ecafefdf8722735cb96b1998be302860"
+      "paragraphStyleId": "",
+      "textHash": "e6ad596019f86f2734323eda5f29dd65ecafefdf8722735cb96b1998be302860",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -710,6 +811,7 @@
         "bodyIndex": 58,
         "paragraphIndex": 56
       },
+      "paragraphStyleId": "4",
       "textHash": "3ce7efcfac7598d32b05b86fb2dd899254efbe8cace231ee46727ff45ca1a256",
       "headingLevel": 4,
       "title": "战斗机："
@@ -723,7 +825,9 @@
         "bodyIndex": 59,
         "paragraphIndex": 57
       },
-      "textHash": "91609cb4435d5bb71c1b5b23e41c4af6b6b6dc2662e108478522b037b7fabb98"
+      "paragraphStyleId": "",
+      "textHash": "22a9078490c610fbe25372c5aba40a4566321081f4d1dd95b8f7e3afdc4298c9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -734,7 +838,9 @@
         "bodyIndex": 60,
         "paragraphIndex": 58
       },
-      "textHash": "baa65f4e576c37b9c2db9984d04ac9240ebc6794a9979e1df0f0c68c2300c481"
+      "paragraphStyleId": "",
+      "textHash": "f0e16ccbaef09ce4c34552832ddb5d6943ac0ac4a55189ab2fac962563ac9127",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -745,7 +851,9 @@
         "bodyIndex": 62,
         "paragraphIndex": 59
       },
-      "textHash": "d661808bb774546805b4031a56b8da924ed6629b30b5f79c44008c0b00e7600d"
+      "paragraphStyleId": "aff1",
+      "textHash": "d661808bb774546805b4031a56b8da924ed6629b30b5f79c44008c0b00e7600d",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -756,6 +864,7 @@
         "bodyIndex": 63,
         "paragraphIndex": 60
       },
+      "paragraphStyleId": "4",
       "textHash": "745f96f868f4d96be3a56992daa4ae19ce73029a6cb24e3a24cff2e3e9b672e5",
       "headingLevel": 4,
       "title": "轰炸机："
@@ -769,7 +878,9 @@
         "bodyIndex": 64,
         "paragraphIndex": 61
       },
-      "textHash": "36e9ea18dc0db6e935b25591dac2908f072d85ce07c3afa2b4eadfb93508a479"
+      "paragraphStyleId": "",
+      "textHash": "4748f2fd059bc2e74498d7f09d63f1de64a3dda3fe586ab0c64ec28c25b36083",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -780,7 +891,9 @@
         "bodyIndex": 65,
         "paragraphIndex": 62
       },
-      "textHash": "3276818c114814f71f45cfcb25ff7ea941361aa2b763745cc249d2324e4e43d5"
+      "paragraphStyleId": "",
+      "textHash": "5b8848ad2e4586e41bb41885143c3e237daaffa8dc896ad7722078d919f127cd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -791,7 +904,9 @@
         "bodyIndex": 66,
         "paragraphIndex": 63
       },
-      "textHash": "a3cf5ce248465eb3e56dbb7de2834bbe931d858b3c13bcfe48d295e5b0f62d44"
+      "paragraphStyleId": "",
+      "textHash": "4896dc10259e22b3f3778ac56502bbebe3f2715e3b9d7bfdab1bfb93784e4246",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -802,7 +917,9 @@
         "bodyIndex": 68,
         "paragraphIndex": 64
       },
-      "textHash": "0eeb9e266b9433d9bca7d36074c5e721136774c989b874472bd9f6167669299c"
+      "paragraphStyleId": "aff1",
+      "textHash": "0eeb9e266b9433d9bca7d36074c5e721136774c989b874472bd9f6167669299c",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -813,6 +930,7 @@
         "bodyIndex": 69,
         "paragraphIndex": 65
       },
+      "paragraphStyleId": "4",
       "textHash": "7332c82a264c87bf10c9b875f9d0876315c0a72f69aeb191e7986b10632c889c",
       "headingLevel": 4,
       "title": "鱼雷机："
@@ -826,7 +944,9 @@
         "bodyIndex": 70,
         "paragraphIndex": 66
       },
-      "textHash": "584f15be5fc986024c212e40bfeb70327d02757070a1993f1bb6bbf468664529"
+      "paragraphStyleId": "",
+      "textHash": "888c9ca9fd8114fe1c0c4d10382044b30d84ba4a29969c6cb8275daf9234cc64",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -837,7 +957,9 @@
         "bodyIndex": 72,
         "paragraphIndex": 67
       },
-      "textHash": "a163b56a217654a92ce87c2d45d3762f2ef0dafd529dfd4040841275a1f27f56"
+      "paragraphStyleId": "aff1",
+      "textHash": "a163b56a217654a92ce87c2d45d3762f2ef0dafd529dfd4040841275a1f27f56",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -848,6 +970,7 @@
         "bodyIndex": 73,
         "paragraphIndex": 68
       },
+      "paragraphStyleId": "4",
       "textHash": "9201dbd460ee4d447c1be3d5b3bc9391c0785edd831c379bda5e3df30c7063a0",
       "headingLevel": 4,
       "title": "设备位："
@@ -861,7 +984,9 @@
         "bodyIndex": 74,
         "paragraphIndex": 69
       },
-      "textHash": "476f6a944057c25b0e3078c8cb74044f58fb2d1761c2b4201ba5738fb5bfbad8"
+      "paragraphStyleId": "",
+      "textHash": "476f6a944057c25b0e3078c8cb74044f58fb2d1761c2b4201ba5738fb5bfbad8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -872,7 +997,9 @@
         "bodyIndex": 75,
         "paragraphIndex": 70
       },
-      "textHash": "36cb407149738985e9d8f30d87717e3228e49bb6ac70b9ecd68a8cbe006d05c8"
+      "paragraphStyleId": "",
+      "textHash": "eabd15e5fe824f1d04efffc78ff250eadae0013833b6a0dfb30e9e5849a97c8a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -883,7 +1010,9 @@
         "bodyIndex": 76,
         "paragraphIndex": 71
       },
-      "textHash": "e2503ff525681d6f5fbe3e66815271e32bb5312bf8a89687025e0d6c353b5ef8"
+      "paragraphStyleId": "",
+      "textHash": "1b5c7e6077eb0ceeb867d781b3ef0f8d4201ee38fc033a0dc2d58e7b0eefe2e9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -894,7 +1023,9 @@
         "bodyIndex": 78,
         "paragraphIndex": 72
       },
-      "textHash": "93b610bad5ae5af5c613a3cef4197059e074f00cb155324ce1dd2209b0e6aac4"
+      "paragraphStyleId": "aff1",
+      "textHash": "93b610bad5ae5af5c613a3cef4197059e074f00cb155324ce1dd2209b0e6aac4",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -905,6 +1036,7 @@
         "bodyIndex": 79,
         "paragraphIndex": 73
       },
+      "paragraphStyleId": "3",
       "textHash": "b45a062e856cc3d1c42c65d3b959b489e9eceb3c7f0d48616ed65eb1a4be212e",
       "headingLevel": 3,
       "title": "（三）穿甲战列"
@@ -918,7 +1050,9 @@
         "bodyIndex": 80,
         "paragraphIndex": 74
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -929,7 +1063,9 @@
         "bodyIndex": 81,
         "paragraphIndex": 75
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -940,7 +1076,9 @@
         "bodyIndex": 82,
         "paragraphIndex": 76
       },
-      "textHash": "678d7de882c94ac43e35d389032d2185a5ae2770e4c1f65a0398e5652366f72d"
+      "paragraphStyleId": "aff1",
+      "textHash": "678d7de882c94ac43e35d389032d2185a5ae2770e4c1f65a0398e5652366f72d",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -951,7 +1089,9 @@
         "bodyIndex": 83,
         "paragraphIndex": 77
       },
-      "textHash": "fe82b72a55bfca9f107ad6dc7d21f45e532cc9547698eca6e0d8d2de6dc3c04c"
+      "paragraphStyleId": "",
+      "textHash": "fe82b72a55bfca9f107ad6dc7d21f45e532cc9547698eca6e0d8d2de6dc3c04c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -962,7 +1102,9 @@
         "bodyIndex": 84,
         "paragraphIndex": 78
       },
-      "textHash": "f14c219bb802a819e48cf6c2506b9988766e68c45b26f252aa6f62ba9932e425"
+      "paragraphStyleId": "",
+      "textHash": "f14c219bb802a819e48cf6c2506b9988766e68c45b26f252aa6f62ba9932e425",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -973,7 +1115,9 @@
         "bodyIndex": 85,
         "paragraphIndex": 79
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -984,6 +1128,7 @@
         "bodyIndex": 86,
         "paragraphIndex": 80
       },
+      "paragraphStyleId": "4",
       "textHash": "774d41e8323bcb2e0167c87e8b3416dc92046dec0d0d5b1bbcc0ca6b092a837f",
       "headingLevel": 4,
       "title": "主炮："
@@ -997,7 +1142,9 @@
         "bodyIndex": 87,
         "paragraphIndex": 81
       },
-      "textHash": "faf32f7b06d04710d17396730b1f0ad78c5b350352890436d4bae6c29ab59b54"
+      "paragraphStyleId": "",
+      "textHash": "350d90682fbed3c86affa174f043553ed79042d4ce0883280823c8a78487b821",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1008,7 +1155,9 @@
         "bodyIndex": 89,
         "paragraphIndex": 82
       },
-      "textHash": "674c2802e069a38f617a4edf5ada5f40694e9b3cfb9e5cb1a4d96289e769bc89"
+      "paragraphStyleId": "aff1",
+      "textHash": "674c2802e069a38f617a4edf5ada5f40694e9b3cfb9e5cb1a4d96289e769bc89",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1019,6 +1168,7 @@
         "bodyIndex": 90,
         "paragraphIndex": 83
       },
+      "paragraphStyleId": "4",
       "textHash": "049edf6f31fafe4755da7ffca6226d70d86b05df30834673b306848dbd2fae63",
       "headingLevel": 4,
       "title": "副炮："
@@ -1032,7 +1182,9 @@
         "bodyIndex": 91,
         "paragraphIndex": 84
       },
-      "textHash": "e8f185871889a8470c4c16e04ef43fb56b6d42adf938a6b5bca22a7ff1f23c87"
+      "paragraphStyleId": "",
+      "textHash": "8d79a26a9c5045ab5a123d7ecfcd5420f88a7b630d0cae6b3339fdccb7f0d4f2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1043,7 +1195,9 @@
         "bodyIndex": 92,
         "paragraphIndex": 85
       },
-      "textHash": "bf0331642ff268046b7a3fc58966a402275a0c19fce45a39582003eda8734d2a"
+      "paragraphStyleId": "",
+      "textHash": "b4f0af1fd5b2afd8282087629a715350f74001bcd6ab887870c5a196f2d42c97",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1054,7 +1208,9 @@
         "bodyIndex": 94,
         "paragraphIndex": 86
       },
-      "textHash": "597c6a8926d3232b55fedb097685ffef4bda35987ed1c40a256595eb1c3f02b7"
+      "paragraphStyleId": "aff1",
+      "textHash": "597c6a8926d3232b55fedb097685ffef4bda35987ed1c40a256595eb1c3f02b7",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1065,6 +1221,7 @@
         "bodyIndex": 95,
         "paragraphIndex": 87
       },
+      "paragraphStyleId": "4",
       "textHash": "ac791c62bd4bab7071462c0eb631c03dc242661e531a5c140e895ca3131123ac",
       "headingLevel": 4,
       "title": "防空炮："
@@ -1078,7 +1235,9 @@
         "bodyIndex": 96,
         "paragraphIndex": 88
       },
-      "textHash": "0bee2701b81297e102885926f0ad6c4b258c3772eda053e0210fec907deb0d86"
+      "paragraphStyleId": "",
+      "textHash": "a39430ad6b1530a893bbb15d946c6d1827db4529af1283e05ada4e7360785a26",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1089,7 +1248,9 @@
         "bodyIndex": 98,
         "paragraphIndex": 89
       },
-      "textHash": "6fa6a1f32a6b3bcd32e7d2fc2c0f84702979275140a8252227a0e2d7ef8366ce"
+      "paragraphStyleId": "aff1",
+      "textHash": "6fa6a1f32a6b3bcd32e7d2fc2c0f84702979275140a8252227a0e2d7ef8366ce",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1100,6 +1261,7 @@
         "bodyIndex": 99,
         "paragraphIndex": 90
       },
+      "paragraphStyleId": "4",
       "textHash": "3dbd64c133030f94cacc3fbeff9d2b3005a75015607f4df524dd7358951fd5ca",
       "headingLevel": 4,
       "title": "设备："
@@ -1113,7 +1275,9 @@
         "bodyIndex": 100,
         "paragraphIndex": 91
       },
-      "textHash": "0f6a44dd9da7b918081ce0f7d0c1aa2691af650d6c98ea2b3eb8a8a99ca13e5a"
+      "paragraphStyleId": "",
+      "textHash": "c8dee8003a7374d27bb8fc7408535f6dff7b7aeb50909d6d38e8d2be007bd9f9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1124,7 +1288,9 @@
         "bodyIndex": 102,
         "paragraphIndex": 92
       },
-      "textHash": "4402ca1e38c0acf7e012451c52aadb4f04a75b14ece7f3230f6092ef3847eb09"
+      "paragraphStyleId": "aff1",
+      "textHash": "4402ca1e38c0acf7e012451c52aadb4f04a75b14ece7f3230f6092ef3847eb09",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1135,7 +1301,9 @@
         "bodyIndex": 103,
         "paragraphIndex": 93
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1146,7 +1314,9 @@
         "bodyIndex": 104,
         "paragraphIndex": 94
       },
-      "textHash": "2f795e4b57317590944ea760c5da9775502773a7a40b25b55d8b2d19be1d39cc"
+      "paragraphStyleId": "",
+      "textHash": "581c53449992c69830f69a8b7aaf52e8eb5fd7c7c93ef37ffa426e43067d250c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1157,7 +1327,9 @@
         "bodyIndex": 105,
         "paragraphIndex": 95
       },
-      "textHash": "5e9f528e254f87fcf46900da7df8acad37ae25c7d6809dbfe70f2f051c5741ea"
+      "paragraphStyleId": "",
+      "textHash": "969e7162e371d6bd4e8221891b7ee3a4d36356a17ec743d87733506461cbcd65",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1168,7 +1340,9 @@
         "bodyIndex": 106,
         "paragraphIndex": 96
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1179,6 +1353,7 @@
         "bodyIndex": 107,
         "paragraphIndex": 97
       },
+      "paragraphStyleId": "3",
       "textHash": "05feb32ee1d9615bd1f8c11dddc3ffc68cc65e6b12621162e9fde6916d3c214a",
       "headingLevel": 3,
       "title": "（四）鱼雷航母"
@@ -1192,7 +1367,9 @@
         "bodyIndex": 108,
         "paragraphIndex": 98
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1203,7 +1380,9 @@
         "bodyIndex": 109,
         "paragraphIndex": 99
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1214,7 +1393,9 @@
         "bodyIndex": 110,
         "paragraphIndex": 100
       },
-      "textHash": "22bd34b8a116ddaab8913c9c20a4f0b95121c985f11fe9f8e9d187aaa87587f9"
+      "paragraphStyleId": "aff1",
+      "textHash": "22bd34b8a116ddaab8913c9c20a4f0b95121c985f11fe9f8e9d187aaa87587f9",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1225,7 +1406,9 @@
         "bodyIndex": 111,
         "paragraphIndex": 101
       },
-      "textHash": "9a313057c72d33ad9272e8d11dfc5ae7ca45733b7e3b80df64907cf0ff707816"
+      "paragraphStyleId": "",
+      "textHash": "9a313057c72d33ad9272e8d11dfc5ae7ca45733b7e3b80df64907cf0ff707816",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1236,7 +1419,9 @@
         "bodyIndex": 112,
         "paragraphIndex": 102
       },
-      "textHash": "a9318d644aa1f39d4510630555a45bfdd6765f120c553f640cdca74692edc267"
+      "paragraphStyleId": "",
+      "textHash": "a9318d644aa1f39d4510630555a45bfdd6765f120c553f640cdca74692edc267",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1247,6 +1432,7 @@
         "bodyIndex": 113,
         "paragraphIndex": 103
       },
+      "paragraphStyleId": "4",
       "textHash": "3ce7efcfac7598d32b05b86fb2dd899254efbe8cace231ee46727ff45ca1a256",
       "headingLevel": 4,
       "title": "战斗机："
@@ -1260,7 +1446,9 @@
         "bodyIndex": 114,
         "paragraphIndex": 104
       },
-      "textHash": "1058cad4a7bc258d9c0fb841bebd0b9bd1108174632260f68ca3ba3109e8ddf8"
+      "paragraphStyleId": "",
+      "textHash": "8a59af9d7957c8f721748456f938e58911e4b8f0da47837e900bdbd9a3196f40",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1271,7 +1459,9 @@
         "bodyIndex": 116,
         "paragraphIndex": 105
       },
-      "textHash": "d661808bb774546805b4031a56b8da924ed6629b30b5f79c44008c0b00e7600d"
+      "paragraphStyleId": "aff1",
+      "textHash": "d661808bb774546805b4031a56b8da924ed6629b30b5f79c44008c0b00e7600d",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1282,7 +1472,9 @@
         "bodyIndex": 117,
         "paragraphIndex": 106
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1293,6 +1485,7 @@
         "bodyIndex": 118,
         "paragraphIndex": 107
       },
+      "paragraphStyleId": "4",
       "textHash": "745f96f868f4d96be3a56992daa4ae19ce73029a6cb24e3a24cff2e3e9b672e5",
       "headingLevel": 4,
       "title": "轰炸机："
@@ -1306,7 +1499,9 @@
         "bodyIndex": 119,
         "paragraphIndex": 108
       },
-      "textHash": "e59d0cfda6dafce7ea6a1425791bf9d83b5739969ae30807c80506569fd9a9f9"
+      "paragraphStyleId": "",
+      "textHash": "239324c899b31281e89d2a4c43d2d3cf8894fe1bf0c51cbe532d77c10a58cfd3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1317,7 +1512,9 @@
         "bodyIndex": 121,
         "paragraphIndex": 109
       },
-      "textHash": "0eeb9e266b9433d9bca7d36074c5e721136774c989b874472bd9f6167669299c"
+      "paragraphStyleId": "aff1",
+      "textHash": "0eeb9e266b9433d9bca7d36074c5e721136774c989b874472bd9f6167669299c",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1328,7 +1525,9 @@
         "bodyIndex": 122,
         "paragraphIndex": 110
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1339,6 +1538,7 @@
         "bodyIndex": 123,
         "paragraphIndex": 111
       },
+      "paragraphStyleId": "4",
       "textHash": "7332c82a264c87bf10c9b875f9d0876315c0a72f69aeb191e7986b10632c889c",
       "headingLevel": 4,
       "title": "鱼雷机："
@@ -1352,7 +1552,9 @@
         "bodyIndex": 124,
         "paragraphIndex": 112
       },
-      "textHash": "9fb890712ca145534265d4dc9ba5436d76da85b2990980b18101892e831890d4"
+      "paragraphStyleId": "",
+      "textHash": "9f4238f49b03b240d73926aa47f5742847e78de21216c8e1c9401b794a8a7347",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1363,7 +1565,9 @@
         "bodyIndex": 126,
         "paragraphIndex": 113
       },
-      "textHash": "a163b56a217654a92ce87c2d45d3762f2ef0dafd529dfd4040841275a1f27f56"
+      "paragraphStyleId": "aff1",
+      "textHash": "a163b56a217654a92ce87c2d45d3762f2ef0dafd529dfd4040841275a1f27f56",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1374,7 +1578,9 @@
         "bodyIndex": 127,
         "paragraphIndex": 114
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1385,6 +1591,7 @@
         "bodyIndex": 128,
         "paragraphIndex": 115
       },
+      "paragraphStyleId": "4",
       "textHash": "3dbd64c133030f94cacc3fbeff9d2b3005a75015607f4df524dd7358951fd5ca",
       "headingLevel": 4,
       "title": "设备："
@@ -1398,7 +1605,9 @@
         "bodyIndex": 129,
         "paragraphIndex": 116
       },
-      "textHash": "583f93798f326864395938ea97023e0fad43a2b7ee3b0668a2471057f014202e"
+      "paragraphStyleId": "",
+      "textHash": "583f93798f326864395938ea97023e0fad43a2b7ee3b0668a2471057f014202e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1409,7 +1618,9 @@
         "bodyIndex": 130,
         "paragraphIndex": 117
       },
-      "textHash": "dd81ea618503351d0a1001b48d2493430503974f5b5a058a7aa0f17734dd5e1e"
+      "paragraphStyleId": "",
+      "textHash": "dd81ea618503351d0a1001b48d2493430503974f5b5a058a7aa0f17734dd5e1e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1420,6 +1631,7 @@
         "bodyIndex": 131,
         "paragraphIndex": 118
       },
+      "paragraphStyleId": "3",
       "textHash": "595fe8d814e2a41efb11f8b7d18076849dd76e0db25c71aa3ec85ba62c8fce85",
       "headingLevel": 3,
       "title": "（五）雷巡"
@@ -1433,7 +1645,9 @@
         "bodyIndex": 132,
         "paragraphIndex": 119
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1444,7 +1658,9 @@
         "bodyIndex": 133,
         "paragraphIndex": 120
       },
-      "textHash": "b39dd740222896970a845ad7ccc1e50e61fb714bc7a666a401a4d7ab7f54a814"
+      "paragraphStyleId": "aff1",
+      "textHash": "b39dd740222896970a845ad7ccc1e50e61fb714bc7a666a401a4d7ab7f54a814",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1455,7 +1671,9 @@
         "bodyIndex": 134,
         "paragraphIndex": 121
       },
-      "textHash": "53ffcd293245b193144e0e94bf0a8b353e5f08370ef8bc061df1abe62cbe4321"
+      "paragraphStyleId": "",
+      "textHash": "53ffcd293245b193144e0e94bf0a8b353e5f08370ef8bc061df1abe62cbe4321",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1466,7 +1684,9 @@
         "bodyIndex": 135,
         "paragraphIndex": 122
       },
-      "textHash": "1ffad03b3d681c5f2e767b1ab822c109f4db34511ca486593b81eb68a7496566"
+      "paragraphStyleId": "",
+      "textHash": "1ffad03b3d681c5f2e767b1ab822c109f4db34511ca486593b81eb68a7496566",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1477,6 +1697,7 @@
         "bodyIndex": 136,
         "paragraphIndex": 123
       },
+      "paragraphStyleId": "4",
       "textHash": "774d41e8323bcb2e0167c87e8b3416dc92046dec0d0d5b1bbcc0ca6b092a837f",
       "headingLevel": 4,
       "title": "主炮："
@@ -1490,7 +1711,9 @@
         "bodyIndex": 137,
         "paragraphIndex": 124
       },
-      "textHash": "3688a403aac7f3010cdd53aaf090ec1a675829d8d8492e3f24c2a2220bd9cffa"
+      "paragraphStyleId": "",
+      "textHash": "a0b7a80a436b53f584ac89ca08320322de3d0ee7e9a56a1d11709df30c242707",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1501,7 +1724,9 @@
         "bodyIndex": 139,
         "paragraphIndex": 125
       },
-      "textHash": "674c2802e069a38f617a4edf5ada5f40694e9b3cfb9e5cb1a4d96289e769bc89"
+      "paragraphStyleId": "aff1",
+      "textHash": "674c2802e069a38f617a4edf5ada5f40694e9b3cfb9e5cb1a4d96289e769bc89",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1512,7 +1737,9 @@
         "bodyIndex": 140,
         "paragraphIndex": 126
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1523,6 +1750,7 @@
         "bodyIndex": 141,
         "paragraphIndex": 127
       },
+      "paragraphStyleId": "4",
       "textHash": "a8f61ca0b136ec2359fd458f0ee1adbd477e4a756e17f87f558e8ba880faa2e2",
       "headingLevel": 4,
       "title": "鱼雷："
@@ -1536,7 +1764,9 @@
         "bodyIndex": 142,
         "paragraphIndex": 128
       },
-      "textHash": "84623d9fbe21e4cbc811c1c0316bad72a6808654d3d39b7ec9a3210721aec849"
+      "paragraphStyleId": "",
+      "textHash": "a344b72bb22e84c2fbf575b332fbf1004245b10d0597fdfbb6c23e4fb8b1620d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1547,7 +1777,9 @@
         "bodyIndex": 144,
         "paragraphIndex": 129
       },
-      "textHash": "147552690ba95fa6089d6a225c448f71a7f53057492a0f27aaa8c881f2e225cb"
+      "paragraphStyleId": "aff1",
+      "textHash": "147552690ba95fa6089d6a225c448f71a7f53057492a0f27aaa8c881f2e225cb",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1558,7 +1790,9 @@
         "bodyIndex": 145,
         "paragraphIndex": 130
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1569,6 +1803,7 @@
         "bodyIndex": 146,
         "paragraphIndex": 131
       },
+      "paragraphStyleId": "4",
       "textHash": "ac791c62bd4bab7071462c0eb631c03dc242661e531a5c140e895ca3131123ac",
       "headingLevel": 4,
       "title": "防空炮："
@@ -1582,7 +1817,9 @@
         "bodyIndex": 147,
         "paragraphIndex": 132
       },
-      "textHash": "01c074f7247e257eab155ea67310cb171af84b7c0aaaddd950c43bb6f008488d"
+      "paragraphStyleId": "",
+      "textHash": "01c074f7247e257eab155ea67310cb171af84b7c0aaaddd950c43bb6f008488d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1593,6 +1830,7 @@
         "bodyIndex": 148,
         "paragraphIndex": 133
       },
+      "paragraphStyleId": "4",
       "textHash": "3dbd64c133030f94cacc3fbeff9d2b3005a75015607f4df524dd7358951fd5ca",
       "headingLevel": 4,
       "title": "设备："
@@ -1606,7 +1844,9 @@
         "bodyIndex": 149,
         "paragraphIndex": 134
       },
-      "textHash": "576477228563b70193648517892774b0b0dfa9b6da006a2e1ef2c2cb4248aeac"
+      "paragraphStyleId": "",
+      "textHash": "576477228563b70193648517892774b0b0dfa9b6da006a2e1ef2c2cb4248aeac",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1617,7 +1857,9 @@
         "bodyIndex": 151,
         "paragraphIndex": 135
       },
-      "textHash": "c667cb9cfaa177936511d693012a3db29a5094e0afbcb68926004ceacdeea48f"
+      "paragraphStyleId": "aff1",
+      "textHash": "c667cb9cfaa177936511d693012a3db29a5094e0afbcb68926004ceacdeea48f",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1628,7 +1870,9 @@
         "bodyIndex": 152,
         "paragraphIndex": 136
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1639,7 +1883,9 @@
         "bodyIndex": 153,
         "paragraphIndex": 137
       },
-      "textHash": "d9887a9d8afcc07ace486a44d20093435c69d67ce1b6fa3f07ecc93430b8c324"
+      "paragraphStyleId": "",
+      "textHash": "d9887a9d8afcc07ace486a44d20093435c69d67ce1b6fa3f07ecc93430b8c324",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1650,6 +1896,7 @@
         "bodyIndex": 154,
         "paragraphIndex": 138
       },
+      "paragraphStyleId": "3",
       "textHash": "b0756f58ebb0b5b3b361839fee5254f8b2849aa463c5e39f5977e39de7993e09",
       "headingLevel": 3,
       "title": "（六）高爆战列"
@@ -1663,7 +1910,9 @@
         "bodyIndex": 155,
         "paragraphIndex": 139
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1674,7 +1923,9 @@
         "bodyIndex": 156,
         "paragraphIndex": 140
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1685,7 +1936,9 @@
         "bodyIndex": 157,
         "paragraphIndex": 141
       },
-      "textHash": "17058768850fe8ef69e551d6e074046e7008082a67efd407d1877dec226dc373"
+      "paragraphStyleId": "aff1",
+      "textHash": "17058768850fe8ef69e551d6e074046e7008082a67efd407d1877dec226dc373",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1696,7 +1949,9 @@
         "bodyIndex": 158,
         "paragraphIndex": 142
       },
-      "textHash": "3d0280ef3a1cefb8c7b328255dd37b136e4f8bf87373d59db8fc85aada5225e1"
+      "paragraphStyleId": "",
+      "textHash": "3d0280ef3a1cefb8c7b328255dd37b136e4f8bf87373d59db8fc85aada5225e1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1707,7 +1962,9 @@
         "bodyIndex": 159,
         "paragraphIndex": 143
       },
-      "textHash": "74dbb2fedecd900b8871781040a545ea4b6f1b078cefdfd45958557cf85c5e9c"
+      "paragraphStyleId": "",
+      "textHash": "74dbb2fedecd900b8871781040a545ea4b6f1b078cefdfd45958557cf85c5e9c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1718,6 +1975,7 @@
         "bodyIndex": 160,
         "paragraphIndex": 144
       },
+      "paragraphStyleId": "4",
       "textHash": "774d41e8323bcb2e0167c87e8b3416dc92046dec0d0d5b1bbcc0ca6b092a837f",
       "headingLevel": 4,
       "title": "主炮："
@@ -1731,7 +1989,9 @@
         "bodyIndex": 161,
         "paragraphIndex": 145
       },
-      "textHash": "6bfc4a1476c2ab1043a46b752fb307bc3ea650b012d7a417733683371afb70f1"
+      "paragraphStyleId": "",
+      "textHash": "03d720c3a49b9e966b46cfbaf698567a25204418e49a7dc3c3a0440587fe174d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1742,6 +2002,7 @@
         "bodyIndex": 162,
         "paragraphIndex": 146
       },
+      "paragraphStyleId": "4",
       "textHash": "049edf6f31fafe4755da7ffca6226d70d86b05df30834673b306848dbd2fae63",
       "headingLevel": 4,
       "title": "副炮："
@@ -1755,7 +2016,9 @@
         "bodyIndex": 163,
         "paragraphIndex": 147
       },
-      "textHash": "3fa522ecc4da62bce2d0dcbe72e492a9b51dfecbdc945ee0965d44207824f865"
+      "paragraphStyleId": "",
+      "textHash": "2261f88232dd529b487b6b4903ce9af9a26145b1669e5f5e433682d5a7b3ee6d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1766,6 +2029,7 @@
         "bodyIndex": 164,
         "paragraphIndex": 148
       },
+      "paragraphStyleId": "4",
       "textHash": "ac791c62bd4bab7071462c0eb631c03dc242661e531a5c140e895ca3131123ac",
       "headingLevel": 4,
       "title": "防空炮："
@@ -1779,7 +2043,9 @@
         "bodyIndex": 165,
         "paragraphIndex": 149
       },
-      "textHash": "44ef4dc3bcee4280b66087b9b49cbcd931e8554f14fe3b654c052ee0d38d084e"
+      "paragraphStyleId": "",
+      "textHash": "c59ced38b0e575b089f8f02aa608c4b0f875904339ec275742bd6f628b23b874",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1790,6 +2056,7 @@
         "bodyIndex": 166,
         "paragraphIndex": 150
       },
+      "paragraphStyleId": "4",
       "textHash": "3dbd64c133030f94cacc3fbeff9d2b3005a75015607f4df524dd7358951fd5ca",
       "headingLevel": 4,
       "title": "设备："
@@ -1803,7 +2070,9 @@
         "bodyIndex": 167,
         "paragraphIndex": 151
       },
-      "textHash": "4b2ce773f7931f751444482b1dce6a7b1dd98e26fdffeb003de8cda4b1feb241"
+      "paragraphStyleId": "",
+      "textHash": "61ad1c7b4af57507af757c0ff4043718b6a635a696ea8d66e04dc2484ec71a44",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1814,7 +2083,9 @@
         "bodyIndex": 169,
         "paragraphIndex": 152
       },
-      "textHash": "4402ca1e38c0acf7e012451c52aadb4f04a75b14ece7f3230f6092ef3847eb09"
+      "paragraphStyleId": "aff1",
+      "textHash": "4402ca1e38c0acf7e012451c52aadb4f04a75b14ece7f3230f6092ef3847eb09",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1825,7 +2096,9 @@
         "bodyIndex": 170,
         "paragraphIndex": 153
       },
-      "textHash": "5e9f528e254f87fcf46900da7df8acad37ae25c7d6809dbfe70f2f051c5741ea"
+      "paragraphStyleId": "",
+      "textHash": "5e9f528e254f87fcf46900da7df8acad37ae25c7d6809dbfe70f2f051c5741ea",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1836,6 +2109,7 @@
         "bodyIndex": 171,
         "paragraphIndex": 154
       },
+      "paragraphStyleId": "2",
       "textHash": "1b3c10065e31f3884bbc7e5d5cebc58edb1cbf130d36281f6b6558fcf6f3fe2f",
       "headingLevel": 2,
       "title": "天赋选择"
@@ -1849,7 +2123,9 @@
         "bodyIndex": 172,
         "paragraphIndex": 155
       },
-      "textHash": "26cedc8ed01b0400756392d0d2fced73c195365b41971c54d4d78982e6c62913"
+      "paragraphStyleId": "",
+      "textHash": "26cedc8ed01b0400756392d0d2fced73c195365b41971c54d4d78982e6c62913",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1860,6 +2136,7 @@
         "bodyIndex": 173,
         "paragraphIndex": 156
       },
+      "paragraphStyleId": "2",
       "textHash": "5dbd83f276621faf79b7b77d8f59307eb8be43b5d05636c897d6b45bdd3e197d",
       "headingLevel": 2,
       "title": "技能学习"
@@ -1873,7 +2150,9 @@
         "bodyIndex": 174,
         "paragraphIndex": 157
       },
-      "textHash": "75c89fbee4a53c3edebad36c1a6e13a514629189ab744c18129f3d1d2a53a152"
+      "paragraphStyleId": "",
+      "textHash": "0d6b2660c12282e4949711aff714fc9ac6102972716272eea550a765a87ffc1c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1884,7 +2163,9 @@
         "bodyIndex": 175,
         "paragraphIndex": 158
       },
-      "textHash": "9f8cbd5562595946ad743e4b6cdbebd613cb4890dd1117abddc5b22fa8ce4a9b"
+      "paragraphStyleId": "",
+      "textHash": "9f8cbd5562595946ad743e4b6cdbebd613cb4890dd1117abddc5b22fa8ce4a9b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1895,7 +2176,9 @@
         "bodyIndex": 176,
         "paragraphIndex": 159
       },
-      "textHash": "276fdf2d44ee9e07f220c0eab40ade75848a4f4969597121c7e0e178a7bf2403"
+      "paragraphStyleId": "",
+      "textHash": "276fdf2d44ee9e07f220c0eab40ade75848a4f4969597121c7e0e178a7bf2403",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1906,7 +2189,9 @@
         "bodyIndex": 177,
         "paragraphIndex": 160
       },
-      "textHash": "a8f9cb262d3af4443c5bef0a7e6dff8b3645e1e4b4b9a244560fb25e3570b825"
+      "paragraphStyleId": "",
+      "textHash": "a8f9cb262d3af4443c5bef0a7e6dff8b3645e1e4b4b9a244560fb25e3570b825",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1917,7 +2202,9 @@
         "bodyIndex": 178,
         "paragraphIndex": 161
       },
-      "textHash": "e3eb40e753f22b5444999a1d7f5560b1d6005f03e63e07c29547d2de5096a940"
+      "paragraphStyleId": "",
+      "textHash": "e3eb40e753f22b5444999a1d7f5560b1d6005f03e63e07c29547d2de5096a940",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1928,7 +2215,9 @@
         "bodyIndex": 179,
         "paragraphIndex": 162
       },
-      "textHash": "2feaaad6f4906f623cb0a5e85aca22620f511451e25cca35438071c6ab2304ab"
+      "paragraphStyleId": "",
+      "textHash": "2feaaad6f4906f623cb0a5e85aca22620f511451e25cca35438071c6ab2304ab",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1939,7 +2228,9 @@
         "bodyIndex": 180,
         "paragraphIndex": 163
       },
-      "textHash": "8d7c47ffcd6783fb7b0e98569d29d199e3c3019ab624fa4166f286c9db80432c"
+      "paragraphStyleId": "",
+      "textHash": "747d598e84ddfc4d6e276e0b8b89137c544bb9b99983286e92468f16069cca81",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1950,7 +2241,9 @@
         "bodyIndex": 181,
         "paragraphIndex": 164
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1961,6 +2254,7 @@
         "bodyIndex": 182,
         "paragraphIndex": 165
       },
+      "paragraphStyleId": "2",
       "textHash": "08ed6ededfdb959a56a8bd48c4c01bd0ef0f20dc3ae66b6e7bb0248d0ae0ca99",
       "headingLevel": 2,
       "title": "核心舰灵操作"
@@ -1974,7 +2268,9 @@
         "bodyIndex": 183,
         "paragraphIndex": 166
       },
-      "textHash": "b8b3c681063cfc2953daa37bba835c85865de7a1a73fb91ab96ec0aea6eb50d9"
+      "paragraphStyleId": "",
+      "textHash": "b8b3c681063cfc2953daa37bba835c85865de7a1a73fb91ab96ec0aea6eb50d9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1985,7 +2281,9 @@
         "bodyIndex": 184,
         "paragraphIndex": 167
       },
-      "textHash": "ad736865f103e8541834425cae9a66072d4fa664345a59460f3f298dc6090552"
+      "paragraphStyleId": "",
+      "textHash": "ad736865f103e8541834425cae9a66072d4fa664345a59460f3f298dc6090552",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -1996,7 +2294,9 @@
         "bodyIndex": 185,
         "paragraphIndex": 168
       },
-      "textHash": "f8497ae795681a6584d81c79c3d81850407cbba7601a9d7d7ed3698b0645fde1"
+      "paragraphStyleId": "",
+      "textHash": "f8497ae795681a6584d81c79c3d81850407cbba7601a9d7d7ed3698b0645fde1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2007,7 +2307,9 @@
         "bodyIndex": 186,
         "paragraphIndex": 169
       },
-      "textHash": "dbbf126d6609b26a8c88b9674dc8e36836aa1760403dcf64e813f80472cac2af"
+      "paragraphStyleId": "",
+      "textHash": "dbbf126d6609b26a8c88b9674dc8e36836aa1760403dcf64e813f80472cac2af",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2018,7 +2320,9 @@
         "bodyIndex": 187,
         "paragraphIndex": 170
       },
-      "textHash": "0927d447220ce7039c88fcd36b7e910db2383cd89a43e9cbdc6e5046a610ff97"
+      "paragraphStyleId": "",
+      "textHash": "0927d447220ce7039c88fcd36b7e910db2383cd89a43e9cbdc6e5046a610ff97",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2029,7 +2333,9 @@
         "bodyIndex": 188,
         "paragraphIndex": 171
       },
-      "textHash": "87c88cdb5573cdb619a98047663b67ab466c013b4688624f6fc7b157b6727c8e"
+      "paragraphStyleId": "",
+      "textHash": "87c88cdb5573cdb619a98047663b67ab466c013b4688624f6fc7b157b6727c8e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2040,6 +2346,7 @@
         "bodyIndex": 189,
         "paragraphIndex": 172
       },
+      "paragraphStyleId": "2",
       "textHash": "747f63ae3e9ff283f70dae1b19c1b7df276962687f7c48340b66c69890bf7eba",
       "headingLevel": 2,
       "title": "冲分排轴"
@@ -2053,7 +2360,9 @@
         "bodyIndex": 190,
         "paragraphIndex": 173
       },
-      "textHash": "1445659c291784e15d4f0949f70cb34760ea85b53e47b0d9a1f5700a0df3ff6c"
+      "paragraphStyleId": "",
+      "textHash": "1445659c291784e15d4f0949f70cb34760ea85b53e47b0d9a1f5700a0df3ff6c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2064,7 +2373,9 @@
         "bodyIndex": 191,
         "paragraphIndex": 174
       },
-      "textHash": "564e83eede3469ed2b3e6756434a500e733c926a51e5aa7aa7335da7ce125cec"
+      "paragraphStyleId": "",
+      "textHash": "5057aff02ff122b560afd43e0b70eaeef4ce83c21dce42072936e46c7ed45995",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2075,7 +2386,9 @@
         "bodyIndex": 192,
         "paragraphIndex": 175
       },
-      "textHash": "064feb3ffa8c3a6fa34fe58b4c290216e53f9920ae2d21229a46fc4f2f44658f"
+      "paragraphStyleId": "",
+      "textHash": "064feb3ffa8c3a6fa34fe58b4c290216e53f9920ae2d21229a46fc4f2f44658f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2086,7 +2399,9 @@
         "bodyIndex": 193,
         "paragraphIndex": 176
       },
-      "textHash": "e672c2e80ce0104f95a1fc5cb11cbb397540821416413689f33536dfa757bedd"
+      "paragraphStyleId": "",
+      "textHash": "c2db1c84fe437248ebca3d4e14d3ba07d03b57ef50b65a829b80114912e6883c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2097,7 +2412,9 @@
         "bodyIndex": 194,
         "paragraphIndex": 177
       },
-      "textHash": "dcc85b065027cd8412c0982ffe70156d6df1af65d1bfa6dac7c9f32b475a4784"
+      "paragraphStyleId": "",
+      "textHash": "f87f4d3cf222d4673dd8dc0edb5e9b71dd405a7c2fd0178dc104bd8d865aaf3e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2108,7 +2425,9 @@
         "bodyIndex": 195,
         "paragraphIndex": 178
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2119,7 +2438,9 @@
         "bodyIndex": 196,
         "paragraphIndex": 179
       },
-      "textHash": "d0574c07a960252cee05d77748f8d9592c54de46f8790972314f980b59578519"
+      "paragraphStyleId": "",
+      "textHash": "d0574c07a960252cee05d77748f8d9592c54de46f8790972314f980b59578519",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2130,7 +2451,9 @@
         "bodyIndex": 197,
         "paragraphIndex": 180
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2141,7 +2464,9 @@
         "bodyIndex": 198,
         "paragraphIndex": 181
       },
-      "textHash": "5b52d5d02b672180c9048e94742d9991dd785e54b203fe35aa434c40d6e460df"
+      "paragraphStyleId": "",
+      "textHash": "5b52d5d02b672180c9048e94742d9991dd785e54b203fe35aa434c40d6e460df",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2152,7 +2477,9 @@
         "bodyIndex": 199,
         "paragraphIndex": 182
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2163,7 +2490,9 @@
         "bodyIndex": 200,
         "paragraphIndex": 183
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2174,7 +2503,9 @@
         "bodyIndex": 201,
         "paragraphIndex": 184
       },
-      "textHash": "4f6f2d6c860cc4cab52ced0c04c55b8b7e0c8410e791ba0c4a415835d32138fc"
+      "paragraphStyleId": "",
+      "textHash": "4f6f2d6c860cc4cab52ced0c04c55b8b7e0c8410e791ba0c4a415835d32138fc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2185,7 +2516,9 @@
         "bodyIndex": 202,
         "paragraphIndex": 185
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2196,7 +2529,9 @@
         "bodyIndex": 203,
         "paragraphIndex": 186
       },
-      "textHash": "f7dc23783bfa9ec2399bb2a5a4925a74e6cff95b1720030ceb239e236f98ae1b"
+      "paragraphStyleId": "",
+      "textHash": "f7dc23783bfa9ec2399bb2a5a4925a74e6cff95b1720030ceb239e236f98ae1b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2207,7 +2542,9 @@
         "bodyIndex": 204,
         "paragraphIndex": 187
       },
-      "textHash": "7b36742e52afc520396a812d5e42a8f26848bd8418b10b7c8cb817edc16aa1a3"
+      "paragraphStyleId": "",
+      "textHash": "7b36742e52afc520396a812d5e42a8f26848bd8418b10b7c8cb817edc16aa1a3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2218,6 +2555,7 @@
         "bodyIndex": 205,
         "paragraphIndex": 188
       },
+      "paragraphStyleId": "1",
       "textHash": "4ef676ef60b09530134c525ff0307e76f4241a67ec5f9c22327d03abd1e302af",
       "headingLevel": 1,
       "title": "遭遇战冲分实操"
@@ -2231,7 +2569,9 @@
         "bodyIndex": 206,
         "paragraphIndex": 189
       },
-      "textHash": "d776dc58acc4fc31ee18ab6d5be9b5715b702cde0d61dbb8eaed3c73788f8858"
+      "paragraphStyleId": "",
+      "textHash": "d776dc58acc4fc31ee18ab6d5be9b5715b702cde0d61dbb8eaed3c73788f8858",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2242,7 +2582,9 @@
         "bodyIndex": 207,
         "paragraphIndex": 190
       },
-      "textHash": "d33c4cb7fa2ead2cbdc50da8700d8f27f06279bf70470984bd50eac399de45c5"
+      "paragraphStyleId": "",
+      "textHash": "f1438ce7d601314c670e3ac2caf9ff5482c5b7dcb2ac033f437296bd26812d04",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2253,7 +2595,9 @@
         "bodyIndex": 208,
         "paragraphIndex": 191
       },
-      "textHash": "3db4b750046b8b363956be0bc418dfeb0a88f1e89f99c6356c09bff6512ebd7b"
+      "paragraphStyleId": "",
+      "textHash": "cb5c57f0f23de656e92f2a19522efddd59f2fb99bba34825dd309370651b9055",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2264,7 +2608,9 @@
         "bodyIndex": 209,
         "paragraphIndex": 192
       },
-      "textHash": "27d9cd543c134f663721209e7af2299926bda0a98a10b311ba7c91b476a1f6b7"
+      "paragraphStyleId": "",
+      "textHash": "9e7dc078b4ad220101fb819fb89b9bc6efb150d5e9fb050c0c5d7733afb42b02",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2275,7 +2621,9 @@
         "bodyIndex": 210,
         "paragraphIndex": 193
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2286,7 +2634,9 @@
         "bodyIndex": 211,
         "paragraphIndex": 194
       },
-      "textHash": "d4d266bc2ff5cc47d0fc6cddc27e6f2df834f3050def4ccf217046b4c7f7da33"
+      "paragraphStyleId": "",
+      "textHash": "d4d266bc2ff5cc47d0fc6cddc27e6f2df834f3050def4ccf217046b4c7f7da33",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2297,7 +2647,9 @@
         "bodyIndex": 212,
         "paragraphIndex": 195
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "aff5",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2308,7 +2660,9 @@
         "bodyIndex": 213,
         "paragraphIndex": 196
       },
-      "textHash": "1840c649f3e4fc005ec90e1b55bacfc9e62e2a315bf184c2b2e4b7e3cb36ed8f"
+      "paragraphStyleId": "",
+      "textHash": "1840c649f3e4fc005ec90e1b55bacfc9e62e2a315bf184c2b2e4b7e3cb36ed8f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2319,7 +2673,9 @@
         "bodyIndex": 214,
         "paragraphIndex": 197
       },
-      "textHash": "218f7d35f137fa1a4bc0534c12dddaf4dab8eb9f0c5b64dde30fcc2c6533bc29"
+      "paragraphStyleId": "",
+      "textHash": "218f7d35f137fa1a4bc0534c12dddaf4dab8eb9f0c5b64dde30fcc2c6533bc29",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2330,7 +2686,9 @@
         "bodyIndex": 215,
         "paragraphIndex": 198
       },
-      "textHash": "991d602eac68e9792d19b713c4e4106dc44e8ea05dab93fc9933a74d980cdcf0"
+      "paragraphStyleId": "",
+      "textHash": "991d602eac68e9792d19b713c4e4106dc44e8ea05dab93fc9933a74d980cdcf0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2341,7 +2699,9 @@
         "bodyIndex": 216,
         "paragraphIndex": 199
       },
-      "textHash": "b4b8cc7acc14c9d6e0a4f198efe2d92d9d17bb16d042fc4b4efe0bf1ec395fa6"
+      "paragraphStyleId": "",
+      "textHash": "5457cf1cdc08e9071a5537848bbb92fbc2251d5e5fdcc4b2f0685534326348eb",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2352,7 +2712,9 @@
         "bodyIndex": 217,
         "paragraphIndex": 200
       },
-      "textHash": "1df4309933e2dfe42f45e30190881ceea9b5f83c9328b6cd0f18f97a0d656bac"
+      "paragraphStyleId": "",
+      "textHash": "50e78a7d9a382fb76d0f508dadab3718400e67d5b84a0894eced7a52384884af",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2363,7 +2725,9 @@
         "bodyIndex": 218,
         "paragraphIndex": 201
       },
-      "textHash": "765da194c510934335b59e2dfc84d6d30db3e32e3f59e5bc167cc4720745a1d8"
+      "paragraphStyleId": "",
+      "textHash": "3289f1823675357f145f1bd4c4d99bb135aaf7ac109d73fe33d12868050042ca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2374,7 +2738,9 @@
         "bodyIndex": 219,
         "paragraphIndex": 202
       },
-      "textHash": "8a25d5d6a8371d4a8a02a73fd83e8b3a63b02af4674076481e6a82cdf64979eb"
+      "paragraphStyleId": "",
+      "textHash": "e78faa6d5fce2ac9a85b908fb5c0945e765c71b5f1b3c3150c672e41a7acf01f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2385,7 +2751,9 @@
         "bodyIndex": 220,
         "paragraphIndex": 203
       },
-      "textHash": "bfb7c3949bc05a973a30dd53e9ff18fc4f71f7132f843603bc34a5b2c657723e"
+      "paragraphStyleId": "",
+      "textHash": "958d2e943202bfc45d497d7f18cc282a58d87f161b625beefce25dcab1ff3b1e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2396,6 +2764,7 @@
         "bodyIndex": 221,
         "paragraphIndex": 204
       },
+      "paragraphStyleId": "1",
       "textHash": "4c79dee34596921a322524e75ff9dced03f3e1e6f4e40da0fa0d45531ad21514",
       "headingLevel": 1,
       "title": "结语"
@@ -2409,7 +2778,9 @@
         "bodyIndex": 222,
         "paragraphIndex": 205
       },
-      "textHash": "58d43885e4838c87e5572eac8334df61fbdff80328415cc1c1b1aca47fa13fb1"
+      "paragraphStyleId": "",
+      "textHash": "58d43885e4838c87e5572eac8334df61fbdff80328415cc1c1b1aca47fa13fb1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2420,7 +2791,9 @@
         "bodyIndex": 223,
         "paragraphIndex": 206
       },
-      "textHash": "da842055a14433cbf77a28fc56a987d1bec6b8697f2132c81c7b5d6ef284373c"
+      "paragraphStyleId": "",
+      "textHash": "da842055a14433cbf77a28fc56a987d1bec6b8697f2132c81c7b5d6ef284373c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2431,7 +2804,9 @@
         "bodyIndex": 224,
         "paragraphIndex": 207
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2442,7 +2817,9 @@
         "bodyIndex": 225,
         "paragraphIndex": 208
       },
-      "textHash": "6a93765550a593c7cfe40547ae67a9d4ac7d360f159d05e28a308e98f6e45e24"
+      "paragraphStyleId": "af7",
+      "textHash": "6a93765550a593c7cfe40547ae67a9d4ac7d360f159d05e28a308e98f6e45e24",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2453,7 +2830,9 @@
         "bodyIndex": 226,
         "paragraphIndex": 209
       },
-      "textHash": "6864ca9ef806491e73266085c901982c894f0f73178dc072f06e717ea1b3b6d3"
+      "paragraphStyleId": "",
+      "textHash": "6864ca9ef806491e73266085c901982c894f0f73178dc072f06e717ea1b3b6d3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2464,7 +2843,9 @@
         "bodyIndex": 227,
         "paragraphIndex": 210
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2475,7 +2856,9 @@
         "bodyIndex": 228,
         "paragraphIndex": 211
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2486,7 +2869,9 @@
         "bodyIndex": 229,
         "paragraphIndex": 212
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2497,6 +2882,7 @@
         "bodyIndex": 230,
         "paragraphIndex": 213
       },
+      "paragraphStyleId": "1",
       "textHash": "a1d8842e4451e7ed391e38b5a35a7ad19220cd5bbfd9843ff3c55274f49ff7e0",
       "headingLevel": 1,
       "title": "附录：现有实际轴"
@@ -2510,7 +2896,9 @@
         "bodyIndex": 231,
         "paragraphIndex": 214
       },
-      "textHash": "6386f641598a1388859fe665d13edd4ec0941e5155c5a80c14666bfaad45f40a"
+      "paragraphStyleId": "",
+      "textHash": "6386f641598a1388859fe665d13edd4ec0941e5155c5a80c14666bfaad45f40a",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2521,7 +2909,9 @@
         "bodyIndex": 232,
         "paragraphIndex": 215
       },
-      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38"
+      "paragraphStyleId": "",
+      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2532,7 +2922,9 @@
         "bodyIndex": 233,
         "paragraphIndex": 216
       },
-      "textHash": "fc547335c081550bd9c00663ee2fbf0f3428d74bb66a35b92a198552ce1aece3"
+      "paragraphStyleId": "",
+      "textHash": "fc547335c081550bd9c00663ee2fbf0f3428d74bb66a35b92a198552ce1aece3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2543,7 +2935,9 @@
         "bodyIndex": 234,
         "paragraphIndex": 217
       },
-      "textHash": "a89fb8664d0d7d0bdb0bf059ffd1bfb0a9b96af19a73d6b957b6188f5062cd19"
+      "paragraphStyleId": "",
+      "textHash": "a89fb8664d0d7d0bdb0bf059ffd1bfb0a9b96af19a73d6b957b6188f5062cd19",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2554,7 +2948,9 @@
         "bodyIndex": 235,
         "paragraphIndex": 218
       },
-      "textHash": "3682cd3d736f03e4adb07ab302e54985014a0c4e846d46866fe40d6a6f04aeab"
+      "paragraphStyleId": "",
+      "textHash": "3682cd3d736f03e4adb07ab302e54985014a0c4e846d46866fe40d6a6f04aeab",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2565,7 +2961,9 @@
         "bodyIndex": 236,
         "paragraphIndex": 219
       },
-      "textHash": "7392042e6fbd13e42555f2b263d314c94d3122ed7e590c47e62e9a56fe20409c"
+      "paragraphStyleId": "",
+      "textHash": "7392042e6fbd13e42555f2b263d314c94d3122ed7e590c47e62e9a56fe20409c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2576,7 +2974,9 @@
         "bodyIndex": 237,
         "paragraphIndex": 220
       },
-      "textHash": "3d262c0042beec03c9ebe1f722a6f4b1f341a2c5e86bb41f8873abf1e4ebf5d0"
+      "paragraphStyleId": "",
+      "textHash": "3d262c0042beec03c9ebe1f722a6f4b1f341a2c5e86bb41f8873abf1e4ebf5d0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2587,7 +2987,9 @@
         "bodyIndex": 238,
         "paragraphIndex": 221
       },
-      "textHash": "6487c488446e7d4811495912beaa628a3bad62b6f0fa41247b5048482b9f4398"
+      "paragraphStyleId": "",
+      "textHash": "6487c488446e7d4811495912beaa628a3bad62b6f0fa41247b5048482b9f4398",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2598,7 +3000,9 @@
         "bodyIndex": 239,
         "paragraphIndex": 222
       },
-      "textHash": "63553aede3eba16e85065a2a965472bd7118cdc2ed3d66c1b83fe06fe500826a"
+      "paragraphStyleId": "",
+      "textHash": "63553aede3eba16e85065a2a965472bd7118cdc2ed3d66c1b83fe06fe500826a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2609,7 +3013,9 @@
         "bodyIndex": 240,
         "paragraphIndex": 223
       },
-      "textHash": "e8273ed966979c5af468ed1ba350e2f560100b8b0c0d7f298a7d7b5e794c7fb2"
+      "paragraphStyleId": "",
+      "textHash": "e8273ed966979c5af468ed1ba350e2f560100b8b0c0d7f298a7d7b5e794c7fb2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2620,7 +3026,9 @@
         "bodyIndex": 241,
         "paragraphIndex": 224
       },
-      "textHash": "1c5e426d011a8d5b76314d331fc3f2791636ccd755f7a6319741449a86eb9e3d"
+      "paragraphStyleId": "",
+      "textHash": "1c5e426d011a8d5b76314d331fc3f2791636ccd755f7a6319741449a86eb9e3d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2631,7 +3039,9 @@
         "bodyIndex": 242,
         "paragraphIndex": 225
       },
-      "textHash": "f616b83f9b5a7f899a7a755afb0bf04a181713873c8edb20e109ba9060134d69"
+      "paragraphStyleId": "",
+      "textHash": "4c1dbcddc548b9206ed686cd979e8d289d578f97e39526c323c701214657eaad",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2642,7 +3052,9 @@
         "bodyIndex": 243,
         "paragraphIndex": 226
       },
-      "textHash": "a4f6cd708683a718d357d1ff13ff47314babd97dd443d5646d5cea52e7c20049"
+      "paragraphStyleId": "",
+      "textHash": "a4f6cd708683a718d357d1ff13ff47314babd97dd443d5646d5cea52e7c20049",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2653,7 +3065,9 @@
         "bodyIndex": 244,
         "paragraphIndex": 227
       },
-      "textHash": "7a9002291252d3f9a493cee581a894a1945c4e0971f17dc39eee11d70bfebe53"
+      "paragraphStyleId": "",
+      "textHash": "7a9002291252d3f9a493cee581a894a1945c4e0971f17dc39eee11d70bfebe53",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2664,7 +3078,9 @@
         "bodyIndex": 245,
         "paragraphIndex": 228
       },
-      "textHash": "307a1306f2d6c395a7da0cc509c432fb415c7c2ad3aa3101ef28beab390ad9ad"
+      "paragraphStyleId": "",
+      "textHash": "307a1306f2d6c395a7da0cc509c432fb415c7c2ad3aa3101ef28beab390ad9ad",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2675,7 +3091,9 @@
         "bodyIndex": 246,
         "paragraphIndex": 229
       },
-      "textHash": "6635cd67b5a9ed59c925cc59de37f8410a2433e5ebab2b879716f1b9cd9efb5e"
+      "paragraphStyleId": "",
+      "textHash": "6635cd67b5a9ed59c925cc59de37f8410a2433e5ebab2b879716f1b9cd9efb5e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2686,7 +3104,9 @@
         "bodyIndex": 247,
         "paragraphIndex": 230
       },
-      "textHash": "b21563e02c8d10937a5333a8bcd5cb5037bfb9c8f81db1f26cfece3c122644ca"
+      "paragraphStyleId": "",
+      "textHash": "b21563e02c8d10937a5333a8bcd5cb5037bfb9c8f81db1f26cfece3c122644ca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2697,7 +3117,9 @@
         "bodyIndex": 248,
         "paragraphIndex": 231
       },
-      "textHash": "9266eb9918a73749719dd2c7c485d87348b93d48603944c4d026abede27b01d6"
+      "paragraphStyleId": "",
+      "textHash": "9266eb9918a73749719dd2c7c485d87348b93d48603944c4d026abede27b01d6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2708,7 +3130,9 @@
         "bodyIndex": 249,
         "paragraphIndex": 232
       },
-      "textHash": "1c52aff96fedeeb35cfb034097488f4b07230bf73d7391cbd12b74dba43b5237"
+      "paragraphStyleId": "",
+      "textHash": "1c52aff96fedeeb35cfb034097488f4b07230bf73d7391cbd12b74dba43b5237",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2719,7 +3143,9 @@
         "bodyIndex": 250,
         "paragraphIndex": 233
       },
-      "textHash": "7bad4d4601426ac358ec517d23854c0d3620aaa14ce32945819e0a5b50893a8a"
+      "paragraphStyleId": "",
+      "textHash": "7bad4d4601426ac358ec517d23854c0d3620aaa14ce32945819e0a5b50893a8a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2730,7 +3156,9 @@
         "bodyIndex": 251,
         "paragraphIndex": 234
       },
-      "textHash": "80455ecdbab259c1b3794abaafb5d1fcaef2bde4aef85d4703e40b336647b51a"
+      "paragraphStyleId": "",
+      "textHash": "80455ecdbab259c1b3794abaafb5d1fcaef2bde4aef85d4703e40b336647b51a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2741,7 +3169,9 @@
         "bodyIndex": 252,
         "paragraphIndex": 235
       },
-      "textHash": "24cf5a8166bb3e48f2c239daa6ff14c0cf49323efe490af3f9f653deef4d5455"
+      "paragraphStyleId": "",
+      "textHash": "24cf5a8166bb3e48f2c239daa6ff14c0cf49323efe490af3f9f653deef4d5455",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2752,7 +3182,9 @@
         "bodyIndex": 253,
         "paragraphIndex": 236
       },
-      "textHash": "472b1d584a6124d015aa9556d643b667fd1d3d6a6a15bc3f53880a68b31109a4"
+      "paragraphStyleId": "",
+      "textHash": "472b1d584a6124d015aa9556d643b667fd1d3d6a6a15bc3f53880a68b31109a4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2763,7 +3195,9 @@
         "bodyIndex": 254,
         "paragraphIndex": 237
       },
-      "textHash": "0c637b61b892e43160dce2e1ad82b8b2a4c86990a14de7bf69d5b43b26908555"
+      "paragraphStyleId": "",
+      "textHash": "0c637b61b892e43160dce2e1ad82b8b2a4c86990a14de7bf69d5b43b26908555",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2774,7 +3208,9 @@
         "bodyIndex": 255,
         "paragraphIndex": 238
       },
-      "textHash": "4ba3db676496d59d4869167e40bb849da839a75f4771b759825728a86592a081"
+      "paragraphStyleId": "",
+      "textHash": "4ba3db676496d59d4869167e40bb849da839a75f4771b759825728a86592a081",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2785,7 +3221,9 @@
         "bodyIndex": 256,
         "paragraphIndex": 239
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2796,7 +3234,9 @@
         "bodyIndex": 257,
         "paragraphIndex": 240
       },
-      "textHash": "cca84b1748c4764459863946a11b3c2913f48e8f173d23571a5fec5902e29369"
+      "paragraphStyleId": "",
+      "textHash": "cca84b1748c4764459863946a11b3c2913f48e8f173d23571a5fec5902e29369",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2807,7 +3247,9 @@
         "bodyIndex": 258,
         "paragraphIndex": 241
       },
-      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38"
+      "paragraphStyleId": "",
+      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2818,7 +3260,9 @@
         "bodyIndex": 259,
         "paragraphIndex": 242
       },
-      "textHash": "bd22ae1fe7e843ac182e55ba610291ca5eeb8d99bbc35f9df367d0b0be0e4299"
+      "paragraphStyleId": "",
+      "textHash": "bd22ae1fe7e843ac182e55ba610291ca5eeb8d99bbc35f9df367d0b0be0e4299",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2829,7 +3273,9 @@
         "bodyIndex": 260,
         "paragraphIndex": 243
       },
-      "textHash": "840c948ddabdaec5e4a495abf30250b19c32635dd3dfeba62ba767ab8d42ee6a"
+      "paragraphStyleId": "",
+      "textHash": "840c948ddabdaec5e4a495abf30250b19c32635dd3dfeba62ba767ab8d42ee6a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2840,7 +3286,9 @@
         "bodyIndex": 261,
         "paragraphIndex": 244
       },
-      "textHash": "04346618d095903215b864c9321b66b4ae7b86263579a24aacdbf082a25b6c52"
+      "paragraphStyleId": "",
+      "textHash": "04346618d095903215b864c9321b66b4ae7b86263579a24aacdbf082a25b6c52",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2851,7 +3299,9 @@
         "bodyIndex": 262,
         "paragraphIndex": 245
       },
-      "textHash": "a32e0ae3d8e848955cf3e0a611a12b62d3cea04e869d277e34e41fe12e7cfdfe"
+      "paragraphStyleId": "",
+      "textHash": "a32e0ae3d8e848955cf3e0a611a12b62d3cea04e869d277e34e41fe12e7cfdfe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2862,7 +3312,9 @@
         "bodyIndex": 263,
         "paragraphIndex": 246
       },
-      "textHash": "7ea16f493d6e658cf5e0af0c77521a5fb5dcd01de3262d8e7cee3b83487053e1"
+      "paragraphStyleId": "",
+      "textHash": "7ea16f493d6e658cf5e0af0c77521a5fb5dcd01de3262d8e7cee3b83487053e1",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2873,7 +3325,9 @@
         "bodyIndex": 264,
         "paragraphIndex": 247
       },
-      "textHash": "6e8cab51562aa4468f1faa505455ffe452642b2d33e434b6c8130cd8195c96c9"
+      "paragraphStyleId": "",
+      "textHash": "6e8cab51562aa4468f1faa505455ffe452642b2d33e434b6c8130cd8195c96c9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2884,7 +3338,9 @@
         "bodyIndex": 265,
         "paragraphIndex": 248
       },
-      "textHash": "f2526bb1abf881a66038f098f1356c8a1732f711f44e3e3fbd1885b17283187f"
+      "paragraphStyleId": "",
+      "textHash": "f2526bb1abf881a66038f098f1356c8a1732f711f44e3e3fbd1885b17283187f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2895,7 +3351,9 @@
         "bodyIndex": 266,
         "paragraphIndex": 249
       },
-      "textHash": "52100e7628cf4e05ea350df9499b1b08b65131bf7f06620d7f10f456869783ff"
+      "paragraphStyleId": "",
+      "textHash": "52100e7628cf4e05ea350df9499b1b08b65131bf7f06620d7f10f456869783ff",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2906,7 +3364,9 @@
         "bodyIndex": 267,
         "paragraphIndex": 250
       },
-      "textHash": "143b2f1564eedee69b451fe6df0a0b8d53cea91a06976b596da5c967be812d08"
+      "paragraphStyleId": "",
+      "textHash": "143b2f1564eedee69b451fe6df0a0b8d53cea91a06976b596da5c967be812d08",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2917,7 +3377,9 @@
         "bodyIndex": 268,
         "paragraphIndex": 251
       },
-      "textHash": "9bd604605f54e6a04d93173783f7fa9624d0e9879e4ec6bc3a8dbbdef6a58c77"
+      "paragraphStyleId": "",
+      "textHash": "9bd604605f54e6a04d93173783f7fa9624d0e9879e4ec6bc3a8dbbdef6a58c77",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2928,7 +3390,9 @@
         "bodyIndex": 269,
         "paragraphIndex": 252
       },
-      "textHash": "c9392c6e28c6337c8088bc9f1a88500c447a1a157c6ecd0764b52cce89cd1473"
+      "paragraphStyleId": "",
+      "textHash": "c9392c6e28c6337c8088bc9f1a88500c447a1a157c6ecd0764b52cce89cd1473",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2939,7 +3403,9 @@
         "bodyIndex": 270,
         "paragraphIndex": 253
       },
-      "textHash": "f19190532752cd6a55444db4222d396b773e6196c22fd53bf801e8a673274afd"
+      "paragraphStyleId": "",
+      "textHash": "f19190532752cd6a55444db4222d396b773e6196c22fd53bf801e8a673274afd",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2950,7 +3416,9 @@
         "bodyIndex": 271,
         "paragraphIndex": 254
       },
-      "textHash": "01eadc35f81218b8c37fb9f493448ab54eaa8f6d425f012253b3999b9d10c4ca"
+      "paragraphStyleId": "",
+      "textHash": "01eadc35f81218b8c37fb9f493448ab54eaa8f6d425f012253b3999b9d10c4ca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2961,7 +3429,9 @@
         "bodyIndex": 272,
         "paragraphIndex": 255
       },
-      "textHash": "92fca74fed2b598e35cba315c8cbfe5d2f827d80e00365626e7126b3eef1f664"
+      "paragraphStyleId": "",
+      "textHash": "92fca74fed2b598e35cba315c8cbfe5d2f827d80e00365626e7126b3eef1f664",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2972,7 +3442,9 @@
         "bodyIndex": 273,
         "paragraphIndex": 256
       },
-      "textHash": "2d35e0192f6dfd2b036a293ed17716569f9e2b79b2ced3948c5e27c039a8c53f"
+      "paragraphStyleId": "",
+      "textHash": "2d35e0192f6dfd2b036a293ed17716569f9e2b79b2ced3948c5e27c039a8c53f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2983,7 +3455,9 @@
         "bodyIndex": 274,
         "paragraphIndex": 257
       },
-      "textHash": "775096f35e59926e757e152c655287472c3641197db35812ac5b7ce682667915"
+      "paragraphStyleId": "",
+      "textHash": "775096f35e59926e757e152c655287472c3641197db35812ac5b7ce682667915",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -2994,7 +3468,9 @@
         "bodyIndex": 275,
         "paragraphIndex": 258
       },
-      "textHash": "192e0e9e95d1ba42874bbb12f6aa7cd2656e7bc0266238efa1c2b6bf17626573"
+      "paragraphStyleId": "",
+      "textHash": "192e0e9e95d1ba42874bbb12f6aa7cd2656e7bc0266238efa1c2b6bf17626573",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3005,7 +3481,9 @@
         "bodyIndex": 276,
         "paragraphIndex": 259
       },
-      "textHash": "201b46b13f1d2b0e58bc84059df40138288f2bd53f08338676a6e1d35322b508"
+      "paragraphStyleId": "",
+      "textHash": "201b46b13f1d2b0e58bc84059df40138288f2bd53f08338676a6e1d35322b508",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3016,7 +3494,9 @@
         "bodyIndex": 277,
         "paragraphIndex": 260
       },
-      "textHash": "9f6f5737189d1a06a4c2ec64dc14c239d6f45ca33614566718d36c5712b7949d"
+      "paragraphStyleId": "",
+      "textHash": "9f6f5737189d1a06a4c2ec64dc14c239d6f45ca33614566718d36c5712b7949d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3027,7 +3507,9 @@
         "bodyIndex": 278,
         "paragraphIndex": 261
       },
-      "textHash": "b3656ea8a406e4ec326080a8722990fe0eec9d5ba2dc525d0cdc449cc9aaed77"
+      "paragraphStyleId": "",
+      "textHash": "b3656ea8a406e4ec326080a8722990fe0eec9d5ba2dc525d0cdc449cc9aaed77",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3038,7 +3520,9 @@
         "bodyIndex": 279,
         "paragraphIndex": 262
       },
-      "textHash": "7295f3580adcd0a4d5b9a0a7eed3049e2d7183e2385fbe85794fcb25bd350c9a"
+      "paragraphStyleId": "",
+      "textHash": "7295f3580adcd0a4d5b9a0a7eed3049e2d7183e2385fbe85794fcb25bd350c9a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3049,7 +3533,9 @@
         "bodyIndex": 280,
         "paragraphIndex": 263
       },
-      "textHash": "a5bf15e6bad967fd0f29f5a97be165293ce3249df221d0aecb145b6d6a0819d9"
+      "paragraphStyleId": "",
+      "textHash": "a5bf15e6bad967fd0f29f5a97be165293ce3249df221d0aecb145b6d6a0819d9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3060,7 +3546,9 @@
         "bodyIndex": 281,
         "paragraphIndex": 264
       },
-      "textHash": "f03fcac71407af08ddc6ce5f301bbe9a3abdeff89c482331cced25af03541459"
+      "paragraphStyleId": "",
+      "textHash": "f03fcac71407af08ddc6ce5f301bbe9a3abdeff89c482331cced25af03541459",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3071,7 +3559,9 @@
         "bodyIndex": 282,
         "paragraphIndex": 265
       },
-      "textHash": "1c50d33b0202ee676533569e4e9eed82117b74a21f0aacc209d048a798ecb949"
+      "paragraphStyleId": "",
+      "textHash": "1c50d33b0202ee676533569e4e9eed82117b74a21f0aacc209d048a798ecb949",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3082,7 +3572,9 @@
         "bodyIndex": 283,
         "paragraphIndex": 266
       },
-      "textHash": "2095aa5b384c9bffc3d1d60c5f8692d875d6f6dec4e84d39bd7fff58c4dc0117"
+      "paragraphStyleId": "",
+      "textHash": "2095aa5b384c9bffc3d1d60c5f8692d875d6f6dec4e84d39bd7fff58c4dc0117",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3093,7 +3585,9 @@
         "bodyIndex": 284,
         "paragraphIndex": 267
       },
-      "textHash": "1ac5583c82cbd830c5d02851cfb3b13eaeeca56af4806fb45717266371ed8331"
+      "paragraphStyleId": "",
+      "textHash": "1ac5583c82cbd830c5d02851cfb3b13eaeeca56af4806fb45717266371ed8331",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3104,7 +3598,9 @@
         "bodyIndex": 285,
         "paragraphIndex": 268
       },
-      "textHash": "9224fa7a9909fe6f090e8227e0bc91df47782887036abdf176b123f244cc7a13"
+      "paragraphStyleId": "",
+      "textHash": "9224fa7a9909fe6f090e8227e0bc91df47782887036abdf176b123f244cc7a13",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3115,7 +3611,9 @@
         "bodyIndex": 286,
         "paragraphIndex": 269
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3126,7 +3624,9 @@
         "bodyIndex": 287,
         "paragraphIndex": 270
       },
-      "textHash": "011074fc4d33bc08507befd6c28fa1ddb32112d50e6140aad5fb235146911b41"
+      "paragraphStyleId": "",
+      "textHash": "011074fc4d33bc08507befd6c28fa1ddb32112d50e6140aad5fb235146911b41",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3137,7 +3637,9 @@
         "bodyIndex": 288,
         "paragraphIndex": 271
       },
-      "textHash": "93c8d618705034591d334096361e301095ec08e822f5102a3cee7e068efa8863"
+      "paragraphStyleId": "",
+      "textHash": "93c8d618705034591d334096361e301095ec08e822f5102a3cee7e068efa8863",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3148,7 +3650,9 @@
         "bodyIndex": 289,
         "paragraphIndex": 272
       },
-      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38"
+      "paragraphStyleId": "",
+      "textHash": "3210f6466264a5817ffe63f1dba6db96fcfe41b446801985730d7996a468fe38",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3159,7 +3663,9 @@
         "bodyIndex": 290,
         "paragraphIndex": 273
       },
-      "textHash": "300d3374711f2a9de7d1044215e03450d5d743e1f9458054625986421bfa5768"
+      "paragraphStyleId": "",
+      "textHash": "300d3374711f2a9de7d1044215e03450d5d743e1f9458054625986421bfa5768",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3170,7 +3676,9 @@
         "bodyIndex": 291,
         "paragraphIndex": 274
       },
-      "textHash": "fa6db06bbeedd49b9b224aa6151d0792b62c0e050d9fccffd5c821ddb01da0b2"
+      "paragraphStyleId": "",
+      "textHash": "fa6db06bbeedd49b9b224aa6151d0792b62c0e050d9fccffd5c821ddb01da0b2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3181,7 +3689,9 @@
         "bodyIndex": 292,
         "paragraphIndex": 275
       },
-      "textHash": "90d1fc8419f4f0f55564fae995e4cff7f5a4556e038e542be3c8e46f3f844fa9"
+      "paragraphStyleId": "",
+      "textHash": "90d1fc8419f4f0f55564fae995e4cff7f5a4556e038e542be3c8e46f3f844fa9",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3192,7 +3702,9 @@
         "bodyIndex": 293,
         "paragraphIndex": 276
       },
-      "textHash": "6150c38d28f47b75d4c277ee56e0626f426d89834ddade1b3377bcb43527af88"
+      "paragraphStyleId": "",
+      "textHash": "6150c38d28f47b75d4c277ee56e0626f426d89834ddade1b3377bcb43527af88",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3203,7 +3715,9 @@
         "bodyIndex": 294,
         "paragraphIndex": 277
       },
-      "textHash": "cdcb51054fade37f7c628accd353b995f9a8d3fdbe9bc20b9ea28ba738db9ec8"
+      "paragraphStyleId": "",
+      "textHash": "cdcb51054fade37f7c628accd353b995f9a8d3fdbe9bc20b9ea28ba738db9ec8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3214,7 +3728,9 @@
         "bodyIndex": 295,
         "paragraphIndex": 278
       },
-      "textHash": "40928a8b4df7a8c0569483c0bc7ca10818697b7da424978d6b18a46cfe41f31d"
+      "paragraphStyleId": "",
+      "textHash": "40928a8b4df7a8c0569483c0bc7ca10818697b7da424978d6b18a46cfe41f31d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3225,7 +3741,9 @@
         "bodyIndex": 296,
         "paragraphIndex": 279
       },
-      "textHash": "e2d714ff663d987b2af3bd832be1df908ef7dbd53dc78f5009946214282dc9b2"
+      "paragraphStyleId": "",
+      "textHash": "e2d714ff663d987b2af3bd832be1df908ef7dbd53dc78f5009946214282dc9b2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3236,7 +3754,9 @@
         "bodyIndex": 297,
         "paragraphIndex": 280
       },
-      "textHash": "8fd5f076c02524987dfb2fe9d400eb4bb6c886deccc35644cdacf87f22b749fa"
+      "paragraphStyleId": "",
+      "textHash": "8fd5f076c02524987dfb2fe9d400eb4bb6c886deccc35644cdacf87f22b749fa",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3247,7 +3767,9 @@
         "bodyIndex": 298,
         "paragraphIndex": 281
       },
-      "textHash": "cf4086c88257fb3cc7f468cebb5a88de6baf62c4a41dda03b5e1bedc771a737a"
+      "paragraphStyleId": "",
+      "textHash": "cf4086c88257fb3cc7f468cebb5a88de6baf62c4a41dda03b5e1bedc771a737a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3258,7 +3780,9 @@
         "bodyIndex": 299,
         "paragraphIndex": 282
       },
-      "textHash": "673a83f4fdb5fe26ac4a4ec1308964326f4088219dfd793042cad6ca849fa8e5"
+      "paragraphStyleId": "",
+      "textHash": "673a83f4fdb5fe26ac4a4ec1308964326f4088219dfd793042cad6ca849fa8e5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3269,7 +3793,9 @@
         "bodyIndex": 300,
         "paragraphIndex": 283
       },
-      "textHash": "310a8149a88d5fe9e18500637e439844601fb6307589ab00a89e61c38493982f"
+      "paragraphStyleId": "",
+      "textHash": "310a8149a88d5fe9e18500637e439844601fb6307589ab00a89e61c38493982f",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3280,7 +3806,9 @@
         "bodyIndex": 301,
         "paragraphIndex": 284
       },
-      "textHash": "a5e9c16d27cd5144c234dd4c04bf6f3f5f419d78db40ffd8eb32667400cea228"
+      "paragraphStyleId": "",
+      "textHash": "a5e9c16d27cd5144c234dd4c04bf6f3f5f419d78db40ffd8eb32667400cea228",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3291,7 +3819,9 @@
         "bodyIndex": 302,
         "paragraphIndex": 285
       },
-      "textHash": "f1a91a471f2f6f4985694087818b066fee02590b8e678ea1aae7703871bf05d2"
+      "paragraphStyleId": "",
+      "textHash": "f1a91a471f2f6f4985694087818b066fee02590b8e678ea1aae7703871bf05d2",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3302,7 +3832,9 @@
         "bodyIndex": 303,
         "paragraphIndex": 286
       },
-      "textHash": "7310652795d2d90d3ae4ab81ac44fba75b29a039bf59caafc89a3b0f4d747624"
+      "paragraphStyleId": "",
+      "textHash": "7310652795d2d90d3ae4ab81ac44fba75b29a039bf59caafc89a3b0f4d747624",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3313,7 +3845,9 @@
         "bodyIndex": 304,
         "paragraphIndex": 287
       },
-      "textHash": "63a927eb4668b1553f517b1b97e92292d39102c639db1f9e65a1bd59df07168a"
+      "paragraphStyleId": "",
+      "textHash": "63a927eb4668b1553f517b1b97e92292d39102c639db1f9e65a1bd59df07168a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3324,7 +3858,9 @@
         "bodyIndex": 305,
         "paragraphIndex": 288
       },
-      "textHash": "66c30edf105d82e8f5b63cd61b31223b4bfff3e3e17820312eeada5c2969bd06"
+      "paragraphStyleId": "",
+      "textHash": "66c30edf105d82e8f5b63cd61b31223b4bfff3e3e17820312eeada5c2969bd06",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3335,7 +3871,9 @@
         "bodyIndex": 306,
         "paragraphIndex": 289
       },
-      "textHash": "77eddd8f1cf091cc10da90bdfb4e1c04c7043fe953e687d01ac8e4ddc70e230b"
+      "paragraphStyleId": "",
+      "textHash": "77eddd8f1cf091cc10da90bdfb4e1c04c7043fe953e687d01ac8e4ddc70e230b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3346,7 +3884,9 @@
         "bodyIndex": 307,
         "paragraphIndex": 290
       },
-      "textHash": "d8c14671155427a94d19d684d0155b2b126973b3c700de559cca2ef81a2b5d75"
+      "paragraphStyleId": "",
+      "textHash": "d8c14671155427a94d19d684d0155b2b126973b3c700de559cca2ef81a2b5d75",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3357,7 +3897,9 @@
         "bodyIndex": 308,
         "paragraphIndex": 291
       },
-      "textHash": "3d3e458f267bc0fe3c3975b03a467bf01cf57b14cd5d0b71310c029b123a6cd5"
+      "paragraphStyleId": "",
+      "textHash": "3d3e458f267bc0fe3c3975b03a467bf01cf57b14cd5d0b71310c029b123a6cd5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3368,7 +3910,9 @@
         "bodyIndex": 309,
         "paragraphIndex": 292
       },
-      "textHash": "6e030fdacc78a13f8f1c8f514179cd4f5468a371dd13ed7b702de6d800d42450"
+      "paragraphStyleId": "",
+      "textHash": "6e030fdacc78a13f8f1c8f514179cd4f5468a371dd13ed7b702de6d800d42450",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3379,7 +3923,9 @@
         "bodyIndex": 310,
         "paragraphIndex": 293
       },
-      "textHash": "f979c6accd91dc00d00c231ebb3df98c2c446355f4d8e80104f0a436e36d8592"
+      "paragraphStyleId": "",
+      "textHash": "f979c6accd91dc00d00c231ebb3df98c2c446355f4d8e80104f0a436e36d8592",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3390,7 +3936,9 @@
         "bodyIndex": 311,
         "paragraphIndex": 294
       },
-      "textHash": "3a48077f5f8048f3dd70511fe8d511b7eb133edb92846261eb8ad173982defc5"
+      "paragraphStyleId": "",
+      "textHash": "3a48077f5f8048f3dd70511fe8d511b7eb133edb92846261eb8ad173982defc5",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3401,7 +3949,9 @@
         "bodyIndex": 312,
         "paragraphIndex": 295
       },
-      "textHash": "04a4e24449b9401bfd53fac45045537b292f135e4f7df93d866090015f450ae4"
+      "paragraphStyleId": "",
+      "textHash": "04a4e24449b9401bfd53fac45045537b292f135e4f7df93d866090015f450ae4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3412,7 +3962,9 @@
         "bodyIndex": 313,
         "paragraphIndex": 296
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3423,7 +3975,9 @@
         "bodyIndex": 314,
         "paragraphIndex": 297
       },
-      "textHash": "aa13b66a724f93fa9dfabcbb928a7d0af00ea37923c0d9042d723eaba0fec196"
+      "paragraphStyleId": "",
+      "textHash": "aa13b66a724f93fa9dfabcbb928a7d0af00ea37923c0d9042d723eaba0fec196",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3434,7 +3988,9 @@
         "bodyIndex": 315,
         "paragraphIndex": 298
       },
-      "textHash": "52e50f36cf0857026cf61de9d13b09111d87809538cff38a7ee9215b36e76d69"
+      "paragraphStyleId": "",
+      "textHash": "52e50f36cf0857026cf61de9d13b09111d87809538cff38a7ee9215b36e76d69",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3445,7 +4001,9 @@
         "bodyIndex": 316,
         "paragraphIndex": 299
       },
-      "textHash": "03b870314886570e4f8cfaca042acd66fa7a51b81a008ef5e1be4eacd1ffd8b3"
+      "paragraphStyleId": "",
+      "textHash": "03b870314886570e4f8cfaca042acd66fa7a51b81a008ef5e1be4eacd1ffd8b3",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3456,7 +4014,9 @@
         "bodyIndex": 317,
         "paragraphIndex": 300
       },
-      "textHash": "c32e383eb2a9f501d6c623d1391d0557ea9243b95370445ee81909cad8bedf9b"
+      "paragraphStyleId": "",
+      "textHash": "c32e383eb2a9f501d6c623d1391d0557ea9243b95370445ee81909cad8bedf9b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3467,7 +4027,9 @@
         "bodyIndex": 318,
         "paragraphIndex": 301
       },
-      "textHash": "dd616760ee6403f0b25343d61b971f526f38f6058482f72920389c68be9a785b"
+      "paragraphStyleId": "",
+      "textHash": "dd616760ee6403f0b25343d61b971f526f38f6058482f72920389c68be9a785b",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3478,7 +4040,9 @@
         "bodyIndex": 319,
         "paragraphIndex": 302
       },
-      "textHash": "ba5d6567ebc615604c556954a730d96e05b702c3ce96cd6709cd67b5458ff3ad"
+      "paragraphStyleId": "",
+      "textHash": "ba5d6567ebc615604c556954a730d96e05b702c3ce96cd6709cd67b5458ff3ad",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3489,7 +4053,9 @@
         "bodyIndex": 320,
         "paragraphIndex": 303
       },
-      "textHash": "de5281f51104ae8aa68cb140bf2732cc7dcef8c206f893bbd06697f11ab1c0cc"
+      "paragraphStyleId": "",
+      "textHash": "de5281f51104ae8aa68cb140bf2732cc7dcef8c206f893bbd06697f11ab1c0cc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3500,7 +4066,9 @@
         "bodyIndex": 321,
         "paragraphIndex": 304
       },
-      "textHash": "67d7c8b733499dbc88f9aeed83160d5f0350ca23912c760cd944ca452708d911"
+      "paragraphStyleId": "",
+      "textHash": "67d7c8b733499dbc88f9aeed83160d5f0350ca23912c760cd944ca452708d911",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3511,7 +4079,9 @@
         "bodyIndex": 322,
         "paragraphIndex": 305
       },
-      "textHash": "9fd18d9c88fabd2668247e4ed8bf648c01669302bb7a4fbd87de55efd941a7ca"
+      "paragraphStyleId": "",
+      "textHash": "9fd18d9c88fabd2668247e4ed8bf648c01669302bb7a4fbd87de55efd941a7ca",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3522,7 +4092,9 @@
         "bodyIndex": 323,
         "paragraphIndex": 306
       },
-      "textHash": "988817b2f30ba1c52c91c70a9460beaec3eff15a9df0c06b338838ae660c64b0"
+      "paragraphStyleId": "",
+      "textHash": "988817b2f30ba1c52c91c70a9460beaec3eff15a9df0c06b338838ae660c64b0",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3533,7 +4105,9 @@
         "bodyIndex": 324,
         "paragraphIndex": 307
       },
-      "textHash": "59bddd01a35b16b8388fcc34642e14a95c54f2c937ba85881b9186b5fe685c56"
+      "paragraphStyleId": "",
+      "textHash": "59bddd01a35b16b8388fcc34642e14a95c54f2c937ba85881b9186b5fe685c56",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3544,7 +4118,9 @@
         "bodyIndex": 325,
         "paragraphIndex": 308
       },
-      "textHash": "8fc6914b920c861ce3025f2e10b04864e39007d99d2366eb55e55dd4d4b93d16"
+      "paragraphStyleId": "",
+      "textHash": "8fc6914b920c861ce3025f2e10b04864e39007d99d2366eb55e55dd4d4b93d16",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3555,7 +4131,9 @@
         "bodyIndex": 326,
         "paragraphIndex": 309
       },
-      "textHash": "187698c03316e8920dd67e59c1f2b2594dfba0815adc1354d503178689d29fbe"
+      "paragraphStyleId": "",
+      "textHash": "187698c03316e8920dd67e59c1f2b2594dfba0815adc1354d503178689d29fbe",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3566,7 +4144,9 @@
         "bodyIndex": 327,
         "paragraphIndex": 310
       },
-      "textHash": "96bc3c22b015d740e97815674a5e12064ff69487bde3ec878218bbbed07c3153"
+      "paragraphStyleId": "",
+      "textHash": "96bc3c22b015d740e97815674a5e12064ff69487bde3ec878218bbbed07c3153",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3577,7 +4157,9 @@
         "bodyIndex": 328,
         "paragraphIndex": 311
       },
-      "textHash": "9ec25e7d3c9849c069fc1b62840ea186f91df7974ac322cb18ca2b54920151cc"
+      "paragraphStyleId": "",
+      "textHash": "9ec25e7d3c9849c069fc1b62840ea186f91df7974ac322cb18ca2b54920151cc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3588,7 +4170,9 @@
         "bodyIndex": 329,
         "paragraphIndex": 312
       },
-      "textHash": "0804be3d98a7a8b5a2ce80c6767306049c257e5ff58bdf1750f62669c107a895"
+      "paragraphStyleId": "",
+      "textHash": "5369c23b28fc4ff3199a55abee01b1a699ffbe7f94c9f62fa2ec6b0765665773",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3599,7 +4183,9 @@
         "bodyIndex": 330,
         "paragraphIndex": 313
       },
-      "textHash": "c520d54161a6697d2e43c5a9a0dd7e50d403db5c9851c318f45d3786a9c21e0e"
+      "paragraphStyleId": "",
+      "textHash": "c520d54161a6697d2e43c5a9a0dd7e50d403db5c9851c318f45d3786a9c21e0e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3610,7 +4196,9 @@
         "bodyIndex": 331,
         "paragraphIndex": 314
       },
-      "textHash": "9512df2136fd34d7455ee8b08ac8a4ee0e1d4af12cb9b9f5d83fa2787db449c7"
+      "paragraphStyleId": "",
+      "textHash": "9512df2136fd34d7455ee8b08ac8a4ee0e1d4af12cb9b9f5d83fa2787db449c7",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3621,7 +4209,9 @@
         "bodyIndex": 332,
         "paragraphIndex": 315
       },
-      "textHash": "e1d21fee4c5be92b761314a69f7a0edc7faf58ef4d9c04b0e038b706033a4764"
+      "paragraphStyleId": "",
+      "textHash": "1a50b7af0fdf969e6e48fddfa24ad2670f2fa9fbeee2b70b65381e77c63985c4",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3632,7 +4222,9 @@
         "bodyIndex": 333,
         "paragraphIndex": 316
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3643,7 +4235,9 @@
         "bodyIndex": 334,
         "paragraphIndex": 317
       },
-      "textHash": "d3d722d19c14207b4911dbbd89001cab6a3522caabe75841d85718de7bf0f9a9"
+      "paragraphStyleId": "",
+      "textHash": "d3d722d19c14207b4911dbbd89001cab6a3522caabe75841d85718de7bf0f9a9",
+      "paragraphSemantic": "non-prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3654,7 +4248,9 @@
         "bodyIndex": 335,
         "paragraphIndex": 318
       },
-      "textHash": "376d085c131759b09b578d5c9481270b29d0af5155668810d11d4c2d81320187"
+      "paragraphStyleId": "",
+      "textHash": "376d085c131759b09b578d5c9481270b29d0af5155668810d11d4c2d81320187",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3665,7 +4261,9 @@
         "bodyIndex": 336,
         "paragraphIndex": 319
       },
-      "textHash": "d5034035b46db8ee779ac14b23ed19978405b5014467cef95b283ce1b584af12"
+      "paragraphStyleId": "",
+      "textHash": "d5034035b46db8ee779ac14b23ed19978405b5014467cef95b283ce1b584af12",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3676,7 +4274,9 @@
         "bodyIndex": 337,
         "paragraphIndex": 320
       },
-      "textHash": "2ee6e6f459e29ee4e936623a89326fe98997639d12c50712306b5411e15b0f1d"
+      "paragraphStyleId": "",
+      "textHash": "2ee6e6f459e29ee4e936623a89326fe98997639d12c50712306b5411e15b0f1d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3687,7 +4287,9 @@
         "bodyIndex": 338,
         "paragraphIndex": 321
       },
-      "textHash": "26d4545d58ef900f94561140ca8797acefb857d6189a2fa29f2e8cec6994692b"
+      "paragraphStyleId": "",
+      "textHash": "d95a4a454d7c99922d813c47d8c578a070b826fb62a213da176554e67cd347a8",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3698,7 +4300,9 @@
         "bodyIndex": 339,
         "paragraphIndex": 322
       },
-      "textHash": "d2f3394faeb0fde34246398c3f636d41c3f86d1b7ee1e32d77f559c24222ba5e"
+      "paragraphStyleId": "",
+      "textHash": "d2f3394faeb0fde34246398c3f636d41c3f86d1b7ee1e32d77f559c24222ba5e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3709,7 +4313,9 @@
         "bodyIndex": 340,
         "paragraphIndex": 323
       },
-      "textHash": "9b19f7be225dc908eb98179968405813d0ad4f8fdf32bdfa5bef94ae65b8018a"
+      "paragraphStyleId": "",
+      "textHash": "9b19f7be225dc908eb98179968405813d0ad4f8fdf32bdfa5bef94ae65b8018a",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3720,7 +4326,9 @@
         "bodyIndex": 341,
         "paragraphIndex": 324
       },
-      "textHash": "f5b78126067b7cc77be2b21f5d10033359b0ca78eed59b3f699aa74023a1073c"
+      "paragraphStyleId": "",
+      "textHash": "f5b78126067b7cc77be2b21f5d10033359b0ca78eed59b3f699aa74023a1073c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3731,7 +4339,9 @@
         "bodyIndex": 342,
         "paragraphIndex": 325
       },
-      "textHash": "dd4697036a2ffdcd04c3e8ce9f062fccc60bfd03ba8355fa97adc91ad3f5e609"
+      "paragraphStyleId": "",
+      "textHash": "d03b65fda9437e51903ab1ba0111f9761209ccd748ac2c677ae4fb8dee0ea4a6",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3742,7 +4352,9 @@
         "bodyIndex": 343,
         "paragraphIndex": 326
       },
-      "textHash": "ca4c8aeebf0a38224b281b3db25f46abbe30d35639b61ace252c68fb06306e40"
+      "paragraphStyleId": "",
+      "textHash": "ca4c8aeebf0a38224b281b3db25f46abbe30d35639b61ace252c68fb06306e40",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3753,7 +4365,9 @@
         "bodyIndex": 344,
         "paragraphIndex": 327
       },
-      "textHash": "9e2b2a440ce00bb9607708bc3bee46793fa113d7777522777cca7ff28685289e"
+      "paragraphStyleId": "",
+      "textHash": "9e2b2a440ce00bb9607708bc3bee46793fa113d7777522777cca7ff28685289e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3764,7 +4378,9 @@
         "bodyIndex": 345,
         "paragraphIndex": 328
       },
-      "textHash": "246c374f0fc137924d1e28a879601eedbe451f39d2cbe17127298b6563bdd8d3"
+      "paragraphStyleId": "",
+      "textHash": "246c374f0fc137924d1e28a879601eedbe451f39d2cbe17127298b6563bdd8d3",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3775,7 +4391,9 @@
         "bodyIndex": 346,
         "paragraphIndex": 329
       },
-      "textHash": "01bea4e979263b5a76f012209cdf6634f0ce9a171aa930f3447f7c2a9bb68e01"
+      "paragraphStyleId": "",
+      "textHash": "01bea4e979263b5a76f012209cdf6634f0ce9a171aa930f3447f7c2a9bb68e01",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3786,7 +4404,9 @@
         "bodyIndex": 347,
         "paragraphIndex": 330
       },
-      "textHash": "5c157592d0e41fc7200b9f8bc208a3bf753b37fa1501a955146569949b8a307d"
+      "paragraphStyleId": "",
+      "textHash": "f83cebc15cb0080b768214db10d63a9a0e9571f51ea0263f44e06888f1c50d09",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3797,7 +4417,9 @@
         "bodyIndex": 348,
         "paragraphIndex": 331
       },
-      "textHash": "749a8bc295cd52c8adc40c9ec188d81973501a034f129a3d500fa6a49e7a1cdf"
+      "paragraphStyleId": "",
+      "textHash": "749a8bc295cd52c8adc40c9ec188d81973501a034f129a3d500fa6a49e7a1cdf",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3808,7 +4430,9 @@
         "bodyIndex": 349,
         "paragraphIndex": 332
       },
-      "textHash": "543eb6dee5241c01a00e4ad9428772474440adcfb9d8f91dcaf3960cb2a2689c"
+      "paragraphStyleId": "",
+      "textHash": "543eb6dee5241c01a00e4ad9428772474440adcfb9d8f91dcaf3960cb2a2689c",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3819,7 +4443,9 @@
         "bodyIndex": 350,
         "paragraphIndex": 333
       },
-      "textHash": "71fb5cba68806d64cc4ed2a80140bc7b5106721bc98e8a76973fab7bb3cb0995"
+      "paragraphStyleId": "",
+      "textHash": "ea2a907d26565352c6c53e60a3f63e4caa6ab2deee7ba168a0a841137183b67d",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3830,7 +4456,9 @@
         "bodyIndex": 351,
         "paragraphIndex": 334
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3841,6 +4469,7 @@
         "bodyIndex": 352,
         "paragraphIndex": 335
       },
+      "paragraphStyleId": "1",
       "textHash": "fca80a5de61fedb41053ea99229983e5714e50747d2397388214e1fc834a8a50",
       "headingLevel": 1,
       "title": "参考文献："
@@ -3854,7 +4483,9 @@
         "bodyIndex": 353,
         "paragraphIndex": 336
       },
-      "textHash": "055f6565a600b1bb8cebc7d511bfd6ae45d8722177620b93bf606b66da7ae5dc"
+      "paragraphStyleId": "",
+      "textHash": "055f6565a600b1bb8cebc7d511bfd6ae45d8722177620b93bf606b66da7ae5dc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3865,7 +4496,9 @@
         "bodyIndex": 354,
         "paragraphIndex": 337
       },
-      "textHash": "a4f5775528ec272e5111bc30448a5bbbd8c07824014f59eee9878d0d2d51c0fc"
+      "paragraphStyleId": "",
+      "textHash": "a4f5775528ec272e5111bc30448a5bbbd8c07824014f59eee9878d0d2d51c0fc",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3876,7 +4509,9 @@
         "bodyIndex": 355,
         "paragraphIndex": 338
       },
-      "textHash": "c52a48d25e2d0e593f97b387001f88a8928b18c04080545dadd366b20c8b108e"
+      "paragraphStyleId": "",
+      "textHash": "c52a48d25e2d0e593f97b387001f88a8928b18c04080545dadd366b20c8b108e",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3887,7 +4522,9 @@
         "bodyIndex": 356,
         "paragraphIndex": 339
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3898,7 +4535,9 @@
         "bodyIndex": 357,
         "paragraphIndex": 340
       },
-      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "paragraphStyleId": "",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paragraphSemantic": "prose"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3937,7 +4576,7 @@
       },
       "rowCount": 1,
       "columnCount": 3,
-      "contentHash": "cc1438453da810ecaf7ad4c4e5b3b42b035cd45842fe2eacf3b63591153fe9f2"
+      "contentHash": "308b4aa9aecf944a2cf04d6238eaa2c0af255e726e18ea35977fccb3a6e116ac"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3950,7 +4589,7 @@
       },
       "rowCount": 2,
       "columnCount": 2,
-      "contentHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+      "contentHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3963,7 +4602,7 @@
       },
       "rowCount": 1,
       "columnCount": 3,
-      "contentHash": "3285be6a4f3769b976fd08b93ff80f202c583afaf9f55cb88f94857ef2ade4d0"
+      "contentHash": "9d2c22cceecda1b25905c341aeca5fa1562f939f7281dec9c7a32f4df696ea24"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -3989,7 +4628,7 @@
       },
       "rowCount": 2,
       "columnCount": 3,
-      "contentHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+      "contentHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4002,7 +4641,7 @@
       },
       "rowCount": 2,
       "columnCount": 4,
-      "contentHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+      "contentHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4028,7 +4667,7 @@
       },
       "rowCount": 1,
       "columnCount": 2,
-      "contentHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+      "contentHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4054,7 +4693,7 @@
       },
       "rowCount": 2,
       "columnCount": 2,
-      "contentHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+      "contentHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4080,7 +4719,7 @@
       },
       "rowCount": 1,
       "columnCount": 2,
-      "contentHash": "41bf53db8b8863142fc4753fc0824a59c779fdcd11a1ff34247276aa6253935f"
+      "contentHash": "81bb6f6327416f4a2d6c714c273b30946402fdb4ba1498c994d284295f798b39"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4093,7 +4732,7 @@
       },
       "rowCount": 1,
       "columnCount": 4,
-      "contentHash": "13e2e62f11a74d35a0d64c15198c0c4af49def41f5ef8635692aee15686f5011"
+      "contentHash": "ebfe602bf71ebc5f84b7f410f2c63abf331c1ecd1ab850c68e7ad1fc7198c0c0"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -4119,7 +4758,7 @@
       },
       "rowCount": 1,
       "columnCount": 2,
-      "contentHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+      "contentHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
     },
     {
       "sourceAssetId": "src-d35e870ffcd7",
@@ -5727,7 +6366,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:15f06803663cecbb",
           "bodyIndex": 61,
           "elementType": "table",
-          "textHash": "cc1438453da810ecaf7ad4c4e5b3b42b035cd45842fe2eacf3b63591153fe9f2"
+          "textHash": "308b4aa9aecf944a2cf04d6238eaa2c0af255e726e18ea35977fccb3a6e116ac"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -5835,7 +6474,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:15f06803663cecbb",
           "bodyIndex": 61,
           "elementType": "table",
-          "textHash": "cc1438453da810ecaf7ad4c4e5b3b42b035cd45842fe2eacf3b63591153fe9f2"
+          "textHash": "308b4aa9aecf944a2cf04d6238eaa2c0af255e726e18ea35977fccb3a6e116ac"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -5943,7 +6582,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:15f06803663cecbb",
           "bodyIndex": 61,
           "elementType": "table",
-          "textHash": "cc1438453da810ecaf7ad4c4e5b3b42b035cd45842fe2eacf3b63591153fe9f2"
+          "textHash": "308b4aa9aecf944a2cf04d6238eaa2c0af255e726e18ea35977fccb3a6e116ac"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6051,7 +6690,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:cc167f74c4cd1a6f",
           "bodyIndex": 67,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6159,7 +6798,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:cc167f74c4cd1a6f",
           "bodyIndex": 67,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6267,7 +6906,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:cc167f74c4cd1a6f",
           "bodyIndex": 67,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6375,7 +7014,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:cc167f74c4cd1a6f",
           "bodyIndex": 67,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6483,7 +7122,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:2201501faf358a9a",
           "bodyIndex": 71,
           "elementType": "table",
-          "textHash": "3285be6a4f3769b976fd08b93ff80f202c583afaf9f55cb88f94857ef2ade4d0"
+          "textHash": "9d2c22cceecda1b25905c341aeca5fa1562f939f7281dec9c7a32f4df696ea24"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6591,7 +7230,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:2201501faf358a9a",
           "bodyIndex": 71,
           "elementType": "table",
-          "textHash": "3285be6a4f3769b976fd08b93ff80f202c583afaf9f55cb88f94857ef2ade4d0"
+          "textHash": "9d2c22cceecda1b25905c341aeca5fa1562f939f7281dec9c7a32f4df696ea24"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -6699,7 +7338,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:2201501faf358a9a",
           "bodyIndex": 71,
           "elementType": "table",
-          "textHash": "3285be6a4f3769b976fd08b93ff80f202c583afaf9f55cb88f94857ef2ade4d0"
+          "textHash": "9d2c22cceecda1b25905c341aeca5fa1562f939f7281dec9c7a32f4df696ea24"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7023,7 +7662,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7131,7 +7770,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7239,7 +7878,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7347,7 +7986,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7455,7 +8094,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7563,7 +8202,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:dae26f2849606755",
           "bodyIndex": 88,
           "elementType": "table",
-          "textHash": "04d698c574b4f0e48759b9a35bcb748557d8efe5621023ecbe6924b5924c5671"
+          "textHash": "54c3cde2dbcebd005a8ef6dc102323a757533837e1c1f9cd40b004f0b66edb8d"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7671,7 +8310,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:fb991d60b595efcd",
           "bodyIndex": 93,
           "elementType": "table",
-          "textHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+          "textHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7779,7 +8418,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:fb991d60b595efcd",
           "bodyIndex": 93,
           "elementType": "table",
-          "textHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+          "textHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7887,7 +8526,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:fb991d60b595efcd",
           "bodyIndex": 93,
           "elementType": "table",
-          "textHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+          "textHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -7995,7 +8634,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:fb991d60b595efcd",
           "bodyIndex": 93,
           "elementType": "table",
-          "textHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+          "textHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -8103,7 +8742,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:fb991d60b595efcd",
           "bodyIndex": 93,
           "elementType": "table",
-          "textHash": "b35d1b7587e0f4270f8bf738115cce0e12ab6c8ed01251fb82b2d7a43744baeb"
+          "textHash": "50a5e1afb283dfb24688d77202dca208041336773e20de6d8e4989df5582b7b4"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -8751,7 +9390,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:ba023926732105c3",
           "bodyIndex": 101,
           "elementType": "table",
-          "textHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+          "textHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -8859,7 +9498,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:ba023926732105c3",
           "bodyIndex": 101,
           "elementType": "table",
-          "textHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+          "textHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -9507,7 +10146,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:b5b2decc3c7e08b5",
           "bodyIndex": 120,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -9615,7 +10254,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:b5b2decc3c7e08b5",
           "bodyIndex": 120,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -9723,7 +10362,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:b5b2decc3c7e08b5",
           "bodyIndex": 120,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -9831,7 +10470,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:b5b2decc3c7e08b5",
           "bodyIndex": 120,
           "elementType": "table",
-          "textHash": "27547a8ea0272799d43e982b1df0c727537c6c25d73f7310a1d243bb560cbdbe"
+          "textHash": "f6336e5b3209e7222095e5d409f43e09ff2a051896e59d8a1f0c0fec64d3ed75"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10425,7 +11064,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:e96972cde84ae63a",
           "bodyIndex": 138,
           "elementType": "table",
-          "textHash": "41bf53db8b8863142fc4753fc0824a59c779fdcd11a1ff34247276aa6253935f"
+          "textHash": "81bb6f6327416f4a2d6c714c273b30946402fdb4ba1498c994d284295f798b39"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10533,7 +11172,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:e96972cde84ae63a",
           "bodyIndex": 138,
           "elementType": "table",
-          "textHash": "41bf53db8b8863142fc4753fc0824a59c779fdcd11a1ff34247276aa6253935f"
+          "textHash": "81bb6f6327416f4a2d6c714c273b30946402fdb4ba1498c994d284295f798b39"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10641,7 +11280,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:6c6c71caaa2d17d5",
           "bodyIndex": 143,
           "elementType": "table",
-          "textHash": "13e2e62f11a74d35a0d64c15198c0c4af49def41f5ef8635692aee15686f5011"
+          "textHash": "ebfe602bf71ebc5f84b7f410f2c63abf331c1ecd1ab850c68e7ad1fc7198c0c0"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10749,7 +11388,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:6c6c71caaa2d17d5",
           "bodyIndex": 143,
           "elementType": "table",
-          "textHash": "13e2e62f11a74d35a0d64c15198c0c4af49def41f5ef8635692aee15686f5011"
+          "textHash": "ebfe602bf71ebc5f84b7f410f2c63abf331c1ecd1ab850c68e7ad1fc7198c0c0"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10857,7 +11496,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:6c6c71caaa2d17d5",
           "bodyIndex": 143,
           "elementType": "table",
-          "textHash": "13e2e62f11a74d35a0d64c15198c0c4af49def41f5ef8635692aee15686f5011"
+          "textHash": "ebfe602bf71ebc5f84b7f410f2c63abf331c1ecd1ab850c68e7ad1fc7198c0c0"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -10965,7 +11604,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:6c6c71caaa2d17d5",
           "bodyIndex": 143,
           "elementType": "table",
-          "textHash": "13e2e62f11a74d35a0d64c15198c0c4af49def41f5ef8635692aee15686f5011"
+          "textHash": "ebfe602bf71ebc5f84b7f410f2c63abf331c1ecd1ab850c68e7ad1fc7198c0c0"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -11505,7 +12144,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:7b328a6a6303623a",
           "bodyIndex": 168,
           "elementType": "table",
-          "textHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+          "textHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
         },
         "slot": "table-cell",
         "placementKind": "inline",
@@ -11613,7 +12252,7 @@
           "sourceElementId": "src-d35e870ffcd7:table:7b328a6a6303623a",
           "bodyIndex": 168,
           "elementType": "table",
-          "textHash": "e63b805a61c887471ab6a2db41b1551d6a39b9596c9fc9d18f2260caebf1f9d1"
+          "textHash": "fb50bc49477efd10381d718e423213ee29236d661be66f62bb1b273abde83622"
         },
         "slot": "table-cell",
         "placementKind": "inline",

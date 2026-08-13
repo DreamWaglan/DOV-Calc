@@ -14,7 +14,17 @@ import {
   stableSourceRelationId,
   tableCellMediaToken,
 } from './lib/migration-elements.mjs'
+import {
+  articleParagraphPolicyErrors,
+  articleParagraphMarker,
+  resolveImportedParagraphSemantic,
+} from './lib/article-prose.mjs'
 import { writeFileWithRetry as writeFile } from './lib/content-utils.mjs'
+
+const paragraphSemanticPolicyUrl = new URL(
+  '../../content/governance/paragraph-semantics.json',
+  import.meta.url,
+)
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -22,6 +32,7 @@ const parser = new XMLParser({
   preserveOrder: true,
   processEntities: false,
   trimValues: false,
+  parseTagValue: false,
 })
 
 const MAX_SOURCE_BYTES = 100 * 1024 * 1024
@@ -111,22 +122,6 @@ function renderParagraph(paragraph) {
   return level ? `${'#'.repeat(level)} ${text}` : text
 }
 
-function renderMarkdownTable(table) {
-  const rows = childrenOf(table, 'w:tr').map((row) =>
-    childrenOf(row, 'w:tc').map((cell) => textOf(cell).replace(/\s+/g, ' ').trim()),
-  )
-  if (rows.length === 0) return null
-  const width = Math.max(...rows.map((row) => row.length))
-  const normalized = rows.map((row) =>
-    Array.from({ length: width }, (_, index) => row[index] ?? ''),
-  )
-  const escapeCell = (value) => value.replace(/\|/g, '\\|')
-  const header = normalized[0].map(escapeCell)
-  const separator = Array.from({ length: width }, () => '---')
-  const body = normalized.slice(1).map((row) => row.map(escapeCell))
-  return [header, separator, ...body].map((row) => `| ${row.join(' | ')} |`).join('\n')
-}
-
 function htmlText(value) {
   return String(value)
     .replaceAll('&lt;', '<')
@@ -161,7 +156,11 @@ function renderInlineCellContent(node, occurrenceTokenByDrawing) {
     .join('')}`
 }
 
-function renderHtmlTable(table, tableLayoutByNode, occurrenceTokenByDrawing) {
+export function renderHtmlTable(
+  table,
+  tableLayoutByNode,
+  occurrenceTokenByDrawing,
+) {
   const layout = tableLayoutByNode.get(table)
   if (!layout) throw new Error('DOCX table layout is missing during HTML rendering')
 
@@ -177,15 +176,19 @@ function renderHtmlTable(table, tableLayoutByNode, occurrenceTokenByDrawing) {
     return childrenOf(node).map(renderBlock).filter(Boolean).join('<br />')
   }
 
-  const rows = layout.rows.map((row, rowOffset) => {
+  const rows = planHtmlTableRows(layout).map((row, rowOffset) => {
     const tagName = rowOffset === 0 ? 'th' : 'td'
-    const cells = row.cells
-      .filter(
-        (cell) =>
-          cell.verticalMerge !== 'continue' &&
-          cell.gridColumn <= layout.columnCount,
-      )
-      .map((cell) => {
+    const cells = row
+      .map((entry) => {
+        if (entry.kind === 'placeholder') {
+          const attributes = [
+            'class="docx-grid-placeholder"',
+            `data-grid-placeholder-start="${entry.gridColumn}"`,
+          ]
+          if (entry.gridSpan > 1) attributes.push(`colspan="${entry.gridSpan}"`)
+          return `<td ${attributes.join(' ')}></td>`
+        }
+        const { cell } = entry
         const attributes = [
           `data-grid-column="${cell.gridColumn}"`,
           `data-source-cell="${htmlAttribute(
@@ -202,20 +205,12 @@ function renderHtmlTable(table, tableLayoutByNode, occurrenceTokenByDrawing) {
     return `<tr>${cells}</tr>`
   })
 
-  const header = rows.length > 0 ? `<thead>${rows[0]}</thead>` : ''
-  const body = rows.length > 1 ? `<tbody>${rows.slice(1).join('')}</tbody>` : ''
+  const body = rows.length > 0 ? `<tbody>${rows.join('')}</tbody>` : ''
   return `<div class="docx-table-scroll" data-source-table="${htmlAttribute(
     layout.sourceElementId,
-  )}"><table class="docx-table">${header}${body}</table></div>`
-}
-
-function renderTable(table, tableLayoutByNode, occurrenceTokenByDrawing) {
-  const hasCellMedia = descendants(table, 'w:drawing').some((drawing) =>
-    occurrenceTokenByDrawing.has(drawing),
-  )
-  return hasCellMedia
-    ? renderHtmlTable(table, tableLayoutByNode, occurrenceTokenByDrawing)
-    : renderMarkdownTable(table)
+  )}" tabindex="0" role="region" aria-label="DOCX 原稿表格，可横向滚动"><table class="docx-table" aria-label="DOCX 原稿表格" data-source-table="${htmlAttribute(
+    layout.sourceElementId,
+  )}" data-grid-columns="${layout.columnCount}">${body}</table></div>`
 }
 
 export function parseWordprocessingXml(xml) {
@@ -400,6 +395,7 @@ function resolveVerticalRowSpans(rows) {
         const continuation = rows[rowOffset].cells.find(
           (candidate) =>
             candidate.gridColumn === cell.gridColumn &&
+            candidate.gridSpan === cell.gridSpan &&
             candidate.verticalMerge === 'continue',
         )
         if (!continuation) break
@@ -407,6 +403,124 @@ function resolveVerticalRowSpans(rows) {
       }
     }
   }
+}
+
+function tableLayoutError(layout, rowIndex, message) {
+  throw new Error(
+    `DOCX table ${layout.sourceElementId} row ${rowIndex}: ${message}`,
+  )
+}
+
+function columnsInCell(cell) {
+  return Array.from(
+    { length: cell.gridSpan },
+    (_, offset) => cell.gridColumn + offset,
+  )
+}
+
+export function planHtmlTableRows(layout) {
+  const activeUntil = []
+  return layout.rows.map((row) => {
+    const rowIndex = row.rowIndex
+    const visibleByColumn = new Map()
+
+    for (const cell of row.cells) {
+      const endColumn = cell.gridColumn + cell.gridSpan - 1
+      if (cell.gridColumn < 1 || endColumn > layout.columnCount) {
+        tableLayoutError(
+          layout,
+          rowIndex,
+          `cell ${cell.cellIndex} occupies columns ${cell.gridColumn}-${endColumn} outside 1-${layout.columnCount}`,
+        )
+      }
+      if (cell.verticalMerge === 'continue') {
+        const uncoveredColumn = columnsInCell(cell).find(
+          (column) => (activeUntil[column] ?? 0) < rowIndex,
+        )
+        if (uncoveredColumn !== undefined) {
+          tableLayoutError(
+            layout,
+            rowIndex,
+            `vertical-merge continuation at column ${cell.gridColumn} is not covered by an active rowspan at column ${uncoveredColumn}`,
+          )
+        }
+        continue
+      }
+      if (visibleByColumn.has(cell.gridColumn)) {
+        tableLayoutError(
+          layout,
+          rowIndex,
+          `multiple source cells start at column ${cell.gridColumn}`,
+        )
+      }
+      visibleByColumn.set(cell.gridColumn, cell)
+    }
+
+    const planned = []
+    const renderedCells = new Set()
+    let column = 1
+    while (column <= layout.columnCount) {
+      if ((activeUntil[column] ?? 0) >= rowIndex) {
+        column += 1
+        continue
+      }
+
+      const cell = visibleByColumn.get(column)
+      if (cell) {
+        const blockedColumn = columnsInCell(cell).find(
+          (candidate) => (activeUntil[candidate] ?? 0) >= rowIndex,
+        )
+        if (blockedColumn !== undefined) {
+          tableLayoutError(
+            layout,
+            rowIndex,
+            `cell ${cell.cellIndex} overlaps an active rowspan at column ${blockedColumn}`,
+          )
+        }
+        planned.push({
+          kind: 'source',
+          gridColumn: cell.gridColumn,
+          gridSpan: cell.gridSpan,
+          cell,
+        })
+        renderedCells.add(cell)
+        if (cell.rowSpan > 1) {
+          const activeEndRow = rowIndex + cell.rowSpan - 1
+          for (const occupiedColumn of columnsInCell(cell)) {
+            activeUntil[occupiedColumn] = activeEndRow
+          }
+        }
+        column += cell.gridSpan
+        continue
+      }
+
+      const placeholderStart = column
+      do {
+        column += 1
+      } while (
+        column <= layout.columnCount &&
+        (activeUntil[column] ?? 0) < rowIndex &&
+        !visibleByColumn.has(column)
+      )
+      planned.push({
+        kind: 'placeholder',
+        gridColumn: placeholderStart,
+        gridSpan: column - placeholderStart,
+      })
+    }
+
+    const unrendered = [...visibleByColumn.values()].find(
+      (cell) => !renderedCells.has(cell),
+    )
+    if (unrendered) {
+      tableLayoutError(
+        layout,
+        rowIndex,
+        `cell ${unrendered.cellIndex} at column ${unrendered.gridColumn} cannot be placed without overlap`,
+      )
+    }
+    return planned
+  })
 }
 
 function serializeCellPath(cellPath) {
@@ -505,7 +619,10 @@ export function collectTableCellLayouts({ assetId, bodyItems }) {
         row.cells.map((cell) => cell.gridColumn + cell.gridSpan - 1),
       ),
     )
-    layout.columnCount = layout.declaredColumnCount || inferredColumnCount
+    layout.columnCount = Math.max(
+      layout.declaredColumnCount,
+      inferredColumnCount,
+    )
     return layout
   }
 
@@ -558,10 +675,12 @@ function buildDocxElements({
   bodyItems,
   imageParts,
   mediaEntries,
+  paragraphSemanticPolicy,
   zip,
 }) {
   const elements = []
   const bodyContexts = []
+  const paragraphSemanticByBodyIndex = []
   let paragraphIndex = 0
   const { tables, tableLayoutByNode, cellContextByDrawing } =
     collectTableCellLayouts({ assetId, bodyItems })
@@ -570,7 +689,8 @@ function buildDocxElements({
     const item = bodyItems[bodyIndex]
     if (nodeName(item) === 'w:p') {
       paragraphIndex += 1
-      const level = headingLevel(paragraphStyle(item))
+      const paragraphStyleId = paragraphStyle(item)
+      const level = headingLevel(paragraphStyleId)
       const elementType = level ? 'heading' : 'paragraph'
       const sourcePosition = {
         part: 'word/document.xml',
@@ -588,8 +708,17 @@ function buildDocxElements({
         sourceElementId,
         elementType,
         sourcePosition,
+        paragraphStyleId,
         textHash: sha256(text),
         ...(level ? { headingLevel: level, title: text } : {}),
+      }
+      const paragraphSemantic = resolveImportedParagraphSemantic(
+        element,
+        paragraphSemanticPolicy,
+      )
+      if (paragraphSemantic) {
+        element.paragraphSemantic = paragraphSemantic
+        paragraphSemanticByBodyIndex[bodyIndex] = paragraphSemantic
       }
       elements.push(element)
       bodyContexts[bodyIndex] = anchorForBodyItem(item, sourceElementId, bodyIndex + 1)
@@ -882,6 +1011,7 @@ function buildDocxElements({
     elements,
     drawingRelations,
     bodyContexts,
+    paragraphSemanticByBodyIndex,
     tableLayoutByNode,
     occurrenceTokenByDrawing,
   }
@@ -914,6 +1044,17 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
 
   const absoluteSourcePath = path.resolve(sourcePath)
   const absoluteOutputDir = path.resolve(outputDir)
+  const paragraphSemanticPolicy = JSON.parse(
+    await readFile(paragraphSemanticPolicyUrl, 'utf8'),
+  )
+  const paragraphPolicyErrors = articleParagraphPolicyErrors(
+    paragraphSemanticPolicy,
+  )
+  if (paragraphPolicyErrors.length > 0) {
+    throw new Error(
+      `Invalid paragraph semantic policy: ${paragraphPolicyErrors.join('; ')}`,
+    )
+  }
   const sourceBuffer = await readFile(absoluteSourcePath)
   if (sourceBuffer.length > MAX_SOURCE_BYTES) {
     throw new Error(`DOCX exceeds ${MAX_SOURCE_BYTES} byte input limit`)
@@ -983,6 +1124,7 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
     elements,
     drawingRelations,
     bodyContexts,
+    paragraphSemanticByBodyIndex,
     tableLayoutByNode,
     occurrenceTokenByDrawing,
   } = buildDocxElements({
@@ -991,6 +1133,7 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
     bodyItems,
     imageParts,
     mediaEntries: mediaEntries.sort(),
+    paragraphSemanticPolicy,
     zip,
   })
   counts.tableCellDrawings = drawingRelations.filter(
@@ -1011,9 +1154,13 @@ export async function importDocx({ sourcePath, assetId, outputDir }) {
     const marker = sourceBodyMarker(bodyContexts[bodyIndex])
     const rendered =
       nodeName(item) === 'w:tbl'
-        ? renderTable(item, tableLayoutByNode, occurrenceTokenByDrawing)
+        ? renderHtmlTable(item, tableLayoutByNode, occurrenceTokenByDrawing)
         : renderParagraph(item)
     if (rendered) {
+      const paragraphSemantic = paragraphSemanticByBodyIndex[bodyIndex]
+      if (paragraphSemantic) {
+        markdownBlocks.push(articleParagraphMarker(paragraphSemantic))
+      }
       markdownBlocks.push(rendered)
       if (marker) markdownBlocks.push(marker)
       markdownBlocks.push('')

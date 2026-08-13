@@ -315,6 +315,15 @@
         "sourcePosition": {
           "type": "object"
         },
+        "paragraphStyleId": {
+          "type": "string"
+        },
+        "paragraphSemantic": {
+          "enum": [
+            "prose",
+            "non-prose"
+          ]
+        },
         "targetPageIds": {
           "type": "array",
           "uniqueItems": true,
@@ -372,11 +381,28 @@
             }
           },
           "then": {
+            "required": [
+              "paragraphStyleId"
+            ],
             "properties": {
               "sourcePosition": {
                 "$ref": "#/$defs/paragraphPosition"
               }
             }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "elementType": {
+                "const": "paragraph"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "paragraphSemantic"
+            ]
           }
         },
         {
