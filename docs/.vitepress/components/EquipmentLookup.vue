@@ -144,7 +144,7 @@ const query = ref('')
 const selectedCategory = ref('')
 const selectedChannel = ref('')
 const page = ref(1)
-const pageSize = 12
+const pageSize = 6
 
 const categories = computed(() => data.metadata.categories)
 const channels = computed(() => getEquipmentChannels(data.items))

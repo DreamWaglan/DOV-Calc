@@ -1886,8 +1886,8 @@ try {
         ?.textContent?.trim(),
     }))
     if (
-      initialEquipmentPage.cards !== 12 ||
-      !initialEquipmentPage.pager?.includes('第 1 / 8 页')
+      initialEquipmentPage.cards !== 6 ||
+      !initialEquipmentPage.pager?.includes('第 1 / 16 页')
     ) {
       failures.push(
         `equipment lookup: unexpected initial pagination ${JSON.stringify(initialEquipmentPage)}`,
@@ -1904,7 +1904,7 @@ try {
           ?.textContent?.trim() !== previousItem &&
         document
           .querySelector('.equipment-lookup__pager')
-          ?.textContent?.includes('第 2 / 8 页'),
+          ?.textContent?.includes('第 2 / 16 页'),
       { timeout: 10_000 },
       initialEquipmentPage.firstItem,
     )
