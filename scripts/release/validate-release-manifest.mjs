@@ -9,51 +9,14 @@ import {
   resolveFrom,
   sha256File,
 } from './release-utils.mjs'
+import { deployedReleaseTag } from './deployment-release-policy.mjs'
+import { parseReleaseValidationArguments } from './release-validation-arguments.mjs'
 import path from 'node:path'
 
 const rootDir = process.cwd()
 
-function parseArguments(argv) {
-  const result = {
-    manifest: 'content/release/release-manifest.json',
-    requireTagged: false,
-    requireDeployed: false,
-  }
-
-  for (let index = 0; index < argv.length; index += 1) {
-    const argument = argv[index]
-
-    if (argument === '--require-tagged') {
-      result.requireTagged = true
-      continue
-    }
-
-    if (argument === '--require-deployed') {
-      result.requireTagged = true
-      result.requireDeployed = true
-      continue
-    }
-
-    if (argument === '--manifest') {
-      const value = argv[index + 1]
-
-      if (!value || value.startsWith('--')) {
-        throw new Error('参数 --manifest 缺少取值')
-      }
-
-      result.manifest = value
-      index += 1
-      continue
-    }
-
-    throw new Error(`不支持的参数：${argument}`)
-  }
-
-  return result
-}
-
 async function main() {
-  const options = parseArguments(process.argv.slice(2))
+  const options = parseReleaseValidationArguments(process.argv.slice(2))
   const manifest = await loadJson(resolveFrom(rootDir, options.manifest))
   const failures = []
   const warnings = []
@@ -235,10 +198,15 @@ async function main() {
         failures.push('部署证据提交与发布清单 HEAD 不一致')
       }
       if (
-        deploymentReport.deployment?.tag !==
-        manifest.release.candidateTag
+        deploymentReport.deployment?.releaseState !== manifest.release.state ||
+        deploymentReport.deployment?.candidateTag !==
+          manifest.release.candidateTag
       ) {
-        failures.push('部署证据标签与发布清单标签不一致')
+        failures.push('部署证据发布状态或候选标签与发布清单不一致')
+      }
+      const expectedDeployedTag = deployedReleaseTag(manifest)
+      if (deploymentReport.deployment?.tag !== expectedDeployedTag) {
+        failures.push('部署证据实际标签与发布清单状态不一致')
       }
       if (
         deploymentReport.artifact?.aggregateSha256 !==

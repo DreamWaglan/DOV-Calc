@@ -15,6 +15,10 @@ import {
   classifyBrowserErrors,
   ensureLazyToolLoaded,
 } from './deployment-browser-policy.mjs'
+import {
+  deployedReleaseTag,
+  deploymentReleaseFailures,
+} from './deployment-release-policy.mjs'
 
 const rootDir = process.cwd()
 
@@ -276,15 +280,7 @@ async function main() {
   const siteUrl = normalizeSiteUrl(options.url)
   const failures = []
 
-  if (manifest.release?.state !== 'tagged') {
-    failures.push('线上验证要求 release.state 为 tagged')
-  }
-  if (
-    !manifest.repository?.tag?.present ||
-    !manifest.repository?.tag?.matchesHead
-  ) {
-    failures.push('线上验证要求候选标签存在并指向清单 HEAD')
-  }
+  failures.push(...deploymentReleaseFailures(manifest))
   if (!options.deployedCommit) {
     failures.push('必须通过 --deployed-commit 提供工作流部署提交')
   } else if (options.deployedCommit !== manifest.repository?.head) {
@@ -396,7 +392,9 @@ async function main() {
       target: manifest.release?.deploymentTarget,
       url: siteUrl.toString(),
       commit: options.deployedCommit,
-      tag: manifest.release?.candidateTag,
+      releaseState: manifest.release?.state,
+      candidateTag: manifest.release?.candidateTag,
+      tag: deployedReleaseTag(manifest),
       workflowRunId: options.workflowRunId,
       workflowUrl: options.workflowUrl,
     },
@@ -436,7 +434,9 @@ async function main() {
       verifiedAt: report.generatedAt,
     }
     manifest.notes =
-      '源码、构建产物、不可变标签与 GitHub Pages 线上关键产物及交互均已验证。'
+      manifest.release.state === 'tagged'
+        ? '源码、构建产物、不可变标签与 GitHub Pages 线上关键产物及交互均已验证。'
+        : '源码、构建产物与 GitHub Pages 线上关键产物及交互均已验证；当前提交未声明为不可变标签发布。'
     await writeFile(
       manifestPath,
       `${JSON.stringify(manifest, null, 2)}\n`,

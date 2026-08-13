@@ -40,6 +40,8 @@ const checks = [
   'tests/quality/traceability-policy.mjs',
   'tests/release/deployment-arguments.mjs',
   'tests/release/deployment-browser-policy.mjs',
+  'tests/release/deployment-release-policy.mjs',
+  'tests/release/release-validation-arguments.mjs',
   'scripts/quality/staleness-report.mjs',
 ]
 

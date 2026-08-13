@@ -7,10 +7,14 @@ import {
   writeReport,
 } from '../content/lib/content-utils.mjs'
 import { hasCompleteSourceTraceability } from './traceability-policy.mjs'
+import { releaseStateAccepted as acceptsReleaseState } from '../release/deployment-release-policy.mjs'
+import { parseReleaseValidationArguments } from '../release/release-validation-arguments.mjs'
 
-const requireDeployed = process.argv.includes('--require-deployed')
-const requireTagged =
-  process.argv.includes('--require-tagged') || requireDeployed
+const {
+  manifest: releaseManifestPath,
+  requireDeployed,
+  requireTagged,
+} = parseReleaseValidationArguments(process.argv.slice(2))
 const failures = []
 
 async function load(relativePath) {
@@ -65,7 +69,7 @@ const [
   load('content/reports/performance-accessibility.json'),
   load('content/reports/e2e-smoke.json'),
   load('content/reports/base-builds.json'),
-  load('content/release/release-manifest.json'),
+  load(releaseManifestPath),
   load('content/release/rollback-rehearsal.json'),
 ])
 
@@ -262,11 +266,9 @@ addAcceptance(
   e2e.summary,
 )
 
-const releaseStateAccepted = requireTagged
-  ? releaseManifest.release?.state === 'tagged' &&
-    releaseManifest.repository?.tag?.present === true &&
-    releaseManifest.repository?.tag?.matchesHead === true
-  : ['candidate', 'tagged'].includes(releaseManifest.release?.state)
+const releaseStateAccepted = acceptsReleaseState(releaseManifest, {
+  requireTagged,
+})
 addAcceptance(
   'AC-13',
   requireTagged
@@ -280,7 +282,7 @@ addAcceptance(
     failureCount(rollback) === 0,
   [
     'docs/about/version-log.md',
-    'content/release/release-manifest.json',
+    releaseManifestPath,
     'content/release/rollback-rehearsal.json',
   ],
   {
@@ -332,7 +334,7 @@ addAcceptance(
     : '发布清单明确区分未验证与已验证部署状态',
   deploymentStateAccepted,
   [
-    'content/release/release-manifest.json',
+    releaseManifestPath,
     'content/release/deployment-verification.json',
   ],
   {
@@ -347,7 +349,11 @@ const reportPath = await writeReport('stage5-release-readiness', {
   schemaVersion: 1,
   check: 'stage5-release-readiness',
   generatedAt: new Date().toISOString(),
-  mode: requireTagged ? 'tagged-release' : 'release-candidate',
+  mode: requireTagged
+    ? 'tagged-release'
+    : requireDeployed
+      ? 'deployed-release'
+      : 'release-candidate',
   summary: {
     acceptanceCriteria: acceptance.length,
     passedAcceptanceCriteria: acceptance.filter((item) => item.passed).length,
